@@ -1,0 +1,834 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc-rc1/ImplementationGuide/fhir.who.svc-rc1> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fhir.who.svc-rc1"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SVC_RC1</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/who/svc-rc1/ImplementationGuide/fhir.who.svc-rc1</pre><div><p>Smart Vaccination Certificate - RC1</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "http://fhir.org/guides/who/svc-rc1/ImplementationGuide/fhir.who.svc-rc1"];
+  fhir:ImplementationGuide.version [ fhir:value "0.2.0"];
+  fhir:ImplementationGuide.name [ fhir:value "SVC_RC1"];
+  fhir:ImplementationGuide.title [ fhir:value "WHO Smart Vaccination Certificate - RC1"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:ImplementationGuide.date [ fhir:value "2021-03-04"^^xsd:date];
+  fhir:ImplementationGuide.publisher [ fhir:value "World Health Organization (WHO)"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "Smart Vaccination Certificate - RC1"];
+  fhir:ImplementationGuide.packageId [ fhir:value "fhir.who.svc-rc1"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "ips" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/uv/ips";
+       fhir:link <http://hl7.org/fhir/uv/ips>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.ips" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "1.0.0" ]
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2021+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "CI Build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-binary" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/cql" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://fhir.org/guides/who/svc-rc1/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient-new>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-patient-new" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "New SVC Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correponds to the demographic information on the front page of a new Paper SVC.\n\nWhen a new Paper SVC is issued, the following rules apply:\n  * a Person.identifier entry is generated with system set to 'urn:uuid' and value set to a v4 UUID." ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-pha-composition-updated>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-pha-composition-updated" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Updated SVC Composition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Populated container for the health content contained on a reissued Paper SVC which\n\nWhen a Paper SVC is reissued, the following rules apply:\n  * status is set to final\n  * each row in the Vaccination Events section of the Paper SVC should contain a QR-code encoding an SVC Immunization\n  * transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding Updated SVC Immunizations\n  * preserve entries in the from the external SVC Composition that correspond to Updated SVC Immunizations \n\n\nAn Update SVC Composition may:\n * contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies." ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-digital-ingested>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-provenance-digital-ingested" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provenance of an Integsted Digital SVC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Provenance of a Digital SVC is used to assert the provenance of a Public Health Auhority (PHA) over a Digital SVC document it is ingesting from a Paper SVC or Digital SVC issued by an external PHA.   When a PHA ingests an external SVC it should:\n * generate an Updated SVC Patient resource using the content contained in the SVC Patient from the external SVC.  The identifer of the external SVC Patient should be preserved\n * generate an Updated SVC Composition  \n\nThe Provenacne of Ingested Digital SVC should:\n * be generated by a PHA when ingests a Paper SVC or Digital SVC from another PHA\n * set entity.role.quotation  to #quotation\n * set entity.what to reference the SVC Composition in the external SVC\n * set target to the id of the new Digital SVC is generated by the PHA\n * updated by a PHA when content is transferred from a Paper SVC \n\nThe PHA may:\n * print a QR-code to place on the back page of the external Paper SVC which encodes the Provenance of an Ingested Digital SVC.\n * issue and print a new Paper SVC containing an Updated SVC Bundle" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization-updated>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-immunization-updated" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Updated SVC Immunization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An Updated SVC Immunization contains the content to be encoded in a QR-code row in the Vaccination Events section of the Paper SVC.  The QR-code is either placed as a sticker over an existing QR-code with the same Identiiifer or printed directly on a reissued Paper SVC.\n\nAn updated SVC Immunization is derived from an existing SVC Immunization according to the following rules:\n * preserve the content from the existing SVC Immunization\n * amend this by transferring the vaccination event content from the Paper SVC into the SVC Immunization resource\n * optionally update the patient to reference an appropriate SVC Patient as determined by the PHA after Patient deduplication" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-vaccines>;
+         fhir:Reference.reference [ fhir:value "ValueSet/who-svc-vaccines" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Vaccine List" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO Vaccine List" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Bundle" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An SVC Bundle contains the content to be encoded in QR-code on the front page of a Paper SVC." ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-paper>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-provenance-paper" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provenance of a Paper SVC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Provenance of a Paper SVC is used to assert the provenance of a Public Health Auhority (PHA) over a Paper SVC document at time of printing. A Paper SVC document may be a newly issued  or it may be a re-issue of an existing SVC document.\n\nWhen a new Paper SVC is printed, the following rules apply:\n * generate a New SVC Patient and a New SVC Composition resource \n * set the agent.onBehalfOf to reference the generated New SVC Patient resource \n * set the agent.who to reference the Organization resource associated to the PHA via the WHO Smart Directory\n * set the entity.role.what to reference the generated SVC Composition resource" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-provenance" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provenance of SVC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Used to assert the provenance of a Public Health Auhority (PHA) over either a Paper or a Digital Smart Vaccination Card (SVC). This profile is not intended to be instantiated directly, rather a  Provenance of an New Digital SVC Provenance of an Updated Digital SVC or a Provenance of an Ingested Digital SVC or a Updarted SVC Composition should be used." ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle-new>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-bundle-new" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "New SVC Bundle" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An SVC Bundle contains the content to be encoded in QR-code on the front page of a Paper SVC.\n\nAn new SVC Bundle is derived from an existing SVC Bundle according to the following rules:\n * preserve the content in the existing SVC Bundle\n * amend this by transferring the non-digital demographic content  from the Paper SVC into the SVC Patient resource" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correponds to the demographic information on the front page of the Paper SVC. This profile is not intended to be instantiated directly, rather a New SVC Patient or an Updated SVC Patient should be used.  \nA SVC_Patient should:\n* set the assigner of an identifier to reference the Organization resource associated to the PHA via the WHO Smart Directory" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-immunization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Immunization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An SVC Immunization contains the content to be encoded in a QR-code on a row in the Vaccination Events section of the Paper SVC. This profile is not intended to be instantiated directly, rather a New SVC Immunization or an Updated SVC Composition should be used." ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-digital-new>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-provenance-digital-new" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provenance of a New Digital SVC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Provenance of a New Digital SVC is used to assert the provenance of a Public Health Auhority (PHA) over a new Digital SVC document.  \n\nThe Provencance of a New Dgivial SVC should:\n * be generated at the time of printing a new Paper SVC\n * have as target a New SVC Composition \n * set the role to derived\n * set the agent.behalfOf to refence a New SVC Patient" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-digital>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-provenance-digital" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provenance of a Digital SVC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Abstraction for the Provenance of a Digital SVC.  This profile is not intended to be instantiated directly, rather a  Provenance of an New Digital SVC Provenance of an Updated Digital SVC or a Provenance of an Ingested Digital SVC or a Updarted SVC Composition should be used.\n\nNon-digital content in a Paper SVC may be digitized by a PHA by any of the following methods:\n  * Issue and print a QR-sticker which encodes an updated SVC Bundle  to place on the front page of the Paper SVC.  \n  * The issuing PHA may re-issue and print a new Paper SVC such that:\n      * the QR-code on the front page encodes an Updated SVC Bundle.\n      * the demograoghic content on the front page is printed with the content transferred from the Paper SVC to an Updated SVC Patient\n      * the rows in the Vaccination Events section are printed with the transferred vaccination content from the Paper SVC into Updated SVC Immunuzation resources" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-pha-practitioner>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-pha-practitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Practiotioner" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Container for an SVC Practitioner, which is a Practitioner authorized by the PHA to vaccinate an SVC Patient." ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle-ingested>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-bundle-ingested" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ingested SVC Bundle" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An Ingested SVC Bundle is generated PHA when the PHA transfers content from a Paper SVC issued by an extenral PHA, in which case it should:\n * generate an Updated SVC Patient \n * generate an Ingested SVC Compostion" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization-new>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-immunization-new" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "New SVC Immunization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A New SVC Immunization contains the content to be encoded in a QR-code on a row in the Vaccination Events section of the Paper SVC.\n\nWhen a new Paper SVC is issued, the following rules apply to a New SVC Immnuization::\n  * the patient reference is set to the New Patient Resource that was generated" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-pha-composition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-pha-composition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Composition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Container for the health content contained on a Paper SVC.  This profile is not intended to be instantiated directly, rather a New SVC Composition or a Updarted SVC Composition should be used.\n\nA SVC Composition be accessible from a SVC Registry as located via the WHO SMART Directory for the PHA referenced in the author." ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-digitalupdated>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-provenance-digitalupdated" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provenance of an Updated Digital SVC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Provenance of a Digital SVC is used to assert the provenance of a Public Health Auhority (PHA) over an updated Digital SVC document.  \n\nThe Provenance of an Updated Digital SVC should:\n * contain the Updated SVC Patient demographic content tranferred from a Paper SVC\n * contain the Updated SVC Immunization content tranferred from a Paper SVC \n * be generated by a PHA when a Paper SVC document is printed by a PHA, in which case:\n * set entity.role.quotation to #deriverd\n * set entity role.what to reference the Updated SVC Composition associated to Paper SVC" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-vaccines-covid-19>;
+         fhir:Reference.reference [ fhir:value "ValueSet/who-svc-vaccines-covid-19" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Vaccine List (COVID-19)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO Vaccine List (COVID-19)" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient-updated>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-patient-updated" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Updated SVC Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correponds to the demographic information on the front page of a Paper SVC which is reissued by a PHA.  Written demographic content from the Paper SVC should be used to populate the Updated SVC Patient." ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-pha-composition-ingested>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-pha-composition-ingested" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ingested SVC Composition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Populated container for the health content contained on a  Paper SVC issued by a PHA when ingesting an SVC issued by an external PHA\n\nAn Ingested SVC Composition should:\n  * set status #final\n  * be accessible from a SVC Registry as located via the WHO SMART Directory for the associated PHA  \n  * transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding Updated SVC Immunizations\n  * preserve entries in the from the external SVC Composition that correspond to Updated SVC Immunizations \n\nAn Ingested SVC Composition may be:\n  * derived from a New SVC Compostion generated by the PHA\n  * derived from located an existing Updated SVC Composition under the provenace of the PHA\n  * contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies." ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle-updated>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-bundle-updated" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Updated SVC Bundle" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An Updated SVC Bundle is generated PHA when the PHA transfers content from a Paper SVC in which case it should:\n * generate an Updated SVC Patient \n * generate an Updated SVC Compostion" ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-pha-composition-new>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-pha-composition-new" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "New SVC Composition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Empty container for the health content contained on a new Paper SVC.\n\nWhen a new Paper SVC is issued, the following rules apply to a New SVC Composition:\n  * a Person.identifier entry is generated for a SVC Patient with system set to 'urn:uuid' and value set to a v4 UUID.\n  * Composition.author is set to reference the Organization resource associated to the PHA via the WHO Smart Directory\n  * set the status to #preliminary\n  * for each row of the Paper SVC, an New SVC Immunization should be generated and an entry should be created to reference this" ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-pha-organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-pha-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Organization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Abstraction for an SVC Organization. There should be an SVC Organization associated to each PHA in the WHO Smart Directory." ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient-ingested>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-patient-ingested" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ingested SVC Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correponds to the demographic information on the front page a of Paper SVC which is ingested by a PHA from an external PHA.  \n\nThe following rules apply to an Ingested SVC Patient:\n * the identifier in the SVC Patient from the external SVC should be preserved in the Ingested SVC Patient\n * demographic content from the extenal SVC may be used to populate the Ingested SVC Patient." ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Narrative" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "references.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "References" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "requirements.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Business Requirements" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "concepts.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Concepts" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "functional.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Functional Requirements" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 2;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "personas.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Personas" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 3;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "workflows.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Workflows" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 4;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "usecases.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Cases" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "data_exchange.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Data Models and Exchange " ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "dependencies.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Dependencies" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "actors.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Actors" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 2;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "transactions.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Transactions" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 3;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "expected_actions.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Expected Actions" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 4;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "content_profiles.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Content Profiles" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "deployment.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Deployment Guidance" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "security_privacy.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Security and Privacy Considerations" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "testing.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Testing" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 2;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "instant_openhie.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Instant OpenHIE" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 3;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Useful Downloads" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/pagecontent" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/activitydefinition" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/capabilitystatement" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/library" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/measure" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/plandefinition" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/questionnaire" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary/codesystem" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary/valueset" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 15;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 16;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 17;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 18;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 19;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 20;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 21;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 22;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc-rc1/ImplementationGuide/fhir.who.svc-rc1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
