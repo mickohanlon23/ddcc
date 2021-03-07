@@ -25,7 +25,7 @@
   <name value="SVC_Provenance_Paper"/>
   <title value="Provenance of a Paper SVC"/>
   <status value="active"/>
-  <date value="2021-03-07T18:31:44+00:00"/>
+  <date value="2021-03-07T19:02:58+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -33,7 +33,7 @@
       <value value="https://www.who.int"/>
     </telecom>
   </contact>
-  <description value="The Provenance of a Paper SVC is used to assert the provenance of a Public Health Auhority (PHA) over a Paper SVC document at time of printing. A Paper SVC document may be a newly issued  or it may be a re-issue of an existing SVC document.&#xA;&#xA;When a new Paper SVC is printed, the following rules apply:&#xA; * generate a New SVC Patient and a New SVC Composition resource &#xA; * set the agent.onBehalfOf to reference the generated New SVC Patient resource &#xA; * set the agent.who to reference the Organization resource associated to the PHA via the WHO Smart Directory&#xA; * set the entity.role.what to reference the generated SVC Composition resource&#xA;"/>
+  <description value="The [Provenance of a Paper SVC](StructureDefinition-svc-provenance-paper.html) is used to assert the provenance of a Public Health Auhority (PHA) over a Paper SVC document at time of printing. A Paper SVC document may be a newly issued  or it may be a re-issue of an existing SVC document.&#xA;&#xA;When a new Paper SVC is printed, the following rules apply:&#xA; * generate a [New SVC Patient](StructureDefinition-svc-patient-new.html) and a [New SVC Composition](StructureDefinition-svc-composition-new.html) resource &#xA; * set the [agent.onBehalfOf](StructureDefinition-svc-provenance-paper-definitions.html#Provenance.agent.onBehalfOf) to reference the generated [New SVC Patient](StructureDefinition-svc-patient-new.html) resource &#xA; * set the [agent.who]](StructureDefinition-svc-provenance-papar-definitions.html#Provenance.agent.who) to reference the Organization resource associated to the PHA via the WHO Smart Directory&#xA; * set the [entity.role.what](StructureDefinition-svc-provenance-papar-definitions.html#Provenance.entity.role.waht) to reference the generated [New SVC Composition](StructureDefinition-svc-composition-new.html) resource&#xA;"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>
