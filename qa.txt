@@ -3,26 +3,26 @@
 
 err = 6, warn = 30, info = 1
 IG Publisher Version: 1.1.63
-Generated Sun Mar 07 18:28:49 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
+Generated Sun Mar 07 18:31:08 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
 
  Build Errors : 3 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle-ingested : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle-new : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle-updated : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-ingested : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-new : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-updated : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization-new : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization-updated : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-svc-organization : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-patient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-patient-ingested : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-patient-new : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-patient-updated : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-svc-pha-composition : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-svc-pha-composition-ingested : 1 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-svc-pha-composition-new : 1 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-svc-pha-composition-updated : 1 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-svc-pha-organization : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-svc-pha-practitioner : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital-ingested : 0 / 2 / 1
@@ -50,6 +50,22 @@ WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/Str
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle-updated.json ==
 INFORMATION: StructureDefinition/svc-bundle-updated: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle-updated'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition.json ==
+INFORMATION: StructureDefinition/svc-composition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+ERROR: StructureDefinition/svc-composition: StructureDefinition.snapshot.element[95].slicing.discriminator[0]: ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+ERROR: StructureDefinition/svc-composition: StructureDefinition.differential.element[14].slicing.discriminator[0]: ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+== /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-ingested.json ==
+INFORMATION: StructureDefinition/svc-composition-ingested: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+ERROR: StructureDefinition/svc-composition-ingested: StructureDefinition.snapshot.element[95].slicing.discriminator[0]: ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition-ingested'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-new.json ==
+INFORMATION: StructureDefinition/svc-composition-new: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+ERROR: StructureDefinition/svc-composition-new: StructureDefinition.snapshot.element[95].slicing.discriminator[0]: ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition-new'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-updated.json ==
+INFORMATION: StructureDefinition/svc-composition-updated: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+ERROR: StructureDefinition/svc-composition-updated: StructureDefinition.snapshot.element[95].slicing.discriminator[0]: ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition-updated'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization.json ==
 INFORMATION: StructureDefinition/svc-immunization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization-new.json ==
@@ -58,6 +74,9 @@ WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/Str
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization-updated.json ==
 INFORMATION: StructureDefinition/svc-immunization-updated: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization-updated'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-svc-organization.json ==
+INFORMATION: StructureDefinition/svc-organization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-patient.json ==
 INFORMATION: StructureDefinition/svc-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-patient-ingested.json ==
@@ -69,28 +88,9 @@ WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/Str
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-patient-updated.json ==
 INFORMATION: StructureDefinition/svc-patient-updated: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient-updated'): The Implementation Guide contains no examples for this profile
-== /github/workspace/fsh-generated/resources/StructureDefinition-svc-pha-composition.json ==
-INFORMATION: StructureDefinition/svc-pha-composition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition/svc-pha-composition: StructureDefinition.snapshot.element[95].slicing.discriminator[0]: ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
-ERROR: StructureDefinition/svc-pha-composition: StructureDefinition.differential.element[14].slicing.discriminator[0]: ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
-== /github/workspace/fsh-generated/resources/StructureDefinition-svc-pha-composition-ingested.json ==
-INFORMATION: StructureDefinition/svc-pha-composition-ingested: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition/svc-pha-composition-ingested: StructureDefinition.snapshot.element[95].slicing.discriminator[0]: ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
-WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-pha-composition-ingested'): The Implementation Guide contains no examples for this profile
-== /github/workspace/fsh-generated/resources/StructureDefinition-svc-pha-composition-new.json ==
-INFORMATION: StructureDefinition/svc-pha-composition-new: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition/svc-pha-composition-new: StructureDefinition.snapshot.element[95].slicing.discriminator[0]: ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
-WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-pha-composition-new'): The Implementation Guide contains no examples for this profile
-== /github/workspace/fsh-generated/resources/StructureDefinition-svc-pha-composition-updated.json ==
-INFORMATION: StructureDefinition/svc-pha-composition-updated: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition/svc-pha-composition-updated: StructureDefinition.snapshot.element[95].slicing.discriminator[0]: ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
-WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-pha-composition-updated'): The Implementation Guide contains no examples for this profile
-== /github/workspace/fsh-generated/resources/StructureDefinition-svc-pha-organization.json ==
-INFORMATION: StructureDefinition/svc-pha-organization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-pha-organization'): The Implementation Guide contains no examples for this profile
-== /github/workspace/fsh-generated/resources/StructureDefinition-svc-pha-practitioner.json ==
-INFORMATION: StructureDefinition/svc-pha-practitioner: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-pha-practitioner'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner.json ==
+INFORMATION: StructureDefinition/svc-practitioner: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance.json ==
 INFORMATION: StructureDefinition/svc-provenance: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/svc-provenance: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided

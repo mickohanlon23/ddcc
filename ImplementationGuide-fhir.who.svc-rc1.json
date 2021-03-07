@@ -335,10 +335,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/svc-pha-composition-updated"
+          "reference": "StructureDefinition/svc-composition-new"
         },
-        "name": "Updated SVC Composition",
-        "description": "Populated container for the health content contained on a reissued Paper SVC which\n\nWhen a Paper SVC is reissued, the following rules apply:\n  * status is set to final\n  * each row in the Vaccination Events section of the Paper SVC should contain a QR-code encoding an SVC Immunization\n  * transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding Updated SVC Immunizations\n  * preserve entries in the from the external SVC Composition that correspond to Updated SVC Immunizations \n\n\nAn Update SVC Composition may:\n * contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies."
+        "name": "New SVC Composition",
+        "description": "Empty container for the health content contained on a new Paper SVC.\n\nWhen a new Paper SVC is issued, the following rules apply to a New SVC Composition:\n  * a Person.identifier entry is generated for a SVC Patient with system set to 'urn:uuid' and value set to a v4 UUID.\n  * Composition.author is set to reference the Organization resource associated to the PHA via the WHO Smart Directory\n  * set the status to #preliminary\n  * for each row of the Paper SVC, an New SVC Immunization should be generated and an entry should be created to reference this"
       },
       {
         "extension": [
@@ -478,6 +478,19 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/svc-composition"
+        },
+        "name": "SVC Composition",
+        "description": "Container for the health content contained on a Paper SVC.  This profile is not intended to be instantiated directly, rather a New SVC Composition or a Updarted SVC Composition should be used.\n\nA SVC Composition be accessible from a SVC Registry as located via the WHO SMART Directory for the PHA referenced in the author."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource:abstract"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/svc-provenance-digital"
         },
         "name": "Provenance of a Digital SVC",
@@ -491,10 +504,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/svc-pha-practitioner"
+          "reference": "StructureDefinition/svc-composition-updated"
         },
-        "name": "SVC Practiotioner",
-        "description": "Container for an SVC Practitioner, which is a Practitioner authorized by the PHA to vaccinate an SVC Patient."
+        "name": "Updated SVC Composition",
+        "description": "Populated container for the health content contained on a reissued Paper SVC which\n\nWhen a Paper SVC is reissued, the following rules apply:\n  * status is set to final\n  * each row in the Vaccination Events section of the Paper SVC should contain a QR-code encoding an SVC Immunization\n  * transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding Updated SVC Immunizations\n  * preserve entries in the from the external SVC Composition that correspond to Updated SVC Immunizations \n\n\nAn Update SVC Composition may:\n * contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies."
       },
       {
         "extension": [
@@ -517,23 +530,23 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/svc-immunization-new"
+          "reference": "StructureDefinition/svc-organization"
         },
-        "name": "New SVC Immunization",
-        "description": "A New SVC Immunization contains the content to be encoded in a QR-code on a row in the Vaccination Events section of the Paper SVC.\n\nWhen a new Paper SVC is issued, the following rules apply to a New SVC Immnuization::\n  * the patient reference is set to the New Patient Resource that was generated"
+        "name": "SVC Organization",
+        "description": "Abstraction for an SVC Organization. There should be an SVC Organization associated to each PHA in the WHO Smart Directory."
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource:abstract"
+            "valueString": "StructureDefinition:resource"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/svc-pha-composition"
+          "reference": "StructureDefinition/svc-immunization-new"
         },
-        "name": "SVC Composition",
-        "description": "Container for the health content contained on a Paper SVC.  This profile is not intended to be instantiated directly, rather a New SVC Composition or a Updarted SVC Composition should be used.\n\nA SVC Composition be accessible from a SVC Registry as located via the WHO SMART Directory for the PHA referenced in the author."
+        "name": "New SVC Immunization",
+        "description": "A New SVC Immunization contains the content to be encoded in a QR-code on a row in the Vaccination Events section of the Paper SVC.\n\nWhen a new Paper SVC is issued, the following rules apply to a New SVC Immnuization::\n  * the patient reference is set to the New Patient Resource that was generated"
       },
       {
         "extension": [
@@ -547,6 +560,19 @@
         },
         "name": "Provenance of an Updated Digital SVC",
         "description": "The Provenance of a Digital SVC is used to assert the provenance of a Public Health Auhority (PHA) over an updated Digital SVC document.  \n\nThe Provenance of an Updated Digital SVC should:\n * contain the Updated SVC Patient demographic content tranferred from a Paper SVC\n * contain the Updated SVC Immunization content tranferred from a Paper SVC \n * be generated by a PHA when a Paper SVC document is printed by a PHA, in which case:\n * set entity.role.quotation to #deriverd\n * set entity role.what to reference the Updated SVC Composition associated to Paper SVC"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/svc-composition-ingested"
+        },
+        "name": "Ingested SVC Composition",
+        "description": "Populated container for the health content contained on a  Paper SVC issued by a PHA when ingesting an SVC issued by an external PHA\n\nAn Ingested SVC Composition should:\n  * set status #final\n  * be accessible from a SVC Registry as located via the WHO SMART Directory for the associated PHA  \n  * transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding Updated SVC Immunizations\n  * preserve entries in the from the external SVC Composition that correspond to Updated SVC Immunizations \n\nAn Ingested SVC Composition may be:\n  * derived from a New SVC Compostion generated by the PHA\n  * derived from located an existing Updated SVC Composition under the provenace of the PHA\n  * contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies."
       },
       {
         "extension": [
@@ -582,19 +608,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/svc-pha-composition-ingested"
-        },
-        "name": "Ingested SVC Composition",
-        "description": "Populated container for the health content contained on a  Paper SVC issued by a PHA when ingesting an SVC issued by an external PHA\n\nAn Ingested SVC Composition should:\n  * set status #final\n  * be accessible from a SVC Registry as located via the WHO SMART Directory for the associated PHA  \n  * transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding Updated SVC Immunizations\n  * preserve entries in the from the external SVC Composition that correspond to Updated SVC Immunizations \n\nAn Ingested SVC Composition may be:\n  * derived from a New SVC Compostion generated by the PHA\n  * derived from located an existing Updated SVC Composition under the provenace of the PHA\n  * contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/svc-bundle-updated"
         },
         "name": "Updated SVC Bundle",
@@ -608,23 +621,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/svc-pha-composition-new"
+          "reference": "StructureDefinition/svc-practitioner"
         },
-        "name": "New SVC Composition",
-        "description": "Empty container for the health content contained on a new Paper SVC.\n\nWhen a new Paper SVC is issued, the following rules apply to a New SVC Composition:\n  * a Person.identifier entry is generated for a SVC Patient with system set to 'urn:uuid' and value set to a v4 UUID.\n  * Composition.author is set to reference the Organization resource associated to the PHA via the WHO Smart Directory\n  * set the status to #preliminary\n  * for each row of the Paper SVC, an New SVC Immunization should be generated and an entry should be created to reference this"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/svc-pha-organization"
-        },
-        "name": "SVC Organization",
-        "description": "Abstraction for an SVC Organization. There should be an SVC Organization associated to each PHA in the WHO Smart Directory."
+        "name": "SVC Practiotioner",
+        "description": "Container for an SVC Practitioner, which is a Practitioner authorized by the PHA to vaccinate an SVC Patient."
       },
       {
         "extension": [

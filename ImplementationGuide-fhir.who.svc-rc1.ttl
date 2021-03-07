@@ -320,11 +320,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-pha-composition-updated>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-pha-composition-updated" ]
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition-new>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-composition-new" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Updated SVC Composition" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Populated container for the health content contained on a reissued Paper SVC which\n\nWhen a Paper SVC is reissued, the following rules apply:\n  * status is set to final\n  * each row in the Vaccination Events section of the Paper SVC should contain a QR-code encoding an SVC Immunization\n  * transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding Updated SVC Immunizations\n  * preserve entries in the from the external SVC Composition that correspond to Updated SVC Immunizations \n\n\nAn Update SVC Composition may:\n * contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "New SVC Composition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Empty container for the health content contained on a new Paper SVC.\n\nWhen a new Paper SVC is issued, the following rules apply to a New SVC Composition:\n  * a Person.identifier entry is generated for a SVC Patient with system set to 'urn:uuid' and value set to a v4 UUID.\n  * Composition.author is set to reference the Organization resource associated to the PHA via the WHO Smart Directory\n  * set the status to #preliminary\n  * for each row of the Paper SVC, an New SVC Immunization should be generated and an entry should be created to reference this" ]
      ], [
        fhir:index 2;
        fhir:Element.extension [
@@ -463,26 +463,39 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-composition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Composition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Container for the health content contained on a Paper SVC.  This profile is not intended to be instantiated directly, rather a New SVC Composition or a Updarted SVC Composition should be used.\n\nA SVC Composition be accessible from a SVC Registry as located via the WHO SMART Directory for the PHA referenced in the author." ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-digital>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/svc-provenance-digital" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provenance of a Digital SVC" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Abstraction for the Provenance of a Digital SVC.  This profile is not intended to be instantiated directly, rather a  Provenance of an New Digital SVC Provenance of an Updated Digital SVC or a Provenance of an Ingested Digital SVC or a Updarted SVC Composition should be used.\n\nNon-digital content in a Paper SVC may be digitized by a PHA by any of the following methods:\n  * Issue and print a QR-sticker which encodes an updated SVC Bundle  to place on the front page of the Paper SVC.  \n  * The issuing PHA may re-issue and print a new Paper SVC such that:\n      * the QR-code on the front page encodes an Updated SVC Bundle.\n      * the demograoghic content on the front page is printed with the content transferred from the Paper SVC to an Updated SVC Patient\n      * the rows in the Vaccination Events section are printed with the transferred vaccination content from the Paper SVC into Updated SVC Immunuzation resources" ]
      ], [
-       fhir:index 13;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-pha-practitioner>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-pha-practitioner" ]
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition-updated>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-composition-updated" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Practiotioner" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Container for an SVC Practitioner, which is a Practitioner authorized by the PHA to vaccinate an SVC Patient." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Updated SVC Composition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Populated container for the health content contained on a reissued Paper SVC which\n\nWhen a Paper SVC is reissued, the following rules apply:\n  * status is set to final\n  * each row in the Vaccination Events section of the Paper SVC should contain a QR-code encoding an SVC Immunization\n  * transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding Updated SVC Immunizations\n  * preserve entries in the from the external SVC Composition that correspond to Updated SVC Immunizations \n\n\nAn Update SVC Composition may:\n * contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies." ]
      ], [
-       fhir:index 14;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -495,7 +508,20 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ingested SVC Bundle" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An Ingested SVC Bundle is generated PHA when the PHA transfers content from a Paper SVC issued by an extenral PHA, in which case it should:\n * generate an Updated SVC Patient \n * generate an Ingested SVC Compostion" ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Organization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Abstraction for an SVC Organization. There should be an SVC Organization associated to each PHA in the WHO Smart Directory." ]
+     ], [
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -508,20 +534,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "New SVC Immunization" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A New SVC Immunization contains the content to be encoded in a QR-code on a row in the Vaccination Events section of the Paper SVC.\n\nWhen a new Paper SVC is issued, the following rules apply to a New SVC Immnuization::\n  * the patient reference is set to the New Patient Resource that was generated" ]
      ], [
-       fhir:index 16;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-pha-composition>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-pha-composition" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Composition" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Container for the health content contained on a Paper SVC.  This profile is not intended to be instantiated directly, rather a New SVC Composition or a Updarted SVC Composition should be used.\n\nA SVC Composition be accessible from a SVC Registry as located via the WHO SMART Directory for the PHA referenced in the author." ]
-     ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -534,7 +547,20 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provenance of an Updated Digital SVC" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Provenance of a Digital SVC is used to assert the provenance of a Public Health Auhority (PHA) over an updated Digital SVC document.  \n\nThe Provenance of an Updated Digital SVC should:\n * contain the Updated SVC Patient demographic content tranferred from a Paper SVC\n * contain the Updated SVC Immunization content tranferred from a Paper SVC \n * be generated by a PHA when a Paper SVC document is printed by a PHA, in which case:\n * set entity.role.quotation to #deriverd\n * set entity role.what to reference the Updated SVC Composition associated to Paper SVC" ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition-ingested>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-composition-ingested" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ingested SVC Composition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Populated container for the health content contained on a  Paper SVC issued by a PHA when ingesting an SVC issued by an external PHA\n\nAn Ingested SVC Composition should:\n  * set status #final\n  * be accessible from a SVC Registry as located via the WHO SMART Directory for the associated PHA  \n  * transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding Updated SVC Immunizations\n  * preserve entries in the from the external SVC Composition that correspond to Updated SVC Immunizations \n\nAn Ingested SVC Composition may be:\n  * derived from a New SVC Compostion generated by the PHA\n  * derived from located an existing Updated SVC Composition under the provenace of the PHA\n  * contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies." ]
+     ], [
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -547,7 +573,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Vaccine List (COVID-19)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO Vaccine List (COVID-19)" ]
      ], [
-       fhir:index 19;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -560,20 +586,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Updated SVC Patient" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correponds to the demographic information on the front page of a Paper SVC which is reissued by a PHA.  Written demographic content from the Paper SVC should be used to populate the Updated SVC Patient." ]
      ], [
-       fhir:index 20;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-pha-composition-ingested>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-pha-composition-ingested" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Ingested SVC Composition" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Populated container for the health content contained on a  Paper SVC issued by a PHA when ingesting an SVC issued by an external PHA\n\nAn Ingested SVC Composition should:\n  * set status #final\n  * be accessible from a SVC Registry as located via the WHO SMART Directory for the associated PHA  \n  * transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding Updated SVC Immunizations\n  * preserve entries in the from the external SVC Composition that correspond to Updated SVC Immunizations \n\nAn Ingested SVC Composition may be:\n  * derived from a New SVC Compostion generated by the PHA\n  * derived from located an existing Updated SVC Composition under the provenace of the PHA\n  * contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies." ]
-     ], [
-       fhir:index 21;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -586,19 +599,6 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Updated SVC Bundle" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An Updated SVC Bundle is generated PHA when the PHA transfers content from a Paper SVC in which case it should:\n * generate an Updated SVC Patient \n * generate an Updated SVC Compostion" ]
      ], [
-       fhir:index 22;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-pha-composition-new>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-pha-composition-new" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "New SVC Composition" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Empty container for the health content contained on a new Paper SVC.\n\nWhen a new Paper SVC is issued, the following rules apply to a New SVC Composition:\n  * a Person.identifier entry is generated for a SVC Patient with system set to 'urn:uuid' and value set to a v4 UUID.\n  * Composition.author is set to reference the Organization resource associated to the PHA via the WHO Smart Directory\n  * set the status to #preliminary\n  * for each row of the Paper SVC, an New SVC Immunization should be generated and an entry should be created to reference this" ]
-     ], [
        fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
@@ -606,11 +606,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-pha-organization>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-pha-organization" ]
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-practitioner" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Organization" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Abstraction for an SVC Organization. There should be an SVC Organization associated to each PHA in the WHO Smart Directory." ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Practiotioner" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Container for an SVC Practitioner, which is a Practitioner authorized by the PHA to vaccinate an SVC Patient." ]
      ], [
        fhir:index 24;
        fhir:Element.extension [
