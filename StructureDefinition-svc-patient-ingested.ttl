@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "SVC_Patient_Ingested"];
   fhir:StructureDefinition.title [ fhir:value "Ingested SVC Patient"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-03-07T19:02:58+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-03-08T14:53:43+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -27,7 +27,7 @@
        fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Correponds to the demographic information on the front page a of Paper SVC which is ingested by a PHA from an external PHA.  \n\nThe following rules apply to an Ingested SVC Patient:\n * the identifier in the SVC Patient from the external SVC should be preserved in the Ingested SVC Patient\n * demographic content from the extenal SVC may be used to populate the Ingested SVC Patient.  \n"];
+  fhir:StructureDefinition.description [ fhir:value "Correponds to the demographic information on the front page a of Paper SVC which is ingested by a PHA from an external PHA.  \n\nThe following rules apply to an Ingested SVC Patient:\n * the identifier in the [SVC Patient](StructureDefinition-svc-patient.html) from the external SVC should be preserved in the Ingested SVC Patient\n * demographic content from the extenal SVC may be used to populate the Ingested SVC Patient.  \n\nThe PHA may also identify the referenced [SVC Patient](StructureDefinition-svc-patient.html) with a another record in their system and use that in populating the Ingested SVC Patient. \n"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

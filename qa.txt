@@ -3,9 +3,9 @@
 
 err = 6, warn = 30, info = 1
 IG Publisher Version: 1.1.63
-Generated Sun Mar 07 19:03:54 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
+Generated Mon Mar 08 14:54:42 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
 
- Build Errors : 9 / 1 / 1
+ Build Errors : 23 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle-ingested : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle-new : 0 / 1 / 1
@@ -27,7 +27,7 @@ Generated Sun Mar 07 19:03:54 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital-ingested : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital-new : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digitalupdated : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital-updated : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-paper : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19 : 0 / 2 / 1
@@ -37,12 +37,26 @@ Generated Sun Mar 07 19:03:54 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#
 ERROR: ImplementationGuide.definition.parameter[11].value: Supressed messages file not found
 WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 INFORMATION: ImplementationGuide.dependency[0].url: The correct canonical URL for this dependency is http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips
-ERROR: /github/workspace/output/StructureDefinition-svc-provenance-digital.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 233, column 254: The link 'StructureDefinition-svc-provenance-digital-udpated.html' for "Provenance of an Updated Digital SVC" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-svc-provenance-paper.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 239, column 14: The link 'StructureDefinition-svc-provenance-papar-definitions.html#Provenance.entity.role.waht' for "entity.role.what" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-svc-provenance.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 233, column 330: The link 'StructureDefinition-svc-provenance-digital-udpated.html' for "Provenance of an Updated Digital SVC" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 213, column 300: The link 'StructureDefinition-svc-provenance-digital-udpated.html' for "Provenance of an Updated Digital SVC" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 255, column 224: The link 'StructureDefinition-svc-provenance-digital-udpated.html' for "Provenance of an Updated Digital SVC" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 370, column 16: The link 'StructureDefinition-svc-provenance-papar-definitions.html#Provenance.entity.role.waht' for "entity.role.what" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-bundle-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 233, column 38: The link 'StructureDefinition-svc-bundle-update.html' for "Updated SVC Bundle" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-bundle-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 233, column 184: The link 'StructureDefinition-svc-bundle-update.html' for "Updated SVC Bundle" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-composition-new.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 236, column 8: The link 'StructureDefinition-svc-person-definitions.html#Person.identifier' for "Person.identifier" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-composition-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 238, column 112: The link 'StructureDefinittion-svc-immunization.html' for "Updated SVC Immunizations" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-composition-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 239, column 83: The link 'StructureDefintion-svc-composition-updated.html' for "Updated SVC Immunizations" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 236, column 109: The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for "author" cannot be resolved (valid targets: 112 targets)
+ERROR: /github/workspace/output/StructureDefinition-svc-provenance-digital-ingested.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 241, column 14: The link 'StructureDefinition-svc-provenance-digital-ingested-definitions.html#role' for "role" cannot be resolved (valid targets: 67 targets)
+ERROR: /github/workspace/output/StructureDefinition-svc-provenance-digital-new.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 238, column 14: The link 'StructureDefinition-svc-provenance-paper-definitions.html#role' for "role" cannot be resolved (valid targets: 67 targets)
+ERROR: /github/workspace/output/StructureDefinition-svc-provenance-digital-new.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 240, column 14: The link 'StructureDefinition-svc-provenance-new-definitions.html#Provenance.agent.onBehalfOf' for "agent.onBehalfOf" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-provenance-digital-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 240, column 14: The link 'StructureDefinition-svc-provenance-digital-updated-definitions.html#role' for "role" cannot be resolved (valid targets: 67 targets)
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 248, column 111: The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for "author" cannot be resolved (valid targets: 112 targets)
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 309, column 10: The link 'StructureDefinition-svc-person-definitions.html#Person.identifier' for "Person.identifier" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 331, column 16: The link 'StructureDefinition-svc-provenance-digital-ingested-definitions.html#role' for "role" cannot be resolved (valid targets: 67 targets)
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 404, column 16: The link 'StructureDefinition-svc-provenance-digital-updated-definitions.html#role' for "role" cannot be resolved (valid targets: 67 targets)
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 420, column 16: The link 'StructureDefinition-svc-provenance-paper-definitions.html#role' for "role" cannot be resolved (valid targets: 67 targets)
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 422, column 16: The link 'StructureDefinition-svc-provenance-new-definitions.html#Provenance.agent.onBehalfOf' for "agent.onBehalfOf" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 438, column 114: The link 'StructureDefinittion-svc-immunization.html' for "Updated SVC Immunizations" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 439, column 85: The link 'StructureDefintion-svc-composition-updated.html' for "Updated SVC Immunizations" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 523, column 8: The link 'StructureDefinition-svc-bundle-update.html' for "Updated SVC Bundle" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 523, column 154: The link 'StructureDefinition-svc-bundle-update.html' for "Updated SVC Bundle" cannot be resolved
 ERROR: /github/workspace/output/dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 175, column 12: The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for "International Patient Summary (IPS)" cannot be resolved
 ERROR: /github/workspace/output/requirements.html#/html/body/div/div/div/div/div/div/p/ul/li/ul/li/a at Line 180, column 10: The link 'usecases.html#usecase_phr' for "Use Case: Public Health Response" cannot be resolved (valid targets: [ig-status, use-cases, segment-header, publish-box, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle.json ==
@@ -112,10 +126,10 @@ WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/Str
 INFORMATION: StructureDefinition/svc-provenance-digital-new: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/svc-provenance-digital-new: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-digital-new'): The Implementation Guide contains no examples for this profile
-== /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digitalupdated.json ==
-INFORMATION: StructureDefinition/svc-provenance-digitalupdated: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/svc-provenance-digitalupdated: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-digitalupdated'): The Implementation Guide contains no examples for this profile
+== /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital-updated.json ==
+INFORMATION: StructureDefinition/svc-provenance-digital-updated: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/svc-provenance-digital-updated: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-digital-updated'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-paper.json ==
 INFORMATION: StructureDefinition/svc-provenance-paper: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/svc-provenance-paper: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided

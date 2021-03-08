@@ -20,7 +20,7 @@
   "name": "SVC_Composition_Updated",
   "title": "Updated SVC Composition",
   "status": "active",
-  "date": "2021-03-07T19:02:58+00:00",
+  "date": "2021-03-08T14:53:43+00:00",
   "publisher": "World Health Organization (WHO)",
   "contact": [
     {
@@ -32,7 +32,7 @@
       ]
     }
   ],
-  "description": "Populated container for the health content contained on a reissued Paper SVC which\n\nWhen a Paper SVC is reissued, the following rules apply:\n  * status is set to final\n  * each row in the Vaccination Events section of the Paper SVC should contain a QR-code encoding an SVC Immunization\n  * transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding Updated SVC Immunizations\n  * preserve entries in the from the external SVC Composition that correspond to Updated SVC Immunizations \n\n\nAn Update SVC Composition may:\n * contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies.\n",
+  "description": "Populated container for the health content contained on a reissued Paper SVC which\n\nWhen a Paper SVC is reissued, the following rules apply:\n  * [status](StructureDefinition-svc-composition-new-definitions.html#Composition.status)  is set to #final\n  * each row in the Vaccination Events section of the Paper SVC should contain a QR-code encoding an [SVC Immunization](StructureDefinition-svc-immunization.html)\n  * transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding [Updated SVC Immunizations](StructureDefinittion-svc-immunization.html)\n  * preserve entries in the from the external SVC Composition that correspond to [Updated SVC Immunizations](StructureDefintion-svc-composition-updated.html)\n\n\nAn Update SVC Composition may:\n * contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies.\n",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

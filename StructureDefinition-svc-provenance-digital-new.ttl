@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "SVC_Provenance_Digital_New"];
   fhir:StructureDefinition.title [ fhir:value "Provenance of a New Digital SVC"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-03-07T19:02:58+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-03-08T14:53:43+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -36,7 +36,7 @@
        fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "The Provenance of a New Digital SVC is used to assert the provenance of a Public Health Auhority (PHA) over a new Digital SVC document.  \n\nThe Provencance of a New Dgivial SVC should:\n * be generated at the time of printing a new Paper SVC\n * have as target a New SVC Composition \n * set the role to derived\n * set the agent.behalfOf to refence a New SVC Patient"];
+  fhir:StructureDefinition.description [ fhir:value "The Provenance of a New Digital SVC is used to assert the provenance of a Public Health Auhority (PHA) over a new Digital SVC document.  \n\nThe [Provencance of a New Digital SVC](StructureDefinition-svc-provenance-digital-new.html)  should:\n * be generated at the time of printing a new Paper SVC\n * have as target a [New SVC Composition](StructureDefinition-svc-composition-new.html)\n * set the [role](StructureDefinition-svc-provenance-paper-definitions.html#role)  to #derived\n * set the [entity.what](StructureDefinition-svc-provenance-digital-new-definitions.html#Provenance.entity.what) to reference the generated [New SVC Composition](StructureDefinition-svc-composition-new.html) resource\n * set the [agent.onBehalfOf](StructureDefinition-svc-provenance-new-definitions.html#Provenance.agent.onBehalfOf) to reference the generated [New SVC Patient](StructureDefinition-svc-patient-new.html) resource "];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "SVC_Provenance_Paper"];
   fhir:StructureDefinition.title [ fhir:value "Provenance of a Paper SVC"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-03-07T19:02:58+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-03-08T14:53:43+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -36,7 +36,7 @@
        fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "The [Provenance of a Paper SVC](StructureDefinition-svc-provenance-paper.html) is used to assert the provenance of a Public Health Auhority (PHA) over a Paper SVC document at time of printing. A Paper SVC document may be a newly issued  or it may be a re-issue of an existing SVC document.\n\nWhen a new Paper SVC is printed, the following rules apply:\n * generate a [New SVC Patient](StructureDefinition-svc-patient-new.html) and a [New SVC Composition](StructureDefinition-svc-composition-new.html) resource \n * set the [agent.onBehalfOf](StructureDefinition-svc-provenance-paper-definitions.html#Provenance.agent.onBehalfOf) to reference the generated [New SVC Patient](StructureDefinition-svc-patient-new.html) resource \n * set the [agent.who]](StructureDefinition-svc-provenance-papar-definitions.html#Provenance.agent.who) to reference the Organization resource associated to the PHA via the WHO Smart Directory\n * set the [entity.role.what](StructureDefinition-svc-provenance-papar-definitions.html#Provenance.entity.role.waht) to reference the generated [New SVC Composition](StructureDefinition-svc-composition-new.html) resource\n"];
+  fhir:StructureDefinition.description [ fhir:value "The [Provenance of a Paper SVC](StructureDefinition-svc-provenance-paper.html) is used to assert the provenance of a Public Health Auhority (PHA) over a Paper SVC document at time of printing. A Paper SVC document may be a newly issued  or it may be a re-issue of an existing SVC document.\n\nWhen a new Paper SVC is printed, the following rules apply:\n * generate a [New SVC Patient](StructureDefinition-svc-patient-new.html) and a [New SVC Composition](StructureDefinition-svc-composition-new.html) resource \n * set the [agent.onBehalfOf](StructureDefinition-svc-provenance-paper-definitions.html#Provenance.agent.onBehalfOf) to reference the generated [New SVC Patient](StructureDefinition-svc-patient-new.html) resource \n * set the [agent.who]](StructureDefinition-svc-provenance-paper-definitions.html#Provenance.agent.who) to reference the Organization resource associated to the PHA via the WHO Smart Directory\n * set the [entity.what](StructureDefinition-svc-provenance-paper-definitions.html#Provenance.entity.what) to reference the generated [New SVC Composition](StructureDefinition-svc-composition-new.html) resource\n"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

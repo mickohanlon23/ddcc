@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "SVC_Composition_Updated"];
   fhir:StructureDefinition.title [ fhir:value "Updated SVC Composition"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-03-07T19:02:58+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-03-08T14:53:43+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -36,7 +36,7 @@
        fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Populated container for the health content contained on a reissued Paper SVC which\n\nWhen a Paper SVC is reissued, the following rules apply:\n  * status is set to final\n  * each row in the Vaccination Events section of the Paper SVC should contain a QR-code encoding an SVC Immunization\n  * transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding Updated SVC Immunizations\n  * preserve entries in the from the external SVC Composition that correspond to Updated SVC Immunizations \n\n\nAn Update SVC Composition may:\n * contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies.\n"];
+  fhir:StructureDefinition.description [ fhir:value "Populated container for the health content contained on a reissued Paper SVC which\n\nWhen a Paper SVC is reissued, the following rules apply:\n  * [status](StructureDefinition-svc-composition-new-definitions.html#Composition.status)  is set to #final\n  * each row in the Vaccination Events section of the Paper SVC should contain a QR-code encoding an [SVC Immunization](StructureDefinition-svc-immunization.html)\n  * transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding [Updated SVC Immunizations](StructureDefinittion-svc-immunization.html)\n  * preserve entries in the from the external SVC Composition that correspond to [Updated SVC Immunizations](StructureDefintion-svc-composition-updated.html)\n\n\nAn Update SVC Composition may:\n * contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies.\n"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;
