@@ -20,7 +20,7 @@
   "name": "SVC_Composition_New",
   "title": "New SVC Composition",
   "status": "active",
-  "date": "2021-03-08T17:26:51+00:00",
+  "date": "2021-03-08T17:39:35+00:00",
   "publisher": "World Health Organization (WHO)",
   "contact": [
     {
@@ -32,7 +32,7 @@
       ]
     }
   ],
-  "description": "Empty container for the health content contained on a new Paper SVC.\n\nWhen a new Paper SVC is issued, the following rules apply to a [New SVC Composition](StructureDefinition-svc-composition-new.html):\n  * a [Person.identifier](StructureDefinition-svc-person-definitions.html#Person.identifier)  entry is generated for a [SVC Patient](StructureDefinition-svc-patient.html) with system set to 'urn:uuid' and value set to a v4 UUID.\n  * [Composition.author](StructureDefinition-svc-composition-new-definitions.html#Composition.author) is set to reference the Organization resource associated to the PHA via the WHO Smart Directory\n  * set the [status](StructureDefinition-svc-composition-new-definitions.html#Composition.status) to #preliminary\n  * for each row of the Paper SVC, an [New SVC Immunization](StructureDefinition-svc-immunization-new.html) should be generated and an entry should be created to reference this\n",
+  "description": "Empty container for the health content contained on a new Paper SVC.\n\nWhen a new Paper SVC is issued, the following rules apply to a [New SVC Composition](StructureDefinition-svc-composition-new.html):\n  * a [Person.identifier](StructureDefinition-svc-person-definitions.html#Person.identifier)  entry is generated for a [SVC Patient](StructureDefinition-svc-patient.html) with system set to 'urn:uuid' and value set to a v4 UUID.\n  * [Composition.author](StructureDefinition-svc-composition-new-definitions.html#Composition.author) is set to reference the Organization resource associated to the PHA via the WHO Smart Directory\n  * set the [status](StructureDefinition-svc-composition-new-definitions.html#Composition.status) to #preliminary\n",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

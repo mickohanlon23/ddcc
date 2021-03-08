@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 20, errors = 5, warn = 25, info = 1 -->
+<!-- broken links = 18, errors = 5, warn = 24, info = 1 -->
 <head>
   <title>SVC_RC1 : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for SVC_RC1</h1>
- <p>Generated Mon Mar 08 17:27:50 UTC 2021, FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = <a href="http://fhir.org/guides/who/svc-rc1">http://fhir.org/guides/who/svc-rc1</a> (<a href="http://fhir.org/guides/who/svc-rc1/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Mon Mar 08 17:40:17 UTC 2021, FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = <a href="http://fhir.org/guides/who/svc-rc1">http://fhir.org/guides/who/svc-rc1</a> (<a href="http://fhir.org/guides/who/svc-rc1/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.63</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.who.svc-rc1, Canonical = http://fhir.org/guides/who/svc-rc1</td></tr>
@@ -37,14 +37,14 @@
  <tr><td>HL7 Publication Rules:</td><td>Code = n/a. package-list.json: file not found in /github/workspace</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.org/guides/who/svc-rc1 (Problem #1 with package-list.json at http://fhir.org/guides/who/svc-rc1: http://fhir.org/guides/who/svc-rc1/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 20, errors = 5, warn = 25, info = 1</td></tr>
+ <tr><td>Summary:</td><td> broken links = 18, errors = 5, warn = 24, info = 1</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>21</b></td><td><b>1</b></td><td><b>1</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>19</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-bundle-new"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle-new</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
@@ -62,10 +62,7 @@
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-composition-updated"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-updated</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-immunization-new"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization-new</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
-   </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-immunization-updated"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization-updated</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-immunization"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-organization"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-organization</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
@@ -118,64 +115,58 @@
      <td><b>ImplementationGuide.dependency[0].url</b></td><td><b>information</b></td><td title=""><b>The correct canonical URL for this dependency is http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-bundle-updated.html#d9327920-f7cf-4f65-be3f-d7f6cad97819">StructureDefinition-svc-bundle-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 233, column 38</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-bundle-update.html' for &quot;Updated SVC Bundle&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-bundle-updated.html#a2a4384d-31c6-46c7-bdd6-edb0dd182724">StructureDefinition-svc-bundle-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 233, column 38</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-bundle-update.html' for &quot;Updated SVC Bundle&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-bundle-updated.html#d9327920-f7cf-4f65-be3f-d7f6cad97819">StructureDefinition-svc-bundle-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 233, column 184</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-bundle-update.html' for &quot;Updated SVC Bundle&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-bundle-updated.html#a2a4384d-31c6-46c7-bdd6-edb0dd182724">StructureDefinition-svc-bundle-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 233, column 184</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-bundle-update.html' for &quot;Updated SVC Bundle&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-composition-new.html#95ea142e-95c5-4414-8acc-770b53157f2c">StructureDefinition-svc-composition-new.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 236, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-person-definitions.html#Person.identifier' for &quot;Person.identifier&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-composition-new.html#6d6d3a61-8090-428c-a685-8499097deed7">StructureDefinition-svc-composition-new.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 236, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-person-definitions.html#Person.identifier' for &quot;Person.identifier&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-composition-updated.html#2e791071-563c-4234-b53f-f832ad2815ca">StructureDefinition-svc-composition-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 238, column 112</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinittion-svc-immunization.html' for &quot;Updated SVC Immunizations&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-composition-updated.html#38c839d3-e02d-40f9-b672-fdc4786e215f">StructureDefinition-svc-composition-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 112</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinittion-svc-immunization.html' for &quot;SVC Immunizations&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-composition-updated.html#dbc38b4f-517b-412b-983d-f532a15d26a6">StructureDefinition-svc-composition-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 239, column 83</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-svc-composition-updated.html' for &quot;Updated SVC Immunizations&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-composition.html#f9239a30-9cd7-4dcf-b48f-f2112644812e">StructureDefinition-svc-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 236, column 109</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 112 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-composition.html#db5f4fbf-f009-4cb6-be95-43d1fbb9f736">StructureDefinition-svc-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 236, column 109</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 112 targets)</b></td>
+     <td><b><a href="StructureDefinition-svc-provenance-digital-new.html#55993622-da6f-4956-a947-ff5ff73a7b74">StructureDefinition-svc-provenance-digital-new.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 238, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-paper-definitions.html#role' for &quot;role&quot; cannot be resolved (valid targets: 67 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-provenance-digital-new.html#ba67ab25-6d90-4211-a4c2-a105ba957d03">StructureDefinition-svc-provenance-digital-new.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 238, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-paper-definitions.html#role' for &quot;role&quot; cannot be resolved (valid targets: 67 targets)</b></td>
+     <td><b><a href="StructureDefinition-svc-provenance-digital-new.html#b8e65caf-c381-4261-904c-e2b1198a2a5c">StructureDefinition-svc-provenance-digital-new.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 240, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-new-definitions.html#Provenance.agent.onBehalfOf' for &quot;agent.onBehalfOf&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-provenance-digital-new.html#0fa9e350-cced-4e5f-8a12-ea5f2e5c023d">StructureDefinition-svc-provenance-digital-new.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 240, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-new-definitions.html#Provenance.agent.onBehalfOf' for &quot;agent.onBehalfOf&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-provenance-digital-updated.html#9fc8c8db-69dc-4359-9c8d-86694bf0a1ca">StructureDefinition-svc-provenance-digital-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 240, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-digital-updated-definitions.html#role' for &quot;role&quot; cannot be resolved (valid targets: 67 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-provenance-digital-updated.html#f9286a86-0cf7-4f9d-809f-6314e5c5323a">StructureDefinition-svc-provenance-digital-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 240, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-digital-updated-definitions.html#role' for &quot;role&quot; cannot be resolved (valid targets: 67 targets)</b></td>
+     <td><b><a href="artifacts.html#a87e1081-c6ba-4511-b53b-7b3264db0325">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 239, column 111</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 112 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#d063fea5-9e23-4133-8c77-5eee4fbbfe87">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 248, column 111</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 112 targets)</b></td>
+     <td><b><a href="artifacts.html#3e5a1c25-f126-423d-b2e7-9fda0c778d86">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 299, column 10</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-person-definitions.html#Person.identifier' for &quot;Person.identifier&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#450c078b-af8e-4a9e-bb91-b8fc42660864">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 309, column 10</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-person-definitions.html#Person.identifier' for &quot;Person.identifier&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#3994e592-3a7f-4b1d-9a3d-a56976038908">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 347, column 16</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-digital-updated-definitions.html#role' for &quot;role&quot; cannot be resolved (valid targets: 67 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#bcbca503-ee33-4d00-9e13-bec2be26fdb6">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 374, column 16</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-digital-updated-definitions.html#role' for &quot;role&quot; cannot be resolved (valid targets: 67 targets)</b></td>
+     <td><b><a href="artifacts.html#4f0fe95c-4cac-4aa1-8e3a-3a99a5a8cfa3">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 372, column 16</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-paper-definitions.html#role' for &quot;role&quot; cannot be resolved (valid targets: 67 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#e641b30a-a5f3-4691-81b5-de1a96de6fb0">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 390, column 16</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-paper-definitions.html#role' for &quot;role&quot; cannot be resolved (valid targets: 67 targets)</b></td>
+     <td><b><a href="artifacts.html#7f2e6264-283f-4a19-bacc-09b7c9af9045">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 374, column 16</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-new-definitions.html#Provenance.agent.onBehalfOf' for &quot;agent.onBehalfOf&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#e29a6302-3ef2-4a2f-89e8-9c6aad58483b">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 392, column 16</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-new-definitions.html#Provenance.agent.onBehalfOf' for &quot;agent.onBehalfOf&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#3449ee5f-1f8c-4658-84be-eed72d1040eb">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 389, column 114</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinittion-svc-immunization.html' for &quot;SVC Immunizations&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#94d8a3a5-4b55-444f-8897-cdcddc36d766">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 408, column 114</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinittion-svc-immunization.html' for &quot;Updated SVC Immunizations&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#d0bf7a16-32cd-4586-870c-8516d7510f89">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 422, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-bundle-update.html' for &quot;Updated SVC Bundle&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#e2ba3cfb-48dc-49aa-bf95-e8335961c902">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 409, column 85</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-svc-composition-updated.html' for &quot;Updated SVC Immunizations&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#d0bf7a16-32cd-4586-870c-8516d7510f89">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 422, column 154</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-bundle-update.html' for &quot;Updated SVC Bundle&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#265dab7a-5b9c-40fe-831a-efcb9ce13607">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 456, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-bundle-update.html' for &quot;Updated SVC Bundle&quot; cannot be resolved</b></td>
+     <td><b><a href="dependencies.html#f91e4072-95ad-431d-9654-75a4a536fe3a">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 175, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#265dab7a-5b9c-40fe-831a-efcb9ce13607">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 456, column 154</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-bundle-update.html' for &quot;Updated SVC Bundle&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="dependencies.html#4efc4d12-2e67-49bc-b106-11c9d1c067a2">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 175, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="requirements.html#4a889cc8-1109-4b35-a46b-0b2c16f77167">requirements.html#/html/body/div/div/div/div/div/div/p/ul/li/ul/li/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'usecases.html#usecase_phr' for &quot;Use Case: Public Health Response&quot; cannot be resolved (valid targets: [ig-status, use-cases, segment-header, publish-box, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+     <td><b><a href="requirements.html#6dbfc737-4050-415d-9858-b634fff3191e">requirements.html#/html/body/div/div/div/div/div/div/p/ul/li/ul/li/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'usecases.html#usecase_phr' for &quot;Use Case: Public Health Response&quot; cannot be resolved (valid targets: [ig-status, use-cases, segment-header, publish-box, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
    </tr>
 </table>
 <hr/>
@@ -258,31 +249,17 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-immunization-new"> </a>
-<h2><a href="StructureDefinition-svc-immunization-new.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization-new.json</a></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-immunization"> </a>
+<h2><a href="StructureDefinition-svc-immunization.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #d6feff">
-     <td><b>StructureDefinition/svc-immunization-new: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+     <td><b>StructureDefinition/svc-immunization: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization-new')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-immunization-updated"> </a>
-<h2><a href="StructureDefinition-svc-immunization-updated.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization-updated.json</a></h2>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #d6feff">
-     <td><b>StructureDefinition/svc-immunization-updated: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization-updated')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
