@@ -1,17 +1,15 @@
 ﻿SVC_RC1 : Validation Results
 =========================================
 
-err = 6, warn = 30, info = 1
+err = 5, warn = 25, info = 1
 IG Publisher Version: 1.1.63
-Generated Mon Mar 08 14:54:42 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
+Generated Mon Mar 08 17:27:50 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
 
- Build Errors : 23 / 1 / 1
+ Build Errors : 21 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle-ingested : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle-new : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle-updated : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-ingested : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-new : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-updated : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization : 0 / 0 / 1
@@ -19,13 +17,11 @@ Generated Mon Mar 08 14:54:42 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization-updated : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-organization : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-patient : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-svc-patient-ingested : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-patient-new : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-patient-updated : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital-ingested : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital-new : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital-updated : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-paper : 0 / 2 / 1
@@ -43,27 +39,22 @@ ERROR: /github/workspace/output/StructureDefinition-svc-composition-new.html#/ht
 ERROR: /github/workspace/output/StructureDefinition-svc-composition-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 238, column 112: The link 'StructureDefinittion-svc-immunization.html' for "Updated SVC Immunizations" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-svc-composition-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 239, column 83: The link 'StructureDefintion-svc-composition-updated.html' for "Updated SVC Immunizations" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-svc-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 236, column 109: The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for "author" cannot be resolved (valid targets: 112 targets)
-ERROR: /github/workspace/output/StructureDefinition-svc-provenance-digital-ingested.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 241, column 14: The link 'StructureDefinition-svc-provenance-digital-ingested-definitions.html#role' for "role" cannot be resolved (valid targets: 67 targets)
 ERROR: /github/workspace/output/StructureDefinition-svc-provenance-digital-new.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 238, column 14: The link 'StructureDefinition-svc-provenance-paper-definitions.html#role' for "role" cannot be resolved (valid targets: 67 targets)
 ERROR: /github/workspace/output/StructureDefinition-svc-provenance-digital-new.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 240, column 14: The link 'StructureDefinition-svc-provenance-new-definitions.html#Provenance.agent.onBehalfOf' for "agent.onBehalfOf" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-svc-provenance-digital-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 240, column 14: The link 'StructureDefinition-svc-provenance-digital-updated-definitions.html#role' for "role" cannot be resolved (valid targets: 67 targets)
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 248, column 111: The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for "author" cannot be resolved (valid targets: 112 targets)
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 309, column 10: The link 'StructureDefinition-svc-person-definitions.html#Person.identifier' for "Person.identifier" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 331, column 16: The link 'StructureDefinition-svc-provenance-digital-ingested-definitions.html#role' for "role" cannot be resolved (valid targets: 67 targets)
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 404, column 16: The link 'StructureDefinition-svc-provenance-digital-updated-definitions.html#role' for "role" cannot be resolved (valid targets: 67 targets)
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 420, column 16: The link 'StructureDefinition-svc-provenance-paper-definitions.html#role' for "role" cannot be resolved (valid targets: 67 targets)
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 422, column 16: The link 'StructureDefinition-svc-provenance-new-definitions.html#Provenance.agent.onBehalfOf' for "agent.onBehalfOf" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 438, column 114: The link 'StructureDefinittion-svc-immunization.html' for "Updated SVC Immunizations" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 439, column 85: The link 'StructureDefintion-svc-composition-updated.html' for "Updated SVC Immunizations" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 523, column 8: The link 'StructureDefinition-svc-bundle-update.html' for "Updated SVC Bundle" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 523, column 154: The link 'StructureDefinition-svc-bundle-update.html' for "Updated SVC Bundle" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 374, column 16: The link 'StructureDefinition-svc-provenance-digital-updated-definitions.html#role' for "role" cannot be resolved (valid targets: 67 targets)
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 390, column 16: The link 'StructureDefinition-svc-provenance-paper-definitions.html#role' for "role" cannot be resolved (valid targets: 67 targets)
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 392, column 16: The link 'StructureDefinition-svc-provenance-new-definitions.html#Provenance.agent.onBehalfOf' for "agent.onBehalfOf" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 408, column 114: The link 'StructureDefinittion-svc-immunization.html' for "Updated SVC Immunizations" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 409, column 85: The link 'StructureDefintion-svc-composition-updated.html' for "Updated SVC Immunizations" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 456, column 8: The link 'StructureDefinition-svc-bundle-update.html' for "Updated SVC Bundle" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 456, column 154: The link 'StructureDefinition-svc-bundle-update.html' for "Updated SVC Bundle" cannot be resolved
 ERROR: /github/workspace/output/dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 175, column 12: The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for "International Patient Summary (IPS)" cannot be resolved
 ERROR: /github/workspace/output/requirements.html#/html/body/div/div/div/div/div/div/p/ul/li/ul/li/a at Line 180, column 10: The link 'usecases.html#usecase_phr' for "Use Case: Public Health Response" cannot be resolved (valid targets: [ig-status, use-cases, segment-header, publish-box, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle.json ==
 INFORMATION: StructureDefinition/svc-bundle: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle-ingested.json ==
-INFORMATION: StructureDefinition/svc-bundle-ingested: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle-ingested'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle-new.json ==
 INFORMATION: StructureDefinition/svc-bundle-new: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle-new'): The Implementation Guide contains no examples for this profile
@@ -74,10 +65,6 @@ WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/Str
 INFORMATION: StructureDefinition/svc-composition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/svc-composition: StructureDefinition.snapshot.element[95].slicing.discriminator[0]: ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
 ERROR: StructureDefinition/svc-composition: StructureDefinition.differential.element[14].slicing.discriminator[0]: ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
-== /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-ingested.json ==
-INFORMATION: StructureDefinition/svc-composition-ingested: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-ERROR: StructureDefinition/svc-composition-ingested: StructureDefinition.snapshot.element[95].slicing.discriminator[0]: ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
-WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition-ingested'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-new.json ==
 INFORMATION: StructureDefinition/svc-composition-new: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: StructureDefinition/svc-composition-new: StructureDefinition.snapshot.element[95].slicing.discriminator[0]: ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
@@ -99,9 +86,6 @@ INFORMATION: StructureDefinition/svc-organization: StructureDefinition: Validate
 WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-patient.json ==
 INFORMATION: StructureDefinition/svc-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== /github/workspace/fsh-generated/resources/StructureDefinition-svc-patient-ingested.json ==
-INFORMATION: StructureDefinition/svc-patient-ingested: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient-ingested'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-patient-new.json ==
 INFORMATION: StructureDefinition/svc-patient-new: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient-new'): The Implementation Guide contains no examples for this profile
@@ -114,14 +98,10 @@ WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/Str
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance.json ==
 INFORMATION: StructureDefinition/svc-provenance: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/svc-provenance: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition/svc-provenance: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: StructureDefinition/svc-provenance: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital.json ==
 INFORMATION: StructureDefinition/svc-provenance-digital: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/svc-provenance-digital: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-== /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital-ingested.json ==
-INFORMATION: StructureDefinition/svc-provenance-digital-ingested: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/svc-provenance-digital-ingested: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-digital-ingested'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital-new.json ==
 INFORMATION: StructureDefinition/svc-provenance-digital-new: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition/svc-provenance-digital-new: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
