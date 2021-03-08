@@ -206,7 +206,7 @@
         <reference value="StructureDefinition/svc-patient-new"/>
       </reference>
       <name value="New SVC Patient"/>
-      <description value="Correponds to the demographic information on the front page of a new Paper SVC.&#xA;&#xA;When a new Paper SVC is issued, the following rules apply:&#xA;  * a [Person.identifier]((StructureDefinition-svc-patient-definitions.html#Patient.identifier)  entry is generated with system set to &#39;urn:uuid&#39; and value set to a v4 UUID."/>
+      <description value="Correponds to the demographic information on the front page of a new Paper SVC.&#xA;&#xA;When a new Paper SVC is issued, the following rules apply:&#xA;  * a [Person.identifier](StructureDefinition-svc-patient-definitions.html#Patient.identifier)  entry is generated with system set to &#39;urn:uuid&#39; and value set to a v4 UUID."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -276,7 +276,7 @@
         <reference value="StructureDefinition/svc-patient"/>
       </reference>
       <name value="SVC Patient"/>
-      <description value="Correponds to the demographic information on the front page of the Paper SVC. This profile is not intended to be instantiated directly, rather a [New SVC Patient](StructureDefinition-svc-patient-new.html) or an [Updated SVC Patient](StructureDefinition-svc-patient-updated.html) should be used.  &#xA;A SVC_Patient should:&#xA;* set the [identifier.assigner]((StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner) to reference the [SVC Organization](StructureDefinition-svc-organization.html) resource associated to the PHA via the WHO Smart Directory"/>
+      <description value="Correponds to the demographic information on the front page of the Paper SVC. This profile is not intended to be instantiated directly, rather a [New SVC Patient](StructureDefinition-svc-patient-new.html) or an [Updated SVC Patient](StructureDefinition-svc-patient-updated.html) should be used.  &#xA;A SVC_Patient should:&#xA;* set the [identifier.assigner](StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner) to reference the [SVC Organization](StructureDefinition-svc-organization.html) resource associated to the PHA via the WHO Smart Directory"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
