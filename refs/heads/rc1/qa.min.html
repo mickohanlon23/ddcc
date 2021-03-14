@@ -1,0 +1,510 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 20, errors = 5, warn = 24, info = 1 -->
+<head>
+  <title>SVC_RC1 : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for SVC_RC1</h1>
+ <p>Generated Sun Mar 14 04:06:36 UTC 2021, FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = <a href="http://fhir.org/guides/who/svc-rc1">http://fhir.org/guides/who/svc-rc1</a> (<a href="http://fhir.org/guides/who/svc-rc1/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.63</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.who.svc-rc1, Canonical = http://fhir.org/guides/who/svc-rc1</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.2.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> fhir.who.svc-rc1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.2.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://fhir.org/guides/who/svc-rc1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.ips</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/ips</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/ips/STU1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: who.fhir.template#0.0.2 -&gt; cqf.fhir.template#0.0.2 -&gt; fhir.base.template#0.2.1</para></div></td></tr>
+ <tr><td>HL7 Publication Rules:</td><td>Code = n/a. package-list.json: file not found in /github/workspace</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.org/guides/who/svc-rc1 (Problem #1 with package-list.json at http://fhir.org/guides/who/svc-rc1: http://fhir.org/guides/who/svc-rc1/package-list.json)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 20, errors = 5, warn = 24, info = 1</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>21</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-bundle-new"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle-new</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-bundle-updated"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle-updated</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-composition"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-composition</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-composition-new"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-new</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-composition-updated"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-updated</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-immunization"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-organization"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-organization</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-patient-new"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-patient-new</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-patient-updated"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-patient-updated</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-practitioner"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-provenance"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-provenance-digital"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-provenance-digital-new"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital-new</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-provenance-digital-updated"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital-updated</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-provenance-paper"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-paper</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-who-svc-vaccines"><b>/github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-who-svc-vaccines-covid-19"><b>/github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_input_svc"><b>/github/workspace/input/svc</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a></h2>
+ <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b>ImplementationGuide.definition.parameter[11].value</b></td><td><b>error</b></td><td title=""><b>Supressed messages file not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.dependency[0].url</b></td><td><b>warning</b></td><td title=""><b>The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ImplementationGuide.dependency[0].url</b></td><td><b>information</b></td><td title=""><b>The correct canonical URL for this dependency is http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-svc-bundle-updated.html#d647998e-3991-4192-918f-7324aab27299">StructureDefinition-svc-bundle-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 233, column 38</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-bundle-update.html' for &quot;Updated SVC Bundle&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-svc-bundle-updated.html#d647998e-3991-4192-918f-7324aab27299">StructureDefinition-svc-bundle-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 233, column 184</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-bundle-update.html' for &quot;Updated SVC Bundle&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-svc-composition-new.html#b95f14b8-7e01-4d9a-b4e6-64c3a33db392">StructureDefinition-svc-composition-new.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 236, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient-definitions.html#Person.identifier' for &quot;Person.identifier&quot; cannot be resolved (valid targets: 78 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-svc-composition-updated.html#2fd93981-a9c9-4208-82ba-86b5d9a7ddfd">StructureDefinition-svc-composition-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 112</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinittion-svc-immunization.html' for &quot;SVC Immunizations&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-svc-composition.html#333a2f77-d9a0-43b6-b20a-84dc1cc6c4cc">StructureDefinition-svc-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 236, column 109</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 112 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-svc-patient.html#195d48fa-c8d3-4212-a6cc-661405fd5d78">StructureDefinition-svc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 236, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 78 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-svc-provenance-digital-new.html#9e9594fd-cefc-40d6-a0ff-7eb1791fd27b">StructureDefinition-svc-provenance-digital-new.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 238, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-paper-definitions.html#role' for &quot;role&quot; cannot be resolved (valid targets: 67 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-svc-provenance-digital-new.html#509831e1-d64d-4f85-80a0-69d9d503cf9c">StructureDefinition-svc-provenance-digital-new.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 240, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-new-definitions.html#Provenance.agent.onBehalfOf' for &quot;agent.onBehalfOf&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="StructureDefinition-svc-provenance-digital-updated.html#2bebbaab-ff5f-4795-887b-4c302dee5626">StructureDefinition-svc-provenance-digital-updated.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 240, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-digital-updated-definitions.html#role' for &quot;role&quot; cannot be resolved (valid targets: 67 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#a81c68e5-b018-4c83-85f2-940182828445">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 225, column 16</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 78 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#989fb2ad-055d-4313-bd9b-ecb32dd6bd7f">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 239, column 111</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 112 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#10d9155a-9bac-483c-9c78-b491b6301ea5">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 299, column 10</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient-definitions.html#Person.identifier' for &quot;Person.identifier&quot; cannot be resolved (valid targets: 78 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#b823c56f-e260-4334-84eb-82fe9de80305">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 347, column 16</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-digital-updated-definitions.html#role' for &quot;role&quot; cannot be resolved (valid targets: 67 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#734ee387-21d0-4504-ad45-fd771fe62c90">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 372, column 16</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-paper-definitions.html#role' for &quot;role&quot; cannot be resolved (valid targets: 67 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#767f74c8-3df6-42c1-8833-3d8d7f139d37">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 374, column 16</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-provenance-new-definitions.html#Provenance.agent.onBehalfOf' for &quot;agent.onBehalfOf&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#17b1dd0c-124d-49c8-af84-4873f8b72cf1">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 389, column 114</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinittion-svc-immunization.html' for &quot;SVC Immunizations&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#c2f1597d-174c-43fc-a63d-b192d406590c">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 422, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-bundle-update.html' for &quot;Updated SVC Bundle&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#c2f1597d-174c-43fc-a63d-b192d406590c">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 422, column 154</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-bundle-update.html' for &quot;Updated SVC Bundle&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="dependencies.html#5e537d2c-d96f-4689-9909-008be86b558a">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 175, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="requirements.html#234c461f-f308-4054-bdc6-b21622aa4223">requirements.html#/html/body/div/div/div/div/div/div/p/ul/li/ul/li/a at Line 180, column 10</a></b></td><td><b>error</b></td><td><b>The link 'usecases.html#usecase_phr' for &quot;Use Case: Public Health Response&quot; cannot be resolved (valid targets: [ig-status, use-cases, segment-header, publish-box, stripe, segment-footer, segment-post-footer, segment-navbar, segment-content, segment-breadcrumb])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-bundle-new"> </a>
+<h2><a href="StructureDefinition-svc-bundle-new.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle-new.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/svc-bundle-new: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle-new')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-bundle-updated"> </a>
+<h2><a href="StructureDefinition-svc-bundle-updated.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle-updated.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/svc-bundle-updated: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle-updated')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-composition"> </a>
+<h2><a href="StructureDefinition-svc-composition.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-composition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/svc-composition: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/svc-composition: StructureDefinition.snapshot.element[95].slicing.discriminator[0]</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/svc-composition: StructureDefinition.differential.element[14].slicing.discriminator[0]</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-composition-new"> </a>
+<h2><a href="StructureDefinition-svc-composition-new.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-new.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/svc-composition-new: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/svc-composition-new: StructureDefinition.snapshot.element[95].slicing.discriminator[0]</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition-new')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-composition-updated"> </a>
+<h2><a href="StructureDefinition-svc-composition-updated.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-updated.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/svc-composition-updated: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/svc-composition-updated: StructureDefinition.snapshot.element[95].slicing.discriminator[0]</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition-updated')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-immunization"> </a>
+<h2><a href="StructureDefinition-svc-immunization.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/svc-immunization: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-organization"> </a>
+<h2><a href="StructureDefinition-svc-organization.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-organization.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/svc-organization: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-patient-new"> </a>
+<h2><a href="StructureDefinition-svc-patient-new.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-patient-new.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/svc-patient-new: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient-new')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-patient-updated"> </a>
+<h2><a href="StructureDefinition-svc-patient-updated.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-patient-updated.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/svc-patient-updated: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient-updated')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-practitioner"> </a>
+<h2><a href="StructureDefinition-svc-practitioner.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/svc-practitioner: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-provenance"> </a>
+<h2><a href="StructureDefinition-svc-provenance.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/svc-provenance: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-provenance: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-provenance: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-provenance-digital"> </a>
+<h2><a href="StructureDefinition-svc-provenance-digital.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/svc-provenance-digital: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-provenance-digital: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-provenance-digital-new"> </a>
+<h2><a href="StructureDefinition-svc-provenance-digital-new.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital-new.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/svc-provenance-digital-new: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-provenance-digital-new: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-digital-new')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-provenance-digital-updated"> </a>
+<h2><a href="StructureDefinition-svc-provenance-digital-updated.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital-updated.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/svc-provenance-digital-updated: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-provenance-digital-updated: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-digital-updated')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-provenance-paper"> </a>
+<h2><a href="StructureDefinition-svc-provenance-paper.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-paper.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/svc-provenance-paper: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-provenance-paper: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-paper')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-who-svc-vaccines"> </a>
+<h2><a href="ValueSet-who-svc-vaccines.html">/github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/who-svc-vaccines: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet/who-svc-vaccines: ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'who-svc-vaccines')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system https://icd.who.int/browse11</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-who-svc-vaccines-covid-19"> </a>
+<h2><a href="ValueSet-who-svc-vaccines-covid-19.html">/github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/who-svc-vaccines-covid-19: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet/who-svc-vaccines-covid-19: ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'who-svc-vaccines-covid-19')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system https://icd.who.int/browse11</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_svc"> </a>
+<h2><a href="ImplementationGuide-fhir.who.svc-rc1.html">/github/workspace/input/svc.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ImplementationGuide/fhir.who.svc-rc1: ImplementationGuide</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide/fhir.who.svc-rc1: ImplementationGuide.definition.page.page[2].title</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="TERMINOLOGY_TX_SYSTEM_NO_CODE"> </a>
+<h2>TERMINOLOGY_TX_SYSTEM_NO_CODE</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-svc-provenance.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-svc-provenance.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-svc-provenance-digital.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-svc-provenance-digital-new.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital-new.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-svc-provenance-digital-updated.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-digital-updated.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-svc-provenance-paper.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-paper.json</a></td><td><b>A code with no system has no defined meaning. A system should be provided</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_String_WS"> </a>
+<h2>Type_Specific_Checks_DT_String_WS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-fhir.who.svc-rc1.html">/github/workspace/input/svc.xml</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_Minimum"> </a>
+<h2>Validation_VAL_Profile_Minimum</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-svc-composition.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-composition.json</a></td><td><b>ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-svc-composition.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-composition.json</a></td><td><b>ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-svc-composition-new.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-new.json</a></td><td><b>ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-svc-composition-updated.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-composition-updated.json</a></td><td><b>ElementDefinition.slicing.discriminator.path: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)</b></td>
+   </tr>
+</table>
+</body>
+</html>
