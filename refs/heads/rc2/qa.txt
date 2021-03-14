@@ -1,9 +1,9 @@
-﻿SVC_RC1 : Validation Results
+﻿SVC_RC2 : Validation Results
 =========================================
 
-err = 5, warn = 24, info = 1
+err = 8, warn = 24, info = 1
 IG Publisher Version: 1.1.63
-Generated Sun Mar 14 03:45:39 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
+Generated Sun Mar 14 03:54:52 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
 
  Build Errors : 21 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle : 0 / 0 / 1
@@ -25,7 +25,7 @@ Generated Sun Mar 14 03:45:39 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance-paper : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19 : 0 / 2 / 1
- /github/workspace/input/svc : 0 / 1 / 1
+ /github/workspace/input/svc : 3 / 1 / 1
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[11].value: Supressed messages file not found
@@ -116,5 +116,8 @@ INFORMATION: ValueSet/who-svc-vaccines-covid-19: ValueSet: Validate resource aga
 WARNING: ValueSet/who-svc-vaccines-covid-19: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'who-svc-vaccines-covid-19'): Error from server: Unable to provide support for code system https://icd.who.int/browse11
 == /github/workspace/input/svc.xml ==
+ERROR: ImplementationGuide.where(url = 'http://fhir.org/guides/who/svc-rc1/ImplementationGuide/fhir.who.svc-rc2'): Conformance resource /github/workspace/input/svc.xml - the canonical URL (http://fhir.org/guides/who/svc-rc1/ImplementationGuide/fhir.who.svc-rc1) does not match the URL (http://fhir.org/guides/who/svc-rc1/ImplementationGuide/fhir.who.svc-rc2)
+ERROR: ImplementationGuide.url: Resource id/url mismatch: fhir.who.svc-rc1/http://fhir.org/guides/who/svc-rc1/ImplementationGuide/fhir.who.svc-rc2
 INFORMATION: ImplementationGuide/fhir.who.svc-rc1: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 WARNING: ImplementationGuide/fhir.who.svc-rc1: ImplementationGuide.definition.page.page[2].title: value should not start or finish with whitespace
+ERROR: /github/workspace/input/svc: URL Mismatch http://fhir.org/guides/who/svc-rc1/ImplementationGuide/fhir.who.svc-rc1 vs http://fhir.org/guides/who/svc-rc1/ImplementationGuide/fhir.who.svc-rc2
