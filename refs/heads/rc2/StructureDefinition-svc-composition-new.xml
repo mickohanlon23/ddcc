@@ -19,7 +19,7 @@
   <name value="SVC_Composition_New"/>
   <title value="New SVC Composition"/>
   <status value="active"/>
-  <date value="2021-03-14T03:54:12+00:00"/>
+  <date value="2021-03-16T13:13:10+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -27,7 +27,7 @@
       <value value="https://www.who.int"/>
     </telecom>
   </contact>
-  <description value="Empty container for the health content contained on a new Paper SVC.&#xA;&#xA;When a new Paper SVC is issued, the following rules apply to a [New SVC Composition](StructureDefinition-svc-composition-new.html):&#xA;  * a [Person.identifier](StructureDefinition-svc-patient-definitions.html#Person.identifier)  entry is generated for a [SVC Patient](StructureDefinition-svc-patient.html) with system set to &#39;urn:uuid&#39; and value set to a v4 UUID.&#xA;  * [Composition.author](StructureDefinition-svc-composition-new-definitions.html#Composition.author) is set to reference the Organization resource associated to the PHA via the WHO Smart Directory&#xA;  * set the [status](StructureDefinition-svc-composition-new-definitions.html#Composition.status) to #preliminary&#xA;"/>
+  <description value="Empty container for the health content contained on a new Paper SVC.&#xA;&#xA;When a new Paper SVC is issued, the following rules apply to a [New SVC Composition](StructureDefinition-svc-composition-new.html):&#xA;  * a [Person.identifier](StructureDefinition-svc-patient-definitions.html#Person.identifier)  entry is generated for a [SVC Patient](StructureDefinition-svc-patient.html) with system set to &#39;urn:uuid&#39; and value set to a v4 UUID.&#xA;  * [Composition.author](StructureDefinition-svc-composition-new-definitions.html#Composition.author) is set to reference the Organization resource associated to the PHA via the WHO Smart Directory&#xA;  * set the [status](StructureDefinition-svc-composition-new-definitions.html#Composition.status) to #preliminary&#xA;  * for each row of the Paper SVC, an [New SVC Immunization](StructureDefinition-svc-immunization-new.html) should be generated and an entry should be created to reference this&#xA;&#xA;"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>
