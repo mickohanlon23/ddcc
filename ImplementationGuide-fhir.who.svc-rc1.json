@@ -322,71 +322,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/svc-patient-new"
-        },
-        "name": "New SVC Patient",
-        "description": "Correponds to the demographic information on the front page of a new Paper SVC.\n\nWhen a new Paper SVC is issued, the following rules apply:\n  * a [Person.identifier](StructureDefinition-svc-patient-definitions.html#Patient.identifier)  entry is generated with system set to 'urn:uuid' and value set to a v4 UUID."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/svc-composition-new"
-        },
-        "name": "New SVC Composition",
-        "description": "Empty container for the health content contained on a new Paper SVC.\n\nWhen a new Paper SVC is issued, the following rules apply to a [New SVC Composition](StructureDefinition-svc-composition-new.html):\n  * a [Person.identifier](StructureDefinition-svc-patient-definitions.html#Person.identifier)  entry is generated for a [SVC Patient](StructureDefinition-svc-patient.html) with system set to 'urn:uuid' and value set to a v4 UUID.\n  * [Composition.author](StructureDefinition-svc-composition-new-definitions.html#Composition.author) is set to reference the Organization resource associated to the PHA via the WHO Smart Directory\n  * set the [status](StructureDefinition-svc-composition-new-definitions.html#Composition.status) to #preliminary"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/who-svc-vaccines"
-        },
-        "name": "WHO Vaccine List",
-        "description": "The WHO Vaccine List from [ICD 11](https://icd.who.int/browse11) is used by:\n *  the [SVC Immunization](StructureDefinition-svc-immunization.html)"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource:abstract"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/svc-bundle"
-        },
-        "name": "SVC Bundle",
-        "description": "An [SVC Bundle](StructureDefinition-svc-bundle.html) contains the content to be encoded in QR-code on the front page of a Paper SVC."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/svc-provenance-paper"
-        },
-        "name": "Provenance of a Paper SVC",
-        "description": "The [Provenance of a Paper SVC](StructureDefinition-svc-provenance-paper.html) is used to assert the provenance of a Public Health Auhority (PHA) over a Paper SVC document at time of printing. A Paper SVC document may be a newly issued  or it may be a re-issue of an existing SVC document.\n\nWhen a new Paper SVC is printed, the following rules apply:\n * generate a [New SVC Patient](StructureDefinition-svc-patient-new.html) and a [New SVC Composition](StructureDefinition-svc-composition-new.html) resource \n * set the [agent.onBehalfOf](StructureDefinition-svc-provenance-paper-definitions.html#Provenance.agent.onBehalfOf) to reference the generated [New SVC Patient](StructureDefinition-svc-patient-new.html) resource \n * set the [agent.who]](StructureDefinition-svc-provenance-paper-definitions.html#Provenance.agent.who) to reference the Organization resource associated to the PHA via the WHO Smart Directory\n * set the [entity.what](StructureDefinition-svc-provenance-paper-definitions.html#Provenance.entity.what) to reference the generated [New SVC Composition](StructureDefinition-svc-composition-new.html) resource"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource:abstract"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/svc-provenance"
         },
         "name": "Provenance of SVC",
@@ -400,42 +335,42 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/svc-bundle-new"
+          "reference": "StructureDefinition/svc-composition"
         },
-        "name": "New SVC Bundle",
-        "description": "* amend this by transferring the non-digital demographic content  from the Paper SVC into the [SVC Patient] resource"
+        "name": "SVC Composition",
+        "description": "Container for the health content contained on a Paper SVC.  A [SVC Composition](StructureDefinition-svc-composition.html) should:\n * be accessible from a SVC Registry as located via the WHO SMART Directory for the PHA referenced in the [author](StructureDefinition-svc-composition-definitions.html#Composition.agent)."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/svc-bundle"
+        },
+        "name": "SVC Bundle",
+        "description": "An [SVC Bundle](StructureDefinition-svc-bundle.html) contains the content to be encoded in QR-code on the front page of a Paper SVC."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/who-svc-vaccinable-confitions"
+        },
+        "name": "WHO List of Vaccinable Conditions",
+        "description": "The WHO Vaccinable Conditions List from [ICD 11](https://icd.who.int/browse11) is used by:\n *  the [SVC Immunization](StructureDefinition-svc-immunization.html)"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource:abstract"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/svc-patient"
-        },
-        "name": "SVC Patient",
-        "description": "Correponds to the demographic information on the front page of the Paper SVC. This profile is not intended to be instantiated directly, rather a [New SVC Patient](StructureDefinition-svc-patient-new.html) or an [Updated SVC Patient](StructureDefinition-svc-patient-updated.html) should be used.  \nA SVC_Patient should:\n* set the [identifier.assigner](StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner) to reference the [SVC Organization](StructureDefinition-svc-organization.html) resource associated to the PHA via the WHO Smart Directory"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/svc-provenance-digital-updated"
-        },
-        "name": "Provenance of an Updated Digital SVC",
-        "description": "The Provenance of a Digital SVC is used to assert the provenance of a Public Health Auhority (PHA) over an updated Digital SVC document.  \n\nThe Provenance of an Updated Digital SVC should:\n * contain the [Updated SVC Patient](StructureDefinition-svc-patient-updated.html) demographic content tranferred from a Paper SVC\n * contain the [Updated SVC Immunization](StructureDefinition-svc-immunization.html) content tranferred from a Paper SVC \n * be generated by a PHA when a Paper SVC document is printed by a PHA, in which case:\n * set the [entity.what](StructureDefinition-svc-provenance-digital-updated-definitions.html#Provenance.entity.what) to reference the generated [Updated SVC Composition](StructureDefinition-svc-composition-updated.html) resource associated to Paper SVC\n * set the [role](StructureDefinition-svc-provenance-digital-updated-definitions.html#role)  to #derived"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
           }
         ],
         "reference": {
@@ -443,58 +378,6 @@
         },
         "name": "SVC Immunization",
         "description": "An SVC Immunization contains the content to be encoded in a QR-code on a row in the Vaccination Events section of the Paper SVC. While this is not a further profile of the IPS Immunization (due to the requirement of gender/sex in IPS in the IPS Patient profile), this is intended to map onto an IPS Immunization."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/svc-provenance-digital-new"
-        },
-        "name": "Provenance of a New Digital SVC",
-        "description": "The Provenance of a New Digital SVC is used to assert the provenance of a Public Health Auhority (PHA) over a new Digital SVC document.  \n\nThe [Provencance of a New Digital SVC](StructureDefinition-svc-provenance-digital-new.html)  should:\n * be generated at the time of printing a new Paper SVC\n * have as target a [New SVC Composition](StructureDefinition-svc-composition-new.html)\n * set the [role](StructureDefinition-svc-provenance-paper-definitions.html#role)  to #derived\n * set the [entity.what](StructureDefinition-svc-provenance-digital-new-definitions.html#Provenance.entity.what) to reference the generated [New SVC Composition](StructureDefinition-svc-composition-new.html) resource\n * set the [agent.onBehalfOf](StructureDefinition-svc-provenance-new-definitions.html#Provenance.agent.onBehalfOf) to reference the generated [New SVC Patient](StructureDefinition-svc-patient-new.html) resource"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource:abstract"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/svc-composition"
-        },
-        "name": "SVC Composition",
-        "description": "Container for the health content contained on a Paper SVC.  This profile is not intended to be instantiated directly, rather a [New SVC Composition](StructureDefinition-svc-composition-new.html) or a [Updated SVC Composition](StructureDefinition-svc-composition-updated.html) should be used.\n\nA [SVC Composition](StructureDefinition-svc-composition.html) should:\n * be accessible from a SVC Registry as located via the WHO SMART Directory for the PHA referenced in the [author](StructureDefinition-svc-composition-definitions.html#Composition.agent)."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource:abstract"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/svc-provenance-digital"
-        },
-        "name": "Provenance of a Digital SVC",
-        "description": "Abstraction for the Provenance of a Digital SVC.  This profile is not intended to be instantiated directly, rather a   [Provenance of an New Digital SVC](StructureDefinition-svc-provenance-digital-new.html), or a [Provenance of an Updated Digital SVC](StructureDefinition-svc-provenance-digital-updated.html) should be used.\n\nNon-digital content in a Paper SVC may be digitized by a PHA by any of the following methods:\n  * Issue and print a QR-sticker which encodes an updated SVC Bundle  to place on the front page of the Paper SVC.  \n  * The issuing PHA may re-issue and print a new Paper SVC such that:\n      * the QR-code on the front page encodes an [Updated SVC Bundle](StructureDefinition-svc-bundle-updated.html).\n      * the demographic content on the front page is printed with the content transferred from the Paper SVC to an [Updated SVC Patient](StructureDefinition-svc-bundle-updated.html)."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/svc-composition-updated"
-        },
-        "name": "Updated SVC Composition",
-        "description": "Populated container for the health content contained on a reissued Paper SVC which\n\nWhen a Paper SVC is reissued, the following rules apply:\n  * [status](StructureDefinition-svc-composition-new-definitions.html#Composition.status)  is set to #final\n  * transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding [SVC Immunizations](StructureDefinittion-svc-immunization.html)\n\n\n\nAn Update SVC Composition may:\n * contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies."
       },
       {
         "extension": [
@@ -513,6 +396,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/svc-practitioner"
+        },
+        "name": "SVC Practiotioner",
+        "description": "Container for an SVC Practitioner, which is a Practitioner authorized by the PHA to vaccinate an [SVC Patient](StructureDefinition-svc-patient.html)."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -526,14 +422,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
+            "valueString": "ValueSet"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/svc-patient-updated"
+          "reference": "ValueSet/who-svc-vaccines"
         },
-        "name": "Updated SVC Patient",
-        "description": "Correponds to the demographic information on the front page of a Paper SVC which is reissued by a PHA.  Written demographic content from the Paper SVC should be used to populate the Updated SVC Patient."
+        "name": "WHO Vaccine List",
+        "description": "The WHO Vaccine List from [ICD 11](https://icd.who.int/browse11) is used by:\n *  the [SVC Immunization](StructureDefinition-svc-immunization.html)"
       },
       {
         "extension": [
@@ -543,23 +439,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/svc-bundle-updated"
+          "reference": "StructureDefinition/svc-patient"
         },
-        "name": "Updated SVC Bundle",
-        "description": "An [Updated SVC Bundle](StructureDefinition-svc-bundle-update.html) is generated PHA when the PHA transfers content from a Paper SVC.  An [Updated SVC Bundle](StructureDefinition-svc-bundle-update.html) is derived from an existing [SVC Bundle](StructureDefinition-svc-bundle.html) according to the following rules:\n * preserve the content in the existing [SVC Bundle](StructureDefinition-svc-bundle.html)\n * generate an [Updated SVC Patient](StructureDefinition-svc-bundle-updated.html)\n * generate an [Updated SVC Compostion](StructureDefinition-svc-composition-updated.html)"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/svc-practitioner"
-        },
-        "name": "SVC Practiotioner",
-        "description": "Container for an SVC Practitioner, which is a Practitioner authorized by the PHA to vaccinate an [SVC Patient](StructureDefinition-svc-patient.html)."
+        "name": "SVC Patient",
+        "description": "Correponds to the demographic information on the front page of the Paper SVC. This profile is not intended to be instantiated directly, rather a [New SVC Patient](StructureDefinition-svc-patient-new.html) or an [Updated SVC Patient](StructureDefinition-svc-patient-updated.html) should be used.  \nA SVC_Patient should:\n* set the [identifier.assigner](StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner) to reference the [SVC Organization](StructureDefinition-svc-organization.html) resource associated to the PHA via the WHO Smart Directory"
       }
     ],
     "page": {
