@@ -193,38 +193,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-svc-bundle.html" title="StructureDefinition/svc-bundle">SVC Bundle</a>
-               </td>
-               <td>
-<p>An <a href="StructureDefinition-svc-bundle.html">SVC Bundle</a> contains the content to be encoded in QR-code on the front page of a Paper SVC.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-svc-provenance.html" title="StructureDefinition/svc-provenance">Provenance of SVC</a>
                </td>
                <td>
 <p>Used to assert the provenance of a Public Health Auhority (PHA) over either a Paper or a Digital Smart Vaccination Card (SVC). This profile is not intended to be instantiated directly, rather a  <a href="StructureDefinition-svc-provenance-digital-new.html">Provenance of an New Digital SVC</a>, <a href="StructureDefinition-svc-provenance-digital-updated.html">Provenance of an Updated Digital SVC</a>,  a <a href="StructureDefinition-svc-provenance-digital-ingested.html">Provenance of an Ingested Digital SVC</a> or a <a href="StructureDefinition-svc-provenance-paper.html">Provenance of an Paper SVC</a> should be used.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-svc-patient.html" title="StructureDefinition/svc-patient">SVC Patient</a>
-               </td>
-               <td>
-<p>Correponds to the demographic information on the front page of the Paper SVC. This profile is not intended to be instantiated directly, rather a <a href="StructureDefinition-svc-patient-new.html">New SVC Patient</a> or an <a href="StructureDefinition-svc-patient-updated.html">Updated SVC Patient</a> should be used.<br/>
-A SVC_Patient should:</p>
-<ul>
-  <li>set the [identifier.assigner]((StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner) to reference the <a href="StructureDefinition-svc-organization.html">SVC Organization</a> resource associated to the PHA via the WHO Smart Directory</li>
-</ul>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-svc-immunization.html" title="StructureDefinition/svc-immunization">SVC Immunization</a>
-               </td>
-               <td>
-<p>An SVC Immunization contains the content to be encoded in a QR-code on a row in the Vaccination Events section of the Paper SVC. This profile is not intended to be instantiated directly, rather a <a href="StructureDefinition-svc-immunization-new.html">New SVC Immunization</a> or an <a href="StructureDefinition-svc-immunization-updated.html">Updated SVC Composition</a> should be used.</p>
 </td>
             </tr>
             <tr>
@@ -236,8 +208,16 @@ A SVC_Patient should:</p>
 
 <p>A <a href="StructureDefinition-svc-composition.html">SVC Composition</a> should:</p>
 <ul>
-  <li><a name="81f7b7f8-d5f0-482a-acfc-0efe9f9e6c37">​</a>be accessible from a SVC Registry as located via the WHO SMART Directory for the PHA referenced in the <a href="StructureDefinition-svc-composition-definitions.html#Composition.agent">author</a>.</li>
+  <li><a name="acf3819f-b335-40a7-9b8e-0edbd8dec624">​</a>be accessible from a SVC Registry as located via the WHO SMART Directory for the PHA referenced in the <a href="StructureDefinition-svc-composition-definitions.html#Composition.agent">author</a>.</li>
 </ul>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-svc-bundle.html" title="StructureDefinition/svc-bundle">SVC Bundle</a>
+               </td>
+               <td>
+<p>An <a href="StructureDefinition-svc-bundle.html">SVC Bundle</a> contains the content to be encoded in QR-code on the front page of a Paper SVC.</p>
 </td>
             </tr>
             <tr>
@@ -260,6 +240,26 @@ A SVC_Patient should:</p>
 </ul>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-svc-immunization.html" title="StructureDefinition/svc-immunization">SVC Immunization</a>
+               </td>
+               <td>
+<p>An SVC Immunization contains the content to be encoded in a QR-code on a row in the Vaccination Events section of the Paper SVC. This profile is not intended to be instantiated directly, rather a <a href="StructureDefinition-svc-immunization-new.html">New SVC Immunization</a> or an <a href="StructureDefinition-svc-immunization-updated.html">Updated SVC Composition</a> should be used.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-svc-patient.html" title="StructureDefinition/svc-patient">SVC Patient</a>
+               </td>
+               <td>
+<p>Correponds to the demographic information on the front page of the Paper SVC. This profile is not intended to be instantiated directly, rather a <a href="StructureDefinition-svc-patient-new.html">New SVC Patient</a> or an <a href="StructureDefinition-svc-patient-updated.html">Updated SVC Patient</a> should be used.<br/>
+A SVC_Patient should:</p>
+<ul>
+  <li>set the [identifier.assigner]((StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner) to reference the <a href="StructureDefinition-svc-organization.html">SVC Organization</a> resource associated to the PHA via the WHO Smart Directory</li>
+</ul>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -274,30 +274,98 @@ A SVC_Patient should:</p>
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-svc-patient-new.html" title="StructureDefinition/svc-patient-new">New SVC Patient</a>
+                  <a href="StructureDefinition-svc-bundle-updated.html" title="StructureDefinition/svc-bundle-updated">Updated SVC Bundle</a>
                </td>
                <td>
-<p>Correponds to the demographic information on the front page of a new Paper SVC.</p>
-
-<p>When a new Paper SVC is issued, the following rules apply:</p>
+<p><a name="4e64707b-5142-4baf-8427-0f06bf3003b6">​</a>An <a href="StructureDefinition-svc-bundle-update.html">Updated SVC Bundle</a> is generated PHA when the PHA transfers content from a Paper SVC.  An <a href="StructureDefinition-svc-bundle-update.html">Updated SVC Bundle</a> is derived from an existing <a href="StructureDefinition-svc-bundle.html">SVC Bundle</a> according to the following rules:</p>
 <ul>
-  <li>a [Person.identifier]((StructureDefinition-svc-patient-definitions.html#Patient.identifier)  entry is generated with system set to ‘urn:uuid’ and value set to a v4 UUID.</li>
+  <li>preserve the content in the existing <a href="StructureDefinition-svc-bundle.html">SVC Bundle</a></li>
+  <li>generate an <a href="StructureDefinition-svc-bundle-updated.html">Updated SVC Patient</a></li>
+  <li>generate an <a href="StructureDefinition-svc-composition-updated.html">Updated SVC Compostion</a></li>
 </ul>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-svc-composition-new.html" title="StructureDefinition/svc-composition-new">New SVC Composition</a>
+                  <a href="StructureDefinition-svc-composition-ingested.html" title="StructureDefinition/svc-composition-ingested">Ingested SVC Composition</a>
                </td>
                <td>
-<p>Empty container for the health content contained on a new Paper SVC.</p>
+<p>Populated container for the health content contained on a  Paper SVC issued by a PHA when ingesting an SVC issued by an external PHA</p>
 
-<p>When a new Paper SVC is issued, the following rules apply to a <a href="StructureDefinition-svc-composition-new.html">New SVC Composition</a>:</p>
+<p>An Ingested SVC Composition should:</p>
 <ul>
-  <li><a name="051f53f8-9c49-4a34-9a29-20a58c805347">​</a>a <a href="StructureDefinition-svc-patient-definitions.html#Person.identifier">Person.identifier</a>  entry is generated for a <a href="StructureDefinition-svc-patient.html">SVC Patient</a> with system set to ‘urn:uuid’ and value set to a v4 UUID.</li>
-  <li><a href="StructureDefinition-svc-composition-new-definitions.html#Composition.author">Composition.author</a> is set to reference the Organization resource associated to the PHA via the WHO Smart Directory</li>
-  <li>set the <a href="StructureDefinition-svc-composition-new-definitions.html#Composition.status">status</a> to #preliminary</li>
-  <li>for each row of the Paper SVC, an <a href="StructureDefinition-svc-immunization-new.html">New SVC Immunization</a> should be generated and an entry should be created to reference this</li>
+  <li>set <a href="StructureDefinition-svc-composition-new-definitions.html#Composition.status">status</a> to #final</li>
+  <li>be accessible from a SVC Registry as located via the WHO SMART Directory for the associated PHA</li>
+  <li>transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding <a href="StructureDefinition-svc-immunization.html">Updated SVC Immunizations</a></li>
+  <li>preserve entries in the from the external <a href="StructureDefinition-svc-composition.html">SVC Composition</a> that correspond to <a href="StructureDefinition-svc-immunization.html">Updated SVC Immunizations</a></li>
+</ul>
+
+<p>An Ingested SVC Composition may be:</p>
+<ul>
+  <li>derived from a <a href="StructureDefinition-svc-composition-new.html">New SVC Compostion</a> generated by the PHA</li>
+  <li>derived from located an existing Updated SVC Composition under the provenace of the PHA</li>
+  <li>contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies.</li>
+</ul>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-svc-immunization-new.html" title="StructureDefinition/svc-immunization-new">New SVC Immunization</a>
+               </td>
+               <td>
+<p>A New SVC Immunization contains the content to be encoded in a QR-code on a row in the Vaccination Events section of the Paper SVC.</p>
+
+<p>When a new Paper SVC is issued, the following rules apply to a New SVC Immnuization:</p>
+<ul>
+  <li>the <a href="StructureDefinition-svc-immunization-new-definitions.html#Immunization.patient">patient</a> reference is set to the <a href="StructureDefinition-svc-patient-new.html">New Patient Resource</a> that was generated</li>
+</ul>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-svc-patient-updated.html" title="StructureDefinition/svc-patient-updated">Updated SVC Patient</a>
+               </td>
+               <td>
+<p>Correponds to the demographic information on the front page of a Paper SVC which is reissued by a PHA.  Written demographic content from the Paper SVC should be used to populate the Updated SVC Patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-svc-provenance-digital-new.html" title="StructureDefinition/svc-provenance-digital-new">Provenance of a New Digital SVC</a>
+               </td>
+               <td>
+<p>The Provenance of a New Digital SVC is used to assert the provenance of a Public Health Auhority (PHA) over a new Digital SVC document.</p>
+
+<p>The <a href="StructureDefinition-svc-provenance-digital-new.html">Provencance of a New Digital SVC</a>  should:</p>
+<ul>
+  <li>be generated at the time of printing a new Paper SVC</li>
+  <li>have as target a <a href="StructureDefinition-svc-composition-new.html">New SVC Composition</a></li>
+  <li><a name="92d53070-349d-404a-95fd-6206f05ecc01">​</a>set the <a href="StructureDefinition-svc-provenance-paper-definitions.html#role">role</a>  to #derived</li>
+  <li>set the <a href="StructureDefinition-svc-provenance-digital-new-definitions.html#Provenance.entity.what">entity.what</a> to reference the generated <a href="StructureDefinition-svc-composition-new.html">New SVC Composition</a> resource</li>
+  <li><a name="5a5c8855-592a-4bf7-9b11-1c1557565785">​</a>set the <a href="StructureDefinition-svc-provenance-new-definitions.html#Provenance.agent.onBehalfOf">agent.onBehalfOf</a> to reference the generated <a href="StructureDefinition-svc-patient-new.html">New SVC Patient</a> resource</li>
+</ul>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-svc-composition-updated.html" title="StructureDefinition/svc-composition-updated">Updated SVC Composition</a>
+               </td>
+               <td>
+<p>Populated container for the health content contained on a reissued Paper SVC which</p>
+
+<p>When a Paper SVC is reissued, the following rules apply:</p>
+<ul>
+  <li><a href="StructureDefinition-svc-composition-new-definitions.html#Composition.status">status</a>  is set to #final</li>
+  <li>each row in the Vaccination Events section of the Paper SVC should contain a QR-code encoding an <a href="StructureDefinition-svc-immunization.html">SVC Immunization</a></li>
+  <li><a name="191bc209-a201-47a4-b230-c3472c954813">​</a>transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding <a href="StructureDefinittion-svc-immunization.html">Updated SVC Immunizations</a></li>
+  <li><a name="3aabe2a8-e00a-487b-b237-5dc32224ebaa">​</a>preserve entries in the from the external SVC Composition that correspond to <a href="StructureDefintion-svc-composition-updated.html">Updated SVC Immunizations</a>
+#else /* RC2 */</li>
+  <li><a name="265cbee7-0fe6-4816-bde5-bdc72fb6d7bd">​</a>transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding <a href="StructureDefinittion-svc-immunization.html">SVC Immunizations</a></li>
+</ul>
+
+<p>An Update SVC Composition may:</p>
+<ul>
+  <li>contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies.</li>
 </ul>
 </td>
             </tr>
@@ -315,7 +383,7 @@ A SVC_Patient should:</p>
 <p>The Provenacne of Ingested Digital SVC should:</p>
 <ul>
   <li>be generated by a PHA when ingests a Paper SVC or Digital SVC from another PHA</li>
-  <li><a name="e62aa575-a8e0-40b9-87da-e9abcaa23c80">​</a>set the <a href="StructureDefinition-svc-provenance-digital-ingested-definitions.html#role">role</a>  to #quotation</li>
+  <li><a name="98a44499-a0e5-456e-86de-c2b9f33a0c74">​</a>set the <a href="StructureDefinition-svc-provenance-digital-ingested-definitions.html#role">role</a>  to #quotation</li>
   <li>set the <a href="StructureDefinition-svc-provenance-digital-ingested-definitions.html#Provenance.entity.what">entity.what</a> to reference the <a href="StructureDefinition-svc-composition.html">SVC Composition</a> in the SVC card issued by the external PHA</li>
   <li>set <a href="StructureDefinition-svc-provenance-digital-ingested-definitions.html#Provenance.target">target</a> to one of:
  **  the id of a  <a href="StructureDefinition-svc-composition-new.html">New SVC Composition</a> generated by the PHA
@@ -332,6 +400,19 @@ A SVC_Patient should:</p>
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-svc-patient-new.html" title="StructureDefinition/svc-patient-new">New SVC Patient</a>
+               </td>
+               <td>
+<p>Correponds to the demographic information on the front page of a new Paper SVC.</p>
+
+<p>When a new Paper SVC is issued, the following rules apply:</p>
+<ul>
+  <li>a [Person.identifier]((StructureDefinition-svc-patient-definitions.html#Patient.identifier)  entry is generated with system set to ‘urn:uuid’ and value set to a v4 UUID.</li>
+</ul>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-svc-immunization-updated.html" title="StructureDefinition/svc-immunization-updated">Updated SVC Immunization</a>
                </td>
                <td>
@@ -343,6 +424,38 @@ A SVC_Patient should:</p>
   <li>amend this by transferring the vaccination event content from the Paper SVC into the <a href="StructureDefinition-svc-immunization.html">SVC Immunization</a> resource</li>
   <li>optionally update the <a href="StructureDefinition-svc-immunization-updated-definitions.html#Immunization.patient">patient</a>to reference an appropriate SVC Patient as determined by the PHA (e.g. the referenced Patient matches an existing Patient record)</li>
 </ul>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-svc-organization.html" title="StructureDefinition/svc-organization">SVC Organization</a>
+               </td>
+               <td>
+<p>Abstraction for an SVC Organization. There should be an SVC Organization associated to each PHA in the WHO Smart Directory.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-svc-practitioner.html" title="StructureDefinition/svc-practitioner">SVC Practiotioner</a>
+               </td>
+               <td>
+<p>Container for an SVC Practitioner, which is a Practitioner authorized by the PHA to vaccinate an <a href="StructureDefinition-svc-patient.html">SVC Patient</a>.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-svc-patient-ingested.html" title="StructureDefinition/svc-patient-ingested">Ingested SVC Patient</a>
+               </td>
+               <td>
+<p>Correponds to the demographic information on the front page a of Paper SVC which is ingested by a PHA from an external PHA.</p>
+
+<p>The following rules apply to an Ingested SVC Patient:</p>
+<ul>
+  <li>the identifier in the <a href="StructureDefinition-svc-patient.html">SVC Patient</a> from the external SVC should be preserved in the Ingested SVC Patient</li>
+  <li>demographic content from the extenal SVC may be used to populate the Ingested SVC Patient.</li>
+</ul>
+
+<p>The PHA may also identify the referenced <a href="StructureDefinition-svc-patient.html">SVC Patient</a> with a another record in their system and use that in populating the Ingested SVC Patient.</p>
 </td>
             </tr>
             <tr>
@@ -384,137 +497,24 @@ A SVC_Patient should:</p>
   <li>contain the <a href="StructureDefinition-svc-immunization-updated.html">Updated SVC Immunization</a> content tranferred from a Paper SVC</li>
   <li>be generated by a PHA when a Paper SVC document is printed by a PHA, in which case:</li>
   <li>set the <a href="StructureDefinition-svc-provenance-digital-updated-definitions.html#Provenance.entity.what">entity.what</a> to reference the generated <a href="StructureDefinition-svc-composition-updated.html">Updated SVC Composition</a> resource associated to Paper SVC</li>
-  <li><a name="cc91842f-603f-463d-a28e-ff0a11db2d0e">​</a>set the <a href="StructureDefinition-svc-provenance-digital-updated-definitions.html#role">role</a>  to #derived</li>
+  <li><a name="8993c182-98bb-48f9-a9c2-d751e1dec774">​</a>set the <a href="StructureDefinition-svc-provenance-digital-updated-definitions.html#role">role</a>  to #derived</li>
 </ul>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-svc-provenance-digital-new.html" title="StructureDefinition/svc-provenance-digital-new">Provenance of a New Digital SVC</a>
+                  <a href="StructureDefinition-svc-composition-new.html" title="StructureDefinition/svc-composition-new">New SVC Composition</a>
                </td>
                <td>
-<p>The Provenance of a New Digital SVC is used to assert the provenance of a Public Health Auhority (PHA) over a new Digital SVC document.</p>
+<p>Empty container for the health content contained on a new Paper SVC.</p>
 
-<p>The <a href="StructureDefinition-svc-provenance-digital-new.html">Provencance of a New Digital SVC</a>  should:</p>
+<p>When a new Paper SVC is issued, the following rules apply to a <a href="StructureDefinition-svc-composition-new.html">New SVC Composition</a>:</p>
 <ul>
-  <li>be generated at the time of printing a new Paper SVC</li>
-  <li>have as target a <a href="StructureDefinition-svc-composition-new.html">New SVC Composition</a></li>
-  <li><a name="2684f6a9-0a42-46fb-b6c8-53159c99b818">​</a>set the <a href="StructureDefinition-svc-provenance-paper-definitions.html#role">role</a>  to #derived</li>
-  <li>set the <a href="StructureDefinition-svc-provenance-digital-new-definitions.html#Provenance.entity.what">entity.what</a> to reference the generated <a href="StructureDefinition-svc-composition-new.html">New SVC Composition</a> resource</li>
-  <li><a name="e689b1c6-d3e1-4ba0-8559-0f2eb732fc14">​</a>set the <a href="StructureDefinition-svc-provenance-new-definitions.html#Provenance.agent.onBehalfOf">agent.onBehalfOf</a> to reference the generated <a href="StructureDefinition-svc-patient-new.html">New SVC Patient</a> resource</li>
+  <li><a name="ecf4dfb3-c3d1-403b-98ac-70fb19d62b3f">​</a>a <a href="StructureDefinition-svc-patient-definitions.html#Person.identifier">Person.identifier</a>  entry is generated for a <a href="StructureDefinition-svc-patient.html">SVC Patient</a> with system set to ‘urn:uuid’ and value set to a v4 UUID.</li>
+  <li><a href="StructureDefinition-svc-composition-new-definitions.html#Composition.author">Composition.author</a> is set to reference the Organization resource associated to the PHA via the WHO Smart Directory</li>
+  <li>set the <a href="StructureDefinition-svc-composition-new-definitions.html#Composition.status">status</a> to #preliminary</li>
+  <li>for each row of the Paper SVC, an <a href="StructureDefinition-svc-immunization-new.html">New SVC Immunization</a> should be generated and an entry should be created to reference this</li>
 </ul>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-svc-composition-updated.html" title="StructureDefinition/svc-composition-updated">Updated SVC Composition</a>
-               </td>
-               <td>
-<p>Populated container for the health content contained on a reissued Paper SVC which</p>
-
-<p>When a Paper SVC is reissued, the following rules apply:</p>
-<ul>
-  <li><a href="StructureDefinition-svc-composition-new-definitions.html#Composition.status">status</a>  is set to #final</li>
-  <li>each row in the Vaccination Events section of the Paper SVC should contain a QR-code encoding an <a href="StructureDefinition-svc-immunization.html">SVC Immunization</a></li>
-  <li><a name="473e27d8-7041-407e-953c-1ee7e16df469">​</a>transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding <a href="StructureDefinittion-svc-immunization.html">Updated SVC Immunizations</a></li>
-  <li><a name="ccc123c5-8fb8-4ffb-9a3d-a9110debce22">​</a>preserve entries in the from the external SVC Composition that correspond to <a href="StructureDefintion-svc-composition-updated.html">Updated SVC Immunizations</a>
-#else /* RC2 */</li>
-  <li><a name="601fb352-3ce7-4f99-a769-ec44dcc68f3c">​</a>transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding <a href="StructureDefinittion-svc-immunization.html">SVC Immunizations</a></li>
-</ul>
-
-<p>An Update SVC Composition may:</p>
-<ul>
-  <li>contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies.</li>
-</ul>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-svc-organization.html" title="StructureDefinition/svc-organization">SVC Organization</a>
-               </td>
-               <td>
-<p>Abstraction for an SVC Organization. There should be an SVC Organization associated to each PHA in the WHO Smart Directory.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-svc-immunization-new.html" title="StructureDefinition/svc-immunization-new">New SVC Immunization</a>
-               </td>
-               <td>
-<p>A New SVC Immunization contains the content to be encoded in a QR-code on a row in the Vaccination Events section of the Paper SVC.</p>
-
-<p>When a new Paper SVC is issued, the following rules apply to a New SVC Immnuization:</p>
-<ul>
-  <li>the <a href="StructureDefinition-svc-immunization-new-definitions.html#Immunization.patient">patient</a> reference is set to the <a href="StructureDefinition-svc-patient-new.html">New Patient Resource</a> that was generated</li>
-</ul>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-svc-composition-ingested.html" title="StructureDefinition/svc-composition-ingested">Ingested SVC Composition</a>
-               </td>
-               <td>
-<p>Populated container for the health content contained on a  Paper SVC issued by a PHA when ingesting an SVC issued by an external PHA</p>
-
-<p>An Ingested SVC Composition should:</p>
-<ul>
-  <li>set <a href="StructureDefinition-svc-composition-new-definitions.html#Composition.status">status</a> to #final</li>
-  <li>be accessible from a SVC Registry as located via the WHO SMART Directory for the associated PHA</li>
-  <li>transfer written content from the Vaccination Events section of the existing Paper SVC into corresponding <a href="StructureDefinition-svc-immunization.html">Updated SVC Immunizations</a></li>
-  <li>preserve entries in the from the external <a href="StructureDefinition-svc-composition.html">SVC Composition</a> that correspond to <a href="StructureDefinition-svc-immunization.html">Updated SVC Immunizations</a></li>
-</ul>
-
-<p>An Ingested SVC Composition may be:</p>
-<ul>
-  <li>derived from a <a href="StructureDefinition-svc-composition-new.html">New SVC Compostion</a> generated by the PHA</li>
-  <li>derived from located an existing Updated SVC Composition under the provenace of the PHA</li>
-  <li>contain any other relevant health information appropriate to share (e.g. test results) according to the policy of the PHA.  It is up to the PHAs to define and manage bilateral data access policies.</li>
-</ul>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-svc-patient-updated.html" title="StructureDefinition/svc-patient-updated">Updated SVC Patient</a>
-               </td>
-               <td>
-<p>Correponds to the demographic information on the front page of a Paper SVC which is reissued by a PHA.  Written demographic content from the Paper SVC should be used to populate the Updated SVC Patient.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-svc-bundle-updated.html" title="StructureDefinition/svc-bundle-updated">Updated SVC Bundle</a>
-               </td>
-               <td>
-<p><a name="c3aea7b5-d52c-4ae2-888a-6f88e3314eb4">​</a>An <a href="StructureDefinition-svc-bundle-update.html">Updated SVC Bundle</a> is generated PHA when the PHA transfers content from a Paper SVC.  An <a href="StructureDefinition-svc-bundle-update.html">Updated SVC Bundle</a> is derived from an existing <a href="StructureDefinition-svc-bundle.html">SVC Bundle</a> according to the following rules:</p>
-<ul>
-  <li>preserve the content in the existing <a href="StructureDefinition-svc-bundle.html">SVC Bundle</a></li>
-  <li>generate an <a href="StructureDefinition-svc-bundle-updated.html">Updated SVC Patient</a></li>
-  <li>generate an <a href="StructureDefinition-svc-composition-updated.html">Updated SVC Compostion</a></li>
-</ul>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-svc-practitioner.html" title="StructureDefinition/svc-practitioner">SVC Practiotioner</a>
-               </td>
-               <td>
-<p>Container for an SVC Practitioner, which is a Practitioner authorized by the PHA to vaccinate an <a href="StructureDefinition-svc-patient.html">SVC Patient</a>.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-svc-patient-ingested.html" title="StructureDefinition/svc-patient-ingested">Ingested SVC Patient</a>
-               </td>
-               <td>
-<p>Correponds to the demographic information on the front page a of Paper SVC which is ingested by a PHA from an external PHA.</p>
-
-<p>The following rules apply to an Ingested SVC Patient:</p>
-<ul>
-  <li>the identifier in the <a href="StructureDefinition-svc-patient.html">SVC Patient</a> from the external SVC should be preserved in the Ingested SVC Patient</li>
-  <li>demographic content from the extenal SVC may be used to populate the Ingested SVC Patient.</li>
-</ul>
-
-<p>The PHA may also identify the referenced <a href="StructureDefinition-svc-patient.html">SVC Patient</a> with a another record in their system and use that in populating the Ingested SVC Patient.</p>
 </td>
             </tr>
          </tbody>
@@ -531,6 +531,14 @@ A SVC_Patient should:</p>
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-who-svc-vaccines-covid-19.html" title="ValueSet/who-svc-vaccines-covid-19">WHO Vaccine List (COVID-19)</a>
+               </td>
+               <td>
+<p>WHO Vaccine List (COVID-19) from <a href="https://icd.who.int/browse11">ICD 11</a></p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-who-svc-vaccines.html" title="ValueSet/who-svc-vaccines">WHO Vaccine List</a>
                </td>
                <td>
@@ -538,14 +546,6 @@ A SVC_Patient should:</p>
 <ul>
   <li>the <a href="StructureDefinition-svc-immunization.html">SVC Immunization</a></li>
 </ul>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="ValueSet-who-svc-vaccines-covid-19.html" title="ValueSet/who-svc-vaccines-covid-19">WHO Vaccine List (COVID-19)</a>
-               </td>
-               <td>
-<p>WHO Vaccine List (COVID-19) from <a href="https://icd.who.int/browse11">ICD 11</a></p>
 </td>
             </tr>
          </tbody>
@@ -573,7 +573,7 @@ A SVC_Patient should:</p>
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc1#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 16, 2021 13:13+0000">2021-03-16</span>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc1#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 18, 2021 20:00+0000">2021-03-18</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
