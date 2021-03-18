@@ -1,9 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="31316062-7f4e-4bc9-9f56-54812a0f896f"/>
+  <id value="6613bd68-15a4-4b5e-9500-31496609fbe9"/>
   <meta>
-    <lastUpdated value="2021-03-14T03:41:56.956+00:00"/>
+    <lastUpdated value="2021-03-18T19:59:04.946+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-vaccinable-confitions"/>
+    <resource>
+      <ValueSet>
+        <id value="who-svc-vaccinable-confitions"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-vaccinable-confitions"/>
+        <version value="0.2.0"/>
+        <name value="WHO_SVC_Vaccinable_Conditions"/>
+        <title value="WHO List of Vaccinable Conditions"/>
+        <status value="draft"/>
+        <date value="2021-03-18T19:59:04+00:00"/>
+        <publisher value="World Health Organization (WHO)"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.who.int"/>
+          </telecom>
+        </contact>
+        <description value="The WHO Vaccinable Conditions List from [ICD 11](https://icd.who.int/browse11) is used by:&#xA; *  the [SVC Immunization](StructureDefinition-svc-immunization.html) &#xA;"/>
+        <expansion>
+          <identifier value="urn:uuid:de8a3c74-2b58-47b9-8543-f9354c15132b"/>
+          <timestamp value="2021-03-18T19:59:18+00:00"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
 </Bundle>

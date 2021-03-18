@@ -1,8 +1,41 @@
 {
   "resourceType" : "Bundle",
-  "id" : "31316062-7f4e-4bc9-9f56-54812a0f896f",
+  "id" : "6613bd68-15a4-4b5e-9500-31496609fbe9",
   "meta" : {
-    "lastUpdated" : "2021-03-14T03:41:56.956+00:00"
+    "lastUpdated" : "2021-03-18T19:59:04.946+00:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-vaccinable-confitions",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "who-svc-vaccinable-confitions",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 0 concepts</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr></table></div>"
+      },
+      "url" : "http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-vaccinable-confitions",
+      "version" : "0.2.0",
+      "name" : "WHO_SVC_Vaccinable_Conditions",
+      "title" : "WHO List of Vaccinable Conditions",
+      "status" : "draft",
+      "date" : "2021-03-18T19:59:04+00:00",
+      "publisher" : "World Health Organization (WHO)",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.who.int"
+        }]
+      }],
+      "description" : "The WHO Vaccinable Conditions List from [ICD 11](https://icd.who.int/browse11) is used by:\n *  the [SVC Immunization](StructureDefinition-svc-immunization.html) \n",
+      "expansion" : {
+        "identifier" : "urn:uuid:de8a3c74-2b58-47b9-8543-f9354c15132b",
+        "timestamp" : "2021-03-18T19:59:18+00:00",
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        }]
+      }
+    }
+  }]
 }
