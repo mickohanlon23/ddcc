@@ -13,6 +13,7 @@
     <sch:title>f:Provenance</sch:title>
     <sch:rule context="f:Provenance">
       <sch:assert test="count(f:target) &lt;= 1">target: maximum cardinality of 'target' is 1</sch:assert>
+      <sch:assert test="count(f:signature) &gt;= 1">signature: minimum cardinality of 'signature' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -211,8 +212,72 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:Provenance/f:signature</sch:title>
+    <sch:rule context="f:Provenance/f:signature">
+      <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
+      <sch:assert test="count(f:type) &gt;= 1">type: minimum cardinality of 'type' is 1</sch:assert>
+      <sch:assert test="count(f:when) &gt;= 1">when: minimum cardinality of 'when' is 1</sch:assert>
+      <sch:assert test="count(f:when) &lt;= 1">when: maximum cardinality of 'when' is 1</sch:assert>
+      <sch:assert test="count(f:who) &gt;= 1">who: minimum cardinality of 'who' is 1</sch:assert>
+      <sch:assert test="count(f:who) &lt;= 1">who: maximum cardinality of 'who' is 1</sch:assert>
+      <sch:assert test="count(f:onBehalfOf) &lt;= 1">onBehalfOf: maximum cardinality of 'onBehalfOf' is 1</sch:assert>
+      <sch:assert test="count(f:targetFormat) &lt;= 1">targetFormat: maximum cardinality of 'targetFormat' is 1</sch:assert>
+      <sch:assert test="count(f:sigFormat) &lt;= 1">sigFormat: maximum cardinality of 'sigFormat' is 1</sch:assert>
+      <sch:assert test="count(f:data) &lt;= 1">data: maximum cardinality of 'data' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>Provenance.signature</sch:title>
     <sch:rule context="f:Provenance/f:signature">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Provenance.signature.extension</sch:title>
+    <sch:rule context="f:Provenance/f:signature/f:extension">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Provenance.signature.type</sch:title>
+    <sch:rule context="f:Provenance/f:signature/f:type">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Provenance.signature.when</sch:title>
+    <sch:rule context="f:Provenance/f:signature/f:when">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Provenance.signature.who</sch:title>
+    <sch:rule context="f:Provenance/f:signature/f:who">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Provenance.signature.onBehalfOf</sch:title>
+    <sch:rule context="f:Provenance/f:signature/f:onBehalfOf">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Provenance.signature.targetFormat</sch:title>
+    <sch:rule context="f:Provenance/f:signature/f:targetFormat">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Provenance.signature.sigFormat</sch:title>
+    <sch:rule context="f:Provenance/f:signature/f:sigFormat">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
+    <sch:title>Provenance.signature.data</sch:title>
+    <sch:rule context="f:Provenance/f:signature/f:data">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
