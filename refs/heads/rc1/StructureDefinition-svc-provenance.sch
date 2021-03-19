@@ -13,7 +13,6 @@
     <sch:title>f:Provenance</sch:title>
     <sch:rule context="f:Provenance">
       <sch:assert test="count(f:target) &lt;= 1">target: maximum cardinality of 'target' is 1</sch:assert>
-      <sch:assert test="count(f:signature) &gt;= 1">signature: minimum cardinality of 'signature' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -212,6 +211,13 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>Provenance.signature</sch:title>
+    <sch:rule context="f:Provenance/f:signature">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>f:Provenance/f:signature</sch:title>
     <sch:rule context="f:Provenance/f:signature">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>
@@ -224,12 +230,6 @@
       <sch:assert test="count(f:targetFormat) &lt;= 1">targetFormat: maximum cardinality of 'targetFormat' is 1</sch:assert>
       <sch:assert test="count(f:sigFormat) &lt;= 1">sigFormat: maximum cardinality of 'sigFormat' is 1</sch:assert>
       <sch:assert test="count(f:data) &lt;= 1">data: maximum cardinality of 'data' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>Provenance.signature</sch:title>
-    <sch:rule context="f:Provenance/f:signature">
-      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
