@@ -8,7 +8,7 @@
   "url": "http://fhir.org/guides/who/svc-rc1/ImplementationGuide/fhir.who.svc-rc1",
   "version": "0.2.0",
   "name": "SVC_RC1",
-  "title": "WHO Smart Vaccination Certificate - RC1",
+  "title": "WHO Smart Vaccination Certificate (SVC) - RC1",
   "status": "draft",
   "experimental": false,
   "date": "2021-03-04",
@@ -325,7 +325,7 @@
           "reference": "StructureDefinition/svc-provenance"
         },
         "name": "Provenance of SVC",
-        "description": "Used to assert the provenance of a Public Health Auhority (PHA) over either a Paper or a Digital Smart Vaccination Card (SVC). This profile is not intended to be instantiated directly, rather a  [Provenance of an New Digital SVC](StructureDefinition-svc-provenance-digital-new.html), or a [Provenance of an Updated Digital SVC](StructureDefinition-svc-provenance-digital-updated.html), or a [Provenance of an Paper SVC](StructureDefinition-svc-provenance-paper.html) should be used."
+        "description": "Used to assert the provenance of a public health auhority (PHA) over either a Paper or a Digital Smart Vaccination Certificate (SVC)."
       },
       {
         "extension": [
@@ -338,7 +338,7 @@
           "reference": "StructureDefinition/svc-composition"
         },
         "name": "SVC Composition",
-        "description": "Container for the health content contained on a Paper SVC.  A [SVC Composition](StructureDefinition-svc-composition.html) should:\n * be accessible from a SVC Registry as located via the WHO SMART Directory for the PHA referenced in the [author](StructureDefinition-svc-composition-definitions.html#Composition.agent)."
+        "description": "Describes the logical structure for the health content contained in a SVC.  An [SVC Composition](StructureDefinition-svc-composition.html) should:\n * be accessible from a SVC Registry as located via the WHO Public Key Directory for the PHA referenced in the [author](StructureDefinition-svc-composition-definitions.html#Composition.agent)."
       },
       {
         "extension": [
@@ -351,7 +351,7 @@
           "reference": "StructureDefinition/svc-bundle"
         },
         "name": "SVC Bundle",
-        "description": "An [SVC Bundle](StructureDefinition-svc-bundle.html) contains the content to be encoded in QR-code on the front page of a Paper SVC."
+        "description": "An [SVC Bundle](StructureDefinition-svc-bundle.html) is a document bundle containing the Smart Vaccination Certificate (SVC) content."
       },
       {
         "extension": [
@@ -377,7 +377,7 @@
           "reference": "StructureDefinition/svc-immunization"
         },
         "name": "SVC Immunization",
-        "description": "An SVC Immunization contains the content to be encoded in a QR-code on a row in the Vaccination Events section of the Paper SVC. While this is not a further profile of the IPS Immunization (due to the requirement of gender/sex in IPS in the IPS Patient profile), this is intended to map onto an IPS Immunization."
+        "description": "An SVC Immunization contains the content corresponding to a row in the Vaccination Events section of a Paper SVC. While this is not a further profile of the International Patient Summary (IPS) Immunization resouce, this is intended to map into an IPS Immunization resource."
       },
       {
         "extension": [
@@ -390,7 +390,7 @@
           "reference": "StructureDefinition/svc-organization"
         },
         "name": "SVC Organization",
-        "description": "Abstraction for an SVC Organization. There should be an SVC Organization associated to each PHA in the WHO Smart Directory."
+        "description": "Abstraction for an SVC Organization. There should be an SVC Organization associated to each public health authortiy (PHA) in the WHO Public Key Directory."
       },
       {
         "extension": [
@@ -402,7 +402,7 @@
         "reference": {
           "reference": "StructureDefinition/svc-practitioner"
         },
-        "name": "SVC Practiotioner",
+        "name": "SVC Practitioner",
         "description": "Container for an SVC Practitioner, which is a Practitioner authorized by the PHA to vaccinate an [SVC Patient](StructureDefinition-svc-patient.html)."
       },
       {
@@ -439,10 +439,23 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/svc-practitioner-role"
+        },
+        "name": "SVC Practitioner Role",
+        "description": "Association of an [SVC Practitioner](StructureDefinition-svc-practitioner-role.html) to a managing [SVC Organization](StructureDefinition-svc-orgaznization.html), indicating that an SVC Practitioner is authorized by the public health authority (PHA) to vaccinate an [SVC Patient](StructureDefinition-svc-patient.html)."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/svc-patient"
         },
         "name": "SVC Patient",
-        "description": "Correponds to the demographic information on the front page of the Paper SVC. This profile is not intended to be instantiated directly, rather a [New SVC Patient](StructureDefinition-svc-patient-new.html) or an [Updated SVC Patient](StructureDefinition-svc-patient-updated.html) should be used.  \nA SVC_Patient should:\n* set the [identifier.assigner](StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner) to reference the [SVC Organization](StructureDefinition-svc-organization.html) resource associated to the PHA via the WHO Smart Directory"
+        "description": "Corresponds to the demographic information on the front page of the a paper Smart Vaccination Certificate (SVC)\n\nAn SVC_Patient should:\n* set the [identifier.assigner](StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner) to reference the [SVC Organization](StructureDefinition-svc-organization.html) resource associated to the PHA via the WHO Public Key Directory"
       }
     ],
     "page": {

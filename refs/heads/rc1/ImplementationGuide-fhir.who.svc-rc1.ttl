@@ -15,7 +15,7 @@
   fhir:ImplementationGuide.url [ fhir:value "http://fhir.org/guides/who/svc-rc1/ImplementationGuide/fhir.who.svc-rc1"];
   fhir:ImplementationGuide.version [ fhir:value "0.2.0"];
   fhir:ImplementationGuide.name [ fhir:value "SVC_RC1"];
-  fhir:ImplementationGuide.title [ fhir:value "WHO Smart Vaccination Certificate - RC1"];
+  fhir:ImplementationGuide.title [ fhir:value "WHO Smart Vaccination Certificate (SVC) - RC1"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
   fhir:ImplementationGuide.date [ fhir:value "2021-03-04"^^xsd:date];
@@ -311,7 +311,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/svc-provenance" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provenance of SVC" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Used to assert the provenance of a Public Health Auhority (PHA) over either a Paper or a Digital Smart Vaccination Card (SVC). This profile is not intended to be instantiated directly, rather a  [Provenance of an New Digital SVC](StructureDefinition-svc-provenance-digital-new.html), or a [Provenance of an Updated Digital SVC](StructureDefinition-svc-provenance-digital-updated.html), or a [Provenance of an Paper SVC](StructureDefinition-svc-provenance-paper.html) should be used." ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Used to assert the provenance of a public health auhority (PHA) over either a Paper or a Digital Smart Vaccination Certificate (SVC)." ]
      ], [
        fhir:index 1;
        fhir:Element.extension [
@@ -324,7 +324,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/svc-composition" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Composition" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Container for the health content contained on a Paper SVC.  A [SVC Composition](StructureDefinition-svc-composition.html) should:\n * be accessible from a SVC Registry as located via the WHO SMART Directory for the PHA referenced in the [author](StructureDefinition-svc-composition-definitions.html#Composition.agent)." ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for the health content contained in a SVC.  An [SVC Composition](StructureDefinition-svc-composition.html) should:\n * be accessible from a SVC Registry as located via the WHO Public Key Directory for the PHA referenced in the [author](StructureDefinition-svc-composition-definitions.html#Composition.agent)." ]
      ], [
        fhir:index 2;
        fhir:Element.extension [
@@ -337,7 +337,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/svc-bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Bundle" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An [SVC Bundle](StructureDefinition-svc-bundle.html) contains the content to be encoded in QR-code on the front page of a Paper SVC." ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An [SVC Bundle](StructureDefinition-svc-bundle.html) is a document bundle containing the Smart Vaccination Certificate (SVC) content." ]
      ], [
        fhir:index 3;
        fhir:Element.extension [
@@ -363,7 +363,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/svc-immunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Immunization" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An SVC Immunization contains the content to be encoded in a QR-code on a row in the Vaccination Events section of the Paper SVC. While this is not a further profile of the IPS Immunization (due to the requirement of gender/sex in IPS in the IPS Patient profile), this is intended to map onto an IPS Immunization." ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An SVC Immunization contains the content corresponding to a row in the Vaccination Events section of a Paper SVC. While this is not a further profile of the International Patient Summary (IPS) Immunization resouce, this is intended to map into an IPS Immunization resource." ]
      ], [
        fhir:index 5;
        fhir:Element.extension [
@@ -376,7 +376,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/svc-organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Organization" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Abstraction for an SVC Organization. There should be an SVC Organization associated to each PHA in the WHO Smart Directory." ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Abstraction for an SVC Organization. There should be an SVC Organization associated to each public health authortiy (PHA) in the WHO Public Key Directory." ]
      ], [
        fhir:index 6;
        fhir:Element.extension [
@@ -388,7 +388,7 @@
          fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/svc-practitioner" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Practiotioner" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Practitioner" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Container for an SVC Practitioner, which is a Practitioner authorized by the PHA to vaccinate an [SVC Patient](StructureDefinition-svc-patient.html)." ]
      ], [
        fhir:index 7;
@@ -424,11 +424,24 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner-role>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-practitioner-role" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Practitioner Role" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Association of an [SVC Practitioner](StructureDefinition-svc-practitioner-role.html) to a managing [SVC Organization](StructureDefinition-svc-orgaznization.html), indicating that an SVC Practitioner is authorized by the public health authority (PHA) to vaccinate an [SVC Patient](StructureDefinition-svc-patient.html)." ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/svc-patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Patient" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Correponds to the demographic information on the front page of the Paper SVC. This profile is not intended to be instantiated directly, rather a [New SVC Patient](StructureDefinition-svc-patient-new.html) or an [Updated SVC Patient](StructureDefinition-svc-patient-updated.html) should be used.  \nA SVC_Patient should:\n* set the [identifier.assigner](StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner) to reference the [SVC Organization](StructureDefinition-svc-organization.html) resource associated to the PHA via the WHO Smart Directory" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Corresponds to the demographic information on the front page of the a paper Smart Vaccination Certificate (SVC)\n\nAn SVC_Patient should:\n* set the [identifier.assigner](StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner) to reference the [SVC Organization](StructureDefinition-svc-organization.html) resource associated to the PHA via the WHO Public Key Directory" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
