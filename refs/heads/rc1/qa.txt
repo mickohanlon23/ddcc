@@ -1,9 +1,9 @@
 ﻿SVC_RC1 : Validation Results
 =========================================
 
-err = 3, warn = 14, info = 1
+err = 6, warn = 18, info = 1
 IG Publisher Version: 1.1.63
-Generated Fri Mar 19 03:37:37 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
+Generated Fri Mar 19 03:54:10 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
 
  Build Errors : 9 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle : 0 / 1 / 1
@@ -14,9 +14,9 @@ Generated Fri Mar 19 03:37:37 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner-role : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-confitions : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19 : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-confitions : 1 / 4 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19 : 1 / 2 / 1
  /github/workspace/input/svc : 0 / 1 / 1
 </table>
 == n/a ==
@@ -59,14 +59,21 @@ INFORMATION: StructureDefinition/svc-provenance: StructureDefinition: Validate r
 WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-confitions.json ==
 INFORMATION: ValueSet/who-svc-vaccinable-confitions: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+ERROR: ValueSet/who-svc-vaccinable-confitions: ValueSet.compose.include[0].system: URL value 'http://hl7.org/fhir/sid/icd-11' does not resolve
+WARNING: ValueSet/who-svc-vaccinable-confitions: ValueSet.compose.include[0].concept[3].display: value should not start or finish with whitespace
+WARNING: ValueSet/who-svc-vaccinable-confitions: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet/who-svc-vaccinable-confitions: ValueSet.compose[0].include[1].concept[0]: The code V03.82 is not valid in the system http://hl7.org/fhir/sid/icd-9-cm
+WARNING: ValueSet.where(id = 'who-svc-vaccinable-confitions'): Error from server: Unable to provide support for code system http://hl7.org/fhir/sid/icd-11
 == /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines.json ==
 INFORMATION: ValueSet/who-svc-vaccines: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+ERROR: ValueSet/who-svc-vaccines: ValueSet.compose.include[0].system: URL value 'http://hl7.org/fhir/sid/icd-11' does not resolve
 WARNING: ValueSet/who-svc-vaccines: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
-WARNING: ValueSet.where(id = 'who-svc-vaccines'): Error from server: Unable to provide support for code system https://icd.who.int/browse11
+WARNING: ValueSet.where(id = 'who-svc-vaccines'): Error from server: Unable to provide support for code system http://hl7.org/fhir/sid/icd-11
 == /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19.json ==
 INFORMATION: ValueSet/who-svc-vaccines-covid-19: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+ERROR: ValueSet/who-svc-vaccines-covid-19: ValueSet.compose.include[0].system: URL value 'http://hl7.org/fhir/sid/icd-11' does not resolve
 WARNING: ValueSet/who-svc-vaccines-covid-19: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
-WARNING: ValueSet.where(id = 'who-svc-vaccines-covid-19'): Error from server: Unable to provide support for code system https://icd.who.int/browse11
+WARNING: ValueSet.where(id = 'who-svc-vaccines-covid-19'): Error from server: Unable to provide support for code system http://hl7.org/fhir/sid/icd-11
 == /github/workspace/input/svc.xml ==
 INFORMATION: ImplementationGuide/fhir.who.svc-rc1: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 WARNING: ImplementationGuide/fhir.who.svc-rc1: ImplementationGuide.definition.page.page[2].title: value should not start or finish with whitespace
