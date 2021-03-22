@@ -1,9 +1,9 @@
 ﻿SVC_RC1 : Validation Results
 =========================================
 
-err = 6, warn = 18, info = 1
-IG Publisher Version: 1.1.63
-Generated Fri Mar 19 12:35:08 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
+err = 6, warn = 16, info = 1
+IG Publisher Version: 1.1.64
+Generated Mon Mar 22 02:45:13 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
 
  Build Errors : 9 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle : 0 / 1 / 1
@@ -14,7 +14,7 @@ Generated Fri Mar 19 12:35:08 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner-role : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-confitions : 1 / 4 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-confitions : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19 : 1 / 2 / 1
  /github/workspace/input/svc : 0 / 1 / 1
@@ -60,9 +60,7 @@ WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/Str
 == /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-confitions.json ==
 INFORMATION: ValueSet/who-svc-vaccinable-confitions: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 ERROR: ValueSet/who-svc-vaccinable-confitions: ValueSet.compose.include[0].system: URL value 'http://hl7.org/fhir/sid/icd-11' does not resolve
-WARNING: ValueSet/who-svc-vaccinable-confitions: ValueSet.compose.include[0].concept[3].display: value should not start or finish with whitespace
 WARNING: ValueSet/who-svc-vaccinable-confitions: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
-WARNING: ValueSet/who-svc-vaccinable-confitions: ValueSet.compose[0].include[1].concept[0]: The code V03.82 is not valid in the system http://hl7.org/fhir/sid/icd-9-cm
 WARNING: ValueSet.where(id = 'who-svc-vaccinable-confitions'): Error from server: Unable to provide support for code system http://hl7.org/fhir/sid/icd-11
 == /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines.json ==
 INFORMATION: ValueSet/who-svc-vaccines: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
