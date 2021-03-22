@@ -1,0 +1,99 @@
+{
+  "resourceType": "ValueSet",
+  "id": "who-svc-vaccines-covid-19",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://hl7.org/fhir/sid/icd-11</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>XM1NL1</td><td>COVID-19 vaccine, inactivated virus</td></tr><tr><td>XM5DF6</td><td>COVID-19 vaccine, live attenuated virus</td></tr><tr><td>XM9QW8</td><td>COVID-19 vaccine, non-replicating viral vector</td></tr><tr><td>XM0CX4</td><td>COVID-19 vaccine, replicating viral vector</td></tr><tr><td>XM5JC5</td><td>COVID-19 vaccine, virus protein subunit</td></tr><tr><td>XM1J92</td><td>COVID-19 vaccine, virus like particle (VLP)</td></tr><tr><td>XM6AT1</td><td>COVID-19 vaccine, DNA based</td></tr><tr><td>XM6AT1</td><td>COVID-19 vaccine, DNA based</td></tr><tr><td>XM1NL1</td><td>COVID-19 vaccine, inactivated virus</td></tr><tr><td>XM5DF6</td><td>COVID-19 vaccine, live attenuated virus</td></tr><tr><td>XM9QW8</td><td>COVID-19 vaccine, non-replicating viral vector</td></tr><tr><td>XM0CX4</td><td>COVID-19 vaccine, replicating viral vector</td></tr><tr><td>XM5JC5</td><td>COVID-19 vaccine, virus protein subunit</td></tr><tr><td>XM1J92</td><td>COVID-19 vaccine, virus like particle (VLP)</td></tr><tr><td>XM6AT1</td><td>COVID-19 vaccine, DNA based</td></tr><tr><td>XM6AT1</td><td>COVID-19 vaccine, DNA based</td></tr></table></li></ul></div>"
+  },
+  "url": "http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-vaccines-covid-19",
+  "version": "0.2.0",
+  "name": "WHO_SVC_Vaccines_COVID_19",
+  "title": "WHO Vaccine List (COVID-19)",
+  "status": "draft",
+  "date": "2021-03-22T02:50:07+00:00",
+  "publisher": "World Health Organization (WHO)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.who.int"
+        }
+      ]
+    }
+  ],
+  "description": "WHO Vaccine List (COVID-19) from [ICD 11](https://icd.who.int/browse11)",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-11",
+        "concept": [
+          {
+            "code": "XM1NL1",
+            "display": "COVID-19 vaccine, inactivated virus"
+          },
+          {
+            "code": "XM5DF6",
+            "display": "COVID-19 vaccine, live attenuated virus"
+          },
+          {
+            "code": "XM9QW8",
+            "display": "COVID-19 vaccine, non-replicating viral vector"
+          },
+          {
+            "code": "XM0CX4",
+            "display": "COVID-19 vaccine, replicating viral vector"
+          },
+          {
+            "code": "XM5JC5",
+            "display": "COVID-19 vaccine, virus protein subunit"
+          },
+          {
+            "code": "XM1J92",
+            "display": "COVID-19 vaccine, virus like particle (VLP)"
+          },
+          {
+            "code": "XM6AT1",
+            "display": "COVID-19 vaccine, DNA based"
+          },
+          {
+            "code": "XM6AT1",
+            "display": "COVID-19 vaccine, DNA based"
+          },
+          {
+            "code": "XM1NL1",
+            "display": "COVID-19 vaccine, inactivated virus"
+          },
+          {
+            "code": "XM5DF6",
+            "display": "COVID-19 vaccine, live attenuated virus"
+          },
+          {
+            "code": "XM9QW8",
+            "display": "COVID-19 vaccine, non-replicating viral vector"
+          },
+          {
+            "code": "XM0CX4",
+            "display": "COVID-19 vaccine, replicating viral vector"
+          },
+          {
+            "code": "XM5JC5",
+            "display": "COVID-19 vaccine, virus protein subunit"
+          },
+          {
+            "code": "XM1J92",
+            "display": "COVID-19 vaccine, virus like particle (VLP)"
+          },
+          {
+            "code": "XM6AT1",
+            "display": "COVID-19 vaccine, DNA based"
+          },
+          {
+            "code": "XM6AT1",
+            "display": "COVID-19 vaccine, DNA based"
+          }
+        ]
+      }
+    ]
+  }
+}
