@@ -382,17 +382,6 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-qr-bundle>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-qr-bundle" ]
-       ]
-     ], [
-       fhir:index 7;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -401,6 +390,17 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Vaccine List" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The WHO Vaccine List from [ICD 11](https://icd.who.int/browse11) is used by:\n *  the [SVC Immunization](StructureDefinition-svc-immunization.html)" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-qr-uvci>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-qr-uvci" ]
+       ]
      ], [
        fhir:index 8;
        fhir:Element.extension [
@@ -465,6 +465,11 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
          fhir:ImplementationGuide.definition.page.page [
            fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "maps.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Maps" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 1;
            fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "references.html" ];
            fhir:ImplementationGuide.definition.page.title [ fhir:value "References" ];
            fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]

@@ -2,10 +2,10 @@
 =========================================
 
 err = 9, warn = 38, info = 1
-IG Publisher Version: 1.1.64
-Generated Sun Mar 28 01:06:10 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
+IG Publisher Version: 1.1.65
+Generated Mon Mar 29 12:23:35 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
 
- Build Errors : 123 / 2 / 1
+ Build Errors : 124 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization : 0 / 1 / 1
@@ -14,7 +14,7 @@ Generated Sun Mar 28 01:06:10 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner-role : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-svc-qr-bundle : 2 / 21 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-svc-qr-uvci : 2 / 21 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-confitions : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19 : 1 / 2 / 1
@@ -24,8 +24,8 @@ Generated Sun Mar 28 01:06:10 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#
 ERROR: ImplementationGuide.definition.parameter[11].value: Supressed messages file not found
 WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 INFORMATION: ImplementationGuide.dependency[0].url: The correct canonical URL for this dependency is http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/svc-qr-bundle.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/svc-qr-bundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/svc-qr-uvci.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/svc-qr-uvci.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/StructureDefinition-svc-bundle-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-svc-bundle-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-svc-bundle-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
@@ -93,19 +93,19 @@ ERROR: /github/workspace/output/StructureDefinition-svc-provenance.profile.histo
 ERROR: /github/workspace/output/StructureDefinition-svc-provenance.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-svc-provenance.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-svc-provenance.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-svc-qr-bundle-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-svc-qr-bundle-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 261, column 51: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html' for "SVC Bundle" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-svc-qr-bundle-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 276, column 53: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-patient.html' for "SVC Patient" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-svc-qr-bundle-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 281, column 53: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html' for "SVC Composition" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-svc-qr-bundle-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 286, column 53: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html' for "SVC Composition" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-svc-qr-bundle-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 291, column 52: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html' for "SVC Bundle" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-svc-qr-bundle-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-svc-qr-bundle-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-svc-qr-bundle.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-svc-qr-bundle.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-svc-qr-bundle.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-svc-qr-bundle.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-svc-qr-bundle.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 261, column 51: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html' for "SVC Bundle" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 276, column 53: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-patient.html' for "SVC Patient" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 281, column 53: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html' for "SVC Composition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 286, column 53: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html' for "SVC Composition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 291, column 52: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html' for "SVC Bundle" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-who-svc-vaccinable-confitions.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-who-svc-vaccinable-confitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-who-svc-vaccinable-confitions.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
@@ -137,6 +137,7 @@ ERROR: /github/workspace/output/downloads.html#/html/body/div/div/nav/div/div/ul
 ERROR: /github/workspace/output/expected_actions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/functional.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/maps.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/personas.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/references.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/requirements.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
@@ -173,31 +174,31 @@ WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/Str
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance.json ==
 INFORMATION: StructureDefinition/svc-provenance: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance'): The Implementation Guide contains no examples for this profile
-== /github/workspace/fsh-generated/resources/StructureDefinition-svc-qr-bundle.json ==
-ERROR: StructureDefinition.where(url = 'http://who-int.github.io/svc/StructureDefinition/SVC_QR_UVCI'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-svc-qr-bundle.json - the canonical URL (http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-qr-bundle) does not match the URL (http://who-int.github.io/svc/StructureDefinition/SVC_QR_UVCI)
-INFORMATION: StructureDefinition/svc-qr-bundle: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.snapshot.element[0]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.snapshot.element[1]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.snapshot.element[2]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.snapshot.element[3]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.snapshot.element[4]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.snapshot.element[5]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.snapshot.element[6]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.snapshot.element[7]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.snapshot.element[8]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.snapshot.element[9]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.snapshot.element[9].short: value should not start or finish with whitespace
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.differential.element[0]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.differential.element[1]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.differential.element[2]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.differential.element[3]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.differential.element[4]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.differential.element[5]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.differential.element[6]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.differential.element[7]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
-WARNING: StructureDefinition/svc-qr-bundle: StructureDefinition.differential.element[7].short: value should not start or finish with whitespace
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-svc-qr-bundle: URL Mismatch http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-qr-bundle vs http://who-int.github.io/svc/StructureDefinition/SVC_QR_UVCI
+== /github/workspace/fsh-generated/resources/StructureDefinition-svc-qr-uvci.json ==
+ERROR: StructureDefinition.where(url = 'http://who-int.github.io/svc/StructureDefinition/svc-qr-uvci'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-svc-qr-uvci.json - the canonical URL (http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-qr-uvci) does not match the URL (http://who-int.github.io/svc/StructureDefinition/svc-qr-uvci)
+INFORMATION: StructureDefinition/svc-qr-uvci: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.snapshot.element[0]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.snapshot.element[1]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.snapshot.element[2]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.snapshot.element[3]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.snapshot.element[4]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.snapshot.element[5]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.snapshot.element[6]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.snapshot.element[7]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.snapshot.element[8]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.snapshot.element[9]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.snapshot.element[9].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.differential.element[0]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.differential.element[1]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.differential.element[2]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.differential.element[3]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.differential.element[4]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.differential.element[5]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.differential.element[6]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.differential.element[7]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.differential.element[7].short: value should not start or finish with whitespace
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-svc-qr-uvci: URL Mismatch http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-qr-uvci vs http://who-int.github.io/svc/StructureDefinition/svc-qr-uvci
 == /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-confitions.json ==
 INFORMATION: ValueSet/who-svc-vaccinable-confitions: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 ERROR: ValueSet/who-svc-vaccinable-confitions: ValueSet.compose.include[0].system: URL value 'http://hl7.org/fhir/sid/icd-11' does not resolve
