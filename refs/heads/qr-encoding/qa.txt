@@ -1,11 +1,11 @@
 ﻿SVC_RC1 : Validation Results
 =========================================
 
-err = 9, warn = 38, info = 1
+err = 9, warn = 40, info = 1
 IG Publisher Version: 1.1.65
-Generated Mon Mar 29 12:23:35 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
+Generated Tue Mar 30 04:53:37 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
 
- Build Errors : 124 / 2 / 1
+ Build Errors : 125 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization : 0 / 1 / 1
@@ -14,7 +14,7 @@ Generated Mon Mar 29 12:23:35 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner-role : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-svc-qr-uvci : 2 / 21 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-svc-qr-uvci : 2 / 23 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-confitions : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19 : 1 / 2 / 1
@@ -99,6 +99,7 @@ ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci-definitions.html
 ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 281, column 53: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html' for "SVC Composition" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 286, column 53: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html' for "SVC Composition" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 291, column 52: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html' for "SVC Bundle" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 296, column 50: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html' for "SVC Bundle" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
@@ -189,6 +190,7 @@ WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.snapshot.element[7
 WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.snapshot.element[8]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
 WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.snapshot.element[9]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
 WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.snapshot.element[9].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.snapshot.element[10]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
 WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.differential.element[0]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
 WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.differential.element[1]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
 WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.differential.element[2]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
@@ -198,6 +200,7 @@ WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.differential.eleme
 WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.differential.element[6]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
 WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.differential.element[7]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
 WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.differential.element[7].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/svc-qr-uvci: StructureDefinition.differential.element[8]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-svc-qr-uvci: URL Mismatch http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-qr-uvci vs http://who-int.github.io/svc/StructureDefinition/svc-qr-uvci
 == /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-confitions.json ==
 INFORMATION: ValueSet/who-svc-vaccinable-confitions: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
