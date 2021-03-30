@@ -122,7 +122,7 @@
 		<ul class="dropdown-menu">
 		  <li><a href="security_privacy.html">Security and Privacy Considerations</a></li>
 		  <li><a href="testing.html">Testing</a></li>
-		  <li><a name="85f8965b-7f39-489c-bcba-9a0b1e7c8d87">​</a><a href="instant_openhie.html">Instant OpenHIE</a></li>		  
+		  <li><a name="217c9e72-84ab-4a17-a158-5b510a27e6c8">​</a><a href="instant_openhie.html">Instant OpenHIE</a></li>		  
 		  <li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
@@ -214,13 +214,13 @@
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.id">id</a>" : "svc-map-qr-uvci-bundle",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;\n         &lt;pre&gt;map &amp;quot;http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle&amp;quot; = &amp;quot;svc-map-qr-uvci-bundle&amp;quot;\n\nuses &amp;quot;http://who-int.github.io/svc/refs/heads/qr-encoding/StructureDefinition/svc-qr-bundle&amp;quot; alias QR as source\nuses &amp;quot;http://who-int.github.io/svc/StructureDefinition/svc-bundle&amp;quot; alias SVC_Bundle as target\nuses &amp;quot;http://who-int.github.io/svc/StructureDefinition/svc-composition&amp;quot; alias SVC_Composition as produced\nuses &amp;quot;http://who-int.github.io/svc/StructureDefinition/svc-patient&amp;quot; alias SVC_Patient as produced\nuses &amp;quot;http://who-int.github.io/svc/StructureDefinition/svc-organization&amp;quot; alias SVC_Organization as produced\nuses &amp;quot;http://who-int.github.io/svc/StructureDefinition/svc-provenance&amp;quot; alias SVC_Provenance as produced\n\ngroup Decode_QR(source qr : QR, target bundle) {\n  qr -&amp;gt;  create('SVC_Patient') as patient,  create('SVC_Organization') as organization then Decode_QR_Patient(qr, patient), Decode_QR_Organization(qr, organization), Decode_QR_Bundle(qr, patient, organzation, bundle) &amp;quot;Create resources and process bundle&amp;quot;;\n}\n\ngroup Decode_QR_Patient(source elements, target patient : SVC_Patient) {\n  qr.elements as elements then {\n    elements.name as qrname, patient.name as pname -&amp;gt;  pname.text = qrname,  pname.use = 'official' &amp;quot;Load Name&amp;quot;;\n    elements.pid as pid -&amp;gt; patient.identifier = id('XXXXXurn:uetf:rfc:3986', pid) &amp;quot;Load Patient Identifer&amp;quot;;\n    elements.birthDate as birthDate -&amp;gt; patient.birthDate = birthDate &amp;quot;Load Birth Date&amp;quot;;\n  };\n}\n\ngroup Decode_QR_Organization(source qr : QR, target organization : SVC_Organization) {\n  qr.elements as elements then {\n    elements.phaid as phaid -&amp;gt; organization.identifier = id('XXXXXurn:ietf:rfc:3986', phaid) &amp;quot;Load PHA ID&amp;quot;;\n  };\n}\n\ngroup Decode_QR_Bundle(source qr : QR, target patient : SVC_Patient, target bundle : SVC_Bundle) {\n  qr -&amp;gt;  bundle.status = 'final',  bundle.type = 'document' &amp;quot;Set Bundle Metadata&amp;quot;;\n  qr.elements as elements then {\n    elements.paperid as paperid -&amp;gt; bundle.identifier = id('XXXXXurn:ietf:rfc:3986', paperid) &amp;quot;Load Paper SVC ID&amp;quot;;\n    elements.signature as qrsig, bundle.signature as bsig -&amp;gt;  bsig.data = qrsig,  bsig.type = '1.2.840.10065.1.12.1.14',  bsig.format = 'XXXXXXX TBD',  bsig.who = reference(organization) &amp;quot;Load Signature&amp;quot;;\n  };\n  qr -&amp;gt;  bundle.entry as e,  e.resource = create('SVC_Composition') as compostion then Decode_QR_Composition(qr, bundle, composition) &amp;quot;Process Composition Entry&amp;quot;;\n}\n\ngroup Decode_QR_Composition(source qr : QR, source ,, target bundle : SVC_Bundle, target patient : SVC_Patient, target organization : SVC_Organization, target composition : SVC_Composition) {\n  qr -&amp;gt;  composition.subject = reference(patient),  composition.author = reference(organization) &amp;quot;Set Composition Meta&amp;quot;;\n  qr.elements as elements then {\n    elements.digitalid as digitalid -&amp;gt; composition.identifier = id('XXXXXurn:ietf:rfc:3986', digitalid) &amp;quot;Load Digital SVC ID&amp;quot;;\n  };\n}\n\ngroup Decode_QR_Provenance(source qr : QR, target bundle : SVC_Bundle, target patient : SVC_Patient, target organization : SVC_Organization, target paper : SVC_Composition, target digital : SVC_Composition, target provenance : SVC_Provenance) {\n  qr, provenance.entity as e_digital, provenance.agent as agent, provenance.signature as psig -&amp;gt;  provenance.reason = 'PUBHLTH',  provenance.policy = 'XXXXXXX urn:example:who:smart:vaccine-certificate:RC1',  provenance.target = reference(bundle),  e_digital.role = 'source',  e_digital.what = reference(composition),  e_digital.agent = reference(organization),  e_paper.role = 'source',  e_paper.what = reference(bundle),  e_paper.agent = reference(organization),  psig.format = 'XXXXX TBD',  psig.who = reference(organization),  psg.type = '1.2.840.10065.1.12.1.14' then {\n    agent.who as who -&amp;gt;  who.reference = reference(organization),  who.onBehalfOf = reference(patient) &amp;quot;Set Who&amp;quot;;\n    qr.elements as elements -&amp;gt; psig.data = elements.signature &amp;quot;Set signature data&amp;quot;;\n  } &amp;quot;Set provenace&amp;quot;;\n}\n\n&lt;/pre&gt;\n      &lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;\n         &lt;pre&gt;map &amp;quot;http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle&amp;quot; = &amp;quot;svc-map-qr-uvci-bundle&amp;quot;\n\nuses &amp;quot;http://who-int.github.io/svc/refs/heads/qr-encoding/StructureDefinition/svc-qr-bundle&amp;quot; alias QR as source\nuses &amp;quot;http://who-int.github.io/svc/StructureDefinition/svc-bundle&amp;quot; alias SVC_Bundle as target\nuses &amp;quot;http://who-int.github.io/svc/StructureDefinition/svc-composition&amp;quot; alias SVC_Composition as produced\nuses &amp;quot;http://who-int.github.io/svc/StructureDefinition/svc-patient&amp;quot; alias SVC_Patient as produced\nuses &amp;quot;http://who-int.github.io/svc/StructureDefinition/svc-organization&amp;quot; alias SVC_Organization as produced\nuses &amp;quot;http://who-int.github.io/svc/StructureDefinition/svc-provenance&amp;quot; alias SVC_Provenance as produced\n\ngroup Decode_QR(source qr : QR, target bundle) {\n  qr -&amp;gt;  create('SVC_Patient') as patient,  create('SVC_Organization') as organization then Decode_QR_Patient(qr, patient), Decode_QR_Organization(qr, organization), Decode_QR_Bundle(qr, patient, organzation, bundle) &amp;quot;Create resources and process bundle&amp;quot;;\n}\n\ngroup Decode_QR_Patient(source qr : QR, target patient : SVC_Patient) {\n  qr.name as qrname, patient.name as pname -&amp;gt;  pname.text = qrname,  pname.use = 'official' &amp;quot;Load Name&amp;quot;;\n  qr.pid as pid -&amp;gt; patient.identifier = id('XXXXXurn:uetf:rfc:3986', pid) &amp;quot;Load Patient Identifer&amp;quot;;\n  qr.birthDate as birthDate -&amp;gt; patient.birthDate = birthDate &amp;quot;Load Birth Date&amp;quot;;\n}\n\ngroup Decode_QR_Organization(source qr : QR, target organization : SVC_Organization) {\n  qr.phaid as phaid -&amp;gt; organization.identifier = id('XXXXXurn:ietf:rfc:3986', phaid) &amp;quot;Load PHA ID&amp;quot;;\n}\n\ngroup Decode_QR_Bundle(source qr : QR, target patient : SVC_Patient, target bundle : SVC_Bundle) {\n  qr -&amp;gt;  bundle.status = 'final',  bundle.type = 'document' &amp;quot;Set Bundle Metadata&amp;quot;;\n  qr.paperid as paperid -&amp;gt; bundle.identifier = id('XXXXXurn:ietf:rfc:3986', paperid) &amp;quot;Load Paper SVC ID&amp;quot;;\n  qr.signature as qrsig, bundle.signature as bsig -&amp;gt;  bsig.data = qrsig,  bsig.type = '1.2.840.10065.1.12.1.14',  bsig.format = 'XXXXXXX TBD',  bsig.who = reference(organization) &amp;quot;Load Signature&amp;quot;;\n  qr -&amp;gt;  bundle.entry as e,  e.resource = create('SVC_Composition') as compostion then Decode_QR_Composition(qr, bundle, composition) &amp;quot;Process Composition Entry&amp;quot;;\n}\n\ngroup Decode_QR_Composition(source qr : QR, source ,, target bundle : SVC_Bundle, target patient : SVC_Patient, target organization : SVC_Organization, target composition : SVC_Composition) {\n  qr -&amp;gt;  composition.subject = reference(patient),  composition.author = reference(organization) &amp;quot;Set Composition Meta&amp;quot;;\n  qr.digitalid as digitalid -&amp;gt; composition.identifier = id('XXXXXurn:ietf:rfc:3986', digitalid) &amp;quot;Load Digital SVC ID&amp;quot;;\n}\n\ngroup Decode_QR_Provenance(source qr : QR, target bundle : SVC_Bundle, target patient : SVC_Patient, target organization : SVC_Organization, target paper : SVC_Composition, target digital : SVC_Composition, target provenance : SVC_Provenance) {\n  qr, provenance.entity as e_digital, provenance.agent as agent, provenance.signature as psig -&amp;gt;  provenance.reason = 'PUBHLTH',  provenance.policy = 'XXXXXXX urn:example:who:smart:vaccine-certificate:RC1',  provenance.target = reference(bundle),  e_digital.role = 'source',  e_digital.what = reference(composition),  e_digital.agent = reference(organization),  e_paper.role = 'source',  e_paper.what = reference(bundle),  e_paper.agent = reference(organization),  psig.format = 'XXXXX TBD',  psig.who = reference(organization),  psg.type = '1.2.840.10065.1.12.1.14',  psig.data = signature then {\n    agent.who as who -&amp;gt;  who.reference = reference(organization),  who.onBehalfOf = reference(patient) as &amp;quot;Set who&amp;quot;;\n  } &amp;quot;Set provenance&amp;quot;;\n}\n\n&lt;/pre&gt;\n      &lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">url</a>" : "http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">version</a>" : "0.2.0",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">name</a>" : "svc-map-qr-uvci-bundle",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">status</a>" : "draft",
-  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a>" : "2021-03-30T05:09:23+00:00",
+  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a>" : "2021-03-30T11:26:44+00:00",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">publisher</a>" : "World Health Organization (WHO)",
   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.contact">contact</a>" : [
     {
@@ -340,7 +340,8 @@
       "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.typeMode">typeMode</a>" : "none",
       "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input">input</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.name">name</a>" : "elements",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.name">name</a>" : "qr",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.type">type</a>" : "QR",
           "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.mode">mode</a>" : "source"
         },
         {
@@ -351,100 +352,88 @@
       ],
       "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule">rule</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "elements",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Load Name",
           "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
             {
               "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "qr",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "elements",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "elements"
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "name",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "qrname"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "patient",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "name",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "pname"
             }
           ],
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Load Name",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "pname",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "text",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "elements",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "name",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "qrname"
-                },
-                {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "patient",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "name",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "pname"
-                }
-              ],
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
-                {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "pname",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "text",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
-                    {
-                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "qrname"
-                    }
-                  ]
-                },
-                {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "pname",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "use",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
-                    {
-                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "official"
-                    }
-                  ]
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "qrname"
                 }
               ]
             },
             {
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Load Patient Identifer",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "pname",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "use",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "elements",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "pid",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "pid"
-                }
-              ],
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
-                {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "patient",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "identifier",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "id",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
-                    {
-                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "XXXXXurn:uetf:rfc:3986"
-                    },
-                    {
-                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "pid"
-                    }
-                  ]
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "official"
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Load Patient Identifer",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Load Birth Date",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "qr",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "pid",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "pid"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "patient",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "identifier",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "id",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "elements",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "birthDate",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "birthDate"
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "XXXXXurn:uetf:rfc:3986"
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "pid"
                 }
-              ],
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+              ]
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Load Birth Date",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "qr",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "birthDate",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "birthDate"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "patient",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "birthDate",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "patient",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "birthDate",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
-                    {
-                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "birthDate"
-                    }
-                  ]
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "birthDate"
                 }
               ]
             }
@@ -469,38 +458,26 @@
       ],
       "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule">rule</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "elements",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Load PHA ID",
           "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
             {
               "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "qr",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "elements",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "elements"
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "phaid",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "phaid"
             }
           ],
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Load PHA ID",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "organization",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "identifier",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "id",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "elements",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "phaid",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "phaid"
-                }
-              ],
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "XXXXXurn:ietf:rfc:3986"
+                },
                 {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "organization",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "identifier",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "id",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
-                    {
-                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "XXXXXurn:ietf:rfc:3986"
-                    },
-                    {
-                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "phaid"
-                    }
-                  ]
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "phaid"
                 }
               ]
             }
@@ -562,99 +539,87 @@
           ]
         },
         {
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "elements",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Load Paper SVC ID",
           "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
             {
               "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "qr",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "elements",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "elements"
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "paperid",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "paperid"
             }
           ],
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Load Paper SVC ID",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "bundle",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "identifier",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "id",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "elements",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "paperid",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "paperid"
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "XXXXXurn:ietf:rfc:3986"
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "paperid"
                 }
-              ],
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+              ]
+            }
+          ]
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Load Signature",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "qr",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "signature",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "qrsig"
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "bundle",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "signature",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "bsig"
+            }
+          ],
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "bsig",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "data",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "bundle",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "identifier",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "id",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
-                    {
-                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "XXXXXurn:ietf:rfc:3986"
-                    },
-                    {
-                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "paperid"
-                    }
-                  ]
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "qrsig"
                 }
               ]
             },
             {
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Load Signature",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "bsig",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "type",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "elements",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "signature",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "qrsig"
-                },
-                {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "bundle",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "signature",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "bsig"
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "1.2.840.10065.1.12.1.14"
                 }
-              ],
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "bsig",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "format",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "bsig",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "data",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
-                    {
-                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "qrsig"
-                    }
-                  ]
-                },
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "XXXXXXX TBD"
+                }
+              ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "bsig",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "who",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "reference",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "bsig",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "type",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
-                    {
-                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "1.2.840.10065.1.12.1.14"
-                    }
-                  ]
-                },
-                {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "bsig",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "format",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
-                    {
-                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "XXXXXXX TBD"
-                    }
-                  ]
-                },
-                {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "bsig",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "who",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "reference",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
-                    {
-                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "organization"
-                    }
-                  ]
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "organization"
                 }
               ]
             }
@@ -768,38 +733,26 @@
           ]
         },
         {
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "elements",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Load Digital SVC ID",
           "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
             {
               "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "qr",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "elements",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "elements"
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "digitalid",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "digitalid"
             }
           ],
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Load Digital SVC ID",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "composition",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "identifier",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "id",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                 {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "elements",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "digitalid",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "digitalid"
-                }
-              ],
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "XXXXXurn:ietf:rfc:3986"
+                },
                 {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "composition",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "identifier",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "id",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
-                    {
-                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "XXXXXurn:ietf:rfc:3986"
-                    },
-                    {
-                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "digitalid"
-                    }
-                  ]
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "digitalid"
                 }
               ]
             }
@@ -849,7 +802,7 @@
       ],
       "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule">rule</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Set provenace",
+          "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Set provenance",
           "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
             {
               "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "qr"
@@ -1002,11 +955,22 @@
                   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueString</a>" : "1.2.840.10065.1.12.1.14"
                 }
               ]
+            },
+            {
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "psig",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "data",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "signature"
+                }
+              ]
             }
           ],
           "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>" : [
             {
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Set Who",
+              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "who",
               "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
                 {
                   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "agent",
@@ -1030,33 +994,11 @@
                   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "who",
                   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
                   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "onBehalfOf",
+                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.variable">variable</a>" : "\"Set who\"",
                   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "reference",
                   "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
                     {
                       "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "patient"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a>" : "Set signature data",
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>" : [
-                {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a>" : "qr",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a>" : "elements",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a>" : "elements"
-                }
-              ],
-              "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target">target</a>" : [
-                {
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.context">context</a>" : "psig",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.contextType">contextType</a>" : "variable",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.element">element</a>" : "data",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.transform">transform</a>" : "copy",
-                  "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter">parameter</a>" : [
-                    {
-                      "<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.target.parameter.value[x]">valueId</a>" : "elements.signature"
                     }
                   ]
                 }
@@ -1095,7 +1037,7 @@
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc1#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 30, 2021 05:09+0000">2021-03-30</span>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc1#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 30, 2021 11:26+0000">2021-03-30</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

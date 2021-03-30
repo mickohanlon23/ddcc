@@ -9,19 +9,17 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"","value:url}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"svc-qr-uvci.elements","","","",0,1,"","","","BackboneElement {[]} {[]}
-","QR Encoded Elements of SVC UVCI","Elements of the [SVC Bundle](http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html) which are QR-Encoded","","","","","","","","","",,,,,"",,,,"svc-qr-uvci.elements",0,1,"",""
-"svc-qr-uvci.elements.name","","","",0,1,"","","","string {[]} {[]}
-","Name","Name of SVC holder","","","","","","","","","",,,,,"",,,,"svc-qr-uvci.elements.name",0,1,"",""
-"svc-qr-uvci.elements.birthDate","","","",0,1,"","","","date {[]} {[]}
-","Date of Birth","Date of birth of SVC holder","","","","","","","","","",,,,,"",,,,"svc-qr-uvci.elements.birthDate",0,1,"",""
-"svc-qr-uvci.elements.patientid","","","",0,1,"","","","string {[]} {[]}
-","Paper SVC Patient Identifier","Identifier of the [SVC Patient](http://hl7.org/fhir/R4/StructureDefinition-svc-patient.html) that represents the Paper SVC Card","","","","","","","","","",,,,,"",,,,"svc-qr-uvci.elements.patientid",0,1,"",""
-"svc-qr-uvci.elements.paperid","","","",0,1,"","","","string {[]} {[]}
-","Paper SVC Composition Identifier","Identifier of the [SVC Composition](http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html) that represents the Paper SVC Card","","","","","","","","","",,,,,"",,,,"svc-qr-uvci.elements.paperid",0,1,"",""
-"svc-qr-uvci.elements.digitalid","","","",0,1,"","","","string {[]} {[]}
-","Digital SVC Composition Identifier","Identifier of the [SVC Composition](http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html) that represents the Digital SVC Card","","","","","","","","","",,,,,"",,,,"svc-qr-uvci.elements.digitalid",0,1,"",""
-"svc-qr-uvci.elements.signature","","","",0,1,"","","","string {[]} {[]}
-","SVC Signature ","Signature of the [SVC Bundle](http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html) using a PHA's DSC","","","","","","","","","",,,,,"",,,,"svc-qr-uvci.elements.signature",0,1,"",""
-"svc-qr-uvci.elements.version","","","",0,1,"","","","string {[]} {[]}
-","SVC Signature","Version of the [SVC Bundle](http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html) ","","","","","","","","","",,,,,"",,,,"svc-qr-uvci.elements.version",0,1,"",""
+"svc-qr-uvci.version","","","",0,1,"","","","string {[]} {[]}
+","SVC Signature","Version of the [SVC Bundle](http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html) ","","","","","","","","","",,,,,"",,,,"svc-qr-uvci.version",0,1,"",""
+"svc-qr-uvci.name","","","",0,1,"","","","string {[]} {[]}
+","Name","Name of SVC holder","","","","","","","","","",,,,,"",,,,"svc-qr-uvci.name",0,1,"",""
+"svc-qr-uvci.birthDate","","","",0,1,"","","","date {[]} {[]}
+","Date of Birth","Date of birth of SVC holder","","","","","","","","","",,,,,"",,,,"svc-qr-uvci.birthDate",0,1,"",""
+"svc-qr-uvci.patientid","","","",0,1,"","","","string {[]} {[]}
+","Paper SVC Patient Identifier","Identifier of the [SVC Patient](http://hl7.org/fhir/R4/StructureDefinition-svc-patient.html) that represents the Paper SVC Card","","","","","","","","","",,,,,"",,,,"svc-qr-uvci.patientid",0,1,"",""
+"svc-qr-uvci.paperid","","","",0,1,"","","","string {[]} {[]}
+","Paper SVC Composition Identifier","Identifier of the [SVC Composition](http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html) that represents the Paper SVC Card","","","","","","","","","",,,,,"",,,,"svc-qr-uvci.paperid",0,1,"",""
+"svc-qr-uvci.digitalid","","","",0,1,"","","","string {[]} {[]}
+","Digital SVC Composition Identifier","Identifier of the [SVC Composition](http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html) that represents the Digital SVC Card","","","","","","","","","",,,,,"",,,,"svc-qr-uvci.digitalid",0,1,"",""
+"svc-qr-uvci.signature","","","",0,1,"","","","string {[]} {[]}
+","SVC Signature ","Signature of the [SVC Bundle](http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html) using a PHA's DSC","","","","","","","","","",,,,,"",,,,"svc-qr-uvci.signature",0,1,"",""

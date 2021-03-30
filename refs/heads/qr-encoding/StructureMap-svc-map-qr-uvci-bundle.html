@@ -122,7 +122,7 @@
 		<ul class="dropdown-menu">
 		  <li><a href="security_privacy.html">Security and Privacy Considerations</a></li>
 		  <li><a href="testing.html">Testing</a></li>
-		  <li><a name="84c067ab-bc76-421a-aaf7-838ceb8096c4">​</a><a href="instant_openhie.html">Instant OpenHIE</a></li>		  
+		  <li><a name="2d2fcc0d-430c-4ed8-834a-f719c0344bdd">​</a><a href="instant_openhie.html">Instant OpenHIE</a></li>		  
 		  <li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
@@ -225,41 +225,32 @@ group Decode_QR(source qr : QR, target bundle) {
   qr -&gt;  create('SVC_Patient') as patient,  create('SVC_Organization') as organization then Decode_QR_Patient(qr, patient), Decode_QR_Organization(qr, organization), Decode_QR_Bundle(qr, patient, organzation, bundle) "Create resources and process bundle";
 }
 
-group Decode_QR_Patient(source elements, target patient : SVC_Patient) {
-  qr.elements as elements then {
-    elements.name as qrname, patient.name as pname -&gt;  pname.text = qrname,  pname.use = 'official' "Load Name";
-    elements.pid as pid -&gt; patient.identifier = id('XXXXXurn:uetf:rfc:3986', pid) "Load Patient Identifer";
-    elements.birthDate as birthDate -&gt; patient.birthDate = birthDate "Load Birth Date";
-  };
+group Decode_QR_Patient(source qr : QR, target patient : SVC_Patient) {
+  qr.name as qrname, patient.name as pname -&gt;  pname.text = qrname,  pname.use = 'official' "Load Name";
+  qr.pid as pid -&gt; patient.identifier = id('XXXXXurn:uetf:rfc:3986', pid) "Load Patient Identifer";
+  qr.birthDate as birthDate -&gt; patient.birthDate = birthDate "Load Birth Date";
 }
 
 group Decode_QR_Organization(source qr : QR, target organization : SVC_Organization) {
-  qr.elements as elements then {
-    elements.phaid as phaid -&gt; organization.identifier = id('XXXXXurn:ietf:rfc:3986', phaid) "Load PHA ID";
-  };
+  qr.phaid as phaid -&gt; organization.identifier = id('XXXXXurn:ietf:rfc:3986', phaid) "Load PHA ID";
 }
 
 group Decode_QR_Bundle(source qr : QR, target patient : SVC_Patient, target bundle : SVC_Bundle) {
   qr -&gt;  bundle.status = 'final',  bundle.type = 'document' "Set Bundle Metadata";
-  qr.elements as elements then {
-    elements.paperid as paperid -&gt; bundle.identifier = id('XXXXXurn:ietf:rfc:3986', paperid) "Load Paper SVC ID";
-    elements.signature as qrsig, bundle.signature as bsig -&gt;  bsig.data = qrsig,  bsig.type = '1.2.840.10065.1.12.1.14',  bsig.format = 'XXXXXXX TBD',  bsig.who = reference(organization) "Load Signature";
-  };
+  qr.paperid as paperid -&gt; bundle.identifier = id('XXXXXurn:ietf:rfc:3986', paperid) "Load Paper SVC ID";
+  qr.signature as qrsig, bundle.signature as bsig -&gt;  bsig.data = qrsig,  bsig.type = '1.2.840.10065.1.12.1.14',  bsig.format = 'XXXXXXX TBD',  bsig.who = reference(organization) "Load Signature";
   qr -&gt;  bundle.entry as e,  e.resource = create('SVC_Composition') as compostion then Decode_QR_Composition(qr, bundle, composition) "Process Composition Entry";
 }
 
 group Decode_QR_Composition(source qr : QR, source ,, target bundle : SVC_Bundle, target patient : SVC_Patient, target organization : SVC_Organization, target composition : SVC_Composition) {
   qr -&gt;  composition.subject = reference(patient),  composition.author = reference(organization) "Set Composition Meta";
-  qr.elements as elements then {
-    elements.digitalid as digitalid -&gt; composition.identifier = id('XXXXXurn:ietf:rfc:3986', digitalid) "Load Digital SVC ID";
-  };
+  qr.digitalid as digitalid -&gt; composition.identifier = id('XXXXXurn:ietf:rfc:3986', digitalid) "Load Digital SVC ID";
 }
 
 group Decode_QR_Provenance(source qr : QR, target bundle : SVC_Bundle, target patient : SVC_Patient, target organization : SVC_Organization, target paper : SVC_Composition, target digital : SVC_Composition, target provenance : SVC_Provenance) {
-  qr, provenance.entity as e_digital, provenance.agent as agent, provenance.signature as psig -&gt;  provenance.reason = 'PUBHLTH',  provenance.policy = 'XXXXXXX urn:example:who:smart:vaccine-certificate:RC1',  provenance.target = reference(bundle),  e_digital.role = 'source',  e_digital.what = reference(composition),  e_digital.agent = reference(organization),  e_paper.role = 'source',  e_paper.what = reference(bundle),  e_paper.agent = reference(organization),  psig.format = 'XXXXX TBD',  psig.who = reference(organization),  psg.type = '1.2.840.10065.1.12.1.14' then {
-    agent.who as who -&gt;  who.reference = reference(organization),  who.onBehalfOf = reference(patient) "Set Who";
-    qr.elements as elements -&gt; psig.data = elements.signature "Set signature data";
-  } "Set provenace";
+  qr, provenance.entity as e_digital, provenance.agent as agent, provenance.signature as psig -&gt;  provenance.reason = 'PUBHLTH',  provenance.policy = 'XXXXXXX urn:example:who:smart:vaccine-certificate:RC1',  provenance.target = reference(bundle),  e_digital.role = 'source',  e_digital.what = reference(composition),  e_digital.agent = reference(organization),  e_paper.role = 'source',  e_paper.what = reference(bundle),  e_paper.agent = reference(organization),  psig.format = 'XXXXX TBD',  psig.who = reference(organization),  psg.type = '1.2.840.10065.1.12.1.14',  psig.data = signature then {
+    agent.who as who -&gt;  who.reference = reference(organization),  who.onBehalfOf = reference(patient) as "Set who";
+  } "Set provenance";
 }
 
 </pre>
@@ -290,7 +281,7 @@ group Decode_QR_Provenance(source qr : QR, target bundle : SVC_Bundle, target pa
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc1#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 30, 2021 05:09+0000">2021-03-30</span>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc1#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 30, 2021 11:26+0000">2021-03-30</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
