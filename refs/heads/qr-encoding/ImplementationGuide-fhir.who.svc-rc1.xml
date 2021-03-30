@@ -231,6 +231,14 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/SVC-QR-UVCI"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/svc-patient"/>
       </reference>
       <name value="SVC Patient"/>
@@ -275,14 +283,6 @@
       </reference>
       <name value="WHO Vaccine List"/>
       <description value="The WHO Vaccine List from [ICD 11](https://icd.who.int/browse11) is used by:&#xA; *  the [SVC Immunization](StructureDefinition-svc-immunization.html)"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/svc-qr-uvci"/>
-      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -440,6 +440,10 @@
     <parameter>
       <code value="path-resource"/>
       <value value="input/resources/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources/examples"/>
     </parameter>
     <parameter>
       <code value="path-resource"/>

@@ -344,13 +344,24 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/SVC-QR-UVCI>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/SVC-QR-UVCI" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/svc-patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Patient" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Corresponds to the demographic information on the front page of the a paper Smart Vaccination Certificate (SVC)\n\nAn SVC_Patient should:\n* set the [identifier.assigner](StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner) to reference the [SVC Organization](StructureDefinition-svc-organization.html) resource associated to the PHA via the WHO Public Key Directory" ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -363,7 +374,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Organization" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Abstraction for an SVC Organization. There should be an SVC Organization associated to each public health authortiy (PHA) in the WHO Public Key Directory." ]
      ], [
-       fhir:index 5;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -376,7 +387,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provenance of SVC" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Used to assert the provenance of a public health authority (PHA) over either a Paper or a Digital Smart Vaccination Certificate (SVC)." ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -389,7 +400,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Bundle" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An [SVC Bundle](StructureDefinition-svc-bundle.html) is a document bundle containing the Smart Vaccination Certificate (SVC) content." ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -401,17 +412,6 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Vaccine List" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The WHO Vaccine List from [ICD 11](https://icd.who.int/browse11) is used by:\n *  the [SVC Immunization](StructureDefinition-svc-immunization.html)" ]
-     ], [
-       fhir:index 8;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-qr-uvci>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/svc-qr-uvci" ]
-       ]
      ], [
        fhir:index 9;
        fhir:Element.extension [
@@ -590,85 +590,89 @@
      ], [
        fhir:index 3;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/capabilitystatement" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/examples" ]
      ], [
        fhir:index 4;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/library" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/capabilitystatement" ]
      ], [
        fhir:index 5;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/measure" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/library" ]
      ], [
        fhir:index 6;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/plandefinition" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/measure" ]
      ], [
        fhir:index 7;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/questionnaire" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/plandefinition" ]
      ], [
        fhir:index 8;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary/codesystem" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/questionnaire" ]
      ], [
        fhir:index 9;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary/valueset" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary/codesystem" ]
      ], [
        fhir:index 10;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary/valueset" ]
      ], [
        fhir:index 11;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
      ], [
        fhir:index 12;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
      ], [
        fhir:index 13;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
      ], [
        fhir:index 14;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
      ], [
        fhir:index 15;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
      ], [
        fhir:index 16;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
      ], [
        fhir:index 17;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
      ], [
        fhir:index 18;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
      ], [
        fhir:index 19;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
      ], [
        fhir:index 20;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
      ], [
        fhir:index 21;
-       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
      ], [
        fhir:index 22;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
-       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
      ], [
        fhir:index 23;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 24;
        fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
        fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
      ]

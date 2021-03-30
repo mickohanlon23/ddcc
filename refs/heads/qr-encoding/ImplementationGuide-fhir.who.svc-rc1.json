@@ -359,6 +359,17 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/SVC-QR-UVCI"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/svc-patient"
         },
         "name": "SVC Patient",
@@ -415,17 +426,6 @@
         },
         "name": "WHO Vaccine List",
         "description": "The WHO Vaccine List from [ICD 11](https://icd.who.int/browse11) is used by:\n *  the [SVC Immunization](StructureDefinition-svc-immunization.html)"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:logical"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/svc-qr-uvci"
-        }
       },
       {
         "extension": [
@@ -607,6 +607,10 @@
       {
         "code": "path-resource",
         "value": "input/resources/maps"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources/examples"
       },
       {
         "code": "path-resource",

@@ -122,7 +122,7 @@
 		<ul class="dropdown-menu">
 		  <li><a href="security_privacy.html">Security and Privacy Considerations</a></li>
 		  <li><a href="testing.html">Testing</a></li>
-		  <li><a name="b85e083e-e04d-46d8-9abb-12425284ed05">​</a><a href="instant_openhie.html">Instant OpenHIE</a></li>		  
+		  <li><a name="d21924b3-a2b6-4295-b813-81884dc989d0">​</a><a href="instant_openhie.html">Instant OpenHIE</a></li>		  
 		  <li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
@@ -170,39 +170,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
    <p>Contents:</p>
    <ul>
       <li>
-         <a href="#1">Structures: Logical Models</a>
+         <a href="#1">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#2">Structures: Resource Profiles</a>
+         <a href="#2">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#3">Terminology: Value Sets</a>
-      </li>
-      <li>
-         <a href="#4">Terminology: Structure Maps</a>
+         <a href="#3">Terminology: Structure Maps</a>
       </li>
    </ul>
 </div>
 <div>
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
-   <h3>Structures: Logical Models </h3>
-   <p>
-    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
-</p>
-   <p>
-      <table class="grid">
-         <col style="width:20%"/>
-         <tbody>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-svc-qr-uvci.html" title="StructureDefinition/svc-qr-uvci">StructureDefinition/svc-qr-uvci</a>
-               </td>
-            </tr>
-         </tbody>
-      </table>
-   </p>
-   <a name="2"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
@@ -218,7 +198,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <td>
 <p>Describes the logical structure for the health content contained in a SVC.  An <a href="StructureDefinition-svc-composition.html">SVC Composition</a> should:</p>
 <ul>
-  <li><a name="37959103-8660-4ff1-8c1a-977a5466e088">​</a>be accessible from a SVC Registry as located via the WHO Public Key Directory for the PHA referenced in the <a href="StructureDefinition-svc-composition-definitions.html#Composition.agent">author</a>.</li>
+  <li><a name="281b74c3-f699-4632-a018-390aab16ee49">​</a>be accessible from a SVC Registry as located via the WHO Public Key Directory for the PHA referenced in the <a href="StructureDefinition-svc-composition-definitions.html#Composition.agent">author</a>.</li>
 </ul>
 </td>
             </tr>
@@ -232,6 +212,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="StructureDefinition-SVC-QR-UVCI.html" title="StructureDefinition/SVC-QR-UVCI">StructureDefinition/SVC-QR-UVCI</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="StructureDefinition-svc-patient.html" title="StructureDefinition/svc-patient">SVC Patient</a>
                </td>
                <td>
@@ -239,7 +227,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>An SVC_Patient should:</p>
 <ul>
-  <li><a name="d49517df-6db3-4131-a9b9-7f02d4d7bd06">​</a>set the <a href="StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner">identifier.assigner</a> to reference the <a href="StructureDefinition-svc-organization.html">SVC Organization</a> resource associated to the PHA via the WHO Public Key Directory</li>
+  <li><a name="59907c1a-5d25-4fce-9d83-6b515ce5009c">​</a>set the <a href="StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner">identifier.assigner</a> to reference the <a href="StructureDefinition-svc-organization.html">SVC Organization</a> resource associated to the PHA via the WHO Public Key Directory</li>
 </ul>
 </td>
             </tr>
@@ -280,13 +268,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="StructureDefinition-svc-practitioner-role.html" title="StructureDefinition/svc-practitioner-role">SVC Practitioner Role</a>
                </td>
                <td>
-<p><a name="57678a10-694b-4835-8a93-040f59f668bc">​</a>Association of an <a href="StructureDefinition-svc-practitioner-role.html">SVC Practitioner</a> to a managing <a href="StructureDefinition-svc-orgaznization.html">SVC Organization</a>, indicating that an SVC Practitioner is authorized by the public health authority (PHA) to vaccinate an <a href="StructureDefinition-svc-patient.html">SVC Patient</a>.</p>
+<p><a name="d3e733b4-2e84-4065-a720-674c8089668a">​</a>Association of an <a href="StructureDefinition-svc-practitioner-role.html">SVC Practitioner</a> to a managing <a href="StructureDefinition-svc-orgaznization.html">SVC Organization</a>, indicating that an SVC Practitioner is authorized by the public health authority (PHA) to vaccinate an <a href="StructureDefinition-svc-patient.html">SVC Patient</a>.</p>
 </td>
             </tr>
          </tbody>
       </table>
    </p>
-   <a name="3"> </a>
+   <a name="2"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
     <p>These define sets of codes used by systems conforming to this implementation guide</p>
@@ -328,7 +316,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tbody>
       </table>
    </p>
-   <a name="4"> </a>
+   <a name="3"> </a>
    <h3>Terminology: Structure Maps </h3>
    <p>
     <p>These define transformations to convert between data structures used by systems conforming to this implementation guide</p>
@@ -367,7 +355,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc1#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 30, 2021 11:26+0000">2021-03-30</span>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc1#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 30, 2021 12:32+0000">2021-03-30</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
