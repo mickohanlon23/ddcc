@@ -1,11 +1,11 @@
 ﻿SVC_RC1 : Validation Results
 =========================================
 
-err = 9, warn = 40, info = 1
+err = 44, warn = 42, info = 1
 IG Publisher Version: 1.1.65
-Generated Tue Mar 30 04:53:37 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
+Generated Tue Mar 30 05:05:17 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
 
- Build Errors : 125 / 2 / 1
+ Build Errors : 131 / 3 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization : 0 / 1 / 1
@@ -18,12 +18,15 @@ Generated Tue Mar 30 04:53:37 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-confitions : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19 : 1 / 2 / 1
+ /github/workspace/input/resources/svc-map-qr-uvci-bundle : 34 / 1 / 1
  /github/workspace/input/svc : 0 / 1 / 1
 </table>
 == n/a ==
 ERROR: ImplementationGuide.definition.parameter[11].value: Supressed messages file not found
 WARNING: ImplementationGuide.dependency[0].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 INFORMATION: ImplementationGuide.dependency[0].url: The correct canonical URL for this dependency is http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/svc-map-qr-uvci-bundle.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/svc-map-qr-uvci-bundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/svc-qr-uvci.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/svc-qr-uvci.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/StructureDefinition-svc-bundle-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
@@ -107,6 +110,11 @@ ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci.profile.history.
 ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-svc-qr-uvci.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-who-svc-vaccinable-confitions.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-who-svc-vaccinable-confitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-who-svc-vaccinable-confitions.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
@@ -124,9 +132,9 @@ ERROR: /github/workspace/output/ValueSet-who-svc-vaccines.ttl.html#/html/body/di
 ERROR: /github/workspace/output/ValueSet-who-svc-vaccines.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/actors.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 228, column 116: The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for "author" cannot be resolved (valid targets: 98 targets)
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 251, column 16: The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for "identifier.assigner" cannot be resolved (valid targets: 80 targets)
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 297, column 115: The link 'StructureDefinition-svc-orgaznization.html' for "SVC Organization" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 231, column 116: The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for "author" cannot be resolved (valid targets: 98 targets)
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 254, column 16: The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for "identifier.assigner" cannot be resolved (valid targets: 80 targets)
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 300, column 115: The link 'StructureDefinition-svc-orgaznization.html' for "SVC Organization" cannot be resolved
 ERROR: /github/workspace/output/concepts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/content_profiles.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
 ERROR: /github/workspace/output/data_exchange.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
@@ -217,6 +225,43 @@ INFORMATION: ValueSet/who-svc-vaccines-covid-19: ValueSet: Validate resource aga
 ERROR: ValueSet/who-svc-vaccines-covid-19: ValueSet.compose.include[0].system: URL value 'http://hl7.org/fhir/sid/icd-11' does not resolve
 WARNING: ValueSet/who-svc-vaccines-covid-19: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'who-svc-vaccines-covid-19'): Error from server: Unable to provide support for code system http://hl7.org/fhir/sid/icd-11
+== /github/workspace/input/resources/svc-map-qr-uvci-bundle.xml ==
+ERROR: StructureMap.where(url = 'http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle'): Conformance resource /github/workspace/input/resources/svc-map-qr-uvci-bundle.xml - the canonical URL (http://fhir.org/guides/who/svc-rc1/StructureMap/svc-map-qr-uvci-bundle) does not match the URL (http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle)
+INFORMATION: StructureMap/svc-map-qr-uvci-bundle: StructureMap: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureMap
+WARNING: StructureMap/svc-map-qr-uvci-bundle: StructureMap: smp-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].name: id value 'Decode_QR' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].name: id value 'Create resources and process bundle' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[0].name: id value 'Decode_QR_Patient' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[1].name: id value 'Decode_QR_Organization' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[2].name: id value 'Decode_QR_Bundle' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].name: id value 'Decode_QR_Patient' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[0].rule[0].name: id value 'Load Name' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[0].rule[1].name: id value 'Load Patient Identifer' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[0].rule[2].name: id value 'Load Birth Date' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[2].name: id value 'Decode_QR_Organization' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[2].rule[0].rule[0].name: id value 'Load PHA ID' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].name: id value 'Decode_QR_Bundle' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[0].name: id value 'Set Bundle Metadata' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[1].rule[0].name: id value 'Load Paper SVC ID' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[1].rule[1].name: id value 'Load Signature' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[2].name: id value 'Process Composition Entry' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[2].dependent[0].name: id value 'Decode_QR_Composition' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].name: id value 'Decode_QR_Composition' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].input[1].name: id value ',' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].rule[0].name: id value 'Set Composition Meta' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].rule[1].rule[0].name: id value 'Load Digital SVC ID' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].name: id value 'Decode_QR_Provenance' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].name: id value 'Set provenace' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].source[1].variable: id value 'e_digital' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[3].context: id value 'e_digital' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[4].context: id value 'e_digital' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[5].context: id value 'e_digital' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[6].context: id value 'e_paper' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[7].context: id value 'e_paper' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[8].context: id value 'e_paper' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].rule[0].name: id value 'Set Who' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].rule[1].name: id value 'Set signature data' is not valid
+ERROR: /github/workspace/input/resources/svc-map-qr-uvci-bundle: URL Mismatch http://fhir.org/guides/who/svc-rc1/StructureMap/svc-map-qr-uvci-bundle vs http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle
 == /github/workspace/input/svc.xml ==
 INFORMATION: ImplementationGuide/fhir.who.svc-rc1: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
 WARNING: ImplementationGuide/fhir.who.svc-rc1: ImplementationGuide.definition.page.page[2].title: value should not start or finish with whitespace
