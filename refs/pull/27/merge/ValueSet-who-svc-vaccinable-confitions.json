@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "id": "who-svc-vaccinable-confitions",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://id.who.int/icd11/mms</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>RA01.0</td><td>COVID-19, virus identified</td></tr><tr><td>RA01.1</td><td>COVID-19, virus not identified</td></tr></table></li></ul></div>"
+  },
+  "url": "http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-vaccinable-confitions",
+  "version": "0.2.0",
+  "name": "WHO_SVC_Vaccinable_Conditions",
+  "title": "WHO List of Vaccinable Conditions",
+  "status": "draft",
+  "date": "2021-03-31T16:22:07+00:00",
+  "publisher": "World Health Organization (WHO)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.who.int"
+        }
+      ]
+    }
+  ],
+  "description": "The WHO Vaccinable Conditions List from [ICD 11](https://icd.who.int/browse11) is used by:\n *  the [SVC Immunization](StructureDefinition-svc-immunization.html) \n",
+  "compose": {
+    "include": [
+      {
+        "system": "http://id.who.int/icd11/mms",
+        "concept": [
+          {
+            "code": "RA01.0",
+            "display": "COVID-19, virus identified"
+          },
+          {
+            "code": "RA01.1",
+            "display": "COVID-19, virus not identified"
+          }
+        ]
+      }
+    ]
+  }
+}
