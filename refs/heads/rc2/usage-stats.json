@@ -8,46 +8,18 @@
       {
         "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle",
         "title": "SVC Bundle"
-      },
-      {
-        "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle-new",
-        "title": "New SVC Bundle"
-      },
-      {
-        "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle-updated",
-        "title": "Updated SVC Bundle"
       }
     ],
     "Composition": [
       {
         "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition",
         "title": "SVC Composition"
-      },
-      {
-        "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition-ingested",
-        "title": "Ingested SVC Composition"
-      },
-      {
-        "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition-new",
-        "title": "New SVC Composition"
-      },
-      {
-        "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition-updated",
-        "title": "Updated SVC Composition"
       }
     ],
     "Immunization": [
       {
         "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization",
         "title": "SVC Immunization"
-      },
-      {
-        "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization-new",
-        "title": "New SVC Immunization"
-      },
-      {
-        "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization-updated",
-        "title": "Updated SVC Immunization"
       }
     ],
     "Organization": [
@@ -60,57 +32,28 @@
       {
         "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient",
         "title": "SVC Patient"
-      },
-      {
-        "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient-ingested",
-        "title": "Ingested SVC Patient"
-      },
-      {
-        "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient-new",
-        "title": "New SVC Patient"
-      },
-      {
-        "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient-updated",
-        "title": "Updated SVC Patient"
       }
     ],
     "Practitioner": [
       {
         "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner",
-        "title": "SVC Practiotioner"
+        "title": "SVC Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner-role",
+        "title": "SVC Practitioner Role"
       }
     ],
     "Provenance": [
       {
         "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance",
         "title": "Provenance of SVC"
-      },
-      {
-        "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-digital",
-        "title": "Provenance of a Digital SVC"
-      },
-      {
-        "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-digital-ingested",
-        "title": "Provenance of an Integsted Digital SVC"
-      },
-      {
-        "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-digital-new",
-        "title": "Provenance of a New Digital SVC"
-      },
-      {
-        "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-digital-updated",
-        "title": "Provenance of an Updated Digital SVC"
-      },
-      {
-        "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance-paper",
-        "title": "Provenance of a Paper SVC"
       }
     ]
   },
   "usage": {
-    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
-      "Immunization.occurrence[x]"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -129,9 +72,6 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/regex": [
-      "StructureDefinition.snapshot.element.type"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
     ],
@@ -149,9 +89,6 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/translation": [
-      "Immunization.vaccineCode.coding.display"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
