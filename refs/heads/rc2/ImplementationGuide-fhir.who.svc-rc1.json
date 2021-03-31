@@ -318,6 +318,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/svc-map-qr-uvci-bundle"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -339,6 +350,17 @@
         },
         "name": "SVC Immunization",
         "description": "An SVC Immunization contains the content corresponding to a row in the Vaccination Events section of a Paper SVC. While this is not a further profile of the International Patient Summary (IPS) Immunization resouce, this is intended to map into an IPS Immunization resource."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/SVC-QR-UVCI"
+        }
       },
       {
         "extension": [
@@ -469,6 +491,11 @@
           "generation": "html",
           "page": [
             {
+              "nameUrl": "maps.html",
+              "title": "Maps",
+              "generation": "html"
+            },
+            {
               "nameUrl": "references.html",
               "title": "References",
               "generation": "html"
@@ -560,11 +587,6 @@
               "generation": "html"
             },
             {
-              "nameUrl": "instant_openhie.html",
-              "title": "Instant OpenHIE",
-              "generation": "html"
-            },
-            {
               "nameUrl": "downloads.html",
               "title": "Useful Downloads",
               "generation": "html"
@@ -581,6 +603,14 @@
       {
         "code": "path-resource",
         "value": "input/resources/activitydefinition"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources/maps"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources/examples"
       },
       {
         "code": "path-resource",

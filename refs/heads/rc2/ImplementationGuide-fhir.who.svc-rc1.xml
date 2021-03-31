@@ -200,6 +200,14 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/svc-map-qr-uvci-bundle"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -217,6 +225,14 @@
       </reference>
       <name value="SVC Immunization"/>
       <description value="An SVC Immunization contains the content corresponding to a row in the Vaccination Events section of a Paper SVC. While this is not a further profile of the International Patient Summary (IPS) Immunization resouce, this is intended to map into an IPS Immunization resource."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SVC-QR-UVCI"/>
+      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -317,6 +333,11 @@
         <title value="Narrative"/>
         <generation value="html"/>
         <page>
+          <nameUrl value="maps.html"/>
+          <title value="Maps"/>
+          <generation value="html"/>
+        </page>
+        <page>
           <nameUrl value="references.html"/>
           <title value="References"/>
           <generation value="html"/>
@@ -402,11 +423,6 @@
           <generation value="html"/>
         </page>
         <page>
-          <nameUrl value="instant_openhie.html"/>
-          <title value="Instant OpenHIE"/>
-          <generation value="html"/>
-        </page>
-        <page>
           <nameUrl value="downloads.html"/>
           <title value="Useful Downloads"/>
           <generation value="html"/>
@@ -420,6 +436,14 @@
     <parameter>
       <code value="path-resource"/>
       <value value="input/resources/activitydefinition"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources/examples"/>
     </parameter>
     <parameter>
       <code value="path-resource"/>
