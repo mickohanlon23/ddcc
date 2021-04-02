@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>FHIR.WHO.SVC-RC1\SVC Composition - FHIR v4.0.1</title>
+    <title>FHIR.WHO.SVC-RC2\SVC Composition - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.5"}
-    h3,h4,h5,h6{--heading-prefix:"5.5"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.8"}
+    h3,h4,h5,h6{--heading-prefix:"5.8"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -55,7 +55,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">WHO Smart Vaccination Certificate (SVC) - RC1</span><br/>0.2.0 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">WHO Smart Vaccination Certificate - RC2</span><br/>0.2.0 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -122,7 +122,6 @@
 		<ul class="dropdown-menu">
 		  <li><a href="security_privacy.html">Security and Privacy Considerations</a></li>
 		  <li><a href="testing.html">Testing</a></li>
-		  <li><a name="0416a278-3e48-4ba8-bbc0-2a3cdf28d955">​</a><a href="instant_openhie.html">Instant OpenHIE</a></li>		  
 		  <li><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
@@ -156,7 +155,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">WHO Smart Vaccination Certificate (SVC) - RC1 - Local Development build (v0.2.0). See the <a href="http://fhir.org/guides/who/svc-rc1/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">WHO Smart Vaccination Certificate - RC2 - Local Development build (v0.2.0). See the <a href="http://fhir.org/guides/who/svc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -222,14 +221,14 @@
 
 <table class="grid">
 <tbody>
-<tr><td>Defining URL:</td><td>http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition</td></tr>
+<tr><td>Defining URL:</td><td>https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition</td></tr>
  <tr><td>Version:</td><td>0.2.0</td></tr>
  <tr><td>Name:</td><td>SVC_Composition</td></tr>
  <tr><td>Title:</td><td>SVC Composition</td></tr>
- <tr><td>Status:</td><td>Active as of 2021-04-02T15:13:12+00:00</td></tr>
+ <tr><td>Status:</td><td>Active as of 2021-04-02T20:18:51+00:00</td></tr>
  <tr><td>Definition:</td><td><p>Describes the logical structure for the health content contained in a SVC.  An <a href="StructureDefinition-svc-composition.html">SVC Composition</a> should:</p>
 <ul>
-<li><a name="93a84274-8486-4f3e-9352-355a9e8d934e">​</a>be accessible from a SVC Registry as located via the WHO Public Key Directory for the PHA referenced in the <a href="StructureDefinition-svc-composition-definitions.html#Composition.agent">author</a>.</li>
+<li><a name="2cbcaea3-e2f0-4e45-8331-a36fddd42842">​</a>be accessible from a SVC Registry as located via the WHO Public Key Directory for the PHA referenced in the <a href="StructureDefinition-svc-composition-definitions.html#Composition.agent">author</a>.</li>
 </ul>
 </td></tr>
  <tr><td>Publisher:</td><td>World Health Organization (WHO)</td></tr>
@@ -240,7 +239,7 @@
   <p>
   The official URL for this profile is:
   </p>
-  <pre>http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition</pre>
+  <pre>https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition</pre>
 
   <!-- insert intro if present -->
 
@@ -300,9 +299,9 @@ Summary
 <p>Mandatory: 7 elements<br/> Must-Support: 12 elements</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-svc-patient.html">http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient</a></li>
-<li><a href="StructureDefinition-svc-organization.html">http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization</a></li>
-<li><a href="StructureDefinition-svc-immunization.html">http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization</a></li>
+<li><a href="StructureDefinition-svc-patient.html">https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-patient</a></li>
+<li><a href="StructureDefinition-svc-organization.html">https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization</a></li>
+<li><a href="StructureDefinition-svc-immunization.html">https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization</a></li>
 
 </ul>
 
@@ -535,7 +534,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
     },
     "<a href="StructureDefinition-svc-composition.html#Composition.encounter" title="Describes the clinical encounter or type of care this documentation is associated with" class="dict"><span style="text-decoration: underline">encounter</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Context of the Composition</span>
     "<a href="StructureDefinition-svc-composition.html#Composition.date" title="The composition editing time, when the composition was last logically changed by the author" class="dict"><span style="text-decoration: underline">date</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Composition editing time</span>
-    "<a href="StructureDefinition-svc-composition.html#Composition.author" title="Identifies who is responsible for the information in the composition, not necessarily who typed it in (this element must be supported)" class="dict"><span style="text-decoration: underline">author</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization]])}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Who and/or what authored the composition</span>
+    "<a href="StructureDefinition-svc-composition.html#Composition.author" title="Identifies who is responsible for the information in the composition, not necessarily who typed it in (this element must be supported)" class="dict"><span style="text-decoration: underline">author</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization]])}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Who and/or what authored the composition</span>
     "<a href="StructureDefinition-svc-composition.html#Composition.title" title="Official human-readable label for the composition (this element must be supported)" class="dict"><span style="text-decoration: underline">title</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Smart Vaccination Certificate</span>
     "<a href="StructureDefinition-svc-composition.html#Composition.confidentiality" title="The code specifying the level of confidentiality of the Composition" class="dict"><span style="text-decoration: underline">confidentiality</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">As defined by affinity domain</a></span>
     "<a href="StructureDefinition-svc-composition.html#Composition.attester" title="A participant who has attested to the accuracy of the composition/document" class="dict"><span style="text-decoration: underline">attester</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Attests to accuracy of composition</span>
@@ -577,7 +576,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 The primary use case for the Vaccination Section is to enable communication of a patient's vaccination status.
 It may contain the entire vaccination history that is relevant to the period of time being summarized. This entry shall be used to document that no information about vaccination is available, or that no vaccinations are known (this element must be supported)" class="dict"><span style="text-decoration: underline">entry</span></a>" : [ <span style="color: navy">// sliced by type:$this  in the specified order Open</span>
         ],
-        "<a href="StructureDefinition-svc-composition.html#Composition.section.entry" title="A reference to the actual resource from which the narrative in the section is derived (this element must be supported)" class="dict"><span style="text-decoration: underline">entry</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization]])}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">A reference to data that supports this section</span>
+        "<a href="StructureDefinition-svc-composition.html#Composition.section.entry" title="A reference to the actual resource from which the narrative in the section is derived (this element must be supported)" class="dict"><span style="text-decoration: underline">entry</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization]])}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">A reference to data that supports this section</span>
         "<a href="StructureDefinition-svc-composition.html#Composition.section.emptyReason" title="If the section is empty, why the list is empty. An empty section typically has some text explaining the empty reason" class="dict"><span style="text-decoration: underline">emptyReason</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Why the section is empty</a></span>
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Nested Section</span>. One of these 0:</span>
       }
@@ -638,9 +637,9 @@ Summary
 <p>Mandatory: 7 elements<br/> Must-Support: 12 elements</p><p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-svc-patient.html">http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient</a></li>
-<li><a href="StructureDefinition-svc-organization.html">http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization</a></li>
-<li><a href="StructureDefinition-svc-immunization.html">http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization</a></li>
+<li><a href="StructureDefinition-svc-patient.html">https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-patient</a></li>
+<li><a href="StructureDefinition-svc-organization.html">https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization</a></li>
+<li><a href="StructureDefinition-svc-immunization.html">https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization</a></li>
 
 </ul>
 
@@ -873,7 +872,7 @@ The type is the Canonical URL of Resource Definition that is the type this refer
     },
     "<a href="StructureDefinition-svc-composition.html#Composition.encounter" title="Describes the clinical encounter or type of care this documentation is associated with" class="dict"><span style="text-decoration: underline">encounter</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Context of the Composition</span>
     "<a href="StructureDefinition-svc-composition.html#Composition.date" title="The composition editing time, when the composition was last logically changed by the author" class="dict"><span style="text-decoration: underline">date</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">dateTime</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Composition editing time</span>
-    "<a href="StructureDefinition-svc-composition.html#Composition.author" title="Identifies who is responsible for the information in the composition, not necessarily who typed it in (this element must be supported)" class="dict"><span style="text-decoration: underline">author</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization]])}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Who and/or what authored the composition</span>
+    "<a href="StructureDefinition-svc-composition.html#Composition.author" title="Identifies who is responsible for the information in the composition, not necessarily who typed it in (this element must be supported)" class="dict"><span style="text-decoration: underline">author</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization]])}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Who and/or what authored the composition</span>
     "<a href="StructureDefinition-svc-composition.html#Composition.title" title="Official human-readable label for the composition (this element must be supported)" class="dict"><span style="text-decoration: underline">title</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Smart Vaccination Certificate</span>
     "<a href="StructureDefinition-svc-composition.html#Composition.confidentiality" title="The code specifying the level of confidentiality of the Composition" class="dict"><span style="text-decoration: underline">confidentiality</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">As defined by affinity domain</a></span>
     "<a href="StructureDefinition-svc-composition.html#Composition.attester" title="A participant who has attested to the accuracy of the composition/document" class="dict"><span style="text-decoration: underline">attester</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Attests to accuracy of composition</span>
@@ -915,7 +914,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 The primary use case for the Vaccination Section is to enable communication of a patient's vaccination status.
 It may contain the entire vaccination history that is relevant to the period of time being summarized. This entry shall be used to document that no information about vaccination is available, or that no vaccinations are known (this element must be supported)" class="dict"><span style="text-decoration: underline">entry</span></a>" : [ <span style="color: navy">// sliced by type:$this  in the specified order Open</span>
         ],
-        "<a href="StructureDefinition-svc-composition.html#Composition.section.entry" title="A reference to the actual resource from which the narrative in the section is derived (this element must be supported)" class="dict"><span style="text-decoration: underline">entry</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization]])}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">A reference to data that supports this section</span>
+        "<a href="StructureDefinition-svc-composition.html#Composition.section.entry" title="A reference to the actual resource from which the narrative in the section is derived (this element must be supported)" class="dict"><span style="text-decoration: underline">entry</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization]])}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">A reference to data that supports this section</span>
         "<a href="StructureDefinition-svc-composition.html#Composition.section.emptyReason" title="If the section is empty, why the list is empty. An empty section typically has some text explaining the empty reason" class="dict"><span style="text-decoration: underline">emptyReason</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Why the section is empty</a></span>
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Nested Section</span>. One of these 0:</span>
       }
@@ -1127,14 +1126,14 @@ It may contain the entire vaccination history that is relevant to the period of 
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc1#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 2, 2021 15:13+0000">2021-04-02</span>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc2#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 2, 2021 20:18+0000">2021-04-02</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
                   | <a style="color: #81BEF7" href="https://github.com/who-int/svc/projects/1" target="_blank">Issues</a>
                 
-                 | <a style="color: #81BEF7" href="http://fhir.org/guides/who/svc-rc1/history.html" target="_blank">Version History <img src="external.png" alt="external" style="vertical-align: baseline"/></a> |
+                 | <a style="color: #81BEF7" href="http://fhir.org/guides/who/svc/history.html" target="_blank">Version History <img src="external.png" alt="external" style="vertical-align: baseline"/></a> |
                    <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
           </span>
         </p>

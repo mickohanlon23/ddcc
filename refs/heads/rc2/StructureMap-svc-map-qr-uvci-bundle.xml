@@ -6,7 +6,7 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
          <pre>map &quot;http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle&quot; = &quot;svc-map-qr-uvci-bundle&quot;
 
-uses &quot;http://who-int.github.io/svc/refs/heads/qr-encoding/StructureDefinition/svc-qr-bundle&quot; alias QR as source
+uses &quot;http://who-int.github.io/svc/refs/heads/qr-encoding/StructureDefinition/svc-qr-uvci&quot; alias QR as source
 uses &quot;http://who-int.github.io/svc/StructureDefinition/svc-bundle&quot; alias SVC_Bundle as target
 uses &quot;http://who-int.github.io/svc/StructureDefinition/svc-composition&quot; alias SVC_Composition as produced
 uses &quot;http://who-int.github.io/svc/StructureDefinition/svc-patient&quot; alias SVC_Patient as produced
@@ -52,7 +52,7 @@ group Decode_QR_Provenance(source qr : QR, target bundle : SVC_Bundle, target pa
   <version value="0.2.0"/>
   <name value="svc-map-qr-uvci-bundle"/>
   <status value="draft"/>
-  <date value="2021-04-02T15:13:12+00:00"/>
+  <date value="2021-04-02T20:18:51+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -61,7 +61,7 @@ group Decode_QR_Provenance(source qr : QR, target bundle : SVC_Bundle, target pa
     </telecom>
   </contact>
   <structure>
-    <url value="http://who-int.github.io/svc/refs/heads/qr-encoding/StructureDefinition/svc-qr-bundle"/>
+    <url value="http://who-int.github.io/svc/refs/heads/qr-encoding/StructureDefinition/svc-qr-uvci"/>
     <mode value="source"/>
     <alias value="QR"/>
   </structure>

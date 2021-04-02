@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization> a fhir:StructureDefinition;
+<http://fhir.org/guides/who/svc/StructureDefinition/svc-organization> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "svc-organization"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "business" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization"];
+  fhir:StructureDefinition.url [ fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization"];
   fhir:StructureDefinition.version [ fhir:value "0.2.0"];
   fhir:StructureDefinition.name [ fhir:value "SVC_Organization"];
   fhir:StructureDefinition.title [ fhir:value "SVC Organization"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-04-02T15:13:12+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-04-02T20:18:51+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1356,7 +1356,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization.ttl> a owl:Ontology;
+<http://fhir.org/guides/who/svc/StructureDefinition/svc-organization.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

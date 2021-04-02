@@ -34,12 +34,12 @@ It may contain the entire vaccination history that is relevant to the period of 
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="not-classified"/>
   </extension>
-  <url value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition"/>
+  <url value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition"/>
   <version value="0.2.0"/>
   <name value="SVC_Composition"/>
   <title value="SVC Composition"/>
   <status value="active"/>
-  <date value="2021-04-02T15:13:12+00:00"/>
+  <date value="2021-04-02T20:18:51+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -976,7 +976,7 @@ It may contain the entire vaccination history that is relevant to the period of 
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-patient"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1324,7 +1324,7 @@ It may contain the entire vaccination history that is relevant to the period of 
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -3318,7 +3318,7 @@ It may contain the entire vaccination history that is relevant to the period of 
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization"/>
       </type>
       <condition value="cmp-2"/>
       <constraint>
@@ -3457,7 +3457,7 @@ It may contain the entire vaccination history that is relevant to the period of 
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-patient"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -3470,7 +3470,7 @@ It may contain the entire vaccination history that is relevant to the period of 
       <path value="Composition.author"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -3535,7 +3535,7 @@ It may contain the entire vaccination history that is relevant to the period of 
       <max value="*"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization"/>
       </type>
       <mustSupport value="true"/>
     </element>

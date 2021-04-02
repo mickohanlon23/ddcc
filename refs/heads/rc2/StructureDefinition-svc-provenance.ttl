@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance> a fhir:StructureDefinition;
+<http://fhir.org/guides/who/svc/StructureDefinition/svc-provenance> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "svc-provenance"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance"];
+  fhir:StructureDefinition.url [ fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-provenance"];
   fhir:StructureDefinition.version [ fhir:value "0.2.0"];
   fhir:StructureDefinition.name [ fhir:value "SVC_Provenance"];
   fhir:StructureDefinition.title [ fhir:value "Provenance of SVC"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-04-02T15:13:12+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-04-02T20:18:51+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1702,9 +1702,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization";
+           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization";
            fhir:index 0;
-           fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization>
+           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1752,9 +1752,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient";
+           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-patient";
            fhir:index 0;
-           fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient>
+           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-patient>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2388,9 +2388,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle";
+           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-bundle";
            fhir:index 0;
-           fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle>
+           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-bundle>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2730,17 +2730,17 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization";
+           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization";
            fhir:index 0;
-           fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization>
+           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization>
          ], [
-           fhir:value "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner-role";
+           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner-role";
            fhir:index 1;
-           fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner-role>
+           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner-role>
          ], [
-           fhir:value "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner";
+           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner";
            fhir:index 2;
-           fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner>
+           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2993,9 +2993,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization";
+           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization";
            fhir:index 0;
-           fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization>
+           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization>
          ]
        ]
      ], [
@@ -3007,9 +3007,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient";
+           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-patient";
            fhir:index 0;
-           fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient>
+           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-patient>
          ]
        ]
      ], [
@@ -3043,9 +3043,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle";
+           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-bundle";
            fhir:index 0;
-           fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle>
+           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-bundle>
          ]
        ]
      ], [
@@ -3079,17 +3079,17 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization";
+           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization";
            fhir:index 0;
-           fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization>
+           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization>
          ], [
-           fhir:value "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner-role";
+           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner-role";
            fhir:index 1;
-           fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner-role>
+           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner-role>
          ], [
-           fhir:value "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner";
+           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner";
            fhir:index 2;
-           fhir:link <http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner>
+           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
@@ -3098,7 +3098,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance.ttl> a owl:Ontology;
+<http://fhir.org/guides/who/svc/StructureDefinition/svc-provenance.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

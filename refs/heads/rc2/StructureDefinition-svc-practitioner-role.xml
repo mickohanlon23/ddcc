@@ -14,12 +14,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="individual"/>
   </extension>
-  <url value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner-role"/>
+  <url value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner-role"/>
   <version value="0.2.0"/>
   <name value="SVC_PractitionerRole"/>
   <title value="SVC Practitioner Role"/>
   <status value="active"/>
-  <date value="2021-04-02T15:13:12+00:00"/>
+  <date value="2021-04-02T20:18:51+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -522,7 +522,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -552,7 +552,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1291,14 +1291,14 @@
       <path value="PractitionerRole.practitioner"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner"/>
       </type>
     </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization"/>
       </type>
     </element>
   </differential>

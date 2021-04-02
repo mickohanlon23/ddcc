@@ -24,12 +24,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="not-classified"/>
   </extension>
-  <url value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance"/>
+  <url value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-provenance"/>
   <version value="0.2.0"/>
   <name value="SVC_Provenance"/>
   <title value="Provenance of SVC"/>
   <status value="active"/>
-  <date value="2021-04-02T15:13:12+00:00"/>
+  <date value="2021-04-02T20:18:51+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -1317,7 +1317,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1356,7 +1356,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-patient"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1845,7 +1845,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-bundle"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2114,9 +2114,9 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner-role"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner-role"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2299,7 +2299,7 @@
       <path value="Provenance.agent.who"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization"/>
       </type>
     </element>
     <element id="Provenance.agent:Provenance_Agent.onBehalfOf">
@@ -2307,7 +2307,7 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-patient"/>
       </type>
     </element>
     <element id="Provenance.entity">
@@ -2334,7 +2334,7 @@
       <path value="Provenance.entity.what"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-bundle"/>
       </type>
     </element>
     <element id="Provenance.signature">
@@ -2361,9 +2361,9 @@
       <path value="Provenance.signature.who"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner-role"/>
-        <targetProfile value="http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner-role"/>
+        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner"/>
       </type>
       <mustSupport value="true"/>
     </element>

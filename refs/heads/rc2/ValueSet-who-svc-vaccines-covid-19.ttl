@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-vaccines-covid-19> a fhir:ValueSet;
+<http://fhir.org/guides/who/svc/ValueSet/who-svc-vaccines-covid-19> a fhir:ValueSet;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "who-svc-vaccines-covid-19"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://id.who.int/icd11/mms</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>XM1NL1</td><td>COVID-19 vaccine, inactivated virus</td></tr><tr><td>XM5DF6</td><td>COVID-19 vaccine, live attenuated virus</td></tr><tr><td>XM9QW8</td><td>COVID-19 vaccine, non-replicating viral vector</td></tr><tr><td>XM0CX4</td><td>COVID-19 vaccine, replicating viral vector</td></tr><tr><td>XM5JC5</td><td>COVID-19 vaccine, virus protein subunit</td></tr><tr><td>XM1J92</td><td>COVID-19 vaccine, virus like particle (VLP)</td></tr><tr><td>XM6AT1</td><td>COVID-19 vaccine, DNA based</td></tr><tr><td>XM6AT1</td><td>COVID-19 vaccine, DNA based</td></tr><tr><td>XM1NL1</td><td>COVID-19 vaccine, inactivated virus</td></tr><tr><td>XM5DF6</td><td>COVID-19 vaccine, live attenuated virus</td></tr><tr><td>XM9QW8</td><td>COVID-19 vaccine, non-replicating viral vector</td></tr><tr><td>XM0CX4</td><td>COVID-19 vaccine, replicating viral vector</td></tr><tr><td>XM5JC5</td><td>COVID-19 vaccine, virus protein subunit</td></tr><tr><td>XM1J92</td><td>COVID-19 vaccine, virus like particle (VLP)</td></tr><tr><td>XM6AT1</td><td>COVID-19 vaccine, DNA based</td></tr><tr><td>XM6AT1</td><td>COVID-19 vaccine, DNA based</td></tr></table></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-vaccines-covid-19"];
+  fhir:ValueSet.url [ fhir:value "https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccines-covid-19"];
   fhir:ValueSet.version [ fhir:value "0.2.0"];
   fhir:ValueSet.name [ fhir:value "WHO_SVC_Vaccines_COVID_19"];
   fhir:ValueSet.title [ fhir:value "WHO Vaccine List (COVID-19)"];
   fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2021-04-02T15:13:12+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2021-04-02T20:18:51+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -102,7 +102,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-vaccines-covid-19.ttl> a owl:Ontology;
+<http://fhir.org/guides/who/svc/ValueSet/who-svc-vaccines-covid-19.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

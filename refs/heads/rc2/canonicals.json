@@ -1,94 +1,24 @@
 [
   {
-    "id": "fhir.who.svc-rc1",
+    "id": "fhir.who.svc-rc2",
     "type": "ImplementationGuide",
-    "url": "http://fhir.org/guides/who/svc-rc1/ImplementationGuide/fhir.who.svc-rc1",
+    "url": "http://fhir.org/guides/who/svc/ImplementationGuide/fhir.who.svc-rc2",
     "version": "0.2.0",
-    "name": "SVC_RC1"
+    "name": "SVC_RC2"
   },
   {
-    "id": "svc-bundle",
+    "id": "Immunization-pre-uv-ips",
     "type": "StructureDefinition",
-    "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle",
+    "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips",
     "version": "0.2.0",
-    "name": "SVC_Bundle"
+    "name": "ImmunizationUvIps"
   },
   {
-    "id": "svc-composition",
+    "id": "Patient-pre-uv-ips",
     "type": "StructureDefinition",
-    "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition",
+    "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-pre-uv-ips",
     "version": "0.2.0",
-    "name": "SVC_Composition"
-  },
-  {
-    "id": "svc-immunization",
-    "type": "StructureDefinition",
-    "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization",
-    "version": "0.2.0",
-    "name": "SVC_Immunization"
-  },
-  {
-    "id": "svc-organization",
-    "type": "StructureDefinition",
-    "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization",
-    "version": "0.2.0",
-    "name": "SVC_Organization"
-  },
-  {
-    "id": "svc-patient",
-    "type": "StructureDefinition",
-    "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient",
-    "version": "0.2.0",
-    "name": "SVC_Patient"
-  },
-  {
-    "id": "svc-practitioner",
-    "type": "StructureDefinition",
-    "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner",
-    "version": "0.2.0",
-    "name": "SVC_Practitioner"
-  },
-  {
-    "id": "svc-practitioner-role",
-    "type": "StructureDefinition",
-    "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner-role",
-    "version": "0.2.0",
-    "name": "SVC_PractitionerRole"
-  },
-  {
-    "id": "svc-provenance",
-    "type": "StructureDefinition",
-    "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance",
-    "version": "0.2.0",
-    "name": "SVC_Provenance"
-  },
-  {
-    "id": "who-svc-vaccinable-confitions",
-    "type": "ValueSet",
-    "url": "http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-vaccinable-confitions",
-    "version": "0.2.0",
-    "name": "WHO_SVC_Vaccinable_Conditions"
-  },
-  {
-    "id": "who-svc-vaccines",
-    "type": "ValueSet",
-    "url": "http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-vaccines",
-    "version": "0.2.0",
-    "name": "WHO_SVC_Vaccines"
-  },
-  {
-    "id": "who-svc-vaccines-covid-19",
-    "type": "ValueSet",
-    "url": "http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-vaccines-covid-19",
-    "version": "0.2.0",
-    "name": "WHO_SVC_Vaccines_COVID_19"
-  },
-  {
-    "id": "SVC-QR-UVCI",
-    "type": "StructureDefinition",
-    "url": "http://who-int.github.io/svc/SVC-QR-UVCI",
-    "version": "0.2.0",
-    "name": "SVC-QR-UVCI"
+    "name": "PatientUvIps"
   },
   {
     "id": "svc-map-qr-uvci-bundle",
@@ -96,5 +26,89 @@
     "url": "http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle",
     "version": "0.2.0",
     "name": "svc-map-qr-uvci-bundle"
+  },
+  {
+    "id": "svc-qr-uvci",
+    "type": "StructureDefinition",
+    "url": "http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvci",
+    "version": "0.2.0",
+    "name": "svc-qr-uvci"
+  },
+  {
+    "id": "svc-bundle",
+    "type": "StructureDefinition",
+    "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-bundle",
+    "version": "0.2.0",
+    "name": "SVC_Bundle"
+  },
+  {
+    "id": "svc-composition",
+    "type": "StructureDefinition",
+    "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition",
+    "version": "0.2.0",
+    "name": "SVC_Composition"
+  },
+  {
+    "id": "svc-immunization",
+    "type": "StructureDefinition",
+    "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization",
+    "version": "0.2.0",
+    "name": "SVC_Immunization"
+  },
+  {
+    "id": "svc-organization",
+    "type": "StructureDefinition",
+    "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization",
+    "version": "0.2.0",
+    "name": "SVC_Organization"
+  },
+  {
+    "id": "svc-patient",
+    "type": "StructureDefinition",
+    "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-patient",
+    "version": "0.2.0",
+    "name": "SVC_Patient"
+  },
+  {
+    "id": "svc-practitioner",
+    "type": "StructureDefinition",
+    "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner",
+    "version": "0.2.0",
+    "name": "SVC_Practitioner"
+  },
+  {
+    "id": "svc-practitioner-role",
+    "type": "StructureDefinition",
+    "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner-role",
+    "version": "0.2.0",
+    "name": "SVC_PractitionerRole"
+  },
+  {
+    "id": "svc-provenance",
+    "type": "StructureDefinition",
+    "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-provenance",
+    "version": "0.2.0",
+    "name": "SVC_Provenance"
+  },
+  {
+    "id": "who-svc-vaccinable-conditions",
+    "type": "ValueSet",
+    "url": "https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccinable-conditions",
+    "version": "0.2.0",
+    "name": "WHO_SVC_Vaccinable_Conditions"
+  },
+  {
+    "id": "who-svc-vaccines",
+    "type": "ValueSet",
+    "url": "https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccines",
+    "version": "0.2.0",
+    "name": "WHO_SVC_Vaccines"
+  },
+  {
+    "id": "who-svc-vaccines-covid-19",
+    "type": "ValueSet",
+    "url": "https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccines-covid-19",
+    "version": "0.2.0",
+    "name": "WHO_SVC_Vaccines_COVID_19"
   }
 ]
