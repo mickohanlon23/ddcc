@@ -1,9 +1,9 @@
 ﻿SVC_RC2 : Validation Results
 =========================================
 
-err = 76, warn = 50, info = 0
+err = 91, warn = 50, info = 0
 IG Publisher Version: 1.1.65
-Generated Fri Apr 02 20:39:41 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = http://fhir.org/guides/who/svc)
+Generated Fri Apr 02 22:30:53 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = http://fhir.org/guides/who/svc)
 
  Build Errors : 17 / 5 / 0
  /github/workspace/fsh-generated/resources/Basic-svc-basic-qrcode-example : 1 / 0 / 2
@@ -24,7 +24,7 @@ Generated Fri Apr 02 20:39:41 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19 : 2 / 2 / 1
  /github/workspace/input/ips-preadopted/Immunization-uv-ips.structuredefinition : 0 / 1 / 1
  /github/workspace/input/ips-preadopted/Patient-uv-ips.structuredefinition : 0 / 1 / 1
- /github/workspace/input/resources/StructureDefinition-svc-qr-uvci : 9 / 26 / 1
+ /github/workspace/input/resources/StructureDefinition-svc-qr-uvci : 24 / 26 / 1
  /github/workspace/input/resources/maps/svc-map-qr-uvci-bundle : 33 / 1 / 1
  /github/workspace/input/svc : 0 / 0 / 1
 </table>
@@ -138,6 +138,21 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/ips/StructureDe
 INFORMATION: StructureDefinition/Patient-pre-uv-ips: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-pre-uv-ips'): The Implementation Guide contains no examples for this profile
 == /github/workspace/input/resources/StructureDefinition-svc-qr-uvci.xml ==
+ERROR: /f:StructureDefinition/f:snapshot/f:element/f:extension: Undefined element 'index'
+ERROR: /f:StructureDefinition/f:snapshot/f:element/f:extension: Undefined element 'exValue'
+ERROR: /f:StructureDefinition/f:snapshot/f:element/f:extension: Undefined element 'index'
+ERROR: /f:StructureDefinition/f:snapshot/f:element/f:extension: Undefined element 'exValue'
+ERROR: /f:StructureDefinition/f:snapshot/f:element/f:extension: Undefined element 'index'
+ERROR: /f:StructureDefinition/f:snapshot/f:element/f:extension: Undefined element 'exValue'
+ERROR: /f:StructureDefinition/f:snapshot/f:element/f:extension: Undefined element 'index'
+ERROR: /f:StructureDefinition/f:snapshot/f:element/f:extension: Undefined element 'exValue'
+ERROR: /f:StructureDefinition/f:snapshot/f:element/f:extension: Undefined element 'index'
+ERROR: /f:StructureDefinition/f:snapshot/f:element/f:extension: Undefined element 'exValue'
+ERROR: /f:StructureDefinition/f:snapshot/f:element/f:extension: Undefined element 'index'
+ERROR: /f:StructureDefinition/f:snapshot/f:element/f:extension: Undefined element 'exValue'
+ERROR: /f:StructureDefinition/f:snapshot/f:element/f:extension: Undefined element 'index'
+ERROR: /f:StructureDefinition/f:snapshot/f:element/f:extension: Undefined element 'exValue'
+ERROR: /f:StructureDefinition/f:snapshot/f:element/f:extension: Undefined element 'exValueCode'
 ERROR: StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvci'): Conformance resource /github/workspace/input/resources/StructureDefinition-svc-qr-uvci.xml - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/svc-qr-uvci) does not match the URL (http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvci)
 ERROR: StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvci'): StructureDefinition profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvci: Differential contains path svc-qr-uvci.birthDate which is not found in the in base profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvci
 ERROR: StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvci'): StructureDefinition profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvci: Differential contains path svc-qr-uvci.signature which is not found in the in base profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvci
