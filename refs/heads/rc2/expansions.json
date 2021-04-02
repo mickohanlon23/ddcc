@@ -1,8 +1,50 @@
 {
   "resourceType" : "Bundle",
-  "id" : "7ba48e1f-f80b-4ded-aaba-a0b4b57288c7",
+  "id" : "9a326670-492a-49a3-a0b1-78f1f3a6f49d",
   "meta" : {
-    "lastUpdated" : "2021-04-02T20:18:51.648+00:00"
+    "lastUpdated" : "2021-04-02T20:39:01.144+00:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "https://who-int.github.io/svc/refs/heads/rc2/ValueSet/SVC-Basic-Resource",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "SVC-Basic-Resource",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-SVC-Basic-Resource.html\">CodeSystem for SVC Basic Resources. v0.2.0 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-SVC-Basic-Resource.html\"><code>https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SVC-Basic-Resource</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---who-int.github.io-svc-refs-heads-rc2-CodeSystem-SVC-Basic-Resource-qrcode\"> </a><a href=\"CodeSystem-SVC-Basic-Resource.html#SVC-Basic-Resource-qrcode\">qrcode</a></td><td>SVC QR Code</td><td>SVC QR Code resource.</td></tr></table></div>"
+      },
+      "url" : "https://who-int.github.io/svc/refs/heads/rc2/ValueSet/SVC-Basic-Resource",
+      "version" : "0.2.0",
+      "name" : "SVCBasicResourceValueSet",
+      "title" : "ValueSet for SVC Basic Resources.",
+      "status" : "active",
+      "date" : "2021-04-02T20:39:01+00:00",
+      "publisher" : "World Health Organization (WHO)",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.who.int"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:fbc95d4a-bde0-4730-929b-49ee45489029",
+        "timestamp" : "2021-04-02T20:39:24+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SVC-Basic-Resource|0.2.0"
+        }],
+        "contains" : [{
+          "system" : "https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SVC-Basic-Resource",
+          "code" : "qrcode",
+          "display" : "SVC QR Code"
+        }]
+      }
+    }
+  }]
 }

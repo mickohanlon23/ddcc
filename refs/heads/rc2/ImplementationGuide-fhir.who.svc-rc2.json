@@ -405,6 +405,18 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/SVC-Basic-Resource"
+        },
+        "name": "CodeSystem for SVC Basic Resources."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -439,6 +451,30 @@
         },
         "name": "WHO Vaccine List (COVID-19)",
         "description": "WHO Vaccine List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Basic"
+          }
+        ],
+        "reference": {
+          "reference": "Basic/svc-basic-qrcode-example"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/SVC-Basic-QRCode"
+        },
+        "name": "SVC Basic based QR Code resource",
+        "description": "SVC Profile of Basic resource for QR Code."
       },
       {
         "extension": [
@@ -483,6 +519,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/SVC-QRCode"
+        },
+        "name": "SVC QRCode Extension",
+        "description": "SVC QRCode Extension"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -517,6 +566,18 @@
         },
         "name": "SVC Practitioner",
         "description": "Container for an SVC Practitioner, which is a Practitioner authorized by the PHA to vaccinate an [SVC Patient](StructureDefinition-svc-patient.html)."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/SVC-Basic-Resource"
+        },
+        "name": "ValueSet for SVC Basic Resources."
       },
       {
         "extension": [

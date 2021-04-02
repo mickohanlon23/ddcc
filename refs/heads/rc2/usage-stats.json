@@ -2,7 +2,78 @@
   "package": "fhir.who.svc-rc2",
   "version": "0.2.0",
   "fhirVersion": "4.0.1",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-QRCode",
+      "title": "SVC QRCode Extension",
+      "types": [
+        "string",
+        "string",
+        "string",
+        "string",
+        "date",
+        "date",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    }
+  ],
   "profiles": {
     "Immunization": [
       {
@@ -20,6 +91,12 @@
       {
         "url": "http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvci",
         "title": "svc-qr-uvci"
+      }
+    ],
+    "Basic": [
+      {
+        "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-Basic-QRCode",
+        "title": "SVC Basic based QR Code resource"
       }
     ],
     "Bundle": [
@@ -106,6 +183,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-QRCode": [
+      "Basic"
     ]
   }
 }

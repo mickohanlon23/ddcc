@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 14, errors = 66, warn = 45, info = 0 -->
+<!-- broken links = 14, errors = 76, warn = 50, info = 0 -->
 <head>
   <title>SVC_RC2 : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for SVC_RC2</h1>
- <p>Generated Fri Apr 02 20:19:26 UTC 2021, FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = <a href="http://fhir.org/guides/who/svc">http://fhir.org/guides/who/svc</a> (<a href="http://fhir.org/guides/who/svc/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Fri Apr 02 20:39:41 UTC 2021, FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = <a href="http://fhir.org/guides/who/svc">http://fhir.org/guides/who/svc</a> (<a href="http://fhir.org/guides/who/svc/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.65</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.who.svc-rc2, Canonical = http://fhir.org/guides/who/svc</td></tr>
@@ -37,14 +37,26 @@
  <tr><td>HL7 Publication Rules:</td><td>Code = n/a. package-list.json: file not found in /github/workspace</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.org/guides/who/svc (Problem #1 with package-list.json at http://fhir.org/guides/who/svc: http://fhir.org/guides/who/svc/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 14, errors = 66, warn = 45, info = 0</td></tr>
+ <tr><td>Summary:</td><td> broken links = 14, errors = 76, warn = 50, info = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>16</b></td><td><b>2</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>17</b></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Basic-svc-basic-qrcode-example"><b>/github/workspace/fsh-generated/resources/Basic-svc-basic-qrcode-example</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-SVC-Basic-Resource"><b>/github/workspace/fsh-generated/resources/CodeSystem-SVC-Basic-Resource</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-SVC-Basic-QRCode"><b>/github/workspace/fsh-generated/resources/StructureDefinition-SVC-Basic-QRCode</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-SVC-QRCode"><b>/github/workspace/fsh-generated/resources/StructureDefinition-SVC-QRCode</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-bundle"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
@@ -69,6 +81,9 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-provenance"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-SVC-Basic-Resource"><b>/github/workspace/fsh-generated/resources/ValueSet-SVC-Basic-Resource</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-who-svc-vaccinable-conditions"><b>/github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-conditions</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>1</b></td>
@@ -111,47 +126,133 @@
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/svc-qr-uvci.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-composition.html#2cbcaea3-e2f0-4e45-8331-a36fddd42842">StructureDefinition-svc-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 238, column 114</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/SVC-Basic-Resource.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-patient.html#4d08fd88-6520-4154-a5bf-362cbd800c9c">StructureDefinition-svc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 239, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Basic/svc-basic-qrcode-example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Basic/svc-basic-qrcode-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/SVC-Basic-Resource.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-practitioner-role.html#d3ed9e30-6f0b-44d5-9093-bdffde38e91a">StructureDefinition-svc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 236, column 145</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-composition.html#b4dfcd0c-9fa5-4782-8f26-a21b7e1a88b9">StructureDefinition-svc-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 238, column 114</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#304bd4d7-9d88-4294-a6e8-b014b056e298">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 324, column 56</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-patient.html#4c4bcd56-e0d0-47dc-83cc-5d7febffb8ed">StructureDefinition-svc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 239, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#ea283964-92c2-4403-aa75-9b7bf5309481">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 329, column 53</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html' for &quot;SVC Composition&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-practitioner-role.html#17a47959-65cb-423a-a305-4fe82bdf9e73">StructureDefinition-svc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 236, column 145</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#961b1e03-e648-4a49-9632-32eb23284359">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 334, column 47</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#348cbd77-04c6-4fc1-ad33-a7bb2b5a642b">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 324, column 56</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#34201362-1a94-413a-88ba-79f30188adb5">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 339, column 53</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bunclde.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#52fe5bd0-a551-45b0-9220-284de35e706c">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 329, column 53</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html' for &quot;SVC Composition&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#b55d86a1-a18b-4c7e-a21f-7c7e3eeb8261">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 344, column 53</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#0b1a02ba-a5a6-4bee-9841-8453e8cee592">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 334, column 47</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#2ebde210-2785-4e8e-be33-b105b8221c51">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 349, column 52</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#a2d6e276-d698-4047-aa61-343633334b9b">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 339, column 53</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bunclde.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#892b95d1-e2fc-4525-9312-8f2b2c19c794">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 354, column 55</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html' for &quot;SVC Compostion&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#4fdb3edd-f7c8-41b7-a89e-0c740ed8d416">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 344, column 53</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#3a6a6718-776f-4740-86ab-0386f284b6e9">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 249, column 16</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
+     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#e8bab712-30ba-4ac6-a390-d842adbef1dc">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 349, column 52</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#edcd308c-3d55-44f6-a6ee-6233b8d1f9f4">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 259, column 115</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#341cf6e7-81ec-48dd-bfe0-186fe6ac5b94">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 354, column 55</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html' for &quot;SVC Compostion&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#af83b2f7-d334-4b4a-b3ed-b81381f2b244">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 279, column 116</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
+     <td><b><a href="artifacts.html#22946688-9639-44a1-8e03-636090d24a92">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 258, column 16</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="dependencies.html#0c61eb75-adfd-44f8-a309-c69be70b51e2">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 178, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#28cc3fe5-6a4a-4336-b7df-920744e3e39f">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 277, column 115</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#ffc2823a-237a-434e-a800-61bb0eb8b120">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 297, column 116</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="dependencies.html#31959b28-98eb-44a8-9a49-269d3a64f5ca">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 178, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Basic-svc-basic-qrcode-example"> </a>
+<h2><a href="Basic-svc-basic-qrcode-example.html">/github/workspace/fsh-generated/resources/Basic-svc-basic-qrcode-example.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Basic/svc-basic-qrcode-example: Basic (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Basic</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Basic/svc-basic-qrcode-example: Basic (l1/c2)</b></td><td><b>error</b></td><td title="Extension_EXT_Context_Wrong"><b>The extension https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-QRCode is not allowed to be used at this point (allowed = e:SVCBasicQRCode; this element is [[Basic])</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Basic/svc-basic-qrcode-example: Basic (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-Basic-QRCode - listed in meta</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_CodeSystem-SVC-Basic-Resource"> </a>
+<h2><a href="CodeSystem-SVC-Basic-Resource.html">/github/workspace/fsh-generated/resources/CodeSystem-SVC-Basic-Resource.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>CodeSystem.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SVC-Basic-Resource')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-SVC-Basic-Resource.json - the canonical URL (http://fhir.org/guides/who/svc/CodeSystem/SVC-Basic-Resource) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SVC-Basic-Resource)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/SVC-Basic-Resource: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/CodeSystem-SVC-Basic-Resource</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://fhir.org/guides/who/svc/CodeSystem/SVC-Basic-Resource vs https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SVC-Basic-Resource</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-SVC-Basic-QRCode"> </a>
+<h2><a href="StructureDefinition-SVC-Basic-QRCode.html">/github/workspace/fsh-generated/resources/StructureDefinition-SVC-Basic-QRCode.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-Basic-QRCode')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-SVC-Basic-QRCode.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/SVC-Basic-QRCode) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-Basic-QRCode)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/SVC-Basic-QRCode: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-SVC-Basic-QRCode</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://fhir.org/guides/who/svc/StructureDefinition/SVC-Basic-QRCode vs https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-Basic-QRCode</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-SVC-QRCode"> </a>
+<h2><a href="StructureDefinition-SVC-QRCode.html">/github/workspace/fsh-generated/resources/StructureDefinition-SVC-QRCode.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-QRCode')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-SVC-QRCode.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/SVC-QRCode) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-QRCode)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/SVC-QRCode: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-QRCode: StructureDefinition.snapshot.element[8].label</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-QRCode: StructureDefinition.differential.element[5].label</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-SVC-QRCode</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://fhir.org/guides/who/svc/StructureDefinition/SVC-QRCode vs https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-QRCode</b></td>
    </tr>
 </table>
 <hr/>
@@ -312,6 +413,23 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://fhir.org/guides/who/svc/StructureDefinition/svc-provenance vs https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-provenance</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-SVC-Basic-Resource"> </a>
+<h2><a href="ValueSet-SVC-Basic-Resource.html">/github/workspace/fsh-generated/resources/ValueSet-SVC-Basic-Resource.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ValueSet.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/ValueSet/SVC-Basic-Resource')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-SVC-Basic-Resource.json - the canonical URL (http://fhir.org/guides/who/svc/ValueSet/SVC-Basic-Resource) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/ValueSet/SVC-Basic-Resource)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/SVC-Basic-Resource: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/ValueSet-SVC-Basic-Resource</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://fhir.org/guides/who/svc/ValueSet/SVC-Basic-Resource vs https://who-int.github.io/svc/refs/heads/rc2/ValueSet/SVC-Basic-Resource</b></td>
    </tr>
 </table>
 <hr/>
@@ -659,9 +777,26 @@
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
+<a name="Extension_EXT_Context_Wrong"> </a>
+<h2>Extension_EXT_Context_Wrong</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Basic-svc-basic-qrcode-example.html">/github/workspace/fsh-generated/resources/Basic-svc-basic-qrcode-example.json</a></td><td><b>The extension https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-QRCode is not allowed to be used at this point (allowed = e:SVCBasicQRCode; this element is [[Basic])</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="RESOURCE_CANONICAL_MISMATCH"> </a>
 <h2>RESOURCE_CANONICAL_MISMATCH</h2>
  <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="CodeSystem-SVC-Basic-Resource.html">/github/workspace/fsh-generated/resources/CodeSystem-SVC-Basic-Resource.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-SVC-Basic-Resource.json - the canonical URL (http://fhir.org/guides/who/svc/CodeSystem/SVC-Basic-Resource) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SVC-Basic-Resource)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-SVC-Basic-QRCode.html">/github/workspace/fsh-generated/resources/StructureDefinition-SVC-Basic-QRCode.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-SVC-Basic-QRCode.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/SVC-Basic-QRCode) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-Basic-QRCode)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-SVC-QRCode.html">/github/workspace/fsh-generated/resources/StructureDefinition-SVC-QRCode.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-SVC-QRCode.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/SVC-QRCode) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-QRCode)</b></td>
+   </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-svc-bundle.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/svc-bundle) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-bundle)</b></td>
    </tr>
@@ -685,6 +820,9 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-svc-provenance.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/svc-provenance) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-provenance)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ValueSet-SVC-Basic-Resource.html">/github/workspace/fsh-generated/resources/ValueSet-SVC-Basic-Resource.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-SVC-Basic-Resource.json - the canonical URL (http://fhir.org/guides/who/svc/ValueSet/SVC-Basic-Resource) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/ValueSet/SVC-Basic-Resource)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="ValueSet-who-svc-vaccinable-conditions.html">/github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-conditions.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-conditions.json - the canonical URL (http://fhir.org/guides/who/svc/ValueSet/who-svc-vaccinable-conditions) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccinable-conditions)</b></td>
@@ -798,6 +936,17 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureMap-svc-map-qr-uvci-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml</a></td><td><b>id value '&quot;Set who&quot;' is not valid</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_String_WS"> </a>
+<h2>Type_Specific_Checks_DT_String_WS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-SVC-QRCode.html">/github/workspace/fsh-generated/resources/StructureDefinition-SVC-QRCode.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="StructureDefinition-SVC-QRCode.html">/github/workspace/fsh-generated/resources/StructureDefinition-SVC-QRCode.json</a></td><td><b>value should not start or finish with whitespace</b></td>
    </tr>
 </table>
 </body>

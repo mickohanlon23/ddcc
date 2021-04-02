@@ -389,6 +389,18 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc/CodeSystem/SVC-Basic-Resource>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/SVC-Basic-Resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "CodeSystem for SVC Basic Resources." ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -398,7 +410,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Bundle" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An [SVC Bundle](StructureDefinition-svc-bundle.html) is a document bundle containing the Smart Vaccination Certificate (SVC) content." ]
      ], [
-       fhir:index 6;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -411,7 +423,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Patient" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Corresponds to the demographic information on the front page of the a paper Smart Vaccination Certificate (SVC)\n\nAn SVC_Patient should:\n* set the [identifier.assigner](StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner) to reference the [SVC Organization](StructureDefinition-svc-organization.html) resource associated to the PHA via the WHO Public Key Directory" ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -424,7 +436,31 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Vaccine List (COVID-19)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO Vaccine List (COVID-19) from [ICD 11](https://icd.who.int/browse11)" ]
      ], [
-       fhir:index 8;
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Basic" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc/Basic/svc-basic-qrcode-example>;
+         fhir:Reference.reference [ fhir:value "Basic/svc-basic-qrcode-example" ]
+       ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/SVC-Basic-QRCode>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/SVC-Basic-QRCode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Basic based QR Code resource" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SVC Profile of Basic resource for QR Code." ]
+     ], [
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -437,7 +473,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Practitioner Role" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Association of an [SVC Practitioner](StructureDefinition-svc-practitioner-role.html) to a managing [SVC Organization](StructureDefinition-svc-orgaznization.html), indicating that an SVC Practitioner is authorized by the public health authority (PHA) to vaccinate an [SVC Patient](StructureDefinition-svc-patient.html)." ]
      ], [
-       fhir:index 9;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -450,7 +486,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO List of Vaccinable Conditions" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The WHO Vaccinable Conditions List from [ICD 11](https://icd.who.int/browse11) is used by:\n *  the [SVC Immunization](StructureDefinition-svc-immunization.html)" ]
      ], [
-       fhir:index 10;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -463,7 +499,20 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Organization" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Abstraction for an SVC Organization. There should be an SVC Organization associated to each public health authortiy (PHA) in the WHO Public Key Directory." ]
      ], [
-       fhir:index 11;
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/SVC-QRCode>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/SVC-QRCode" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC QRCode Extension" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "SVC QRCode Extension" ]
+     ], [
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -476,7 +525,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Composition" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for the health content contained in a SVC.  An [SVC Composition](StructureDefinition-svc-composition.html) should:\n * be accessible from a SVC Registry as located via the WHO Public Key Directory for the PHA referenced in the [author](StructureDefinition-svc-composition-definitions.html#Composition.agent)." ]
      ], [
-       fhir:index 12;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -489,7 +538,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provenance of SVC" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Used to assert the provenance of a public health authority (PHA) over either a Paper or a Digital Smart Vaccination Certificate (SVC)." ]
      ], [
-       fhir:index 13;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -502,7 +551,19 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Practitioner" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Container for an SVC Practitioner, which is a Practitioner authorized by the PHA to vaccinate an [SVC Patient](StructureDefinition-svc-patient.html)." ]
      ], [
-       fhir:index 14;
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc/ValueSet/SVC-Basic-Resource>;
+         fhir:Reference.reference [ fhir:value "ValueSet/SVC-Basic-Resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet for SVC Basic Resources." ]
+     ], [
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

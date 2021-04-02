@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/ValueSet/SVC-Basic-Resource> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SVC-Basic-Resource"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-SVC-Basic-Resource.html\"><code>https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SVC-Basic-Resource</code></a></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://who-int.github.io/svc/refs/heads/rc2/ValueSet/SVC-Basic-Resource"];
+  fhir:ValueSet.version [ fhir:value "0.2.0"];
+  fhir:ValueSet.name [ fhir:value "SVCBasicResourceValueSet"];
+  fhir:ValueSet.title [ fhir:value "ValueSet for SVC Basic Resources."];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-04-02T20:39:01+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "World Health Organization (WHO)"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SVC-Basic-Resource" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/ValueSet/SVC-Basic-Resource.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
