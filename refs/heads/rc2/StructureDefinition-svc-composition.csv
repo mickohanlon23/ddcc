@@ -291,7 +291,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section.entry","","","",1,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
 ","Patient's vaccination history.","It defines the patient's current vaccination  history.
 The primary use case for the Vaccination Section is to enable communication of a patient's vaccination status.
-It may contain the entire vaccination history that is relevant to the period of time being summarized. This entry shall be used to document that no information about vaccination is available, or that no vaccinations are known.","If there are no entries in the list, an emptyReason SHOULD be provided.","","","","","","","","",,,,,"","type:null}
+It may contain the entire vaccination history that is relevant to the period of time being summarized. This entry shall be used to document that no information about vaccination is available, or that no vaccinations are known.","If there are no entries in the list, an emptyReason SHOULD be provided.","","","","","","","","",,,,,"","type:$this}
 ","",,"open","Composition.section.entry",0,*,"cmp-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".outboundRelationship[typeCode=COMP] or  .participation[typeCode=SBJ]",".entry"
