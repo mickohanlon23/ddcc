@@ -1,11 +1,12 @@
 ﻿SVC_RC1 : Validation Results
 =========================================
 
-err = 0, warn = 14, info = 0
+err = 45, warn = 45, info = 0
 IG Publisher Version: 1.1.65
-Generated Wed Mar 31 15:40:22 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
+Generated Fri Apr 02 15:13:09 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = http://fhir.org/guides/who/svc-rc1)
 
- Build Errors : 101 / 0 / 0
+ Build Errors : 128 / 2 / 0
+ /github/workspace/fsh-generated/resources/StructureDefinition-SVC-QR-UVCI : 10 / 28 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization : 0 / 1 / 1
@@ -17,1524 +18,180 @@ Generated Wed Mar 31 15:40:22 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc1#
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-confitions : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19 : 0 / 2 / 1
+ /github/workspace/input/resources/maps/svc-map-qr-uvci-bundle : 33 / 1 / 1
  /github/workspace/input/svc : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: /github/workspace/output/dependencies.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 274 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-examples.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 358 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-composition.profile.history.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 347 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-role.profile.xml.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1790 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-composition.profile.json.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 4695 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-immunization-mappings.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 540 column 45
-ERROR: /github/workspace/output/ValueSet-who-svc-vaccines-covid-19.xml.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 406 column 45
-ERROR: /github/workspace/output/references.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 265 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-provenance.profile.xml.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 2935 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-composition.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1206 column 45
-ERROR: /github/workspace/output/instant_openhie.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 265 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-role.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 800 column 45
-ERROR: /github/workspace/output/ValueSet-who-svc-vaccines.change.history.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 326 column 45
-ERROR: /github/workspace/output/ValueSet-who-svc-vaccinable-confitions.ttl.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 362 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-organization-examples.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 358 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-bundle-definitions.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1659 column 45
-ERROR: /github/workspace/output/ValueSet-who-svc-vaccinable-confitions.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 378 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-bundle.profile.json.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 6168 column 45
-ERROR: /github/workspace/output/artifacts.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 417 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-practitioner.profile.json.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 2131 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-bundle.profile.ttl.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 5523 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-mappings.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 437 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-practitioner.profile.history.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 347 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-patient-definitions.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1048 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-patient.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1026 column 45
-ERROR: /github/workspace/output/downloads.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 309 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-immunization.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1195 column 45
-ERROR: /github/workspace/output/ValueSet-who-svc-vaccinable-confitions.change.history.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 326 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-immunization-examples.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 358 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-practitioner.profile.ttl.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1890 column 45
-ERROR: /github/workspace/output/security_privacy.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 265 column 45
-ERROR: /github/workspace/output/deployment.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 279 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-immunization-definitions.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1204 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-bundle-mappings.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 454 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-bundle.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1460 column 45
-ERROR: /github/workspace/output/index.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 317 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-provenance-mappings.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 475 column 45
-ERROR: /github/workspace/output/ValueSet-who-svc-vaccines.xml.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 698 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-provenance-examples.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 358 column 45
-ERROR: /github/workspace/output/ValueSet-who-svc-vaccines-covid-19.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 373 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-composition.profile.ttl.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 4125 column 45
-ERROR: /github/workspace/output/content_profiles.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 263 column 45
-ERROR: /github/workspace/output/ValueSet-who-svc-vaccinable-confitions.json.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 356 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-composition-mappings.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 539 column 45
-ERROR: /github/workspace/output/ValueSet-who-svc-vaccines.json.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 696 column 45
-ERROR: /github/workspace/output/dictionary.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1565 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-patient.profile.xml.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 3233 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-organization.profile.json.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1650 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-provenance.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 978 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-role-examples.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 358 column 45
-ERROR: /github/workspace/output/ValueSet-who-svc-vaccines-covid-19.json.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 412 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-patient.profile.history.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 347 column 45
-ERROR: /github/workspace/output/ValueSet-who-svc-vaccines.ttl.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 617 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-role.profile.json.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1975 column 45
-ERROR: /github/workspace/output/transactions.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 266 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-role-definitions.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 675 column 45
-ERROR: /github/workspace/output/expected_actions.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 264 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-immunization.profile.ttl.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 4181 column 45
-ERROR: /github/workspace/output/usecases.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 264 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-organization-mappings.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 415 column 45
-ERROR: /github/workspace/output/data_exchange.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 277 column 45
-ERROR: /github/workspace/output/actors.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 264 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-patient.profile.ttl.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 3098 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-provenance-definitions.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 920 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-provenance.profile.json.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 3256 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-provenance.profile.history.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 347 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-patient.profile.json.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 3544 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-practitioner.profile.xml.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1950 column 45
-ERROR: /github/workspace/output/toc.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 262 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-organization.profile.xml.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1522 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-composition-definitions.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1240 column 45
-ERROR: /github/workspace/output/functional.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 264 column 45
-ERROR: /github/workspace/output/requirements.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 279 column 45
-ERROR: /github/workspace/output/workflows.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 265 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-role.profile.ttl.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1777 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-bundle.profile.history.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 347 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-bundle-examples.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 358 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-organization.profile.ttl.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 1497 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-provenance.profile.ttl.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 2913 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-organization.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 732 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-patient-mappings.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 503 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-immunization.profile.history.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 347 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-immunization.profile.xml.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 4285 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-role-mappings.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 418 column 45
-ERROR: /github/workspace/output/ValueSet-who-svc-vaccinable-confitions.xml.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 352 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-composition.profile.xml.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 4249 column 45
-ERROR: /github/workspace/output/personas.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 265 column 45
-ERROR: /github/workspace/output/testing.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 265 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-patient-examples.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 358 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-composition-examples.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 358 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-organization.profile.history.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 347 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-organization-definitions.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 625 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-role.profile.history.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 347 column 45
-ERROR: /github/workspace/output/ValueSet-who-svc-vaccines-covid-19.change.history.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 326 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-bundle.profile.xml.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 5622 column 45
-ERROR: /github/workspace/output/ValueSet-who-svc-vaccines-covid-19.ttl.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 404 column 45
-ERROR: /github/workspace/output/concepts.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 263 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-definitions.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 723 column 45
-ERROR: /github/workspace/output/ValueSet-who-svc-vaccines.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 378 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-immunization.profile.json.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 4831 column 45
-ERROR: /github/workspace/output/StructureDefinition-svc-practitioner.html: unable to parse character reference '''' (last text = '
-        $(':header[id]').each(function() { // apply this to each heading
-          var id = $(this).attr('id');
-          var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL.
-          var feedbacklabel = 'Feedback';
-          
-            
-              feedbacklabel = 'Feedback';  // The feedback label is a string
-            ;
-
-            
-            var parameterFieldId = '';
-            var parameterVariableName = '';
-            var parameterValue = '';
-/* ' at line 813 column 45
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/svc-map-qr-uvci-bundle.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/svc-map-qr-uvci-bundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/SVC-QR-UVCI.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/SVC-QR-UVCI.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/StructureDefinition-SVC-QR-UVCI-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SVC-QR-UVCI-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 330, column 53: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html' for "SVC Composition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SVC-QR-UVCI-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 340, column 53: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html' for "SVC Composition" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SVC-QR-UVCI-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 345, column 53: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-patient.html' for "SVC Patient" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SVC-QR-UVCI-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 350, column 52: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html' for "SVC Bundle" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SVC-QR-UVCI-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 355, column 50: The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html' for "SVC Bundle" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SVC-QR-UVCI-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SVC-QR-UVCI-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SVC-QR-UVCI.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SVC-QR-UVCI.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SVC-QR-UVCI.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SVC-QR-UVCI.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-SVC-QR-UVCI.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-bundle-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-bundle-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-bundle-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-bundle.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-bundle.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-bundle.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-bundle.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-bundle.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-composition-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-composition-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-composition-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-composition.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 239, column 114: The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for "author" cannot be resolved (valid targets: 98 targets)
+ERROR: /github/workspace/output/StructureDefinition-svc-composition.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-composition.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-composition.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-composition.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-immunization-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-immunization-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-immunization-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-immunization.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-immunization.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-immunization.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-immunization.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-immunization.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-organization-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-organization-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-organization-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-organization.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-organization.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-organization.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-organization.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-organization.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-patient-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-patient-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-patient-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-patient.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 240, column 14: The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for "identifier.assigner" cannot be resolved (valid targets: 80 targets)
+ERROR: /github/workspace/output/StructureDefinition-svc-patient.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-patient.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-patient.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-patient.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-role-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-role-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-role-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-role.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 237, column 145: The link 'StructureDefinition-svc-orgaznization.html' for "SVC Organization" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-role.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-role.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-role.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-practitioner-role.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-practitioner.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-practitioner.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-practitioner.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-practitioner.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-practitioner.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-provenance-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-provenance-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-provenance-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-provenance.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-provenance.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-provenance.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-provenance.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-svc-provenance.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 136, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/StructureMap-svc-map-qr-uvci-bundle.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-who-svc-vaccinable-confitions.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-who-svc-vaccinable-confitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-who-svc-vaccinable-confitions.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-who-svc-vaccinable-confitions.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-who-svc-vaccinable-confitions.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-who-svc-vaccines-covid-19.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-who-svc-vaccines-covid-19.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-who-svc-vaccines-covid-19.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-who-svc-vaccines-covid-19.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-who-svc-vaccines-covid-19.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-who-svc-vaccines.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 132, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-who-svc-vaccines.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-who-svc-vaccines.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-who-svc-vaccines.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-who-svc-vaccines.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 130, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/actors.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 221, column 16: The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for "identifier.assigner" cannot be resolved (valid targets: 80 targets)
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 231, column 115: The link 'StructureDefinition-svc-orgaznization.html' for "SVC Organization" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 251, column 116: The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for "author" cannot be resolved (valid targets: 98 targets)
+ERROR: /github/workspace/output/concepts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/content_profiles.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/data_exchange.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/dependencies.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 179, column 12: The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for "International Patient Summary (IPS)" cannot be resolved
+ERROR: /github/workspace/output/deployment.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/dictionary.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/downloads.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/expected_actions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/functional.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/maps.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/personas.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/references.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/requirements.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/security_privacy.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/transactions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/usecases.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+ERROR: /github/workspace/output/workflows.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 128, column 10: The link 'instant_openhie.html' for "Instant OpenHIE" cannot be resolved
+== /github/workspace/fsh-generated/resources/StructureDefinition-SVC-QR-UVCI.json ==
+ERROR: StructureDefinition.where(url = 'http://who-int.github.io/svc/SVC-QR-UVCI'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-SVC-QR-UVCI.json - the canonical URL (http://fhir.org/guides/who/svc-rc1/StructureDefinition/SVC-QR-UVCI) does not match the URL (http://who-int.github.io/svc/SVC-QR-UVCI)
+ERROR: StructureDefinition.where(url = 'http://who-int.github.io/svc/SVC-QR-UVCI'): StructureDefinition profile http://who-int.github.io/svc/SVC-QR-UVCI: Differential contains path SVC-QR-UVCI.signature which is not found in the in base profile http://who-int.github.io/svc/SVC-QR-UVCI
+ERROR: StructureDefinition.where(url = 'http://who-int.github.io/svc/SVC-QR-UVCI'): StructureDefinition profile http://who-int.github.io/svc/SVC-QR-UVCI: Differential contains path SVC-QR-UVCI.digitalid which is not found in the in base profile http://who-int.github.io/svc/SVC-QR-UVCI
+ERROR: StructureDefinition.where(url = 'http://who-int.github.io/svc/SVC-QR-UVCI'): StructureDefinition profile http://who-int.github.io/svc/SVC-QR-UVCI: Differential contains path SVC-QR-UVCI.version which is not found in the in base profile http://who-int.github.io/svc/SVC-QR-UVCI
+ERROR: StructureDefinition.where(url = 'http://who-int.github.io/svc/SVC-QR-UVCI'): StructureDefinition profile http://who-int.github.io/svc/SVC-QR-UVCI: Differential contains path SVC-QR-UVCI.paperid which is not found in the in base profile http://who-int.github.io/svc/SVC-QR-UVCI
+ERROR: StructureDefinition.where(url = 'http://who-int.github.io/svc/SVC-QR-UVCI'): StructureDefinition profile http://who-int.github.io/svc/SVC-QR-UVCI: Differential contains path SVC-QR-UVCI.birthDate which is not found in the in base profile http://who-int.github.io/svc/SVC-QR-UVCI
+ERROR: StructureDefinition.where(url = 'http://who-int.github.io/svc/SVC-QR-UVCI'): StructureDefinition profile http://who-int.github.io/svc/SVC-QR-UVCI: Differential contains path SVC-QR-UVCI.name which is not found in the in base profile http://who-int.github.io/svc/SVC-QR-UVCI
+ERROR: StructureDefinition.where(url = 'http://who-int.github.io/svc/SVC-QR-UVCI'): StructureDefinition profile http://who-int.github.io/svc/SVC-QR-UVCI: Differential contains path SVC-QR-UVCI.patientid which is not found in the in base profile http://who-int.github.io/svc/SVC-QR-UVCI
+ERROR: StructureDefinition.where(url = 'http://who-int.github.io/svc/SVC-QR-UVCI'): The element SVC-QR-UVCI.version is out of order (and maybe others after it)
+INFORMATION: StructureDefinition/SVC-QR-UVCI: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.snapshot.element[0]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.snapshot.element[1]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.snapshot.element[2]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.snapshot.element[3]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.snapshot.element[4]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.snapshot.element[5]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.snapshot.element[6]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.snapshot.element[7]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.snapshot.element[8]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.snapshot.element[9]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.snapshot.element[10]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.snapshot.element[11]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.snapshot.element[12]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.snapshot.element[13]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.snapshot.element[14]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.snapshot.element[14].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.snapshot.element[15]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.differential.element[0]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.differential.element[1]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.differential.element[2]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.differential.element[3]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.differential.element[4]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.differential.element[5]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.differential.element[6]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.differential.element[6].short: value should not start or finish with whitespace
+WARNING: StructureDefinition/SVC-QR-UVCI: StructureDefinition.differential.element[7]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed
+WARNING: StructureDefinition.where(url = 'http://who-int.github.io/svc/SVC-QR-UVCI'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-SVC-QR-UVCI: URL Mismatch http://fhir.org/guides/who/svc-rc1/StructureDefinition/SVC-QR-UVCI vs http://who-int.github.io/svc/SVC-QR-UVCI
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle.json ==
 INFORMATION: StructureDefinition/svc-bundle: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 WARNING: StructureDefinition.where(url = 'http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle'): The Implementation Guide contains no examples for this profile
@@ -1571,5 +228,41 @@ WARNING: ValueSet.where(id = 'who-svc-vaccines'): Error from server: Unable to p
 INFORMATION: ValueSet/who-svc-vaccines-covid-19: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 WARNING: ValueSet/who-svc-vaccines-covid-19: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'who-svc-vaccines-covid-19'): Error from server: Unable to provide support for code system http://id.who.int/icd11/mms
+== /github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml ==
+ERROR: StructureMap.where(url = 'http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle'): Conformance resource /github/workspace/input/resources/maps/svc-map-qr-uvci-bundle.xml - the canonical URL (http://fhir.org/guides/who/svc-rc1/StructureMap/svc-map-qr-uvci-bundle) does not match the URL (http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle)
+INFORMATION: StructureMap/svc-map-qr-uvci-bundle: StructureMap: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureMap
+WARNING: StructureMap/svc-map-qr-uvci-bundle: StructureMap: smp-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].name: id value 'Decode_QR' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].name: id value 'Create resources and process bundle' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[0].name: id value 'Decode_QR_Patient' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[1].name: id value 'Decode_QR_Organization' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[0].rule[0].dependent[2].name: id value 'Decode_QR_Bundle' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].name: id value 'Decode_QR_Patient' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[0].name: id value 'Load Name' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[1].name: id value 'Load Patient Identifer' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[1].rule[2].name: id value 'Load Birth Date' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[2].name: id value 'Decode_QR_Organization' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[2].rule[0].name: id value 'Load PHA ID' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].name: id value 'Decode_QR_Bundle' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[0].name: id value 'Set Bundle Metadata' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[1].name: id value 'Load Paper SVC ID' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[2].name: id value 'Load Signature' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[3].name: id value 'Process Composition Entry' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[3].rule[3].dependent[0].name: id value 'Decode_QR_Composition' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].name: id value 'Decode_QR_Composition' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].input[1].name: id value ',' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].rule[0].name: id value 'Set Composition Meta' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[4].rule[1].name: id value 'Load Digital SVC ID' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].name: id value 'Decode_QR_Provenance' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].name: id value 'Set provenance' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].source[1].variable: id value 'e_digital' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[3].context: id value 'e_digital' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[4].context: id value 'e_digital' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[5].context: id value 'e_digital' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[6].context: id value 'e_paper' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[7].context: id value 'e_paper' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].target[8].context: id value 'e_paper' is not valid
+ERROR: StructureMap/svc-map-qr-uvci-bundle: StructureMap.group[5].rule[0].rule[0].target[1].variable: id value '"Set who"' is not valid
+ERROR: /github/workspace/input/resources/maps/svc-map-qr-uvci-bundle: URL Mismatch http://fhir.org/guides/who/svc-rc1/StructureMap/svc-map-qr-uvci-bundle vs http://who-int.github.io/svc/StructureMap/svc-map-qr-uvci-bundle
 == /github/workspace/input/svc.xml ==
 INFORMATION: ImplementationGuide/fhir.who.svc-rc1: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
