@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 14, errors = 91, warn = 50, info = 0 -->
+<!-- broken links = 16, errors = 90, warn = 85, info = 0 -->
 <head>
   <title>SVC_RC2 : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for SVC_RC2</h1>
- <p>Generated Fri Apr 02 22:30:52 UTC 2021, FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = <a href="http://fhir.org/guides/who/svc">http://fhir.org/guides/who/svc</a> (<a href="http://fhir.org/guides/who/svc/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Tue Apr 06 13:17:55 UTC 2021, FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = <a href="http://fhir.org/guides/who/svc">http://fhir.org/guides/who/svc</a> (<a href="http://fhir.org/guides/who/svc/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.65</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.who.svc-rc2, Canonical = http://fhir.org/guides/who/svc</td></tr>
@@ -37,14 +37,14 @@
  <tr><td>HL7 Publication Rules:</td><td>Code = n/a. package-list.json: file not found in /github/workspace</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.org/guides/who/svc (Problem #1 with package-list.json at http://fhir.org/guides/who/svc: http://fhir.org/guides/who/svc/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 14, errors = 91, warn = 50, info = 0</td></tr>
+ <tr><td>Summary:</td><td> broken links = 16, errors = 90, warn = 85, info = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>17</b></td><td><b>5</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>20</b></td><td><b>6</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_Basic-svc-basic-qrcode-example"><b>/github/workspace/fsh-generated/resources/Basic-svc-basic-qrcode-example</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>2</b></td>
@@ -101,7 +101,10 @@
      <td><a href="#_github_workspace_input_ips-preadopted_Patient-uv-ips.structuredefinition"><b>/github/workspace/input/ips-preadopted/Patient-uv-ips.structuredefinition</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_input_resources_StructureDefinition-svc-qr-uvci"><b>/github/workspace/input/resources/StructureDefinition-svc-qr-uvci</b></a></td><td><b>24</b></td><td><b>26</b></td><td><b>1</b></td>
+     <td><a href="#_github_workspace_input_resources_StructureDefinition-svc-qr-uvcei"><b>/github/workspace/input/resources/StructureDefinition-svc-qr-uvcei</b></a></td><td><b>13</b></td><td><b>34</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_StructureDefinition-svc-qr-uvci"><b>/github/workspace/input/resources/StructureDefinition-svc-qr-uvci</b></a></td><td><b>9</b></td><td><b>26</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_input_resources_maps_svc-map-qr-uvci-bundle"><b>/github/workspace/input/resources/maps/svc-map-qr-uvci-bundle</b></a></td><td><b>33</b></td><td><b>1</b></td><td><b>1</b></td>
@@ -123,6 +126,12 @@
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/svc-qr-uvci.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/svc-qr-uvcei.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/svc-qr-uvcei.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
    <tr style="background-color: #ffebcc">
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource CodeSystem/SVC-Basic-Resource.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
@@ -136,46 +145,52 @@
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/SVC-Basic-Resource.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-composition.html#7b5af166-b7a2-4417-a838-95e3ac5b540a">StructureDefinition-svc-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 238, column 114</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
+     <td><b><a href="StructureDefinition-svc-composition.html#247803bd-2072-47ee-b01a-ea63f659f914">StructureDefinition-svc-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 238, column 114</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-patient.html#53597ac8-4670-46a2-a529-138036e8b25c">StructureDefinition-svc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 239, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
+     <td><b><a href="StructureDefinition-svc-patient.html#fc6e9c17-3320-4a23-bfbd-272ef4711947">StructureDefinition-svc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 239, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-practitioner-role.html#3fbe65fe-1885-4fc4-bbb4-abae3c777fb9">StructureDefinition-svc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 236, column 145</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-practitioner-role.html#cf1f286d-0879-4782-a8d8-1a4a345468a5">StructureDefinition-svc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 236, column 145</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#201f708c-6644-46e5-81f8-b9e1d986ca08">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 324, column 56</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-qr-uvcei-definitions.html#090b9a56-8839-4737-8390-143b684fb0e9">StructureDefinition-svc-qr-uvcei-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 339, column 53</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bunclde.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#a871699c-edb4-46bd-91e1-66c97adb27c2">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 329, column 53</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html' for &quot;SVC Composition&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-qr-uvcei-definitions.html#512c607f-c026-44f1-b09a-c90ae5adb2d9">StructureDefinition-svc-qr-uvcei-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 359, column 52</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#339bfae1-24b9-4da8-9aec-fd1c8c67c28d">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 334, column 47</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#b7ca0e9c-f22f-4342-8817-defa73583f6d">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 324, column 56</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#4bec6bdb-7f29-4215-aa96-c28e5a4dc24a">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 339, column 53</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bunclde.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#76a643e7-cc21-42c7-96e9-ba1be001f625">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 329, column 53</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html' for &quot;SVC Composition&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#3ca88fea-4504-4821-8b99-cc65b8a4ca7e">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 344, column 53</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#92f244a6-a048-4904-bb07-d1a127a98516">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 334, column 47</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#9af99afe-5739-44bd-a24c-76ffd4917167">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 349, column 52</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#a5710a8f-9f2d-4f03-8626-ef27bb30b0e7">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 339, column 53</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bunclde.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#bb12062a-1c89-40b1-a515-b261b3dae529">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 354, column 55</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html' for &quot;SVC Compostion&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#da97398a-413e-4d27-98ff-b0bd73f1f61f">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 344, column 53</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#96cfc071-36d0-4b37-9fe8-f61edc5f883f">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 258, column 16</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
+     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#a3248337-9d95-4009-a6f4-57431647d80d">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 349, column 52</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-bundle.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#1e19778d-59f1-47d9-b8fc-d33e309fad42">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 277, column 115</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-qr-uvci-definitions.html#4d4b4c44-3350-4add-987b-880be437ad4f">StructureDefinition-svc-qr-uvci-definitions.html#/html/body/div/div/div/div/div/table/tr/td/p/a at Line 354, column 55</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/R4/StructureDefinition-svc-composition.html' for &quot;SVC Compostion&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#53ee5ce6-860d-49ba-99f3-cf4231e25471">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 297, column 116</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
+     <td><b><a href="artifacts.html#7564d96c-a1a4-4f63-aac9-bf5e074369eb">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 267, column 16</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="dependencies.html#7bf92e86-8c04-478e-8a45-7075aa04bc55">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 178, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#97eb783d-efde-46eb-81cf-7506dd8fa56b">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 286, column 115</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#9c5fe53a-0735-486d-9f8f-65324d48c145">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 306, column 116</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="dependencies.html#624af416-d3e8-4bee-ad1f-6138248d9953">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 178, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
@@ -527,56 +542,163 @@
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_input_resources_StructureDefinition-svc-qr-uvci"> </a>
-<h2><a href="StructureDefinition-svc-qr-uvci.html">/github/workspace/input/resources/StructureDefinition-svc-qr-uvci.xml</a></h2>
+<a name="_github_workspace_input_resources_StructureDefinition-svc-qr-uvcei"> </a>
+<h2><a href="StructureDefinition-svc-qr-uvcei.html">/github/workspace/input/resources/StructureDefinition-svc-qr-uvcei.xml</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:snapshot/f:element/f:extension (l385/c9)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'index'</b></td>
+     <td><b>StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/input/resources/StructureDefinition-svc-qr-uvcei.xml - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/svc-qr-uvcei) does not match the URL (http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:snapshot/f:element/f:extension (l386/c11)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'exValue'</b></td>
+     <td><b>StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei')</b></td><td><b>error</b></td><td title=""><b>StructureDefinition profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei: Differential contains path svc-qr-uvcei.expiry which is not found in the in base profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:snapshot/f:element/f:extension (l404/c9)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'index'</b></td>
+     <td><b>StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei')</b></td><td><b>error</b></td><td title=""><b>StructureDefinition profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei: Differential contains path svc-qr-uvcei.occurence which is not found in the in base profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:snapshot/f:element/f:extension (l405/c11)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'exValue'</b></td>
+     <td><b>StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei')</b></td><td><b>error</b></td><td title=""><b>StructureDefinition profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei: Differential contains path svc-qr-uvcei.vaccinecode which is not found in the in base profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:snapshot/f:element/f:extension (l423/c9)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'index'</b></td>
+     <td><b>StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei')</b></td><td><b>error</b></td><td title=""><b>StructureDefinition profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei: Differential contains path svc-qr-uvcei.signature which is not found in the in base profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:snapshot/f:element/f:extension (l424/c11)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'exValue'</b></td>
+     <td><b>StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei')</b></td><td><b>error</b></td><td title=""><b>StructureDefinition profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei: Differential contains path svc-qr-uvcei.patientid which is not found in the in base profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:snapshot/f:element/f:extension (l442/c9)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'index'</b></td>
+     <td><b>StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei')</b></td><td><b>error</b></td><td title=""><b>StructureDefinition profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei: Differential contains path svc-qr-uvcei.version which is not found in the in base profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:snapshot/f:element/f:extension (l443/c11)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'exValue'</b></td>
+     <td><b>StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei')</b></td><td><b>error</b></td><td title=""><b>StructureDefinition profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei: Differential contains path svc-qr-uvcei.paperid which is not found in the in base profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:snapshot/f:element/f:extension (l461/c9)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'index'</b></td>
+     <td><b>StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei')</b></td><td><b>error</b></td><td title=""><b>StructureDefinition profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei: Differential contains path svc-qr-uvcei.pha which is not found in the in base profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:snapshot/f:element/f:extension (l462/c11)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'exValue'</b></td>
+     <td><b>StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei')</b></td><td><b>error</b></td><td title=""><b>StructureDefinition profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei: Differential contains path svc-qr-uvcei.protool which is not found in the in base profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:snapshot/f:element/f:extension (l477/c9)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'index'</b></td>
+     <td><b>StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei')</b></td><td><b>error</b></td><td title=""><b>StructureDefinition profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei: Differential contains path svc-qr-uvcei.status which is not found in the in base profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:snapshot/f:element/f:extension (l478/c11)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'exValue'</b></td>
+     <td><b>StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei')</b></td><td><b>error</b></td><td title=""><b>StructureDefinition profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei: Differential contains path svc-qr-uvcei.lot which is not found in the in base profile http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition</b></td><td><b>warning</b></td><td title="sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[0]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[1]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[2]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[3]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[4]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[5]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[6]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[7]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[8]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[9]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[10]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[11]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[12]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[13]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[14]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[15]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[16]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[17]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[18]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.snapshot.element[19]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.differential.element[0]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.differential.element[1]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.differential.element[2]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.differential.element[3]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.differential.element[4]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.differential.element[5]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.differential.element[6]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.differential.element[7]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.differential.element[8]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.differential.element[9]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.differential.element[10]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/svc-qr-uvcei: StructureDefinition.differential.element[11]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:snapshot/f:element/f:extension (l499/c9)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'index'</b></td>
+     <td><b>/github/workspace/input/resources/StructureDefinition-svc-qr-uvcei</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://fhir.org/guides/who/svc/StructureDefinition/svc-qr-uvcei vs http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:snapshot/f:element/f:extension (l500/c11)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'exValue'</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>/f:StructureDefinition/f:snapshot/f:element/f:extension (l501/c15)</b></td><td><b>error</b></td><td title=""><b>Undefined element 'exValueCode'</b></td>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_StructureDefinition-svc-qr-uvci"> </a>
+<h2><a href="StructureDefinition-svc-qr-uvci.html">/github/workspace/input/resources/StructureDefinition-svc-qr-uvci.xml</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvci')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/input/resources/StructureDefinition-svc-qr-uvci.xml - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/svc-qr-uvci) does not match the URL (http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvci)</b></td>
@@ -863,6 +985,9 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="ValueSet-who-svc-vaccines-covid-19.html">/github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19.json - the canonical URL (http://fhir.org/guides/who/svc/ValueSet/who-svc-vaccines-covid-19) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccines-covid-19)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-svc-qr-uvcei.html">/github/workspace/input/resources/StructureDefinition-svc-qr-uvcei.xml</a></td><td><b>Conformance resource /github/workspace/input/resources/StructureDefinition-svc-qr-uvcei.xml - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/svc-qr-uvcei) does not match the URL (http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvcei)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-svc-qr-uvci.html">/github/workspace/input/resources/StructureDefinition-svc-qr-uvci.xml</a></td><td><b>Conformance resource /github/workspace/input/resources/StructureDefinition-svc-qr-uvci.xml - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/svc-qr-uvci) does not match the URL (http://who-int.github.io/svc/refs/heads/rc2/svc-qr-uvci)</b></td>
