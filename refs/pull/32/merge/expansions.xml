@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="a5d9db1c-32ab-4ed7-bddb-8a7493e793f9"/>
+  <meta>
+    <lastUpdated value="2021-04-09T17:00:59.793+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://who-int.github.io/svc/refs/heads/rc2/ValueSet/SVC-Basic-Resource"/>
+    <resource>
+      <ValueSet>
+        <id value="SVC-Basic-Resource"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-SVC-Basic-Resource.html">CodeSystem for SVC Basic Resources. v0.2.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-SVC-Basic-Resource.html">
+                <code>https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SVC-Basic-Resource</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---who-int.github.io-svc-refs-heads-rc2-CodeSystem-SVC-Basic-Resource-qrcode"> </a>
+                  <a href="CodeSystem-SVC-Basic-Resource.html#SVC-Basic-Resource-qrcode">qrcode</a>
+                </td>
+                <td>SVC QR Code</td>
+                <td>SVC QR Code resource.</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://who-int.github.io/svc/refs/heads/rc2/ValueSet/SVC-Basic-Resource"/>
+        <version value="0.2.0"/>
+        <name value="SVCBasicResourceValueSet"/>
+        <title value="ValueSet for SVC Basic Resources."/>
+        <status value="active"/>
+        <date value="2021-04-09T17:00:59+00:00"/>
+        <publisher value="World Health Organization (WHO)"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.who.int"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:d9c62a9e-6aa9-4f8e-9e9e-be98c5c4db9f"/>
+          <timestamp value="2021-04-09T17:01:20+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SVC-Basic-Resource|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SVC-Basic-Resource"/>
+            <code value="qrcode"/>
+            <display value="SVC QR Code"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

@@ -1,0 +1,69 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/Basic/svc-basic-qrcode-example> a fhir:Basic;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "svc-basic-qrcode-example"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-Basic-QRCode";
+       fhir:index 0;
+       fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-Basic-QRCode>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><blockquote><p><b>SVC QRCode Extension</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: RC-2-draft</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: Felix Cat</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: 2003-01-02</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: NMCZ8B1KwsMgVo64bDn2</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: h1dZ75FMdY9EQQjE64O4</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: bMlJkAt0V92RYhhG3fNt</p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c</p></blockquote><p><b>code</b>: <span title=\"Codes: {https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SVC-Basic-Resource qrcode}\">SVC QR Code</span></p></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Extension.url [ fhir:value "version" ];
+       fhir:Extension.valueString [ fhir:value "RC-2-draft" ]
+     ], [
+       fhir:index 1;
+       fhir:Extension.url [ fhir:value "name" ];
+       fhir:Extension.valueString [ fhir:value "Felix Cat" ]
+     ], [
+       fhir:index 2;
+       fhir:Extension.url [ fhir:value "birthDate" ];
+       fhir:Extension.valueDate [ fhir:value "2003-01-02"^^xsd:date ]
+     ], [
+       fhir:index 3;
+       fhir:Extension.url [ fhir:value "patientid" ];
+       fhir:Extension.valueString [ fhir:value "NMCZ8B1KwsMgVo64bDn2" ]
+     ], [
+       fhir:index 4;
+       fhir:Extension.url [ fhir:value "digitalid" ];
+       fhir:Extension.valueString [ fhir:value "h1dZ75FMdY9EQQjE64O4" ]
+     ], [
+       fhir:index 5;
+       fhir:Extension.url [ fhir:value "paperid" ];
+       fhir:Extension.valueString [ fhir:value "bMlJkAt0V92RYhhG3fNt" ]
+     ], [
+       fhir:index 6;
+       fhir:Extension.url [ fhir:value "signature" ];
+       fhir:Extension.valueString [ fhir:value "SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c" ]
+     ];
+     fhir:Extension.url [ fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-QRCode" ]
+  ];
+  fhir:Basic.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SVC-Basic-Resource" ];
+       fhir:Coding.code [ fhir:value "qrcode" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/Basic/svc-basic-qrcode-example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
