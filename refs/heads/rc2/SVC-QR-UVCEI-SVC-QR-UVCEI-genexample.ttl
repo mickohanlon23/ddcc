@@ -1,0 +1,27 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/SVC-QR-UVCEI/SVC-QR-UVCEI-genexample> a fhir:SVC-QR-UVCEI;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SVC-QR-UVCEI-genexample"];
+  fhir:SVC-QR-UVCEI.expiry [ fhir:value "2021-06-30"^^xsd:date];
+  fhir:SVC-QR-UVCEI.hw [ fhir:value "dPD2PfwzBQyphcjeUiAdRP"];
+  fhir:SVC-QR-UVCEI.lot [ fhir:value "ER8732"];
+  fhir:SVC-QR-UVCEI.occurence [ fhir:value "2021-04-01"^^xsd:date];
+  fhir:SVC-QR-UVCEI.paperid [ fhir:value "bMlJkAt0V92RYhhG3fNt"];
+  fhir:SVC-QR-UVCEI.patientid [ fhir:value "NMCZ8B1KwsMgVo64bDn2"];
+  fhir:SVC-QR-UVCEI.pha [ fhir:value "dPD2PfwzBQyphcjeUiAdRP"];
+  fhir:SVC-QR-UVCEI.signature [ fhir:value "SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"];
+  fhir:SVC-QR-UVCEI.version [ fhir:value "RC-2-draft"] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/SVC-QR-UVCEI/SVC-QR-UVCEI-genexample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

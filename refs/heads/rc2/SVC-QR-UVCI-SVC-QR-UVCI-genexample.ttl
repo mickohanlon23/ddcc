@@ -1,0 +1,26 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/SVC-QR-UVCI/SVC-QR-UVCI-genexample> a fhir:SVC-QR-UVCI;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SVC-QR-UVCI-genexample"];
+  fhir:SVC-QR-UVCI.birthDate [ fhir:value "2005-10-04"^^xsd:date];
+  fhir:SVC-QR-UVCI.digitalid [ fhir:value "h1dZ75FMdY9EQQjE64O4"];
+  fhir:SVC-QR-UVCI.name [ fhir:value "Felix Cat"];
+  fhir:SVC-QR-UVCI.paperid [ fhir:value "bMlJkAt0V92RYhhG3fNt"];
+  fhir:SVC-QR-UVCI.patientid [ fhir:value "NMCZ8B1KwsMgVo64bDn2"];
+  fhir:SVC-QR-UVCI.pha [ fhir:value "cvm6wAX7QCop8ueK7vkPYp"];
+  fhir:SVC-QR-UVCI.signature [ fhir:value "SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"];
+  fhir:SVC-QR-UVCI.version [ fhir:value "RC-2-draft"] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/SVC-QR-UVCI/SVC-QR-UVCI-genexample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
