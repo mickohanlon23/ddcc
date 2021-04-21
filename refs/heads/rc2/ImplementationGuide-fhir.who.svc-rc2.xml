@@ -350,15 +350,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/SVC-Basic-Resource"/>
-      </reference>
-      <name value="CodeSystem for SVC Basic Resources."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -432,7 +423,7 @@
       <reference>
         <reference value="StructureDefinition/SVC-LM-QR-UVCI"/>
       </reference>
-      <name value="SVC Logical Model for UVC QR code"/>
+      <name value="SVC Logical Model for UVCI QR code"/>
       <description value="SVC QR Code for an Immunization card."/>
     </resource>
     <resource>
@@ -447,6 +438,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/SVC-QR-UVCEI-Questionnaire"/>
+      </reference>
+      <name value="SVC QR Code Questionnaire for UVCEI"/>
+      <description value="SVC QR Code Questionnaire for an Immunization event."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -454,6 +455,14 @@
       </reference>
       <name value="SVC QR Code for UVCEI"/>
       <description value="SVC QR Code for an Immunization event."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/SVC-QR-UVCEI-QuestionnaireResponse-Example"/>
+      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -474,6 +483,16 @@
       </reference>
       <name value="SVC QRCode Extension"/>
       <description value="SVC QRCode Extension"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/SVC-QR-UVCI-Questionnaire"/>
+      </reference>
+      <name value="SVC QR Code Questionnaire for UVCI"/>
+      <description value="SVC QR Code Questionnaire for an Immunization card."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -507,6 +526,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/SVC-QR-UVCI-QuestionnaireResponse-Example"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -514,15 +541,6 @@
       </reference>
       <name value="SVC Practitioner"/>
       <description value="Container for an SVC Practitioner, which is a Practitioner authorized by the PHA to vaccinate an [SVC Patient](StructureDefinition-svc-patient.html)."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/SVC-Basic-Resource"/>
-      </reference>
-      <name value="ValueSet for SVC Basic Resources."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
