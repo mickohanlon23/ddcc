@@ -187,7 +187,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#6">Terminology: Structure Maps</a>
       </li>
       <li>
-         <a href="#7">Other</a>
+         <a href="#7">Terminology: Concept Maps</a>
+      </li>
+      <li>
+         <a href="#8">Other</a>
       </li>
    </ul>
 </div>
@@ -329,7 +332,7 @@ It describes the event of a patient being administered a vaccination or a record
                   <a href="StructureDefinition-svc-practitioner-role.html" title="StructureDefinition/svc-practitioner-role">SVC Practitioner Role</a>
                </td>
                <td>
-<p><a name="1c35cc5d-dc49-4c62-899e-73fc07a4b4c3">​</a>Association of an <a href="StructureDefinition-svc-practitioner-role.html">SVC Practitioner</a> to a managing <a href="StructureDefinition-svc-orgaznization.html">SVC Organization</a>, indicating that an SVC Practitioner is authorized by the public health authority (PHA) to vaccinate an <a href="StructureDefinition-svc-patient.html">SVC Patient</a>.</p>
+<p><a name="2c828b87-5f81-4db9-add3-57a14458464d">​</a>Association of an <a href="StructureDefinition-svc-practitioner-role.html">SVC Practitioner</a> to a managing <a href="StructureDefinition-svc-orgaznization.html">SVC Organization</a>, indicating that an SVC Practitioner is authorized by the public health authority (PHA) to vaccinate an <a href="StructureDefinition-svc-patient.html">SVC Patient</a>.</p>
 </td>
             </tr>
             <tr>
@@ -355,7 +358,7 @@ It describes the event of a patient being administered a vaccination or a record
                <td>
 <p>Describes the logical structure for the health content contained in a SVC.  An <a href="StructureDefinition-svc-composition.html">SVC Composition</a> should:</p>
 <ul>
-  <li><a name="d23fc0c0-0f7c-464b-9ad8-caa2df82e4fb">​</a>be accessible from a SVC Registry as located via the WHO Public Key Directory for the PHA referenced in the <a href="StructureDefinition-svc-composition-definitions.html#Composition.agent">author</a>.</li>
+  <li><a name="3b6c50d2-de93-4e7e-ac5e-a14893dcb361">​</a>be accessible from a SVC Registry as located via the WHO Public Key Directory for the PHA referenced in the <a href="StructureDefinition-svc-composition-definitions.html#Composition.agent">author</a>.</li>
 </ul>
 </td>
             </tr>
@@ -368,7 +371,7 @@ It describes the event of a patient being administered a vaccination or a record
 
 <p>An SVC_Patient should:</p>
 <ul>
-  <li><a name="3890cc73-a8d7-49ca-aceb-995bbcf1645e">​</a>set the <a href="StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner">identifier.assigner</a> to reference the <a href="StructureDefinition-svc-organization.html">SVC Organization</a> resource associated to the PHA via the WHO Public Key Directory</li>
+  <li><a name="aa423887-1c37-4a89-bf68-083b13248bdc">​</a>set the <a href="StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner">identifier.assigner</a> to reference the <a href="StructureDefinition-svc-organization.html">SVC Organization</a> resource associated to the PHA via the WHO Public Key Directory</li>
 </ul>
 </td>
             </tr>
@@ -434,6 +437,14 @@ It describes the event of a patient being administered a vaccination or a record
 <p>WHO Vaccine List (COVID-19) from <a href="https://icd.who.int/browse11">ICD 11</a></p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-who-svc-disease-targeted-covid-19.html" title="ValueSet/who-svc-disease-targeted-covid-19">WHO Disease or Agent Targeted (COVID-19)</a>
+               </td>
+               <td>
+<p>WHO Disease or Agent Targeted List (COVID-19) from <a href="https://icd.who.int/browse11">ICD 11</a></p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -455,6 +466,34 @@ It describes the event of a patient being administered a vaccination or a record
       </table>
    </p>
    <a name="7"> </a>
+   <h3>Terminology: Concept Maps </h3>
+   <p>
+    <p>These define transformations to convert between codes by systems conforming with this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ConceptMap-who-svc-map-icd11-sct-vaccines.html" title="ConceptMap/who-svc-map-icd11-sct-vaccines">ConceptMap/who-svc-map-icd11-sct-vaccines</a>
+               </td>
+               <td>
+<p>Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ConceptMap-who-svc-map-icd11-sct-disease-targeted.html" title="ConceptMap/who-svc-map-icd11-sct-disease-targeted">ConceptMap/who-svc-map-icd11-sct-disease-targeted</a>
+               </td>
+               <td>
+<p>Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="8"> </a>
    <h3>Other </h3>
    <p>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories</p>
@@ -503,7 +542,7 @@ It describes the event of a patient being administered a vaccination or a record
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc2#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 23, 2021 17:00+0000">2021-04-23</span>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc2#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 23, 2021 19:16+0000">2021-04-23</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
