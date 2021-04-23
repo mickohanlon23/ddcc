@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="who-svc-disease-targeted-covid-19"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>http://id.who.int/icd11/mms</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>RA01.0</td><td>COVID-19, virus identified</td></tr><tr><td>RA01.1</td><td>COVID-19, virus not identified</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-disease-targeted-covid-19"/>
+  <version value="0.2.0"/>
+  <name value="WHO_SVC_Disease_Targeted_COVID_19"/>
+  <title value="WHO Disease or Agent Targeted (COVID-19)"/>
+  <status value="draft"/>
+  <date value="2021-04-23T20:35:28+00:00"/>
+  <publisher value="World Health Organization (WHO)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"/>
+  <compose>
+    <include>
+      <system value="http://id.who.int/icd11/mms"/>
+      <concept>
+        <code value="RA01.0"/>
+        <display value="COVID-19, virus identified"/>
+      </concept>
+      <concept>
+        <code value="RA01.1"/>
+        <display value="COVID-19, virus not identified"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

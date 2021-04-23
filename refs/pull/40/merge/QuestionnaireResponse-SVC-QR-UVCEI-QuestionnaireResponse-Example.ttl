@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/QuestionnaireResponse/SVC-QR-UVCEI-QuestionnaireResponse-Example> a fhir:QuestionnaireResponse;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SVC-QR-UVCEI-QuestionnaireResponse-Example"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"http://who-int.github.io/svc/refs/heads/rc2/SVC-QR-UVCI-Questionnaire\">http://who-int.github.io/svc/refs/heads/rc2/SVC-QR-UVCI-Questionnaire</a></p><p><b>status</b>: completed</p><blockquote><p><b>item</b></p><p><b>linkId</b>: version</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>RC-2-draft</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: lot</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>2021-04-01</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: expiry</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>2021-06-30</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: paperid</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>bMlJkAt0V92RYhhG3fNt</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: pha</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>dPD2PfwzBQyphcjeUiAdRP</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: hw</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>dPD2PfwzBQyphcjeUiAdRP</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: patientid</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>NMCZ8B1KwsMgVo64bDn2</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: signature</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c</td></tr></table></blockquote></div>"
+  ];
+  fhir:QuestionnaireResponse.questionnaire [
+     fhir:value "http://who-int.github.io/svc/refs/heads/rc2/SVC-QR-UVCI-Questionnaire";
+     fhir:link <http://who-int.github.io/svc/refs/heads/rc2/SVC-QR-UVCI-Questionnaire>
+  ];
+  fhir:QuestionnaireResponse.status [ fhir:value "completed"];
+  fhir:QuestionnaireResponse.item [
+     fhir:index 0;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "version" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "RC-2-draft" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "lot" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2021-04-01"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "expiry" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2021-06-30"^^xsd:date ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "paperid" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "bMlJkAt0V92RYhhG3fNt" ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "pha" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "dPD2PfwzBQyphcjeUiAdRP" ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "hw" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "dPD2PfwzBQyphcjeUiAdRP" ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "patientid" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "NMCZ8B1KwsMgVo64bDn2" ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:QuestionnaireResponse.item.linkId [ fhir:value "signature" ];
+     fhir:QuestionnaireResponse.item.answer [
+       fhir:index 0;
+       fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/QuestionnaireResponse/SVC-QR-UVCEI-QuestionnaireResponse-Example.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
