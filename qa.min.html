@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 7, errors = 6, warn = 16, info = 1 -->
+<!-- broken links = 7, errors = 5, warn = 20, info = 1 -->
 <head>
   <title>SVC_RC1 : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for SVC_RC1</h1>
- <p>Generated Fri Apr 23 17:14:31 UTC 2021, FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = <a href="http://fhir.org/guides/who/svc-rc1">http://fhir.org/guides/who/svc-rc1</a> (<a href="http://fhir.org/guides/who/svc-rc1/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Fri Apr 23 19:14:51 UTC 2021, FHIR version 4.0.1 for fhir.who.svc-rc1#0.2.0 (canonical = <a href="http://fhir.org/guides/who/svc-rc1">http://fhir.org/guides/who/svc-rc1</a> (<a href="http://fhir.org/guides/who/svc-rc1/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.67</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.who.svc-rc1, Canonical = http://fhir.org/guides/who/svc-rc1</td></tr>
@@ -37,14 +37,20 @@
  <tr><td>HL7 Publication Rules:</td><td>Code = n/a. package-list.json: file not found in /github/workspace</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.org/guides/who/svc-rc1 (Problem #1 with package-list.json at http://fhir.org/guides/who/svc-rc1: http://fhir.org/guides/who/svc-rc1/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 7, errors = 6, warn = 16, info = 1</td></tr>
+ <tr><td>Summary:</td><td> broken links = 7, errors = 5, warn = 20, info = 1</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>8</b></td><td><b>1</b></td><td><b>1</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>10</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ConceptMap-who-svc-map-icd11-sct-disease-targeted"><b>/github/workspace/fsh-generated/resources/ConceptMap-who-svc-map-icd11-sct-disease-targeted</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ConceptMap-who-svc-map-icd11-sct-vaccines"><b>/github/workspace/fsh-generated/resources/ConceptMap-who-svc-map-icd11-sct-vaccines</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-bundle"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
@@ -70,14 +76,17 @@
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-provenance"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-provenance</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-who-svc-vaccinable-confitions"><b>/github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-confitions</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>1</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-who-svc-disease-targeted-covid-19"><b>/github/workspace/fsh-generated/resources/ValueSet-who-svc-disease-targeted-covid-19</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-who-svc-vaccines"><b>/github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>1</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-who-svc-vaccinable-confitions"><b>/github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-confitions</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-who-svc-vaccines-covid-19"><b>/github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19</b></a></td><td><b>1</b></td><td><b>2</b></td><td><b>1</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-who-svc-vaccines"><b>/github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-who-svc-vaccines-covid-19"><b>/github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_input_svc"><b>/github/workspace/input/svc</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
@@ -97,25 +106,59 @@
      <td><b>ImplementationGuide.dependency[0].url</b></td><td><b>information</b></td><td title=""><b>The correct canonical URL for this dependency is http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-composition.html#1608e95b-b6d2-45d5-9ac8-0c35ecd26965">StructureDefinition-svc-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 239, column 114</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource ConceptMap/who-svc-map-icd11-sct-vaccines.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-patient.html#e8871530-a43b-402d-b252-96fc619f18e9">StructureDefinition-svc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 240, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource ConceptMap/who-svc-map-icd11-sct-disease-targeted.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-practitioner-role.html#1691c4ca-d351-43b4-9369-002fd1a36a9b">StructureDefinition-svc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 237, column 145</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-composition.html#282371e2-b877-4869-a995-ad6ac9fdc7a7">StructureDefinition-svc-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 239, column 114</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#5cb92397-4699-465f-a745-22c8379c1421">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 232, column 115</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-patient.html#a202eda0-3308-4e95-a170-6025a1b51ddc">StructureDefinition-svc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 240, column 14</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 80 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#a980c2d6-38c7-41e9-921f-17d550d43b9f">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 261, column 116</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
+     <td><b><a href="StructureDefinition-svc-practitioner-role.html#b83793c7-afbb-48d9-8a20-26b011145aed">StructureDefinition-svc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 237, column 145</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#06295a1b-32cd-4f2a-bd22-7b610ea2ad26">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 275, column 16</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+     <td><b><a href="artifacts.html#22982047-9e54-4dae-ae02-fa5ee73dd0d0">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 235, column 115</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="dependencies.html#129ddc6c-314e-449d-9674-0f294d457910">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 179, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#7f92cf6b-9cc0-40ce-b9d2-360f4339c713">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 264, column 116</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="artifacts.html#9cc66046-e182-4678-89b9-45afd52a232c">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 278, column 16</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 80 targets)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="dependencies.html#19b260ff-184e-4459-ae45-fc3e9463324c">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 179, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ConceptMap-who-svc-map-icd11-sct-disease-targeted"> </a>
+<h2><a href="ConceptMap-who-svc-map-icd11-sct-disease-targeted.html">/github/workspace/fsh-generated/resources/ConceptMap-who-svc-map-icd11-sct-disease-targeted.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ConceptMap/who-svc-map-icd11-sct-disease-targeted: ConceptMap/who-svc-map-icd11-sct-disease-targeted: ConceptMap</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ConceptMap</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ConceptMap/who-svc-map-icd11-sct-disease-targeted: ConceptMap/who-svc-map-icd11-sct-disease-targeted: ConceptMap</b></td><td><b>warning</b></td><td title="cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ConceptMap-who-svc-map-icd11-sct-vaccines"> </a>
+<h2><a href="ConceptMap-who-svc-map-icd11-sct-vaccines.html">/github/workspace/fsh-generated/resources/ConceptMap-who-svc-map-icd11-sct-vaccines.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ConceptMap/who-svc-map-icd11-sct-vaccines: ConceptMap/who-svc-map-icd11-sct-vaccines: ConceptMap</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ConceptMap</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ConceptMap/who-svc-map-icd11-sct-vaccines: ConceptMap/who-svc-map-icd11-sct-vaccines: ConceptMap</b></td><td><b>warning</b></td><td title="cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
    </tr>
 </table>
 <hr/>
@@ -237,6 +280,23 @@
    </tr>
 </table>
 <hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-who-svc-disease-targeted-covid-19"> </a>
+<h2><a href="ValueSet-who-svc-disease-targeted-covid-19.html">/github/workspace/fsh-generated/resources/ValueSet-who-svc-disease-targeted-covid-19.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/who-svc-disease-targeted-covid-19: ValueSet/who-svc-disease-targeted-covid-19: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet/who-svc-disease-targeted-covid-19: ValueSet/who-svc-disease-targeted-covid-19: ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'who-svc-disease-targeted-covid-19')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system http://id.who.int/icd11/mms</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_github_workspace_fsh-generated_resources_ValueSet-who-svc-vaccinable-confitions"> </a>
 <h2><a href="ValueSet-who-svc-vaccinable-confitions.html">/github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-confitions.json</a></h2>
  <table class="grid">
@@ -246,14 +306,11 @@
    <tr style="background-color: #d6feff">
      <td><b>ValueSet/who-svc-vaccinable-confitions: ValueSet/who-svc-vaccinable-confitions: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ValueSet/who-svc-vaccinable-confitions: ValueSet/who-svc-vaccinable-confitions: ValueSet.compose.include[0].system</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/sid/icd-11' does not resolve</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet/who-svc-vaccinable-confitions: ValueSet/who-svc-vaccinable-confitions: ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'who-svc-vaccinable-confitions')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system http://hl7.org/fhir/sid/icd-11</b></td>
+     <td><b>ValueSet.where(id = 'who-svc-vaccinable-confitions')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system http://id.who.int/icd11/mms</b></td>
    </tr>
 </table>
 <hr/>
@@ -266,14 +323,11 @@
    <tr style="background-color: #d6feff">
      <td><b>ValueSet/who-svc-vaccines: ValueSet/who-svc-vaccines: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ValueSet/who-svc-vaccines: ValueSet/who-svc-vaccines: ValueSet.compose.include[0].system</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/sid/icd-11' does not resolve</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet/who-svc-vaccines: ValueSet/who-svc-vaccines: ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'who-svc-vaccines')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system http://hl7.org/fhir/sid/icd-11</b></td>
+     <td><b>ValueSet.where(id = 'who-svc-vaccines')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system http://id.who.int/icd11/mms</b></td>
    </tr>
 </table>
 <hr/>
@@ -286,14 +340,11 @@
    <tr style="background-color: #d6feff">
      <td><b>ValueSet/who-svc-vaccines-covid-19: ValueSet/who-svc-vaccines-covid-19: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ValueSet/who-svc-vaccines-covid-19: ValueSet/who-svc-vaccines-covid-19: ValueSet.compose.include[0].system</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/sid/icd-11' does not resolve</b></td>
-   </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet/who-svc-vaccines-covid-19: ValueSet/who-svc-vaccines-covid-19: ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'who-svc-vaccines-covid-19')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system http://hl7.org/fhir/sid/icd-11</b></td>
+     <td><b>ValueSet.where(id = 'who-svc-vaccines-covid-19')</b></td><td><b>warning</b></td><td title=""><b>Error from server: Unable to provide support for code system http://id.who.int/icd11/mms</b></td>
    </tr>
 </table>
 <hr/>
@@ -320,20 +371,6 @@
  <table class="grid">
    <tr style="background-color: #fff4ee">
      <td><a href="ImplementationGuide-fhir.who.svc-rc1.html">/github/workspace/input/svc.xml</a></td><td><b>value should not start or finish with whitespace</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
-<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="ValueSet-who-svc-vaccinable-confitions.html">/github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccinable-confitions.json</a></td><td><b>URL value 'http://hl7.org/fhir/sid/icd-11' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ValueSet-who-svc-vaccines.html">/github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines.json</a></td><td><b>URL value 'http://hl7.org/fhir/sid/icd-11' does not resolve</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ValueSet-who-svc-vaccines-covid-19.html">/github/workspace/fsh-generated/resources/ValueSet-who-svc-vaccines-covid-19.json</a></td><td><b>URL value 'http://hl7.org/fhir/sid/icd-11' does not resolve</b></td>
    </tr>
 </table>
 <hr/>

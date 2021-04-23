@@ -1,0 +1,58 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "who-svc-map-icd11-sct-disease-targeted",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ICD-11 to SNOMED CT mappings for COVID-19 Disease or Agent Targeted (http://fhir.org/guides/who/svc-rc1/ConceptMap/who-svc-map-icd11-sct-disease-targeted)</h2><p>Mapping from http://id.who.int/icd11/mms to <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\">http://snomed.info/sct</a></p><p>DRAFT (not intended for production usage). Published on 2021-04-23 by World Health Organization (WHO) (<a href=\"https://www.who.int\">https://www.who.int</a>). </p><div><p>Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted</p>\n</div><br/><table class=\"grid\"><tr><td colspan=\"2\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Destination Concept Details</b></td></tr><tr><td colspan=\"2\"><b>Code</b> from http://id.who.int/icd11/mms</td><td/><td colspan=\"2\"><b>Code</b> from <a href=\"http://terminology.hl7.org/2.1.0/CodeSystem-v3-snomed-CT.html\" title=\"http://snomed.info/sct\">SNOMED CT International Edition</a></td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">RA01.0</td><td style=\"border-left-width: 0px; border-bottom-style: none\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">840539006</td><td style=\"border-left-width: 0px\">Disease caused by 2019 novel coronavirus</td></tr><tr><td style=\"border-right-width: 0px; border-top-style: none\"/><td style=\"border-left-width: 0px; border-top-style: none\"/><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1119302008</td><td style=\"border-left-width: 0px\">Acute COVID-19</td></tr><tr><td style=\"border-right-width: 0px\">RA01.1</td><td style=\"border-left-width: 0px\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">840544004</td><td style=\"border-left-width: 0px\">Suspected disease caused by 2019 novel coronavirus</td></tr></table></div>"
+  },
+  "url": "http://fhir.org/guides/who/svc-rc1/ConceptMap/who-svc-map-icd11-sct-disease-targeted",
+  "version": "0.2.0",
+  "name": "ICD-11 to SNOMED CT mappings for COVID-19 Disease or Agent Targeted",
+  "status": "draft",
+  "experimental": true,
+  "date": "2021-04-23",
+  "publisher": "World Health Organization (WHO)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.who.int"
+        }
+      ]
+    }
+  ],
+  "description": "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted",
+  "sourceCanonical": "http://id.who.int/icd11/mms",
+  "targetCanonical": "http://snomed.info/sct",
+  "group": [
+    {
+      "source": "http://id.who.int/icd11/mms",
+      "target": "http://snomed.info/sct",
+      "element": [
+        {
+          "code": "RA01.0",
+          "target": [
+            {
+              "code": "840539006",
+              "equivalence": "equivalent"
+            },
+            {
+              "code": "1119302008",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "RA01.1",
+          "target": [
+            {
+              "code": "840544004",
+              "equivalence": "equivalent"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
