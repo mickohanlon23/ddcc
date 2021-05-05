@@ -1,18 +1,18 @@
 ﻿SVC_RC2 : Validation Results
 =========================================
 
-err = 126, warn = 33, info = 2
+err = 124, warn = 33, info = 2
 IG Publisher Version: 1.1.68
-Generated Wed May 05 20:12:16 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = http://fhir.org/guides/who/svc)
+Generated Wed May 05 20:33:31 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = http://fhir.org/guides/who/svc)
 
- Build Errors : 28 / 5 / 0
+ Build Errors : 29 / 5 / 0
  /github/workspace/fsh-generated/resources/Basic-svc-basic-qrcode-example : 1 / 1 / 2
  /github/workspace/fsh-generated/resources/ConceptMap-who-svc-map-icd11-sct-disease-targeted : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-svc-map-icd11-sct-vaccines : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Patient-SVC-Patient-Example : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Questionnaire-SVC-QR-UVCI-Questionnaire : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/Questionnaire-SVC-Questionnaire : 2 / 2 / 2
- /github/workspace/fsh-generated/resources/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example : 5 / 0 / 2
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example : 3 / 0 / 2
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-SVC-QR-UVCI-QuestionnaireResponse-Example : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-SVC-Basic-QRCode : 2 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-SVC-QRCode : 2 / 2 / 1
@@ -54,7 +54,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ConceptMap/who-svc-map-icd11-sct-disease-targeted.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Patient/SVC-Patient-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/SVC-Patient-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 311: The link 'SVC_Patient_Example' for "SVC_Patient_Example" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 104: The link 'http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire' for "http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire" cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 299: The link 'SVC_Patient_Example' for "SVC_Patient_Example" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-shc-questionnaire.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 202: The link 'StructureDefintion-shc-questionnaire-response.html' for "SHC QuestionnaireResponse" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-shc-submit-health-event-response.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 38: The link 'StructureDefinition-shc-submit-health-event-respose.html' for "SHC Submit Health Event Response" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 114: The link 'StructureDefinition-shf-composition-definitions.html#Composition.agent' for "author" cannot be resolved (valid targets: 98 targets)
@@ -105,9 +106,7 @@ ERROR: /github/workspace/fsh-generated/resources/Questionnaire-SVC-Questionnaire
 ERROR: QuestionnaireResponse.item[1].answer[0]: Unrecognised property '@valueCoding'
 INFORMATION: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
 ERROR: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse.subject: Unable to resolve resource 'SVC_Patient_Example'
-ERROR: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse: LinkId 'lot' not found in questionnaire
-ERROR: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse: LinkId 'expiry' not found in questionnaire
-ERROR: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse: LinkId 'hw' not found in questionnaire
+ERROR: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse: No response answer found for required item 'status'
 INFORMATION: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-questionnaireresponse - listed in meta
 == /github/workspace/fsh-generated/resources/QuestionnaireResponse-SVC-QR-UVCI-QuestionnaireResponse-Example.json ==
 INFORMATION: QuestionnaireResponse/SVC-QR-UVCI-QuestionnaireResponse-Example: QuestionnaireResponse/SVC-QR-UVCI-QuestionnaireResponse-Example: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
