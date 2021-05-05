@@ -1,0 +1,236 @@
+{
+  "package": "fhir.who.svc-rc2",
+  "version": "0.2.0",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-QRCode",
+      "title": "SVC QRCode Extension",
+      "types": [
+        "string",
+        "string",
+        "string",
+        "string",
+        "date",
+        "date",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    }
+  ],
+  "profiles": {
+    "Immunization": [
+      {
+        "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization",
+        "title": "SVC Immunization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-patient",
+        "title": "SVC Patient"
+      }
+    ],
+    "Basic": [
+      {
+        "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-Basic-QRCode",
+        "title": "SVC Basic based QR Code resource"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-bundle",
+        "title": "SVC Bundle"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition",
+        "title": "SVC Composition"
+      }
+    ],
+    "Questionnaire": [
+      {
+        "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-questionnaire",
+        "title": "SHC Questionniare"
+      }
+    ],
+    "QuestionnaireResponse": [
+      {
+        "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-questionnaireresponse",
+        "title": "SVC Questionnaire Response"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-organization",
+        "title": "SVC Organization"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner",
+        "title": "SVC Practitioner"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner-role",
+        "title": "SVC Practitioner Role"
+      }
+    ],
+    "Provenance": [
+      {
+        "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-provenance",
+        "title": "Provenance of SVC"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Immunization.occurrence[x]"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/designNote": [
+      "Questionnaire",
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/display": [
+      "QuestionnaireResponse.questionnaire"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/ordinalValue": [
+      "QuestionnaireResponse.item.answer"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaire-hidden": [
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaire-unit": [
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-signature": [
+      "QuestionnaireResponse",
+      "QuestionnaireResponse.item"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression": [
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-choiceConstraint": [
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-performerType": [
+      "Questionnaire"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-preferredTerminologyServer": [
+      "Questionnaire",
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap": [
+      "Questionnaire"
+    ],
+    "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-QRCode": [
+      "Basic"
+    ]
+  }
+}

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="SVC-QR-QuestionnaireResponse-Example"/>
+  <meta>
+    <profile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-questionnaireresponse"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href="http://who-int.github.io/svc/refs/heads/rc2/SVC-QR-UVCI-Questionnaire">http://who-int.github.io/svc/refs/heads/rc2/SVC-QR-UVCI-Questionnaire</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href="SVC_Patient_Example">SVC_Patient_Example</a></p><p><b>authored</b>: 2021-04-01</p><blockquote><p><b>item</b></p><p><b>linkId</b>: version</p><h3>Answers</h3><table class="grid"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>RC-2-draft</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: lot</p><h3>Answers</h3><table class="grid"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>ER8732</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: expiry</p><h3>Answers</h3><table class="grid"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>2021-06-30</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: paperid</p><h3>Answers</h3><table class="grid"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>bMlJkAt0V92RYhhG3fNt</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: pha</p><h3>Answers</h3><table class="grid"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>dPD2PfwzBQyphcjeUiAdRP</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: hw</p><h3>Answers</h3><table class="grid"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>dPD2PfwzBQyphcjeUiAdRP</td></tr></table></blockquote></div>
+  </text>
+  <questionnaire value="http://who-int.github.io/svc/refs/heads/rc2/SVC-QR-UVCI-Questionnaire"/>
+  <status value="completed"/>
+  <subject>
+    <reference value="SVC_Patient_Example"/>
+  </subject>
+  <authored value="2021-04-01"/>
+  <item>
+    <linkId value="version"/>
+    <answer>
+      <valueString value="RC-2-draft"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="lot"/>
+    <answer>
+      <valueString value="ER8732"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="expiry"/>
+    <answer>
+      <valueDate value="2021-06-30"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="paperid"/>
+    <answer>
+      <valueString value="bMlJkAt0V92RYhhG3fNt"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="pha"/>
+    <answer>
+      <valueString value="dPD2PfwzBQyphcjeUiAdRP"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="hw"/>
+    <answer>
+      <valueString value="dPD2PfwzBQyphcjeUiAdRP"/>
+    </answer>
+  </item>
+</QuestionnaireResponse>

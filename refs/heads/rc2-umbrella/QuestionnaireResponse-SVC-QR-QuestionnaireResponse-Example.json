@@ -1,0 +1,69 @@
+{
+  "resourceType": "QuestionnaireResponse",
+  "id": "SVC-QR-QuestionnaireResponse-Example",
+  "meta": {
+    "profile": [
+      "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-questionnaireresponse"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>questionnaire</b>: <a href=\"http://who-int.github.io/svc/refs/heads/rc2/SVC-QR-UVCI-Questionnaire\">http://who-int.github.io/svc/refs/heads/rc2/SVC-QR-UVCI-Questionnaire</a></p><p><b>status</b>: completed</p><p><b>subject</b>: <a href=\"SVC_Patient_Example\">SVC_Patient_Example</a></p><p><b>authored</b>: 2021-04-01</p><blockquote><p><b>item</b></p><p><b>linkId</b>: version</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>RC-2-draft</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: lot</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>ER8732</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: expiry</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>2021-06-30</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: paperid</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>bMlJkAt0V92RYhhG3fNt</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: pha</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>dPD2PfwzBQyphcjeUiAdRP</td></tr></table></blockquote><blockquote><p><b>item</b></p><p><b>linkId</b>: hw</p><h3>Answers</h3><table class=\"grid\"><tr><td>-</td><td><b>Value[x]</b></td></tr><tr><td>*</td><td>dPD2PfwzBQyphcjeUiAdRP</td></tr></table></blockquote></div>"
+  },
+  "questionnaire": "http://who-int.github.io/svc/refs/heads/rc2/SVC-QR-UVCI-Questionnaire",
+  "status": "completed",
+  "subject": {
+    "reference": "SVC_Patient_Example"
+  },
+  "authored": "2021-04-01",
+  "item": [
+    {
+      "linkId": "version",
+      "answer": [
+        {
+          "valueString": "RC-2-draft"
+        }
+      ]
+    },
+    {
+      "linkId": "lot",
+      "answer": [
+        {
+          "valueString": "ER8732"
+        }
+      ]
+    },
+    {
+      "linkId": "expiry",
+      "answer": [
+        {
+          "valueDate": "2021-06-30"
+        }
+      ]
+    },
+    {
+      "linkId": "paperid",
+      "answer": [
+        {
+          "valueString": "bMlJkAt0V92RYhhG3fNt"
+        }
+      ]
+    },
+    {
+      "linkId": "pha",
+      "answer": [
+        {
+          "valueString": "dPD2PfwzBQyphcjeUiAdRP"
+        }
+      ]
+    },
+    {
+      "linkId": "hw",
+      "answer": [
+        {
+          "valueString": "dPD2PfwzBQyphcjeUiAdRP"
+        }
+      ]
+    }
+  ]
+}
