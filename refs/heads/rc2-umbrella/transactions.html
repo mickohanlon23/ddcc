@@ -164,7 +164,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <!-- ReleaseHeader --><p id="publish-box">WHO Smart Vaccination Certificate - RC2 - Local Development build (v0.2.0). See the <a href="http://fhir.org/guides/who/svc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Transactions</h2>
   
-  <div><a name="4ce985f2-6110-43f4-b646-7c7af75ddcee">​</a><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Submit Health Event</a></li><li><a href="#2">Register Health Certificate</a></li><li><a href="#3">Retrieve Health Certificate</a></li><li><a href="#4">Retrieve Health Folder</a></li></ul></div>
+  <div><a name="f444a8f2-34b7-47dd-ab7c-4328a7931a88">​</a><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Submit Health Event</a></li><li><a href="#2">Register Health Certificate</a></li><li><a href="#3">Retrieve Health Certificate</a></li><li><a href="#4">Retrieve Health Folder</a></li></ul></div>
   
   <a name="1"></a><h3>Submit Health Event</h3>  <a name="submit-health-event">  </a>
   The Submit Health Event transaction is initiated by a <a href="actors.html#point-of-care">Point of Care</a> system against the <a href="actors.html#shc-generator">SHC Generator</a>.
@@ -210,7 +210,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <li>
       If a jurisdiction participates in the Digital-Online scenario, the <a href="actors.html#shc-generator">SHC Generator</a> should:
       <ol>
-	<li><a name="0019856f-522d-45d5-ba52-eca61a74962e">​</a>extract the relevant content from the <a href="StructureDefintion-shc-questionnairereponse.html">SHC Questionnaire Response</a> into the relevant <a href="StructureDefinition-shc-bundle.html">SHC Bundle</a> using the associated Structure Map [StructureDefinition-shc-questionnaire.html#Questionnaire.extension:targetStructureMap)</li>
+	<li><a name="34dd3357-b988-4d65-a7ed-0076fbd58f20">​</a>extract the relevant content from the <a href="StructureDefintion-shc-questionnairereponse.html">SHC Questionnaire Response</a> into the relevant <a href="StructureDefinition-shc-bundle.html">SHC Bundle</a> using the associated Structure Map [StructureDefinition-shc-questionnaire.html#Questionnaire.extension:targetStructureMap)</li>
 	<li>use their DSC  to sign the <a href="StructureDefinition-shc-bundle.html">SHC Bundle</a> code payload as part of the QR content schema</li>
 	<li>initiate a <a href="transactions.html#register-health-certificate">Register Health Certificate</a> transaction using the extracted <a href="StructureDefinition-shc-bundle.html">SHC Bundle</a> </li>
 	<li>include the resulting <a href="actors.html#shc-registry">SHC Registry Service</a> endpoints for signed Smart Health Certificate as part of the response message</li>
@@ -307,7 +307,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <li>
       graph: (Optional) a canonical reference to a  GraphDefintion resource indicating which of the linked SHCs should be included in the result.  The following options are required to be supported:
       <ul>
-	<li><a name="c98a41f2-3d4d-4b50-86be-3ff9cb428294">​</a>GraphDefintion/shf-svc: will include the <a href="StructureDefintion-svc-bundle.html">SVC Bundle</a></li>
+	<li><a name="a168c2e6-14b6-4c99-947a-a6c519075776">​</a>GraphDefintion/shf-svc: will include the <a href="StructureDefintion-svc-bundle.html">SVC Bundle</a></li>
       </ul>
     </li>
   </ul>
@@ -316,7 +316,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <a name="4.2.2"></a><h5>Message Semantics Response</h5><a name="retrieve-health-folder-message-semantics-response"> </a>
   The Retrieve Health Folder transaction response message is the response message of a  <a href="http://hl7.org/fhir/composition-operation-document.html">$document</a> operation performed.  Specifically:
   <ul>
-    <li><a name="d6ccfa0b-7354-460e-950c-3c52fefbc117">​</a>An list of entries of <a href="StructureDefintion-shc-composition.html">SHC Compositions</a> that the PHA wishes to expose to the requestor according to the polocy of the jursidiction</li>
+    <li><a name="1fa1c98a-922e-4a3d-9012-4b12470a86f6">​</a>An list of entries of <a href="StructureDefintion-shc-composition.html">SHC Compositions</a> that the PHA wishes to expose to the requestor according to the polocy of the jursidiction</li>
     <li>If the <i>graph</i> parameter was utilized, the linked resources as defined by the GraphDefintion</li>
   </ul>
 
@@ -347,7 +347,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc2#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 6, 2021 12:18+0000">2021-05-06</span>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc2#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 6, 2021 12:24+0000">2021-05-06</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

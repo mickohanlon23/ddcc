@@ -1,16 +1,16 @@
 ﻿SVC_RC2 : Validation Results
 =========================================
 
-err = 123, warn = 31, info = 2
+err = 121, warn = 31, info = 2
 IG Publisher Version: 1.1.68
-Generated Thu May 06 12:19:36 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = http://fhir.org/guides/who/svc)
+Generated Thu May 06 12:25:32 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = http://fhir.org/guides/who/svc)
 
  Build Errors : 38 / 4 / 0
  /github/workspace/fsh-generated/resources/Basic-svc-basic-qrcode-example : 1 / 1 / 2
  /github/workspace/fsh-generated/resources/ConceptMap-who-svc-map-icd11-sct-disease-targeted : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-svc-map-icd11-sct-vaccines : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Example : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Questionnaire-SVC-Questionnaire : 4 / 2 / 2
+ /github/workspace/fsh-generated/resources/Questionnaire-SVC-Questionnaire : 2 / 2 / 2
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example : 3 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-SVC-Basic-QRCode : 2 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-SVC-QRCode : 2 / 2 / 1
@@ -100,8 +100,6 @@ INFORMATION: Patient/SHC-Patient-Example: Patient/SHC-Patient-Example: Patient: 
 ERROR: Questionnaire.where(url = 'http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-SVC-Questionnaire.json - the canonical URL (http://fhir.org/guides/who/svc/Questionnaire/SVC-Questionnaire) does not match the URL (http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire)
 INFORMATION: Questionnaire/SVC-Questionnaire: Questionnaire/SVC-Questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
 WARNING: Questionnaire/SVC-Questionnaire: Questionnaire/SVC-Questionnaire: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
-ERROR: Questionnaire/SVC-Questionnaire: Questionnaire/SVC-Questionnaire: Questionnaire.extension[0]: ext-1: 'Must have either extensions or value[x], not both' failed
-ERROR: Questionnaire/SVC-Questionnaire: Questionnaire/SVC-Questionnaire: Questionnaire.extension[0]: The Extension 'http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap' definition is for a simple extension, so it must contain a value, not extensions
 WARNING: Questionnaire/SVC-Questionnaire: Questionnaire/SVC-Questionnaire: Questionnaire.title: value should not start or finish with whitespace
 INFORMATION: Questionnaire/SVC-Questionnaire: Questionnaire/SVC-Questionnaire: Questionnaire: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-questionnaire - listed in meta
 ERROR: /github/workspace/fsh-generated/resources/Questionnaire-SVC-Questionnaire: URL Mismatch http://fhir.org/guides/who/svc/Questionnaire/SVC-Questionnaire vs http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire
