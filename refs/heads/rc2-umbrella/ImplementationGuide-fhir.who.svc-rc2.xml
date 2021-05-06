@@ -424,7 +424,7 @@
         <reference value="StructureDefinition/shc-patient"/>
       </reference>
       <name value="SHC Patient"/>
-      <description value="An SHC_Patient should:&#xA;* if the [identifier.assigner](StructureDefinition-shc-patient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner) should be set to reference the [SHC Organization](StructureDefinition-shc-organization.html) resource associated to the PHA via the [WHO Public Key Directory](actors.html#who-pkd)"/>
+      <description value="An SHC_Patient should:&#xA;* if the [identifier.assigner](StructureDefinition-shc-patient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner) should be set to reference the [SHC Organization](StructureDefinition-shc-organization.html) resource associated to the PHA via the [WHO Public Key Directory](actors.html#who-pkd)&#xA;* obeys who-shc-patient-1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -514,6 +514,25 @@
       </reference>
       <name value="SVC Questionnaire "/>
       <description value="SVC QR Code Questionnaire for an Immunization event."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="GraphDefinition"/>
+      </extension>
+      <reference>
+        <reference value="GraphDefinition/svc-graph"/>
+      </reference>
+      <description value="SHF Graph Definition for retrieving Smart Vaccination Certificates under a [Retrieve Smart Health Folder](transactions.html#retrieve-health-folder) transaction."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shf-graphdefinition"/>
+      </reference>
+      <name value="SHF Graph Defintion"/>
+      <description value="Abstract Graph Definition for Smart Health Folder to describe information retrieved under a [Retrieve Smart Health Folder](transactions.html#retrieve-health-folder) transaction."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

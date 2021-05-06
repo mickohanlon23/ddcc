@@ -647,7 +647,7 @@
           "reference": "StructureDefinition/shc-patient"
         },
         "name": "SHC Patient",
-        "description": "An SHC_Patient should:\n* if the [identifier.assigner](StructureDefinition-shc-patient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner) should be set to reference the [SHC Organization](StructureDefinition-shc-organization.html) resource associated to the PHA via the [WHO Public Key Directory](actors.html#who-pkd)"
+        "description": "An SHC_Patient should:\n* if the [identifier.assigner](StructureDefinition-shc-patient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner) should be set to reference the [SHC Organization](StructureDefinition-shc-organization.html) resource associated to the PHA via the [WHO Public Key Directory](actors.html#who-pkd)\n* obeys who-shc-patient-1"
       },
       {
         "extension": [
@@ -764,6 +764,31 @@
         },
         "name": "SVC Questionnaire ",
         "description": "SVC QR Code Questionnaire for an Immunization event."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "GraphDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "GraphDefinition/svc-graph"
+        },
+        "description": "SHF Graph Definition for retrieving Smart Vaccination Certificates under a [Retrieve Smart Health Folder](transactions.html#retrieve-health-folder) transaction."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/shf-graphdefinition"
+        },
+        "name": "SHF Graph Defintion",
+        "description": "Abstract Graph Definition for Smart Health Folder to describe information retrieved under a [Retrieve Smart Health Folder](transactions.html#retrieve-health-folder) transaction."
       },
       {
         "extension": [

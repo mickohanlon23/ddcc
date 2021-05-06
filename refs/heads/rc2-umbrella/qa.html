@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 33, errors = 121, warn = 31, info = 2 -->
+<!-- broken links = 33, errors = 124, warn = 32, info = 2 -->
 <head>
   <title>SVC_RC2 : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for SVC_RC2</h1>
- <p>Generated Thu May 06 15:21:03 UTC 2021, FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = <a href="http://fhir.org/guides/who/svc">http://fhir.org/guides/who/svc</a> (<a href="http://fhir.org/guides/who/svc/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Thu May 06 17:14:17 UTC 2021, FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = <a href="http://fhir.org/guides/who/svc">http://fhir.org/guides/who/svc</a> (<a href="http://fhir.org/guides/who/svc/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.68</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.who.svc-rc2, Canonical = http://fhir.org/guides/who/svc</td></tr>
@@ -38,14 +38,14 @@
  <tr><td>HL7 Publication Rules:</td><td>Code = n/a. package-list.json: file not found in /github/workspace</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.org/guides/who/svc (Problem #1 with package-list.json at http://fhir.org/guides/who/svc: http://fhir.org/guides/who/svc/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 33, errors = 121, warn = 31, info = 2</td></tr>
+ <tr><td>Summary:</td><td> broken links = 33, errors = 124, warn = 32, info = 2</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>39</b></td><td><b>4</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>40</b></td><td><b>4</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_Basic-svc-basic-qrcode-example"><b>/github/workspace/fsh-generated/resources/Basic-svc-basic-qrcode-example</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>2</b></td>
@@ -55,6 +55,9 @@
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_ConceptMap-who-svc-map-icd11-sct-vaccines"><b>/github/workspace/fsh-generated/resources/ConceptMap-who-svc-map-icd11-sct-vaccines</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_GraphDefinition-svc-graph"><b>/github/workspace/fsh-generated/resources/GraphDefinition-svc-graph</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Patient-SHC-Patient-Example"><b>/github/workspace/fsh-generated/resources/Patient-SHC-Patient-Example</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
@@ -103,6 +106,9 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-shf-composition"><b>/github/workspace/fsh-generated/resources/StructureDefinition-shf-composition</b></a></td><td><b>10</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-shf-graphdefinition"><b>/github/workspace/fsh-generated/resources/StructureDefinition-shf-graphdefinition</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-bundle"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
@@ -179,103 +185,106 @@
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource ConceptMap/who-svc-map-icd11-sct-vaccines.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#a3b12f4b-1a2b-49b1-8b43-bd5a2ec4e05d">QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 104</a></b></td><td><b>error</b></td><td><b>The link 'http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire' for &quot;http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire&quot; cannot be resolved</b></td>
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource GraphDefinition/svc-graph.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#931211a0-16bf-49db-a271-caa18e32fa1c">QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 299</a></b></td><td><b>error</b></td><td><b>The link 'SVC_Patient_Example' for &quot;SVC_Patient_Example&quot; cannot be resolved</b></td>
+     <td><b><a href="QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#35390710-053d-463f-810d-abc4f8584ffe">QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 104</a></b></td><td><b>error</b></td><td><b>The link 'http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire' for &quot;http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-organization.html#f2bfccdd-cf76-4db5-8a46-a7a8fb4e6706">StructureDefinition-shc-organization.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 164</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#d22a75e3-c634-4ffd-b67c-ab8a51715722">QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 299</a></b></td><td><b>error</b></td><td><b>The link 'SVC_Patient_Example' for &quot;SVC_Patient_Example&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-patient.html#6260de07-0eb1-401f-b2ea-430e085e47b7">StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 129</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
+     <td><b><a href="StructureDefinition-shc-organization.html#eff66cc8-857c-4ed2-8f41-b1b99048e872">StructureDefinition-shc-organization.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 164</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-patient.html#6260de07-0eb1-401f-b2ea-430e085e47b7">StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 383</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="StructureDefinition-shc-patient.html#45cb4407-f5f6-4644-b54d-533c7303f938">StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 129</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-questionnaire.html#df1d3427-b1c7-45ad-9d5b-c7df8ad6be25">StructureDefinition-shc-questionnaire.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 202</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnaire-response.html' for &quot;SHC QuestionnaireResponse&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-shc-patient.html#45cb4407-f5f6-4644-b54d-533c7303f938">StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 383</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-submit-health-event-response.html#7a251802-4df0-4a1c-829b-fb87148a86db">StructureDefinition-shc-submit-health-event-response.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 38</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-submit-health-event-respose.html' for &quot;SHC Submit Health Event Response&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-shc-questionnaire.html#96808e44-0add-4d14-9a31-933f5dcca025">StructureDefinition-shc-questionnaire.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 202</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnaire-response.html' for &quot;SHC QuestionnaireResponse&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shf-composition.html#de359b2b-fd01-4ceb-a940-510c87d4c58d">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 27</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-registry.html' for &quot;SHC Registry Service&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-shc-submit-health-event-response.html#bde0a87a-652e-4cf1-bc31-8a3a35fb52ac">StructureDefinition-shc-submit-health-event-response.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 38</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-submit-health-event-respose.html' for &quot;SHC Submit Health Event Response&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shf-composition.html#de359b2b-fd01-4ceb-a940-510c87d4c58d">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 119</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="StructureDefinition-shf-composition.html#6141e550-a7fd-47e8-a979-c8894e0486c8">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 27</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-registry.html' for &quot;SHC Registry Service&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shf-composition.html#de359b2b-fd01-4ceb-a940-510c87d4c58d">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 208</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
+     <td><b><a href="StructureDefinition-shf-composition.html#6141e550-a7fd-47e8-a979-c8894e0486c8">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 119</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-practitioner-role.html#d85286d5-7c91-4ff2-a3f9-fec0f0b2dbd4">StructureDefinition-svc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 145</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-shf-composition.html#6141e550-a7fd-47e8-a979-c8894e0486c8">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 208</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-practitioner-role.html#d85286d5-7c91-4ff2-a3f9-fec0f0b2dbd4">StructureDefinition-svc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 323</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-practitioner-role.html#f93de21a-7cf9-400d-8a51-0fff33e94f28">StructureDefinition-svc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 145</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-questionnaireresponse.html#53e96c98-e138-4e25-afd1-02cdaae0d492">StructureDefinition-svc-questionnaireresponse.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 113</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-questionnaire.html' for &quot;SVC Questionaire&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-practitioner-role.html#f93de21a-7cf9-400d-8a51-0fff33e94f28">StructureDefinition-svc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 323</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#c78b6388-fae9-43ac-a354-9123c6ee69dc">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 251, column 172</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnaire-response.html' for &quot;SHC QuestionnaireResponse&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-questionnaireresponse.html#dc7bfe94-6e13-42e2-9b17-d48f05b35930">StructureDefinition-svc-questionnaireresponse.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 113</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-questionnaire.html' for &quot;SVC Questionaire&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#52ffad0e-430c-4bfb-bc7d-e537fb874609">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 310, column 83</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-questionnaire.html' for &quot;SVC Questionaire&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#42a48b35-7135-412b-800f-240c86dcc755">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 274, column 172</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnaire-response.html' for &quot;SHC QuestionnaireResponse&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#a4f2d56e-c6e8-448e-8348-848152f40ea1">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 330, column 131</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
+     <td><b><a href="artifacts.html#3f8e7b86-d89e-4521-ac0c-53efb7054a48">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 342, column 83</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-questionnaire.html' for &quot;SVC Questionaire&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#a4f2d56e-c6e8-448e-8348-848152f40ea1">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 330, column 385</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="artifacts.html#fbcc1f33-0aac-4619-9a50-9b62d02b035f">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 362, column 131</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#c9f8f0ba-e700-41e0-9b71-802a950c003d">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 340, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-submit-health-event-respose.html' for &quot;SHC Submit Health Event Response&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#fbcc1f33-0aac-4619-9a50-9b62d02b035f">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 362, column 385</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#d1b72934-ff11-45dd-8b2f-4df71274073a">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 358, column 134</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="artifacts.html#7fbf7306-37d7-4204-b8e5-f5c7a37f45be">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 373, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-submit-health-event-respose.html' for &quot;SHC Submit Health Event Response&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#68b6dc35-bc6c-4c23-9f10-8ef2a5906faa">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 378, column 29</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-registry.html' for &quot;SHC Registry Service&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#c8d33438-daab-4888-8f4d-5b6ac004aec8">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 391, column 134</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#68b6dc35-bc6c-4c23-9f10-8ef2a5906faa">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 378, column 121</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="artifacts.html#a9d3acf6-c0e5-445d-a5e0-f4805ee257b7">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 411, column 29</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-registry.html' for &quot;SHC Registry Service&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#68b6dc35-bc6c-4c23-9f10-8ef2a5906faa">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 378, column 210</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
+     <td><b><a href="artifacts.html#a9d3acf6-c0e5-445d-a5e0-f4805ee257b7">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 411, column 121</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#42955d5f-4502-4ddb-98e1-7c69204d4405">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 415, column 115</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#a9d3acf6-c0e5-445d-a5e0-f4805ee257b7">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 411, column 210</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#42955d5f-4502-4ddb-98e1-7c69204d4405">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 415, column 293</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#1c6d8f5c-415e-4bbd-8c51-0299c8f0ef92">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 448, column 115</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="dependencies.html#caf58d24-4d3c-4ec7-a848-3ba57923af74">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 177, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#1c6d8f5c-415e-4bbd-8c51-0299c8f0ef92">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 448, column 293</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#b639e8dd-0bb2-4694-a933-1a7414f9c2f8">transactions.html#/html/body/div/div/div/div/div/div/a at Line 188, column 222</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-questionnaire-response.html' for &quot;SHC Questionnaire Response&quot; cannot be resolved</b></td>
+     <td><b><a href="dependencies.html#22160487-f9e4-4d31-8b8c-1beff1a66fdb">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 177, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#b639e8dd-0bb2-4694-a933-1a7414f9c2f8">transactions.html#/html/body/div/div/div/div/div/div/a at Line 200, column 176</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="transactions.html#4115ebf5-0c3c-4439-bcfd-342563609216">transactions.html#/html/body/div/div/div/div/div/div/a at Line 188, column 222</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-questionnaire-response.html' for &quot;SHC Questionnaire Response&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#44c7903b-8852-4c41-a638-e71ed6014889">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ol/li/a at Line 216, column 45</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnairereponse.html' for &quot;SHC Questionnaire Response&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#4115ebf5-0c3c-4439-bcfd-342563609216">transactions.html#/html/body/div/div/div/div/div/div/a at Line 200, column 176</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#44c7903b-8852-4c41-a638-e71ed6014889">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ol/li/a at Line 216, column 235</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-questionnaire.html#Questionnaire.extension:targetStructureMap' for &quot;Structure Map&quot; cannot be resolved (valid targets: 243 targets)</b></td>
+     <td><b><a href="transactions.html#81eb4534-e884-48d2-a30c-ab0cbd473762">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ol/li/a at Line 216, column 45</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnairereponse.html' for &quot;SHC Questionnaire Response&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#b639e8dd-0bb2-4694-a933-1a7414f9c2f8">transactions.html#/html/body/div/div/div/div/div/div/a at Line 283, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="transactions.html#81eb4534-e884-48d2-a30c-ab0cbd473762">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ol/li/a at Line 216, column 235</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-questionnaire.html#Questionnaire.extension:targetStructureMap' for &quot;Structure Map&quot; cannot be resolved (valid targets: 243 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#6c1cf797-b775-4ede-bcbd-7e5b3674f5d8">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ul/li/a at Line 313, column 48</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-svc-bundle.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#4115ebf5-0c3c-4439-bcfd-342563609216">transactions.html#/html/body/div/div/div/div/div/div/a at Line 283, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#019661b3-ccdd-4089-bde1-15fb80b8c4fa">transactions.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 322, column 32</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-composition.html' for &quot;SHC Compositions&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#085cfdb5-8d91-46c6-8f87-0c7716ee0aea">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ul/li/a at Line 313, column 50</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-svc-bundle.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#b639e8dd-0bb2-4694-a933-1a7414f9c2f8">transactions.html#/html/body/div/div/div/div/div/div/a at Line 330, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="transactions.html#0c3e8477-c61f-44fc-9f81-1ed4b68f1933">transactions.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 322, column 32</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-composition.html' for &quot;SHC Compositions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.html#4115ebf5-0c3c-4439-bcfd-342563609216">transactions.html#/html/body/div/div/div/div/div/div/a at Line 330, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
 </table>
 <hr/>
@@ -324,6 +333,23 @@
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ConceptMap/who-svc-map-icd11-sct-vaccines: ConceptMap/who-svc-map-icd11-sct-vaccines: ConceptMap</b></td><td><b>warning</b></td><td title="cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_GraphDefinition-svc-graph"> </a>
+<h2><a href="GraphDefinition-svc-graph.html">/github/workspace/fsh-generated/resources/GraphDefinition-svc-graph.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>GraphDefinition/svc-graph: GraphDefinition/svc-graph: GraphDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/GraphDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>GraphDefinition/svc-graph: GraphDefinition/svc-graph: GraphDefinition</b></td><td><b>warning</b></td><td title="gdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>gdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>GraphDefinition/svc-graph: GraphDefinition/svc-graph: GraphDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-graphdefinition - listed in meta</b></td>
    </tr>
 </table>
 <hr/>
@@ -691,10 +717,27 @@
      <td><b>Composition/shf-composition-genexample: Composition/shf-composition-genexample: Composition</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.section: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-composition)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Composition/shf-composition-genexample: Composition/shf-composition-genexample: Composition</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.section:Section_Health_Certificates: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-composition)</b></td>
+     <td><b>Composition/shf-composition-genexample: Composition/shf-composition-genexample: Composition</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.section:sectionHealthCertificates: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-composition)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-shf-composition</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://fhir.org/guides/who/svc/StructureDefinition/shf-composition vs https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-composition</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-shf-graphdefinition"> </a>
+<h2><a href="StructureDefinition-shf-graphdefinition.html">/github/workspace/fsh-generated/resources/StructureDefinition-shf-graphdefinition.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-graphdefinition')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-shf-graphdefinition.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/shf-graphdefinition) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-graphdefinition)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/shf-graphdefinition: StructureDefinition/shf-graphdefinition: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-shf-graphdefinition</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://fhir.org/guides/who/svc/StructureDefinition/shf-graphdefinition vs https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-graphdefinition</b></td>
    </tr>
 </table>
 <hr/>
@@ -1154,6 +1197,9 @@
      <td><a href="StructureDefinition-shf-composition.html">/github/workspace/fsh-generated/resources/StructureDefinition-shf-composition.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-shf-composition.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/shf-composition) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-composition)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-shf-graphdefinition.html">/github/workspace/fsh-generated/resources/StructureDefinition-shf-graphdefinition.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-shf-graphdefinition.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/shf-graphdefinition) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-graphdefinition)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-svc-bundle.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/svc-bundle) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-bundle)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
@@ -1379,7 +1425,7 @@
      <td><a href="StructureDefinition-shf-composition.html">/github/workspace/fsh-generated/resources/StructureDefinition-shf-composition.json</a></td><td><b>Composition.section: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-composition)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-shf-composition.html">/github/workspace/fsh-generated/resources/StructureDefinition-shf-composition.json</a></td><td><b>Composition.section:Section_Health_Certificates: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-composition)</b></td>
+     <td><a href="StructureDefinition-shf-composition.html">/github/workspace/fsh-generated/resources/StructureDefinition-shf-composition.json</a></td><td><b>Composition.section:sectionHealthCertificates: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-composition)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-svc-composition.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-composition.json</a></td><td><b>Composition.status: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition)</b></td>

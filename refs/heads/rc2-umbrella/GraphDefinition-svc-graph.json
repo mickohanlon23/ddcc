@@ -1,0 +1,38 @@
+{
+  "resourceType": "GraphDefinition",
+  "id": "svc-graph",
+  "meta": {
+    "profile": [
+      "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-graphdefinition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>url</b>: <code>http://fhir.org/guides/who/svc/GraphDefinition/svc-graph</code></p><p><b>version</b>: 0.2.0</p><p><b>name</b>: GraphDefintion for retrieving a Smart Vaccination Certificate from the Smart Health Folder</p><p><b>status</b>: draft</p><p><b>experimental</b>: true</p><p><b>date</b>: 2021-05-06</p><p><b>publisher</b>: World Health Organization (WHO)</p><p><b>contact</b>: <a href=\"https://www.who.int\">https://www.who.int</a></p><p><b>description</b>: SHF Graph Definition for retrieving Smart Vaccination Certificates under a [Retrieve Smart Health Folder](transactions.html#retrieve-health-folder) transaction.</p><p><b>start</b>: Composition</p><h3>Links</h3><table class=\"grid\"><tr><td>-</td><td><b>Path</b></td><td><b>Description</b></td></tr><tr><td>*</td><td>SHF_Composition.section[Section_Health_Certificates].entry[SVC]</td><td>SVC Composition Entry</td></tr></table></div>"
+  },
+  "url": "http://fhir.org/guides/who/svc/GraphDefinition/svc-graph",
+  "version": "0.2.0",
+  "name": "GraphDefintion for retrieving a Smart Vaccination Certificate from the Smart Health Folder",
+  "status": "draft",
+  "experimental": true,
+  "date": "2021-05-06",
+  "publisher": "World Health Organization (WHO)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.who.int"
+        }
+      ]
+    }
+  ],
+  "description": "SHF Graph Definition for retrieving Smart Vaccination Certificates under a [Retrieve Smart Health Folder](transactions.html#retrieve-health-folder) transaction.",
+  "start": "Composition",
+  "link": [
+    {
+      "path": "SHF_Composition.section[Section_Health_Certificates].entry[SVC]",
+      "description": "SVC Composition Entry"
+    }
+  ]
+}
