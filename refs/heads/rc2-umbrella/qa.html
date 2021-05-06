@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 33, errors = 124, warn = 32, info = 2 -->
+<!-- broken links = 31, errors = 124, warn = 32, info = 2 -->
 <head>
   <title>SVC_RC2 : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for SVC_RC2</h1>
- <p>Generated Thu May 06 18:36:32 UTC 2021, FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = <a href="http://fhir.org/guides/who/svc">http://fhir.org/guides/who/svc</a> (<a href="http://fhir.org/guides/who/svc/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Thu May 06 18:40:10 UTC 2021, FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = <a href="http://fhir.org/guides/who/svc">http://fhir.org/guides/who/svc</a> (<a href="http://fhir.org/guides/who/svc/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.68</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.who.svc-rc2, Canonical = http://fhir.org/guides/who/svc</td></tr>
@@ -38,14 +38,14 @@
  <tr><td>HL7 Publication Rules:</td><td>Code = n/a. package-list.json: file not found in /github/workspace</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.org/guides/who/svc (Problem #1 with package-list.json at http://fhir.org/guides/who/svc: http://fhir.org/guides/who/svc/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 33, errors = 124, warn = 32, info = 2</td></tr>
+ <tr><td>Summary:</td><td> broken links = 31, errors = 124, warn = 32, info = 2</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>40</b></td><td><b>4</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>38</b></td><td><b>4</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_Basic-svc-basic-qrcode-example"><b>/github/workspace/fsh-generated/resources/Basic-svc-basic-qrcode-example</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>2</b></td>
@@ -90,6 +90,9 @@
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-shc-practitioner"><b>/github/workspace/fsh-generated/resources/StructureDefinition-shc-practitioner</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>3</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-shc-practitioner-role"><b>/github/workspace/fsh-generated/resources/StructureDefinition-shc-practitioner-role</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-shc-provenance"><b>/github/workspace/fsh-generated/resources/StructureDefinition-shc-provenance</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -118,9 +121,6 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-immunization"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization</b></a></td><td><b>10</b></td><td><b>0</b></td><td><b>3</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-practitioner-role"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner-role</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-svc-questionnaireresponse"><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-questionnaireresponse</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
@@ -188,103 +188,97 @@
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource GraphDefinition/svc-graph.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#a2f088e3-f968-45dc-b61a-86f4de513574">QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 104</a></b></td><td><b>error</b></td><td><b>The link 'http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire' for &quot;http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire&quot; cannot be resolved</b></td>
+     <td><b><a href="QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#ee099de9-5b83-4a86-bddd-6cc486367de4">QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 104</a></b></td><td><b>error</b></td><td><b>The link 'http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire' for &quot;http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#86fbebda-d97b-4335-90d9-635dc40f8025">QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 299</a></b></td><td><b>error</b></td><td><b>The link 'SVC_Patient_Example' for &quot;SVC_Patient_Example&quot; cannot be resolved</b></td>
+     <td><b><a href="QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#3d5bed52-77e5-47ea-b89b-4ed347a87149">QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 299</a></b></td><td><b>error</b></td><td><b>The link 'SVC_Patient_Example' for &quot;SVC_Patient_Example&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-organization.html#7c1f348a-b4a2-4003-b961-4112a244f9c5">StructureDefinition-shc-organization.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 164</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="StructureDefinition-shc-organization.html#7278ef06-2e48-4528-b6bf-39c06c67339a">StructureDefinition-shc-organization.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 164</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-patient.html#69bdf12b-a437-47f0-9ded-5eda080e7988">StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 129</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
+     <td><b><a href="StructureDefinition-shc-patient.html#f8ff2134-2465-418b-b0ec-5abbb7c8d656">StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 129</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-patient.html#69bdf12b-a437-47f0-9ded-5eda080e7988">StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 383</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="StructureDefinition-shc-patient.html#f8ff2134-2465-418b-b0ec-5abbb7c8d656">StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 383</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-questionnaire.html#349bbd60-e210-4eb2-b05a-b8e3ba14af67">StructureDefinition-shc-questionnaire.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 202</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnaire-response.html' for &quot;SHC QuestionnaireResponse&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-shc-practitioner-role.html#2152e2fe-d9b3-4c86-86ae-4b8eb2546059">StructureDefinition-shc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 145</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-orgaznization.html' for &quot;SHC Organization&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-submit-health-event-response.html#eec193f4-6800-4ed6-b55e-d98e222415cf">StructureDefinition-shc-submit-health-event-response.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 38</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-submit-health-event-respose.html' for &quot;SHC Submit Health Event Response&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-shc-questionnaire.html#fe31e486-4f6f-4a7c-a756-ec1c5251a819">StructureDefinition-shc-questionnaire.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 202</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnaire-response.html' for &quot;SHC QuestionnaireResponse&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shf-composition.html#e36f3b7c-ce2c-4384-a2ef-40fd50dd8746">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 27</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-registry.html' for &quot;SHC Registry Service&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-shc-submit-health-event-response.html#89f9247c-9324-434b-be96-ea6e1c21e161">StructureDefinition-shc-submit-health-event-response.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 38</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-submit-health-event-respose.html' for &quot;SHC Submit Health Event Response&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shf-composition.html#e36f3b7c-ce2c-4384-a2ef-40fd50dd8746">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 119</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="StructureDefinition-shf-composition.html#da938986-889e-4855-be36-db7bc7b90cb6">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 27</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-registry.html' for &quot;SHC Registry Service&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shf-composition.html#e36f3b7c-ce2c-4384-a2ef-40fd50dd8746">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 208</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
+     <td><b><a href="StructureDefinition-shf-composition.html#da938986-889e-4855-be36-db7bc7b90cb6">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 119</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-practitioner-role.html#5dca4e55-52f6-4ed5-8d16-1f13fade7afb">StructureDefinition-svc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 145</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-shf-composition.html#da938986-889e-4855-be36-db7bc7b90cb6">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 208</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-practitioner-role.html#5dca4e55-52f6-4ed5-8d16-1f13fade7afb">StructureDefinition-svc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 323</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-questionnaireresponse.html#ee0b32d2-eef1-4881-98df-f21429e5c9f4">StructureDefinition-svc-questionnaireresponse.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 113</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-questionnaire.html' for &quot;SVC Questionaire&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-questionnaireresponse.html#5a1f3ffb-2766-49d2-be9a-e56ed2fa8b41">StructureDefinition-svc-questionnaireresponse.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 113</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-questionnaire.html' for &quot;SVC Questionaire&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#c3aa489a-c896-4b13-b625-bdc090be3e99">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 274, column 172</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnaire-response.html' for &quot;SHC QuestionnaireResponse&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#ea2cd630-e2e6-4235-98b3-a28ee5e8cc9c">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 274, column 172</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnaire-response.html' for &quot;SHC QuestionnaireResponse&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#d2cfa2db-0771-4900-a564-7d4b2b647467">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 342, column 83</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-questionnaire.html' for &quot;SVC Questionaire&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#f4aa9dee-dc52-46a0-9cac-0aea666dfa33">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 342, column 83</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-questionnaire.html' for &quot;SVC Questionaire&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#7f46bcc3-8f39-4943-b208-183f65d7de27">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 362, column 131</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#a1071e98-5850-4487-8e7e-7bdaa1cdbee3">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 362, column 131</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
+     <td><b><a href="artifacts.html#7f46bcc3-8f39-4943-b208-183f65d7de27">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 362, column 385</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#a1071e98-5850-4487-8e7e-7bdaa1cdbee3">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 362, column 385</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="artifacts.html#f21e8228-72ca-473b-acae-867bd2dcf170">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 373, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-submit-health-event-respose.html' for &quot;SHC Submit Health Event Response&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#df2ab33b-324f-4d14-82cf-036bdaa04c55">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 373, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-submit-health-event-respose.html' for &quot;SHC Submit Health Event Response&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#6ed62a01-20b6-4ae2-a39b-128694598148">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 391, column 134</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#ff86cf57-5138-4a5b-8fda-6102e6fc1280">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 391, column 134</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="artifacts.html#8bd83a3e-186f-4005-9961-9a158ea90cf9">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 409, column 115</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-orgaznization.html' for &quot;SHC Organization&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#4f3d88e0-00cc-48c6-bb52-c57a735dfdd4">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 411, column 29</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-registry.html' for &quot;SHC Registry Service&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#bb7b8dd6-86cd-4514-857c-43ce3b0d515c">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 420, column 29</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-registry.html' for &quot;SHC Registry Service&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#4f3d88e0-00cc-48c6-bb52-c57a735dfdd4">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 411, column 121</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="artifacts.html#bb7b8dd6-86cd-4514-857c-43ce3b0d515c">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 420, column 121</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#4f3d88e0-00cc-48c6-bb52-c57a735dfdd4">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 411, column 210</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
+     <td><b><a href="artifacts.html#bb7b8dd6-86cd-4514-857c-43ce3b0d515c">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 420, column 210</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#07213ee2-2c67-4dad-af16-68ba14a3a8af">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 448, column 115</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-orgaznization.html' for &quot;SVC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="dependencies.html#15890bff-f593-4d42-a410-7a06853a3a3c">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 177, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#07213ee2-2c67-4dad-af16-68ba14a3a8af">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 448, column 293</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-patient.html' for &quot;SVC Patient&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#d267d848-a1ec-4989-835d-e0c6a80e5036">transactions.html#/html/body/div/div/div/div/div/div/a at Line 188, column 222</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-questionnaire-response.html' for &quot;SHC Questionnaire Response&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="dependencies.html#0b932642-3883-4baa-9b12-b2981ffe1f39">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 177, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#d267d848-a1ec-4989-835d-e0c6a80e5036">transactions.html#/html/body/div/div/div/div/div/div/a at Line 200, column 176</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#85a0ed3f-bef2-435c-897e-928384c5d68f">transactions.html#/html/body/div/div/div/div/div/div/a at Line 188, column 222</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-questionnaire-response.html' for &quot;SHC Questionnaire Response&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#56fc850f-8a91-4bf7-ae82-ea7882f6c543">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ol/li/a at Line 216, column 45</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnairereponse.html' for &quot;SHC Questionnaire Response&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#85a0ed3f-bef2-435c-897e-928384c5d68f">transactions.html#/html/body/div/div/div/div/div/div/a at Line 200, column 176</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="transactions.html#56fc850f-8a91-4bf7-ae82-ea7882f6c543">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ol/li/a at Line 216, column 235</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-questionnaire.html#Questionnaire.extension:targetStructureMap' for &quot;Structure Map&quot; cannot be resolved (valid targets: 243 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#982ea8e4-c9fd-42b8-ae2a-112975476d59">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ol/li/a at Line 216, column 45</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnairereponse.html' for &quot;SHC Questionnaire Response&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#d267d848-a1ec-4989-835d-e0c6a80e5036">transactions.html#/html/body/div/div/div/div/div/div/a at Line 283, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#982ea8e4-c9fd-42b8-ae2a-112975476d59">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ol/li/a at Line 216, column 235</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-questionnaire.html#Questionnaire.extension:targetStructureMap' for &quot;Structure Map&quot; cannot be resolved (valid targets: 243 targets)</b></td>
+     <td><b><a href="transactions.html#cb8c35dd-9cad-412d-9418-99ce0eac9364">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ul/li/a at Line 313, column 50</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-svc-bundle.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#85a0ed3f-bef2-435c-897e-928384c5d68f">transactions.html#/html/body/div/div/div/div/div/div/a at Line 283, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="transactions.html#3bbd7150-195f-4e86-9a1a-dfd6b54cf2b4">transactions.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 322, column 32</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-composition.html' for &quot;SHC Compositions&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#f50d60cc-433a-4c61-9ecc-3309d04a1def">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ul/li/a at Line 313, column 50</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-svc-bundle.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#03fc62b7-1e58-49ca-80da-8f0e075673a8">transactions.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 322, column 32</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-composition.html' for &quot;SHC Compositions&quot; cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#85a0ed3f-bef2-435c-897e-928384c5d68f">transactions.html#/html/body/div/div/div/div/div/div/a at Line 330, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
+     <td><b><a href="transactions.html#d267d848-a1ec-4989-835d-e0c6a80e5036">transactions.html#/html/body/div/div/div/div/div/div/a at Line 330, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [subject-of-care, publish-box, vaccinator, segment-post-footer, family-logo, shc-generator, smart-health-certificate-shc-generator, stripe, segment-footer, segment-content, point-of-care, segment-header, npkd, smart-health-certificate-shc-registry-service, family-nav, ig-status, actors, 1, smart-health-certiciate-shc-holder, national-public-key-directory-npkd, data-entry-personnel, whopkd, 5, shc-holder, 6, verifier, who-public-key-directory-who-pkd, segment-navbar, shc-registry, verfier, segment-breadcrumb])</b></td>
    </tr>
 </table>
 <hr/>
@@ -553,7 +547,7 @@
      <td><b>Patient/shc-patient-genexample: Patient/shc-patient-genexample: Patient</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Patient/shc-patient-genexample: Patient/shc-patient-genexample: Patient.identifier[0]</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Patient.identifier:SHC_Identifier in profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient - the discriminator [system] does not have fixed value, binding or existence assertions</b></td>
+     <td><b>Patient/shc-patient-genexample: Patient/shc-patient-genexample: Patient.identifier[0]</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Patient.identifier:shcIdentifier in profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient - the discriminator [system] does not have fixed value, binding or existence assertions</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-shc-patient</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://fhir.org/guides/who/svc/StructureDefinition/shc-patient vs https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient</b></td>
@@ -576,13 +570,33 @@
      <td><b>Practitioner/shc-practitioner-genexample: Practitioner/shc-practitioner-genexample: Practitioner</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Practitioner/shc-practitioner-genexample: Practitioner/shc-practitioner-genexample: Practitioner.identifier[0]</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Practitioner.identifier:SHC_Identifier in profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner - the discriminator [system] does not have fixed value, binding or existence assertions</b></td>
+     <td><b>Practitioner/shc-practitioner-genexample: Practitioner/shc-practitioner-genexample: Practitioner.identifier[0]</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Practitioner.identifier:shcIdentifier in profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner - the discriminator [system] does not have fixed value, binding or existence assertions</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Practitioner/shc-practitioner-genexample: Practitioner/shc-practitioner-genexample: Practitioner</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Practitioner.identifier:SHC_Identifier: Unable to check minimum required (Practitioner.identifier) due to lack of slicing validation (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner)</b></td>
+     <td><b>Practitioner/shc-practitioner-genexample: Practitioner/shc-practitioner-genexample: Practitioner</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Practitioner.identifier:shcIdentifier: Unable to check minimum required (Practitioner.identifier) due to lack of slicing validation (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-shc-practitioner</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://fhir.org/guides/who/svc/StructureDefinition/shc-practitioner vs https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-shc-practitioner-role"> </a>
+<h2><a href="StructureDefinition-shc-practitioner-role.html">/github/workspace/fsh-generated/resources/StructureDefinition-shc-practitioner-role.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner-role')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-shc-practitioner-role.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/shc-practitioner-role) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner-role)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/shc-practitioner-role: StructureDefinition/shc-practitioner-role: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner-role')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-shc-practitioner-role</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://fhir.org/guides/who/svc/StructureDefinition/shc-practitioner-role vs https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner-role</b></td>
    </tr>
 </table>
 <hr/>
@@ -798,7 +812,7 @@
      <td><b>Composition/svc-composition-genexample: Composition/svc-composition-genexample: Composition</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.section: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Composition/svc-composition-genexample: Composition/svc-composition-genexample: Composition</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.section:Section_Vaccinations: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition)</b></td>
+     <td><b>Composition/svc-composition-genexample: Composition/svc-composition-genexample: Composition</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Composition.section:sectionVaccinations: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-composition</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://fhir.org/guides/who/svc/StructureDefinition/svc-composition vs https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition</b></td>
@@ -845,30 +859,10 @@
      <td><b>Immunization/svc-immunization-genexample: Immunization/svc-immunization-genexample: Immunization</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Immunization.protocolApplied: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Immunization/svc-immunization-genexample: Immunization/svc-immunization-genexample: Immunization</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Immunization.protocolApplied:ProtocolApplied_Authority: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)</b></td>
+     <td><b>Immunization/svc-immunization-genexample: Immunization/svc-immunization-genexample: Immunization</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Immunization.protocolApplied:protocolAppliedAuthority: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://fhir.org/guides/who/svc/StructureDefinition/svc-immunization vs https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-svc-practitioner-role"> </a>
-<h2><a href="StructureDefinition-svc-practitioner-role.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner-role.json</a></h2>
- <table class="grid">
-   <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner-role')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner-role.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/svc-practitioner-role) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner-role)</b></td>
-   </tr>
-   <tr style="background-color: #d6feff">
-     <td><b>StructureDefinition/svc-practitioner-role: StructureDefinition/svc-practitioner-role: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner-role')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner-role</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://fhir.org/guides/who/svc/StructureDefinition/svc-practitioner-role vs https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner-role</b></td>
    </tr>
 </table>
 <hr/>
@@ -1179,6 +1173,9 @@
      <td><a href="StructureDefinition-shc-practitioner.html">/github/workspace/fsh-generated/resources/StructureDefinition-shc-practitioner.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-shc-practitioner.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/shc-practitioner) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-shc-practitioner-role.html">/github/workspace/fsh-generated/resources/StructureDefinition-shc-practitioner-role.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-shc-practitioner-role.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/shc-practitioner-role) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner-role)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-shc-provenance.html">/github/workspace/fsh-generated/resources/StructureDefinition-shc-provenance.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-shc-provenance.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/shc-provenance) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-provenance)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
@@ -1207,9 +1204,6 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-svc-immunization.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/svc-immunization) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-svc-practitioner-role.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner-role.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-svc-practitioner-role.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/svc-practitioner-role) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner-role)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-svc-questionnaireresponse.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-questionnaireresponse.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-svc-questionnaireresponse.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/svc-questionnaireresponse) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-questionnaireresponse)</b></td>
@@ -1243,10 +1237,10 @@
 <h2>SLICING_CANNOT_BE_EVALUATED</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-shc-patient.html">/github/workspace/fsh-generated/resources/StructureDefinition-shc-patient.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Patient.identifier:SHC_Identifier in profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient - the discriminator [system] does not have fixed value, binding or existence assertions</b></td>
+     <td><a href="StructureDefinition-shc-patient.html">/github/workspace/fsh-generated/resources/StructureDefinition-shc-patient.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Patient.identifier:shcIdentifier in profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient - the discriminator [system] does not have fixed value, binding or existence assertions</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-shc-practitioner.html">/github/workspace/fsh-generated/resources/StructureDefinition-shc-practitioner.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Practitioner.identifier:SHC_Identifier in profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner - the discriminator [system] does not have fixed value, binding or existence assertions</b></td>
+     <td><a href="StructureDefinition-shc-practitioner.html">/github/workspace/fsh-generated/resources/StructureDefinition-shc-practitioner.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Practitioner.identifier:shcIdentifier in profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner - the discriminator [system] does not have fixed value, binding or existence assertions</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-svc-immunization.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Immunization.identifier:SVC_Identifier in profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization - the discriminator [system] does not have fixed value, binding or existence assertions</b></td>
@@ -1449,7 +1443,7 @@
      <td><a href="StructureDefinition-svc-composition.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-composition.json</a></td><td><b>Composition.section: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-svc-composition.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-composition.json</a></td><td><b>Composition.section:Section_Vaccinations: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition)</b></td>
+     <td><a href="StructureDefinition-svc-composition.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-composition.json</a></td><td><b>Composition.section:sectionVaccinations: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-svc-immunization.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization.json</a></td><td><b>Immunization.status: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)</b></td>
@@ -1470,7 +1464,7 @@
      <td><a href="StructureDefinition-svc-immunization.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization.json</a></td><td><b>Immunization.protocolApplied: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-svc-immunization.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization.json</a></td><td><b>Immunization.protocolApplied:ProtocolApplied_Authority: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)</b></td>
+     <td><a href="StructureDefinition-svc-immunization.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization.json</a></td><td><b>Immunization.protocolApplied:protocolAppliedAuthority: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)</b></td>
    </tr>
 </table>
 <hr/>
@@ -1478,7 +1472,7 @@
 <h2>Validation_VAL_Profile_NoCheckMin</h2>
  <table class="grid">
    <tr style="background-color: #fffff2">
-     <td><a href="StructureDefinition-shc-practitioner.html">/github/workspace/fsh-generated/resources/StructureDefinition-shc-practitioner.json</a></td><td><b>Practitioner.identifier:SHC_Identifier: Unable to check minimum required (Practitioner.identifier) due to lack of slicing validation (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner)</b></td>
+     <td><a href="StructureDefinition-shc-practitioner.html">/github/workspace/fsh-generated/resources/StructureDefinition-shc-practitioner.json</a></td><td><b>Practitioner.identifier:shcIdentifier: Unable to check minimum required (Practitioner.identifier) due to lack of slicing validation (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner)</b></td>
    </tr>
    <tr style="background-color: #fffff2">
      <td><a href="StructureDefinition-svc-immunization.html">/github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization.json</a></td><td><b>Immunization.identifier:SVC_Identifier: Unable to check minimum required (Immunization.identifier) due to lack of slicing validation (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)</b></td>

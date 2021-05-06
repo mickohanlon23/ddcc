@@ -517,6 +517,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shc-practitioner-role"/>
+      </reference>
+      <name value="SHC Practitioner Role"/>
+      <description value="Association of an [SHC Practitioner](StructureDefinition-shc-practitioner-role.html) to a managing [SHC Organization](StructureDefinition-shc-orgaznization.html), indicating that an SHC Practitioner is authorized by the public health authority (PHA) to vaccinate an [SHC Patient](StructureDefinition-shc-patient.html)."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="GraphDefinition"/>
       </extension>
       <reference>
@@ -603,16 +613,6 @@
       </reference>
       <name value="SHC Questionnaire Response"/>
       <description value="Describes the logical structure for a questionnaire response associacted to a [SHC Questionaire](StructureDefinition-shc-questionnaire.html)."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/svc-practitioner-role"/>
-      </reference>
-      <name value="SVC Practitioner Role"/>
-      <description value="Association of an [SVC Practitioner](StructureDefinition-svc-practitioner-role.html) to a managing [SVC Organization](StructureDefinition-svc-orgaznization.html), indicating that an SVC Practitioner is authorized by the public health authority (PHA) to vaccinate an [SVC Patient](StructureDefinition-svc-patient.html)."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

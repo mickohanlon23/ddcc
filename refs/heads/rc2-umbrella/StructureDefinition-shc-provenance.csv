@@ -79,7 +79,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Provenance.agent.onBehalfOf","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}
 ","Who the agent is representing","The individual, device, or organization for whom the change was made.","onBehalfOfIdentity should be used when the agent is not a Resource type.","","","","","","","","",,,,,"",,,,"Provenance.agent.onBehalfOf",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Person, Practitioner, Organization, Device :* .role [classCode = RoleClassMutualRelationship; role.code and * .scopes[Role](classCode=IDENT) and *.plays [Role.Code]"
-"Provenance.agent","Provenance_Agent","","",1,*,"Y","","","BackboneElement {[]} {[]}
+"Provenance.agent","provenanceAgent","","",1,*,"Y","","","BackboneElement {[]} {[]}
 ","Actor involved","An actor taking a role in an activity  for which it can be assigned some degree of responsibility for the activity taking place.","Several agents may be associated (i.e. has some responsibility for an activity) with an activity and vice-versa.","An agent can be a person, an organization, software, device, or other entities that may be ascribed responsibility.","","","","","","","",,,,,"",,,,"Provenance.agent",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.performer","./participation[isNormalParticipation()]  OR  ./outboundRelationship[isNormalActRelationship() and typeCode='DRIV']","Agent","FiveWs.who","AuditEvent.agent"
 "Provenance.agent.id","","","",0,1,"","","","string {[]} {[]}
@@ -157,7 +157,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Signature on target","A digital signature on the target Reference(s). The signer should match a Provenance.agent. The purpose of the signature is indicated.","","","","","","","","","",,,,,"","type:who}
 ","",Y,"open","Provenance.signature",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./signatureText"
-"Provenance.signature","Provenance_Signature","","",1,*,"Y","","","Signature {[]} {[]}
+"Provenance.signature","provenanceSignature","","",1,*,"Y","","","Signature {[]} {[]}
 ","Signature on target","A digital signature on the target Reference(s). The signer should match a Provenance.agent. The purpose of the signature is indicated.","","","","","","","","","",,,,,"",,,,"Provenance.signature",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./signatureText"
 "Provenance.signature.id","","","",0,1,"","","","string {[]} {[]}
@@ -173,7 +173,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Provenance.signature.when","","","",1,1,"","","Y","instant {[]} {[]}
 ","When the signature was created","When the digital signature was signed.","This should agree with the information in the signature.","","","","","","","","",,,,,"",,,,"Signature.when",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Provenance.signature.who","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization], CanonicalType[https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-practitioner-role], CanonicalType[https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner]]}
+"Provenance.signature.who","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization], CanonicalType[https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner-role], CanonicalType[https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner]]}
 ","Who signed","A reference to an application-usable description of the identity that signed  (e.g. the signature used their private key).","This should agree with the information in the signature.","","","","","","","","",,,,,"",,,,"Signature.who",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Provenance.signature.onBehalfOf","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization]]}

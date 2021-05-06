@@ -81,7 +81,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"","value:system}
 ","",Y,"open","CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22","union(., ./translation)"
-"Immunization.vaccineCode.coding","SVC_Vaccine","","",1,1,"","","Y","Coding {[]} {[]}
+"Immunization.vaccineCode.coding","svcVaccine","","",1,1,"","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","","","","",,,,,"",,,,"CodeableConcept.coding",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.1-8, C*E.10-22","union(., ./translation)"
 "Immunization.vaccineCode.coding.id","","","",0,1,"","","","string {[]} {[]}
@@ -272,7 +272,7 @@ string {[]} {[]}","Dose number within series","Nominal position in a series.","T
 "Immunization.protocolApplied.seriesDoses[x]","","","",0,1,"","","","positiveInt {[]} {[]}
 string {[]} {[]}","Recommended number of doses for immunity","The recommended number of doses to achieve immunity.","The use of an integer is preferred if known. A string should only be used in cases where an integer is not available (such as when documenting a recurring booster dose).","","","","","","","","",,,,,"",,,,"Immunization.protocolApplied.seriesDoses[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"Immunization.protocolApplied","ProtocolApplied_Authority","","",1,*,"Y","","","BackboneElement {[]} {[]}
+"Immunization.protocolApplied","protocolAppliedAuthority","","",1,*,"Y","","","BackboneElement {[]} {[]}
 ","Protocol followed by the provider","The protocol (set of recommendations) being followed by the provider who administered the dose.","","","","","","","","","",,,,,"",,,,"Immunization.protocolApplied",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Immunization.protocolApplied.id","","","",0,1,"","","","string {[]} {[]}
