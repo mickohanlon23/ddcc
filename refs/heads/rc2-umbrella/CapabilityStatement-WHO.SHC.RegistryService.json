@@ -1,0 +1,195 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "WHO.SHC.RegistryService",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Capability Statement for a SHC RegistryService</p>\n         \n    </div>"
+  },
+  "url": "https://who-int.github.io/svc/refs/headers/rc2/CapabilityStatement/WHO.SHC.RegistryService",
+  "version": "0.2.0",
+  "name": "WHO.SHC.RegistryService",
+  "title": "WHO SHC Registry Service",
+  "status": "draft",
+  "experimental": true,
+  "date": "2021-05-06",
+  "publisher": "World Health Organization (WHO)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.who.int"
+        }
+      ]
+    }
+  ],
+  "description": "CapabilityStatement for WHO SHC Registry Service actor.",
+  "kind": "requirements",
+  "fhirVersion": "4.0.1",
+  "format": [
+    "application/fhir+xml",
+    "application/fhir+json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "documentation": "SHC Registry Service Server Actor",
+      "resource": [
+        {
+          "type": "Composition",
+          "supportedProfile": [
+            "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-composition",
+            "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition",
+            "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-composition"
+          ],
+          "documentation": ".",
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "SHC Registry Service Actor for accepting a Registr Health Certificate transaction"
+            }
+          ],
+          "operation": [
+            {
+              "name": "$document",
+              "definition": "http://hl7.org/fhir/OperationDefinition/Composition-document",
+              "documentation": "SHC Registry Service Actor for responding to a Retrieve Health Certificate or Retrieve Health Folder transaction"
+            }
+          ]
+        },
+        {
+          "type": "Patient",
+          "supportedProfile": [
+            "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient"
+          ],
+          "documentation": ".",
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ]
+        },
+        {
+          "type": "Organization",
+          "supportedProfile": [
+            "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization"
+          ],
+          "documentation": ".",
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ]
+        },
+        {
+          "type": "Provenance",
+          "supportedProfile": [
+            "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-provenance"
+          ],
+          "documentation": ".",
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ]
+        },
+        {
+          "type": "Practitioner",
+          "supportedProfile": [
+            "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner"
+          ],
+          "documentation": ".",
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ]
+        },
+        {
+          "type": "PractitionerRole",
+          "supportedProfile": [
+            "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner-role"
+          ],
+          "documentation": ".",
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ]
+        },
+        {
+          "type": "Immunization",
+          "supportedProfile": [
+            "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization"
+          ],
+          "documentation": ".",
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ]
+        }
+      ],
+      "interaction": [
+        {
+          "code": "transaction",
+          "documentation": "SHC Registry Service Actor for accepting a Registry Health Certificate"
+        }
+      ]
+    }
+  ]
+}
