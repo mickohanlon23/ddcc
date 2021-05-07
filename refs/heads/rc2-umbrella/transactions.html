@@ -164,9 +164,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <!-- ReleaseHeader --><p id="publish-box">WHO Smart Vaccination Certificate - RC2 - Local Development build (v0.2.0). See the <a href="http://fhir.org/guides/who/svc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Transactions</h2>
   
-  <div><a name="44badf8d-c113-41f8-be55-b9ab8794ac72">​</a><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Submit Health Event</a></li><li><a href="#2">Register Health Certificate</a></li><li><a href="#3">Retrieve Health Certificate</a></li><li><a href="#4">Retrieve Health Folder</a></li></ul></div>
+  <div><a name="fb96d370-5686-418c-9a8b-a04ad391c0d0">​</a><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Submit Health Event</a></li><li><a href="#2"> Register Health Certificate</a></li><li><a href="#3"> Retrieve Health Certificate</a></li><li><a href="#4"> Retrieve Health Folder</a></li></ul></div>
   
-  <a name="1"></a><h3>Submit Health Event</h3>  <a name="submit-health-event">  </a>
+  <a name="1"></a><h3 id="submit-health-event">Submit Health Event</h3> 
   The Submit Health Event transaction is initiated by a <a href="actors.html#point-of-care">Point of Care</a> system against the <a href="actors.html#shc-generator">SHC Generator</a>.
 
     <!-- ?xml version="1.0" encoding="UTF-8" standalone="no"? --><svg contentStyleType="text/css" viewBox="0 0 431 208" zoomAndPan="magnify" preserveAspectRatio="none" width="431px" style="width:431px;height:208px;" contentScriptType="application/ecmascript" version="1.1" height="208px"><defs><filter width="300%" x="-1" y="-1" id="f2s5tl8n3b6vp" height="300%"><feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur><feColorMatrix result="blurOut2" in="blurOut" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" type="matrix"></feColorMatrix><feOffset result="blurOut3" dx="4.0" dy="4.0" in="blurOut2"></feOffset><feBlend mode="normal" in="SourceGraphic" in2="blurOut3"></feBlend></filter></defs><g><text lengthAdjust="spacing" x="64.75" font-size="18" textLength="297" y="28.708" font-family="Roboto Condensed" fill="#000000">Transaction: Submit Health Event</text><line y1="123.25" x1="52" y2="201.5156" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="52"></line><line y1="123.25" x1="360.5" y2="201.5156" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="360.5"></line><text lengthAdjust="spacing" x="5" font-size="14" textLength="88" y="119.9482" font-family="Roboto Condensed" fill="#000000">Point of Care</text><ellipse filter="url(#f2s5tl8n3b6vp)" cx="52" cy="49.9531" rx="8" ry="8" style="stroke:#107050;stroke-width:2.0;" fill="#FFFFFF"></ellipse><path filter="url(#f2s5tl8n3b6vp)" d="M52,57.9531 L52,84.9531 M39,65.9531 L65,65.9531 M52,84.9531 L39,99.9531 M52,84.9531 L65,99.9531 " style="stroke:#107050;stroke-width:2.0;" fill="none"></path><rect filter="url(#f2s5tl8n3b6vp)" rx="4.5" ry="4.5" width="117" x="300.5" y="87.9531" style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF" height="30.2969"></rect><text lengthAdjust="spacing" x="307.5" font-size="14" textLength="103" y="107.9482" font-family="Roboto Condensed" fill="#000000">SHC Generator</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="349,150.3828,359,154.3828,349,158.3828,353,154.3828"></polygon><line y1="154.3828" x1="52" y2="154.3828" style="stroke:#107050;stroke-width:1.0;" x2="355"></line><text font-weight="bold" lengthAdjust="spacing" x="59" font-size="13" textLength="37" y="149.3169" font-family="Roboto Condensed" fill="#000000">1.1.1</text><text lengthAdjust="spacing" x="100" font-size="13" textLength="188" y="149.3169" font-family="Roboto Condensed" fill="#000000">Submit Health Event Request</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="63,179.5156,53,183.5156,63,187.5156,59,183.5156"></polygon><line y1="183.5156" x1="57" y2="183.5156" style="stroke:#107050;stroke-width:1.0;" x2="360"></line><text font-weight="bold" lengthAdjust="spacing" x="69" font-size="13" textLength="37" y="178.4497" font-family="Roboto Condensed" fill="#000000">1.1.2</text><text lengthAdjust="spacing" x="110" font-size="13" textLength="244" y="178.4497" font-family="Roboto Condensed" fill="#000000">Return Submit Health Event Response</text></g></svg>
@@ -179,24 +179,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <li>The <a href="actors.html#point-of-care">Point of Care</a> system comes online after recording one or more health events while in an offline mode</li>
   </ul>
 
-  <a name="2"></a><h4 data-anchor-id="register-health-certificate-message-semantics">Message Semantics</h4>
+  <a name="2"></a><h4 id="register-health-certificate-message-semantics">Message Semantics</h4>
 
-  <a name="2.1"></a><h5>Message Semantics Request</h5><a name="register-health-certificate-message-semantics-request">  </a>
+  <a name="2.1"></a><h5 id="register-health-certificate-message-semantics-request"> Message Semantics Request</h5>
   The message semantics for the Register Health  Certificate transaction utilizes a <a href="StructureDefinition-shc-submit-health-event-request.html">SHC Submit Health Event Request</a> which is a Transaction Bundle of <a href="StructureDefinition-shc-questionnaireresponse.html">SHC Questionnaire Response</a> resources for the request message. The specific SHC Questionnaire Response resource is determined by the health event that is the subject of the transaction  
   
-  <h6>Message Semantics Request- Smart Vaccination Certificate</h6><a name="register-health-certificate-message-semantics-svc">  </a>
+  <h6 id="register-health-certificate-message-semantics-svc"> Message Semantics Request- Smart Vaccination Certificate</h6>
   The <a href="actors.html#point-of-care">Point of Care</a> system should submit an <a href="StructureDefinition-svc-questionnaireresponse.html">SVC Questionnaire Response</a>  
 
 
-  <a name="2.2"></a><h5>Message Semantics Response</h5><a name="register-health-certificate-message-semantics-request">  </a>
+  <a name="2.2"></a><h5 id="register-health-certificate-message-semantics-request"> Message Semantics Response</h5>
     The response to a Register Health Certificate transaction is a <a href="StructureDefinition-shc-submit-health-event-response.html">SHC Submit Health Event Response</a> which consists of a Bundle of type transaction-response following the FHIR specification for <a href="https://www.hl7.org/fhir/http.html#transaction-response">transaction responses</a>.  
 
-  <a name="3"></a><h4>Pre-conditions</h4><a name="submit-health-event-preconditions">  </a>
+  <a name="3"></a><h4 id="submit-health-event-preconditions"> Pre-conditions</h4>
   The SHC Genrator should have a Document Signing Certificate (DSC) issued by the Public Health Authority and registered with the <a href="actors.html#npkd">National Public Key Directory</a>.  
 
   When a jurisdiction participates in the Digital-Online scenario, the DSC should be registered with the <a href="actors.html#npkd">National Public Key Directory</a> and the <a href="actors.html#who-pkd">WHO Public Key Directory</a>.
   
-  <a name="4"></a><h4>Expected Actions</h4><a name="submit-health-event-expected-actions">  </a>
+  <a name="4"></a><h4 id="submit-health-event-expected-actions"> Expected Actions</h4>
   The following are the expected actions for the actors participating in this transaction:
   <ul>
     <li>
@@ -210,7 +210,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <li>
       If a jurisdiction participates in the Digital-Online scenario, the <a href="actors.html#shc-generator">SHC Generator</a> should:
       <ol>
-	<li><a name="7d7aace9-d4c3-4150-a29d-c730298f6ab2">​</a>extract the relevant content from the <a href="StructureDefintion-shc-questionnairereponse.html">SHC Questionnaire Response</a> into the relevant <a href="StructureDefinition-shc-bundle.html">SHC Bundle</a> using the associated <a href="StructureDefinition-shc-questionnaire.html#Questionnaire.extension:targetStructureMap">Structure Map</a></li>
+	<li><a name="5748d3e6-abec-4326-923a-ddd4a45e60b1">​</a>extract the relevant content from the <a href="StructureDefintion-shc-questionnairereponse.html">SHC Questionnaire Response</a> into the relevant <a href="StructureDefinition-shc-bundle.html">SHC Bundle</a> using the associated <a href="StructureDefinition-shc-questionnaire.html#Questionnaire.extension:targetStructureMap">Structure Map</a></li>
 	<li>use their DSC  to sign the <a href="StructureDefinition-shc-bundle.html">SHC Bundle</a> code payload as part of the QR content schema</li>
 	<li>initiate a <a href="transactions.html#register-health-certificate">Register Health Certificate</a> transaction using the extracted <a href="StructureDefinition-shc-bundle.html">SHC Bundle</a> </li>
 	<li>include the resulting <a href="actors.html#shc-registry">SHC Registry Service</a> endpoints for signed Smart Health Certificate as part of the response message</li>
@@ -219,18 +219,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </ul>
   
   
-  <a name="2"></a><h3>Register Health Certificate</h3>  <a name="register-health-certificate">  </a>
+  <a name="2"></a><h3 id="register-health-certificate"> Register Health Certificate</h3>  
   The Register Health Certiciate transaction is initiated by a <a href="actors.html#shc-generator">SHC Generator</a> system against the <a href="actors.html#shc-registry">SHC Registry Service</a>.
 
     <!-- ?xml version="1.0" encoding="UTF-8" standalone="no"? --><svg contentStyleType="text/css" viewBox="0 0 410 193" zoomAndPan="magnify" preserveAspectRatio="none" width="410px" style="width:410px;height:193px;" contentScriptType="application/ecmascript" version="1.1" height="193px"><defs><filter width="300%" x="-1" y="-1" id="fhu1gwncslyvn" height="300%"><feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur><feColorMatrix result="blurOut2" in="blurOut" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" type="matrix"></feColorMatrix><feOffset result="blurOut3" dx="4.0" dy="4.0" in="blurOut2"></feOffset><feBlend mode="normal" in="SourceGraphic" in2="blurOut3"></feBlend></filter></defs><g><text lengthAdjust="spacing" x="27.75" font-size="18" textLength="350" y="28.708" font-family="Roboto Condensed" fill="#000000">Transaction: Register Health Certificate</text><line y1="107.8438" x1="65" y2="186.1094" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="65"></line><line y1="107.8438" x1="363.5" y2="186.1094" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="363.5"></line><rect filter="url(#fhu1gwncslyvn)" rx="4.5" ry="4.5" width="117" x="5" y="72.5469" style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF" height="30.2969"></rect><text lengthAdjust="spacing" x="12" font-size="14" textLength="103" y="92.542" font-family="Roboto Condensed" fill="#000000">SHC Generator</text><rect filter="url(#fhu1gwncslyvn)" rx="4.5" ry="4.5" width="70" x="326.5" y="39.9531" style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF" height="62.8906"></rect><text lengthAdjust="spacing" x="347" font-size="14" textLength="29" y="59.9482" font-family="Roboto Condensed" fill="#000000">SHC</text><text lengthAdjust="spacing" x="333.5" font-size="14" textLength="56" y="76.2451" font-family="Roboto Condensed" fill="#000000">Registry</text><text lengthAdjust="spacing" x="336.5" font-size="14" textLength="50" y="92.542" font-family="Roboto Condensed" fill="#000000">Service</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="351.5,134.9766,361.5,138.9766,351.5,142.9766,355.5,138.9766"></polygon><line y1="138.9766" x1="65.5" y2="138.9766" style="stroke:#107050;stroke-width:1.0;" x2="357.5"></line><text font-weight="bold" lengthAdjust="spacing" x="72.5" font-size="13" textLength="37" y="133.9106" font-family="Roboto Condensed" fill="#000000">1.1.1</text><text lengthAdjust="spacing" x="113.5" font-size="13" textLength="223" y="133.9106" font-family="Roboto Condensed" fill="#000000">Register Health Certificate Request</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="76.5,164.1094,66.5,168.1094,76.5,172.1094,72.5,168.1094"></polygon><line y1="168.1094" x1="70.5" y2="168.1094" style="stroke:#107050;stroke-width:1.0;" x2="362.5"></line><text font-weight="bold" lengthAdjust="spacing" x="82.5" font-size="13" textLength="37" y="163.0435" font-family="Roboto Condensed" fill="#000000">1.1.2</text><text lengthAdjust="spacing" x="123.5" font-size="13" textLength="233" y="163.0435" font-family="Roboto Condensed" fill="#000000">Register Health Certificate Response</text></g></svg>
   
-  <a name="2.1"></a><h4>Trigger Event</h4><a name="register-health-certificate-trigger">  </a>
+  <a name="2.1"></a><h4 id="register-health-certificate-trigger"> Trigger Event</h4>
   The Register Health Certificate transaction is initiated when a <a href="actors.html#shc-generator">SHC Generator</a> receives a valid Submit Health Event request from a <a href="actors.html#point-of-care">Point of Care</a> system.
 
-  <a name="2.2"></a><h4>Message Semantics</h4><a name="register-health-certificate-message-semantics">  </a>
+  <a name="2.2"></a><h4 id="register-health-certificate-message-semantics"> Message Semantics</h4>
 
   
-  <h4>Expected Actions</h4><a name="register-health-certificate-expected-actions">  </a>
+  <a name="2.3"></a><h4 id="register-health-certificate-expected-actions"> Expected Actions</h4>
   
   The following are the expected actions for the actors participating in this transaction:
   <ul>
@@ -245,7 +245,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
   
-  <a name="3"></a><h3>Retrieve Health Certificate</h3>  <a name="retrieve-health-certificate">  </a>
+  <a name="3"></a><h3 id="retrieve-health-certificate"> Retrieve Health Certificate</h3>  
   The Retrieve Health Certiciate transaction is used in the Digital-Online context and is used for the retrieval and optional verification of a single Smart Health Certificate.
 
   The Retrieve Health Certificate transaction may be initiated by a <a href="actors.html#verifier">Verifier</a> or <a href="actors.html#point-of-care">Point of Care</a> against the <a href="actors.html#shc-registry">SHC Registry Service</a> in a jursidicition particpating in the Digital-Online scenario.
@@ -253,27 +253,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
     <!-- ?xml version="1.0" encoding="UTF-8" standalone="no"? --><svg contentStyleType="text/css" viewBox="0 0 527 297" zoomAndPan="magnify" preserveAspectRatio="none" width="527px" style="width:527px;height:297px;" contentScriptType="application/ecmascript" version="1.1" height="297px"><defs><filter width="300%" x="-1" y="-1" id="f1fr3ezmjenhmd" height="300%"><feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur><feColorMatrix result="blurOut2" in="blurOut" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" type="matrix"></feColorMatrix><feOffset result="blurOut3" dx="4.0" dy="4.0" in="blurOut2"></feOffset><feBlend mode="normal" in="SourceGraphic" in2="blurOut3"></feBlend></filter></defs><g><text lengthAdjust="spacing" x="85.25" font-size="18" textLength="353" y="28.708" font-family="Roboto Condensed" fill="#000000">Transaction: Retrieve Health Certificate</text><rect filter="url(#f1fr3ezmjenhmd)" rx="4.5" ry="4.5" width="503.5" x="10" y="124.8438" style="stroke:#107050;stroke-width:2.0;" fill="#FFFFFF" height="148.4688"></rect><rect width="503.5" x="10" y="200.2422" style="stroke:none;stroke-width:1.0;" fill="#FFFFFF" height="73.0703"></rect><line y1="107.8438" x1="73" y2="290.3125" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="73"></line><line y1="107.8438" x1="168" y2="290.3125" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="168"></line><line y1="107.8438" x1="466.5" y2="290.3125" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="466.5"></line><rect filter="url(#f1fr3ezmjenhmd)" rx="4.5" ry="4.5" width="102" x="20" y="72.5469" style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF" height="30.2969"></rect><text lengthAdjust="spacing" x="27" font-size="14" textLength="88" y="92.542" font-family="Roboto Condensed" fill="#000000">Point of Care</text><rect filter="url(#f1fr3ezmjenhmd)" rx="4.5" ry="4.5" width="61" x="136" y="72.5469" style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF" height="30.2969"></rect><text lengthAdjust="spacing" x="143" font-size="14" textLength="47" y="92.542" font-family="Roboto Condensed" fill="#000000">Verifier</text><rect filter="url(#f1fr3ezmjenhmd)" rx="4.5" ry="4.5" width="70" x="429.5" y="39.9531" style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF" height="62.8906"></rect><text lengthAdjust="spacing" x="450" font-size="14" textLength="29" y="59.9482" font-family="Roboto Condensed" fill="#000000">SHC</text><text lengthAdjust="spacing" x="436.5" font-size="14" textLength="56" y="76.2451" font-family="Roboto Condensed" fill="#000000">Registry</text><text lengthAdjust="spacing" x="439.5" font-size="14" textLength="50" y="92.542" font-family="Roboto Condensed" fill="#000000">Service</text><path d="M14.5,124.8438 L74,124.8438 L74,131.8438 L64,141.8438 L10,141.8438 L10,129.3438 " style="stroke:#107050;stroke-width:1.0;" fill="#FFFFFF"></path><rect rx="4.5" ry="4.5" width="503.5" x="10" y="124.8438" style="stroke:#107050;stroke-width:2.0;" fill="none" height="148.4688"></rect><text font-weight="bold" lengthAdjust="spacing" x="25" font-size="13" textLength="19" y="137.9106" font-family="Roboto Condensed" fill="#000000">alt</text><text font-weight="bold" lengthAdjust="spacing" x="89" font-size="11" textLength="94" y="137.0542" font-family="Roboto Condensed" fill="#000000">[Point of Care]</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="454.5,159.1094,464.5,163.1094,454.5,167.1094,458.5,163.1094"></polygon><line y1="163.1094" x1="73" y2="163.1094" style="stroke:#107050;stroke-width:1.0;" x2="460.5"></line><text font-weight="bold" lengthAdjust="spacing" x="80" font-size="13" textLength="37" y="158.0435" font-family="Roboto Condensed" fill="#000000">1.1.1</text><text lengthAdjust="spacing" x="121" font-size="13" textLength="223" y="158.0435" font-family="Roboto Condensed" fill="#000000">Retrieve Health Certificate Request</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="84,188.2422,74,192.2422,84,196.2422,80,192.2422"></polygon><line y1="192.2422" x1="78" y2="192.2422" style="stroke:#107050;stroke-width:1.0;" x2="465.5"></line><text font-weight="bold" lengthAdjust="spacing" x="90" font-size="13" textLength="37" y="187.1763" font-family="Roboto Condensed" fill="#000000">1.1.2</text><text lengthAdjust="spacing" x="131" font-size="13" textLength="233" y="187.1763" font-family="Roboto Condensed" fill="#000000">Retrieve Health Certificate Response</text><line y1="201.2422" x1="10" y2="201.2422" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x2="513.5"></line><text font-weight="bold" lengthAdjust="spacing" x="15" font-size="11" textLength="57" y="211.4526" font-family="Roboto Condensed" fill="#000000">[Verifier]</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="454.5,232.1797,464.5,236.1797,454.5,240.1797,458.5,236.1797"></polygon><line y1="236.1797" x1="168.5" y2="236.1797" style="stroke:#107050;stroke-width:1.0;" x2="460.5"></line><text font-weight="bold" lengthAdjust="spacing" x="175.5" font-size="13" textLength="37" y="231.1138" font-family="Roboto Condensed" fill="#000000">1.1.3</text><text lengthAdjust="spacing" x="216.5" font-size="13" textLength="223" y="231.1138" font-family="Roboto Condensed" fill="#000000">Retrieve Health Certificate Request</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="179.5,261.3125,169.5,265.3125,179.5,269.3125,175.5,265.3125"></polygon><line y1="265.3125" x1="173.5" y2="265.3125" style="stroke:#107050;stroke-width:1.0;" x2="465.5"></line><text font-weight="bold" lengthAdjust="spacing" x="185.5" font-size="13" textLength="37" y="260.2466" font-family="Roboto Condensed" fill="#000000">1.1.4</text><text lengthAdjust="spacing" x="226.5" font-size="13" textLength="233" y="260.2466" font-family="Roboto Condensed" fill="#000000">Retrieve Health Certificate Response</text></g></svg>
   
-  <a name="3.1"></a><h4>Trigger Event</h4>  <a name="retrieve-health-certificate-trigger">  </a>
+  <a name="3.1"></a><h4 id="retrieve-health-certificate-trigger"> Trigger Event</h4>  
   The Retrieve Health Certificate may be initiated by:
   <ol>
     <li> a <a href="actors.html#verifier">Verifier</a> wishing to validate and verify content of a Smart Health Certificate</li>
     <li> a <a href="actors.html#point-of-care">Point of Care</a> wishing to retrieve a Smart Health Certificate for continuity of care</li>
   </ol>
 
-  <a name="3.2"></a><h4>Message Semantics</h4><a name="retrieve-health-certificate-message-semantics">  </a>
+  <a name="3.2"></a><h4 id="retrieve-health-certificate-message-semantics"> Message Semantics</h4>
 
-  <h5>Message Semantics Request</h5><a name="retrieve-health-certificate-message-semantics-request">  </a>
+  <a name="3.2.1"></a><h5 id="retrieve-health-certificate-message-semantics-request"> Message Semantics Request</h5>
   The Retrieve Health Certificate transaction request message is the request message of a  <a href="http://hl7.org/fhir/composition-operation-document.html">$document</a> operation perfomed on the <a href="StructureDefinition-shc-composition.html">SHC Composition</a> with the following parameters:
   <ul>
     <li>id: (Required) the id of the SHC Composition </li>
   </ul>
       
 
-  <a name="3.2.2"></a><h5>Message Semantics Response</h5><a name="retrieve-health-certificate-message-semantics-response">  </a>
+  <a name="3.2.2"></a><h5 id="retrieve-health-certificate-message-semantics-response"> Message Semantics Response</h5>
   The Retrieve Health Certificate transaction response message is the response message of a  <a href="http://hl7.org/fhir/composition-operation-document.html">$document</a> operation performed.  
 
 
-  <a name="3.3"></a><h4>Expected Actions</h4><a name="retrieve-health-expected-actions">  </a>
+  <a name="3.3"></a><h4 id="retrieve-health-expected-actions"> Expected Actions</h4>
   The <a href="actors.html#shc-registry">SHC Registry Service</a> is expected to return all available requested content as permissable according to jursidiction policy.
 
 
@@ -283,7 +283,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   
 
   
-  <a name="4"></a><h3>Retrieve Health Folder</h3>  <a name="retrieve-health-folder">  </a>
+  <a name="4"></a><h3 id="retrieve-health-folder"> Retrieve Health Folder</h3>  
   The Retrieve Health Folder transaction is used in the Digital-Online context and is used for the retrieval and optional verification of Smart Health Certificates contained in the <a href="StructureDefinition-shf-composition.html">Smart Health Folder</a>.
 
   The Retrieve Health Folder transaction may be initiated by a <a href="actors.html#verifier">Verifier</a> or <a href="actors.html#point-of-care">Point of Care</a> against the <a href="actors.html#shc-registry">SHC Registry Service</a> in a jursidicition particpating in the Digital-Online scenario.
@@ -291,37 +291,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
     <!-- ?xml version="1.0" encoding="UTF-8" standalone="no"? --><svg contentStyleType="text/css" viewBox="0 0 501 297" zoomAndPan="magnify" preserveAspectRatio="none" width="501px" style="width:501px;height:297px;" contentScriptType="application/ecmascript" version="1.1" height="297px"><defs><filter width="300%" x="-1" y="-1" id="f1a1o82pm3hbi8" height="300%"><feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur><feColorMatrix result="blurOut2" in="blurOut" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0" type="matrix"></feColorMatrix><feOffset result="blurOut3" dx="4.0" dy="4.0" in="blurOut2"></feOffset><feBlend mode="normal" in="SourceGraphic" in2="blurOut3"></feBlend></filter></defs><g><text lengthAdjust="spacing" x="90.25" font-size="18" textLength="317" y="28.708" font-family="Roboto Condensed" fill="#000000">Transaction: Retrieve Health Folder</text><rect filter="url(#f1a1o82pm3hbi8)" rx="4.5" ry="4.5" width="477.5" x="10" y="124.8438" style="stroke:#107050;stroke-width:2.0;" fill="#FFFFFF" height="148.4688"></rect><rect width="477.5" x="10" y="200.2422" style="stroke:none;stroke-width:1.0;" fill="#FFFFFF" height="73.0703"></rect><line y1="107.8438" x1="73" y2="290.3125" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="73"></line><line y1="107.8438" x1="168" y2="290.3125" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="168"></line><line y1="107.8438" x1="440.5" y2="290.3125" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x2="440.5"></line><rect filter="url(#f1a1o82pm3hbi8)" rx="4.5" ry="4.5" width="102" x="20" y="72.5469" style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF" height="30.2969"></rect><text lengthAdjust="spacing" x="27" font-size="14" textLength="88" y="92.542" font-family="Roboto Condensed" fill="#000000">Point of Care</text><rect filter="url(#f1a1o82pm3hbi8)" rx="4.5" ry="4.5" width="61" x="136" y="72.5469" style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF" height="30.2969"></rect><text lengthAdjust="spacing" x="143" font-size="14" textLength="47" y="92.542" font-family="Roboto Condensed" fill="#000000">Verifier</text><rect filter="url(#f1a1o82pm3hbi8)" rx="4.5" ry="4.5" width="70" x="403.5" y="39.9531" style="stroke:#107050;stroke-width:1.5;" fill="#FFFFFF" height="62.8906"></rect><text lengthAdjust="spacing" x="424" font-size="14" textLength="29" y="59.9482" font-family="Roboto Condensed" fill="#000000">SHC</text><text lengthAdjust="spacing" x="410.5" font-size="14" textLength="56" y="76.2451" font-family="Roboto Condensed" fill="#000000">Registry</text><text lengthAdjust="spacing" x="413.5" font-size="14" textLength="50" y="92.542" font-family="Roboto Condensed" fill="#000000">Service</text><path d="M14.5,124.8438 L74,124.8438 L74,131.8438 L64,141.8438 L10,141.8438 L10,129.3438 " style="stroke:#107050;stroke-width:1.0;" fill="#FFFFFF"></path><rect rx="4.5" ry="4.5" width="477.5" x="10" y="124.8438" style="stroke:#107050;stroke-width:2.0;" fill="none" height="148.4688"></rect><text font-weight="bold" lengthAdjust="spacing" x="25" font-size="13" textLength="19" y="137.9106" font-family="Roboto Condensed" fill="#000000">alt</text><text font-weight="bold" lengthAdjust="spacing" x="89" font-size="11" textLength="94" y="137.0542" font-family="Roboto Condensed" fill="#000000">[Point of Care]</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="428.5,159.1094,438.5,163.1094,428.5,167.1094,432.5,163.1094"></polygon><line y1="163.1094" x1="73" y2="163.1094" style="stroke:#107050;stroke-width:1.0;" x2="434.5"></line><text font-weight="bold" lengthAdjust="spacing" x="80" font-size="13" textLength="37" y="158.0435" font-family="Roboto Condensed" fill="#000000">1.1.1</text><text lengthAdjust="spacing" x="121" font-size="13" textLength="197" y="158.0435" font-family="Roboto Condensed" fill="#000000">Retrieve Health Folder Request</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="84,188.2422,74,192.2422,84,196.2422,80,192.2422"></polygon><line y1="192.2422" x1="78" y2="192.2422" style="stroke:#107050;stroke-width:1.0;" x2="439.5"></line><text font-weight="bold" lengthAdjust="spacing" x="90" font-size="13" textLength="37" y="187.1763" font-family="Roboto Condensed" fill="#000000">1.1.2</text><text lengthAdjust="spacing" x="131" font-size="13" textLength="207" y="187.1763" font-family="Roboto Condensed" fill="#000000">Retrieve Health Folder Response</text><line y1="201.2422" x1="10" y2="201.2422" style="stroke:#107050;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x2="487.5"></line><text font-weight="bold" lengthAdjust="spacing" x="15" font-size="11" textLength="57" y="211.4526" font-family="Roboto Condensed" fill="#000000">[Verifier]</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="428.5,232.1797,438.5,236.1797,428.5,240.1797,432.5,236.1797"></polygon><line y1="236.1797" x1="168.5" y2="236.1797" style="stroke:#107050;stroke-width:1.0;" x2="434.5"></line><text font-weight="bold" lengthAdjust="spacing" x="175.5" font-size="13" textLength="37" y="231.1138" font-family="Roboto Condensed" fill="#000000">1.1.3</text><text lengthAdjust="spacing" x="216.5" font-size="13" textLength="197" y="231.1138" font-family="Roboto Condensed" fill="#000000">Retrieve Health Folder Request</text><polygon style="stroke:#107050;stroke-width:1.0;" fill="#107050" points="179.5,261.3125,169.5,265.3125,179.5,269.3125,175.5,265.3125"></polygon><line y1="265.3125" x1="173.5" y2="265.3125" style="stroke:#107050;stroke-width:1.0;" x2="439.5"></line><text font-weight="bold" lengthAdjust="spacing" x="185.5" font-size="13" textLength="37" y="260.2466" font-family="Roboto Condensed" fill="#000000">1.1.4</text><text lengthAdjust="spacing" x="226.5" font-size="13" textLength="207" y="260.2466" font-family="Roboto Condensed" fill="#000000">Retrieve Health Folder Response</text></g></svg>
   
-  <a name="4.1"></a><h4>Trigger Event</h4>  <a name="retrieve-health-folder-trigger">  </a>
+  <a name="4.1"></a><h4 id="retrieve-health-folder-trigger"> Trigger Event</h4>  
   The Retrieve Health Folder may be initiated by:
   <ol>
     <li> a <a href="actors.html#verifier">Verifier</a> wishing to validate and verify content of a Smart Health Certificate</li>
     <li> a <a href="actors.html#point-of-care">Point of Care</a> wishing to retrieve a Smart Health Certificate for continuity of care</li>
   </ol>
 
-  <a name="4.2"></a><h4>Message Semantics</h4><a name="retrieve-health-folder-message-semantics">  </a>
+  <a name="4.2"></a><h4 id="retrieve-health-folder-message-semantics"> Message Semantics</h4>
 
-  <h5>Message Semantics Request</h5><a name="retrieve-health-folder-message-semantics-request">  </a>
+  <a name="4.2.1"></a><h5 id="retrieve-health-folder-message-semantics-request"> Message Semantics Request</h5>
   The Retrieve Health Folder transaction request message is the request message of a  <a href="http://hl7.org/fhir/composition-operation-document.html">$document</a> operation perfomed on the <a href="StructureDefinition-shf-composition.html">SHF Composition</a> with the following parameters:
   <ul>
     <li>id: (Required) the id of the SHF Composition </li>
     <li>
       graph: (Optional) a canonical reference to a  <a href="StructureDefinition-shf-graphdefinition.html">SHF Graph Defintion</a> resource indicating which of the linked SHCs should be included in the result.  The following options are required to be supported:
       <ul>
-	<li><a name="48d39137-4f07-4d2d-a019-9b22e4b4fd11">​</a>GraphDefintion/svc-graph: will include the <a href="StructureDefintion-svc-bundle.html">SVC Bundle</a></li>
+	<li><a name="f9b3c2f5-b48e-4805-932d-d0239aa6cd0a">​</a>GraphDefintion/svc-graph: will include the <a href="StructureDefintion-svc-bundle.html">SVC Bundle</a></li>
       </ul>
     </li>
   </ul>
       
 
-  <a name="4.2.2"></a><h5>Message Semantics Response</h5><a name="retrieve-health-folder-message-semantics-response">  </a>
+  <a name="4.2.2"></a><h5 id="retrieve-health-folder-message-semantics-response"> Message Semantics Response</h5>
   The Retrieve Health Folder transaction response message is the response message of a  <a href="http://hl7.org/fhir/composition-operation-document.html">$document</a> operation performed.  Specifically:
   <ul>
-    <li><a name="16f9b7e8-829d-4187-b935-bc94f312a723">​</a>An list of entries of <a href="StructureDefintion-shc-composition.html">SHC Compositions</a> that the PHA wishes to expose to the requestor according to the polocy of the jursidiction</li>
+    <li><a name="a021105b-f737-4fbd-8981-f992f0a79539">​</a>An list of entries of <a href="StructureDefintion-shc-composition.html">SHC Compositions</a> that the PHA wishes to expose to the requestor according to the polocy of the jursidiction</li>
     <li>If the <i>graph</i> parameter was utilized, the linked resources as defined by the GraphDefintion</li>
   </ul>
 
   
-  <a name="4.3"></a><h4>Expected Actions</h4><a name="retrieve-health-expected-actions">  </a>
+  <a name="4.3"></a><h4 id="retrieve-health-expected-actions"> Expected Actions</h4>
   The <a href="actors.html#shc-registry">SHC Registry Service</a> is expected to return all available requested content as permissable according to jursidiction policy.
 
   A <a href="actors.html#verifier">Verifier</a> actor should utilize the appropriate public key, as referenced in the response message and as retrieved from <a href="actors.html#npkd">National Public Key Directory</a> or <a href="actors.html#who-pkd">WHO Public Key Directory</a>,  to verify that the signed SHC.
@@ -347,7 +347,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc2#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 6, 2021 21:57+0000">2021-05-06</span>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc2#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 7, 2021 03:40+0000">2021-05-07</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
