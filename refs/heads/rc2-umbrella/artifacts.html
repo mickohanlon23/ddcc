@@ -100,7 +100,7 @@
 		  <li><a href="personas.html">Personas</a></li>
 		  <li><a href="workflows.html">Workflows</a></li>      
 		  <li><a href="usecases.html">Use Cases</a></li>
-		  <li><a href="dictionary.html">Data Dictionary</a></li>
+		  <li><a href="StructureDefinition-SVC-Core-Data-Set.html">Data Dictionary</a></li>
 
 		</ul>
 	</li>
@@ -338,7 +338,7 @@ QuestionnaireResponse</a></p>
                   <a href="StructureDefinition-shc-questionnaire.html" title="StructureDefinition/shc-questionnaire">SHC Questionniare</a>
                </td>
                <td>
-<p><a name="3170088a-6f2e-429e-a26f-75b70324378f">​</a>Describes the logical structure for a questionnaire associacted to a Smart Health Certificate which includes a Structure Map to generate the relevant SHC from a given <a href="StructureDefintion-shc-questionnaire-response.html">SHC QuestionnaireResponse</a> which responds to the SHC Questionnaire.</p>
+<p><a name="23bb88f7-82d7-4f1d-a8fc-96fca97737c6">​</a>Describes the logical structure for a questionnaire associacted to a Smart Health Certificate which includes a Structure Map to generate the relevant SHC from a given <a href="StructureDefintion-shc-questionnaire-response.html">SHC QuestionnaireResponse</a> which responds to the SHC Questionnaire.</p>
 </td>
             </tr>
             <tr>
@@ -400,7 +400,7 @@ It describes the event of a patient being administered a vaccination or a record
                   <a href="StructureDefinition-svc-questionnaireresponse.html" title="StructureDefinition/svc-questionnaireresponse">SVC Questionnaire Response</a>
                </td>
                <td>
-<p><a name="dbd4a184-c182-4572-acd2-d66f6c410e9f">​</a>Describes the logical structure for a questionnaire response associacted to a <a href="StructureDefinition-svc-questionnaire.html">SVC Questionaire</a>.</p>
+<p><a name="918acc58-b292-4f0b-97aa-efc03acfee54">​</a>Describes the logical structure for a questionnaire response associacted to a <a href="StructureDefinition-svc-questionnaire.html">SVC Questionaire</a>.</p>
 </td>
             </tr>
             <tr>
@@ -418,7 +418,7 @@ It describes the event of a patient being administered a vaccination or a record
                <td>
 <p>An SHC_Patient should:</p>
 <ul>
-  <li><a name="d7e8d7ee-bfea-406b-8eeb-3af8e004d1a0">​</a>if the [identifier.assigner](StructureDefinition-shc-patient-definitions.html#Patient.identifier] is set then the value of <a href="StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner">identifier.assigner</a> should be set to reference the <a href="StructureDefinition-shc-organization.html">SHC Organization</a> resource associated to the PHA via the <a href="actors.html#who-pkd">WHO Public Key Directory</a></li>
+  <li><a name="f50bd90b-9aa3-4f81-8996-5370d9cd646b">​</a>if the [identifier.assigner](StructureDefinition-shc-patient-definitions.html#Patient.identifier] is set then the value of <a href="StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner">identifier.assigner</a> should be set to reference the <a href="StructureDefinition-shc-organization.html">SHC Organization</a> resource associated to the PHA via the <a href="actors.html#who-pkd">WHO Public Key Directory</a></li>
   <li>obeys who-shc-patient-1</li>
 </ul>
 </td>
@@ -428,7 +428,7 @@ It describes the event of a patient being administered a vaccination or a record
                   <a href="StructureDefinition-shc-submit-health-event-response.html" title="StructureDefinition/shc-submit-health-event-response">SHC Submit Health Event Response</a>
                </td>
                <td>
-<p><a name="7de8db9c-3969-44d3-8d03-c7bbbe615359">​</a>An <a href="StructureDefinition-shc-submit-health-event-respose.html">SHC Submit Health Event Response</a> is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the <a href="transactions.html#submit-health-event">Submit Health Event</a> transaction.</p>
+<p><a name="37238fca-f8e2-456f-b28d-d167dc4effbe">​</a>An <a href="StructureDefinition-shc-submit-health-event-respose.html">SHC Submit Health Event Response</a> is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the <a href="transactions.html#submit-health-event">Submit Health Event</a> transaction.</p>
 </td>
             </tr>
             <tr>
@@ -444,7 +444,7 @@ It describes the event of a patient being administered a vaccination or a record
                   <a href="StructureDefinition-shc-organization.html" title="StructureDefinition/shc-organization">SHC Organization</a>
                </td>
                <td>
-<p><a name="18a6cfdf-f760-4fe9-9831-09e97170a761">​</a>Abstraction for an SHC Organization. There should be an SHC Organization associated to each public health authortiy (PHA) in the <a href="actors.html#who-pkd">WHO Public Key Directory</a></p>
+<p><a name="98fa0afe-c3b6-4d11-a8f0-b99e699d2068">​</a>Abstraction for an SHC Organization. There should be an SHC Organization associated to each public health authortiy (PHA) in the <a href="actors.html#who-pkd">WHO Public Key Directory</a></p>
 </td>
             </tr>
             <tr>
@@ -460,7 +460,7 @@ It describes the event of a patient being administered a vaccination or a record
                   <a href="StructureDefinition-shc-practitioner-role.html" title="StructureDefinition/shc-practitioner-role">SHC Practitioner Role</a>
                </td>
                <td>
-<p><a name="45266c38-301a-4acb-b8dd-fe88d77adc1a">​</a>Association of an <a href="StructureDefinition-shc-practitioner-role.html">SHC Practitioner</a> to a managing <a href="StructureDefinition-shc-orgaznization.html">SHC Organization</a>, indicating that an SHC Practitioner is authorized by the public health authority (PHA) to vaccinate an <a href="StructureDefinition-shc-patient.html">SHC Patient</a>.</p>
+<p><a name="88d8290f-484f-4d92-a174-5b60b47ca504">​</a>Association of an <a href="StructureDefinition-shc-practitioner-role.html">SHC Practitioner</a> to a managing <a href="StructureDefinition-shc-orgaznization.html">SHC Organization</a>, indicating that an SHC Practitioner is authorized by the public health authority (PHA) to vaccinate an <a href="StructureDefinition-shc-patient.html">SHC Patient</a>.</p>
 </td>
             </tr>
             <tr>
@@ -470,7 +470,7 @@ It describes the event of a patient being administered a vaccination or a record
                <td>
 <p>Describes the logical structure for the Smart Health Folder which contains the Smart Health Certificates (SHCs).  An <a href="StructureDefinition-shf-composition.html">SHF Composition</a> should:</p>
 <ul>
-  <li><a name="3f2f508d-a1d2-4862-95a8-ca9e2e57bb84">​</a>be accessible from a <a href="StructureDefintion-shc-registry.html">SHC Registry Service</a>  as located via the <a href="actors.html#who-pkd">WHO Public Key Directory</a> for the PHA referenced in the <a href="StructureDefinition-shf-composition-definitions.html#Composition.agent">author</a>.</li>
+  <li><a name="4ad34cac-32ae-4bb4-a30b-7ee312d081f3">​</a>be accessible from a <a href="StructureDefintion-shc-registry.html">SHC Registry Service</a>  as located via the <a href="actors.html#who-pkd">WHO Public Key Directory</a> for the PHA referenced in the <a href="StructureDefinition-shf-composition-definitions.html#Composition.agent">author</a>.</li>
 </ul>
 </td>
             </tr>
@@ -673,7 +673,7 @@ It describes the event of a patient being administered a vaccination or a record
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc2#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 7, 2021 20:09+0000">2021-05-07</span>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc2#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 7, 2021 20:13+0000">2021-05-07</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
