@@ -177,28 +177,31 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#3">Structures: Graph Definitions</a>
       </li>
       <li>
-         <a href="#4">Structures: Questionnaires</a>
+         <a href="#4">Structures: Logical Models</a>
       </li>
       <li>
-         <a href="#5">Structures: Abstract Profiles</a>
+         <a href="#5">Structures: Questionnaires</a>
       </li>
       <li>
-         <a href="#6">Structures: Resource Profiles</a>
+         <a href="#6">Structures: Abstract Profiles</a>
       </li>
       <li>
-         <a href="#7">Structures: Extension Definitions</a>
+         <a href="#7">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#8">Terminology: Value Sets</a>
+         <a href="#8">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#9">Terminology: Structure Maps</a>
+         <a href="#9">Terminology: Value Sets</a>
       </li>
       <li>
-         <a href="#10">Terminology: Concept Maps</a>
+         <a href="#10">Terminology: Structure Maps</a>
       </li>
       <li>
-         <a href="#11">Other</a>
+         <a href="#11">Terminology: Concept Maps</a>
+      </li>
+      <li>
+         <a href="#12">Other</a>
       </li>
    </ul>
 </div>
@@ -274,6 +277,26 @@ QuestionnaireResponse</a></p>
       </table>
    </p>
    <a name="4"> </a>
+   <h3>Structures: Logical Models </h3>
+   <p>
+    <p>These define data models that represent the domain covered by this implementation guide in more business-friendly terms than the underlying FHIR resources.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-SVC-Core-Data-Set.html" title="StructureDefinition/SVC-Core-Data-Set">StructureDefinition/SVC-Core-Data-Set</a>
+               </td>
+               <td>
+<p>SVC Core Data elements.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
    <h3>Structures: Questionnaires </h3>
    <p>
     <p>These define forms used by systems conforming to this implementation guide to capture or expose data to end users</p>
@@ -293,7 +316,7 @@ QuestionnaireResponse</a></p>
          </tbody>
       </table>
    </p>
-   <a name="5"> </a>
+   <a name="6"> </a>
    <h3>Structures: Abstract Profiles </h3>
    <p>
     <p>These are profiles on resources or data types that describe patterns used by other profiles, but cannot be instantiated directly.  I.e. instances can conform to profiles <em>based</em> on these abstract profiles, but do not declare conformance to the abstract profiles themselves.</p>
@@ -315,7 +338,7 @@ QuestionnaireResponse</a></p>
                   <a href="StructureDefinition-shc-questionnaire.html" title="StructureDefinition/shc-questionnaire">SHC Questionniare</a>
                </td>
                <td>
-<p><a name="0c548d38-8149-46dd-aab9-acd99d145559">​</a>Describes the logical structure for a questionnaire associacted to a Smart Health Certificate which includes a Structure Map to generate the relevant SHC from a given <a href="StructureDefintion-shc-questionnaire-response.html">SHC QuestionnaireResponse</a> which responds to the SHC Questionnaire.</p>
+<p><a name="3170088a-6f2e-429e-a26f-75b70324378f">​</a>Describes the logical structure for a questionnaire associacted to a Smart Health Certificate which includes a Structure Map to generate the relevant SHC from a given <a href="StructureDefintion-shc-questionnaire-response.html">SHC QuestionnaireResponse</a> which responds to the SHC Questionnaire.</p>
 </td>
             </tr>
             <tr>
@@ -345,7 +368,7 @@ QuestionnaireResponse</a></p>
          </tbody>
       </table>
    </p>
-   <a name="6"> </a>
+   <a name="7"> </a>
    <h3>Structures: Resource Profiles </h3>
    <p>
     <p>These define constraints on FHIR resources for systems conforming to this implementation guide</p>
@@ -377,7 +400,7 @@ It describes the event of a patient being administered a vaccination or a record
                   <a href="StructureDefinition-svc-questionnaireresponse.html" title="StructureDefinition/svc-questionnaireresponse">SVC Questionnaire Response</a>
                </td>
                <td>
-<p><a name="9e995aa5-2f1e-4ab2-8646-4d21f4862175">​</a>Describes the logical structure for a questionnaire response associacted to a <a href="StructureDefinition-svc-questionnaire.html">SVC Questionaire</a>.</p>
+<p><a name="dbd4a184-c182-4572-acd2-d66f6c410e9f">​</a>Describes the logical structure for a questionnaire response associacted to a <a href="StructureDefinition-svc-questionnaire.html">SVC Questionaire</a>.</p>
 </td>
             </tr>
             <tr>
@@ -395,7 +418,7 @@ It describes the event of a patient being administered a vaccination or a record
                <td>
 <p>An SHC_Patient should:</p>
 <ul>
-  <li><a name="25843596-ab2a-4154-a876-1a8a2f3bb814">​</a>if the [identifier.assigner](StructureDefinition-shc-patient-definitions.html#Patient.identifier] is set then the value of <a href="StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner">identifier.assigner</a> should be set to reference the <a href="StructureDefinition-shc-organization.html">SHC Organization</a> resource associated to the PHA via the <a href="actors.html#who-pkd">WHO Public Key Directory</a></li>
+  <li><a name="d7e8d7ee-bfea-406b-8eeb-3af8e004d1a0">​</a>if the [identifier.assigner](StructureDefinition-shc-patient-definitions.html#Patient.identifier] is set then the value of <a href="StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner">identifier.assigner</a> should be set to reference the <a href="StructureDefinition-shc-organization.html">SHC Organization</a> resource associated to the PHA via the <a href="actors.html#who-pkd">WHO Public Key Directory</a></li>
   <li>obeys who-shc-patient-1</li>
 </ul>
 </td>
@@ -405,7 +428,7 @@ It describes the event of a patient being administered a vaccination or a record
                   <a href="StructureDefinition-shc-submit-health-event-response.html" title="StructureDefinition/shc-submit-health-event-response">SHC Submit Health Event Response</a>
                </td>
                <td>
-<p><a name="fd5ec513-2a77-4c84-8c8d-7b86265e8d44">​</a>An <a href="StructureDefinition-shc-submit-health-event-respose.html">SHC Submit Health Event Response</a> is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the <a href="transactions.html#submit-health-event">Submit Health Event</a> transaction.</p>
+<p><a name="7de8db9c-3969-44d3-8d03-c7bbbe615359">​</a>An <a href="StructureDefinition-shc-submit-health-event-respose.html">SHC Submit Health Event Response</a> is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the <a href="transactions.html#submit-health-event">Submit Health Event</a> transaction.</p>
 </td>
             </tr>
             <tr>
@@ -421,7 +444,7 @@ It describes the event of a patient being administered a vaccination or a record
                   <a href="StructureDefinition-shc-organization.html" title="StructureDefinition/shc-organization">SHC Organization</a>
                </td>
                <td>
-<p><a name="4513842c-e181-4936-ba73-322abc49334c">​</a>Abstraction for an SHC Organization. There should be an SHC Organization associated to each public health authortiy (PHA) in the <a href="actors.html#who-pkd">WHO Public Key Directory</a></p>
+<p><a name="18a6cfdf-f760-4fe9-9831-09e97170a761">​</a>Abstraction for an SHC Organization. There should be an SHC Organization associated to each public health authortiy (PHA) in the <a href="actors.html#who-pkd">WHO Public Key Directory</a></p>
 </td>
             </tr>
             <tr>
@@ -437,7 +460,7 @@ It describes the event of a patient being administered a vaccination or a record
                   <a href="StructureDefinition-shc-practitioner-role.html" title="StructureDefinition/shc-practitioner-role">SHC Practitioner Role</a>
                </td>
                <td>
-<p><a name="9d3443ab-27c9-4182-9c28-0705b73929d8">​</a>Association of an <a href="StructureDefinition-shc-practitioner-role.html">SHC Practitioner</a> to a managing <a href="StructureDefinition-shc-orgaznization.html">SHC Organization</a>, indicating that an SHC Practitioner is authorized by the public health authority (PHA) to vaccinate an <a href="StructureDefinition-shc-patient.html">SHC Patient</a>.</p>
+<p><a name="45266c38-301a-4acb-b8dd-fe88d77adc1a">​</a>Association of an <a href="StructureDefinition-shc-practitioner-role.html">SHC Practitioner</a> to a managing <a href="StructureDefinition-shc-orgaznization.html">SHC Organization</a>, indicating that an SHC Practitioner is authorized by the public health authority (PHA) to vaccinate an <a href="StructureDefinition-shc-patient.html">SHC Patient</a>.</p>
 </td>
             </tr>
             <tr>
@@ -447,7 +470,7 @@ It describes the event of a patient being administered a vaccination or a record
                <td>
 <p>Describes the logical structure for the Smart Health Folder which contains the Smart Health Certificates (SHCs).  An <a href="StructureDefinition-shf-composition.html">SHF Composition</a> should:</p>
 <ul>
-  <li><a name="c8cbb2e0-40ad-4142-b754-a12ccbb52687">​</a>be accessible from a <a href="StructureDefintion-shc-registry.html">SHC Registry Service</a>  as located via the <a href="actors.html#who-pkd">WHO Public Key Directory</a> for the PHA referenced in the <a href="StructureDefinition-shf-composition-definitions.html#Composition.agent">author</a>.</li>
+  <li><a name="3f2f508d-a1d2-4862-95a8-ca9e2e57bb84">​</a>be accessible from a <a href="StructureDefintion-shc-registry.html">SHC Registry Service</a>  as located via the <a href="actors.html#who-pkd">WHO Public Key Directory</a> for the PHA referenced in the <a href="StructureDefinition-shf-composition-definitions.html#Composition.agent">author</a>.</li>
 </ul>
 </td>
             </tr>
@@ -486,7 +509,7 @@ It describes the event of a patient being administered a vaccination or a record
          </tbody>
       </table>
    </p>
-   <a name="7"> </a>
+   <a name="8"> </a>
    <h3>Structures: Extension Definitions </h3>
    <p>
     <p>These define constraints on FHIR data types for systems conforming to this implementation guide</p>
@@ -506,7 +529,7 @@ It describes the event of a patient being administered a vaccination or a record
          </tbody>
       </table>
    </p>
-   <a name="8"> </a>
+   <a name="9"> </a>
    <h3>Terminology: Value Sets </h3>
    <p>
     <p>These define sets of codes used by systems conforming to this implementation guide</p>
@@ -556,7 +579,7 @@ It describes the event of a patient being administered a vaccination or a record
          </tbody>
       </table>
    </p>
-   <a name="9"> </a>
+   <a name="10"> </a>
    <h3>Terminology: Structure Maps </h3>
    <p>
     <p>These define transformations to convert between data structures used by systems conforming to this implementation guide</p>
@@ -573,7 +596,7 @@ It describes the event of a patient being administered a vaccination or a record
          </tbody>
       </table>
    </p>
-   <a name="10"> </a>
+   <a name="11"> </a>
    <h3>Terminology: Concept Maps </h3>
    <p>
     <p>These define transformations to convert between codes by systems conforming with this implementation guide</p>
@@ -601,7 +624,7 @@ It describes the event of a patient being administered a vaccination or a record
          </tbody>
       </table>
    </p>
-   <a name="11"> </a>
+   <a name="12"> </a>
    <h3>Other </h3>
    <p>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories</p>
@@ -650,7 +673,7 @@ It describes the event of a patient being administered a vaccination or a record
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc2#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 7, 2021 17:32+0000">2021-05-07</span>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc2#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 7, 2021 20:09+0000">2021-05-07</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

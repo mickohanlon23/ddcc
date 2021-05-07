@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 30, errors = 131, warn = 35, info = 2 -->
+<!-- broken links = 30, errors = 135, warn = 94, info = 2 -->
 <head>
   <title>SVC_RC2 : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for SVC_RC2</h1>
- <p>Generated Fri May 07 17:34:48 UTC 2021, FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = <a href="http://fhir.org/guides/who/svc">http://fhir.org/guides/who/svc</a> (<a href="http://fhir.org/guides/who/svc/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Fri May 07 20:10:48 UTC 2021, FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = <a href="http://fhir.org/guides/who/svc">http://fhir.org/guides/who/svc</a> (<a href="http://fhir.org/guides/who/svc/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.68</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.who.svc-rc2, Canonical = http://fhir.org/guides/who/svc</td></tr>
@@ -38,14 +38,14 @@
  <tr><td>HL7 Publication Rules:</td><td>Code = n/a. package-list.json: file not found in /github/workspace</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.org/guides/who/svc (Problem #1 with package-list.json at http://fhir.org/guides/who/svc: http://fhir.org/guides/who/svc/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 30, errors = 131, warn = 35, info = 2</td></tr>
+ <tr><td>Summary:</td><td> broken links = 30, errors = 135, warn = 94, info = 2</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>38</b></td><td><b>4</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>39</b></td><td><b>4</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_Basic-svc-basic-qrcode-example"><b>/github/workspace/fsh-generated/resources/Basic-svc-basic-qrcode-example</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>2</b></td>
@@ -70,6 +70,9 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-SVC-Basic-QRCode"><b>/github/workspace/fsh-generated/resources/StructureDefinition-SVC-Basic-QRCode</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-SVC-Core-Data-Set"><b>/github/workspace/fsh-generated/resources/StructureDefinition-SVC-Core-Data-Set</b></a></td><td><b>3</b></td><td><b>59</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-SVC-QRCode"><b>/github/workspace/fsh-generated/resources/StructureDefinition-SVC-QRCode</b></a></td><td><b>2</b></td><td><b>2</b></td><td><b>1</b></td>
@@ -191,100 +194,103 @@
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/SVC-Core-Data-Set.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource ConceptMap/who-svc-map-icd11-sct-vaccines.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource GraphDefinition/svc-graph.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#6cfa7bd2-a88c-4966-996c-e1f6de25aef8">QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 104</a></b></td><td><b>error</b></td><td><b>The link 'http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire' for &quot;http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire&quot; cannot be resolved</b></td>
+     <td><b><a href="QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#cedd936e-196f-4a76-abe6-897f54e0b33c">QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 104</a></b></td><td><b>error</b></td><td><b>The link 'http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire' for &quot;http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#c4a473a9-9c01-4ad4-93f7-2f929c7f2f67">QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 299</a></b></td><td><b>error</b></td><td><b>The link 'SVC_Patient_Example' for &quot;SVC_Patient_Example&quot; cannot be resolved</b></td>
+     <td><b><a href="QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#85392418-e7d3-45f2-b983-cafba02f6a94">QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 299</a></b></td><td><b>error</b></td><td><b>The link 'SVC_Patient_Example' for &quot;SVC_Patient_Example&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-organization.html#5a8909bd-984e-4de8-be66-4ac3e087e6ea">StructureDefinition-shc-organization.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 164</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="StructureDefinition-shc-organization.html#891beacd-e89c-457d-becc-3027604cbdcd">StructureDefinition-shc-organization.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 164</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-patient.html#2588c605-734b-4a9a-90c0-3a788c7fad3d">StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 129</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
+     <td><b><a href="StructureDefinition-shc-patient.html#cd040c78-9cf5-460c-aa02-722f32151afd">StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 129</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-patient.html#2588c605-734b-4a9a-90c0-3a788c7fad3d">StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 383</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="StructureDefinition-shc-patient.html#cd040c78-9cf5-460c-aa02-722f32151afd">StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 383</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-practitioner-role.html#fd1fd565-2264-4754-9973-de0f1cc25502">StructureDefinition-shc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 145</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-orgaznization.html' for &quot;SHC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-shc-practitioner-role.html#316aa6a0-2ab3-41d1-8b3c-63f95b396dc8">StructureDefinition-shc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 145</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-orgaznization.html' for &quot;SHC Organization&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-questionnaire.html#d730f865-5467-4340-9fd7-9ba979299b7e">StructureDefinition-shc-questionnaire.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 202</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnaire-response.html' for &quot;SHC QuestionnaireResponse&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-shc-questionnaire.html#c820d50b-f596-489a-80a2-8deb4600780c">StructureDefinition-shc-questionnaire.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 202</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnaire-response.html' for &quot;SHC QuestionnaireResponse&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-submit-health-event-response.html#566cb30a-b2fe-4c45-97c5-7a60334b0d65">StructureDefinition-shc-submit-health-event-response.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 38</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-submit-health-event-respose.html' for &quot;SHC Submit Health Event Response&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-shc-submit-health-event-response.html#bc6ff605-3f95-4625-b036-22932089fc9f">StructureDefinition-shc-submit-health-event-response.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 38</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-submit-health-event-respose.html' for &quot;SHC Submit Health Event Response&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shf-composition.html#95304e60-6679-481e-9401-1a2011609daa">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 27</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-registry.html' for &quot;SHC Registry Service&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-shf-composition.html#8d953245-6b80-43d8-856e-8021a14e7cf2">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 27</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-registry.html' for &quot;SHC Registry Service&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shf-composition.html#95304e60-6679-481e-9401-1a2011609daa">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 119</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="StructureDefinition-shf-composition.html#8d953245-6b80-43d8-856e-8021a14e7cf2">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 119</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shf-composition.html#95304e60-6679-481e-9401-1a2011609daa">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 208</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
+     <td><b><a href="StructureDefinition-shf-composition.html#8d953245-6b80-43d8-856e-8021a14e7cf2">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 208</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-questionnaireresponse.html#eb961ef8-5045-4fba-85f0-e33af516ca19">StructureDefinition-svc-questionnaireresponse.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 113</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-questionnaire.html' for &quot;SVC Questionaire&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-questionnaireresponse.html#206e0738-ca77-4425-905a-308a7ef57ec1">StructureDefinition-svc-questionnaireresponse.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 113</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-questionnaire.html' for &quot;SVC Questionaire&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#0c548d38-8149-46dd-aab9-acd99d145559">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 332, column 172</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnaire-response.html' for &quot;SHC QuestionnaireResponse&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#3170088a-6f2e-429e-a26f-75b70324378f">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 356, column 172</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnaire-response.html' for &quot;SHC QuestionnaireResponse&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#9e995aa5-2f1e-4ab2-8646-4d21f4862175">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 400, column 83</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-questionnaire.html' for &quot;SVC Questionaire&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#dbd4a184-c182-4572-acd2-d66f6c410e9f">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 424, column 83</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-questionnaire.html' for &quot;SVC Questionaire&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#25843596-ab2a-4154-a876-1a8a2f3bb814">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 420, column 131</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
+     <td><b><a href="artifacts.html#d7e8d7ee-bfea-406b-8eeb-3af8e004d1a0">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 444, column 131</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#25843596-ab2a-4154-a876-1a8a2f3bb814">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 420, column 385</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="artifacts.html#d7e8d7ee-bfea-406b-8eeb-3af8e004d1a0">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 444, column 385</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#fd5ec513-2a77-4c84-8c8d-7b86265e8d44">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 431, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-submit-health-event-respose.html' for &quot;SHC Submit Health Event Response&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#7de8db9c-3969-44d3-8d03-c7bbbe615359">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 455, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-submit-health-event-respose.html' for &quot;SHC Submit Health Event Response&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#4513842c-e181-4936-ba73-322abc49334c">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 449, column 134</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="artifacts.html#18a6cfdf-f760-4fe9-9831-09e97170a761">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 473, column 134</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#9d3443ab-27c9-4182-9c28-0705b73929d8">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 467, column 115</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-orgaznization.html' for &quot;SHC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#45266c38-301a-4acb-b8dd-fe88d77adc1a">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 491, column 115</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-orgaznization.html' for &quot;SHC Organization&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#c8cbb2e0-40ad-4142-b754-a12ccbb52687">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 478, column 29</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-registry.html' for &quot;SHC Registry Service&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#3f2f508d-a1d2-4862-95a8-ca9e2e57bb84">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 502, column 29</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-registry.html' for &quot;SHC Registry Service&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#c8cbb2e0-40ad-4142-b754-a12ccbb52687">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 478, column 121</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="artifacts.html#3f2f508d-a1d2-4862-95a8-ca9e2e57bb84">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 502, column 121</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#c8cbb2e0-40ad-4142-b754-a12ccbb52687">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 478, column 210</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
+     <td><b><a href="artifacts.html#3f2f508d-a1d2-4862-95a8-ca9e2e57bb84">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 502, column 210</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="dependencies.html#e9de77fb-5010-43f0-9be3-d2c06c6c7bdf">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 177, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
+     <td><b><a href="dependencies.html#be3eef5c-5c33-4abb-9f71-57e8cd00a0dc">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 177, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#ce20cbd9-2a9e-43c1-b381-02c4f768438a">transactions.html#/html/body/div/div/div/div/div/div/a at Line 200, column 176</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="transactions.html#16132352-313e-46a8-9cf7-034b26642786">transactions.html#/html/body/div/div/div/div/div/div/a at Line 200, column 176</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#a7f2930c-a7f0-4ae1-800e-b3123a2f4148">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ol/li/a at Line 216, column 45</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnairereponse.html' for &quot;SHC Questionnaire Response&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#dc416b35-eaed-4390-9a2f-b7d8cf3e3dca">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ol/li/a at Line 216, column 45</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnairereponse.html' for &quot;SHC Questionnaire Response&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#a7f2930c-a7f0-4ae1-800e-b3123a2f4148">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ol/li/a at Line 216, column 235</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-questionnaire.html#Questionnaire.extension:targetStructureMap' for &quot;Structure Map&quot; cannot be resolved (valid targets: 243 targets)</b></td>
+     <td><b><a href="transactions.html#dc416b35-eaed-4390-9a2f-b7d8cf3e3dca">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ol/li/a at Line 216, column 235</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-questionnaire.html#Questionnaire.extension:targetStructureMap' for &quot;Structure Map&quot; cannot be resolved (valid targets: 243 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#ce20cbd9-2a9e-43c1-b381-02c4f768438a">transactions.html#/html/body/div/div/div/div/div/div/a at Line 283, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="transactions.html#16132352-313e-46a8-9cf7-034b26642786">transactions.html#/html/body/div/div/div/div/div/div/a at Line 283, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#71ec165f-cfc8-42c8-ac82-68f3ded81149">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ul/li/a at Line 313, column 50</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-svc-bundle.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#de431f34-a1a8-41ba-b630-a5cdf92ebdc3">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ul/li/a at Line 313, column 50</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-svc-bundle.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#b91b1053-c1ac-488f-9146-d7d7c9aed5a7">transactions.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 322, column 32</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-composition.html' for &quot;SHC Compositions&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#7bafa24a-18f1-40e8-87c3-b2ec9c988633">transactions.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 322, column 32</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-composition.html' for &quot;SHC Compositions&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#ce20cbd9-2a9e-43c1-b381-02c4f768438a">transactions.html#/html/body/div/div/div/div/div/div/a at Line 330, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="transactions.html#16132352-313e-46a8-9cf7-034b26642786">transactions.html#/html/body/div/div/div/div/div/div/a at Line 330, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
 </table>
 <hr/>
@@ -436,6 +442,203 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-SVC-Basic-QRCode</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://fhir.org/guides/who/svc/StructureDefinition/SVC-Basic-QRCode vs https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-Basic-QRCode</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-SVC-Core-Data-Set"> </a>
+<h2><a href="StructureDefinition-SVC-Core-Data-Set.html">/github/workspace/fsh-generated/resources/StructureDefinition-SVC-Core-Data-Set.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/SVC-Core-Data-Set')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-SVC-Core-Data-Set.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/SVC-Core-Data-Set) does not match the URL (http://who-int.github.io/svc/refs/heads/rc2/SVC-Core-Data-Set)</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition</b></td><td><b>warning</b></td><td title="sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot</b></td><td><b>error</b></td><td title="sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' failed"><b>sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[0]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[1]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[2]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[3]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[4]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[5]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[6]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[7]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[8]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[9]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[10]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[11]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[12]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[13]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[14]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[15]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[16]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[17]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[18]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[19]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[20]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[21]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[22]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[23]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[24]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[25]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[26]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[27]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[28]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[0]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[1]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[2]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[3]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[4]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[5]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[6]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[7]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[8]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[9]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[10]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[11]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[12]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[13]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[14]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[15]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[16]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[17]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[18]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[19]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[20]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[21]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[22]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[23]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[24]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[25]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[26]</b></td><td><b>warning</b></td><td title="eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed"><b>eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.differential.element[18].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://id.who.int/icd11/mms on element SVC-Core-Data-Set.vaccination.disease could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition/SVC-Core-Data-Set: StructureDefinition/SVC-Core-Data-Set: StructureDefinition.snapshot.element[20].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://id.who.int/icd11/mms on element SVC-Core-Data-Set.vaccination.disease could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-SVC-Core-Data-Set</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://fhir.org/guides/who/svc/StructureDefinition/SVC-Core-Data-Set vs http://who-int.github.io/svc/refs/heads/rc2/SVC-Core-Data-Set</b></td>
    </tr>
 </table>
 <hr/>
@@ -1178,7 +1381,7 @@
      <td><b>ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide.definition.resource[23].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide.definition.resource[24].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
@@ -1205,6 +1408,9 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-SVC-Basic-QRCode.html">/github/workspace/fsh-generated/resources/StructureDefinition-SVC-Basic-QRCode.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-SVC-Basic-QRCode.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/SVC-Basic-QRCode) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-Basic-QRCode)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-SVC-Core-Data-Set.html">/github/workspace/fsh-generated/resources/StructureDefinition-SVC-Core-Data-Set.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-SVC-Core-Data-Set.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/SVC-Core-Data-Set) does not match the URL (http://who-int.github.io/svc/refs/heads/rc2/SVC-Core-Data-Set)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-SVC-QRCode.html">/github/workspace/fsh-generated/resources/StructureDefinition-SVC-QRCode.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-SVC-QRCode.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/SVC-QRCode) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-QRCode)</b></td>
