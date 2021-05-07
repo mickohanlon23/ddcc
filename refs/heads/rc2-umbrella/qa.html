@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 30, errors = 130, warn = 34, info = 2 -->
+<!-- broken links = 30, errors = 131, warn = 35, info = 2 -->
 <head>
   <title>SVC_RC2 : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for SVC_RC2</h1>
- <p>Generated Fri May 07 03:41:58 UTC 2021, FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = <a href="http://fhir.org/guides/who/svc">http://fhir.org/guides/who/svc</a> (<a href="http://fhir.org/guides/who/svc/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Fri May 07 17:26:21 UTC 2021, FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = <a href="http://fhir.org/guides/who/svc">http://fhir.org/guides/who/svc</a> (<a href="http://fhir.org/guides/who/svc/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.68</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.who.svc-rc2, Canonical = http://fhir.org/guides/who/svc</td></tr>
@@ -38,14 +38,14 @@
  <tr><td>HL7 Publication Rules:</td><td>Code = n/a. package-list.json: file not found in /github/workspace</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://fhir.org/guides/who/svc (Problem #1 with package-list.json at http://fhir.org/guides/who/svc: http://fhir.org/guides/who/svc/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 30, errors = 130, warn = 34, info = 2</td></tr>
+ <tr><td>Summary:</td><td> broken links = 30, errors = 131, warn = 35, info = 2</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>37</b></td><td><b>4</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>38</b></td><td><b>4</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_Basic-svc-basic-qrcode-example"><b>/github/workspace/fsh-generated/resources/Basic-svc-basic-qrcode-example</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>2</b></td>
@@ -58,6 +58,9 @@
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_GraphDefinition-svc-graph"><b>/github/workspace/fsh-generated/resources/GraphDefinition-svc-graph</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_OperationDefinition-SHC-QuestionnaireReponse-generateHealthCertificate"><b>/github/workspace/fsh-generated/resources/OperationDefinition-SHC-QuestionnaireReponse-generateHealthCertificate</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Patient-SHC-Patient-Example"><b>/github/workspace/fsh-generated/resources/Patient-SHC-Patient-Example</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
@@ -188,100 +191,103 @@
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource ConceptMap/who-svc-map-icd11-sct-disease-targeted.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource ConceptMap/who-svc-map-icd11-sct-vaccines.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource GraphDefinition/svc-graph.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#94a5c441-6f2a-49e0-834f-3eeee9e9e24a">QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 104</a></b></td><td><b>error</b></td><td><b>The link 'http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire' for &quot;http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire&quot; cannot be resolved</b></td>
+     <td><b><a href="QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#78f039cb-8c44-4a39-aa31-46cf44cc5aed">QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 104</a></b></td><td><b>error</b></td><td><b>The link 'http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire' for &quot;http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#ccd817ac-7a52-4048-8290-221f481bb9d1">QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 299</a></b></td><td><b>error</b></td><td><b>The link 'SVC_Patient_Example' for &quot;SVC_Patient_Example&quot; cannot be resolved</b></td>
+     <td><b><a href="QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#7bcc0012-7f65-41b8-bf7b-187baefb2d4a">QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 299</a></b></td><td><b>error</b></td><td><b>The link 'SVC_Patient_Example' for &quot;SVC_Patient_Example&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-organization.html#f2514abd-4590-47cc-b615-52df497dc97a">StructureDefinition-shc-organization.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 164</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="StructureDefinition-shc-organization.html#d470b2e6-da51-410f-b784-5e9f8bacf49b">StructureDefinition-shc-organization.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 164</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-patient.html#a550b8f1-432e-4316-8de3-17c69137f1ba">StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 129</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
+     <td><b><a href="StructureDefinition-shc-patient.html#3cd5fe6e-7dbc-4089-bfbf-24d4d2219268">StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 129</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-patient.html#a550b8f1-432e-4316-8de3-17c69137f1ba">StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 383</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="StructureDefinition-shc-patient.html#3cd5fe6e-7dbc-4089-bfbf-24d4d2219268">StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 383</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-practitioner-role.html#ae40a44e-5a3b-4fc8-b7ce-a37e56a7135a">StructureDefinition-shc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 145</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-orgaznization.html' for &quot;SHC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-shc-practitioner-role.html#f4e2e417-51a4-49f0-95c7-3476b4fa8c06">StructureDefinition-shc-practitioner-role.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 145</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-orgaznization.html' for &quot;SHC Organization&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-questionnaire.html#5d1039a4-5857-419b-947f-15dc65e94ef1">StructureDefinition-shc-questionnaire.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 202</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnaire-response.html' for &quot;SHC QuestionnaireResponse&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-shc-questionnaire.html#620f422a-17ea-496d-960a-5e4c09bbe7a7">StructureDefinition-shc-questionnaire.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 202</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnaire-response.html' for &quot;SHC QuestionnaireResponse&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shc-submit-health-event-response.html#29b2e180-14ae-4d1d-8988-c5d5cbe3d4fa">StructureDefinition-shc-submit-health-event-response.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 38</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-submit-health-event-respose.html' for &quot;SHC Submit Health Event Response&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-shc-submit-health-event-response.html#9839374d-6b35-4336-bab3-b18dbbe0a557">StructureDefinition-shc-submit-health-event-response.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 38</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-submit-health-event-respose.html' for &quot;SHC Submit Health Event Response&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shf-composition.html#0431b212-92c3-4835-b5f2-b3198adfa15f">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 27</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-registry.html' for &quot;SHC Registry Service&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-shf-composition.html#4170aecd-349c-4072-93ee-6bffb2ce6ad5">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 27</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-registry.html' for &quot;SHC Registry Service&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shf-composition.html#0431b212-92c3-4835-b5f2-b3198adfa15f">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 119</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="StructureDefinition-shf-composition.html#4170aecd-349c-4072-93ee-6bffb2ce6ad5">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 119</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-shf-composition.html#0431b212-92c3-4835-b5f2-b3198adfa15f">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 208</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
+     <td><b><a href="StructureDefinition-shf-composition.html#4170aecd-349c-4072-93ee-6bffb2ce6ad5">StructureDefinition-shf-composition.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 237, column 208</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-svc-questionnaireresponse.html#f53ad4c6-79e8-4d3c-bc1b-f897d10239b2">StructureDefinition-svc-questionnaireresponse.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 113</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-questionnaire.html' for &quot;SVC Questionaire&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-svc-questionnaireresponse.html#e16cb044-0af0-4e81-856b-f034aaa77668">StructureDefinition-svc-questionnaireresponse.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 113</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-questionnaire.html' for &quot;SVC Questionaire&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#c0eadedd-b360-440b-b8e1-026d19130ec9">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 307, column 172</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnaire-response.html' for &quot;SHC QuestionnaireResponse&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#0a50c981-a2a0-4573-aefc-fa11f4035f5a">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 332, column 172</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnaire-response.html' for &quot;SHC QuestionnaireResponse&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#6f5a66d2-58aa-4e49-a95d-c057abb86379">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 375, column 83</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-questionnaire.html' for &quot;SVC Questionaire&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#f5b4d286-b08f-4920-a61d-54042614120d">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 400, column 83</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-svc-questionnaire.html' for &quot;SVC Questionaire&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#78bef194-e84e-4c75-a762-3387130efe8a">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 395, column 131</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
+     <td><b><a href="artifacts.html#af4622c9-88d8-4fca-bb52-6a95fbffc60d">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 420, column 131</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 71 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#78bef194-e84e-4c75-a762-3387130efe8a">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 395, column 385</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="artifacts.html#af4622c9-88d8-4fca-bb52-6a95fbffc60d">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 420, column 385</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#f6ce45c7-c664-4b6e-91d9-94df2b02e290">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 406, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-submit-health-event-respose.html' for &quot;SHC Submit Health Event Response&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#f6fc0169-ae56-4312-83a1-80ab05429c92">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 431, column 8</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-submit-health-event-respose.html' for &quot;SHC Submit Health Event Response&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#d7e56eba-af59-45e7-8dbf-e1ad09cc6017">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 424, column 134</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="artifacts.html#586da26a-5346-4b2d-8ffe-731384a69dfc">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 449, column 134</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#048de767-74f8-4c84-a910-52f72378d4d7">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 442, column 115</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-orgaznization.html' for &quot;SHC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#9925a6fb-6caa-447f-9ea7-964830a74020">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 467, column 115</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-orgaznization.html' for &quot;SHC Organization&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#f1432c80-7b4d-471a-b563-00cd8126043e">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 453, column 29</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-registry.html' for &quot;SHC Registry Service&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#a8af85cd-e176-4df8-a800-49bfdb03392e">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 478, column 29</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-registry.html' for &quot;SHC Registry Service&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#f1432c80-7b4d-471a-b563-00cd8126043e">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 453, column 121</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="artifacts.html#a8af85cd-e176-4df8-a800-49bfdb03392e">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 478, column 121</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#f1432c80-7b4d-471a-b563-00cd8126043e">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 453, column 210</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
+     <td><b><a href="artifacts.html#a8af85cd-e176-4df8-a800-49bfdb03392e">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 478, column 210</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition-definitions.html#Composition.agent' for &quot;author&quot; cannot be resolved (valid targets: 98 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="dependencies.html#1fa3e5df-3202-4beb-9519-52eaa9d09240">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 177, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
+     <td><b><a href="dependencies.html#c84d2e68-37af-4daa-968b-b411c60b9e44">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 177, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#fb96d370-5686-418c-9a8b-a04ad391c0d0">transactions.html#/html/body/div/div/div/div/div/div/a at Line 200, column 176</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="transactions.html#2cbbbaa3-b931-4748-b3a5-88d31434446d">transactions.html#/html/body/div/div/div/div/div/div/a at Line 200, column 176</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#5748d3e6-abec-4326-923a-ddd4a45e60b1">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ol/li/a at Line 216, column 45</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnairereponse.html' for &quot;SHC Questionnaire Response&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#770ac673-8a78-48fd-a24f-9b4c4c227039">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ol/li/a at Line 216, column 45</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-questionnairereponse.html' for &quot;SHC Questionnaire Response&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#5748d3e6-abec-4326-923a-ddd4a45e60b1">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ol/li/a at Line 216, column 235</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-questionnaire.html#Questionnaire.extension:targetStructureMap' for &quot;Structure Map&quot; cannot be resolved (valid targets: 243 targets)</b></td>
+     <td><b><a href="transactions.html#770ac673-8a78-48fd-a24f-9b4c4c227039">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ol/li/a at Line 216, column 235</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shc-questionnaire.html#Questionnaire.extension:targetStructureMap' for &quot;Structure Map&quot; cannot be resolved (valid targets: 243 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#fb96d370-5686-418c-9a8b-a04ad391c0d0">transactions.html#/html/body/div/div/div/div/div/div/a at Line 283, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="transactions.html#2cbbbaa3-b931-4748-b3a5-88d31434446d">transactions.html#/html/body/div/div/div/div/div/div/a at Line 283, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#f9b3c2f5-b48e-4805-932d-d0239aa6cd0a">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ul/li/a at Line 313, column 50</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-svc-bundle.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#9b438204-ad67-487b-9e09-8a5506033c17">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ul/li/a at Line 313, column 50</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-svc-bundle.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#a021105b-f737-4fbd-8981-f992f0a79539">transactions.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 322, column 32</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-composition.html' for &quot;SHC Compositions&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#ab83c4ca-ad2e-47f9-8670-87cd5125f49b">transactions.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 322, column 32</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-shc-composition.html' for &quot;SHC Compositions&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#fb96d370-5686-418c-9a8b-a04ad391c0d0">transactions.html#/html/body/div/div/div/div/div/div/a at Line 330, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
+     <td><b><a href="transactions.html#2cbbbaa3-b931-4748-b3a5-88d31434446d">transactions.html#/html/body/div/div/div/div/div/div/a at Line 330, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 42 targets)</b></td>
    </tr>
 </table>
 <hr/>
@@ -347,6 +353,20 @@
    </tr>
    <tr style="background-color: #d6feff">
      <td><b>GraphDefinition/svc-graph: GraphDefinition/svc-graph: GraphDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-graphdefinition - listed in meta</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_OperationDefinition-SHC-QuestionnaireReponse-generateHealthCertificate"> </a>
+<h2><a href="OperationDefinition-SHC-QuestionnaireReponse-generateHealthCertificate.html">/github/workspace/fsh-generated/resources/OperationDefinition-SHC-QuestionnaireReponse-generateHealthCertificate.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate: OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate: OperationDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate: OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate: OperationDefinition</b></td><td><b>warning</b></td><td title="opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed"><b>opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed</b></td>
    </tr>
 </table>
 <hr/>
@@ -1175,7 +1195,7 @@
      <td><b>ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide.definition.resource[22].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide.definition.resource[23].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>

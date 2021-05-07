@@ -448,6 +448,15 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate"/>
+      </reference>
+      <description value="Generate a signed QR Code based on a [SHC &#xA;QuestionnaireResponse](StructureDefinition-shc-questionnaireresponse.html)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>

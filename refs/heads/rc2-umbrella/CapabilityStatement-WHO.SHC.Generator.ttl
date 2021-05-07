@@ -59,6 +59,15 @@
          fhir:index 0;
          fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ];
          fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "SHC Generator Interaction for accepting a Submit Health Event" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.operation [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "generateHealthCertificate" ];
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/OperationDefinition/SHC-QuestionnaireResponse-generateHealthCertificate";
+           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/OperationDefinition/SHC-QuestionnaireResponse-generateHealthCertificate>
+         ];
+         fhir:CapabilityStatement.rest.resource.operation.documentation [ fhir:value "Generate a health certificate based on a QuestionnaireResponse." ]
        ]
      ];
      fhir:CapabilityStatement.rest.interaction [

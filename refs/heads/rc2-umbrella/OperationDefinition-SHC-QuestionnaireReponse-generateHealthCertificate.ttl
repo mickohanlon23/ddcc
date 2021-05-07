@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate> a fhir:OperationDefinition;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SHC-QuestionnaireReponse-generateHealthCertificate"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>QuestionnaireReponse Generate Health Certificate</h2><p>OPERATION: QuestionnaireReponse Generate Health Certificate</p><p>The official URL for this operation definition is: </p><pre>http://fhir.org/guides/who/svc/OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate</pre><div><p>Generate a signed QR Code based on a <a href=\"StructureDefinition-shc-questionnaireresponse.html\">SHC\nQuestionnaireResponse</a></p>\n</div><p>URL: [base]/QuestionnaireResponse/$generateHealthCertificate</p><p>URL: [base]/QuestionnaireResponse/[id]/$generateHealthCertificate</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>response</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\">QuestionnaireResponse</a></td><td/><td><div><p>The questionnaire response resource used to generate the QR code.</p>\n</div></td></tr><tr><td>IN</td><td>id</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#id\">id</a></td><td/><td><div><p>The questionnaire response resource id used to generate the QR code.</p>\n</div></td></tr><tr><td>OUT</td><td>qr-code</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/binary.html\">Binary</a></td><td/><td><div><p>The QR Code PNG that was generated.</p>\n</div></td></tr><tr><td>OUT</td><td>qr-content</td><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/questionnaireresponse.html\">QuestionnaireResponse</a></td><td/><td><div><p>The signed QR Code content that was used to generate the image.</p>\n</div></td></tr><tr><td>OUT</td><td>certificate</td><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td/><td><div><p>The URI of the location of the certificate when available.</p>\n</div></td></tr></table></div>"
+  ];
+  fhir:OperationDefinition.url [ fhir:value "http://fhir.org/guides/who/svc/OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate"];
+  fhir:OperationDefinition.version [ fhir:value "0.2.0"];
+  fhir:OperationDefinition.name [ fhir:value "QuestionnaireReponse Generate Health Certificate"];
+  fhir:OperationDefinition.status [ fhir:value "draft"];
+  fhir:OperationDefinition.kind [ fhir:value "operation"];
+  fhir:OperationDefinition.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:OperationDefinition.date [ fhir:value "2021-05-07"^^xsd:date];
+  fhir:OperationDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
+  fhir:OperationDefinition.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ];
+  fhir:OperationDefinition.description [ fhir:value "Generate a signed QR Code based on a [SHC \nQuestionnaireResponse](StructureDefinition-shc-questionnaireresponse.html)"];
+  fhir:OperationDefinition.code [ fhir:value "generateHealthCertificate"];
+  fhir:OperationDefinition.resource [
+     fhir:value "QuestionnaireResponse";
+     fhir:index 0
+  ];
+  fhir:OperationDefinition.system [ fhir:value "false"^^xsd:boolean];
+  fhir:OperationDefinition.type [ fhir:value "true"^^xsd:boolean];
+  fhir:OperationDefinition.instance [ fhir:value "true"^^xsd:boolean];
+  fhir:OperationDefinition.parameter [
+     fhir:index 0;
+     fhir:OperationDefinition.parameter.name [ fhir:value "response" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "The questionnaire response resource used to generate the QR code." ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "QuestionnaireResponse" ]
+  ], [
+     fhir:index 1;
+     fhir:OperationDefinition.parameter.name [ fhir:value "id" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "in" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "The questionnaire response resource id used to generate the QR code." ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "id" ]
+  ], [
+     fhir:index 2;
+     fhir:OperationDefinition.parameter.name [ fhir:value "qr-code" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "out" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "The QR Code PNG that was generated." ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "Binary" ]
+  ], [
+     fhir:index 3;
+     fhir:OperationDefinition.parameter.name [ fhir:value "qr-content" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "out" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "1"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "The signed QR Code content that was used to generate the image." ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "QuestionnaireResponse" ]
+  ], [
+     fhir:index 4;
+     fhir:OperationDefinition.parameter.name [ fhir:value "certificate" ];
+     fhir:OperationDefinition.parameter.use [ fhir:value "out" ];
+     fhir:OperationDefinition.parameter.min [ fhir:value "0"^^xsd:integer ];
+     fhir:OperationDefinition.parameter.max [ fhir:value "1" ];
+     fhir:OperationDefinition.parameter.documentation [ fhir:value "The URI of the location of the certificate when available." ];
+     fhir:OperationDefinition.parameter.type [ fhir:value "uri" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
