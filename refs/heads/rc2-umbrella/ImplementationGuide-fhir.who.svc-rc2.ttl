@@ -778,6 +778,19 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc/CodeSystem/SHC-Category-CodeSystem>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/SHC-Category-CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC QR Category Usage Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorization of Smart Health Certificates" ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -785,7 +798,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/SHC-QR-Format-ValueSet" ]
        ]
      ], [
-       fhir:index 25;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -798,7 +811,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provenance of SHC" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Used to assert the provenance of a public health authority (PHA) over either a Paper or a Digital Smart Vaccination Certificate (SHC)." ]
      ], [
-       fhir:index 26;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -811,7 +824,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC QRCode Extension" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SVC QRCode Extension" ]
      ], [
-       fhir:index 27;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -824,7 +837,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Questionnaire " ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SVC QR Code Questionnaire for an Immunization event." ]
      ], [
-       fhir:index 28;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -837,7 +850,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Practitioner Role" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Association of an [SHC Practitioner](StructureDefinition-shc-practitioner-role.html) to a managing [SHC Organization](StructureDefinition-shc-orgaznization.html), indicating that an SHC Practitioner is authorized by the public health authority (PHA) to vaccinate an [SHC Patient](StructureDefinition-shc-patient.html)." ]
      ], [
-       fhir:index 29;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -849,7 +862,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SHF Graph Definition for retrieving Smart Vaccination Certificates under a [Retrieve Smart Health Folder](transactions.html#retrieve-health-folder) transaction." ]
      ], [
-       fhir:index 30;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -862,7 +875,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHF Graph Defintion" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Abstract Graph Definition for Smart Health Folder to describe information retrieved under a [Retrieve Smart Health Folder](transactions.html#retrieve-health-folder) transaction." ]
      ], [
-       fhir:index 31;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -875,7 +888,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHF Composition" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for the Smart Health Folder which contains the Smart Health Certificates (SHCs).  An [SHF Composition](StructureDefinition-shf-composition.html) should:\n * be accessible from a [SHC Registry Service](StructureDefintion-shc-registry.html)  as located via the [WHO Public Key Directory](actors.html#who-pkd) for the PHA referenced in the [author](StructureDefinition-shf-composition-definitions.html#Composition.agent)." ]
      ], [
-       fhir:index 32;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -888,7 +901,18 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Immunization" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An SVC Immunization contains the content corresponding to a row in the Vaccination Events section of a Paper SVC. While this is not a further profile of the International Patient Summary (IPS) Immunization resouce, this is intended to map into an IPS Immunization resource." ]
      ], [
-       fhir:index 33;
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://fhir.org/guides/who/svc/ValueSet/SHC-Category-ValueSet>;
+         fhir:Reference.reference [ fhir:value "ValueSet/SHC-Category-ValueSet" ]
+       ]
+     ], [
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -901,7 +925,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Bundle" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "An [SVC Bundle](StructureDefinition-svc-bundle.html) is a document bundle containing the Smart Vaccination Certificate (SVC) content." ]
      ], [
-       fhir:index 34;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -914,7 +938,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Basic QR Code resource" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SVC Profile of Basic resource for QR Code." ]
      ], [
-       fhir:index 35;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -927,7 +951,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO List of Vaccinable Conditions" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The WHO Vaccinable Conditions List from [ICD 11](https://icd.who.int/browse11) is used by:\n *  the [SVC Immunization](StructureDefinition-svc-immunization.html)" ]
      ], [
-       fhir:index 36;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -940,7 +964,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Disease or Agent Targeted (COVID-19)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)" ]
      ], [
-       fhir:index 37;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -953,7 +977,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC QR Format Codes" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Possible formats available for QR data." ]
      ], [
-       fhir:index 38;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -966,7 +990,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Binary for QR Content" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)" ]
      ], [
-       fhir:index 39;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -979,7 +1003,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Binary for QR (PNG representation)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)" ]
      ], [
-       fhir:index 40;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -991,7 +1015,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC DocumentReference return for QR" ]
      ], [
-       fhir:index 41;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1004,7 +1028,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC QR Category Usage Codes" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Possible formats available for QR usage." ]
      ], [
-       fhir:index 42;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1017,7 +1041,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Questionnaire Response" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for a questionnaire response associacted to a [SHC Questionaire](StructureDefinition-shc-questionnaire.html)." ]
      ], [
-       fhir:index 43;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1030,7 +1054,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Composition" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for the health content contained in a Smart Vaccination Certificate (SVC)." ]
      ], [
-       fhir:index 44;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

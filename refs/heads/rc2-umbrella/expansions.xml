@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="73dd4e8f-f36f-4847-947d-86f1ea4f5fcc"/>
+  <id value="40fce7b3-e681-4b78-a6d6-b97aec6a9635"/>
   <meta>
-    <lastUpdated value="2021-05-12T21:55:31.228+00:00"/>
+    <lastUpdated value="2021-05-12T23:56:22.320+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -74,7 +74,7 @@
         <version value="0.2.0"/>
         <name value="SHC_QR_Category_Usage_ValueSet"/>
         <status value="active"/>
-        <date value="2021-05-12T21:55:31+00:00"/>
+        <date value="2021-05-12T23:56:22+00:00"/>
         <publisher value="World Health Organization (WHO)"/>
         <contact>
           <telecom>
@@ -83,8 +83,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:b7c2d7db-0ec8-4f44-81b2-f9a9566d4307"/>
-          <timestamp value="2021-05-12T21:56:08+00:00"/>
+          <identifier value="urn:uuid:02345267-cc0f-41ad-be39-5a8a858c6368"/>
+          <timestamp value="2021-05-12T23:56:46+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -170,7 +170,7 @@
         <version value="0.2.0"/>
         <name value="SHC_QR_Format_ValueSet"/>
         <status value="active"/>
-        <date value="2021-05-12T21:55:31+00:00"/>
+        <date value="2021-05-12T23:56:22+00:00"/>
         <publisher value="World Health Organization (WHO)"/>
         <contact>
           <telecom>
@@ -179,8 +179,8 @@
           </telecom>
         </contact>
         <expansion>
-          <identifier value="urn:uuid:24a4382f-084d-4504-aa0e-360b5458533a"/>
-          <timestamp value="2021-05-12T21:56:10+00:00"/>
+          <identifier value="urn:uuid:72722ca3-64d8-4112-98e6-cc8bc963ad46"/>
+          <timestamp value="2021-05-12T23:56:48+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -199,6 +199,79 @@
             <system value="https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-QR-Format-CodeSystem"/>
             <code value="serialized"/>
             <display value="Serialized QR Content"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://who-int.github.io/svc/refs/heads/rc2/ValueSet/SHC-Category-ValueSet"/>
+    <resource>
+      <ValueSet>
+        <id value="SHC-Category-ValueSet"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-SHC-Category-CodeSystem.html">SHC QR Category Usage Codes v0.2.0 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-SHC-Category-CodeSystem.html">
+                <code>https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-Category-CodeSystem</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---who-int.github.io-svc-refs-heads-rc2-CodeSystem-SHC-Category-CodeSystem-svc-covid19"> </a>
+                  <a href="CodeSystem-SHC-Category-CodeSystem.html#SHC-Category-CodeSystem-svc-covid19">svc-covid19</a>
+                </td>
+                <td>Smart Vaccination Certificate - COVID19</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://who-int.github.io/svc/refs/heads/rc2/ValueSet/SHC-Category-ValueSet"/>
+        <version value="0.2.0"/>
+        <name value="SHC_Category_ValueSet"/>
+        <status value="active"/>
+        <date value="2021-05-12T23:56:22+00:00"/>
+        <publisher value="World Health Organization (WHO)"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.who.int"/>
+          </telecom>
+        </contact>
+        <expansion>
+          <identifier value="urn:uuid:2d16773f-635b-4f77-8aa7-13d7823da8b7"/>
+          <timestamp value="2021-05-12T23:56:50+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-Category-CodeSystem|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-Category-CodeSystem"/>
+            <code value="svc-covid19"/>
+            <display value="Smart Vaccination Certificate - COVID19"/>
           </contains>
         </expansion>
       </ValueSet>

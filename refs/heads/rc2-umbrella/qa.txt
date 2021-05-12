@@ -1,12 +1,13 @@
 ﻿SVC_RC2 : Validation Results
 =========================================
 
-err = 159, warn = 100, info = 2
+err = 166, warn = 103, info = 2
 IG Publisher Version: 1.1.68
-Generated Wed May 12 21:56:48 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = http://fhir.org/guides/who/svc)
+Generated Wed May 12 23:57:20 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = http://fhir.org/guides/who/svc)
 
- Build Errors : 39 / 8 / 0
+ Build Errors : 40 / 9 / 0
  /github/workspace/fsh-generated/resources/Basic-svc-basic-qrcode-example : 1 / 1 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-SHC-Category-CodeSystem : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-SHC-QR-Category-Usage-CodeSystem : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-SHC-QR-Format-CodeSystem : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-svc-map-icd11-sct-disease-targeted : 0 / 1 / 1
@@ -23,7 +24,7 @@ Generated Wed May 12 21:56:48 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#
  /github/workspace/fsh-generated/resources/StructureDefinition-shc-binary-qrcontent : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-shc-binary-qrpng : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-shc-bundle : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-shc-composition : 8 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-shc-composition : 9 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-shc-documentreference-qr : 8 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-shc-organization : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-shc-patient : 3 / 0 / 2
@@ -37,9 +38,10 @@ Generated Wed May 12 21:56:48 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#
  /github/workspace/fsh-generated/resources/StructureDefinition-shf-composition : 10 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-shf-graphdefinition : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle : 2 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition : 10 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition : 11 / 2 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-immunization : 10 / 0 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-svc-questionnaireresponse : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-SHC-Category-ValueSet : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-SHC-QR-Category-Usage-ValueSet : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-SHC-QR-Format-ValueSet : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-svc-disease-targeted-covid-19 : 2 / 2 / 1
@@ -72,6 +74,8 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/SHC-QR-Format-ValueSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/SHC-QR-Format-ValueSet.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource GraphDefinition/svc-graph.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/SHC-Category-ValueSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/SHC-Category-ValueSet.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/shc-documentreference-qr.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 104: The link 'http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire' for "http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire" cannot be resolved
 ERROR: /github/workspace/output/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 299: The link 'SVC_Patient_Example' for "SVC_Patient_Example" cannot be resolved
@@ -106,6 +110,10 @@ INFORMATION: Basic/svc-basic-qrcode-example: Basic/svc-basic-qrcode-example: Bas
 ERROR: Basic/svc-basic-qrcode-example: Basic/svc-basic-qrcode-example: Basic: The extension https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-QRCode is not allowed to be used at this point (allowed = e:SVCBasicQRCode; this element is [[Basic])
 WARNING: Basic/svc-basic-qrcode-example: Basic/svc-basic-qrcode-example: Basic.code.coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: Basic/svc-basic-qrcode-example: Basic/svc-basic-qrcode-example: Basic: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-Basic-QRCode - listed in meta
+== /github/workspace/fsh-generated/resources/CodeSystem-SHC-Category-CodeSystem.json ==
+ERROR: CodeSystem.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-Category-CodeSystem'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-SHC-Category-CodeSystem.json - the canonical URL (http://fhir.org/guides/who/svc/CodeSystem/SHC-Category-CodeSystem) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-Category-CodeSystem)
+INFORMATION: CodeSystem/SHC-Category-CodeSystem: CodeSystem/SHC-Category-CodeSystem: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-SHC-Category-CodeSystem: URL Mismatch http://fhir.org/guides/who/svc/CodeSystem/SHC-Category-CodeSystem vs https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-Category-CodeSystem
 == /github/workspace/fsh-generated/resources/CodeSystem-SHC-QR-Category-Usage-CodeSystem.json ==
 ERROR: CodeSystem.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-QR-Category-Usage-CodeSystem'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-SHC-QR-Category-Usage-CodeSystem.json - the canonical URL (http://fhir.org/guides/who/svc/CodeSystem/SHC-QR-Category-Usage-CodeSystem) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-QR-Category-Usage-CodeSystem)
 INFORMATION: CodeSystem/SHC-QR-Category-Usage-CodeSystem: CodeSystem/SHC-QR-Category-Usage-CodeSystem: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
@@ -243,6 +251,7 @@ INFORMATION: StructureDefinition/shc-composition: StructureDefinition/shc-compos
 INFORMATION: Composition/shc-composition-genexample: Composition/shc-composition-genexample: Composition: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-composition
 ERROR: Composition/shc-composition-genexample: Composition/shc-composition-genexample: Composition: Composition.status: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-composition)
 ERROR: Composition/shc-composition-genexample: Composition/shc-composition-genexample: Composition: Composition.type: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-composition)
+ERROR: Composition/shc-composition-genexample: Composition/shc-composition-genexample: Composition: Composition.category: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-composition)
 ERROR: Composition/shc-composition-genexample: Composition/shc-composition-genexample: Composition: Composition.subject: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-composition)
 ERROR: Composition/shc-composition-genexample: Composition/shc-composition-genexample: Composition: Composition.date: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-composition)
 ERROR: Composition/shc-composition-genexample: Composition/shc-composition-genexample: Composition: Composition.author: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-composition)
@@ -330,9 +339,12 @@ ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-svc-bundle:
 == /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition.json ==
 ERROR: StructureDefinition.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-svc-composition.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/svc-composition) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition)
 INFORMATION: StructureDefinition/svc-composition: StructureDefinition/svc-composition: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+WARNING: StructureDefinition/svc-composition: StructureDefinition/svc-composition: StructureDefinition.snapshot.element[20].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: StructureDefinition/svc-composition: StructureDefinition/svc-composition: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: Composition/svc-composition-genexample: Composition/svc-composition-genexample: Composition: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition
 ERROR: Composition/svc-composition-genexample: Composition/svc-composition-genexample: Composition: Composition.status: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition)
 ERROR: Composition/svc-composition-genexample: Composition/svc-composition-genexample: Composition: Composition.type: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition)
+ERROR: Composition/svc-composition-genexample: Composition/svc-composition-genexample: Composition: Composition.category: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition)
 ERROR: Composition/svc-composition-genexample: Composition/svc-composition-genexample: Composition: Composition.subject: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition)
 ERROR: Composition/svc-composition-genexample: Composition/svc-composition-genexample: Composition: Composition.date: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition)
 ERROR: Composition/svc-composition-genexample: Composition/svc-composition-genexample: Composition: Composition.author: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition)
@@ -358,6 +370,10 @@ ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-svc-immuniz
 ERROR: StructureDefinition.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-questionnaireresponse'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-svc-questionnaireresponse.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/svc-questionnaireresponse) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-questionnaireresponse)
 INFORMATION: StructureDefinition/svc-questionnaireresponse: StructureDefinition/svc-questionnaireresponse: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-svc-questionnaireresponse: URL Mismatch http://fhir.org/guides/who/svc/StructureDefinition/svc-questionnaireresponse vs https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-questionnaireresponse
+== /github/workspace/fsh-generated/resources/ValueSet-SHC-Category-ValueSet.json ==
+ERROR: ValueSet.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/ValueSet/SHC-Category-ValueSet'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-SHC-Category-ValueSet.json - the canonical URL (http://fhir.org/guides/who/svc/ValueSet/SHC-Category-ValueSet) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/ValueSet/SHC-Category-ValueSet)
+INFORMATION: ValueSet/SHC-Category-ValueSet: ValueSet/SHC-Category-ValueSet: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-SHC-Category-ValueSet: URL Mismatch http://fhir.org/guides/who/svc/ValueSet/SHC-Category-ValueSet vs https://who-int.github.io/svc/refs/heads/rc2/ValueSet/SHC-Category-ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-SHC-QR-Category-Usage-ValueSet.json ==
 ERROR: ValueSet.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/ValueSet/SHC-QR-Category-Usage-ValueSet'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-SHC-QR-Category-Usage-ValueSet.json - the canonical URL (http://fhir.org/guides/who/svc/ValueSet/SHC-QR-Category-Usage-ValueSet) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/ValueSet/SHC-QR-Category-Usage-ValueSet)
 INFORMATION: ValueSet/SHC-QR-Category-Usage-ValueSet: ValueSet/SHC-QR-Category-Usage-ValueSet: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
@@ -446,4 +462,4 @@ ERROR: StructureMap/svc-map-qr-bundle: StructureMap/svc-map-qr-bundle: Structure
 ERROR: /github/workspace/input/resources/maps/svc-map-qr-bundle: URL Mismatch http://fhir.org/guides/who/svc/StructureMap/svc-map-qr-bundle vs http://who-int.github.io/svc/StructureMap/svc-map-qr-bundle
 == /github/workspace/input/svc.xml ==
 INFORMATION: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-WARNING: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide.definition.resource[27].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide.definition.resource[28].name: value should not start or finish with whitespace

@@ -1,0 +1,45 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/CodeSystem/SHC-Category-CodeSystem> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SHC-Category-CodeSystem"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-Category-CodeSystem defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">svc-covid19<a name=\"SHC-Category-CodeSystem-svc-covid19\"> </a></td><td>Smart Vaccination Certificate - COVID19</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-Category-CodeSystem"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "SHC_Category_CodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "SHC QR Category Usage Codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-05-12T23:56:22+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "World Health Organization (WHO)"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Categorization of Smart Health Certificates"];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "svc-covid19" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Smart Vaccination Certificate - COVID19" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/CodeSystem/SHC-Category-CodeSystem.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
