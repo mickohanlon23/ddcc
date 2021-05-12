@@ -630,6 +630,18 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/shc-binary-qr"
+        },
+        "name": "SHC Binary return for QR"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           }
         ],
@@ -685,7 +697,7 @@
         "reference": {
           "reference": "OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate"
         },
-        "description": "Generate a signed QR Code based on a [SHC \nQuestionnaireResponse](StructureDefinition-shc-questionnaireresponse.html)"
+        "description": "Generate one or more signed QR Codes based on a [SHC QuestionnaireResponse](StructureDefinition-shc-questionnaireresponse.html)"
       },
       {
         "extension": [
@@ -724,6 +736,17 @@
         },
         "name": "SHC Questionniare",
         "description": "Describes the logical structure for a questionnaire associacted to a Smart Health Certificate which includes a Structure Map to generate the relevant SHC from a given [SHC QuestionnaireResponse](StructureDefintion-shc-questionnaire-response.html) which responds to the SHC Questionnaire."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/SHC-QR-Category-Usage-ValueSet"
+        }
       },
       {
         "extension": [
@@ -775,6 +798,17 @@
           "reference": "ConceptMap/who-svc-map-icd11-sct-vaccines"
         },
         "description": "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/SHC-QR-Format-ValueSet"
+        }
       },
       {
         "extension": [
@@ -930,6 +964,70 @@
         },
         "name": "WHO Disease or Agent Targeted (COVID-19)",
         "description": "WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/SHC-QR-Format-CodeSystem"
+        },
+        "name": "SHC QR Format Codes",
+        "description": "Possible formats available for QR data."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/shc-binary-qrcontent"
+        },
+        "name": "SHC Binary for QR Content",
+        "description": "PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/shc-binary-qrpng"
+        },
+        "name": "SHC Binary for QR (PNG representation)",
+        "description": "PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/shc-documentreference-qr"
+        },
+        "name": "SHC DocumentReference return for QR"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/SHC-QR-Category-Usage-CodeSystem"
+        },
+        "name": "SHC QR Category Usage Codes",
+        "description": "Possible formats available for QR usage."
       },
       {
         "extension": [

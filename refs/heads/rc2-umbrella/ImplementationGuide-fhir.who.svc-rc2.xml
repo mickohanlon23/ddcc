@@ -411,6 +411,15 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shc-binary-qr"/>
+      </reference>
+      <name value="SHC Binary return for QR"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -453,7 +462,7 @@
       <reference>
         <reference value="OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate"/>
       </reference>
-      <description value="Generate a signed QR Code based on a [SHC &#xA;QuestionnaireResponse](StructureDefinition-shc-questionnaireresponse.html)"/>
+      <description value="Generate one or more signed QR Codes based on a [SHC QuestionnaireResponse](StructureDefinition-shc-questionnaireresponse.html)"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -483,6 +492,14 @@
       </reference>
       <name value="SHC Questionniare"/>
       <description value="Describes the logical structure for a questionnaire associacted to a Smart Health Certificate which includes a Structure Map to generate the relevant SHC from a given [SHC QuestionnaireResponse](StructureDefintion-shc-questionnaire-response.html) which responds to the SHC Questionnaire."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SHC-QR-Category-Usage-ValueSet"/>
+      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -522,6 +539,14 @@
         <reference value="ConceptMap/who-svc-map-icd11-sct-vaccines"/>
       </reference>
       <description value="Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SHC-QR-Format-ValueSet"/>
+      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -641,6 +666,55 @@
       </reference>
       <name value="WHO Disease or Agent Targeted (COVID-19)"/>
       <description value="WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SHC-QR-Format-CodeSystem"/>
+      </reference>
+      <name value="SHC QR Format Codes"/>
+      <description value="Possible formats available for QR data."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shc-binary-qrcontent"/>
+      </reference>
+      <name value="SHC Binary for QR Content"/>
+      <description value="PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shc-binary-qrpng"/>
+      </reference>
+      <name value="SHC Binary for QR (PNG representation)"/>
+      <description value="PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shc-documentreference-qr"/>
+      </reference>
+      <name value="SHC DocumentReference return for QR"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SHC-QR-Category-Usage-CodeSystem"/>
+      </reference>
+      <name value="SHC QR Category Usage Codes"/>
+      <description value="Possible formats available for QR usage."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

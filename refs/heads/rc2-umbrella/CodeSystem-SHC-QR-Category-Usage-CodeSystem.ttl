@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/CodeSystem/SHC-QR-Category-Usage-CodeSystem> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SHC-QR-Category-Usage-CodeSystem"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-QR-Category-Usage-CodeSystem defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">who<a name=\"SHC-QR-Category-Usage-CodeSystem-who\"> </a></td><td>WHO SVC</td></tr><tr><td style=\"white-space:nowrap\">dgc<a name=\"SHC-QR-Category-Usage-CodeSystem-dgc\"> </a></td><td>EU DGC</td></tr><tr><td style=\"white-space:nowrap\">icao<a name=\"SHC-QR-Category-Usage-CodeSystem-icao\"> </a></td><td>ICAO</td></tr><tr><td style=\"white-space:nowrap\">au<a name=\"SHC-QR-Category-Usage-CodeSystem-au\"> </a></td><td>AU</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-QR-Category-Usage-CodeSystem"];
+  fhir:CodeSystem.version [ fhir:value "0.2.0"];
+  fhir:CodeSystem.name [ fhir:value "SHC_QR_Category_Usage_CodeSystem"];
+  fhir:CodeSystem.title [ fhir:value "SHC QR Category Usage Codes"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2021-05-12T21:55:31+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "World Health Organization (WHO)"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "Possible formats available for QR usage."];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "who" ];
+     fhir:CodeSystem.concept.display [ fhir:value "WHO SVC" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "dgc" ];
+     fhir:CodeSystem.concept.display [ fhir:value "EU DGC" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "icao" ];
+     fhir:CodeSystem.concept.display [ fhir:value "ICAO" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "au" ];
+     fhir:CodeSystem.concept.display [ fhir:value "AU" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/CodeSystem/SHC-QR-Category-Usage-CodeSystem.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
