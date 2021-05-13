@@ -514,6 +514,15 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SHC-SectionCode-ValueSet"/>
+      </reference>
+      <description value="Content section codes for Smart Health Certificates (SHC)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -579,6 +588,16 @@
       </reference>
       <name value="SVC QRCode Extension"/>
       <description value="SVC QRCode Extension"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SHC-SectionCode-CodeSystem"/>
+      </reference>
+      <name value="SHC QR SectionCode Usage Codes"/>
+      <description value="Section Codes for Smart Health Certificates"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

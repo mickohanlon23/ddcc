@@ -13,7 +13,7 @@
     <sch:title>f:DocumentReference</sch:title>
     <sch:rule context="f:DocumentReference">
       <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
-      <sch:assert test="count(f:category) &lt;= 1">category: maximum cardinality of 'category' is 1</sch:assert>
+      <sch:assert test="count(f:authenticator) &gt;= 1">authenticator: minimum cardinality of 'authenticator' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -175,6 +175,12 @@
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
+    <sch:title>f:DocumentReference/f:content</sch:title>
+    <sch:rule context="f:DocumentReference/f:content">
+      <sch:assert test="count(f:format) &gt;= 1">format: minimum cardinality of 'format' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>DocumentReference.content</sch:title>
     <sch:rule context="f:DocumentReference/f:content">
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
@@ -218,13 +224,6 @@
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:DocumentReference/f:content</sch:title>
-    <sch:rule context="f:DocumentReference/f:content">
-      <sch:assert test="count(f:format) &gt;= 1">format: minimum cardinality of 'format' is 1</sch:assert>
-      <sch:assert test="count(f:format) &gt;= 1">format: minimum cardinality of 'format' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
