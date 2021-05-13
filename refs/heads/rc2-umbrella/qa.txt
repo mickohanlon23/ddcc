@@ -1,11 +1,11 @@
 ﻿SVC_RC2 : Validation Results
 =========================================
 
-err = 166, warn = 103, info = 2
+err = 166, warn = 100, info = 2
 IG Publisher Version: 1.1.68
-Generated Wed May 12 23:57:20 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = http://fhir.org/guides/who/svc)
+Generated Thu May 13 02:08:32 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = http://fhir.org/guides/who/svc)
 
- Build Errors : 40 / 9 / 0
+ Build Errors : 40 / 6 / 0
  /github/workspace/fsh-generated/resources/Basic-svc-basic-qrcode-example : 1 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-SHC-Category-CodeSystem : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-SHC-QR-Category-Usage-CodeSystem : 2 / 0 / 1
@@ -69,13 +69,10 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/SVC-Core-Data-Set.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/SHC-QR-Category-Usage-ValueSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/SHC-QR-Category-Usage-ValueSet.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ConceptMap/who-svc-map-icd11-sct-vaccines.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/SHC-QR-Format-ValueSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/SHC-QR-Format-ValueSet.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource GraphDefinition/svc-graph.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/SHC-Category-ValueSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ValueSet/SHC-Category-ValueSet.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/shc-documentreference-qr.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 104: The link 'http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire' for "http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire" cannot be resolved
 ERROR: /github/workspace/output/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 299: The link 'SVC_Patient_Example' for "SVC_Patient_Example" cannot be resolved

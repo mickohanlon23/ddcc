@@ -164,7 +164,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <!-- ReleaseHeader --><p id="publish-box">WHO Smart Vaccination Certificate - RC2 - Local Development build (v0.2.0). See the <a href="http://fhir.org/guides/who/svc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Transactions</h2>
   
-  <div><a name="a24a87bd-feca-4724-b099-e55c4b21ed87">​</a><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Submit Health Event</a></li><li><a href="#2"> Register Health Certificate</a></li><li><a href="#3"> Retrieve Health Certificate</a></li><li><a href="#4"> Retrieve Health Folder</a></li></ul></div>
+  <div><a name="af834ab0-a07f-49fd-aef9-f12ed88c8763">​</a><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Submit Health Event</a></li><li><a href="#2"> Register Health Certificate</a></li><li><a href="#3"> Retrieve Health Certificate</a></li><li><a href="#4"> Retrieve Health Folder</a></li></ul></div>
   
   <a name="1"></a><h3 id="submit-health-event">Submit Health Event</h3> 
   The Submit Health Event transaction is initiated by a <a href="actors.html#point-of-care">Point of Care</a> system against the <a href="actors.html#shc-generator">SHC Generator</a>.
@@ -306,7 +306,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <li>
       graph: (Optional) a canonical reference to a  <a href="StructureDefinition-shf-graphdefinition.html">SHF Graph Defintion</a> resource indicating which of the linked SHCs should be included in the result.  The following options are required to be supported:
       <ul>
-	<li><a name="da89576c-787b-484e-99f9-236488312168">​</a>GraphDefintion/svc-graph: will include the <a href="StructureDefintion-svc-bundle.html">SVC Bundle</a></li>
+	<li><a name="e29ec343-6025-46f1-8b33-26b806d97d74">​</a>GraphDefintion/svc-graph: will include the <a href="StructureDefintion-svc-bundle.html">SVC Bundle</a></li>
       </ul>
     </li>
   </ul>
@@ -315,7 +315,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <a name="4.2.2"></a><h5 id="retrieve-health-folder-message-semantics-response"> Message Semantics Response</h5>
   The Retrieve Health Folder transaction response message is the response message of a  <a href="http://hl7.org/fhir/composition-operation-document.html">$document</a> operation performed.  Specifically:
   <ul>
-    <li><a name="10c0ae40-242d-419c-82b8-5411c3ccd97a">​</a>An list of entries of <a href="StructureDefintion-shc-composition.html">SHC Compositions</a> that the PHA wishes to expose to the requestor according to the polocy of the jursidiction</li>
+    <li><a name="6755a718-edcc-4054-99c1-fe4135c1e47c">​</a>An list of entries of <a href="StructureDefintion-shc-composition.html">SHC Compositions</a> that the PHA wishes to expose to the requestor according to the polocy of the jursidiction</li>
     <li>If the <i>graph</i> parameter was utilized, the linked resources as defined by the GraphDefintion</li>
   </ul>
 
@@ -346,7 +346,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">    <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc2#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 12, 2021 23:56+0000">2021-05-12</span>
+          IG &copy; 2021+ <a style="color: #81BEF7" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.svc-rc2#0.2.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, May 13, 2021 02:07+0000">2021-05-13</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
