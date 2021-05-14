@@ -1,11 +1,11 @@
 ﻿SVC_RC2 : Validation Results
 =========================================
 
-err = 176, warn = 100, info = 2
+err = 245, warn = 122, info = 14
 IG Publisher Version: 1.1.68
-Generated Thu May 13 22:14:00 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = http://fhir.org/guides/who/svc)
+Generated Fri May 14 00:12:33 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = http://fhir.org/guides/who/svc)
 
- Build Errors : 41 / 6 / 0
+ Build Errors : 62 / 23 / 0
  /github/workspace/fsh-generated/resources/Basic-svc-basic-qrcode-example : 1 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-SHC-Category-CodeSystem : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-SHC-QR-Category-Usage-CodeSystem : 2 / 0 / 1
@@ -14,8 +14,25 @@ Generated Thu May 13 22:14:00 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#
  /github/workspace/fsh-generated/resources/ConceptMap-who-svc-map-icd11-sct-disease-targeted : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-svc-map-icd11-sct-vaccines : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/GraphDefinition-svc-graph : 0 / 1 / 2
+ /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-Arabic : 8 / 1 / 4
+ /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-Chinese : 9 / 1 / 4
+ /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-English : 8 / 1 / 4
+ /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-French : 9 / 1 / 4
+ /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-Russian : 9 / 1 / 4
+ /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-Spanish : 9 / 1 / 4
  /github/workspace/fsh-generated/resources/OperationDefinition-SHC-QuestionnaireReponse-generateHealthCertificate : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Example : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Organization-SHC-Organization-Arabic : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Organization-SHC-Organization-Chinese : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Organization-SHC-Organization-English : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Organization-SHC-Organization-French : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Organization-SHC-Organization-Russian : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Organization-SHC-Organization-Spanish : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Arabic : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Patient-SHC-Patient-English : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Example-Chinese : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Example-French : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Example-Russian : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Example-Spanish : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Questionnaire-SVC-Questionnaire : 2 / 2 / 2
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example : 3 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-SVC-Basic-QRCode : 2 / 2 / 1
@@ -27,7 +44,7 @@ Generated Thu May 13 22:14:00 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#
  /github/workspace/fsh-generated/resources/StructureDefinition-shc-bundle : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-shc-composition : 11 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-shc-documentreference-qr : 11 / 0 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-shc-organization : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-shc-organization : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-shc-patient : 3 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-shc-practitioner : 3 / 0 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-shc-practitioner-role : 2 / 1 / 1
@@ -62,21 +79,59 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/svc-map-qr-bundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Basic/svc-basic-qrcode-example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Basic/svc-basic-qrcode-example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/SHC-Organization-Arabic.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/SHC-Organization-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/shc-binary-qr.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Patient/SHC-Patient-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/SHC-Patient-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/SHC-Organization-French.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/SHC-Organization-French.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Immunization/SVC-Immunizaton-Spanish.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/SVC-Immunizaton-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ConceptMap/who-svc-map-icd11-sct-disease-targeted.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Immunization/SVC-Immunizaton-Arabic.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/SVC-Immunizaton-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Immunization/SVC-Immunizaton-English.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/SVC-Immunizaton-English.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/SVC-Core-Data-Set.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/SHC-QR-Category-Usage-ValueSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Patient/SHC-Patient-Example-Russian.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/SHC-Patient-Example-Russian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/SHC-SectionCode-ValueSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Immunization/SVC-Immunizaton-French.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/SVC-Immunizaton-French.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Patient/SHC-Patient-Example-French.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/SHC-Patient-Example-French.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/SHC-Organization-English.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/SHC-Organization-English.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Immunization/SVC-Immunizaton-Russian.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/SVC-Immunizaton-Russian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ConceptMap/who-svc-map-icd11-sct-vaccines.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/SHC-QR-Format-ValueSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource GraphDefinition/svc-graph.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Patient/SHC-Patient-English.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/SHC-Patient-English.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/SHC-Organization-Russian.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/SHC-Organization-Russian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/SHC-Organization-Spanish.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/SHC-Organization-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Immunization/SVC-Immunizaton-Chinese.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/SVC-Immunizaton-Chinese.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/SHC-Category-ValueSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Patient/SHC-Patient-Example-Chinese.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/SHC-Patient-Example-Chinese.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/SHC-Organization-Chinese.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/SHC-Organization-Chinese.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/shc-documentreference-qr.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Patient/SHC-Patient-Arabic.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/SHC-Patient-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Patient/SHC-Patient-Example-Spanish.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/SHC-Patient-Example-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/Immunization-SVC-Immunizaton-Chinese.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 286: The link 'SHC-Patient-Chinese' for "SHC-Patient-Chinese" cannot be resolved
+ERROR: /github/workspace/output/Immunization-SVC-Immunizaton-French.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 286: The link 'SHC-Patient-French' for "SHC-Patient-French" cannot be resolved
+ERROR: /github/workspace/output/Immunization-SVC-Immunizaton-Russian.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 286: The link 'SHC-Patient-Russian' for "SHC-Patient-Russian" cannot be resolved
+ERROR: /github/workspace/output/Immunization-SVC-Immunizaton-Spanish.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 286: The link 'SHC-Patient-Spanish' for "SHC-Patient-Spanish" cannot be resolved
 ERROR: /github/workspace/output/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 104: The link 'http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire' for "http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire" cannot be resolved
 ERROR: /github/workspace/output/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 215, column 299: The link 'SVC_Patient_Example' for "SVC_Patient_Example" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-shc-organization.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 235, column 164: The link 'actors.html#who-pkd' for "WHO Public Key Directory" cannot be resolved (valid targets: 41 targets)
@@ -136,12 +191,133 @@ WARNING: ConceptMap/who-svc-map-icd11-sct-vaccines: ConceptMap/who-svc-map-icd11
 INFORMATION: GraphDefinition/svc-graph: GraphDefinition/svc-graph: GraphDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/GraphDefinition
 WARNING: GraphDefinition/svc-graph: GraphDefinition/svc-graph: GraphDefinition: gdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
 INFORMATION: GraphDefinition/svc-graph: GraphDefinition/svc-graph: GraphDefinition: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-graphdefinition - listed in meta
+== /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-Arabic.json ==
+ERROR: Immunization.protocolApplied[0]: Unrecognised property '@doseNumber[x]'
+ERROR: Immunization.protocolApplied[0]: Unrecognised property '@seriesDoses[x]'
+INFORMATION: Immunization/SVC-Immunizaton-Arabic: Immunization/SVC-Immunizaton-Arabic: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+ERROR: Immunization/SVC-Immunizaton-Arabic: Immunization/SVC-Immunizaton-Arabic: Immunization.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+INFORMATION: Immunization/SVC-Immunizaton-Arabic: Immunization/SVC-Immunizaton-Arabic: Immunization.vaccineCode.coding[0]: Code System URI 'urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding' is unknown so the code cannot be validated
+ERROR: Immunization/SVC-Immunizaton-Arabic: Immunization/SVC-Immunizaton-Arabic: Immunization.protocolApplied[0]: Immunization.protocolApplied.doseNumber[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Immunization)
+WARNING: Immunization/SVC-Immunizaton-Arabic: Immunization/SVC-Immunizaton-Arabic: Immunization.protocolApplied[0].targetDisease[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Immunization/SVC-Immunizaton-Arabic: Immunization/SVC-Immunizaton-Arabic: Immunization: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization - listed in meta
+ERROR: Immunization/SVC-Immunizaton-Arabic: Immunization/SVC-Immunizaton-Arabic: Immunization.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Immunization.identifier:SVC_Identifier in profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization - the discriminator [system] does not have fixed value, binding or existence assertions
+INFORMATION: Immunization/SVC-Immunizaton-Arabic: Immunization/SVC-Immunizaton-Arabic: Immunization: Immunization.identifier:SVC_Identifier: Unable to check minimum required (Immunization.identifier) due to lack of slicing validation (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
+ERROR: Immunization/SVC-Immunizaton-Arabic: Immunization/SVC-Immunizaton-Arabic: Immunization.vaccineCode.coding[0].code: The value provided ('XM0CX4') is not in the value set https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccines (https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccines), and a code is required from this value set) (error message = Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated)
+ERROR: Immunization/SVC-Immunizaton-Arabic: Immunization/SVC-Immunizaton-Arabic: Immunization.protocolApplied[0]: Immunization.protocolApplied:protocolAppliedAuthority.doseNumber[x]: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
+ERROR: Immunization/SVC-Immunizaton-Arabic: Immunization/SVC-Immunizaton-Arabic: Immunization.protocolApplied[0]: Immunization.protocolApplied.doseNumber[x]: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
+== /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-Chinese.json ==
+ERROR: Immunization.protocolApplied[0]: Unrecognised property '@doseNumber[x]'
+ERROR: Immunization.protocolApplied[0]: Unrecognised property '@seriesDoses[x]'
+INFORMATION: Immunization/SVC-Immunizaton-Chinese: Immunization/SVC-Immunizaton-Chinese: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+ERROR: Immunization/SVC-Immunizaton-Chinese: Immunization/SVC-Immunizaton-Chinese: Immunization.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+INFORMATION: Immunization/SVC-Immunizaton-Chinese: Immunization/SVC-Immunizaton-Chinese: Immunization.vaccineCode.coding[0]: Code System URI 'urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding' is unknown so the code cannot be validated
+ERROR: Immunization/SVC-Immunizaton-Chinese: Immunization/SVC-Immunizaton-Chinese: Immunization.patient: Unable to resolve resource 'SHC-Patient-Chinese'
+ERROR: Immunization/SVC-Immunizaton-Chinese: Immunization/SVC-Immunizaton-Chinese: Immunization.protocolApplied[0]: Immunization.protocolApplied.doseNumber[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Immunization)
+WARNING: Immunization/SVC-Immunizaton-Chinese: Immunization/SVC-Immunizaton-Chinese: Immunization.protocolApplied[0].targetDisease[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Immunization/SVC-Immunizaton-Chinese: Immunization/SVC-Immunizaton-Chinese: Immunization: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization - listed in meta
+ERROR: Immunization/SVC-Immunizaton-Chinese: Immunization/SVC-Immunizaton-Chinese: Immunization.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Immunization.identifier:SVC_Identifier in profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization - the discriminator [system] does not have fixed value, binding or existence assertions
+INFORMATION: Immunization/SVC-Immunizaton-Chinese: Immunization/SVC-Immunizaton-Chinese: Immunization: Immunization.identifier:SVC_Identifier: Unable to check minimum required (Immunization.identifier) due to lack of slicing validation (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
+ERROR: Immunization/SVC-Immunizaton-Chinese: Immunization/SVC-Immunizaton-Chinese: Immunization.vaccineCode.coding[0].code: The value provided ('XM0CX4') is not in the value set https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccines (https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccines), and a code is required from this value set) (error message = Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated)
+ERROR: Immunization/SVC-Immunizaton-Chinese: Immunization/SVC-Immunizaton-Chinese: Immunization.protocolApplied[0]: Immunization.protocolApplied:protocolAppliedAuthority.doseNumber[x]: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
+ERROR: Immunization/SVC-Immunizaton-Chinese: Immunization/SVC-Immunizaton-Chinese: Immunization.protocolApplied[0]: Immunization.protocolApplied.doseNumber[x]: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
+== /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-English.json ==
+ERROR: Immunization.protocolApplied[0]: Unrecognised property '@doseNumber[x]'
+ERROR: Immunization.protocolApplied[0]: Unrecognised property '@seriesDoses[x]'
+INFORMATION: Immunization/SVC-Immunizaton-English: Immunization/SVC-Immunizaton-English: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+ERROR: Immunization/SVC-Immunizaton-English: Immunization/SVC-Immunizaton-English: Immunization.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+INFORMATION: Immunization/SVC-Immunizaton-English: Immunization/SVC-Immunizaton-English: Immunization.vaccineCode.coding[0]: Code System URI 'urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding' is unknown so the code cannot be validated
+ERROR: Immunization/SVC-Immunizaton-English: Immunization/SVC-Immunizaton-English: Immunization.protocolApplied[0]: Immunization.protocolApplied.doseNumber[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Immunization)
+WARNING: Immunization/SVC-Immunizaton-English: Immunization/SVC-Immunizaton-English: Immunization.protocolApplied[0].targetDisease[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Immunization/SVC-Immunizaton-English: Immunization/SVC-Immunizaton-English: Immunization: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization - listed in meta
+ERROR: Immunization/SVC-Immunizaton-English: Immunization/SVC-Immunizaton-English: Immunization.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Immunization.identifier:SVC_Identifier in profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization - the discriminator [system] does not have fixed value, binding or existence assertions
+INFORMATION: Immunization/SVC-Immunizaton-English: Immunization/SVC-Immunizaton-English: Immunization: Immunization.identifier:SVC_Identifier: Unable to check minimum required (Immunization.identifier) due to lack of slicing validation (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
+ERROR: Immunization/SVC-Immunizaton-English: Immunization/SVC-Immunizaton-English: Immunization.vaccineCode.coding[0].code: The value provided ('XM0CX4') is not in the value set https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccines (https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccines), and a code is required from this value set) (error message = Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated)
+ERROR: Immunization/SVC-Immunizaton-English: Immunization/SVC-Immunizaton-English: Immunization.protocolApplied[0]: Immunization.protocolApplied:protocolAppliedAuthority.doseNumber[x]: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
+ERROR: Immunization/SVC-Immunizaton-English: Immunization/SVC-Immunizaton-English: Immunization.protocolApplied[0]: Immunization.protocolApplied.doseNumber[x]: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
+== /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-French.json ==
+ERROR: Immunization.protocolApplied[0]: Unrecognised property '@doseNumber[x]'
+ERROR: Immunization.protocolApplied[0]: Unrecognised property '@seriesDoses[x]'
+INFORMATION: Immunization/SVC-Immunizaton-French: Immunization/SVC-Immunizaton-French: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+ERROR: Immunization/SVC-Immunizaton-French: Immunization/SVC-Immunizaton-French: Immunization.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+INFORMATION: Immunization/SVC-Immunizaton-French: Immunization/SVC-Immunizaton-French: Immunization.vaccineCode.coding[0]: Code System URI 'urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding' is unknown so the code cannot be validated
+ERROR: Immunization/SVC-Immunizaton-French: Immunization/SVC-Immunizaton-French: Immunization.patient: Unable to resolve resource 'SHC-Patient-French'
+ERROR: Immunization/SVC-Immunizaton-French: Immunization/SVC-Immunizaton-French: Immunization.protocolApplied[0]: Immunization.protocolApplied.doseNumber[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Immunization)
+WARNING: Immunization/SVC-Immunizaton-French: Immunization/SVC-Immunizaton-French: Immunization.protocolApplied[0].targetDisease[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Immunization/SVC-Immunizaton-French: Immunization/SVC-Immunizaton-French: Immunization: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization - listed in meta
+ERROR: Immunization/SVC-Immunizaton-French: Immunization/SVC-Immunizaton-French: Immunization.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Immunization.identifier:SVC_Identifier in profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization - the discriminator [system] does not have fixed value, binding or existence assertions
+INFORMATION: Immunization/SVC-Immunizaton-French: Immunization/SVC-Immunizaton-French: Immunization: Immunization.identifier:SVC_Identifier: Unable to check minimum required (Immunization.identifier) due to lack of slicing validation (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
+ERROR: Immunization/SVC-Immunizaton-French: Immunization/SVC-Immunizaton-French: Immunization.vaccineCode.coding[0].code: The value provided ('XM0CX4') is not in the value set https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccines (https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccines), and a code is required from this value set) (error message = Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated)
+ERROR: Immunization/SVC-Immunizaton-French: Immunization/SVC-Immunizaton-French: Immunization.protocolApplied[0]: Immunization.protocolApplied:protocolAppliedAuthority.doseNumber[x]: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
+ERROR: Immunization/SVC-Immunizaton-French: Immunization/SVC-Immunizaton-French: Immunization.protocolApplied[0]: Immunization.protocolApplied.doseNumber[x]: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
+== /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-Russian.json ==
+ERROR: Immunization.protocolApplied[0]: Unrecognised property '@doseNumber[x]'
+ERROR: Immunization.protocolApplied[0]: Unrecognised property '@seriesDoses[x]'
+INFORMATION: Immunization/SVC-Immunizaton-Russian: Immunization/SVC-Immunizaton-Russian: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+ERROR: Immunization/SVC-Immunizaton-Russian: Immunization/SVC-Immunizaton-Russian: Immunization.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+INFORMATION: Immunization/SVC-Immunizaton-Russian: Immunization/SVC-Immunizaton-Russian: Immunization.vaccineCode.coding[0]: Code System URI 'urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding' is unknown so the code cannot be validated
+ERROR: Immunization/SVC-Immunizaton-Russian: Immunization/SVC-Immunizaton-Russian: Immunization.patient: Unable to resolve resource 'SHC-Patient-Russian'
+ERROR: Immunization/SVC-Immunizaton-Russian: Immunization/SVC-Immunizaton-Russian: Immunization.protocolApplied[0]: Immunization.protocolApplied.doseNumber[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Immunization)
+WARNING: Immunization/SVC-Immunizaton-Russian: Immunization/SVC-Immunizaton-Russian: Immunization.protocolApplied[0].targetDisease[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Immunization/SVC-Immunizaton-Russian: Immunization/SVC-Immunizaton-Russian: Immunization: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization - listed in meta
+ERROR: Immunization/SVC-Immunizaton-Russian: Immunization/SVC-Immunizaton-Russian: Immunization.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Immunization.identifier:SVC_Identifier in profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization - the discriminator [system] does not have fixed value, binding or existence assertions
+INFORMATION: Immunization/SVC-Immunizaton-Russian: Immunization/SVC-Immunizaton-Russian: Immunization: Immunization.identifier:SVC_Identifier: Unable to check minimum required (Immunization.identifier) due to lack of slicing validation (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
+ERROR: Immunization/SVC-Immunizaton-Russian: Immunization/SVC-Immunizaton-Russian: Immunization.vaccineCode.coding[0].code: The value provided ('XM0CX4') is not in the value set https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccines (https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccines), and a code is required from this value set) (error message = Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated)
+ERROR: Immunization/SVC-Immunizaton-Russian: Immunization/SVC-Immunizaton-Russian: Immunization.protocolApplied[0]: Immunization.protocolApplied:protocolAppliedAuthority.doseNumber[x]: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
+ERROR: Immunization/SVC-Immunizaton-Russian: Immunization/SVC-Immunizaton-Russian: Immunization.protocolApplied[0]: Immunization.protocolApplied.doseNumber[x]: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
+== /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-Spanish.json ==
+ERROR: Immunization.protocolApplied[0]: Unrecognised property '@doseNumber[x]'
+ERROR: Immunization.protocolApplied[0]: Unrecognised property '@seriesDoses[x]'
+INFORMATION: Immunization/SVC-Immunizaton-Spanish: Immunization/SVC-Immunizaton-Spanish: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
+ERROR: Immunization/SVC-Immunizaton-Spanish: Immunization/SVC-Immunizaton-Spanish: Immunization.identifier[0]: Identifier.system must be an absolute reference, not a local reference
+INFORMATION: Immunization/SVC-Immunizaton-Spanish: Immunization/SVC-Immunizaton-Spanish: Immunization.vaccineCode.coding[0]: Code System URI 'urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding' is unknown so the code cannot be validated
+ERROR: Immunization/SVC-Immunizaton-Spanish: Immunization/SVC-Immunizaton-Spanish: Immunization.patient: Unable to resolve resource 'SHC-Patient-Spanish'
+ERROR: Immunization/SVC-Immunizaton-Spanish: Immunization/SVC-Immunizaton-Spanish: Immunization.protocolApplied[0]: Immunization.protocolApplied.doseNumber[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Immunization)
+WARNING: Immunization/SVC-Immunizaton-Spanish: Immunization/SVC-Immunizaton-Spanish: Immunization.protocolApplied[0].targetDisease[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+INFORMATION: Immunization/SVC-Immunizaton-Spanish: Immunization/SVC-Immunizaton-Spanish: Immunization: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization - listed in meta
+ERROR: Immunization/SVC-Immunizaton-Spanish: Immunization/SVC-Immunizaton-Spanish: Immunization.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([system]) for slice Immunization.identifier:SVC_Identifier in profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization - the discriminator [system] does not have fixed value, binding or existence assertions
+INFORMATION: Immunization/SVC-Immunizaton-Spanish: Immunization/SVC-Immunizaton-Spanish: Immunization: Immunization.identifier:SVC_Identifier: Unable to check minimum required (Immunization.identifier) due to lack of slicing validation (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
+ERROR: Immunization/SVC-Immunizaton-Spanish: Immunization/SVC-Immunizaton-Spanish: Immunization.vaccineCode.coding[0].code: The value provided ('XM0CX4') is not in the value set https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccines (https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-svc-vaccines), and a code is required from this value set) (error message = Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated)
+ERROR: Immunization/SVC-Immunizaton-Spanish: Immunization/SVC-Immunizaton-Spanish: Immunization.protocolApplied[0]: Immunization.protocolApplied:protocolAppliedAuthority.doseNumber[x]: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
+ERROR: Immunization/SVC-Immunizaton-Spanish: Immunization/SVC-Immunizaton-Spanish: Immunization.protocolApplied[0]: Immunization.protocolApplied.doseNumber[x]: minimum required = 1, but only found 0 (from https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization)
 == /github/workspace/fsh-generated/resources/OperationDefinition-SHC-QuestionnaireReponse-generateHealthCertificate.json ==
 INFORMATION: OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate: OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate: OperationDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/OperationDefinition
 WARNING: OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate: OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate: OperationDefinition: opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' failed
-== /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Example.json ==
-INFORMATION: Patient/SHC-Patient-Example: Patient/SHC-Patient-Example: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
-INFORMATION: Patient/SHC-Patient-Example: Patient/SHC-Patient-Example: Patient: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient - listed in meta
+== /github/workspace/fsh-generated/resources/Organization-SHC-Organization-Arabic.json ==
+INFORMATION: Organization/SHC-Organization-Arabic: Organization/SHC-Organization-Arabic: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Organization/SHC-Organization-Arabic: Organization/SHC-Organization-Arabic: Organization: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization - listed in meta
+== /github/workspace/fsh-generated/resources/Organization-SHC-Organization-Chinese.json ==
+INFORMATION: Organization/SHC-Organization-Chinese: Organization/SHC-Organization-Chinese: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Organization/SHC-Organization-Chinese: Organization/SHC-Organization-Chinese: Organization: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization - listed in meta
+== /github/workspace/fsh-generated/resources/Organization-SHC-Organization-English.json ==
+INFORMATION: Organization/SHC-Organization-English: Organization/SHC-Organization-English: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Organization/SHC-Organization-English: Organization/SHC-Organization-English: Organization: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization - listed in meta
+== /github/workspace/fsh-generated/resources/Organization-SHC-Organization-French.json ==
+INFORMATION: Organization/SHC-Organization-French: Organization/SHC-Organization-French: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Organization/SHC-Organization-French: Organization/SHC-Organization-French: Organization: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization - listed in meta
+== /github/workspace/fsh-generated/resources/Organization-SHC-Organization-Russian.json ==
+INFORMATION: Organization/SHC-Organization-Russian: Organization/SHC-Organization-Russian: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Organization/SHC-Organization-Russian: Organization/SHC-Organization-Russian: Organization: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization - listed in meta
+== /github/workspace/fsh-generated/resources/Organization-SHC-Organization-Spanish.json ==
+INFORMATION: Organization/SHC-Organization-Spanish: Organization/SHC-Organization-Spanish: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Organization/SHC-Organization-Spanish: Organization/SHC-Organization-Spanish: Organization: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization - listed in meta
+== /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Arabic.json ==
+INFORMATION: Patient/SHC-Patient-Arabic: Patient/SHC-Patient-Arabic: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Patient/SHC-Patient-Arabic: Patient/SHC-Patient-Arabic: Patient: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient - listed in meta
+== /github/workspace/fsh-generated/resources/Patient-SHC-Patient-English.json ==
+INFORMATION: Patient/SHC-Patient-English: Patient/SHC-Patient-English: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Patient/SHC-Patient-English: Patient/SHC-Patient-English: Patient: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient - listed in meta
+== /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Example-Chinese.json ==
+INFORMATION: Patient/SHC-Patient-Example-Chinese: Patient/SHC-Patient-Example-Chinese: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Patient/SHC-Patient-Example-Chinese: Patient/SHC-Patient-Example-Chinese: Patient: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient - listed in meta
+== /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Example-French.json ==
+INFORMATION: Patient/SHC-Patient-Example-French: Patient/SHC-Patient-Example-French: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Patient/SHC-Patient-Example-French: Patient/SHC-Patient-Example-French: Patient: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient - listed in meta
+== /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Example-Russian.json ==
+INFORMATION: Patient/SHC-Patient-Example-Russian: Patient/SHC-Patient-Example-Russian: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Patient/SHC-Patient-Example-Russian: Patient/SHC-Patient-Example-Russian: Patient: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient - listed in meta
+== /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Example-Spanish.json ==
+INFORMATION: Patient/SHC-Patient-Example-Spanish: Patient/SHC-Patient-Example-Spanish: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
+INFORMATION: Patient/SHC-Patient-Example-Spanish: Patient/SHC-Patient-Example-Spanish: Patient: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient - listed in meta
 == /github/workspace/fsh-generated/resources/Questionnaire-SVC-Questionnaire.json ==
 ERROR: Questionnaire.where(url = 'http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-SVC-Questionnaire.json - the canonical URL (http://fhir.org/guides/who/svc/Questionnaire/SVC-Questionnaire) does not match the URL (http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire)
 INFORMATION: Questionnaire/SVC-Questionnaire: Questionnaire/SVC-Questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
@@ -280,7 +456,6 @@ ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-shc-documen
 == /github/workspace/fsh-generated/resources/StructureDefinition-shc-organization.json ==
 ERROR: StructureDefinition.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-shc-organization.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/shc-organization) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization)
 INFORMATION: StructureDefinition/shc-organization: StructureDefinition/shc-organization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-WARNING: StructureDefinition.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization'): The Implementation Guide contains no examples for this profile
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-shc-organization: URL Mismatch http://fhir.org/guides/who/svc/StructureDefinition/shc-organization vs https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization
 == /github/workspace/fsh-generated/resources/StructureDefinition-shc-patient.json ==
 ERROR: StructureDefinition.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-shc-patient.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/shc-patient) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient)
@@ -475,4 +650,4 @@ ERROR: StructureMap/svc-map-qr-bundle: StructureMap/svc-map-qr-bundle: Structure
 ERROR: /github/workspace/input/resources/maps/svc-map-qr-bundle: URL Mismatch http://fhir.org/guides/who/svc/StructureMap/svc-map-qr-bundle vs http://who-int.github.io/svc/StructureMap/svc-map-qr-bundle
 == /github/workspace/input/svc.xml ==
 INFORMATION: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-WARNING: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide.definition.resource[30].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide.definition.resource[39].name: value should not start or finish with whitespace

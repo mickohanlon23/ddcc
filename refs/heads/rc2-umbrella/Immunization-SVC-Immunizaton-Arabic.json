@@ -1,0 +1,57 @@
+{
+  "resourceType": "Immunization",
+  "id": "SVC-Immunizaton-Arabic",
+  "meta": {
+    "profile": [
+      "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 123</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding XM0CX4}\">XM0CX4</span></p><p><b>patient</b>: <a href=\"Patient-SHC-Patient-Arabic.html\">Generated Summary: فيليكس القط; birthDate: 2000-01-02</a></p><p><b>occurrence</b>: 2021-02-02</p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"Organization-SHC-Organization-Arabic.html\">Generated Summary: name: مستشفى حكومي</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td></tr><tr><td>*</td><td><a href=\"Organization-SHC-Organization-Arabic.html\">Generated Summary: name: مستشفى حكومي</a></td><td><span title=\"Codes: \">RA01.0</span></td></tr></table></div>"
+  },
+  "identifier": [
+    {
+      "system": "test.com",
+      "value": "123"
+    }
+  ],
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding",
+        "code": "XM0CX4"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/SHC-Patient-Arabic"
+  },
+  "occurrenceDateTime": "2021-02-02",
+  "lotNumber": "123",
+  "expirationDate": "2021-06-30",
+  "performer": [
+    {
+      "actor": {
+        "reference": "Organization/SHC-Organization-Arabic"
+      }
+    }
+  ],
+  "protocolApplied": [
+    {
+      "authority": {
+        "reference": "Organization/SHC-Organization-Arabic"
+      },
+      "targetDisease": [
+        {
+          "coding": [
+            {
+              "code": "RA01.0"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

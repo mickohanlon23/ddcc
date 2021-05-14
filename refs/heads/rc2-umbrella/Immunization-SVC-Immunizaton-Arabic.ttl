@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/Immunization/SVC-Immunizaton-Arabic> a fhir:Immunization;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SVC-Immunizaton-Arabic"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization";
+       fhir:index 0;
+       fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 123</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding XM0CX4}\">XM0CX4</span></p><p><b>patient</b>: <a href=\"Patient-SHC-Patient-Arabic.html\">Generated Summary: فيليكس القط; birthDate: 2000-01-02</a></p><p><b>occurrence</b>: 2021-02-02</p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"Organization-SHC-Organization-Arabic.html\">Generated Summary: name: مستشفى حكومي</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td></tr><tr><td>*</td><td><a href=\"Organization-SHC-Organization-Arabic.html\">Generated Summary: name: مستشفى حكومي</a></td><td><span title=\"Codes: \">RA01.0</span></td></tr></table></div>"
+  ];
+  fhir:Immunization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "test.com" ];
+     fhir:Identifier.value [ fhir:value "123" ]
+  ];
+  fhir:Immunization.status [ fhir:value "completed"];
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding" ];
+       fhir:Coding.code [ fhir:value "XM0CX4" ]
+     ]
+  ];
+  fhir:Immunization.patient [
+     fhir:link <http://fhir.org/guides/who/svc/Patient/SHC-Patient-Arabic>;
+     fhir:Reference.reference [ fhir:value "Patient/SHC-Patient-Arabic" ]
+  ];
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2021-02-02"^^xsd:date];
+  fhir:Immunization.lotNumber [ fhir:value "123"];
+  fhir:Immunization.expirationDate [ fhir:value "2021-06-30"^^xsd:date];
+  fhir:Immunization.performer [
+     fhir:index 0;
+     fhir:Immunization.performer.actor [
+       fhir:link <http://fhir.org/guides/who/svc/Organization/SHC-Organization-Arabic>;
+       fhir:Reference.reference [ fhir:value "Organization/SHC-Organization-Arabic" ]
+     ]
+  ];
+  fhir:Immunization.protocolApplied [
+     fhir:index 0;
+     fhir:Immunization.protocolApplied.authority [
+       fhir:link <http://fhir.org/guides/who/svc/Organization/SHC-Organization-Arabic>;
+       fhir:Reference.reference [ fhir:value "Organization/SHC-Organization-Arabic" ]
+     ];
+     fhir:Immunization.protocolApplied.targetDisease [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.code [ fhir:value "RA01.0" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/Immunization/SVC-Immunizaton-Arabic.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
