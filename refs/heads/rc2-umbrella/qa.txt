@@ -1,11 +1,11 @@
 ﻿SVC_RC2 : Validation Results
 =========================================
 
-err = 250, warn = 122, info = 14
+err = 249, warn = 122, info = 14
 IG Publisher Version: 1.1.72
-Generated Tue May 18 15:11:22 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = http://fhir.org/guides/who/svc)
+Generated Tue May 18 19:09:18 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = http://fhir.org/guides/who/svc)
 
- Build Errors : 64 / 23 / 0
+ Build Errors : 63 / 23 / 0
  /github/workspace/fsh-generated/resources/Basic-svc-basic-qrcode-example : 1 / 1 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-SHC-Category-CodeSystem : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-SHC-QR-Category-Usage-CodeSystem : 2 / 0 / 1
@@ -15,7 +15,7 @@ Generated Tue May 18 15:11:22 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#
  /github/workspace/fsh-generated/resources/ConceptMap-who-svc-map-icd11-sct-vaccines : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/GraphDefinition-svc-graph : 0 / 1 / 2
  /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-Arabic : 8 / 1 / 4
- /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-Chinese : 9 / 1 / 4
+ /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-Chinese : 8 / 1 / 4
  /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-English : 8 / 1 / 4
  /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-French : 9 / 1 / 4
  /github/workspace/fsh-generated/resources/Immunization-SVC-Immunizaton-Russian : 9 / 1 / 4
@@ -128,7 +128,6 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/SHC-Patient-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Patient/SHC-Patient-Example-Spanish.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/SHC-Patient-Example-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Immunization-SVC-Immunizaton-Chinese.html#/html/body/div/div/div/div/div/div/p/a at Line 225, column 286: The link 'SHC-Patient-Chinese' for "SHC-Patient-Chinese" cannot be resolved
 ERROR: /github/workspace/output/Immunization-SVC-Immunizaton-French.html#/html/body/div/div/div/div/div/div/p/a at Line 225, column 286: The link 'SHC-Patient-French' for "SHC-Patient-French" cannot be resolved
 ERROR: /github/workspace/output/Immunization-SVC-Immunizaton-Russian.html#/html/body/div/div/div/div/div/div/p/a at Line 225, column 286: The link 'SHC-Patient-Russian' for "SHC-Patient-Russian" cannot be resolved
 ERROR: /github/workspace/output/Immunization-SVC-Immunizaton-Spanish.html#/html/body/div/div/div/div/div/div/p/a at Line 225, column 286: The link 'SHC-Patient-Spanish' for "SHC-Patient-Spanish" cannot be resolved
@@ -213,7 +212,6 @@ ERROR: Immunization.protocolApplied[0]: Unrecognised property '@seriesDoses[x]'
 INFORMATION: Immunization/SVC-Immunizaton-Chinese: Immunization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Immunization
 ERROR: Immunization/SVC-Immunizaton-Chinese: Immunization.identifier[0]: Identifier.system must be an absolute reference, not a local reference
 INFORMATION: Immunization/SVC-Immunizaton-Chinese: Immunization.vaccineCode.coding[0]: Code System URI 'urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding' is unknown so the code cannot be validated
-ERROR: Immunization/SVC-Immunizaton-Chinese: Immunization.patient: Unable to resolve resource 'SHC-Patient-Chinese'
 ERROR: Immunization/SVC-Immunizaton-Chinese: Immunization.protocolApplied[0]: Immunization.protocolApplied.doseNumber[x]: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Immunization)
 WARNING: Immunization/SVC-Immunizaton-Chinese: Immunization.protocolApplied[0].targetDisease[0].coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: Immunization/SVC-Immunizaton-Chinese: Immunization: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization - listed in meta
