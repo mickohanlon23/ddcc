@@ -1,0 +1,109 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/Parameters/SVC-TX-SHE-Parameters-1> a fhir:Parameters;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "SVC-TX-SHE-Parameters-1"];
+  fhir:Parameters.parameter [
+     fhir:index 0;
+     fhir:Parameters.parameter.name [ fhir:value "response" ];
+     fhir:Parameters.parameter.resource [
+       a fhir:QuestionnaireResponse;
+       fhir:Resource.id [ fhir:value "SVC-TX-SHE-QuestionnaireResponse-1" ];
+       fhir:Resource.meta [
+         fhir:Meta.profile [
+           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-questionnaireresponse";
+           fhir:index 0;
+           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-questionnaireresponse>
+         ]
+       ];
+       fhir:QuestionnaireResponse.questionnaire [
+         fhir:value "http://who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire";
+         fhir:link <http://who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire>
+       ];
+       fhir:QuestionnaireResponse.status [ fhir:value "completed" ];
+       fhir:QuestionnaireResponse.subject [
+         fhir:Reference.reference [ fhir:value "SVC_Patient_Example" ]
+       ];
+       fhir:QuestionnaireResponse.authored [ fhir:value "2021-04-01"^^xsd:date ];
+       fhir:QuestionnaireResponse.item [
+         fhir:index 0;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "version" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "RC-2-draft" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "name" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "Felix Cat" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "birthDate" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2003-03-03"^^xsd:date ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "vaccinecode" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueCoding [
+             fhir:Coding.system [ fhir:value "http://id.who.int/icd11/mms" ];
+             fhir:Coding.code [ fhir:value "XM1NL1" ]
+           ]
+         ]
+       ], [
+         fhir:index 4;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "lot" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "ER8732" ]
+         ]
+       ], [
+         fhir:index 5;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "expiry" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueDate [ fhir:value "2021-06-30"^^xsd:date ]
+         ]
+       ], [
+         fhir:index 6;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "paperid" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "bMlJkAt0V92RYhhG3fNt" ]
+         ]
+       ], [
+         fhir:index 7;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "pha" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "dPD2PfwzBQyphcjeUiAdRP" ]
+         ]
+       ], [
+         fhir:index 8;
+         fhir:QuestionnaireResponse.item.linkId [ fhir:value "hw" ];
+         fhir:QuestionnaireResponse.item.answer [
+           fhir:index 0;
+           fhir:QuestionnaireResponse.item.answer.valueString [ fhir:value "dPD2PfwzBQyphcjeUiAdRP" ]
+         ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://fhir.org/guides/who/svc/Parameters/SVC-TX-SHE-Parameters-1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

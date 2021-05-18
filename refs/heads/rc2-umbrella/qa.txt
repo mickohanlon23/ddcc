@@ -1,12 +1,13 @@
 ﻿SVC_RC2 : Validation Results
 =========================================
 
-err = 249, warn = 122, info = 14
+err = 259, warn = 123, info = 20
 IG Publisher Version: 1.1.72
-Generated Tue May 18 19:09:18 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = http://fhir.org/guides/who/svc)
+Generated Tue May 18 23:55:06 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#0.2.0 (canonical = http://fhir.org/guides/who/svc)
 
- Build Errors : 63 / 23 / 0
+ Build Errors : 65 / 24 / 0
  /github/workspace/fsh-generated/resources/Basic-svc-basic-qrcode-example : 1 / 1 / 2
+ /github/workspace/fsh-generated/resources/Bundle-SVC-TX-SHE-bundle-example-1 : 5 / 0 / 6
  /github/workspace/fsh-generated/resources/CodeSystem-SHC-Category-CodeSystem : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-SHC-QR-Category-Usage-CodeSystem : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-SHC-QR-Format-CodeSystem : 2 / 0 / 1
@@ -27,6 +28,7 @@ Generated Tue May 18 19:09:18 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#
  /github/workspace/fsh-generated/resources/Organization-SHC-Organization-French : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Organization-SHC-Organization-Russian : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Organization-SHC-Organization-Spanish : 0 / 0 / 2
+ /github/workspace/fsh-generated/resources/Parameters-SVC-TX-SHE-Parameters-1 : 3 / 0 / 5
  /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Arabic : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Patient-SHC-Patient-English : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Example-Chinese : 0 / 0 / 2
@@ -34,7 +36,7 @@ Generated Tue May 18 19:09:18 UTC 2021. FHIR version 4.0.1 for fhir.who.svc-rc2#
  /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Example-Russian : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Example-Spanish : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Questionnaire-SVC-Questionnaire : 2 / 2 / 2
- /github/workspace/fsh-generated/resources/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example : 3 / 0 / 2
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example : 3 / 0 / 4
  /github/workspace/fsh-generated/resources/StructureDefinition-SVC-Basic-QRCode : 2 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-SVC-Core-Data-Set : 3 / 59 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-SVC-QRCode : 2 / 2 / 1
@@ -83,6 +85,8 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/SHC-Organization-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Parameters/SVC-TX-SHE-Parameters-1.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/SVC-TX-SHE-Parameters-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/shc-binary-qr.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/SHC-Organization-French.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/SHC-Organization-French.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -131,10 +135,11 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: /github/workspace/output/Immunization-SVC-Immunizaton-French.html#/html/body/div/div/div/div/div/div/p/a at Line 225, column 286: The link 'SHC-Patient-French' for "SHC-Patient-French" cannot be resolved
 ERROR: /github/workspace/output/Immunization-SVC-Immunizaton-Russian.html#/html/body/div/div/div/div/div/div/p/a at Line 225, column 286: The link 'SHC-Patient-Russian' for "SHC-Patient-Russian" cannot be resolved
 ERROR: /github/workspace/output/Immunization-SVC-Immunizaton-Spanish.html#/html/body/div/div/div/div/div/div/p/a at Line 225, column 286: The link 'SHC-Patient-Spanish' for "SHC-Patient-Spanish" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-SVC-Questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 227, column 478: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-SVC-Questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 228, column 482: The image source 'icon-q-coding.png' cannot be resolved
-ERROR: /github/workspace/output/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 225, column 104: The link 'http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire' for "http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire" cannot be resolved
-ERROR: /github/workspace/output/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 225, column 299: The link 'SVC_Patient_Example' for "SVC_Patient_Example" cannot be resolved
+ERROR: /github/workspace/output/Parameters-SVC-TX-SHE-Parameters-1.html#/html/body/div/div/div/div/div/div/table/tr/td/p/a at Line 225, column 458: The link 'SVC_Patient_Example' for "SVC_Patient_Example" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-SVC-Questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 229, column 478: The image source 'icon-q-coding.png' cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-SVC-Questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 230, column 482: The image source 'icon-q-coding.png' cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-SVC-Questionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 231, column 478: The image source 'icon-q-coding.png' cannot be resolved
+ERROR: /github/workspace/output/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.html#/html/body/div/div/div/div/div/div/p/a at Line 225, column 295: The link 'SVC_Patient_Example' for "SVC_Patient_Example" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-shc-organization.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 245, column 164: The link 'actors.html#who-pkd' for "WHO Public Key Directory" cannot be resolved (valid targets: 43 targets)
 ERROR: /github/workspace/output/StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 247, column 129: The link 'StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner' for "identifier.assigner" cannot be resolved (valid targets: 73 targets)
 ERROR: /github/workspace/output/StructureDefinition-shc-patient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 247, column 383: The link 'actors.html#who-pkd' for "WHO Public Key Directory" cannot be resolved (valid targets: 43 targets)
@@ -166,6 +171,18 @@ INFORMATION: Basic/svc-basic-qrcode-example: Basic: Validate resource against pr
 ERROR: Basic/svc-basic-qrcode-example: Basic: The extension https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-QRCode is not allowed to be used at this point (allowed = e:SVCBasicQRCode; this element is [[Basic])
 WARNING: Basic/svc-basic-qrcode-example: Basic.code.coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: Basic/svc-basic-qrcode-example: Basic: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-Basic-QRCode - listed in meta
+== /github/workspace/fsh-generated/resources/Bundle-SVC-TX-SHE-bundle-example-1.json ==
+INFORMATION: Bundle/SVC-TX-SHE-bundle-example-1: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
+INFORMATION: Bundle/SVC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Parameters
+INFORMATION: Bundle/SVC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse): Validate resource against profile http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
+ERROR: Bundle/SVC-TX-SHE-bundle-example-1: Bundle.entry[0]: Bundle entry missing fullUrl
+ERROR: Bundle/SVC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/SVC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).subject: Unable to resolve resource 'SVC_Patient_Example'
+INFORMATION: Bundle/SVC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[3].answer[0].value.ofType(Coding): Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+INFORMATION: Bundle/SVC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[0].answer[0]: Cannot validate options because no option or options are provided
+ERROR: Bundle/SVC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse): No response answer found for required item 'status'
+ERROR: Bundle/SVC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse): No response answer found for required item 'protocol'
+INFORMATION: Bundle/SVC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse): Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-questionnaireresponse - listed in meta
 == /github/workspace/fsh-generated/resources/CodeSystem-SHC-Category-CodeSystem.json ==
 ERROR: CodeSystem.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-Category-CodeSystem'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-SHC-Category-CodeSystem.json - the canonical URL (http://fhir.org/guides/who/svc/CodeSystem/SHC-Category-CodeSystem) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-Category-CodeSystem)
 INFORMATION: CodeSystem/SHC-Category-CodeSystem: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
@@ -300,6 +317,15 @@ INFORMATION: Organization/SHC-Organization-Russian: Organization: Validate resou
 == /github/workspace/fsh-generated/resources/Organization-SHC-Organization-Spanish.json ==
 INFORMATION: Organization/SHC-Organization-Spanish: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
 INFORMATION: Organization/SHC-Organization-Spanish: Organization: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization - listed in meta
+== /github/workspace/fsh-generated/resources/Parameters-SVC-TX-SHE-Parameters-1.json ==
+INFORMATION: Parameters/SVC-TX-SHE-Parameters-1: Parameters: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Parameters
+INFORMATION: Parameters/SVC-TX-SHE-Parameters-1: Parameters.parameter[0].resource.ofType(QuestionnaireResponse): Validate resource against profile http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
+ERROR: Parameters/SVC-TX-SHE-Parameters-1: Parameters.parameter[0].resource.ofType(QuestionnaireResponse).subject: Unable to resolve resource 'SVC_Patient_Example'
+INFORMATION: Parameters/SVC-TX-SHE-Parameters-1: Parameters.parameter[0].resource.ofType(QuestionnaireResponse).item[3].answer[0].value.ofType(Coding): Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+INFORMATION: Parameters/SVC-TX-SHE-Parameters-1: Parameters.parameter[0].resource.ofType(QuestionnaireResponse).item[0].answer[0]: Cannot validate options because no option or options are provided
+ERROR: Parameters/SVC-TX-SHE-Parameters-1: Parameters.parameter[0].resource.ofType(QuestionnaireResponse): No response answer found for required item 'status'
+ERROR: Parameters/SVC-TX-SHE-Parameters-1: Parameters.parameter[0].resource.ofType(QuestionnaireResponse): No response answer found for required item 'protocol'
+INFORMATION: Parameters/SVC-TX-SHE-Parameters-1: Parameters.parameter[0].resource.ofType(QuestionnaireResponse): Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-questionnaireresponse - listed in meta
 == /github/workspace/fsh-generated/resources/Patient-SHC-Patient-Arabic.json ==
 INFORMATION: Patient/SHC-Patient-Arabic: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
 INFORMATION: Patient/SHC-Patient-Arabic: Patient: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient - listed in meta
@@ -319,17 +345,19 @@ INFORMATION: Patient/SHC-Patient-Example-Russian: Patient: Validate resource aga
 INFORMATION: Patient/SHC-Patient-Example-Spanish: Patient: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
 INFORMATION: Patient/SHC-Patient-Example-Spanish: Patient: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient - listed in meta
 == /github/workspace/fsh-generated/resources/Questionnaire-SVC-Questionnaire.json ==
-ERROR: Questionnaire.where(url = 'http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-SVC-Questionnaire.json - the canonical URL (http://fhir.org/guides/who/svc/Questionnaire/SVC-Questionnaire) does not match the URL (http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire)
+ERROR: Questionnaire.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-SVC-Questionnaire.json - the canonical URL (http://fhir.org/guides/who/svc/Questionnaire/SVC-Questionnaire) does not match the URL (http://who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire)
 INFORMATION: Questionnaire/SVC-Questionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
 WARNING: Questionnaire/SVC-Questionnaire: Questionnaire: que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 WARNING: Questionnaire/SVC-Questionnaire: Questionnaire.title: value should not start or finish with whitespace
 INFORMATION: Questionnaire/SVC-Questionnaire: Questionnaire: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-questionnaire - listed in meta
-ERROR: /github/workspace/fsh-generated/resources/Questionnaire-SVC-Questionnaire: URL Mismatch http://fhir.org/guides/who/svc/Questionnaire/SVC-Questionnaire vs http:OA//who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire
+ERROR: /github/workspace/fsh-generated/resources/Questionnaire-SVC-Questionnaire: URL Mismatch http://fhir.org/guides/who/svc/Questionnaire/SVC-Questionnaire vs http://who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire
 == /github/workspace/fsh-generated/resources/QuestionnaireResponse-SVC-QR-QuestionnaireResponse-Example.json ==
-ERROR: QuestionnaireResponse.item[1].answer[0]: Unrecognised property '@valueCoding'
 INFORMATION: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
 ERROR: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse.subject: Unable to resolve resource 'SVC_Patient_Example'
+INFORMATION: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse.item[3].answer[0].value.ofType(Coding): Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse.item[0].answer[0]: Cannot validate options because no option or options are provided
 ERROR: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse: No response answer found for required item 'status'
+ERROR: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse: No response answer found for required item 'protocol'
 INFORMATION: QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example: QuestionnaireResponse: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-questionnaireresponse - listed in meta
 == /github/workspace/fsh-generated/resources/StructureDefinition-SVC-Basic-QRCode.json ==
 ERROR: StructureDefinition.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-Basic-QRCode'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-SVC-Basic-QRCode.json - the canonical URL (http://fhir.org/guides/who/svc/StructureDefinition/SVC-Basic-QRCode) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/SVC-Basic-QRCode)
@@ -653,4 +681,4 @@ ERROR: StructureMap/svc-map-qr-bundle: StructureMap.group[5].rule[0].rule[0].tar
 ERROR: /github/workspace/input/resources/maps/svc-map-qr-bundle: URL Mismatch http://fhir.org/guides/who/svc/StructureMap/svc-map-qr-bundle vs http://who-int.github.io/svc/StructureMap/svc-map-qr-bundle
 == /github/workspace/input/svc.xml ==
 INFORMATION: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-WARNING: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide.definition.resource[39].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/fhir.who.svc-rc2: ImplementationGuide.definition.resource[41].name: value should not start or finish with whitespace
