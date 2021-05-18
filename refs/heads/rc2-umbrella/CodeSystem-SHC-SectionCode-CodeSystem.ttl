@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "SHC-SectionCode-CodeSystem"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-SectionCode-CodeSystem defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">qrdoc<a name=\"SHC-SectionCode-CodeSystem-qrdoc\"> </a></td><td>QR Code Document</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-SectionCode-CodeSystem defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">qrdoc<a name=\"SHC-SectionCode-CodeSystem-qrdoc\"> </a></td><td>QR Code Document</td></tr><tr><td style=\"white-space:nowrap\">uri<a name=\"SHC-SectionCode-CodeSystem-uri\"> </a></td><td>Smart Health Certificate URI</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/SHC-SectionCode-CodeSystem"];
   fhir:CodeSystem.version [ fhir:value "0.2.0"];
   fhir:CodeSystem.name [ fhir:value "SHC_SectionCode_CodeSystem"];
   fhir:CodeSystem.title [ fhir:value "SHC QR SectionCode Usage Codes"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-05-14T00:11:30+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-05-18T12:40:36+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -29,11 +29,15 @@
   ];
   fhir:CodeSystem.description [ fhir:value "Section Codes for Smart Health Certificates"];
   fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "1"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.count [ fhir:value "2"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "qrdoc" ];
      fhir:CodeSystem.concept.display [ fhir:value "QR Code Document" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "uri" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Smart Health Certificate URI" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

@@ -52,7 +52,7 @@ group Decode_QR_Provenance(source qr : QR, target bundle : SVC_Bundle, target pa
   <version value="0.2.0"/>
   <name value="svc-map-qr-uvci-bundle"/>
   <status value="draft"/>
-  <date value="2021-05-14T00:11:30+00:00"/>
+  <date value="2021-05-18T12:40:36+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -108,6 +108,7 @@ group Decode_QR_Provenance(source qr : QR, target bundle : SVC_Bundle, target pa
         <context value="qr"/>
       </source>
       <target>
+        <contextType value="variable"/>
         <variable value="patient"/>
         <transform value="create"/>
         <parameter>
@@ -115,6 +116,7 @@ group Decode_QR_Provenance(source qr : QR, target bundle : SVC_Bundle, target pa
         </parameter>
       </target>
       <target>
+        <contextType value="variable"/>
         <variable value="organization"/>
         <transform value="create"/>
         <parameter>

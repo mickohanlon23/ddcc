@@ -6,9 +6,7 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>QuestionnaireReponse Generate Health Certificate</h2><p>OPERATION: QuestionnaireReponse Generate Health Certificate</p><p>The official URL for this operation definition is: </p><pre>http://fhir.org/guides/who/svc/OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate</pre><div><p>Generate one or more signed QR Codes based on a <a href="StructureDefinition-shc-questionnaireresponse.html">SHC QuestionnaireResponse</a></p>
 </div><p>URL: [base]/QuestionnaireResponse/$generateHealthCertificate</p><p>URL: [base]/QuestionnaireResponse/[id]/$generateHealthCertificate</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>response</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a></td><td/><td><div><p>The questionnaire response resource used to generate the QR code.</p>
 </div></td></tr><tr><td>IN</td><td>id</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></td><td/><td><div><p>The questionnaire response resource id used to generate the QR code.</p>
-</div></td></tr><tr><td>OUT</td><td>qr-code</td><td>1..*</td><td><a href="http://hl7.org/fhir/R4/binary.html">Binary</a></td><td/><td><div><p>The QR Code PNG that was generated.</p>
-</div></td></tr><tr><td>OUT</td><td>qr-content</td><td>1..*</td><td><a href="http://hl7.org/fhir/R4/binary.html">Binary</a></td><td/><td><div><p>The signed QR Code content that was used to generate the image.  QR Code content must be listed in the same order as the cooresponding QR Code PNG</p>
-</div></td></tr><tr><td>OUT</td><td>certificate</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#uri">uri</a></td><td/><td><div><p>The URI of the location of the certificate when the available.</p>
+</div></td></tr><tr><td>OUT</td><td>shc</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td><td/><td><div><p>The Smart Health Certificate, including any QR codes, that was created under the <a href="transactions.html#submit-health-event-expected-actions">Generate Health Certificate</a> expected actions</p>
 </div></td></tr></table></div>
   </text>
   <url value="http://fhir.org/guides/who/svc/OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate"/>
@@ -48,27 +46,11 @@
     <type value="id"/>
   </parameter>
   <parameter>
-    <name value="qr-code"/>
-    <use value="out"/>
-    <min value="1"/>
-    <max value="*"/>
-    <documentation value="The QR Code PNG that was generated."/>
-    <type value="Binary"/>
-  </parameter>
-  <parameter>
-    <name value="qr-content"/>
-    <use value="out"/>
-    <min value="1"/>
-    <max value="*"/>
-    <documentation value="The signed QR Code content that was used to generate the image.  QR Code content must be listed in the same order as the cooresponding QR Code PNG"/>
-    <type value="Binary"/>
-  </parameter>
-  <parameter>
-    <name value="certificate"/>
+    <name value="shc"/>
     <use value="out"/>
     <min value="0"/>
     <max value="1"/>
-    <documentation value="The URI of the location of the certificate when the available."/>
-    <type value="uri"/>
+    <documentation value="The Smart Health Certificate, including any QR codes, that was created under the [Generate Health Certificate](transactions.html#submit-health-event-expected-actions) expected actions"/>
+    <type value="Bundle"/>
   </parameter>
 </OperationDefinition>
