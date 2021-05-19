@@ -17,11 +17,11 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 123</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding XM0CX4}\">XM0CX4</span></p><p><b>patient</b>: <a href=\"Patient-SHC-Patient-English.html\">Generated Summary: Felix Cat; birthDate: 2000-01-02</a></p><p><b>occurrence</b>: 2021-02-02</p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"Organization-SHC-Organization-English.html\">Generated Summary: name: Government Hospital</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td></tr><tr><td>*</td><td><a href=\"Organization-SHC-Organization-English.html\">Generated Summary: name: Government Hospital</a></td><td><span title=\"Codes: \">RA01.0</span></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 123</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding XM0CX4}\">XM0CX4</span></p><p><b>patient</b>: <a href=\"Patient-SHC-Patient-English.html\">Generated Summary: Felix Cat; birthDate: 2000-01-02</a></p><p><b>occurrence</b>: 2021-02-02</p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"Organization-SHC-Organization-English.html\">Generated Summary: name: Government Hospital</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><a href=\"Organization-SHC-Organization-English.html\">Generated Summary: name: Government Hospital</a></td><td><span title=\"Codes: {http://id.who.int/icd11/mms RA01.0}\">RA01.0</span></td><td>1</td><td>2</td></tr></table></div>"
   ];
   fhir:Immunization.identifier [
      fhir:index 0;
-     fhir:Identifier.system [ fhir:value "test.com" ];
+     fhir:Identifier.system [ fhir:value "https://who-int.github.io/svc/refs/heads/rc2/test_system" ];
      fhir:Identifier.value [ fhir:value "123" ]
   ];
   fhir:Immunization.status [ fhir:value "completed"];
@@ -56,9 +56,12 @@
        fhir:index 0;
        fhir:CodeableConcept.coding [
          fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://id.who.int/icd11/mms" ];
          fhir:Coding.code [ fhir:value "RA01.0" ]
        ]
-     ]
+     ];
+     fhir:Immunization.protocolApplied.doseNumberPositiveInt [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:Immunization.protocolApplied.seriesDosesPositiveInt [ fhir:value "2"^^xsd:positiveInteger ]
   ] .
 
 # - ontology header ------------------------------------------------------------
