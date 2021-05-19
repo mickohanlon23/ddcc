@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.org/guides/who/svc/ImplementationGuide/fhir.who.svc-rc2> a fhir:ImplementationGuide;
+<https://who-int.github.io/svc/ImplementationGuide/fhir.who.svc-rc2> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "fhir.who.svc-rc2"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SVC_RC2</h2><p>The official URL for this implementation guide is: </p><pre>http://fhir.org/guides/who/svc/ImplementationGuide/fhir.who.svc-rc2</pre><div><p>Smart Vaccination Certificate - RC2</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>SVC_RC2</h2><p>The official URL for this implementation guide is: </p><pre>https://who-int.github.io/svc/ImplementationGuide/fhir.who.svc-rc2</pre><div><p>Smart Vaccination Certificate - RC2</p>\n</div></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "http://fhir.org/guides/who/svc/ImplementationGuide/fhir.who.svc-rc2"];
+  fhir:ImplementationGuide.url [ fhir:value "https://who-int.github.io/svc/ImplementationGuide/fhir.who.svc-rc2"];
   fhir:ImplementationGuide.version [ fhir:value "0.2.0"];
   fhir:ImplementationGuide.name [ fhir:value "SVC_RC2"];
   fhir:ImplementationGuide.title [ fhir:value "WHO Smart Vaccination Certificate - RC2"];
@@ -352,7 +352,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "http://fhir.org/guides/who/svc/history.html" ]
+         fhir:Extension.valueString [ fhir:value "https://who-int.github.io/svc/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -484,7 +484,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/Patient-pre-uv-ips>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/Patient-pre-uv-ips>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Patient-pre-uv-ips" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient (IPS)" ];
@@ -497,7 +497,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/Immunization-pre-uv-ips>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/Immunization-pre-uv-ips>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Immunization-pre-uv-ips" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Immunization (IPS)" ];
@@ -510,7 +510,7 @@
          fhir:Extension.valueString [ fhir:value "StructureMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureMap/svc-map-qr-bundle>;
+         fhir:link <https://who-int.github.io/svc/StructureMap/svc-map-qr-bundle>;
          fhir:Reference.reference [ fhir:value "StructureMap/svc-map-qr-bundle" ]
        ]
      ], [
@@ -521,7 +521,7 @@
          fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/CapabilityStatement/WHO.SHC.RegistryService>;
+         fhir:link <https://who-int.github.io/svc/CapabilityStatement/WHO.SHC.RegistryService>;
          fhir:Reference.reference [ fhir:value "CapabilityStatement/WHO.SHC.RegistryService" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO SHC Registry Service" ];
@@ -534,7 +534,7 @@
          fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/CapabilityStatement/WHO.SHC.Generator>;
+         fhir:link <https://who-int.github.io/svc/CapabilityStatement/WHO.SHC.Generator>;
          fhir:Reference.reference [ fhir:value "CapabilityStatement/WHO.SHC.Generator" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO SHC Generator" ];
@@ -547,7 +547,7 @@
          fhir:Extension.valueString [ fhir:value "Basic" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Basic/svc-basic-qrcode-example>;
+         fhir:link <https://who-int.github.io/svc/Basic/svc-basic-qrcode-example>;
          fhir:Reference.reference [ fhir:value "Basic/svc-basic-qrcode-example" ]
        ]
      ], [
@@ -558,7 +558,7 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Organization/SHC-Organization-Arabic>;
+         fhir:link <https://who-int.github.io/svc/Organization/SHC-Organization-Arabic>;
          fhir:Reference.reference [ fhir:value "Organization/SHC-Organization-Arabic" ]
        ]
      ], [
@@ -569,7 +569,7 @@
          fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example>;
+         fhir:link <https://who-int.github.io/svc/QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example>;
          fhir:Reference.reference [ fhir:value "QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example" ]
        ]
      ], [
@@ -580,7 +580,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/shc-bundle>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/shc-bundle>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shc-bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Bundle" ];
@@ -593,7 +593,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/svc-questionnaireresponse>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/svc-questionnaireresponse>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/svc-questionnaireresponse" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Questionnaire Response" ];
@@ -606,7 +606,7 @@
          fhir:Extension.valueString [ fhir:value "Parameters" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Parameters/SVC-TX-SHE-Parameters-1>;
+         fhir:link <https://who-int.github.io/svc/Parameters/SVC-TX-SHE-Parameters-1>;
          fhir:Reference.reference [ fhir:value "Parameters/SVC-TX-SHE-Parameters-1" ]
        ]
      ], [
@@ -617,7 +617,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/ValueSet/who-svc-vaccines>;
+         fhir:link <https://who-int.github.io/svc/ValueSet/who-svc-vaccines>;
          fhir:Reference.reference [ fhir:value "ValueSet/who-svc-vaccines" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Vaccine List" ];
@@ -630,7 +630,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/shc-binary-qr>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/shc-binary-qr>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shc-binary-qr" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Binary return for QR" ]
@@ -642,7 +642,7 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Organization/SHC-Organization-French>;
+         fhir:link <https://who-int.github.io/svc/Organization/SHC-Organization-French>;
          fhir:Reference.reference [ fhir:value "Organization/SHC-Organization-French" ]
        ]
      ], [
@@ -653,7 +653,7 @@
          fhir:Extension.valueString [ fhir:value "Immunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Immunization/SVC-Immunizaton-Spanish>;
+         fhir:link <https://who-int.github.io/svc/Immunization/SVC-Immunizaton-Spanish>;
          fhir:Reference.reference [ fhir:value "Immunization/SVC-Immunizaton-Spanish" ]
        ]
      ], [
@@ -664,7 +664,7 @@
          fhir:Extension.valueString [ fhir:value "ConceptMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/ConceptMap/who-svc-map-icd11-sct-disease-targeted>;
+         fhir:link <https://who-int.github.io/svc/ConceptMap/who-svc-map-icd11-sct-disease-targeted>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-svc-map-icd11-sct-disease-targeted" ]
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted" ]
@@ -676,7 +676,7 @@
          fhir:Extension.valueString [ fhir:value "Immunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Immunization/SVC-Immunizaton-Arabic>;
+         fhir:link <https://who-int.github.io/svc/Immunization/SVC-Immunizaton-Arabic>;
          fhir:Reference.reference [ fhir:value "Immunization/SVC-Immunizaton-Arabic" ]
        ]
      ], [
@@ -687,7 +687,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/shc-practitioner>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/shc-practitioner>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shc-practitioner" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Practitioner" ];
@@ -700,7 +700,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/shc-patient>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/shc-patient>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shc-patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Patient" ];
@@ -713,7 +713,7 @@
          fhir:Extension.valueString [ fhir:value "Immunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Immunization/SVC-Immunizaton-English>;
+         fhir:link <https://who-int.github.io/svc/Immunization/SVC-Immunizaton-English>;
          fhir:Reference.reference [ fhir:value "Immunization/SVC-Immunizaton-English" ]
        ]
      ], [
@@ -724,7 +724,7 @@
          fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate>;
+         fhir:link <https://who-int.github.io/svc/OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate>;
          fhir:Reference.reference [ fhir:value "OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate" ]
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Generate one or more signed QR Codes based on a [SHC QuestionnaireResponse](StructureDefinition-shc-questionnaireresponse.html)" ]
@@ -736,7 +736,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/SVC-Core-Data-Set>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/SVC-Core-Data-Set>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/SVC-Core-Data-Set" ]
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SVC Core Data elements." ]
@@ -748,7 +748,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/shc-submit-health-event-response>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/shc-submit-health-event-response>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shc-submit-health-event-response" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Submit Health Event Response" ];
@@ -761,7 +761,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/shc-questionnaire>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/shc-questionnaire>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shc-questionnaire" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Questionniare" ];
@@ -774,7 +774,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/ValueSet/SHC-QR-Category-Usage-ValueSet>;
+         fhir:link <https://who-int.github.io/svc/ValueSet/SHC-QR-Category-Usage-ValueSet>;
          fhir:Reference.reference [ fhir:value "ValueSet/SHC-QR-Category-Usage-ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorization of QR codes by their business usage" ]
@@ -786,7 +786,7 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Patient/SHC-Patient-Example-Russian>;
+         fhir:link <https://who-int.github.io/svc/Patient/SHC-Patient-Example-Russian>;
          fhir:Reference.reference [ fhir:value "Patient/SHC-Patient-Example-Russian" ]
        ]
      ], [
@@ -797,7 +797,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/shc-submit-health-event-request>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/shc-submit-health-event-request>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shc-submit-health-event-request" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Submit Health Event Request" ];
@@ -810,7 +810,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/ValueSet/SHC-SectionCode-ValueSet>;
+         fhir:link <https://who-int.github.io/svc/ValueSet/SHC-SectionCode-ValueSet>;
          fhir:Reference.reference [ fhir:value "ValueSet/SHC-SectionCode-ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Content section codes for Smart Health Certificates (SHC)" ]
@@ -822,7 +822,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/shc-organization>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/shc-organization>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shc-organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Organization" ];
@@ -835,7 +835,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/ValueSet/who-svc-vaccines-covid-19>;
+         fhir:link <https://who-int.github.io/svc/ValueSet/who-svc-vaccines-covid-19>;
          fhir:Reference.reference [ fhir:value "ValueSet/who-svc-vaccines-covid-19" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Vaccine List (COVID-19)" ];
@@ -848,7 +848,7 @@
          fhir:Extension.valueString [ fhir:value "Immunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Immunization/SVC-Immunizaton-French>;
+         fhir:link <https://who-int.github.io/svc/Immunization/SVC-Immunizaton-French>;
          fhir:Reference.reference [ fhir:value "Immunization/SVC-Immunizaton-French" ]
        ]
      ], [
@@ -859,7 +859,7 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Patient/SHC-Patient-Example-French>;
+         fhir:link <https://who-int.github.io/svc/Patient/SHC-Patient-Example-French>;
          fhir:Reference.reference [ fhir:value "Patient/SHC-Patient-Example-French" ]
        ]
      ], [
@@ -870,7 +870,7 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Organization/SHC-Organization-English>;
+         fhir:link <https://who-int.github.io/svc/Organization/SHC-Organization-English>;
          fhir:Reference.reference [ fhir:value "Organization/SHC-Organization-English" ]
        ]
      ], [
@@ -881,7 +881,7 @@
          fhir:Extension.valueString [ fhir:value "Immunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Immunization/SVC-Immunizaton-Russian>;
+         fhir:link <https://who-int.github.io/svc/Immunization/SVC-Immunizaton-Russian>;
          fhir:Reference.reference [ fhir:value "Immunization/SVC-Immunizaton-Russian" ]
        ]
      ], [
@@ -892,7 +892,7 @@
          fhir:Extension.valueString [ fhir:value "ConceptMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/ConceptMap/who-svc-map-icd11-sct-vaccines>;
+         fhir:link <https://who-int.github.io/svc/ConceptMap/who-svc-map-icd11-sct-vaccines>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-svc-map-icd11-sct-vaccines" ]
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines" ]
@@ -904,7 +904,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/CodeSystem/SHC-Category-CodeSystem>;
+         fhir:link <https://who-int.github.io/svc/CodeSystem/SHC-Category-CodeSystem>;
          fhir:Reference.reference [ fhir:value "CodeSystem/SHC-Category-CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC QR Category Usage Codes" ];
@@ -917,7 +917,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/ValueSet/SHC-QR-Format-ValueSet>;
+         fhir:link <https://who-int.github.io/svc/ValueSet/SHC-QR-Format-ValueSet>;
          fhir:Reference.reference [ fhir:value "ValueSet/SHC-QR-Format-ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Format of the representation of QR code" ]
@@ -929,7 +929,7 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Bundle/SVC-TX-SHE-bundle-example-1>;
+         fhir:link <https://who-int.github.io/svc/Bundle/SVC-TX-SHE-bundle-example-1>;
          fhir:Reference.reference [ fhir:value "Bundle/SVC-TX-SHE-bundle-example-1" ]
        ]
      ], [
@@ -940,7 +940,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/shc-provenance>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/shc-provenance>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shc-provenance" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Provenance of SHC" ];
@@ -953,7 +953,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/SVC-QRCode>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/SVC-QRCode>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/SVC-QRCode" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC QRCode Extension" ];
@@ -966,7 +966,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/CodeSystem/SHC-SectionCode-CodeSystem>;
+         fhir:link <https://who-int.github.io/svc/CodeSystem/SHC-SectionCode-CodeSystem>;
          fhir:Reference.reference [ fhir:value "CodeSystem/SHC-SectionCode-CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC QR SectionCode Usage Codes" ];
@@ -979,7 +979,7 @@
          fhir:Extension.valueString [ fhir:value "Questionnaire" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Questionnaire/SVC-Questionnaire>;
+         fhir:link <https://who-int.github.io/svc/Questionnaire/SVC-Questionnaire>;
          fhir:Reference.reference [ fhir:value "Questionnaire/SVC-Questionnaire" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Questionnaire " ];
@@ -992,7 +992,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/shc-practitioner-role>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/shc-practitioner-role>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shc-practitioner-role" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Practitioner Role" ];
@@ -1005,7 +1005,7 @@
          fhir:Extension.valueString [ fhir:value "GraphDefinition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/GraphDefinition/svc-graph>;
+         fhir:link <https://who-int.github.io/svc/GraphDefinition/svc-graph>;
          fhir:Reference.reference [ fhir:value "GraphDefinition/svc-graph" ]
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "SHF Graph Definition for retrieving Smart Vaccination Certificates under a [Retrieve Smart Health Folder](transactions.html#retrieve-health-folder) transaction." ]
@@ -1017,7 +1017,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/shf-graphdefinition>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/shf-graphdefinition>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shf-graphdefinition" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHF Graph Defintion" ];
@@ -1030,7 +1030,7 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Patient/SHC-Patient-English>;
+         fhir:link <https://who-int.github.io/svc/Patient/SHC-Patient-English>;
          fhir:Reference.reference [ fhir:value "Patient/SHC-Patient-English" ]
        ]
      ], [
@@ -1041,7 +1041,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/shf-composition>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/shf-composition>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shf-composition" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHF Composition" ];
@@ -1054,7 +1054,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/svc-immunization>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/svc-immunization>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/svc-immunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Immunization" ];
@@ -1067,7 +1067,7 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Organization/SHC-Organization-Russian>;
+         fhir:link <https://who-int.github.io/svc/Organization/SHC-Organization-Russian>;
          fhir:Reference.reference [ fhir:value "Organization/SHC-Organization-Russian" ]
        ]
      ], [
@@ -1078,7 +1078,7 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Organization/SHC-Organization-Spanish>;
+         fhir:link <https://who-int.github.io/svc/Organization/SHC-Organization-Spanish>;
          fhir:Reference.reference [ fhir:value "Organization/SHC-Organization-Spanish" ]
        ]
      ], [
@@ -1089,7 +1089,7 @@
          fhir:Extension.valueString [ fhir:value "Immunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Immunization/SVC-Immunizaton-Chinese>;
+         fhir:link <https://who-int.github.io/svc/Immunization/SVC-Immunizaton-Chinese>;
          fhir:Reference.reference [ fhir:value "Immunization/SVC-Immunizaton-Chinese" ]
        ]
      ], [
@@ -1100,7 +1100,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/ValueSet/SHC-Category-ValueSet>;
+         fhir:link <https://who-int.github.io/svc/ValueSet/SHC-Category-ValueSet>;
          fhir:Reference.reference [ fhir:value "ValueSet/SHC-Category-ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Content categorization of Smart Health Certificates (SHC)" ]
@@ -1112,7 +1112,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/svc-bundle>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/svc-bundle>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/svc-bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Bundle" ];
@@ -1125,7 +1125,7 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Patient/SHC-Patient-Example-Chinese>;
+         fhir:link <https://who-int.github.io/svc/Patient/SHC-Patient-Example-Chinese>;
          fhir:Reference.reference [ fhir:value "Patient/SHC-Patient-Example-Chinese" ]
        ]
      ], [
@@ -1136,7 +1136,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/SVC-Basic-QRCode>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/SVC-Basic-QRCode>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/SVC-Basic-QRCode" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Basic QR Code resource" ];
@@ -1149,7 +1149,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/ValueSet/who-svc-vaccinable-conditions>;
+         fhir:link <https://who-int.github.io/svc/ValueSet/who-svc-vaccinable-conditions>;
          fhir:Reference.reference [ fhir:value "ValueSet/who-svc-vaccinable-conditions" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO List of Vaccinable Conditions" ];
@@ -1162,7 +1162,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/ValueSet/who-svc-disease-targeted-covid-19>;
+         fhir:link <https://who-int.github.io/svc/ValueSet/who-svc-disease-targeted-covid-19>;
          fhir:Reference.reference [ fhir:value "ValueSet/who-svc-disease-targeted-covid-19" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Disease or Agent Targeted (COVID-19)" ];
@@ -1175,7 +1175,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/CodeSystem/SHC-QR-Format-CodeSystem>;
+         fhir:link <https://who-int.github.io/svc/CodeSystem/SHC-QR-Format-CodeSystem>;
          fhir:Reference.reference [ fhir:value "CodeSystem/SHC-QR-Format-CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC QR Format Codes" ];
@@ -1188,7 +1188,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/shc-binary-qrcontent>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/shc-binary-qrcontent>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shc-binary-qrcontent" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Binary for QR Content" ];
@@ -1201,7 +1201,7 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Organization/SHC-Organization-Chinese>;
+         fhir:link <https://who-int.github.io/svc/Organization/SHC-Organization-Chinese>;
          fhir:Reference.reference [ fhir:value "Organization/SHC-Organization-Chinese" ]
        ]
      ], [
@@ -1212,7 +1212,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/shc-binary-qrpng>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/shc-binary-qrpng>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shc-binary-qrpng" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Binary for QR (PNG representation)" ];
@@ -1225,7 +1225,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/shc-documentreference-qr>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/shc-documentreference-qr>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shc-documentreference-qr" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC DocumentReference return for QR" ]
@@ -1237,7 +1237,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/CodeSystem/SHC-QR-Category-Usage-CodeSystem>;
+         fhir:link <https://who-int.github.io/svc/CodeSystem/SHC-QR-Category-Usage-CodeSystem>;
          fhir:Reference.reference [ fhir:value "CodeSystem/SHC-QR-Category-Usage-CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC QR Category Usage Codes" ];
@@ -1250,7 +1250,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/shc-questionnaireresponse>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/shc-questionnaireresponse>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shc-questionnaireresponse" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Questionnaire Response" ];
@@ -1263,7 +1263,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/svc-composition>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/svc-composition>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/svc-composition" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SVC Composition" ];
@@ -1276,7 +1276,7 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Patient/SHC-Patient-Arabic>;
+         fhir:link <https://who-int.github.io/svc/Patient/SHC-Patient-Arabic>;
          fhir:Reference.reference [ fhir:value "Patient/SHC-Patient-Arabic" ]
        ]
      ], [
@@ -1287,7 +1287,7 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/Patient/SHC-Patient-Example-Spanish>;
+         fhir:link <https://who-int.github.io/svc/Patient/SHC-Patient-Example-Spanish>;
          fhir:Reference.reference [ fhir:value "Patient/SHC-Patient-Example-Spanish" ]
        ]
      ], [
@@ -1298,7 +1298,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://fhir.org/guides/who/svc/StructureDefinition/shc-composition>;
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/shc-composition>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/shc-composition" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Composition" ];
@@ -1518,7 +1518,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.org/guides/who/svc/ImplementationGuide/fhir.who.svc-rc2.ttl> a owl:Ontology;
+<https://who-int.github.io/svc/ImplementationGuide/fhir.who.svc-rc2.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

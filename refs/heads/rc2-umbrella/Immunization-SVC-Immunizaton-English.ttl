@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.org/guides/who/svc/Immunization/SVC-Immunizaton-English> a fhir:Immunization;
+<https://who-int.github.io/svc/Immunization/SVC-Immunizaton-English> a fhir:Immunization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "SVC-Immunizaton-English"];
   fhir:Resource.meta [
@@ -33,7 +33,7 @@
      ]
   ];
   fhir:Immunization.patient [
-     fhir:link <http://fhir.org/guides/who/svc/Patient/SHC-Patient-English>;
+     fhir:link <https://who-int.github.io/svc/Patient/SHC-Patient-English>;
      fhir:Reference.reference [ fhir:value "Patient/SHC-Patient-English" ]
   ];
   fhir:Immunization.occurrenceDateTime [ fhir:value "2021-02-02"^^xsd:date];
@@ -42,14 +42,14 @@
   fhir:Immunization.performer [
      fhir:index 0;
      fhir:Immunization.performer.actor [
-       fhir:link <http://fhir.org/guides/who/svc/Organization/SHC-Organization-English>;
+       fhir:link <https://who-int.github.io/svc/Organization/SHC-Organization-English>;
        fhir:Reference.reference [ fhir:value "Organization/SHC-Organization-English" ]
      ]
   ];
   fhir:Immunization.protocolApplied [
      fhir:index 0;
      fhir:Immunization.protocolApplied.authority [
-       fhir:link <http://fhir.org/guides/who/svc/Organization/SHC-Organization-English>;
+       fhir:link <https://who-int.github.io/svc/Organization/SHC-Organization-English>;
        fhir:Reference.reference [ fhir:value "Organization/SHC-Organization-English" ]
      ];
      fhir:Immunization.protocolApplied.targetDisease [
@@ -63,7 +63,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.org/guides/who/svc/Immunization/SVC-Immunizaton-English.ttl> a owl:Ontology;
+<https://who-int.github.io/svc/Immunization/SVC-Immunizaton-English.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

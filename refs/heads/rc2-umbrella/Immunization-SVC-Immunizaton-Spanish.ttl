@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://fhir.org/guides/who/svc/Immunization/SVC-Immunizaton-Spanish> a fhir:Immunization;
+<https://who-int.github.io/svc/Immunization/SVC-Immunizaton-Spanish> a fhir:Immunization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "SVC-Immunizaton-Spanish"];
   fhir:Resource.meta [
@@ -17,7 +17,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 123</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding XM0CX4}\">XM0CX4</span></p><p><b>patient</b>: <a href=\"SHC-Patient-Spanish\">SHC-Patient-Spanish</a></p><p><b>occurrence</b>: 2021-02-02</p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"Organization-SHC-Organization-Spanish.html\">Generated Summary: name: Hospital del Gobierno</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td></tr><tr><td>*</td><td><a href=\"Organization-SHC-Organization-Spanish.html\">Generated Summary: name: Hospital del Gobierno</a></td><td><span title=\"Codes: \">RA01.0</span></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 123</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding XM0CX4}\">XM0CX4</span></p><p><b>patient</b>: <a href=\"Patient-SHC-Patient-Example-Spanish.html\">Generated Summary: El gato Félix; birthDate: 2000-01-02</a></p><p><b>occurrence</b>: 2021-02-02</p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"Organization-SHC-Organization-Spanish.html\">Generated Summary: name: Hospital del Gobierno</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td></tr><tr><td>*</td><td><a href=\"Organization-SHC-Organization-Spanish.html\">Generated Summary: name: Hospital del Gobierno</a></td><td><span title=\"Codes: \">RA01.0</span></td></tr></table></div>"
   ];
   fhir:Immunization.identifier [
      fhir:index 0;
@@ -33,7 +33,8 @@
      ]
   ];
   fhir:Immunization.patient [
-     fhir:Reference.reference [ fhir:value "SHC-Patient-Spanish" ]
+     fhir:link <https://who-int.github.io/svc/Patient/SHC-Patient-Example-Spanish>;
+     fhir:Reference.reference [ fhir:value "Patient/SHC-Patient-Example-Spanish" ]
   ];
   fhir:Immunization.occurrenceDateTime [ fhir:value "2021-02-02"^^xsd:date];
   fhir:Immunization.lotNumber [ fhir:value "123"];
@@ -41,14 +42,14 @@
   fhir:Immunization.performer [
      fhir:index 0;
      fhir:Immunization.performer.actor [
-       fhir:link <http://fhir.org/guides/who/svc/Organization/SHC-Organization-Spanish>;
+       fhir:link <https://who-int.github.io/svc/Organization/SHC-Organization-Spanish>;
        fhir:Reference.reference [ fhir:value "Organization/SHC-Organization-Spanish" ]
      ]
   ];
   fhir:Immunization.protocolApplied [
      fhir:index 0;
      fhir:Immunization.protocolApplied.authority [
-       fhir:link <http://fhir.org/guides/who/svc/Organization/SHC-Organization-Spanish>;
+       fhir:link <https://who-int.github.io/svc/Organization/SHC-Organization-Spanish>;
        fhir:Reference.reference [ fhir:value "Organization/SHC-Organization-Spanish" ]
      ];
      fhir:Immunization.protocolApplied.targetDisease [
@@ -62,7 +63,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://fhir.org/guides/who/svc/Immunization/SVC-Immunizaton-Spanish.ttl> a owl:Ontology;
+<https://who-int.github.io/svc/Immunization/SVC-Immunizaton-Spanish.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
