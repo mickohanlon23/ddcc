@@ -320,20 +320,20 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/Patient-pre-uv-ips"/>
+        <reference value="StructureDefinition/Immunization-pre-uv-ips"/>
       </reference>
-      <name value="Patient (IPS)"/>
-      <description value="This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources."/>
+      <name value="Immunization (IPS)"/>
+      <description value="This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.&#xD;&#xA;&#xD;&#xA;It describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/Immunization-pre-uv-ips"/>
+        <reference value="StructureDefinition/Patient-pre-uv-ips"/>
       </reference>
-      <name value="Immunization (IPS)"/>
-      <description value="This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.&#xD;&#xA;&#xD;&#xA;It describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party."/>
+      <name value="Patient (IPS)"/>
+      <description value="This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -348,16 +348,6 @@
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="CapabilityStatement/WHO.SHC.RegistryService"/>
-      </reference>
-      <name value="WHO SHC Registry Service"/>
-      <description value="CapabilityStatement for WHO SHC Registry Service actor."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CapabilityStatement"/>
-      </extension>
-      <reference>
         <reference value="CapabilityStatement/WHO.SHC.Generator"/>
       </reference>
       <name value="WHO SHC Generator"/>
@@ -365,209 +355,30 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Basic"/>
+        <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="Basic/svc-basic-qrcode-example"/>
+        <reference value="CapabilityStatement/WHO.SHC.RegistryService"/>
       </reference>
+      <name value="WHO SHC Registry Service"/>
+      <description value="CapabilityStatement for WHO SHC Registry Service actor."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shc-documentreference-qr"/>
+      </reference>
+      <name value="SHC DocumentReference return for QR"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Organization"/>
       </extension>
       <reference>
-        <reference value="Organization/SHC-Organization-Arabic"/>
+        <reference value="Organization/SHC-Organization-English"/>
       </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource:abstract"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/shc-bundle"/>
-      </reference>
-      <name value="SHC Bundle"/>
-      <description value="An [SHC Bundle](StructureDefinition-shc-bundle.html) is a document bundle containing the Smart Health Certificate (SHCs)."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/SHC-Patient-Spanish"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/svc-questionnaireresponse"/>
-      </reference>
-      <name value="SVC Questionnaire Response"/>
-      <description value="Describes the logical structure for a questionnaire response associacted to a [SVC Questionaire](StructureDefinition-svc-questionnaire.html)."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Parameters"/>
-      </extension>
-      <reference>
-        <reference value="Parameters/SVC-TX-SHE-Parameters-1"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/who-svc-vaccines"/>
-      </reference>
-      <name value="WHO Vaccine List"/>
-      <description value="The WHO Vaccine List from [ICD 11](https://icd.who.int/browse11) is used by:&#xA; *  the [SVC Immunization](StructureDefinition-svc-immunization.html)"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/SVC-Immunization-French"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource:abstract"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/shc-binary-qr"/>
-      </reference>
-      <name value="SHC Binary return for QR"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/SHC-Organization-French"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
-      </extension>
-      <reference>
-        <reference value="ConceptMap/who-svc-map-icd11-sct-disease-targeted"/>
-      </reference>
-      <description value="Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/shc-practitioner"/>
-      </reference>
-      <name value="SHC Practitioner"/>
-      <description value="Container for an SHC Practitioner, which is a Practitioner authorized by the PHA to vaccinate an [SHC Patient](StructureDefinition-shc-patient.html)."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/SHC-Patient-Russian"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/shc-patient"/>
-      </reference>
-      <name value="SHC Patient"/>
-      <description value="An SHC_Patient should:&#xA;* if the [identifier.assigner](StructureDefinition-shc-patient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner) should be set to reference the [SHC Organization](StructureDefinition-shc-organization.html) resource associated to the PHA via the [WHO Public Key Directory](actors.html#who-pkd)&#xA;* obeys who-shc-patient-1"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="OperationDefinition"/>
-      </extension>
-      <reference>
-        <reference value="OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate"/>
-      </reference>
-      <description value="Generate one or more signed QR Codes based on a [SHC QuestionnaireResponse](StructureDefinition-shc-questionnaireresponse.html)"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/SVC-Core-Data-Set"/>
-      </reference>
-      <description value="SVC Core Data elements."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/shc-submit-health-event-response"/>
-      </reference>
-      <name value="SHC Submit Health Event Response"/>
-      <description value="An [SHC Submit Health Event Response](StructureDefinition-shc-submit-health-event-respose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource:abstract"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/shc-questionnaire"/>
-      </reference>
-      <name value="SHC Questionniare"/>
-      <description value="Describes the logical structure for a questionnaire associacted to a Smart Health Certificate which includes a Structure Map to generate the relevant SHC from a given [SHC QuestionnaireResponse](StructureDefintion-shc-questionnaire-response.html) which responds to the SHC Questionnaire."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/SVC-Immunization-Chinese"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/SHC-QR-Category-Usage-ValueSet"/>
-      </reference>
-      <description value="Categorization of QR codes by their business usage"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/shc-submit-health-event-request"/>
-      </reference>
-      <name value="SHC Submit Health Event Request"/>
-      <description value="An [SHC Submit Health Event Request](StructureDefinition-shc-submit-health-event-request.html) is a transaction bundle containing the content of health events which are being submitted under the [Submit Health Event](transactions.html#submit-health-event) transaction."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/SHC-SectionCode-ValueSet"/>
-      </reference>
-      <description value="Content section codes for Smart Health Certificates (SHC)"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -584,61 +395,27 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/who-svc-vaccines-covid-19"/>
+        <reference value="ValueSet/who-svc-disease-targeted-covid-19"/>
       </reference>
-      <name value="WHO Vaccine List (COVID-19)"/>
-      <description value="WHO Vaccine List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"/>
+      <name value="WHO Disease or Agent Targeted (COVID-19)"/>
+      <description value="WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="Organization/SHC-Organization-English"/>
+        <reference value="StructureDefinition/shc-binary-qrcontent"/>
       </reference>
+      <name value="SHC Binary for QR Content"/>
+      <description value="PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
+        <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="ConceptMap/who-svc-map-icd11-sct-vaccines"/>
-      </reference>
-      <description value="Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/SVC-Immunization-English"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/SHC-Category-CodeSystem"/>
-      </reference>
-      <name value="SHC QR Category Usage Codes"/>
-      <description value="Categorization of Smart Health Certificates"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/SHC-QR-Format-ValueSet"/>
-      </reference>
-      <description value="Format of the representation of QR code"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/SVC-TX-SHE-bundle-example-1"/>
+        <reference value="Patient/SHC-Patient-Russian"/>
       </reference>
     </resource>
     <resource>
@@ -646,30 +423,84 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/shc-provenance"/>
+        <reference value="StructureDefinition/svc-questionnaireresponse"/>
       </reference>
-      <name value="Provenance of SHC"/>
-      <description value="Used to assert the provenance of a public health authority (PHA) over either a Paper or a Digital Smart Vaccination Certificate (SHC)."/>
+      <name value="SVC Questionnaire Response"/>
+      <description value="Describes the logical structure for a questionnaire response associacted to a [SVC Questionaire](StructureDefinition-svc-questionnaire.html)."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
+        <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/SVC-QRCode"/>
+        <reference value="Patient/SHC-Patient-French"/>
       </reference>
-      <name value="SVC QRCode Extension"/>
-      <description value="SVC QRCode Extension"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/SHC-SectionCode-CodeSystem"/>
+        <reference value="ValueSet/SHC-QR-Category-Usage-ValueSet"/>
       </reference>
-      <name value="SHC QR SectionCode Usage Codes"/>
-      <description value="Section Codes for Smart Health Certificates"/>
+      <description value="Categorization of QR codes by their business usage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shc-questionnaireresponse"/>
+      </reference>
+      <name value="SHC Questionnaire Response"/>
+      <description value="Describes the logical structure for a questionnaire response associacted to a [SHC Questionaire](StructureDefinition-shc-questionnaire.html)."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/who-svc-vaccines"/>
+      </reference>
+      <name value="WHO Vaccine List"/>
+      <description value="The WHO Vaccine List from [ICD 11](https://icd.who.int/browse11) is used by:&#xA; *  the [SVC Immunization](StructureDefinition-svc-immunization.html)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SVC-Basic-QRCode"/>
+      </reference>
+      <name value="SVC Basic QR Code resource"/>
+      <description value="SVC Profile of Basic resource for QR Code."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/SVC-Immunization-Russian"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/who-svc-vaccinable-conditions"/>
+      </reference>
+      <name value="WHO List of Vaccinable Conditions"/>
+      <description value="The WHO Vaccinable Conditions List from [ICD 11](https://icd.who.int/browse11) is used by:&#xA; *  the [SVC Immunization](StructureDefinition-svc-immunization.html)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/who-svc-map-icd11-sct-disease-targeted"/>
+      </reference>
+      <description value="Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -686,10 +517,44 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/shc-practitioner-role"/>
+        <reference value="StructureDefinition/shc-patient"/>
       </reference>
-      <name value="SHC Practitioner Role"/>
-      <description value="Association of an [SHC Practitioner](StructureDefinition-shc-practitioner-role.html) to a managing [SHC Organization](StructureDefinition-shc-orgaznization.html), indicating that an SHC Practitioner is authorized by the public health authority (PHA) to vaccinate an [SHC Patient](StructureDefinition-shc-patient.html)."/>
+      <name value="SHC Patient"/>
+      <description value="An SHC_Patient should:&#xA;* if the [identifier.assigner](StructureDefinition-shc-patient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-shc-patient-definitions.html#Patient.identifier.assigner) should be set to reference the [SHC Organization](StructureDefinition-shc-organization.html) resource associated to the PHA via the [WHO Public Key Directory](actors.html#who-pkd)&#xA;* obeys who-shc-patient-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shc-practitioner"/>
+      </reference>
+      <name value="SHC Practitioner"/>
+      <description value="Container for an SHC Practitioner, which is a Practitioner authorized by the PHA to vaccinate an [SHC Patient](StructureDefinition-shc-patient.html)."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/SHC-Patient-Chinese"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/SVC-Immunization-Arabic"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Basic"/>
+      </extension>
+      <reference>
+        <reference value="Basic/svc-basic-qrcode-example"/>
+      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -702,24 +567,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource:abstract"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/shf-graphdefinition"/>
-      </reference>
-      <name value="SHF Graph Defintion"/>
-      <description value="Abstract Graph Definition for Smart Health Folder to describe information retrieved under a [Retrieve Smart Health Folder](transactions.html#retrieve-health-folder) transaction."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/SHC-Patient-Chinese"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -728,10 +575,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
+        <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="Immunization/SVC-Immunization-Russian"/>
+        <reference value="StructureDefinition/shc-submit-health-event-response"/>
+      </reference>
+      <name value="SHC Submit Health Event Response"/>
+      <description value="An [SHC Submit Health Event Response](StructureDefinition-shc-submit-health-event-respose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/SVC-TX-SHE-bundle-example-1"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/SHC-Organization-Arabic"/>
       </reference>
     </resource>
     <resource>
@@ -746,168 +611,10 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/svc-immunization"/>
-      </reference>
-      <name value="SVC Immunization"/>
-      <description value="An SVC Immunization contains the content corresponding to a row in the Vaccination Events section of a Paper SVC. While this is not a further profile of the International Patient Summary (IPS) Immunization resouce, this is intended to map into an IPS Immunization resource."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/SHC-Organization-Russian"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/SHC-Organization-Spanish"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/SHC-Category-ValueSet"/>
-      </reference>
-      <description value="Content categorization of Smart Health Certificates (SHC)"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/svc-bundle"/>
-      </reference>
-      <name value="SVC Bundle"/>
-      <description value="An [SVC Bundle](StructureDefinition-svc-bundle.html) is a document bundle containing the Smart Vaccination Certificate (SVC) content."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/SVC-Basic-QRCode"/>
-      </reference>
-      <name value="SVC Basic QR Code resource"/>
-      <description value="SVC Profile of Basic resource for QR Code."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/who-svc-vaccinable-conditions"/>
-      </reference>
-      <name value="WHO List of Vaccinable Conditions"/>
-      <description value="The WHO Vaccinable Conditions List from [ICD 11](https://icd.who.int/browse11) is used by:&#xA; *  the [SVC Immunization](StructureDefinition-svc-immunization.html)"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Patient/SHC-Patient-French"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/SVC-Immunization-Arabic"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/who-svc-disease-targeted-covid-19"/>
-      </reference>
-      <name value="WHO Disease or Agent Targeted (COVID-19)"/>
-      <description value="WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/SHC-QR-Format-CodeSystem"/>
-      </reference>
-      <name value="SHC QR Format Codes"/>
-      <description value="Possible formats available for QR data."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/shc-binary-qrcontent"/>
-      </reference>
-      <name value="SHC Binary for QR Content"/>
-      <description value="PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Organization"/>
-      </extension>
-      <reference>
-        <reference value="Organization/SHC-Organization-Chinese"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/shc-binary-qrpng"/>
-      </reference>
-      <name value="SHC Binary for QR (PNG representation)"/>
-      <description value="PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/shc-documentreference-qr"/>
-      </reference>
-      <name value="SHC DocumentReference return for QR"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/SHC-QR-Category-Usage-CodeSystem"/>
-      </reference>
-      <name value="SHC QR Category Usage Codes"/>
-      <description value="Possible formats available for QR usage."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource:abstract"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/shc-questionnaireresponse"/>
-      </reference>
-      <name value="SHC Questionnaire Response"/>
-      <description value="Describes the logical structure for a questionnaire response associacted to a [SHC Questionaire](StructureDefinition-shc-questionnaire.html)."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Immunization"/>
-      </extension>
-      <reference>
-        <reference value="Immunization/SVC-Immunization-Spanish"/>
+        <reference value="Patient/SHC-Patient-Arabic"/>
       </reference>
     </resource>
     <resource>
@@ -922,11 +629,242 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/SHC-Organization-Chinese"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/svc-immunization"/>
+      </reference>
+      <name value="SVC Immunization"/>
+      <description value="An SVC Immunization contains the content corresponding to a row in the Vaccination Events section of a Paper SVC. While this is not a further profile of the International Patient Summary (IPS) Immunization resouce, this is intended to map into an IPS Immunization resource."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shc-practitioner-role"/>
+      </reference>
+      <name value="SHC Practitioner Role"/>
+      <description value="Association of an [SHC Practitioner](StructureDefinition-shc-practitioner-role.html) to a managing [SHC Organization](StructureDefinition-shc-orgaznization.html), indicating that an SHC Practitioner is authorized by the public health authority (PHA) to vaccinate an [SHC Patient](StructureDefinition-shc-patient.html)."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/SHC-QuestionnaireReponse-generateHealthCertificate"/>
+      </reference>
+      <description value="Generate one or more signed QR Codes based on a [SHC QuestionnaireResponse](StructureDefinition-shc-questionnaireresponse.html)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shf-graphdefinition"/>
+      </reference>
+      <name value="SHF Graph Defintion"/>
+      <description value="Abstract Graph Definition for Smart Health Folder to describe information retrieved under a [Retrieve Smart Health Folder](transactions.html#retrieve-health-folder) transaction."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SVC-QRCode"/>
+      </reference>
+      <name value="SVC QRCode Extension"/>
+      <description value="SVC QRCode Extension"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Patient/SHC-Patient-Arabic"/>
+        <reference value="Patient/SHC-Patient-Spanish"/>
       </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SHC-Category-CodeSystem"/>
+      </reference>
+      <name value="SHC QR Category Usage Codes"/>
+      <description value="Categorization of Smart Health Certificates"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/SHC-Organization-Russian"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/SVC-Immunization-English"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/SHC-Organization-French"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shc-questionnaire"/>
+      </reference>
+      <name value="SHC Questionniare"/>
+      <description value="Describes the logical structure for a questionnaire associacted to a Smart Health Certificate which includes a Structure Map to generate the relevant SHC from a given [SHC QuestionnaireResponse](StructureDefintion-shc-questionnaire-response.html) which responds to the SHC Questionnaire."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shc-submit-health-event-request"/>
+      </reference>
+      <name value="SHC Submit Health Event Request"/>
+      <description value="An [SHC Submit Health Event Request](StructureDefinition-shc-submit-health-event-request.html) is a transaction bundle containing the content of health events which are being submitted under the [Submit Health Event](transactions.html#submit-health-event) transaction."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SHC-Category-ValueSet"/>
+      </reference>
+      <description value="Content categorization of Smart Health Certificates (SHC)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SHC-QR-Category-Usage-CodeSystem"/>
+      </reference>
+      <name value="SHC QR Category Usage Codes"/>
+      <description value="Possible formats available for QR usage."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/SVC-QR-QuestionnaireResponse-Example"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/SVC-Immunization-Chinese"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shc-binary-qrpng"/>
+      </reference>
+      <name value="SHC Binary for QR (PNG representation)"/>
+      <description value="PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SHC-SectionCode-ValueSet"/>
+      </reference>
+      <description value="Content section codes for Smart Health Certificates (SHC)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SHC-SectionCode-CodeSystem"/>
+      </reference>
+      <name value="SHC QR SectionCode Usage Codes"/>
+      <description value="Section Codes for Smart Health Certificates"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/SVC-TX-SHE-Parameters-1"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/svc-bundle"/>
+      </reference>
+      <name value="SVC Bundle"/>
+      <description value="An [SVC Bundle](StructureDefinition-svc-bundle.html) is a document bundle containing the Smart Vaccination Certificate (SVC) content."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shc-binary-qr"/>
+      </reference>
+      <name value="SHC Binary return for QR"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shc-provenance"/>
+      </reference>
+      <name value="Provenance of SHC"/>
+      <description value="Used to assert the provenance of a public health authority (PHA) over either a Paper or a Digital Smart Vaccination Certificate (SHC)."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/SVC-Core-Data-Set"/>
+      </reference>
+      <description value="SVC Core Data elements."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/SHC-QR-Format-CodeSystem"/>
+      </reference>
+      <name value="SHC QR Format Codes"/>
+      <description value="Possible formats available for QR data."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -937,6 +875,68 @@
       </reference>
       <name value="SHC Composition"/>
       <description value="Describes the logical structure for a Smart Health Certificate."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/who-svc-map-icd11-sct-vaccines"/>
+      </reference>
+      <description value="Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/SVC-Immunization-Spanish"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/who-svc-vaccines-covid-19"/>
+      </reference>
+      <name value="WHO Vaccine List (COVID-19)"/>
+      <description value="WHO Vaccine List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/SVC-Immunization-French"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/shc-bundle"/>
+      </reference>
+      <name value="SHC Bundle"/>
+      <description value="An [SHC Bundle](StructureDefinition-shc-bundle.html) is a document bundle containing the Smart Health Certificate (SHCs)."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/SHC-QR-Format-ValueSet"/>
+      </reference>
+      <description value="Format of the representation of QR code"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/SHC-Organization-Spanish"/>
+      </reference>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
