@@ -1,0 +1,121 @@
+{
+  "resourceType": "Bundle",
+  "id": "Example-English",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "http://www.example.org/fhir/Patient/SHC-Patient-English",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "SHC-Patient-English",
+        "meta": {
+          "profile": [
+            "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Felix Cat</p><p><b>birthDate</b>: 2000-01-02</p></div>"
+        },
+        "name": [
+          {
+            "text": "Felix Cat"
+          }
+        ],
+        "birthDate": "2000-01-02"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "http://www.example.org/fhir/Patient/SHC-Organization-English",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "SHC-Organization-English",
+        "meta": {
+          "profile": [
+            "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Government Hospital</p></div>"
+        },
+        "name": "Government Hospital"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "http://www.example.org/fhir/Patient/SVC-Immunization-English",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "SVC-Immunization-English",
+        "meta": {
+          "profile": [
+            "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 123</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding XM0CX4}\">XM0CX4</span></p><p><b>patient</b>: <a href=\"#Patient_SHC-Patient-English\">See above (Patient/SHC-Patient-English)</a></p><p><b>occurrence</b>: 2021-02-02</p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"#Organization_SHC-Organization-English\">See above (Organization/SHC-Organization-English)</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><a href=\"#Organization_SHC-Organization-English\">See above (Organization/SHC-Organization-English)</a></td><td><span title=\"Codes: {http://id.who.int/icd11/mms RA01.0}\">RA01.0</span></td><td>1</td><td>2</td></tr></table></div>"
+        },
+        "identifier": [
+          {
+            "system": "https://who-int.github.io/svc/refs/heads/rc2/test_system",
+            "value": "123"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding",
+              "code": "XM0CX4"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/SHC-Patient-English"
+        },
+        "occurrenceDateTime": "2021-02-02",
+        "lotNumber": "123",
+        "expirationDate": "2021-06-30",
+        "performer": [
+          {
+            "actor": {
+              "reference": "Organization/SHC-Organization-English"
+            }
+          }
+        ],
+        "protocolApplied": [
+          {
+            "authority": {
+              "reference": "Organization/SHC-Organization-English"
+            },
+            "targetDisease": [
+              {
+                "coding": [
+                  {
+                    "system": "http://id.who.int/icd11/mms",
+                    "code": "RA01.0"
+                  }
+                ]
+              }
+            ],
+            "doseNumberPositiveInt": 1,
+            "seriesDosesPositiveInt": 2
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Immunization"
+      }
+    }
+  ]
+}

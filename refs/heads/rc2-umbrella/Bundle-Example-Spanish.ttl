@@ -1,0 +1,135 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://who-int.github.io/svc/Bundle/Example-Spanish> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-Spanish"];
+  fhir:Bundle.type [ fhir:value "transaction"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/Patient/SHC-Patient-Spanish" ];
+     fhir:Bundle.entry.resource <http://www.example.org/fhir/Patient/SHC-Patient-Spanish>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Patient" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/Patient/SHC-Organization-Spanish" ];
+     fhir:Bundle.entry.resource <http://www.example.org/fhir/Patient/SHC-Organization-Spanish>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Organization" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/Patient/SVC-Immunization-Spanish" ];
+     fhir:Bundle.entry.resource <http://www.example.org/fhir/Patient/SVC-Immunization-Spanish>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Immunization" ]
+     ]
+  ] .
+
+<http://www.example.org/fhir/Patient/SHC-Patient-Spanish> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "SHC-Patient-Spanish"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient";
+       fhir:index 0;
+       fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: El gato Félix</p><p><b>birthDate</b>: 2000-01-02</p></div>"
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.text [ fhir:value "El gato Félix" ]
+  ];
+  fhir:Patient.birthDate [ fhir:value "2000-01-02"^^xsd:date] .
+
+<http://www.example.org/fhir/Patient/SHC-Organization-Spanish> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "SHC-Organization-Spanish"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization";
+       fhir:index 0;
+       fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Hospital del Gobierno</p></div>"
+  ];
+  fhir:Organization.name [ fhir:value "Hospital del Gobierno"] .
+
+<http://www.example.org/fhir/Patient/SVC-Immunization-Spanish> a fhir:Immunization;
+  fhir:Resource.id [ fhir:value "SVC-Immunization-Spanish"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization";
+       fhir:index 0;
+       fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 123</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding XM0CX4}\">XM0CX4</span></p><p><b>patient</b>: <a href=\"SHC-Patient-Example-Spanish\">SHC-Patient-Example-Spanish</a></p><p><b>occurrence</b>: 2021-02-02</p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"#Organization_SHC-Organization-Spanish\">See above (Organization/SHC-Organization-Spanish)</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><a href=\"#Organization_SHC-Organization-Spanish\">See above (Organization/SHC-Organization-Spanish)</a></td><td><span title=\"Codes: {http://id.who.int/icd11/mms RA01.0}\">RA01.0</span></td><td>1</td><td>2</td></tr></table></div>"
+  ];
+  fhir:Immunization.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://who-int.github.io/svc/refs/heads/rc2/test_system" ];
+     fhir:Identifier.value [ fhir:value "123" ]
+  ];
+  fhir:Immunization.status [ fhir:value "completed"];
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding" ];
+       fhir:Coding.code [ fhir:value "XM0CX4" ]
+     ]
+  ];
+  fhir:Immunization.patient [
+     fhir:Reference.reference [ fhir:value "SHC-Patient-Example-Spanish" ]
+  ];
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2021-02-02"^^xsd:date];
+  fhir:Immunization.lotNumber [ fhir:value "123"];
+  fhir:Immunization.expirationDate [ fhir:value "2021-06-30"^^xsd:date];
+  fhir:Immunization.performer [
+     fhir:index 0;
+     fhir:Immunization.performer.actor [
+       fhir:link <https://who-int.github.io/svc/Organization/SHC-Organization-Spanish>;
+       fhir:Reference.reference [ fhir:value "Organization/SHC-Organization-Spanish" ]
+     ]
+  ];
+  fhir:Immunization.protocolApplied [
+     fhir:index 0;
+     fhir:Immunization.protocolApplied.authority [
+       fhir:link <https://who-int.github.io/svc/Organization/SHC-Organization-Spanish>;
+       fhir:Reference.reference [ fhir:value "Organization/SHC-Organization-Spanish" ]
+     ];
+     fhir:Immunization.protocolApplied.targetDisease [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://id.who.int/icd11/mms" ];
+         fhir:Coding.code [ fhir:value "RA01.0" ]
+       ]
+     ];
+     fhir:Immunization.protocolApplied.doseNumberPositiveInt [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:Immunization.protocolApplied.seriesDosesPositiveInt [ fhir:value "2"^^xsd:positiveInteger ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://who-int.github.io/svc/Bundle/Example-Spanish.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

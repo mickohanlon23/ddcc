@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="Example-English"/>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Patient/SHC-Patient-English"/>
+    <resource>
+      <Patient>
+        <id value="SHC-Patient-English"/>
+        <meta>
+          <profile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>name</b>: Felix Cat</p><p><b>birthDate</b>: 2000-01-02</p></div>
+        </text>
+        <name>
+          <text value="Felix Cat"/>
+        </name>
+        <birthDate value="2000-01-02"/>
+      </Patient>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Patient"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Patient/SHC-Organization-English"/>
+    <resource>
+      <Organization>
+        <id value="SHC-Organization-English"/>
+        <meta>
+          <profile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>name</b>: Government Hospital</p></div>
+        </text>
+        <name value="Government Hospital"/>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Patient/SVC-Immunization-English"/>
+    <resource>
+      <Immunization>
+        <id value="SVC-Immunization-English"/>
+        <meta>
+          <profile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 123</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title="Codes: {urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding XM0CX4}">XM0CX4</span></p><p><b>patient</b>: <a href="#Patient_SHC-Patient-English">See above (Patient/SHC-Patient-English)</a></p><p><b>occurrence</b>: 2021-02-02</p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href="#Organization_SHC-Organization-English">See above (Organization/SHC-Organization-English)</a></td></tr></table><h3>ProtocolApplieds</h3><table class="grid"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><a href="#Organization_SHC-Organization-English">See above (Organization/SHC-Organization-English)</a></td><td><span title="Codes: {http://id.who.int/icd11/mms RA01.0}">RA01.0</span></td><td>1</td><td>2</td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="https://who-int.github.io/svc/refs/heads/rc2/test_system"/>
+          <value value="123"/>
+        </identifier>
+        <status value="completed"/>
+        <vaccineCode>
+          <coding>
+            <system value="urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding"/>
+            <code value="XM0CX4"/>
+          </coding>
+        </vaccineCode>
+        <patient>
+          <reference value="Patient/SHC-Patient-English"/>
+        </patient>
+        <occurrenceDateTime value="2021-02-02"/>
+        <lotNumber value="123"/>
+        <expirationDate value="2021-06-30"/>
+        <performer>
+          <actor>
+            <reference value="Organization/SHC-Organization-English"/>
+          </actor>
+        </performer>
+        <protocolApplied>
+          <authority>
+            <reference value="Organization/SHC-Organization-English"/>
+          </authority>
+          <targetDisease>
+            <coding>
+              <system value="http://id.who.int/icd11/mms"/>
+              <code value="RA01.0"/>
+            </coding>
+          </targetDisease>
+          <doseNumberPositiveInt value="1"/>
+          <seriesDosesPositiveInt value="2"/>
+        </protocolApplied>
+      </Immunization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Immunization"/>
+    </request>
+  </entry>
+</Bundle>
