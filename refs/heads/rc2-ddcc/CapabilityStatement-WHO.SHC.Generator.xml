@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="WHO.SHC.Generator"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+      <p>Capability Statement for a SHC Generator</p>
+         
+    </div>
+  </text>
+  <url value="https://who-int.github.io/svc/refs/headers/rc2/CapabilityStatement/WHO.SHC.Generator"/>
+  <version value="0.2.1"/>
+  <name value="WHO.SHC.Generator"/>
+  <title value="WHO SHC Generator"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2021-05-06"/>
+  <publisher value="World Health Organization (WHO)"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.who.int"/>
+    </telecom>
+  </contact>
+  <description value="CapabilityStatement for WHO SHC Generator actor."/>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="application/fhir+xml"/>
+  <format value="application/fhir+json"/>
+  <rest>
+    <mode value="server"/>
+    <documentation value="SHC Generator Server Actor"/>
+    <resource>
+      <type value="QuestionnaireResponse"/>
+      <supportedProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-questionnaireresponse"/>
+      <supportedProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-questionnaireresponse"/>
+      <documentation value="."/>
+      <interaction>
+        <code value="create"/>
+        <documentation value="SHC Generator Interaction for accepting a Submit Health Event"/>
+      </interaction>
+      <operation>
+        <name value="generateHealthCertificate"/>
+        <definition value="https://who-int.github.io/svc/refs/heads/rc2/OperationDefinition/SHC-QuestionnaireResponse-generateHealthCertificate"/>
+        <documentation value="Generate a health certificate based on a QuestionnaireResponse."/>
+      </operation>
+    </resource>
+    <interaction>
+      <code value="batch"/>
+    </interaction>
+  </rest>
+  <rest>
+    <mode value="client"/>
+    <documentation value="SHC Generator Client Actor"/>
+    <interaction>
+      <code value="batch"/>
+      <documentation value="For submitting the Register Health Certificate transaction."/>
+    </interaction>
+  </rest>
+</CapabilityStatement>

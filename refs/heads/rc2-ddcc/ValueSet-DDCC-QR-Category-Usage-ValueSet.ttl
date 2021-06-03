@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://who-int.github.io/svc/ValueSet/DDCC-QR-Category-Usage-ValueSet> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "DDCC-QR-Category-Usage-ValueSet"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html\"><code>https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/DDCC-QR-Category-Usage-CodeSystem</code></a></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://who-int.github.io/svc/refs/heads/rc2/ValueSet/DDCC-QR-Category-Usage-ValueSet"];
+  fhir:ValueSet.version [ fhir:value "0.2.1"];
+  fhir:ValueSet.name [ fhir:value "DDCC_QR_Category_Usage_ValueSet"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2021-06-03T21:55:48+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "World Health Organization (WHO)"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "Categorization of QR codes by their business usage"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/DDCC-QR-Category-Usage-CodeSystem" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://who-int.github.io/svc/ValueSet/DDCC-QR-Category-Usage-ValueSet.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

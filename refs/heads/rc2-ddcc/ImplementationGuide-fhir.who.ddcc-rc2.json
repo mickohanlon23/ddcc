@@ -1,0 +1,1260 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "fhir.who.ddcc-rc2",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DDCC_RC2</h2><p>The official URL for this implementation guide is: </p><pre>https://who-int.github.io/svc/ImplementationGuide/fhir.who.ddcc-rc2</pre><div><p>Digital Documentation of COVID-19 Certificates - RC2</p>\n</div></div>"
+  },
+  "url": "https://who-int.github.io/svc/ImplementationGuide/fhir.who.ddcc-rc2",
+  "version": "0.2.1",
+  "name": "DDCC_RC2",
+  "title": "WHO Digital Documentation of COVID-19 Certificates (DDCC)- RC2",
+  "status": "draft",
+  "experimental": false,
+  "date": "2021-06-03",
+  "publisher": "World Health Organization (WHO)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.who.int"
+        }
+      ]
+    }
+  ],
+  "description": "Digital Documentation of COVID-19 Certificates - RC2",
+  "packageId": "fhir.who.ddcc-rc2",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "id": "ips",
+      "uri": "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
+      "packageId": "hl7.fhir.uv.ips",
+      "version": "current"
+    },
+    {
+      "id": "sdc",
+      "uri": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
+      "packageId": "hl7.fhir.uv.sdc",
+      "version": "current"
+    }
+  ],
+  "definition": {
+    "extension": [
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "copyrightyear"
+          },
+          {
+            "url": "value",
+            "valueString": "2021+"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "releaselabel"
+          },
+          {
+            "url": "value",
+            "valueString": "CI Build"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "example-table"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "generate"
+          },
+          {
+            "url": "value",
+            "valueString": "examples"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "generate"
+          },
+          {
+            "url": "value",
+            "valueString": "example-narratives"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "example-list"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "example-table-all"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "example-list-all"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "summary"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "summary-tables"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "content"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "profiles"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "script"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "do-transforms"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "special-url"
+          },
+          {
+            "url": "value",
+            "valueString": "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-pre-uv-ips"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "special-url"
+          },
+          {
+            "url": "value",
+            "valueString": "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-suppressed-warnings"
+          },
+          {
+            "url": "value",
+            "valueString": "input/ignoreWarnings.txt"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-binary"
+          },
+          {
+            "url": "value",
+            "valueString": "input/cql"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "autoload-resources"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "template/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-liquid"
+          },
+          {
+            "url": "value",
+            "valueString": "input/liquid"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-qa"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/qa"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-temp"
+          },
+          {
+            "url": "value",
+            "valueString": "temp/pages"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-output"
+          },
+          {
+            "url": "value",
+            "valueString": "output"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "path-history"
+          },
+          {
+            "url": "value",
+            "valueString": "https://who-int.github.io/svc/history.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-html"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "template-md"
+          },
+          {
+            "url": "value",
+            "valueString": "template-page-md.html"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-contact"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-context"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-copyright"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-jurisdiction"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-license"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-publisher"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "apply-version"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "active-tables"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      }
+    ],
+    "resource": [
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Immunization-pre-uv-ips"
+        },
+        "name": "Immunization (IPS)",
+        "description": "This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.\r\n\r\nIt describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Patient-pre-uv-ips"
+        },
+        "name": "Patient (IPS)",
+        "description": "This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureMap"
+          }
+        ],
+        "reference": {
+          "reference": "StructureMap/svc-map-qr-bundle"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/IPS-Immunization-Example-Bundle-01"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/WHO.SHC.Generator"
+        },
+        "name": "WHO SHC Generator",
+        "description": "CapabilityStatement for WHO SHC Generator actor."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/WHO.SHC.RegistryService"
+        },
+        "name": "WHO SHC Registry Service",
+        "description": "CapabilityStatement for WHO SHC Registry Service actor."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Immunization"
+          }
+        ],
+        "reference": {
+          "reference": "Immunization/DDCC-Immunization-English"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/who-ddcc-vaccines-covid-19"
+        },
+        "name": "WHO Vaccine List (COVID-19)",
+        "description": "WHO Vaccine List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCBinaryQRContent"
+        },
+        "name": "DDCC Binary for QR Content",
+        "description": "PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/DDCC-QR-Format-CodeSystem"
+        },
+        "name": "DDCC QR Format Codes",
+        "description": "Possible formats available for QR data."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCBundle"
+        },
+        "name": "DDCC Bundle",
+        "description": "An [DDCC Bundle](StructureDefinition-DDCCBundle.html) is a document bundle containing the DDCC."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/DDCC-Patient-English"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/who-ddcc-vaccines"
+        },
+        "name": "WHO Vaccine List",
+        "description": "The WHO Vaccine List from [ICD 11](https://icd.who.int/browse11) is used by:\n *  the [DDCC Immunization](StructureDefinition-DDCCImmunization.html)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCSubmitHealthEventResponse"
+        },
+        "name": "DDCC Submit Health Event Response",
+        "description": "An DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCSubmitHealthEventRequest"
+        },
+        "name": "DDCC Submit Health Event Request",
+        "description": "An [DDCC Submit Health Event Request](StructureDefinition-DDCCSubmitHealthEventRequest.html) is a transaction bundle containing the content of health events which are being submitted under the [Submit Health Event](transactions.html#submit-health-event) transaction."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/DDCC-QR-Format-ValueSet"
+        },
+        "description": "Format of the representation of QR code"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCPractitionerRole"
+        },
+        "name": "DDCC Practitioner Role",
+        "description": "Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a \nmanaging [DDCC Organization](StructureDefinition-DDCCOrgaznization.html), indicating \nthat an DDCC Practitioner is authorized by the public health authority (PHA) to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/DDCC-QR-Category-Usage-ValueSet"
+        },
+        "description": "Categorization of QR codes by their business usage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/DDCCCoreDataSetQuestionnaire"
+        },
+        "name": "DDCC Core Data Set Questionnaire ",
+        "description": "DDCC Questionnaire for an Immunization event."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCCountryOfVaccination"
+        },
+        "name": "DDCC Country Of Vaccination for Immunization",
+        "description": "DDCC Country Of Vaccination for Immunization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/who-ddcc-disease-targeted-covid-19"
+        },
+        "name": "WHO Disease or Agent Targeted (COVID-19)",
+        "description": "WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCQuestionnaire"
+        },
+        "name": "DDCC Questionniare",
+        "description": "Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given [DDCC QuestionnaireResponse](StructureDefintion-DDCCQuestionnaireResponse.html) which responds to the DDCC Questionnaire."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OperationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "OperationDefinition/DDCC-QuestionnaireReponse-generateHealthCertificate"
+        },
+        "description": "Generate one or more signed QR Codes based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCVaccineBrand"
+        },
+        "name": "DDCC Vaccine Brand for Immunization",
+        "description": "DDCC Vaccine Brand for Immunization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/who-ddcc-map-icd11-sct-disease-targeted"
+        },
+        "description": "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/DDCC-Organization-English"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/DDCC-QR-Category-Usage-CodeSystem"
+        },
+        "name": "DDCC QR Category Usage Codes",
+        "description": "Possible formats available for QR usage."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCDocumentReferenceQR"
+        },
+        "name": "DDCC DocumentReference return for QR"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCPatient"
+        },
+        "name": "DDCC Patient",
+        "description": "An DDCCPatient should:\n* if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner) should be set to reference the [DDCC Organization](StructureDefinition-DDCCOrganization.html) resource associated to the PHA via the [WHO Public Key Directory](actors.html#who-pkd)\n* obeys who-ddcc-patient-1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/DDCC-SectionCode-ValueSet"
+        },
+        "description": "Content section codes for DDCC."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/who-ddcc-vaccinable-conditions"
+        },
+        "name": "WHO List of Vaccinable Conditions",
+        "description": "The WHO Vaccinable Conditions List from [ICD 11](https://icd.who.int/browse11) is used by:\n *  the [DDCC Immunization](StructureDefinition-DDCCImmunization.html)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCBinaryQR"
+        },
+        "name": "DDCCC Binary return for QR"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCPractitioner"
+        },
+        "name": "DDCC Practitioner",
+        "description": "Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/Example-English"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCBinaryQRPNG"
+        },
+        "name": "SHC Binary for QR (PNG representation)",
+        "description": "PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCQuestionnaireResponse"
+        },
+        "name": "SHC Questionnaire Response",
+        "description": "Describes the logical structure for a questionnaire response associacted to a [SHC Questionaire](StructureDefinition-shc-questionnaire.html)."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCOrganization"
+        },
+        "name": "DDCC Organization",
+        "description": "Abstraction for a DDCC Organization. There should be a DDCC Organization associated \nto each public health authortiy (PHA) in the [WHO Public Key \nDirectory](actors.html#who-pkd)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCVaccineMarketAuthorization"
+        },
+        "name": "DDCC Vaccine Market Authorization for Immunization",
+        "description": "DDCC Vaccine Market Authorization for Immunization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "QuestionnaireResponse"
+          }
+        ],
+        "reference": {
+          "reference": "QuestionnaireResponse/DDCC-QuestionnaireResponse-Example"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCComposition"
+        },
+        "name": "DDCC Composition",
+        "description": "Describes the logical structure for a Digital Documentation of COVID-19 Certificates \n(DDCC)."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/who-ddcc-map-icd11-sct-vaccines"
+        },
+        "description": "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCImmunization"
+        },
+        "name": "DDCC Immunization",
+        "description": "A DDCC Immunization contains the content corresponding to a row in the Vaccination \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) Immunization resouce, this is intended to map into an IPS \nImmunization resource."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/DDCC-SectionCode-CodeSystem"
+        },
+        "name": "SHC QR SectionCode Usage Codes",
+        "description": "Section Codes for DDCC"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Narrative",
+          "generation": "html",
+          "page": [
+            {
+              "nameUrl": "references.html",
+              "title": "References",
+              "generation": "html"
+            }
+          ]
+        },
+        {
+          "nameUrl": "requirements.html",
+          "title": "Business Requirements",
+          "generation": "html",
+          "page": [
+            {
+              "nameUrl": "concepts.html",
+              "title": "Concepts",
+              "generation": "html"
+            },
+            {
+              "nameUrl": "functional.html",
+              "title": "Functional Requirements",
+              "generation": "html"
+            },
+            {
+              "nameUrl": "personas.html",
+              "title": "Personas",
+              "generation": "html"
+            },
+            {
+              "nameUrl": "workflows.html",
+              "title": "Workflows",
+              "generation": "html"
+            },
+            {
+              "nameUrl": "usecases.html",
+              "title": "Use Cases",
+              "generation": "html"
+            },
+            {
+              "nameUrl": "dictionary.html",
+              "title": "Data Dictionary",
+              "generation": "html"
+            }
+          ]
+        },
+        {
+          "nameUrl": "data_exchange.html",
+          "title": "Data Models and Exchange",
+          "generation": "html",
+          "page": [
+            {
+              "nameUrl": "dependencies.html",
+              "title": "Dependencies",
+              "generation": "html"
+            },
+            {
+              "nameUrl": "actors.html",
+              "title": "Actors",
+              "generation": "html"
+            },
+            {
+              "nameUrl": "transactions.html",
+              "title": "Transactions",
+              "generation": "html"
+            },
+            {
+              "nameUrl": "expected_actions.html",
+              "title": "Expected Actions",
+              "generation": "html"
+            },
+            {
+              "nameUrl": "content_profiles.html",
+              "title": "Content Profiles",
+              "generation": "html"
+            }
+          ]
+        },
+        {
+          "nameUrl": "deployment.html",
+          "title": "Deployment Guidance",
+          "generation": "html",
+          "page": [
+            {
+              "nameUrl": "security_privacy.html",
+              "title": "Security and Privacy Considerations",
+              "generation": "html"
+            },
+            {
+              "nameUrl": "testing.html",
+              "title": "Testing",
+              "generation": "html"
+            },
+            {
+              "nameUrl": "downloads.html",
+              "title": "Useful Downloads",
+              "generation": "html"
+            }
+          ]
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "path-pages",
+        "value": "input/pagecontent"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/ips-preadopted"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources/activitydefinition"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources/capabilitystatement"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources/library"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources/measure"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources/maps"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources/examples"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources/plandefinition"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources/questionnaire"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/vocabulary/codesystem"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/vocabulary/valueset"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/capabilities"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/examples"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/extensions"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/models"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/operations"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/profiles"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/vocabulary"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/testing"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/history"
+      },
+      {
+        "code": "path-resource",
+        "value": "fsh-generated/resources"
+      },
+      {
+        "code": "path-pages",
+        "value": "template/config"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/images"
+      },
+      {
+        "code": "path-tx-cache",
+        "value": "input-cache/txcache"
+      }
+    ]
+  }
+}

@@ -1,0 +1,222 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://who-int.github.io/svc/CapabilityStatement/WHO.SHC.RegistryService> a fhir:CapabilityStatement;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "WHO.SHC.RegistryService"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Capability Statement for a SHC RegistryService</p>\n         \n    </div>"
+  ];
+  fhir:CapabilityStatement.url [ fhir:value "https://who-int.github.io/svc/refs/headers/rc2/CapabilityStatement/WHO.SHC.RegistryService"];
+  fhir:CapabilityStatement.version [ fhir:value "0.2.1"];
+  fhir:CapabilityStatement.name [ fhir:value "WHO.SHC.RegistryService"];
+  fhir:CapabilityStatement.title [ fhir:value "WHO SHC Registry Service"];
+  fhir:CapabilityStatement.status [ fhir:value "draft"];
+  fhir:CapabilityStatement.experimental [ fhir:value "true"^^xsd:boolean];
+  fhir:CapabilityStatement.date [ fhir:value "2021-05-06"^^xsd:date];
+  fhir:CapabilityStatement.publisher [ fhir:value "World Health Organization (WHO)"];
+  fhir:CapabilityStatement.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ];
+  fhir:CapabilityStatement.description [ fhir:value "CapabilityStatement for WHO SHC Registry Service actor."];
+  fhir:CapabilityStatement.kind [ fhir:value "requirements"];
+  fhir:CapabilityStatement.fhirVersion [ fhir:value "4.0.1"];
+  fhir:CapabilityStatement.format [
+     fhir:value "application/fhir+xml";
+     fhir:index 0
+  ], [
+     fhir:value "application/fhir+json";
+     fhir:index 1
+  ];
+  fhir:CapabilityStatement.rest [
+     fhir:index 0;
+     fhir:CapabilityStatement.rest.mode [ fhir:value "server" ];
+     fhir:CapabilityStatement.rest.documentation [ fhir:value "SHC Registry Service Server Actor" ];
+     fhir:CapabilityStatement.rest.resource [
+       fhir:index 0;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Composition" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-composition";
+         fhir:index 0;
+         fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-composition>
+       ], [
+         fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition";
+         fhir:index 1;
+         fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-composition>
+       ], [
+         fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-composition";
+         fhir:index 2;
+         fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shf-composition>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "." ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ];
+         fhir:CapabilityStatement.rest.resource.interaction.documentation [ fhir:value "SHC Registry Service Actor for accepting a Registr Health Certificate transaction" ]
+       ];
+       fhir:CapabilityStatement.rest.resource.operation [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "$document" ];
+         fhir:CapabilityStatement.rest.resource.operation.definition [
+           fhir:value "http://hl7.org/fhir/OperationDefinition/Composition-document";
+           fhir:link <http://hl7.org/fhir/OperationDefinition/Composition-document>
+         ];
+         fhir:CapabilityStatement.rest.resource.operation.documentation [ fhir:value "SHC Registry Service Actor for responding to a Retrieve Health Certificate or Retrieve Health Folder transaction" ]
+       ]
+     ], [
+       fhir:index 1;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Patient" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient";
+         fhir:index 0;
+         fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-patient>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "." ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ]
+     ], [
+       fhir:index 2;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Organization" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization";
+         fhir:index 0;
+         fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-organization>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "." ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Provenance" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-provenance";
+         fhir:index 0;
+         fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-provenance>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "." ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Practitioner" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner";
+         fhir:index 0;
+         fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "." ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "PractitionerRole" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner-role";
+         fhir:index 0;
+         fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/shc-practitioner-role>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "." ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:CapabilityStatement.rest.resource.type [ fhir:value "Immunization" ];
+       fhir:CapabilityStatement.rest.resource.supportedProfile [
+         fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization";
+         fhir:index 0;
+         fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/svc-immunization>
+       ];
+       fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "." ];
+       fhir:CapabilityStatement.rest.resource.interaction [
+         fhir:index 0;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "create" ]
+       ], [
+         fhir:index 1;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "update" ]
+       ], [
+         fhir:index 2;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "read" ]
+       ], [
+         fhir:index 3;
+         fhir:CapabilityStatement.rest.resource.interaction.code [ fhir:value "vread" ]
+       ]
+     ];
+     fhir:CapabilityStatement.rest.interaction [
+       fhir:index 0;
+       fhir:CapabilityStatement.rest.interaction.code [ fhir:value "batch" ];
+       fhir:CapabilityStatement.rest.interaction.documentation [ fhir:value "SHC Registry Service Actor for accepting a Registry Health Certificate" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://who-int.github.io/svc/CapabilityStatement/WHO.SHC.RegistryService.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

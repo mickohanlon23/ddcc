@@ -1,0 +1,1235 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://who-int.github.io/svc/ImplementationGuide/fhir.who.ddcc-rc2> a fhir:ImplementationGuide;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "fhir.who.ddcc-rc2"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DDCC_RC2</h2><p>The official URL for this implementation guide is: </p><pre>https://who-int.github.io/svc/ImplementationGuide/fhir.who.ddcc-rc2</pre><div><p>Digital Documentation of COVID-19 Certificates - RC2</p>\n</div></div>"
+  ];
+  fhir:ImplementationGuide.url [ fhir:value "https://who-int.github.io/svc/ImplementationGuide/fhir.who.ddcc-rc2"];
+  fhir:ImplementationGuide.version [ fhir:value "0.2.1"];
+  fhir:ImplementationGuide.name [ fhir:value "DDCC_RC2"];
+  fhir:ImplementationGuide.title [ fhir:value "WHO Digital Documentation of COVID-19 Certificates (DDCC)- RC2"];
+  fhir:ImplementationGuide.status [ fhir:value "draft"];
+  fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
+  fhir:ImplementationGuide.date [ fhir:value "2021-06-03"^^xsd:date];
+  fhir:ImplementationGuide.publisher [ fhir:value "World Health Organization (WHO)"];
+  fhir:ImplementationGuide.contact [
+     fhir:index 0;
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+     ]
+  ];
+  fhir:ImplementationGuide.description [ fhir:value "Digital Documentation of COVID-19 Certificates - RC2"];
+  fhir:ImplementationGuide.packageId [ fhir:value "fhir.who.ddcc-rc2"];
+  fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"];
+  fhir:ImplementationGuide.fhirVersion [
+     fhir:value "4.0.1";
+     fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "ips" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips";
+       fhir:link <http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.ips" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
+  ], [
+     fhir:index 1;
+     fhir:Element.id [ fhir:value "sdc" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc";
+       fhir:link <http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.fhir.uv.sdc" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "current" ]
+  ];
+  fhir:ImplementationGuide.definition [
+     fhir:Element.extension [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "copyrightyear" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "2021+" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "releaselabel" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "CI Build" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "example-table" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "generate" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "examples" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "generate" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "example-narratives" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "example-list" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "example-table-all" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "example-list-all" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "summary" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "summary-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "content" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "profiles" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "script" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "do-transforms" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-pre-uv-ips" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "special-url" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-suppressed-warnings" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/ignoreWarnings.txt" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-binary" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/cql" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "autoload-resources" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-liquid" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "input/liquid" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-qa" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/qa" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-temp" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "temp/pages" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-output" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "output" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "path-history" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "https://who-int.github.io/svc/history.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-html" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "template-md" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "template-page-md.html" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-contact" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-context" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-copyright" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-jurisdiction" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-license" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-publisher" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "apply-version" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "code" ];
+         fhir:Extension.valueString [ fhir:value "active-tables" ]
+       ], [
+         fhir:index 1;
+         fhir:Extension.url [ fhir:value "value" ];
+         fhir:Extension.valueString [ fhir:value "true" ]
+       ];
+       fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
+     ];
+     fhir:ImplementationGuide.definition.resource [
+       fhir:index 0;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/Immunization-pre-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Immunization-pre-uv-ips" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Immunization (IPS)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.\r\n\r\nIt describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party." ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/Patient-pre-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Patient-pre-uv-ips" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient (IPS)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources." ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureMap/svc-map-qr-bundle>;
+         fhir:Reference.reference [ fhir:value "StructureMap/svc-map-qr-bundle" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/Bundle/IPS-Immunization-Example-Bundle-01>;
+         fhir:Reference.reference [ fhir:value "Bundle/IPS-Immunization-Example-Bundle-01" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/CapabilityStatement/WHO.SHC.Generator>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/WHO.SHC.Generator" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO SHC Generator" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CapabilityStatement for WHO SHC Generator actor." ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/CapabilityStatement/WHO.SHC.RegistryService>;
+         fhir:Reference.reference [ fhir:value "CapabilityStatement/WHO.SHC.RegistryService" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO SHC Registry Service" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "CapabilityStatement for WHO SHC Registry Service actor." ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Immunization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/Immunization/DDCC-Immunization-English>;
+         fhir:Reference.reference [ fhir:value "Immunization/DDCC-Immunization-English" ]
+       ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/ValueSet/who-ddcc-vaccines-covid-19>;
+         fhir:Reference.reference [ fhir:value "ValueSet/who-ddcc-vaccines-covid-19" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Vaccine List (COVID-19)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO Vaccine List (COVID-19) from [ICD 11](https://icd.who.int/browse11)" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCBinaryQRContent>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCBinaryQRContent" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Binary for QR Content" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)" ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/CodeSystem/DDCC-QR-Format-CodeSystem>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/DDCC-QR-Format-CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC QR Format Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Possible formats available for QR data." ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCBundle>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCBundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Bundle" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An [DDCC Bundle](StructureDefinition-DDCCBundle.html) is a document bundle containing the DDCC." ]
+     ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Patient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/Patient/DDCC-Patient-English>;
+         fhir:Reference.reference [ fhir:value "Patient/DDCC-Patient-English" ]
+       ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/ValueSet/who-ddcc-vaccines>;
+         fhir:Reference.reference [ fhir:value "ValueSet/who-ddcc-vaccines" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Vaccine List" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The WHO Vaccine List from [ICD 11](https://icd.who.int/browse11) is used by:\n *  the [DDCC Immunization](StructureDefinition-DDCCImmunization.html)" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCSubmitHealthEventResponse>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCSubmitHealthEventResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Submit Health Event Response" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction." ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCSubmitHealthEventRequest>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCSubmitHealthEventRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Submit Health Event Request" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An [DDCC Submit Health Event Request](StructureDefinition-DDCCSubmitHealthEventRequest.html) is a transaction bundle containing the content of health events which are being submitted under the [Submit Health Event](transactions.html#submit-health-event) transaction." ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/ValueSet/DDCC-QR-Format-ValueSet>;
+         fhir:Reference.reference [ fhir:value "ValueSet/DDCC-QR-Format-ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Format of the representation of QR code" ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCPractitionerRole>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCPractitionerRole" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Practitioner Role" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a \nmanaging [DDCC Organization](StructureDefinition-DDCCOrgaznization.html), indicating \nthat an DDCC Practitioner is authorized by the public health authority (PHA) to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)." ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/ValueSet/DDCC-QR-Category-Usage-ValueSet>;
+         fhir:Reference.reference [ fhir:value "ValueSet/DDCC-QR-Category-Usage-ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorization of QR codes by their business usage" ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/Questionnaire/DDCCCoreDataSetQuestionnaire>;
+         fhir:Reference.reference [ fhir:value "Questionnaire/DDCCCoreDataSetQuestionnaire" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Core Data Set Questionnaire " ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Questionnaire for an Immunization event." ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCCountryOfVaccination>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCCountryOfVaccination" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Country Of Vaccination for Immunization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Country Of Vaccination for Immunization" ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/ValueSet/who-ddcc-disease-targeted-covid-19>;
+         fhir:Reference.reference [ fhir:value "ValueSet/who-ddcc-disease-targeted-covid-19" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Disease or Agent Targeted (COVID-19)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)" ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCQuestionnaire>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCQuestionnaire" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Questionniare" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given [DDCC QuestionnaireResponse](StructureDefintion-DDCCQuestionnaireResponse.html) which responds to the DDCC Questionnaire." ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/OperationDefinition/DDCC-QuestionnaireReponse-generateHealthCertificate>;
+         fhir:Reference.reference [ fhir:value "OperationDefinition/DDCC-QuestionnaireReponse-generateHealthCertificate" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Generate one or more signed QR Codes based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)" ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCVaccineBrand>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCVaccineBrand" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Vaccine Brand for Immunization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Vaccine Brand for Immunization" ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/ConceptMap/who-ddcc-map-icd11-sct-disease-targeted>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-sct-disease-targeted" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted" ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Organization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/Organization/DDCC-Organization-English>;
+         fhir:Reference.reference [ fhir:value "Organization/DDCC-Organization-English" ]
+       ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/DDCC-QR-Category-Usage-CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC QR Category Usage Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Possible formats available for QR usage." ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCDocumentReferenceQR>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCDocumentReferenceQR" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC DocumentReference return for QR" ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCPatient>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCPatient" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "An DDCCPatient should:\n* if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner) should be set to reference the [DDCC Organization](StructureDefinition-DDCCOrganization.html) resource associated to the PHA via the [WHO Public Key Directory](actors.html#who-pkd)\n* obeys who-ddcc-patient-1" ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/ValueSet/DDCC-SectionCode-ValueSet>;
+         fhir:Reference.reference [ fhir:value "ValueSet/DDCC-SectionCode-ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Content section codes for DDCC." ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/ValueSet/who-ddcc-vaccinable-conditions>;
+         fhir:Reference.reference [ fhir:value "ValueSet/who-ddcc-vaccinable-conditions" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO List of Vaccinable Conditions" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The WHO Vaccinable Conditions List from [ICD 11](https://icd.who.int/browse11) is used by:\n *  the [DDCC Immunization](StructureDefinition-DDCCImmunization.html)" ]
+     ], [
+       fhir:index 31;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCBinaryQR>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCBinaryQR" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCCC Binary return for QR" ]
+     ], [
+       fhir:index 32;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCPractitioner>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCPractitioner" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Practitioner" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)." ]
+     ], [
+       fhir:index 33;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/Bundle/Example-English>;
+         fhir:Reference.reference [ fhir:value "Bundle/Example-English" ]
+       ]
+     ], [
+       fhir:index 34;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCBinaryQRPNG>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCBinaryQRPNG" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Binary for QR (PNG representation)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)" ]
+     ], [
+       fhir:index 35;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCQuestionnaireResponse>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCQuestionnaireResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC Questionnaire Response" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for a questionnaire response associacted to a [SHC Questionaire](StructureDefinition-shc-questionnaire.html)." ]
+     ], [
+       fhir:index 36;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCOrganization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCOrganization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Organization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Abstraction for a DDCC Organization. There should be a DDCC Organization associated \nto each public health authortiy (PHA) in the [WHO Public Key \nDirectory](actors.html#who-pkd)" ]
+     ], [
+       fhir:index 37;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCVaccineMarketAuthorization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCVaccineMarketAuthorization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Vaccine Market Authorization for Immunization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Vaccine Market Authorization for Immunization" ]
+     ], [
+       fhir:index 38;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/QuestionnaireResponse/DDCC-QuestionnaireResponse-Example>;
+         fhir:Reference.reference [ fhir:value "QuestionnaireResponse/DDCC-QuestionnaireResponse-Example" ]
+       ]
+     ], [
+       fhir:index 39;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCComposition>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCComposition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Composition" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for a Digital Documentation of COVID-19 Certificates \n(DDCC)." ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ConceptMap" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/ConceptMap/who-ddcc-map-icd11-sct-vaccines>;
+         fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-sct-vaccines" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines" ]
+     ], [
+       fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCImmunization>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCImmunization" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Immunization" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "A DDCC Immunization contains the content corresponding to a row in the Vaccination \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) Immunization resouce, this is intended to map into an IPS \nImmunization resource." ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/CodeSystem/DDCC-SectionCode-CodeSystem>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/DDCC-SectionCode-CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SHC QR SectionCode Usage Codes" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Section Codes for DDCC" ]
+     ];
+     fhir:ImplementationGuide.definition.page [
+       fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];
+       fhir:ImplementationGuide.definition.page.title [ fhir:value "Table of Contents" ];
+       fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+       fhir:ImplementationGuide.definition.page.page [
+         fhir:index 0;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "index.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Narrative" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "references.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "References" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "requirements.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Business Requirements" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "concepts.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Concepts" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "functional.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Functional Requirements" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 2;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "personas.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Personas" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 3;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "workflows.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Workflows" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 4;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "usecases.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Cases" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 5;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "dictionary.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Data Dictionary" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ]
+       ], [
+         fhir:index 2;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "data_exchange.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Data Models and Exchange" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "dependencies.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Dependencies" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "actors.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Actors" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 2;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "transactions.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Transactions" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 3;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "expected_actions.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Expected Actions" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 4;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "content_profiles.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Content Profiles" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ]
+       ], [
+         fhir:index 3;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "deployment.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Deployment Guidance" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ];
+         fhir:ImplementationGuide.definition.page.page [
+           fhir:index 0;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "security_privacy.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Security and Privacy Considerations" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 1;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "testing.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Testing" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ], [
+           fhir:index 2;
+           fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "downloads.html" ];
+           fhir:ImplementationGuide.definition.page.title [ fhir:value "Useful Downloads" ];
+           fhir:ImplementationGuide.definition.page.generation [ fhir:value "html" ]
+         ]
+       ]
+     ];
+     fhir:ImplementationGuide.definition.parameter [
+       fhir:index 0;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/pagecontent" ]
+     ], [
+       fhir:index 1;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/ips-preadopted" ]
+     ], [
+       fhir:index 2;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/activitydefinition" ]
+     ], [
+       fhir:index 3;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/capabilitystatement" ]
+     ], [
+       fhir:index 4;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/library" ]
+     ], [
+       fhir:index 5;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/measure" ]
+     ], [
+       fhir:index 6;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/maps" ]
+     ], [
+       fhir:index 7;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/examples" ]
+     ], [
+       fhir:index 8;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/plandefinition" ]
+     ], [
+       fhir:index 9;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources/questionnaire" ]
+     ], [
+       fhir:index 10;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary/codesystem" ]
+     ], [
+       fhir:index 11;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary/valueset" ]
+     ], [
+       fhir:index 12;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/capabilities" ]
+     ], [
+       fhir:index 13;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/examples" ]
+     ], [
+       fhir:index 14;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/extensions" ]
+     ], [
+       fhir:index 15;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/models" ]
+     ], [
+       fhir:index 16;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/operations" ]
+     ], [
+       fhir:index 17;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/profiles" ]
+     ], [
+       fhir:index 18;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/resources" ]
+     ], [
+       fhir:index 19;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/vocabulary" ]
+     ], [
+       fhir:index 20;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/testing" ]
+     ], [
+       fhir:index 21;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/history" ]
+     ], [
+       fhir:index 22;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-resource" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "fsh-generated/resources" ]
+     ], [
+       fhir:index 23;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "template/config" ]
+     ], [
+       fhir:index 24;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-pages" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input/images" ]
+     ], [
+       fhir:index 25;
+       fhir:ImplementationGuide.definition.parameter.code [ fhir:value "path-tx-cache" ];
+       fhir:ImplementationGuide.definition.parameter.value [ fhir:value "input-cache/txcache" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://who-int.github.io/svc/ImplementationGuide/fhir.who.ddcc-rc2.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
