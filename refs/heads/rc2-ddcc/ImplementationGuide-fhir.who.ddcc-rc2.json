@@ -41,6 +41,12 @@
       "uri": "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
       "packageId": "hl7.fhir.uv.sdc",
       "version": "current"
+    },
+    {
+      "id": "mhd",
+      "uri": "http://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.mhd.fhir",
+      "packageId": "ihe.mhd.fhir",
+      "version": "current"
     }
   ],
   "definition": {
@@ -604,19 +610,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCBinaryQRContent"
-        },
-        "name": "DDCC Binary for QR Content",
-        "description": "PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
           }
         ],
@@ -649,6 +642,19 @@
         "reference": {
           "reference": "Patient/DDCC-Patient-English"
         }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCDocumentReference"
+        },
+        "name": "DDCC Document Reference",
+        "description": "A [DDCC Document Reference](StructureDefinition-DDCCDocumentReference.html) is a \ndocument reference to a [DDCC Document](StructureDefinition-DDCCDocument.html) \ncontaining the DDCC.\nThe content attachment data will be a base64 encoded representation of the DDCC Document."
       },
       {
         "extension": [
@@ -893,18 +899,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource:abstract"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCBinaryQR"
-        },
-        "name": "DDCCC Binary return for QR"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -929,27 +923,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCBinaryQRPNG"
-        },
-        "name": "SHC Binary for QR (PNG representation)",
-        "description": "PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource:abstract"
           }
         ],
         "reference": {
           "reference": "StructureDefinition/DDCCQuestionnaireResponse"
         },
-        "name": "SHC Questionnaire Response",
-        "description": "Describes the logical structure for a questionnaire response associacted to a [SHC Questionaire](StructureDefinition-shc-questionnaire.html)."
+        "name": "DDCC Questionnaire Response",
+        "description": "Describes the logical structure for a questionnaire response associacted to a [DDCC Questionaire](StructureDefinition-DDCCQuestionnaire.html)."
       },
       {
         "extension": [
@@ -1005,6 +986,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCImmunizationRecommendation"
+        },
+        "name": "DDCC Immunization Recommendation",
+        "description": "A DDCC Immunization Recommendation contains the content corresponding to when\na patient should return for a booster shot."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ConceptMap"
           }
         ],
@@ -1012,6 +1006,19 @@
           "reference": "ConceptMap/who-ddcc-map-icd11-sct-vaccines"
         },
         "description": "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCDocument"
+        },
+        "name": "DDCC Document",
+        "description": "A [DDCC Document](StructureDefinition-DDCCDocument.html) is a document bundle containing the DDCC."
       },
       {
         "extension": [
@@ -1030,13 +1037,26 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCDigitalTwin"
+        },
+        "name": "DDCC Digital Twin",
+        "description": "DDCC Digital Twin of the Paper Certificate"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
           }
         ],
         "reference": {
           "reference": "CodeSystem/DDCC-SectionCode-CodeSystem"
         },
-        "name": "SHC QR SectionCode Usage Codes",
+        "name": "DDCC QR SectionCode Usage Codes",
         "description": "Section Codes for DDCC"
       }
     ],

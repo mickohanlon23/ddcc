@@ -34,6 +34,11 @@
     <packageId value="hl7.fhir.uv.sdc"/>
     <version value="current"/>
   </dependsOn>
+  <dependsOn id="mhd">
+    <uri value="http://profiles.ihe.net/ITI/MHD/ImplementationGuide/ihe.mhd.fhir"/>
+    <packageId value="ihe.mhd.fhir"/>
+    <version value="current"/>
+  </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
       <extension url="code">
@@ -391,16 +396,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCBinaryQRContent"/>
-      </reference>
-      <name value="DDCC Binary for QR Content"/>
-      <description value="PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -426,6 +421,16 @@
       <reference>
         <reference value="Patient/DDCC-Patient-English"/>
       </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCDocumentReference"/>
+      </reference>
+      <name value="DDCC Document Reference"/>
+      <description value="A [DDCC Document Reference](StructureDefinition-DDCCDocumentReference.html) is a &#xA;document reference to a [DDCC Document](StructureDefinition-DDCCDocument.html) &#xA;containing the DDCC.&#xA;The content attachment data will be a base64 encoded representation of the DDCC Document."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -611,15 +616,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource:abstract"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCBinaryQR"/>
-      </reference>
-      <name value="DDCCC Binary return for QR"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -638,23 +634,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCBinaryQRPNG"/>
-      </reference>
-      <name value="SHC Binary for QR (PNG representation)"/>
-      <description value="PNG representation of the QR code returned under the [Register Health Certificate](transactions.html#register-health-certificate-message-semantics-response)"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource:abstract"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/DDCCQuestionnaireResponse"/>
       </reference>
-      <name value="SHC Questionnaire Response"/>
-      <description value="Describes the logical structure for a questionnaire response associacted to a [SHC Questionaire](StructureDefinition-shc-questionnaire.html)."/>
+      <name value="DDCC Questionnaire Response"/>
+      <description value="Describes the logical structure for a questionnaire response associacted to a [DDCC Questionaire](StructureDefinition-DDCCQuestionnaire.html)."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -696,12 +682,32 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCImmunizationRecommendation"/>
+      </reference>
+      <name value="DDCC Immunization Recommendation"/>
+      <description value="A DDCC Immunization Recommendation contains the content corresponding to when&#xA;a patient should return for a booster shot."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ConceptMap"/>
       </extension>
       <reference>
         <reference value="ConceptMap/who-ddcc-map-icd11-sct-vaccines"/>
       </reference>
       <description value="Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCDocument"/>
+      </reference>
+      <name value="DDCC Document"/>
+      <description value="A [DDCC Document](StructureDefinition-DDCCDocument.html) is a document bundle containing the DDCC."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -715,12 +721,22 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCDigitalTwin"/>
+      </reference>
+      <name value="DDCC Digital Twin"/>
+      <description value="DDCC Digital Twin of the Paper Certificate"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
         <reference value="CodeSystem/DDCC-SectionCode-CodeSystem"/>
       </reference>
-      <name value="SHC QR SectionCode Usage Codes"/>
+      <name value="DDCC QR SectionCode Usage Codes"/>
       <description value="Section Codes for DDCC"/>
     </resource>
     <page>
