@@ -1,11 +1,11 @@
 ﻿DDCC_RC2 : Validation Results
 =========================================
 
-err = 163, warn = 31, info = 14
+err = 166, warn = 37, info = 15
 IG Publisher Version: 1.1.73
-Generated Fri Jun 11 14:33:12 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-rc2#0.2.1 (canonical = https://who-int.github.io/svc)
+Generated Fri Jun 11 21:08:56 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-rc2#0.2.1 (canonical = https://who-int.github.io/svc)
 
- Build Errors : 372 / 8 / 0
+ Build Errors : 376 / 8 / 0
  /github/workspace/fsh-generated/resources/Bundle-Example-English : 2 / 0 / 11
  /github/workspace/fsh-generated/resources/CodeSystem-DDCC-QR-Category-Usage-CodeSystem : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-DDCC-QR-Format-CodeSystem : 2 / 0 / 1
@@ -16,8 +16,8 @@ Generated Fri Jun 11 14:33:12 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-rc2
  /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireReponse-generateHealthCertificate : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Organization-DDCC-Organization-English : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Patient-DDCC-Patient-English : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Questionnaire-DDCCCoreDataSetQuestionnaire : 2 / 1 / 2
- /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-QuestionnaireResponse-Example : 2 / 0 / 4
+ /github/workspace/fsh-generated/resources/Questionnaire-DDCCCoreDataSetQuestionnaire : 2 / 3 / 2
+ /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-QuestionnaireResponse-Example : 1 / 4 / 9
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCBundle : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCComposition : 13 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCountryOfVaccination : 2 / 0 / 1
@@ -174,6 +174,10 @@ ERROR: /github/workspace/output/Questionnaire-DDCCCoreDataSetQuestionnaire.html#
 ERROR: /github/workspace/output/Questionnaire-DDCCCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 222, column 478: The image source 'icon-q-coding.png' cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-DDCCCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 223, column 482: The image source 'icon-q-coding.png' cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-DDCCCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 224, column 478: The image source 'icon-q-coding.png' cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-DDCCCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 225, column 482: The image source 'icon-q-coding.png' cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-DDCCCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 226, column 478: The image source 'icon-q-coding.png' cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-DDCCCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 231, column 482: The image source 'icon-q-coding.png' cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-DDCCCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 234, column 478: The image source 'icon-q-coding.png' cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-DDCCCoreDataSetQuestionnaire.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-DDCCCoreDataSetQuestionnaire.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/Questionnaire-DDCCCoreDataSetQuestionnaire.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
@@ -488,13 +492,19 @@ ERROR: Questionnaire.where(url = 'http://who-int.github.io/svc/refs/heads/rc2/SV
 INFORMATION: Questionnaire/DDCCCoreDataSetQuestionnaire: Questionnaire: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Questionnaire
 WARNING: Questionnaire/DDCCCoreDataSetQuestionnaire: Questionnaire.title: value should not start or finish with whitespace
 INFORMATION: Questionnaire/DDCCCoreDataSetQuestionnaire: Questionnaire: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCQuestionnaire - listed in meta
+WARNING: Questionnaire/DDCCCoreDataSetQuestionnaire: Questionnaire.item[3]: sdc-1: 'An item cannot have an answerExpression if answerOption or answerValueSet is already present.' Rule 'An item cannot have an answerExpression if answerOption or answerValueSet is already present.' Failed
+WARNING: Questionnaire/DDCCCoreDataSetQuestionnaire: Questionnaire.item[12]: sdc-1: 'An item cannot have an answerExpression if answerOption or answerValueSet is already present.' Rule 'An item cannot have an answerExpression if answerOption or answerValueSet is already present.' Failed
 ERROR: /github/workspace/fsh-generated/resources/Questionnaire-DDCCCoreDataSetQuestionnaire: URL Mismatch https://who-int.github.io/svc/Questionnaire/DDCCCoreDataSetQuestionnaire vs http://who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire
 == /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-QuestionnaireResponse-Example.json ==
 INFORMATION: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse: Validate resource against profile http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
-INFORMATION: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse.item[3].answer[0].value.ofType(Coding): Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+INFORMATION: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse.item[4].answer[0].value.ofType(Coding): Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+WARNING: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse.item[5].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse.item[6].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse.item[7].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse.item[12].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+INFORMATION: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse.item[15].answer[0].value.ofType(Coding): Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
 INFORMATION: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse.item[0].answer[0]: Cannot validate options because no option or options are provided
-ERROR: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse: No response answer found for required item 'status'
-ERROR: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse: No response answer found for required item 'protocol'
+ERROR: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse.item[0].answer[0]: The value provided (urn:iso:std:iso:3166::USA) is not in the options value set in the questionnaire
 INFORMATION: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCQuestionnaireResponse - listed in meta
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCBundle.json ==
 ERROR: StructureDefinition.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCBundle'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-DDCCBundle.json - the canonical URL (https://who-int.github.io/svc/StructureDefinition/DDCCBundle) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCBundle)
