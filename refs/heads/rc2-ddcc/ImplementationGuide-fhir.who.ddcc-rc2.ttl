@@ -977,6 +977,19 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCFolder>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCFolder" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Folder" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Folder of the Paper Certificate" ]
+     ], [
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "ConceptMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -985,7 +998,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines" ]
      ], [
-       fhir:index 40;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -998,7 +1011,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Document" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A [DDCC Document](StructureDefinition-DDCCDocument.html) is a document bundle containing the DDCC." ]
      ], [
-       fhir:index 41;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1010,19 +1023,6 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Immunization" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A DDCC Immunization contains the content corresponding to a row in the Vaccination \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) Immunization resouce, this is intended to map into an IPS \nImmunization resource." ]
-     ], [
-       fhir:index 42;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://who-int.github.io/svc/StructureDefinition/DDCCDigitalTwin>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCDigitalTwin" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Digital Twin" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Digital Twin of the Paper Certificate" ]
      ], [
        fhir:index 43;
        fhir:Element.extension [

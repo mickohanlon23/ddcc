@@ -999,6 +999,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCFolder"
+        },
+        "name": "DDCC Folder",
+        "description": "DDCC Folder of the Paper Certificate"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ConceptMap"
           }
         ],
@@ -1032,19 +1045,6 @@
         },
         "name": "DDCC Immunization",
         "description": "A DDCC Immunization contains the content corresponding to a row in the Vaccination \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) Immunization resouce, this is intended to map into an IPS \nImmunization resource."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCDigitalTwin"
-        },
-        "name": "DDCC Digital Twin",
-        "description": "DDCC Digital Twin of the Paper Certificate"
       },
       {
         "extension": [
