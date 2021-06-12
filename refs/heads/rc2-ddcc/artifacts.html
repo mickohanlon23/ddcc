@@ -100,7 +100,7 @@
 		  <li><a href="personas.html">Personas</a></li>
 		  <li><a href="workflows.html">Workflows</a></li>      
 		  <li><a href="usecases.html">Use Cases</a></li>
-		  <li><a name="d156ae10-d738-45ae-a484-556433133578">​</a><a href="StructureDefinition-SVC-Core-Data-Set.html">Data Dictionary</a></li>
+		  <li><a name="22dc2cc9-2007-498c-8c77-8ba2cc450b7e">​</a><a href="StructureDefinition-SVC-Core-Data-Set.html">Data Dictionary</a></li>
 
 		</ul>
 	</li>
@@ -297,7 +297,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="StructureDefinition-DDCCQuestionnaire.html" title="StructureDefinition/DDCCQuestionnaire">DDCC Questionniare</a>
                </td>
                <td>
-<p><a name="13c571bd-eb13-4bbe-9966-db8279af6a97">​</a>Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given <a href="StructureDefintion-DDCCQuestionnaireResponse.html">DDCC QuestionnaireResponse</a> which responds to the DDCC Questionnaire.</p>
+<p><a name="6195dfc1-5af5-4893-8334-cb197d606879">​</a>Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given <a href="StructureDefintion-DDCCQuestionnaireResponse.html">DDCC QuestionnaireResponse</a> which responds to the DDCC Questionnaire.</p>
 </td>
             </tr>
             <tr>
@@ -378,7 +378,7 @@ The content attachment data will be a base64 encoded representation of the DDCC 
                   <a href="StructureDefinition-DDCCPractitionerRole.html" title="StructureDefinition/DDCCPractitionerRole">DDCC Practitioner Role</a>
                </td>
                <td>
-<p><a name="312d12de-ce60-4cd2-b74c-92c6f9d2ae47">​</a>Association of an <a href="StructureDefinition-DDCCPractitioner.html">DDCC Practitioner</a> to a 
+<p><a name="5b50c5d4-a1f6-4b15-84bf-86d424d09bc9">​</a>Association of an <a href="StructureDefinition-DDCCPractitioner.html">DDCC Practitioner</a> to a 
 managing <a href="StructureDefinition-DDCCOrgaznization.html">DDCC Organization</a>, indicating 
 that an DDCC Practitioner is authorized by the public health authority (PHA) to 
 vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p>
@@ -399,7 +399,7 @@ vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p
                <td>
 <p>An DDCCPatient should:</p>
 <ul>
-  <li><a name="56930c1b-7dd5-4abf-aaea-9894ac095cdb">​</a>if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of <a href="StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner">identifier.assigner</a> should be set to reference the <a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> resource associated to the PHA via the <a href="actors.html#who-pkd">WHO Public Key Directory</a></li>
+  <li><a name="0286b947-9a97-4c28-b5e5-c0f220595e41">​</a>if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of <a href="StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner">identifier.assigner</a> should be set to reference the <a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> resource associated to the PHA via the <a href="actors.html#who-pkd">WHO Public Key Directory</a></li>
   <li>obeys who-ddcc-patient-1</li>
 </ul>
 </td>
@@ -418,7 +418,7 @@ vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p
                   <a href="StructureDefinition-DDCCOrganization.html" title="StructureDefinition/DDCCOrganization">DDCC Organization</a>
                </td>
                <td>
-<p><a name="708b539d-058c-49d0-893c-275e8d1556a8">​</a>Abstraction for a DDCC Organization. There should be a DDCC Organization associated 
+<p><a name="6aeff628-0a20-4b90-b25c-c21deee5ffba">​</a>Abstraction for a DDCC Organization. There should be a DDCC Organization associated 
 to each public health authortiy (PHA) in the <a href="actors.html#who-pkd">WHO Public Key 
 Directory</a></p>
 </td>
@@ -553,14 +553,6 @@ Immunization resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-DDCC-SectionCode-ValueSet.html" title="ValueSet/DDCC-SectionCode-ValueSet">ValueSet/DDCC-SectionCode-ValueSet</a>
-               </td>
-               <td>
-<p>Content section codes for DDCC.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="ValueSet-who-ddcc-vaccinable-conditions.html" title="ValueSet/who-ddcc-vaccinable-conditions">WHO List of Vaccinable Conditions</a>
                </td>
                <td>
@@ -596,14 +588,6 @@ Immunization resource.</p>
                </td>
                <td>
 <p>Possible formats available for QR usage.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="CodeSystem-DDCC-SectionCode-CodeSystem.html" title="CodeSystem/DDCC-SectionCode-CodeSystem">DDCC QR SectionCode Usage Codes</a>
-               </td>
-               <td>
-<p>Section Codes for DDCC</p>
 </td>
             </tr>
          </tbody>
@@ -680,6 +664,11 @@ Immunization resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Bundle-DDCC-TX-SHE-bundle-example-1.html" title="Bundle/DDCC-TX-SHE-bundle-example-1">Bundle/DDCC-TX-SHE-bundle-example-1</a>
+               </td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Organization-DDCC-Organization-English.html" title="Organization/DDCC-Organization-English">Organization/DDCC-Organization-English</a>
                </td>
             </tr>
@@ -720,7 +709,7 @@ Immunization resource.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-rc2#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jun 11, 2021 21:07+0000">2021-06-11</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-rc2#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jun 12, 2021 23:19+0000">2021-06-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -502,6 +502,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/DDCC-TX-SHE-bundle-example-1"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
@@ -594,15 +602,6 @@
       </reference>
       <name value="DDCC Patient"/>
       <description value="An DDCCPatient should:&#xA;* if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner) should be set to reference the [DDCC Organization](StructureDefinition-DDCCOrganization.html) resource associated to the PHA via the [WHO Public Key Directory](actors.html#who-pkd)&#xA;* obeys who-ddcc-patient-1"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/DDCC-SectionCode-ValueSet"/>
-      </reference>
-      <description value="Content section codes for DDCC."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -728,16 +727,6 @@
       </reference>
       <name value="DDCC Immunization"/>
       <description value="A DDCC Immunization contains the content corresponding to a row in the Vaccination &#xA;Events section of a Paper DDCC. While this is not a further profile of the International&#xA;Patient Summary (IPS) Immunization resouce, this is intended to map into an IPS &#xA;Immunization resource."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/DDCC-SectionCode-CodeSystem"/>
-      </reference>
-      <name value="DDCC QR SectionCode Usage Codes"/>
-      <description value="Section Codes for DDCC"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

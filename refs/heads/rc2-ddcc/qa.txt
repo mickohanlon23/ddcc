@@ -1,15 +1,15 @@
 ﻿DDCC_RC2 : Validation Results
 =========================================
 
-err = 166, warn = 37, info = 15
+err = 165, warn = 42, info = 18
 IG Publisher Version: 1.1.73
-Generated Fri Jun 11 21:08:56 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-rc2#0.2.1 (canonical = https://who-int.github.io/svc)
+Generated Sat Jun 12 23:20:10 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-rc2#0.2.1 (canonical = https://who-int.github.io/svc)
 
- Build Errors : 376 / 8 / 0
+ Build Errors : 371 / 9 / 0
+ /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 3 / 4 / 7
  /github/workspace/fsh-generated/resources/Bundle-Example-English : 2 / 0 / 11
  /github/workspace/fsh-generated/resources/CodeSystem-DDCC-QR-Category-Usage-CodeSystem : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-DDCC-QR-Format-CodeSystem : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/CodeSystem-DDCC-SectionCode-CodeSystem : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-vaccines : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-English : 2 / 0 / 6
@@ -39,7 +39,6 @@ Generated Fri Jun 11 21:08:56 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-rc2
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCVaccineMarketAuthorization : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-DDCC-QR-Category-Usage-ValueSet : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-DDCC-QR-Format-ValueSet : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-DDCC-SectionCode-ValueSet : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-disease-targeted-covid-19 : 2 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-vaccinable-conditions : 2 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-vaccines : 2 / 2 / 1
@@ -63,17 +62,23 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/DDCC-Patient-English.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/DDCC-QR-Format-ValueSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/DDCC-QR-Category-Usage-ValueSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/DDCC-TX-SHE-bundle-example-1.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/DDCC-TX-SHE-bundle-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource OperationDefinition/DDCC-QuestionnaireReponse-generateHealthCertificate.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ConceptMap/who-ddcc-map-icd11-sct-disease-targeted.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Organization/DDCC-Organization-English.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/DDCC-Organization-English.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DDCCDocumentReferenceQR.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/DDCC-SectionCode-ValueSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/Example-English.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-English.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource QuestionnaireResponse/DDCC-QuestionnaireResponse-Example.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/DDCC-QuestionnaireResponse-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ConceptMap/who-ddcc-map-icd11-sct-vaccines.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/Bundle-DDCC-TX-SHE-bundle-example-1.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 110, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
+ERROR: /github/workspace/output/Bundle-DDCC-TX-SHE-bundle-example-1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 106, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
+ERROR: /github/workspace/output/Bundle-DDCC-TX-SHE-bundle-example-1.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
+ERROR: /github/workspace/output/Bundle-DDCC-TX-SHE-bundle-example-1.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
+ERROR: /github/workspace/output/Bundle-DDCC-TX-SHE-bundle-example-1.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/Bundle-Example-English.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 110, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/Bundle-Example-English.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 106, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/Bundle-Example-English.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
@@ -104,11 +109,6 @@ ERROR: /github/workspace/output/CodeSystem-DDCC-QR-Format-CodeSystem.html#/html/
 ERROR: /github/workspace/output/CodeSystem-DDCC-QR-Format-CodeSystem.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-DDCC-QR-Format-CodeSystem.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-DDCC-QR-Format-CodeSystem.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-DDCC-SectionCode-CodeSystem.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 110, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-DDCC-SectionCode-CodeSystem.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 106, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-DDCC-SectionCode-CodeSystem.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-DDCC-SectionCode-CodeSystem.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
-ERROR: /github/workspace/output/CodeSystem-DDCC-SectionCode-CodeSystem.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/Composition-DDCCComposition-genexample.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 110, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/Composition-DDCCComposition-genexample.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 106, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/Composition-DDCCComposition-genexample.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
@@ -371,11 +371,6 @@ ERROR: /github/workspace/output/ValueSet-DDCC-QR-Format-ValueSet.html#/html/body
 ERROR: /github/workspace/output/ValueSet-DDCC-QR-Format-ValueSet.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-DDCC-QR-Format-ValueSet.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-DDCC-QR-Format-ValueSet.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-DDCC-SectionCode-ValueSet.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 110, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-DDCC-SectionCode-ValueSet.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 106, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-DDCC-SectionCode-ValueSet.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-DDCC-SectionCode-ValueSet.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
-ERROR: /github/workspace/output/ValueSet-DDCC-SectionCode-ValueSet.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-who-ddcc-disease-targeted-covid-19.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 110, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-who-ddcc-disease-targeted-covid-19.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 106, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-who-ddcc-disease-targeted-covid-19.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 108, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
@@ -437,6 +432,21 @@ ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/div/div
 ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/div/div/div/a at Line 332, column 223: The link 'actors.html#who-pkd' for "WHO Public Key Directory" cannot be resolved (valid targets: 43 targets)
 ERROR: /github/workspace/output/usecases.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 106, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/workflows.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 106, column 10: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
+== /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1.json ==
+INFORMATION: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
+INFORMATION: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Parameters
+INFORMATION: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse): Validate resource against profile http://hl7.org/fhir/StructureDefinition/QuestionnaireResponse
+ERROR: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0]: Bundle entry missing fullUrl
+ERROR: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+INFORMATION: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[4].answer[0].value.ofType(Coding): Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+WARNING: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[5].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[6].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[7].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[12].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+INFORMATION: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[15].answer[0].value.ofType(Coding): Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+INFORMATION: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[0].answer[0]: Cannot validate options because no option or options are provided
+ERROR: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[0].answer[0]: The value provided (urn:iso:std:iso:3166::USA) is not in the options value set in the questionnaire
+INFORMATION: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse): Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCQuestionnaireResponse - listed in meta
 == /github/workspace/fsh-generated/resources/Bundle-Example-English.json ==
 INFORMATION: Bundle/Example-English: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
 INFORMATION: Bundle/Example-English: Bundle.entry[0].resource.ofType(Patient): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Patient
@@ -459,10 +469,6 @@ ERROR: /github/workspace/fsh-generated/resources/CodeSystem-DDCC-QR-Category-Usa
 ERROR: CodeSystem.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/DDCC-QR-Format-CodeSystem'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-DDCC-QR-Format-CodeSystem.json - the canonical URL (https://who-int.github.io/svc/CodeSystem/DDCC-QR-Format-CodeSystem) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/DDCC-QR-Format-CodeSystem)
 INFORMATION: CodeSystem/DDCC-QR-Format-CodeSystem: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 ERROR: /github/workspace/fsh-generated/resources/CodeSystem-DDCC-QR-Format-CodeSystem: URL Mismatch https://who-int.github.io/svc/CodeSystem/DDCC-QR-Format-CodeSystem vs https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/DDCC-QR-Format-CodeSystem
-== /github/workspace/fsh-generated/resources/CodeSystem-DDCC-SectionCode-CodeSystem.json ==
-ERROR: CodeSystem.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/DDCC-SectionCode-CodeSystem'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-DDCC-SectionCode-CodeSystem.json - the canonical URL (https://who-int.github.io/svc/CodeSystem/DDCC-SectionCode-CodeSystem) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/DDCC-SectionCode-CodeSystem)
-INFORMATION: CodeSystem/DDCC-SectionCode-CodeSystem: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
-ERROR: /github/workspace/fsh-generated/resources/CodeSystem-DDCC-SectionCode-CodeSystem: URL Mismatch https://who-int.github.io/svc/CodeSystem/DDCC-SectionCode-CodeSystem vs https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/DDCC-SectionCode-CodeSystem
 == /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.json ==
 INFORMATION: ConceptMap/who-ddcc-map-icd11-sct-disease-targeted: ConceptMap: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ConceptMap
 WARNING: ConceptMap/who-ddcc-map-icd11-sct-disease-targeted: ConceptMap: cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
@@ -504,7 +510,7 @@ WARNING: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: Questionnaire
 WARNING: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse.item[12].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 INFORMATION: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse.item[15].answer[0].value.ofType(Coding): Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
 INFORMATION: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse.item[0].answer[0]: Cannot validate options because no option or options are provided
-ERROR: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse.item[0].answer[0]: The value provided (urn:iso:std:iso:3166::USA) is not in the options value set in the questionnaire
+ERROR: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse.item[0].answer[0]: The value provided (null::USA) is not in the options value set in the questionnaire
 INFORMATION: QuestionnaireResponse/DDCC-QuestionnaireResponse-Example: QuestionnaireResponse: Validate resource against profile https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCQuestionnaireResponse - listed in meta
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCBundle.json ==
 ERROR: StructureDefinition.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCBundle'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-DDCCBundle.json - the canonical URL (https://who-int.github.io/svc/StructureDefinition/DDCCBundle) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCBundle)
@@ -643,10 +649,6 @@ ERROR: /github/workspace/fsh-generated/resources/ValueSet-DDCC-QR-Category-Usage
 ERROR: ValueSet.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/ValueSet/DDCC-QR-Format-ValueSet'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-DDCC-QR-Format-ValueSet.json - the canonical URL (https://who-int.github.io/svc/ValueSet/DDCC-QR-Format-ValueSet) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/ValueSet/DDCC-QR-Format-ValueSet)
 INFORMATION: ValueSet/DDCC-QR-Format-ValueSet: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 ERROR: /github/workspace/fsh-generated/resources/ValueSet-DDCC-QR-Format-ValueSet: URL Mismatch https://who-int.github.io/svc/ValueSet/DDCC-QR-Format-ValueSet vs https://who-int.github.io/svc/refs/heads/rc2/ValueSet/DDCC-QR-Format-ValueSet
-== /github/workspace/fsh-generated/resources/ValueSet-DDCC-SectionCode-ValueSet.json ==
-ERROR: ValueSet.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/ValueSet/DDCC-SectionCode-ValueSet'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-DDCC-SectionCode-ValueSet.json - the canonical URL (https://who-int.github.io/svc/ValueSet/DDCC-SectionCode-ValueSet) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/ValueSet/DDCC-SectionCode-ValueSet)
-INFORMATION: ValueSet/DDCC-SectionCode-ValueSet: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
-ERROR: /github/workspace/fsh-generated/resources/ValueSet-DDCC-SectionCode-ValueSet: URL Mismatch https://who-int.github.io/svc/ValueSet/DDCC-SectionCode-ValueSet vs https://who-int.github.io/svc/refs/heads/rc2/ValueSet/DDCC-SectionCode-ValueSet
 == /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-disease-targeted-covid-19.json ==
 ERROR: ValueSet.where(url = 'https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-ddcc-disease-targeted-covid-19'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-disease-targeted-covid-19.json - the canonical URL (https://who-int.github.io/svc/ValueSet/who-ddcc-disease-targeted-covid-19) does not match the URL (https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-ddcc-disease-targeted-covid-19)
 INFORMATION: ValueSet/who-ddcc-disease-targeted-covid-19: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet

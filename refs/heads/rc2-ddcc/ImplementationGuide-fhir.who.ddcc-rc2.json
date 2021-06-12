@@ -749,6 +749,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/DDCC-TX-SHE-bundle-example-1"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
           }
         ],
@@ -869,18 +880,6 @@
         },
         "name": "DDCC Patient",
         "description": "An DDCCPatient should:\n* if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner) should be set to reference the [DDCC Organization](StructureDefinition-DDCCOrganization.html) resource associated to the PHA via the [WHO Public Key Directory](actors.html#who-pkd)\n* obeys who-ddcc-patient-1"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/DDCC-SectionCode-ValueSet"
-        },
-        "description": "Content section codes for DDCC."
       },
       {
         "extension": [
@@ -1045,19 +1044,6 @@
         },
         "name": "DDCC Immunization",
         "description": "A DDCC Immunization contains the content corresponding to a row in the Vaccination \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) Immunization resouce, this is intended to map into an IPS \nImmunization resource."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/DDCC-SectionCode-CodeSystem"
-        },
-        "name": "DDCC QR SectionCode Usage Codes",
-        "description": "Section Codes for DDCC"
       }
     ],
     "page": {

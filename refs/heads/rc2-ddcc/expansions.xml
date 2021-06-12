@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="f528f958-0858-4847-a803-68f043b66c27"/>
+  <id value="9e45d299-6ea8-4b36-a010-98562cafbafa"/>
   <meta>
-    <lastUpdated value="2021-06-11T21:07:58.300+00:00"/>
+    <lastUpdated value="2021-06-12T23:19:13.723+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -58,7 +58,7 @@
         <version value="0.2.1"/>
         <name value="DDCC_QR_Format_ValueSet"/>
         <status value="active"/>
-        <date value="2021-06-11T21:07:58+00:00"/>
+        <date value="2021-06-12T23:19:13+00:00"/>
         <publisher value="World Health Organization (WHO)"/>
         <contact>
           <telecom>
@@ -68,8 +68,8 @@
         </contact>
         <description value="Format of the representation of QR code"/>
         <expansion>
-          <identifier value="urn:uuid:dbc3bb19-8e6c-4404-9c4d-bd5465e83c82"/>
-          <timestamp value="2021-06-11T21:08:23+00:00"/>
+          <identifier value="urn:uuid:46cc7a30-651c-4089-88d1-70ed86593faf"/>
+          <timestamp value="2021-06-12T23:19:37+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -161,7 +161,7 @@
         <version value="0.2.1"/>
         <name value="DDCC_QR_Category_Usage_ValueSet"/>
         <status value="active"/>
-        <date value="2021-06-11T21:07:58+00:00"/>
+        <date value="2021-06-12T23:19:13+00:00"/>
         <publisher value="World Health Organization (WHO)"/>
         <contact>
           <telecom>
@@ -171,8 +171,8 @@
         </contact>
         <description value="Categorization of QR codes by their business usage"/>
         <expansion>
-          <identifier value="urn:uuid:4ad71b3f-bfea-46b2-81ec-8a3f9054d55e"/>
-          <timestamp value="2021-06-11T21:08:24+00:00"/>
+          <identifier value="urn:uuid:75bc6537-5d9a-4d5d-9577-598b567b3ffb"/>
+          <timestamp value="2021-06-12T23:19:38+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -201,106 +201,6 @@
             <system value="https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/DDCC-QR-Category-Usage-CodeSystem"/>
             <code value="au"/>
             <display value="AU"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://who-int.github.io/svc/refs/heads/rc2/ValueSet/DDCC-SectionCode-ValueSet"/>
-    <resource>
-      <ValueSet>
-        <id value="DDCC-SectionCode-ValueSet"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-DDCC-SectionCode-CodeSystem.html">DDCC QR SectionCode Usage Codes v0.2.1 (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="CodeSystem-DDCC-SectionCode-CodeSystem.html">
-                <code>https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/DDCC-SectionCode-CodeSystem</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---who-int.github.io-svc-refs-heads-rc2-CodeSystem-DDCC-SectionCode-CodeSystem-vaccination"> </a>
-                  <a href="CodeSystem-DDCC-SectionCode-CodeSystem.html#DDCC-SectionCode-CodeSystem-vaccination">vaccination</a>
-                </td>
-                <td>DDCC: Vaccination Status</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---who-int.github.io-svc-refs-heads-rc2-CodeSystem-DDCC-SectionCode-CodeSystem-test"> </a>
-                  <a href="CodeSystem-DDCC-SectionCode-CodeSystem.html#DDCC-SectionCode-CodeSystem-test">test</a>
-                </td>
-                <td>DDCC: SARS-CoV-2 Test</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---who-int.github.io-svc-refs-heads-rc2-CodeSystem-DDCC-SectionCode-CodeSystem-recovery"> </a>
-                  <a href="CodeSystem-DDCC-SectionCode-CodeSystem.html#DDCC-SectionCode-CodeSystem-recovery">recovery</a>
-                </td>
-                <td>DDCC: Recovery Status</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://who-int.github.io/svc/refs/heads/rc2/ValueSet/DDCC-SectionCode-ValueSet"/>
-        <version value="0.2.1"/>
-        <name value="DDCC_SectionCode_ValueSet"/>
-        <status value="active"/>
-        <date value="2021-06-11T21:07:58+00:00"/>
-        <publisher value="World Health Organization (WHO)"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.who.int"/>
-          </telecom>
-        </contact>
-        <description value="Content section codes for DDCC."/>
-        <expansion>
-          <identifier value="urn:uuid:26544678-398c-4f95-bbe4-760e73f84370"/>
-          <timestamp value="2021-06-11T21:08:27+00:00"/>
-          <total value="3"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/DDCC-SectionCode-CodeSystem|0.2.1"/>
-          </parameter>
-          <contains>
-            <system value="https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/DDCC-SectionCode-CodeSystem"/>
-            <code value="vaccination"/>
-            <display value="DDCC: Vaccination Status"/>
-          </contains>
-          <contains>
-            <system value="https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/DDCC-SectionCode-CodeSystem"/>
-            <code value="test"/>
-            <display value="DDCC: SARS-CoV-2 Test"/>
-          </contains>
-          <contains>
-            <system value="https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/DDCC-SectionCode-CodeSystem"/>
-            <code value="recovery"/>
-            <display value="DDCC: Recovery Status"/>
           </contains>
         </expansion>
       </ValueSet>
