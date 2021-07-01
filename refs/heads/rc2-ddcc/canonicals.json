@@ -21,53 +21,11 @@
     "name": "svc-map-qr-uvci-bundle"
   },
   {
-    "id": "DDCCCoreDataSetQuestionnaire",
+    "id": "DDCCVSCoreDataSetQuestionnaire",
     "type": "Questionnaire",
-    "url": "http://who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire",
+    "url": "http://worldhealthorganization.github.io/ddcc-rc1/DDCCVSCoreDataSetQuestionnaire",
     "version": "0.2.1",
     "name": "DDCCCoreDataSetQuestionnaire"
-  },
-  {
-    "id": "who-ddcc-map-icd11-sct-disease-targeted",
-    "type": "ConceptMap",
-    "url": "https://who-int.github.io/svc/ConceptMap/who-ddcc-map-icd11-sct-disease-targeted",
-    "version": "0.2.1",
-    "name": "ICD-11 to SNOMED CT mappings for COVID-19 Disease or Agent Targeted"
-  },
-  {
-    "id": "who-ddcc-map-icd11-sct-vaccines",
-    "type": "ConceptMap",
-    "url": "https://who-int.github.io/svc/ConceptMap/who-ddcc-map-icd11-sct-vaccines",
-    "version": "0.2.1",
-    "name": "ICD-11 to SNOMED CT mappings for COVID-19 vaccines"
-  },
-  {
-    "id": "fhir.who.ddcc-rc2",
-    "type": "ImplementationGuide",
-    "url": "https://who-int.github.io/svc/ImplementationGuide/fhir.who.ddcc-rc2",
-    "version": "0.2.1",
-    "name": "DDCC_RC2"
-  },
-  {
-    "id": "DDCC-QuestionnaireReponse-generateHealthCertificate",
-    "type": "OperationDefinition",
-    "url": "https://who-int.github.io/svc/OperationDefinition/DDCC-QuestionnaireReponse-generateHealthCertificate",
-    "version": "0.2.1",
-    "name": "QuestionnaireReponse Generate Health Certificate"
-  },
-  {
-    "id": "WHO.SHC.Generator",
-    "type": "CapabilityStatement",
-    "url": "https://who-int.github.io/svc/refs/headers/rc2/CapabilityStatement/WHO.SHC.Generator",
-    "version": "0.2.1",
-    "name": "WHO.SHC.Generator"
-  },
-  {
-    "id": "WHO.SHC.RegistryService",
-    "type": "CapabilityStatement",
-    "url": "https://who-int.github.io/svc/refs/headers/rc2/CapabilityStatement/WHO.SHC.RegistryService",
-    "version": "0.2.1",
-    "name": "WHO.SHC.RegistryService"
   },
   {
     "id": "DDCC-QR-Category-Usage-CodeSystem",
@@ -82,13 +40,6 @@
     "url": "https://who-int.github.io/svc/refs/heads/rc2/CodeSystem/DDCC-QR-Format-CodeSystem",
     "version": "0.2.1",
     "name": "DDCC_QR_Format_CodeSystem"
-  },
-  {
-    "id": "DDCCBundle",
-    "type": "StructureDefinition",
-    "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCBundle",
-    "version": "0.2.1",
-    "name": "DDCCBundle"
   },
   {
     "id": "DDCCComposition",
@@ -131,6 +82,13 @@
     "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCFolder",
     "version": "0.2.1",
     "name": "DDCCFolder"
+  },
+  {
+    "id": "DDCCGenerateHealthCertificateParameters",
+    "type": "StructureDefinition",
+    "url": "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCGenerateHealthCertificateParameters",
+    "version": "0.2.1",
+    "name": "DDCCGenerateHealthCertificateParameters"
   },
   {
     "id": "DDCCImmunization",
@@ -257,5 +215,47 @@
     "url": "https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-ddcc-vaccines-covid-19",
     "version": "0.2.1",
     "name": "WHO_DDCC_Vaccines_COVID_19"
+  },
+  {
+    "id": "WHO.DDCC.Generator",
+    "type": "CapabilityStatement",
+    "url": "https://worldhealthorganization.github.io/ddcc-rc1/CapabilityStatement/WHO.DDCC.Generator",
+    "version": "0.2.1",
+    "name": "WHO.DDCC.Generator"
+  },
+  {
+    "id": "WHO.DDCC.RegistryService",
+    "type": "CapabilityStatement",
+    "url": "https://worldhealthorganization.github.io/ddcc-rc1/CapabilityStatement/WHO.DDCC.RegistryService",
+    "version": "0.2.1",
+    "name": "WHO.DDCC.RegistryService"
+  },
+  {
+    "id": "who-ddcc-map-icd11-sct-disease-targeted",
+    "type": "ConceptMap",
+    "url": "https://worldhealthorganization.github.io/ddcc-rc1/ConceptMap/who-ddcc-map-icd11-sct-disease-targeted",
+    "version": "0.2.1",
+    "name": "ICD-11 to SNOMED CT mappings for COVID-19 Disease or Agent Targeted"
+  },
+  {
+    "id": "who-ddcc-map-icd11-sct-vaccines",
+    "type": "ConceptMap",
+    "url": "https://worldhealthorganization.github.io/ddcc-rc1/ConceptMap/who-ddcc-map-icd11-sct-vaccines",
+    "version": "0.2.1",
+    "name": "ICD-11 to SNOMED CT mappings for COVID-19 vaccines"
+  },
+  {
+    "id": "fhir.who.ddcc-rc2",
+    "type": "ImplementationGuide",
+    "url": "https://worldhealthorganization.github.io/ddcc-rc1/ImplementationGuide/fhir.who.ddcc-rc2",
+    "version": "0.2.1",
+    "name": "DDCC_RC2"
+  },
+  {
+    "id": "DDCC-QuestionnaireReponse-generateHealthCertificate",
+    "type": "OperationDefinition",
+    "url": "https://worldhealthorganization.github.io/ddcc-rc1/OperationDefinition/DDCC-QuestionnaireReponse-generateHealthCertificate",
+    "version": "0.2.1",
+    "name": "QuestionnaireReponse Generate Health Certificate"
   }
 ]

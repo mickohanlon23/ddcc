@@ -1,0 +1,76 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "WHO.DDCC.Generator",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Capability Statement for a DDCC Generator</p>\n         \n    </div>"
+  },
+  "url": "https://worldhealthorganization.github.io/ddcc-rc1/CapabilityStatement/WHO.DDCC.Generator",
+  "version": "0.2.1",
+  "name": "WHO.DDCC.Generator",
+  "title": "WHO DDCC Generator",
+  "status": "draft",
+  "experimental": true,
+  "date": "2021-05-06",
+  "publisher": "World Health Organization (WHO)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.who.int"
+        }
+      ]
+    }
+  ],
+  "description": "CapabilityStatement for WHO DDCC Generator actor.",
+  "kind": "requirements",
+  "fhirVersion": "4.0.1",
+  "format": [
+    "application/fhir+xml",
+    "application/fhir+json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "documentation": "DDCC Generator Server Actor",
+      "resource": [
+        {
+          "type": "QuestionnaireResponse",
+          "supportedProfile": [
+            "https://worldhealthorganization.github.io/ddcc-rc1/StructureDefinition/DDCCQuestionnaireResponse"
+          ],
+          "documentation": ".",
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "DDCC Generator Interaction for accepting a Submit Health Event"
+            }
+          ],
+          "operation": [
+            {
+              "name": "generateHealthCertificate",
+              "definition": "https://worldhealthorganization.github.io/ddcc-rc1/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate",
+              "documentation": "Generate a health certificate based on a QuestionnaireResponse."
+            }
+          ]
+        }
+      ],
+      "interaction": [
+        {
+          "code": "batch"
+        }
+      ]
+    },
+    {
+      "mode": "client",
+      "documentation": "DDCC Generator Client Actor",
+      "interaction": [
+        {
+          "code": "batch",
+          "documentation": "For submitting the Register Health Certificate transaction."
+        }
+      ]
+    }
+  ]
+}

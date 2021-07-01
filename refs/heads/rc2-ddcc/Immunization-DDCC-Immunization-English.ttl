@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://who-int.github.io/svc/Immunization/DDCC-Immunization-English> a fhir:Immunization;
+<https://worldhealthorganization.github.io/ddcc-rc1/Immunization/DDCC-Immunization-English> a fhir:Immunization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "DDCC-Immunization-English"];
   fhir:Resource.meta [
@@ -40,7 +40,7 @@
      ]
   ];
   fhir:Immunization.patient [
-     fhir:link <https://who-int.github.io/svc/Patient/DDCC-Patient-English>;
+     fhir:link <https://worldhealthorganization.github.io/ddcc-rc1/Patient/DDCC-Patient-English>;
      fhir:Reference.reference [ fhir:value "Patient/DDCC-Patient-English" ]
   ];
   fhir:Immunization.occurrenceDateTime [ fhir:value "2021-02-02"^^xsd:date];
@@ -52,14 +52,14 @@
   fhir:Immunization.performer [
      fhir:index 0;
      fhir:Immunization.performer.actor [
-       fhir:link <https://who-int.github.io/svc/Organization/DDCC-Organization-English>;
+       fhir:link <https://worldhealthorganization.github.io/ddcc-rc1/Organization/DDCC-Organization-English>;
        fhir:Reference.reference [ fhir:value "Organization/DDCC-Organization-English" ]
      ]
   ];
   fhir:Immunization.protocolApplied [
      fhir:index 0;
      fhir:Immunization.protocolApplied.authority [
-       fhir:link <https://who-int.github.io/svc/Organization/DDCC-Organization-English>;
+       fhir:link <https://worldhealthorganization.github.io/ddcc-rc1/Organization/DDCC-Organization-English>;
        fhir:Reference.reference [ fhir:value "Organization/DDCC-Organization-English" ]
      ];
      fhir:Immunization.protocolApplied.targetDisease [
@@ -76,7 +76,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://who-int.github.io/svc/Immunization/DDCC-Immunization-English.ttl> a owl:Ontology;
+<https://worldhealthorganization.github.io/ddcc-rc1/Immunization/DDCC-Immunization-English.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

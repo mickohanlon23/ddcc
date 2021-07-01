@@ -2,20 +2,26 @@
 
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="DDCC-TX-SHE-bundle-example-1"/>
+  <meta>
+    <profile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCSubmitHealthEventRequest"/>
+  </meta>
   <type value="batch"/>
   <entry>
     <resource>
       <Parameters>
-        <id value="DDCC-TX-SHE-Parameters-1"/>
+        <id value="DDCC-VS-TX-SHE-Parameters-1"/>
+        <meta>
+          <profile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCGenerateHealthCertificateParameters"/>
+        </meta>
         <parameter>
           <name value="response"/>
           <resource>
             <QuestionnaireResponse>
-              <id value="DDCC-QuestionnaireResponse-Example"/>
+              <id value="DDCC-VS-QuestionnaireResponse-Example"/>
               <meta>
                 <profile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCQuestionnaireResponse"/>
               </meta>
-              <questionnaire value="http://who-int.github.io/svc/refs/heads/rc2/SVC-Questionnaire"/>
+              <questionnaire value="http://worldhealthorganization.github.io/ddcc-rc1/DDCCVSCoreDataSetQuestionnaire"/>
               <status value="completed"/>
               <subject>
                 <reference value="Patient/DDCC-Patient-English"/>

@@ -100,7 +100,7 @@
 		  <li><a href="personas.html">Personas</a></li>
 		  <li><a href="workflows.html">Workflows</a></li>      
 		  <li><a href="usecases.html">Use Cases</a></li>
-		  <li><a name="941ea4b6-de7a-42ac-b6fc-26aee4d3bc0c">​</a><a href="StructureDefinition-SVC-Core-Data-Set.html">Data Dictionary</a></li>
+		  <li><a name="ad89c789-8e27-4d67-a414-b9c07a8765da">​</a><a href="StructureDefinition-SVC-Core-Data-Set.html">Data Dictionary</a></li>
 
 		</ul>
 	</li>
@@ -164,10 +164,10 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates (DDCC)- RC2 - Local Development build (v0.2.1). See the <a href="https://who-int.github.io/svc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates (DDCC)- RC2 - Local Development build (v0.2.1). See the <a href="https://worldhealthorganization.github.io/ddcc-rc1/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Transactions</h2>
   
-  <div><a name="21425243-00c6-42b0-8980-bcdebbfd1407">​</a><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Submit Health Event</a></li><li><a href="#2"> Register Health Certificate</a></li><li><a href="#3"> Retrieve Health Certificate</a></li><li><a href="#4"> Retrieve Health Folder</a></li></ul></div>
+  <div><a name="3083b7c9-c75a-42c7-b61e-b2006901ac97">​</a><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Submit Health Event</a></li><li><a href="#2"> Register Health Certificate</a></li><li><a href="#3"> Retrieve Health Certificate</a></li><li><a href="#4"> Retrieve Health Folder</a></li></ul></div>
   
   <a name="1"></a><h3 id="submit-health-event">Submit Health Event</h3> 
   The Submit Health Event transaction is initiated by a <a href="actors.html#point-of-care">Point of Care</a> system against the <a href="actors.html#ddcc-generator">DDCC Generator</a>.
@@ -185,19 +185,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <a name="2"></a><h4 id="register-health-certificate-message-semantics">Message Semantics</h4>
 
   <a name="2.1"></a><h5 id="register-health-certificate-message-semantics-request"> Message Semantics Request</h5>
-  The message semantics for the Register Health  Certificate transaction utilizes a <a href="StructureDefinition-DDCCSubmitHealthEventRequest.html">DDCC Submit Health Event Request</a> which is a Transaction Bundle of <a href="StructureDefinition-DDCCQQuestionnaireResponse.html">DDCC Questionnaire Response</a> resources for the request message. The specific DDCC Questionnaire Response resource is determined by the health event that is the subject of the transaction  
+    The message semantics for the Register Health  Certificate transaction utilizes a <a href="StructureDefinition-DDCCSubmitHealthEventRequest.html">DDCC Submit Health Event Request</a> which is a batch Bundle of <a href="StructureDefinition-DDCCGenerateHealthCertificateParameters.html">Parameters</a> for the <a href="OperationDefinition-DDCC-QuestionnaireReponse-generateHealthCertificate.html">Generate Health Certificate Operation</a> which include <a href="StructureDefinition-DDCCQQuestionnaireResponse.html">DDCC Questionnaire Response</a> resources for the request message. The specific DDCC Questionnaire Response resource is determined by the health event that is the subject of the transaction  
   
-  <h6 id="register-health-certificate-message-semantics-ddcc"> Message Semantics Request- DDCC</h6>
-  The <a href="actors.html#point-of-care">Point of Care</a> system should submit an <a href="StructureDefinition-DDCCQuestionnaireResponse.html">DDCC Questionnaire Response</a>  
-
-
   <a name="2.2"></a><h5 id="register-health-certificate-message-semantics-response"> Message Semantics Response</h5>
-    The response to a Register Health Certificate transaction is a <a href="StructureDefinition-DDCCSubmitHealthEventResponse.html">DDCC Submit Health Event Response</a> which consists of a Bundle of type transaction-response following the FHIR specification for <a href="https://www.hl7.org/fhir/http.html#transaction-response">transaction responses</a>.  
+    The response to a Register Health Certificate transaction is a <a href="StructureDefinition-DDCCSubmitHealthEventResponse.html">DDCC Submit Health Event Response</a> which consists of a Bundle of type batch-response following the FHIR specification for <a href="https://www.hl7.org/fhir/http.html#transaction-response">transaction responses</a>.  
 
   <a name="3"></a><h4 id="submit-health-event-preconditions"> Pre-conditions</h4>
-  The DDCC Genrator should have a Document Signing Certificate (DSC) issued by the Public Health Authority and registered with the <a href="actors.html#npkd">National Public Key Directory</a>.  
+  The DDCC Generator should have a Document Signing Certificate (DSC) issued by the Public Health Authority and registered with an approved Public Key Directory such as the <a href="actors.html#npkd">National Public Key Directory</a>.  
 
-  When a jurisdiction participates in the Digital-Online scenario, the DSC should be registered with the <a href="actors.html#npkd">National Public Key Directory</a> and the <a href="actors.html#who-pkd">WHO Public Key Directory</a>.
+  When a jurisdiction participates in the Digital-Online scenario, the DSC should be registered with an approved Public Key Directory.
   
   <a name="4"></a><h4 id="submit-health-event-expected-actions"> Expected Actions</h4>
   The following are the expected actions for the actors participating in this transaction:
@@ -205,16 +201,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <li>
       The <a href="actors.html#ddcc-generator">DDCC Generator</a> should:
       <ol>
-	<li><a name="8700611b-5795-421d-a989-a014b1b27715">​</a>serialize the <a href="StructureDefinition-svc-questionnaireresponse.html">SVC Questionnaire Response</a> content as payload for encoding as a QR code</li>
+	<li>serialize the <a href="StructureDefinition-DDCCQuestionnaireResponse.html">DDCC Questionnaire Response</a> content as payload for encoding as a QR code</li>
 	<li>use their DSC to sign the QR Code Content as part of the QR Content schema</li>
-	<li><a name="bbe8cb18-d561-4a89-8792-2db74858560d">​</a>return the generated signed <a href="StructureDefinition-DDCCBinaryQRContent.html">Binary QR Content</a> and <a href="StructureDefinition-DDCCBinaryQRPNG.html">Binary QR PNG</a> resources to the  <a href="actors.html#point-of-care">Point of Care</a> system</li>
+	<li>return the generated signed <a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> to the  <a href="actors.html#point-of-care">Point of Care</a> system</li>
       </ol>
     </li>
     <li>
       If a jurisdiction participates in the Digital-Online scenario, the <a href="actors.html#ddcc-generator">DDCC Generator</a> should:
       <ol>
-	<li>use their DSC  to sign the <a href="StructureDefinition-DDCCBundle.html">DDCC Bundle</a> code payload as part of the QR content schema</li>
-	<li>initiate a <a href="transactions.html#register-health-certificate">Register Health Certificate</a> transaction using the extracted <a href="StructureDefinition-DDCCBundle.html">DDCC Bundle</a> </li>
+	<li>use their DSC  to sign the <a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> code payload as part of the QR content schema</li>
+	<li>initiate a <a href="transactions.html#register-health-certificate">Register Health Certificate</a> transaction using the extracted <a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> </li>
 	<li>include the resulting <a href="actors.html#ddcc-registry">DDCC Registry Service</a> endpoints for signed DDCC as part of the response message</li>
       </ol>
     </li>
@@ -306,10 +302,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   The Retrieve Health Folder transaction request message is the request message of a  <a href="http://hl7.org/fhir/composition-operation-document.html">$document</a> operation perfomed on the <a href="StructureDefinition-shf-composition.html">SHF Composition</a> with the following parameters:
   <ul>
     <li>id: (Required) the id of the SHF Composition </li>
-    <li><a name="ff8431ba-f376-4623-94bf-af22d29de261">​</a>
+    <li><a name="928da57f-2560-4e80-84f5-9d0c4770efa1">​</a>
       graph: (Optional) a canonical reference to a  <a href="StructureDefinition-shf-graphdefinition.html">SHF Graph Defintion</a> resource indicating which of the linked DDCC should be included in the result.  The following options are required to be supported:
       <ul>
-	<li><a name="ed925339-6ac5-46a1-97b9-726279c92f3a">​</a>GraphDefintion/svc-graph: will include the <a href="StructureDefintion-svc-bundle.html">SVC Bundle</a></li>
+	<li><a name="d4b8397a-410b-4c0e-9a9f-449d897540c1">​</a>GraphDefintion/svc-graph: will include the <a href="StructureDefintion-svc-bundle.html">SVC Bundle</a></li>
       </ul>
     </li>
   </ul>
@@ -318,7 +314,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <a name="4.2.2"></a><h5 id="retrieve-health-folder-message-semantics-response"> Message Semantics Response</h5>
   The Retrieve Health Folder transaction response message is the response message of a  <a href="http://hl7.org/fhir/composition-operation-document.html">$document</a> operation performed.  Specifically:
   <ul>
-    <li><a name="060ac1c6-3eb3-426f-8a76-67faf4d7bf9d">​</a>An list of entries of <a href="StructureDefintion-DDCCComposition.html">DDCC Compositions</a> that the PHA wishes to expose to the requestor according to the polocy of the jursidiction</li>
+    <li><a name="ed435373-ef6e-41ce-9bc7-7820f6f60773">​</a>An list of entries of <a href="StructureDefintion-DDCCComposition.html">DDCC Compositions</a> that the PHA wishes to expose to the requestor according to the polocy of the jursidiction</li>
     <li>If the <i>graph</i> parameter was utilized, the linked resources as defined by the GraphDefintion</li>
   </ul>
 
@@ -351,14 +347,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-rc2#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jun 12, 2021 23:19+0000">2021-06-12</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-rc2#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 1, 2021 23:16+0000">2021-07-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/who-int/svc/projects/1" target="_blank">Issues</a>
                 
-                 | <a style="color: #81BEF7" href="https://who-int.github.io/svc/history.html" target="_blank">Version History <img src="external.png" alt="external" style="vertical-align: baseline"/></a> |
+                 | <a style="color: #81BEF7" href="https://worldhealthorganization.github.io/ddcc-rc1/history.html" target="_blank">Version History <img src="external.png" alt="external" style="vertical-align: baseline"/></a> |
                    <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
           
         </p>
