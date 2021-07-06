@@ -100,7 +100,7 @@
 		  <li><a href="personas.html">Personas</a></li>
 		  <li><a href="workflows.html">Workflows</a></li>      
 		  <li><a href="usecases.html">Use Cases</a></li>
-		  <li><a name="ad89c789-8e27-4d67-a414-b9c07a8765da">​</a><a href="StructureDefinition-SVC-Core-Data-Set.html">Data Dictionary</a></li>
+		  <li><a name="cec2c2e7-fb85-4013-b740-bcc5320c87e9">​</a><a href="StructureDefinition-SVC-Core-Data-Set.html">Data Dictionary</a></li>
 
 		</ul>
 	</li>
@@ -167,7 +167,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <!-- ReleaseHeader --><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates (DDCC)- RC2 - Local Development build (v0.2.1). See the <a href="https://worldhealthorganization.github.io/ddcc-rc1/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Transactions</h2>
   
-  <div><a name="3083b7c9-c75a-42c7-b61e-b2006901ac97">​</a><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Submit Health Event</a></li><li><a href="#2"> Register Health Certificate</a></li><li><a href="#3"> Retrieve Health Certificate</a></li><li><a href="#4"> Retrieve Health Folder</a></li></ul></div>
+  <div><a name="4cba2647-1c48-4c75-b6ba-964fa5f6c849">​</a><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Submit Health Event</a></li><li><a href="#2"> Register Health Certificate</a></li><li><a href="#3"> Retrieve Health Certificate</a></li><li><a href="#4"> Retrieve Health Folder</a></li></ul></div>
   
   <a name="1"></a><h3 id="submit-health-event">Submit Health Event</h3> 
   The Submit Health Event transaction is initiated by a <a href="actors.html#point-of-care">Point of Care</a> system against the <a href="actors.html#ddcc-generator">DDCC Generator</a>.
@@ -302,10 +302,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   The Retrieve Health Folder transaction request message is the request message of a  <a href="http://hl7.org/fhir/composition-operation-document.html">$document</a> operation perfomed on the <a href="StructureDefinition-shf-composition.html">SHF Composition</a> with the following parameters:
   <ul>
     <li>id: (Required) the id of the SHF Composition </li>
-    <li><a name="928da57f-2560-4e80-84f5-9d0c4770efa1">​</a>
+    <li><a name="beb8e380-d4be-4093-a647-ddc9fde087f0">​</a>
       graph: (Optional) a canonical reference to a  <a href="StructureDefinition-shf-graphdefinition.html">SHF Graph Defintion</a> resource indicating which of the linked DDCC should be included in the result.  The following options are required to be supported:
       <ul>
-	<li><a name="d4b8397a-410b-4c0e-9a9f-449d897540c1">​</a>GraphDefintion/svc-graph: will include the <a href="StructureDefintion-svc-bundle.html">SVC Bundle</a></li>
+	<li><a name="fa11f9b5-b27d-41af-9c3e-59a47cde9ca2">​</a>GraphDefintion/svc-graph: will include the <a href="StructureDefintion-svc-bundle.html">SVC Bundle</a></li>
       </ul>
     </li>
   </ul>
@@ -314,7 +314,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <a name="4.2.2"></a><h5 id="retrieve-health-folder-message-semantics-response"> Message Semantics Response</h5>
   The Retrieve Health Folder transaction response message is the response message of a  <a href="http://hl7.org/fhir/composition-operation-document.html">$document</a> operation performed.  Specifically:
   <ul>
-    <li><a name="ed435373-ef6e-41ce-9bc7-7820f6f60773">​</a>An list of entries of <a href="StructureDefintion-DDCCComposition.html">DDCC Compositions</a> that the PHA wishes to expose to the requestor according to the polocy of the jursidiction</li>
+    <li><a name="f1c31083-c1bd-499f-9603-9782e9b7ffb9">​</a>An list of entries of <a href="StructureDefintion-DDCCComposition.html">DDCC Compositions</a> that the PHA wishes to expose to the requestor according to the polocy of the jursidiction</li>
     <li>If the <i>graph</i> parameter was utilized, the linked resources as defined by the GraphDefintion</li>
   </ul>
 
@@ -347,12 +347,12 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-rc2#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 1, 2021 23:16+0000">2021-07-01</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-rc2#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 6, 2021 18:05+0000">2021-07-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/who-int/svc/projects/1" target="_blank">Issues</a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/WorldHealthOrganization/ddcc-rc1/projects/1" target="_blank">Issues</a>
                 
                  | <a style="color: #81BEF7" href="https://worldhealthorganization.github.io/ddcc-rc1/history.html" target="_blank">Version History <img src="external.png" alt="external" style="vertical-align: baseline"/></a> |
                    <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 

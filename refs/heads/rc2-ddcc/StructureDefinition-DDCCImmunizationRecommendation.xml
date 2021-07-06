@@ -32,12 +32,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCImmunizationRecommendation"/>
+  <url value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunizationRecommendation"/>
   <version value="0.2.1"/>
   <name value="DDCCImmunizationRecommendation"/>
   <title value="DDCC Immunization Recommendation"/>
   <status value="active"/>
-  <date value="2021-07-01T23:16:06+00:00"/>
+  <date value="2021-07-06T18:05:29+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -453,7 +453,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCPatient"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPatient"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1092,7 +1092,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="example"/>
-        <valueSet value="https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-ddcc-vaccines-covid-19"/>
+        <valueSet value="https://worldhealthorganization.github.io/ddcc-rcs1/ValueSet/who-ddcc-vaccines-covid-19"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1255,7 +1255,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="example"/>
-        <valueSet value="https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-ddcc-disease-targeted-covid-19"/>
+        <valueSet value="https://worldhealthorganization.github.io/ddcc-rcs1/ValueSet/who-ddcc-disease-targeted-covid-19"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2300,7 +2300,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCImmunization"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2369,7 +2369,7 @@
       <path value="ImmunizationRecommendation.patient"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCPatient"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPatient"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -2416,14 +2416,14 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="example"/>
-        <valueSet value="https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-ddcc-vaccines-covid-19"/>
+        <valueSet value="https://worldhealthorganization.github.io/ddcc-rcs1/ValueSet/who-ddcc-vaccines-covid-19"/>
       </binding>
     </element>
     <element id="ImmunizationRecommendation.recommendation.targetDisease">
       <path value="ImmunizationRecommendation.recommendation.targetDisease"/>
       <binding>
         <strength value="example"/>
-        <valueSet value="https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-ddcc-disease-targeted-covid-19"/>
+        <valueSet value="https://worldhealthorganization.github.io/ddcc-rcs1/ValueSet/who-ddcc-disease-targeted-covid-19"/>
       </binding>
     </element>
     <element id="ImmunizationRecommendation.recommendation.forecastStatus.coding">
@@ -2470,7 +2470,7 @@
       <max value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCImmunization"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunization"/>
       </type>
       <mustSupport value="true"/>
     </element>

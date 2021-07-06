@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "DDCC-Immunization-English"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCImmunization";
+       fhir:value "https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunization";
        fhir:index 0;
-       fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCImmunization>
+       fhir:link <https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunization>
      ]
   ];
   fhir:DomainResource.text [
@@ -21,14 +21,14 @@
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCVaccineBrand" ];
+     fhir:Extension.url [ fhir:value "https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCVaccineBrand" ];
      fhir:Extension.valueCoding [
        fhir:Coding.system [ fhir:value "urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding" ];
        fhir:Coding.code [ fhir:value "TEST" ]
      ]
   ], [
      fhir:index 1;
-     fhir:Extension.url [ fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCCountryOfVaccination" ];
+     fhir:Extension.url [ fhir:value "https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCCountryOfVaccination" ];
      fhir:Extension.valueCode [ fhir:value "CHE" ]
   ];
   fhir:Immunization.status [ fhir:value "completed"];

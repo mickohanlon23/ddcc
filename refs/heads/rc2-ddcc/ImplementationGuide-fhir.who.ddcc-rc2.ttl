@@ -1005,13 +1005,26 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://worldhealthorganization.github.io/ddcc-rc1/StructureDefinition/DDCCAddBundle>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCAddBundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Add Bundle" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle to be transformed to from the DDCC QuestionnaireResponse\nto add on the DDCC generator." ]
+     ], [
+       fhir:index 42;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://worldhealthorganization.github.io/ddcc-rc1/StructureDefinition/DDCCImmunizationRecommendation>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCImmunizationRecommendation" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Immunization Recommendation" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A DDCC Immunization Recommendation contains the content corresponding to when\na patient should return for a booster shot." ]
      ], [
-       fhir:index 42;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

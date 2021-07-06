@@ -22,12 +22,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCImmunizationRecommendation"];
+  fhir:StructureDefinition.url [ fhir:value "https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunizationRecommendation"];
   fhir:StructureDefinition.version [ fhir:value "0.2.1"];
   fhir:StructureDefinition.name [ fhir:value "DDCCImmunizationRecommendation"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Immunization Recommendation"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-07-01T23:16:06+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-07-06T18:05:29+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -569,9 +569,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCPatient";
+           fhir:value "https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPatient";
            fhir:index 0;
-           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCPatient>
+           fhir:link <https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPatient>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1380,8 +1380,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-ddcc-vaccines-covid-19";
-           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-ddcc-vaccines-covid-19>
+           fhir:value "https://worldhealthorganization.github.io/ddcc-rcs1/ValueSet/who-ddcc-vaccines-covid-19";
+           fhir:link <https://worldhealthorganization.github.io/ddcc-rcs1/ValueSet/who-ddcc-vaccines-covid-19>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -1578,8 +1578,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-ddcc-disease-targeted-covid-19";
-           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-ddcc-disease-targeted-covid-19>
+           fhir:value "https://worldhealthorganization.github.io/ddcc-rcs1/ValueSet/who-ddcc-disease-targeted-covid-19";
+           fhir:link <https://worldhealthorganization.github.io/ddcc-rcs1/ValueSet/who-ddcc-disease-targeted-covid-19>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -2906,9 +2906,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCImmunization";
+           fhir:value "https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunization";
            fhir:index 0;
-           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCImmunization>
+           fhir:link <https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunization>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2999,9 +2999,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCPatient";
+           fhir:value "https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPatient";
            fhir:index 0;
-           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCPatient>
+           fhir:link <https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPatient>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
@@ -3057,8 +3057,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-ddcc-vaccines-covid-19";
-           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-ddcc-vaccines-covid-19>
+           fhir:value "https://worldhealthorganization.github.io/ddcc-rcs1/ValueSet/who-ddcc-vaccines-covid-19";
+           fhir:link <https://worldhealthorganization.github.io/ddcc-rcs1/ValueSet/who-ddcc-vaccines-covid-19>
          ]
        ]
      ], [
@@ -3068,8 +3068,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "example" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-ddcc-disease-targeted-covid-19";
-           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/ValueSet/who-ddcc-disease-targeted-covid-19>
+           fhir:value "https://worldhealthorganization.github.io/ddcc-rcs1/ValueSet/who-ddcc-disease-targeted-covid-19";
+           fhir:link <https://worldhealthorganization.github.io/ddcc-rcs1/ValueSet/who-ddcc-disease-targeted-covid-19>
          ]
        ]
      ], [
@@ -3127,9 +3127,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCImmunization";
+           fhir:value "https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunization";
            fhir:index 0;
-           fhir:link <https://who-int.github.io/svc/refs/heads/rc2/StructureDefinition/DDCCImmunization>
+           fhir:link <https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunization>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
