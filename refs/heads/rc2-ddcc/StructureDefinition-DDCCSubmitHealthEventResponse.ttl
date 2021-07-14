@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc-rc1/StructureDefinition/DDCCSubmitHealthEventResponse> a fhir:StructureDefinition;
+<https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventResponse> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "DDCCSubmitHealthEventResponse"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCSubmitHealthEventResponse"];
+  fhir:StructureDefinition.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventResponse"];
   fhir:StructureDefinition.version [ fhir:value "0.2.1"];
   fhir:StructureDefinition.name [ fhir:value "DDCCSubmitHealthEventResponse"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Submit Health Event Response"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-07-14T21:15:53+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-07-14T21:23:53+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -2301,9 +2301,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Bundle" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCDocument";
+           fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument";
            fhir:index 0;
-           fhir:link <https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCDocument>
+           fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3490,9 +3490,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Bundle" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCDocument";
+           fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument";
            fhir:index 0;
-           fhir:link <https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCDocument>
+           fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument>
          ]
        ]
      ]
@@ -3500,7 +3500,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc-rc1/StructureDefinition/DDCCSubmitHealthEventResponse.ttl> a owl:Ontology;
+<https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventResponse.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

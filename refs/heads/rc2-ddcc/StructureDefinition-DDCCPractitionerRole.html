@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>FHIR.WHO.DDCC-RC2\DDCC Practitioner Role - FHIR v4.0.1</title>
+    <title>FHIR.WHO.DDCC-VS\DDCC Practitioner Role - FHIR v4.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.20"}
-    h3,h4,h5,h6{--heading-prefix:"5.20"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.19"}
+    h3,h4,h5,h6{--heading-prefix:"5.19"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -54,7 +54,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">WHO Digital Documentation of COVID-19 Certificates (DDCC)- RC2</span><br/>0.2.1 - CI Build</p>
+          <p><span style="font-size:12pt;font-weight:bold">WHO Digital Documentation of COVID-19 Certificates: Vaccination Status (DDCC:VS)</span><br/>0.2.1 - CI Build</p>
         </div>
       </div>   <!-- /container -->
     </div>    <!-- /segment-header -->
@@ -100,7 +100,7 @@
 		  <li><a href="personas.html">Personas</a></li>
 		  <li><a href="workflows.html">Workflows</a></li>      
 		  <li><a href="usecases.html">Use Cases</a></li>
-		  <li><a name="13048b69-867f-4652-9efa-4c6d43507a41">​</a><a href="StructureDefinition-SVC-Core-Data-Set.html">Data Dictionary</a></li>
+		  <li><a name="b273a4ec-3720-409b-bbbd-2fcde3a88066">​</a><a href="StructureDefinition-SVC-Core-Data-Set.html">Data Dictionary</a></li>
 
 		</ul>
 	</li>
@@ -157,7 +157,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates (DDCC)- RC2 - Local Development build (v0.2.1). See the <a href="https://worldhealthorganization.github.io/ddcc-rc1/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates: Vaccination Status (DDCC:VS) - Local Development build (v0.2.1). See the <a href="https://worldhealthorganization.github.io/ddcc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -223,12 +223,12 @@
 
 <table class="grid">
 <tbody>
-<tr><td>Defining URL:</td><td>https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPractitionerRole</td></tr>
+<tr><td>Defining URL:</td><td>https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole</td></tr>
  <tr><td>Version:</td><td>0.2.1</td></tr>
  <tr><td>Name:</td><td>DDCCPractitionerRole</td></tr>
  <tr><td>Title:</td><td>DDCC Practitioner Role</td></tr>
- <tr><td>Status:</td><td>Active as of 2021-07-14T21:15:53+00:00</td></tr>
- <tr><td>Definition:</td><td><p><a name="f6bf326c-9151-4889-b467-505bb172b70e">​</a>Association of an <a href="StructureDefinition-DDCCPractitioner.html">DDCC Practitioner</a> to a
+ <tr><td>Status:</td><td>Active as of 2021-07-14T21:23:53+00:00</td></tr>
+ <tr><td>Definition:</td><td><p><a name="8dad6d86-2f7b-4aa0-98d8-5d8de2566bbf">​</a>Association of an <a href="StructureDefinition-DDCCPractitioner.html">DDCC Practitioner</a> to a
 managing <a href="StructureDefinition-DDCCOrgaznization.html">DDCC Organization</a>, indicating
 that an DDCC Practitioner is authorized by the public health authority (PHA) to
 vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p>
@@ -241,7 +241,7 @@ vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p
   <p>
   The official URL for this profile is:
   </p>
-  <pre>https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPractitionerRole</pre>
+  <pre>https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole</pre>
 
   <!-- insert intro if present -->
 
@@ -301,8 +301,8 @@ Summary
 <p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-DDCCPractitioner.html">https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPractitioner</a></li>
-<li><a href="StructureDefinition-DDCCOrganization.html">https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCOrganization</a></li>
+<li><a href="StructureDefinition-DDCCPractitioner.html">https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner</a></li>
+<li><a href="StructureDefinition-DDCCOrganization.html">https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization</a></li>
 
 </ul>
 
@@ -402,8 +402,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.identifier" title="Business Identifiers that are specific to a role/location" class="dict"><span style="text-decoration: underline">identifier</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Business Identifiers that are specific to a role/location</span>
     "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.active" title="Whether this practitioner role record is in active use" class="dict"><span style="text-decoration: underline">active</span></a>" : &lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></span>&gt;, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Whether this practitioner role record is in active use</span>
     "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.period" title="The period during which the person is authorized to act as a practitioner in these role(s) for the organization" class="dict"><span style="text-decoration: underline">period</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The period during which the practitioner is authorized to perform in these role(s)</span>
-    "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.practitioner" title="Practitioner that is able to provide the defined services for the organization" class="dict"><span style="text-decoration: underline">practitioner</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPractitioner]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Practitioner that is able to provide the defined services for the organization</span>
-    "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.organization" title="The organization where the Practitioner performs the roles associated" class="dict"><span style="text-decoration: underline">organization</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCOrganization]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Organization where the roles are available</span>
+    "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.practitioner" title="Practitioner that is able to provide the defined services for the organization" class="dict"><span style="text-decoration: underline">practitioner</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Practitioner that is able to provide the defined services for the organization</span>
+    "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.organization" title="The organization where the Practitioner performs the roles associated" class="dict"><span style="text-decoration: underline">organization</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Organization where the roles are available</span>
     "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.code" title="Roles which this practitioner is authorized to perform for the organization" class="dict"><span style="text-decoration: underline">code</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Roles which this practitioner may perform</a></span>
     "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.specialty" title="Specific specialty of the practitioner" class="dict"><span style="text-decoration: underline">specialty</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Specific specialty of the practitioner</a></span>
     "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.location" title="The location(s) at which this practitioner provides care" class="dict"><span style="text-decoration: underline">location</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/location.html">Location</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The location(s) at which this practitioner provides care</span>
@@ -464,8 +464,8 @@ Summary
 <p><b>Structures</b></p>
 <p>This structure refers to these other structures:</p>
 <ul>
-<li><a href="StructureDefinition-DDCCPractitioner.html">https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPractitioner</a></li>
-<li><a href="StructureDefinition-DDCCOrganization.html">https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCOrganization</a></li>
+<li><a href="StructureDefinition-DDCCPractitioner.html">https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner</a></li>
+<li><a href="StructureDefinition-DDCCOrganization.html">https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization</a></li>
 
 </ul>
 
@@ -565,8 +565,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.identifier" title="Business Identifiers that are specific to a role/location" class="dict"><span style="text-decoration: underline">identifier</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Business Identifiers that are specific to a role/location</span>
     "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.active" title="Whether this practitioner role record is in active use" class="dict"><span style="text-decoration: underline">active</span></a>" : &lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></span>&gt;, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Whether this practitioner role record is in active use</span>
     "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.period" title="The period during which the person is authorized to act as a practitioner in these role(s) for the organization" class="dict"><span style="text-decoration: underline">period</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#Period">Period</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The period during which the practitioner is authorized to perform in these role(s)</span>
-    "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.practitioner" title="Practitioner that is able to provide the defined services for the organization" class="dict"><span style="text-decoration: underline">practitioner</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPractitioner]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Practitioner that is able to provide the defined services for the organization</span>
-    "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.organization" title="The organization where the Practitioner performs the roles associated" class="dict"><span style="text-decoration: underline">organization</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCOrganization]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Organization where the roles are available</span>
+    "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.practitioner" title="Practitioner that is able to provide the defined services for the organization" class="dict"><span style="text-decoration: underline">practitioner</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Practitioner that is able to provide the defined services for the organization</span>
+    "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.organization" title="The organization where the Practitioner performs the roles associated" class="dict"><span style="text-decoration: underline">organization</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization]])}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Organization where the roles are available</span>
     "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.code" title="Roles which this practitioner is authorized to perform for the organization" class="dict"><span style="text-decoration: underline">code</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Roles which this practitioner may perform</a></span>
     "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.specialty" title="Specific specialty of the practitioner" class="dict"><span style="text-decoration: underline">specialty</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R4/null.html" style="color: navy">Specific specialty of the practitioner</a></span>
     "<a href="StructureDefinition-DDCCPractitionerRole.html#PractitionerRole.location" title="The location(s) at which this practitioner provides care" class="dict"><span style="text-decoration: underline">location</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/location.html">Location</a></span>)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The location(s) at which this practitioner provides care</span>
@@ -726,14 +726,14 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-rc2#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 14, 2021 21:15+0000">2021-07-14</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 14, 2021 21:23+0000">2021-07-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
-                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/WorldHealthOrganization/ddcc-rc1/projects/1" target="_blank">Issues</a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" href="https://github.com/WorldHealthOrganization/ddcc/projects/1" target="_blank">Issues</a>
                 
-                 | <a style="color: #81BEF7" href="https://worldhealthorganization.github.io/ddcc-rc1/history.html" target="_blank">Version History <img src="external.png" alt="external" style="vertical-align: baseline"/></a> |
+                 | <a style="color: #81BEF7" href="https://worldhealthorganization.github.io/ddcc/history.html" target="_blank">Version History <img src="external.png" alt="external" style="vertical-align: baseline"/></a> |
                    <!-- <a style="color: #81BEF7" href="todo.html">Search</a> | --> 
           
         </p>

@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc-rc1/CapabilityStatement/WHO.DDCC.Generator> a fhir:CapabilityStatement;
+<https://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.Generator> a fhir:CapabilityStatement;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "WHO.DDCC.Generator"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Capability Statement for a DDCC Generator</p>\n         \n    </div>"
   ];
-  fhir:CapabilityStatement.url [ fhir:value "https://worldhealthorganization.github.io/ddcc-rc1/CapabilityStatement/WHO.DDCC.Generator"];
+  fhir:CapabilityStatement.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.Generator"];
   fhir:CapabilityStatement.version [ fhir:value "0.2.1"];
   fhir:CapabilityStatement.name [ fhir:value "WHO.DDCC.Generator"];
   fhir:CapabilityStatement.title [ fhir:value "WHO DDCC Generator"];
@@ -46,9 +46,9 @@
        fhir:index 0;
        fhir:CapabilityStatement.rest.resource.type [ fhir:value "QuestionnaireResponse" ];
        fhir:CapabilityStatement.rest.resource.supportedProfile [
-         fhir:value "https://worldhealthorganization.github.io/ddcc-rc1/StructureDefinition/DDCCQuestionnaireResponse";
+         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse";
          fhir:index 0;
-         fhir:link <https://worldhealthorganization.github.io/ddcc-rc1/StructureDefinition/DDCCQuestionnaireResponse>
+         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse>
        ];
        fhir:CapabilityStatement.rest.resource.documentation [ fhir:value "." ];
        fhir:CapabilityStatement.rest.resource.interaction [
@@ -60,8 +60,8 @@
          fhir:index 0;
          fhir:CapabilityStatement.rest.resource.operation.name [ fhir:value "generateHealthCertificate" ];
          fhir:CapabilityStatement.rest.resource.operation.definition [
-           fhir:value "https://worldhealthorganization.github.io/ddcc-rc1/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate";
-           fhir:link <https://worldhealthorganization.github.io/ddcc-rc1/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate>
+           fhir:value "https://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate";
+           fhir:link <https://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate>
          ];
          fhir:CapabilityStatement.rest.resource.operation.documentation [ fhir:value "Generate a health certificate based on a QuestionnaireResponse." ]
        ]
@@ -83,7 +83,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc-rc1/CapabilityStatement/WHO.DDCC.Generator.ttl> a owl:Ontology;
+<https://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.Generator.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

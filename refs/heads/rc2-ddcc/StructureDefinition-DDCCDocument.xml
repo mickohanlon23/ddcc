@@ -29,12 +29,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="not-classified"/>
   </extension>
-  <url value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCDocument"/>
+  <url value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument"/>
   <version value="0.2.1"/>
   <name value="DDCCDocument"/>
   <title value="DDCC Document"/>
   <status value="active"/>
-  <date value="2021-07-14T21:15:53+00:00"/>
+  <date value="2021-07-14T21:23:53+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -1784,7 +1784,7 @@
       </base>
       <type>
         <code value="Composition"/>
-        <profile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCComposition"/>
+        <profile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -2810,7 +2810,7 @@
       </base>
       <type>
         <code value="Patient"/>
-        <profile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPatient"/>
+        <profile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -3827,7 +3827,7 @@
       </base>
       <type>
         <code value="Organization"/>
-        <profile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCOrganization"/>
+        <profile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -4856,7 +4856,7 @@
       </base>
       <type>
         <code value="Immunization"/>
-        <profile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunization"/>
+        <profile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -5877,7 +5877,7 @@
       </base>
       <type>
         <code value="ImmunizationRecommendation"/>
-        <profile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunizationRecommendation"/>
+        <profile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -6899,7 +6899,7 @@
       </base>
       <type>
         <code value="DocumentReference"/>
-        <profile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCDocumentReferenceQR"/>
+        <profile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -7780,7 +7780,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Composition"/>
-        <profile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCComposition"/>
+        <profile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"/>
       </type>
     </element>
     <element id="Bundle.entry:ddccPatient">
@@ -7793,7 +7793,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Patient"/>
-        <profile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPatient"/>
+        <profile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"/>
       </type>
     </element>
     <element id="Bundle.entry:ddccOrganization">
@@ -7806,7 +7806,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Organization"/>
-        <profile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCOrganization"/>
+        <profile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
       </type>
     </element>
     <element id="Bundle.entry:ddccImmunization">
@@ -7819,7 +7819,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Immunization"/>
-        <profile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunization"/>
+        <profile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization"/>
       </type>
     </element>
     <element id="Bundle.entry:ddccImmunizationRecommendation">
@@ -7832,7 +7832,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="ImmunizationRecommendation"/>
-        <profile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunizationRecommendation"/>
+        <profile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation"/>
       </type>
     </element>
     <element id="Bundle.entry:ddccQR">
@@ -7845,7 +7845,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="DocumentReference"/>
-        <profile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCDocumentReferenceQR"/>
+        <profile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR"/>
       </type>
     </element>
     <element id="Bundle.signature">

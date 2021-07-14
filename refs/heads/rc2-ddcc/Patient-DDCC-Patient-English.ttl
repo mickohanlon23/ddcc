@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc-rc1/Patient/DDCC-Patient-English> a fhir:Patient;
+<https://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-English> a fhir:Patient;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "DDCC-Patient-English"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPatient";
+       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
        fhir:index 0;
-       fhir:link <https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPatient>
+       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
      ]
   ];
   fhir:DomainResource.text [
@@ -28,7 +28,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc-rc1/Patient/DDCC-Patient-English.ttl> a owl:Ontology;
+<https://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-English.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

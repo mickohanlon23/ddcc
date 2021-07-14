@@ -3,13 +3,13 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
   <id value="DDCC-QuestionnaireReponse-generateHealthCertificate"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>QuestionnaireReponse Generate Health Certificate</h2><p>OPERATION: QuestionnaireReponse Generate Health Certificate</p><p>The official URL for this operation definition is: </p><pre>https://worldhealthorganization.github.io/ddcc-rc1/OperationDefinition/DDCC-QuestionnaireReponse-generateHealthCertificate</pre><div><p>Generate one or more signed QR Codes based on a <a href="StructureDefinition-DDCCQuestionnaireResponse.html">DDCC QuestionnaireResponse</a></p>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>QuestionnaireReponse Generate Health Certificate</h2><p>OPERATION: QuestionnaireReponse Generate Health Certificate</p><p>The official URL for this operation definition is: </p><pre>https://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireReponse-generateHealthCertificate</pre><div><p>Generate one or more signed QR Codes based on a <a href="StructureDefinition-DDCCQuestionnaireResponse.html">DDCC QuestionnaireResponse</a></p>
 </div><p>URL: [base]/QuestionnaireResponse/$generateHealthCertificate</p><p>URL: [base]/QuestionnaireResponse/[id]/$generateHealthCertificate</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>response</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a></td><td/><td><div><p>The questionnaire response resource used to generate the QR code.</p>
 </div></td></tr><tr><td>IN</td><td>id</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#id">id</a></td><td/><td><div><p>The questionnaire response resource id used to generate the QR code.</p>
 </div></td></tr><tr><td>OUT</td><td>shc</td><td>0..1</td><td><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td><td/><td><div><p>The DDCC, including any QR codes, that was created under the <a href="transactions.html#submit-health-event-expected-actions">Generate Health Certificate</a> expected actions</p>
 </div></td></tr></table></div>
   </text>
-  <url value="https://worldhealthorganization.github.io/ddcc-rc1/OperationDefinition/DDCC-QuestionnaireReponse-generateHealthCertificate"/>
+  <url value="https://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireReponse-generateHealthCertificate"/>
   <version value="0.2.1"/>
   <name value="QuestionnaireReponse Generate Health Certificate"/>
   <status value="draft"/>

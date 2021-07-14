@@ -38,12 +38,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="not-classified"/>
   </extension>
-  <url value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCComposition"/>
+  <url value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"/>
   <version value="0.2.1"/>
   <name value="DDCCComposition"/>
   <title value="DDCC Composition"/>
   <status value="active"/>
-  <date value="2021-07-14T21:15:53+00:00"/>
+  <date value="2021-07-14T21:23:53+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -981,7 +981,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPatient"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1693,7 +1693,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCOrganization"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -3269,7 +3269,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunization"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -3426,9 +3426,9 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunization"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCDocumentReferenceQR"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunizationRecommendation"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation"/>
       </type>
       <condition value="cmp-2"/>
       <constraint>
@@ -3568,7 +3568,7 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPatient"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -3598,7 +3598,7 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCOrganization"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -3647,7 +3647,7 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunization"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -3655,9 +3655,9 @@
       <path value="Composition.section.entry"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunization"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCDocumentReferenceQR"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunizationRecommendation"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation"/>
       </type>
     </element>
   </differential>

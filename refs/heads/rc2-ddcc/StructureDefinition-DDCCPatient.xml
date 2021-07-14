@@ -23,12 +23,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPatient"/>
+  <url value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"/>
   <version value="0.2.1"/>
   <name value="DDCCPatient"/>
   <title value="DDCC Patient"/>
   <status value="active"/>
-  <date value="2021-07-14T21:15:53+00:00"/>
+  <date value="2021-07-14T21:23:53+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -789,7 +789,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCOrganization"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2652,7 +2652,7 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCOrganization"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
       </type>
       <mustSupport value="true"/>
     </element>

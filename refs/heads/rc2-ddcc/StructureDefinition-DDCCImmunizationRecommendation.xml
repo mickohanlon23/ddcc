@@ -32,12 +32,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunizationRecommendation"/>
+  <url value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation"/>
   <version value="0.2.1"/>
   <name value="DDCCImmunizationRecommendation"/>
   <title value="DDCC Immunization Recommendation"/>
   <status value="active"/>
-  <date value="2021-07-14T21:15:53+00:00"/>
+  <date value="2021-07-14T21:23:53+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -453,7 +453,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPatient"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1092,7 +1092,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="example"/>
-        <valueSet value="https://worldhealthorganization.github.io/ddcc-rcs1/ValueSet/who-ddcc-vaccines-covid-19"/>
+        <valueSet value="https://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccines-covid-19"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -1255,7 +1255,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="example"/>
-        <valueSet value="https://worldhealthorganization.github.io/ddcc-rcs1/ValueSet/who-ddcc-disease-targeted-covid-19"/>
+        <valueSet value="https://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2300,7 +2300,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunization"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2369,7 +2369,7 @@
       <path value="ImmunizationRecommendation.patient"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCPatient"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -2416,14 +2416,14 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="example"/>
-        <valueSet value="https://worldhealthorganization.github.io/ddcc-rcs1/ValueSet/who-ddcc-vaccines-covid-19"/>
+        <valueSet value="https://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccines-covid-19"/>
       </binding>
     </element>
     <element id="ImmunizationRecommendation.recommendation.targetDisease">
       <path value="ImmunizationRecommendation.recommendation.targetDisease"/>
       <binding>
         <strength value="example"/>
-        <valueSet value="https://worldhealthorganization.github.io/ddcc-rcs1/ValueSet/who-ddcc-disease-targeted-covid-19"/>
+        <valueSet value="https://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19"/>
       </binding>
     </element>
     <element id="ImmunizationRecommendation.recommendation.forecastStatus.coding">
@@ -2470,7 +2470,7 @@
       <max value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc-rcs1/StructureDefinition/DDCCImmunization"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization"/>
       </type>
       <mustSupport value="true"/>
     </element>
