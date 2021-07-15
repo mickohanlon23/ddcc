@@ -1,0 +1,214 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "WHO.DDCC.RegistryService",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Capability Statement for a DDCC RegistryService</p>\n         \n    </div>"
+  },
+  "url": "https://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.RegistryService",
+  "version": "0.2.1",
+  "name": "WHO.DDCC.RegistryService",
+  "title": "WHO DDCC Registry Service",
+  "status": "draft",
+  "experimental": true,
+  "date": "2021-05-06",
+  "publisher": "World Health Organization (WHO)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.who.int"
+        }
+      ]
+    }
+  ],
+  "description": "CapabilityStatement for WHO DDCC Registry Service actor.",
+  "kind": "requirements",
+  "fhirVersion": "4.0.1",
+  "format": [
+    "application/fhir+xml",
+    "application/fhir+json"
+  ],
+  "rest": [
+    {
+      "mode": "server",
+      "documentation": "DDCC Registry Service Server Actor",
+      "resource": [
+        {
+          "type": "Composition",
+          "supportedProfile": [
+            "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"
+          ],
+          "documentation": ".",
+          "interaction": [
+            {
+              "code": "create",
+              "documentation": "DDCC Registry Service Actor for accepting a Registr Health Certificate transaction"
+            }
+          ],
+          "operation": [
+            {
+              "name": "$document",
+              "definition": "http://hl7.org/fhir/OperationDefinition/Composition-document",
+              "documentation": "DDCC Registry Service Actor for responding to a Retrieve Health Certificate or Retrieve Health Folder transaction"
+            }
+          ]
+        },
+        {
+          "type": "Patient",
+          "supportedProfile": [
+            "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"
+          ],
+          "documentation": ".",
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ]
+        },
+        {
+          "type": "Organization",
+          "supportedProfile": [
+            "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"
+          ],
+          "documentation": ".",
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ]
+        },
+        {
+          "type": "Provenance",
+          "supportedProfile": [
+            "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCProvenance"
+          ],
+          "documentation": ".",
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ]
+        },
+        {
+          "type": "Practitioner",
+          "supportedProfile": [
+            "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner"
+          ],
+          "documentation": ".",
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ]
+        },
+        {
+          "type": "PractitionerRole",
+          "supportedProfile": [
+            "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole"
+          ],
+          "documentation": ".",
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ]
+        },
+        {
+          "type": "Immunization",
+          "supportedProfile": [
+            "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization"
+          ],
+          "documentation": ".",
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ]
+        },
+        {
+          "type": "List",
+          "supportedProfile": [
+            "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder"
+          ],
+          "documentation": ".",
+          "interaction": [
+            {
+              "code": "create"
+            },
+            {
+              "code": "update"
+            },
+            {
+              "code": "read"
+            },
+            {
+              "code": "vread"
+            }
+          ]
+        }
+      ],
+      "interaction": [
+        {
+          "code": "batch",
+          "documentation": "DDCC Registry Service Actor for accepting a Registry Health Certificate"
+        }
+      ]
+    }
+  ]
+}

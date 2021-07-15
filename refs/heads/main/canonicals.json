@@ -1,107 +1,268 @@
 [
   {
-    "id": "who-svc-map-icd11-sct-disease-targeted",
+    "id": "Immunization-pre-uv-ips",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips",
+    "version": "0.2.1",
+    "name": "ImmunizationUvIps"
+  },
+  {
+    "id": "Patient-pre-uv-ips",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-pre-uv-ips",
+    "version": "0.2.1",
+    "name": "PatientUvIps"
+  },
+  {
+    "id": "svc-map-qr-bundle",
+    "type": "StructureMap",
+    "url": "http://who-int.github.io/svc/StructureMap/svc-map-qr-bundle",
+    "version": "0.2.1",
+    "name": "svc-map-qr-uvci-bundle"
+  },
+  {
+    "id": "DDCCVSCoreDataSetQuestionnaire",
+    "type": "Questionnaire",
+    "url": "http://worldhealthorganization.github.io/ddcc/DDCCVSCoreDataSetQuestionnaire",
+    "version": "0.2.1",
+    "name": "DDCCCoreDataSetQuestionnaire"
+  },
+  {
+    "id": "WHO.DDCC.Generator",
+    "type": "CapabilityStatement",
+    "url": "https://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.Generator",
+    "version": "0.2.1",
+    "name": "WHO.DDCC.Generator"
+  },
+  {
+    "id": "WHO.DDCC.RegistryService",
+    "type": "CapabilityStatement",
+    "url": "https://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.RegistryService",
+    "version": "0.2.1",
+    "name": "WHO.DDCC.RegistryService"
+  },
+  {
+    "id": "DDCC-QR-Category-Usage-CodeSystem",
+    "type": "CodeSystem",
+    "url": "https://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem",
+    "version": "0.2.1",
+    "name": "DDCC_QR_Category_Usage_CodeSystem"
+  },
+  {
+    "id": "DDCC-QR-Format-CodeSystem",
+    "type": "CodeSystem",
+    "url": "https://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem",
+    "version": "0.2.1",
+    "name": "DDCC_QR_Format_CodeSystem"
+  },
+  {
+    "id": "who-ddcc-map-icd11-sct-disease-targeted",
     "type": "ConceptMap",
-    "url": "http://fhir.org/guides/who/svc-rc1/ConceptMap/who-svc-map-icd11-sct-disease-targeted",
-    "version": "0.2.0",
+    "url": "https://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-disease-targeted",
+    "version": "0.2.1",
     "name": "ICD-11 to SNOMED CT mappings for COVID-19 Disease or Agent Targeted"
   },
   {
-    "id": "who-svc-map-icd11-sct-vaccines",
+    "id": "who-ddcc-map-icd11-sct-vaccines",
     "type": "ConceptMap",
-    "url": "http://fhir.org/guides/who/svc-rc1/ConceptMap/who-svc-map-icd11-sct-vaccines",
-    "version": "0.2.0",
+    "url": "https://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-vaccines",
+    "version": "0.2.1",
     "name": "ICD-11 to SNOMED CT mappings for COVID-19 vaccines"
   },
   {
-    "id": "fhir.who.svc-rc1",
+    "id": "fhir.who.ddcc-vs",
     "type": "ImplementationGuide",
-    "url": "http://fhir.org/guides/who/svc-rc1/ImplementationGuide/fhir.who.svc-rc1",
-    "version": "0.2.0",
-    "name": "SVC_RC1"
+    "url": "https://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs",
+    "version": "0.2.1",
+    "name": "DDCC_VS"
   },
   {
-    "id": "svc-bundle",
+    "id": "DDCC-QuestionnaireReponse-generateHealthCertificate",
+    "type": "OperationDefinition",
+    "url": "https://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireReponse-generateHealthCertificate",
+    "version": "0.2.1",
+    "name": "QuestionnaireReponse Generate Health Certificate"
+  },
+  {
+    "id": "DDCCAddBundle",
     "type": "StructureDefinition",
-    "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-bundle",
-    "version": "0.2.0",
-    "name": "SVC_Bundle"
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCAddBundle",
+    "version": "0.2.1",
+    "name": "DDCCAddBundle"
   },
   {
-    "id": "svc-composition",
+    "id": "DDCCComposition",
     "type": "StructureDefinition",
-    "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-composition",
-    "version": "0.2.0",
-    "name": "SVC_Composition"
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition",
+    "version": "0.2.1",
+    "name": "DDCCComposition"
   },
   {
-    "id": "svc-immunization",
+    "id": "DDCCCountryOfVaccination",
     "type": "StructureDefinition",
-    "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-immunization",
-    "version": "0.2.0",
-    "name": "SVC_Immunization"
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination",
+    "version": "0.2.1",
+    "name": "DDCCCountryOfVaccination"
   },
   {
-    "id": "svc-organization",
+    "id": "DDCCDocument",
     "type": "StructureDefinition",
-    "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-organization",
-    "version": "0.2.0",
-    "name": "SVC_Organization"
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument",
+    "version": "0.2.1",
+    "name": "DDCCDocument"
   },
   {
-    "id": "svc-patient",
+    "id": "DDCCDocumentReference",
     "type": "StructureDefinition",
-    "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-patient",
-    "version": "0.2.0",
-    "name": "SVC_Patient"
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference",
+    "version": "0.2.1",
+    "name": "DDCCDocumentReference"
   },
   {
-    "id": "svc-practitioner",
+    "id": "DDCCDocumentReferenceQR",
     "type": "StructureDefinition",
-    "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner",
-    "version": "0.2.0",
-    "name": "SVC_Practitioner"
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR",
+    "version": "0.2.1",
+    "name": "DDCCDocumentReferenceQR"
   },
   {
-    "id": "svc-practitioner-role",
+    "id": "DDCCFolder",
     "type": "StructureDefinition",
-    "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-practitioner-role",
-    "version": "0.2.0",
-    "name": "SVC_PractitionerRole"
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder",
+    "version": "0.2.1",
+    "name": "DDCCFolder"
   },
   {
-    "id": "svc-provenance",
+    "id": "DDCCGenerateHealthCertificateParameters",
     "type": "StructureDefinition",
-    "url": "http://fhir.org/guides/who/svc-rc1/StructureDefinition/svc-provenance",
-    "version": "0.2.0",
-    "name": "SVC_Provenance"
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters",
+    "version": "0.2.1",
+    "name": "DDCCGenerateHealthCertificateParameters"
   },
   {
-    "id": "who-svc-disease-targeted-covid-19",
+    "id": "DDCCImmunization",
+    "type": "StructureDefinition",
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization",
+    "version": "0.2.1",
+    "name": "DDCCImmunization"
+  },
+  {
+    "id": "DDCCImmunizationRecommendation",
+    "type": "StructureDefinition",
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation",
+    "version": "0.2.1",
+    "name": "DDCCImmunizationRecommendation"
+  },
+  {
+    "id": "DDCCOrganization",
+    "type": "StructureDefinition",
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization",
+    "version": "0.2.1",
+    "name": "DDCCOrganization"
+  },
+  {
+    "id": "DDCCPatient",
+    "type": "StructureDefinition",
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient",
+    "version": "0.2.1",
+    "name": "DDCCPatient"
+  },
+  {
+    "id": "DDCCPractitioner",
+    "type": "StructureDefinition",
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner",
+    "version": "0.2.1",
+    "name": "DDCCPractitioner"
+  },
+  {
+    "id": "DDCCPractitionerRole",
+    "type": "StructureDefinition",
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole",
+    "version": "0.2.1",
+    "name": "DDCCPractitionerRole"
+  },
+  {
+    "id": "DDCCQuestionnaire",
+    "type": "StructureDefinition",
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire",
+    "version": "0.2.1",
+    "name": "DDCCQuestionnaire"
+  },
+  {
+    "id": "DDCCQuestionnaireResponse",
+    "type": "StructureDefinition",
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse",
+    "version": "0.2.1",
+    "name": "DDCCQuestionnaireResponse"
+  },
+  {
+    "id": "DDCCSubmitHealthEventRequest",
+    "type": "StructureDefinition",
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest",
+    "version": "0.2.1",
+    "name": "DDCCSubmitHealthEventRequest"
+  },
+  {
+    "id": "DDCCSubmitHealthEventResponse",
+    "type": "StructureDefinition",
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventResponse",
+    "version": "0.2.1",
+    "name": "DDCCSubmitHealthEventResponse"
+  },
+  {
+    "id": "DDCCVaccineBrand",
+    "type": "StructureDefinition",
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand",
+    "version": "0.2.1",
+    "name": "DDCCVaccineBrand"
+  },
+  {
+    "id": "DDCCVaccineMarketAuthorization",
+    "type": "StructureDefinition",
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization",
+    "version": "0.2.1",
+    "name": "DDCCVaccineMarketAuthorization"
+  },
+  {
+    "id": "DDCC-QR-Category-Usage-ValueSet",
     "type": "ValueSet",
-    "url": "http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-disease-targeted-covid-19",
-    "version": "0.2.0",
-    "name": "WHO_SVC_Disease_Targeted_COVID_19"
+    "url": "https://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Category-Usage-ValueSet",
+    "version": "0.2.1",
+    "name": "DDCC_QR_Category_Usage_ValueSet"
   },
   {
-    "id": "who-svc-vaccinable-confitions",
+    "id": "DDCC-QR-Format-ValueSet",
     "type": "ValueSet",
-    "url": "http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-vaccinable-confitions",
-    "version": "0.2.0",
-    "name": "WHO_SVC_Vaccinable_Conditions"
+    "url": "https://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet",
+    "version": "0.2.1",
+    "name": "DDCC_QR_Format_ValueSet"
   },
   {
-    "id": "who-svc-vaccines",
+    "id": "who-ddcc-disease-targeted-covid-19",
     "type": "ValueSet",
-    "url": "http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-vaccines",
-    "version": "0.2.0",
-    "name": "WHO_SVC_Vaccines"
+    "url": "https://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19",
+    "version": "0.2.1",
+    "name": "WHO_DDCC_Disease_Targeted_COVID_19"
   },
   {
-    "id": "who-svc-vaccines-covid-19",
+    "id": "who-ddcc-vaccinable-conditions",
     "type": "ValueSet",
-    "url": "http://fhir.org/guides/who/svc-rc1/ValueSet/who-svc-vaccines-covid-19",
-    "version": "0.2.0",
-    "name": "WHO_SVC_Vaccines_COVID_19"
+    "url": "https://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccinable-conditions",
+    "version": "0.2.1",
+    "name": "WHO_DDCC_Vaccinable_Conditions"
+  },
+  {
+    "id": "who-ddcc-vaccines",
+    "type": "ValueSet",
+    "url": "https://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccines",
+    "version": "0.2.1",
+    "name": "WHO_DDCC_Vaccines"
+  },
+  {
+    "id": "who-ddcc-vaccines-covid-19",
+    "type": "ValueSet",
+    "url": "https://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccines-covid-19",
+    "version": "0.2.1",
+    "name": "WHO_DDCC_Vaccines_COVID_19"
   }
 ]
