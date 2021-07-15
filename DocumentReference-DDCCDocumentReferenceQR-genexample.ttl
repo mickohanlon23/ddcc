@@ -1,0 +1,33 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://worldhealthorganization.github.io/ddcc/DocumentReference/DDCCDocumentReferenceQR-genexample> a fhir:DocumentReference;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "DDCCDocumentReferenceQR-genexample"];
+  fhir:DocumentReference.content [
+     fhir:DocumentReference.content.attachment [
+       fhir:Attachment.contentType [ fhir:value "text/plain; charset=UTF-8, image/png" ];
+       fhir:Attachment.language [ fhir:value "en-AU" ];
+       fhir:Attachment.url [ fhir:value "http://www.acme.com/logo-small.png" ];
+       fhir:Attachment.title [ fhir:value "Official Corporate Logo" ]
+     ]
+  ], [
+     fhir:DocumentReference.content.attachment [
+       fhir:Attachment.contentType [ fhir:value "text/plain; charset=UTF-8, image/png" ];
+       fhir:Attachment.language [ fhir:value "en-AU" ];
+       fhir:Attachment.url [ fhir:value "http://www.acme.com/logo-small.png" ];
+       fhir:Attachment.title [ fhir:value "Official Corporate Logo" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://worldhealthorganization.github.io/ddcc/DocumentReference/DDCCDocumentReferenceQR-genexample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
