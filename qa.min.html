@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 21, errors = 93, warn = 44, info = 20 -->
+<!-- broken links = 21, errors = 97, warn = 48, info = 20 -->
 <head>
   <title>DDCC_VS : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for DDCC_VS</h1>
- <p>Generated Fri Jul 16 13:22:05 UTC 2021, FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = <a href="https://worldhealthorganization.github.io/ddcc">https://worldhealthorganization.github.io/ddcc</a> (<a href="https://worldhealthorganization.github.io/ddcc/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Fri Jul 16 16:30:58 UTC 2021, FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = <a href="https://worldhealthorganization.github.io/ddcc">https://worldhealthorganization.github.io/ddcc</a> (<a href="https://worldhealthorganization.github.io/ddcc/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.76</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.who.ddcc-vs, Canonical = https://worldhealthorganization.github.io/ddcc</td></tr>
@@ -40,14 +40,14 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://worldhealthorganization.github.io/ddcc (Problem #1 with package-list.json at https://worldhealthorganization.github.io/ddcc: https://worldhealthorganization.github.io/ddcc/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 21, errors = 93, warn = 44, info = 20</td></tr>
+ <tr><td>Summary:</td><td> broken links = 21, errors = 97, warn = 48, info = 20</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>28</b></td><td><b>10</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>29</b></td><td><b>10</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_Bundle-DDCC-TX-SHE-bundle-example-1"><b>/github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1</b></a></td><td><b>4</b></td><td><b>4</b></td><td><b>4</b></td>
@@ -78,6 +78,9 @@
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-DDCCComposition"><b>/github/workspace/fsh-generated/resources/StructureDefinition-DDCCComposition</b></a></td><td><b>11</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-DDCCCoreDataSet"><b>/github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSet</b></a></td><td><b>3</b></td><td><b>4</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-DDCCDocument"><b>/github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocument</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -169,6 +172,9 @@
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DDCCGenerateHealthCertificateParameters.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/DDCCCoreDataSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource OperationDefinition/DDCC-QuestionnaireReponse-generateHealthCertificate.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -199,67 +205,67 @@
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/DDCC-TX-SHE-bundle-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-DDCCOrganization.html#1d2f1768-3088-4376-9bb5-952e446e26db">StructureDefinition-DDCCOrganization.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 249, column 47</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 43 targets)</b></td>
+     <td><b><a href="StructureDefinition-DDCCOrganization.html#25455e5f-44e8-4d56-b075-07b8f0aed33a">StructureDefinition-DDCCOrganization.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 249, column 47</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 43 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-DDCCPatient.html#587686c4-4190-4f43-a51e-c945ba48d58c">StructureDefinition-DDCCPatient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 250, column 129</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 83 targets)</b></td>
+     <td><b><a href="StructureDefinition-DDCCPatient.html#31324464-f9a5-4d74-939c-12f6d3207583">StructureDefinition-DDCCPatient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 250, column 129</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 83 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-DDCCPatient.html#587686c4-4190-4f43-a51e-c945ba48d58c">StructureDefinition-DDCCPatient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 250, column 384</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 43 targets)</b></td>
+     <td><b><a href="StructureDefinition-DDCCPatient.html#31324464-f9a5-4d74-939c-12f6d3207583">StructureDefinition-DDCCPatient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 250, column 384</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 43 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-DDCCPractitionerRole.html#11f82c95-0b64-4d6c-b109-643f42c14ec0">StructureDefinition-DDCCPractitionerRole.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 239, column 11</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCOrgaznization.html' for &quot;DDCC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-DDCCPractitionerRole.html#bac2fade-5fd2-49de-8a33-3268182c6dbc">StructureDefinition-DDCCPractitionerRole.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 239, column 11</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCOrgaznization.html' for &quot;DDCC Organization&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-DDCCQuestionnaire.html#6ed5787d-6a01-4cbd-8e61-8195b317e1df">StructureDefinition-DDCCQuestionnaire.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 248, column 183</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-DDCCQuestionnaireResponse.html' for &quot;DDCC QuestionnaireResponse&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-DDCCQuestionnaire.html#80bd79ed-d103-46a4-8993-b7d6d27b5522">StructureDefinition-DDCCQuestionnaire.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 248, column 183</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-DDCCQuestionnaireResponse.html' for &quot;DDCC QuestionnaireResponse&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#9deb8abd-eb52-4fae-bf92-d55987eadb92">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 293, column 153</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-DDCCQuestionnaireResponse.html' for &quot;DDCC QuestionnaireResponse&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#c2ff33cd-fef1-44f9-b065-8ad5d633cac3">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 317, column 153</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-DDCCQuestionnaireResponse.html' for &quot;DDCC QuestionnaireResponse&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#883295cc-f60d-45fa-8ecd-fdb8813c0ec0">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 412, column 131</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 83 targets)</b></td>
+     <td><b><a href="artifacts.html#d3eff9b7-cdd3-40f5-af58-6eae5fa17e28">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 436, column 131</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 83 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#883295cc-f60d-45fa-8ecd-fdb8813c0ec0">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 412, column 386</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 43 targets)</b></td>
+     <td><b><a href="artifacts.html#d3eff9b7-cdd3-40f5-af58-6eae5fa17e28">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 436, column 386</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 43 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#36ad4a4f-30ed-4e68-9000-61fab5ae89cf">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 424, column 47</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 43 targets)</b></td>
+     <td><b><a href="artifacts.html#aa6586fc-b7c0-4f06-80bb-7e1339c2d27a">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 448, column 47</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 43 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#d60395ec-486c-4fa6-9ea6-5e1028dfbffb">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 445, column 11</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCOrgaznization.html' for &quot;DDCC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#8fc31ae1-27cb-46e7-8c18-880d5fbe79bb">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 469, column 11</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCOrgaznization.html' for &quot;DDCC Organization&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="dependencies.html#22a3a80f-5d9d-4b02-af84-45e8131e38a6">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 180, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
+     <td><b><a href="dependencies.html#9dc49d71-4c09-4244-82d8-382dc3b3bf5e">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 180, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;International Patient Summary (IPS)&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="requirements.html#9d62c599-8686-4a2e-b126-7d35fca3d4f5">requirements.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 183, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-SVC-Core-Data-Set.html' for &quot;Data Dictionary&quot; cannot be resolved</b></td>
+     <td><b><a href="requirements.html#d36e1ab7-edba-40f8-996b-ab3dc48a074a">requirements.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 183, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-SVC-Core-Data-Set.html' for &quot;Data Dictionary&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#898d37fc-c263-4c1f-8af0-cf38742c5874">transactions.html#/html/body/div/div/div/div/div/div/a at Line 191, column 457</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCQQuestionnaireResponse.html' for &quot;DDCC Questionnaire Response&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#2cd95e60-6e4d-443f-9f46-3c658e7b4120">transactions.html#/html/body/div/div/div/div/div/div/a at Line 191, column 457</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCQQuestionnaireResponse.html' for &quot;DDCC Questionnaire Response&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#898d37fc-c263-4c1f-8af0-cf38742c5874">transactions.html#/html/body/div/div/div/div/div/div/a at Line 267, column 199</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-ddcc-composition.html' for &quot;DDCC Composition&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#2cd95e60-6e4d-443f-9f46-3c658e7b4120">transactions.html#/html/body/div/div/div/div/div/div/a at Line 267, column 199</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-ddcc-composition.html' for &quot;DDCC Composition&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#898d37fc-c263-4c1f-8af0-cf38742c5874">transactions.html#/html/body/div/div/div/div/div/div/a at Line 281, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 43 targets)</b></td>
+     <td><b><a href="transactions.html#2cd95e60-6e4d-443f-9f46-3c658e7b4120">transactions.html#/html/body/div/div/div/div/div/div/a at Line 281, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 43 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#898d37fc-c263-4c1f-8af0-cf38742c5874">transactions.html#/html/body/div/div/div/div/div/div/a at Line 288, column 162</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition.html' for &quot;Smart Health Folder&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#2cd95e60-6e4d-443f-9f46-3c658e7b4120">transactions.html#/html/body/div/div/div/div/div/div/a at Line 288, column 162</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition.html' for &quot;Smart Health Folder&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#898d37fc-c263-4c1f-8af0-cf38742c5874">transactions.html#/html/body/div/div/div/div/div/div/a at Line 305, column 194</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition.html' for &quot;SHF Composition&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#2cd95e60-6e4d-443f-9f46-3c658e7b4120">transactions.html#/html/body/div/div/div/div/div/div/a at Line 305, column 194</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition.html' for &quot;SHF Composition&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#b21ffe0a-8700-44dd-a5f4-486f320d4309">transactions.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 309, column 54</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-graphdefinition.html' for &quot;SHF Graph Defintion&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#1047b258-d77c-4ef4-8fc3-ec9ff0e8d440">transactions.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 309, column 54</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-graphdefinition.html' for &quot;SHF Graph Defintion&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#1848fbaf-e037-4ec9-a39e-331f3df05136">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ul/li/a at Line 311, column 50</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-svc-bundle.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#c8f68fa5-b216-4bb5-b8dc-8f9b0e8e19ba">transactions.html#/html/body/div/div/div/div/div/div/ul/li/ul/li/a at Line 311, column 50</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-svc-bundle.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#5e41a2f8-f51a-4b4a-ac80-27f18c19d24a">transactions.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 320, column 32</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-DDCCComposition.html' for &quot;DDCC Compositions&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#5072e267-34c8-4f73-8b60-ada7f5782d6e">transactions.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 320, column 32</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-DDCCComposition.html' for &quot;DDCC Compositions&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#898d37fc-c263-4c1f-8af0-cf38742c5874">transactions.html#/html/body/div/div/div/div/div/div/a at Line 328, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 43 targets)</b></td>
+     <td><b><a href="transactions.html#2cd95e60-6e4d-443f-9f46-3c658e7b4120">transactions.html#/html/body/div/div/div/div/div/div/a at Line 328, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: 43 targets)</b></td>
    </tr>
 </table>
 <hr/>
@@ -513,6 +519,37 @@
    </tr>
 </table>
 <hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCCoreDataSet"> </a>
+<h2><a href="StructureDefinition-DDCCCoreDataSet.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSet.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSet')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSet.json - the canonical URL (https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet) does not match the URL (http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSet)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot</b></td><td><b>error</b></td><td title="sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed"><b>sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[18].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://id.who.int/icd11/mms on element DDCCCoreDataSet.vaccination.disease could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.differential.element[21].type[0].targetProfile[0]</b></td><td><b>warning</b></td><td title=""><b>Unable to resolve profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/shc-organization</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[20].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://id.who.int/icd11/mms on element DDCCCoreDataSet.vaccination.disease could not be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition.snapshot.element[23].type[0].targetProfile[0]</b></td><td><b>warning</b></td><td title=""><b>Unable to resolve profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/shc-organization</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSet</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet vs http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSet</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCDocument"> </a>
 <h2><a href="StructureDefinition-DDCCDocument.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocument.json</a></h2>
  <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
@@ -597,10 +634,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">.identifier[0]</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder</b> <span id="sl103" class="flip" onclick="flip('l103')">Show Reasoning</span><div id="l103" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder<ul><li>.identifier[0]: discriminator = true and use.where(value = 'usual').exists()</li>, <li>.identifier[0]: discriminator = true and use.where(value = 'official').exists()</li></ul></div></td>
+     <td><b><a href="">.identifier[0]</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder</b> <span id="sl111" class="flip" onclick="flip('l111')">Show Reasoning</span><div id="l111" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder<ul><li>.identifier[0]: discriminator = true and use.where(value = 'usual').exists()</li>, <li>.identifier[0]: discriminator = true and use.where(value = 'official').exists()</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">.identifier[1]</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder</b> <span id="sl104" class="flip" onclick="flip('l104')">Show Reasoning</span><div id="l104" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder<ul><li>.identifier[1]: discriminator = true and use.where(value = 'usual').exists()</li>, <li>.identifier[1]: discriminator = true and use.where(value = 'official').exists()</li></ul></div></td>
+     <td><b><a href="">.identifier[1]</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder</b> <span id="sl112" class="flip" onclick="flip('l112')">Show Reasoning</span><div id="l112" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder<ul><li>.identifier[1]: discriminator = true and use.where(value = 'usual').exists()</li>, <li>.identifier[1]: discriminator = true and use.where(value = 'official').exists()</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>List.identifier:uniqueId: minimum required = 1, but only found 0 (from https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder)</b></td>
@@ -792,7 +829,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide.definition.resource[31].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide.definition.resource[32].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
 </table>
 <hr/>
@@ -1054,6 +1091,9 @@
 <a name="RESOURCE_CANONICAL_MISMATCH"> </a>
 <h2>RESOURCE_CANONICAL_MISMATCH</h2>
  <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-DDCCCoreDataSet.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSet.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSet.json - the canonical URL (https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSet) does not match the URL (http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSet)</b></td>
+   </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureMap-svc-map-qr-bundle.html">/github/workspace/input/resources/maps/svc-map-qr-bundle.xml</a></td><td><b>Conformance resource /github/workspace/input/resources/maps/svc-map-qr-bundle.xml - the canonical URL (https://worldhealthorganization.github.io/ddcc/StructureMap/svc-map-qr-bundle) does not match the URL (http://who-int.github.io/svc/StructureMap/svc-map-qr-bundle)</b></td>
    </tr>
