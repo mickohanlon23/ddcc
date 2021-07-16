@@ -170,48 +170,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!--ReleaseHeader--><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates: Vaccination Status (DDCC:VS) - Local Development build (v0.2.1). See the <a href="https://worldhealthorganization.github.io/ddcc/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Actors</h2>
   
-  <div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Data Entry Personnel</a></li><li><a href="#2"> National Public Key Directory (NPKD)</a></li><li><a href="#3"> WHO Public Key Directory (WHO-PKD)</a></li><li><a href="#4"> Point of Care</a></li><li><a href="#5"> DDCC Generator</a></li><li><a href="#6"> DDCC Holder</a></li><li><a href="#7"> DDCC Registry Service</a></li><li><a href="#8"> Subject of Care</a></li><li><a href="#9"> Vaccinator</a></li><li><a href="#10"> Verfier</a></li></ul></div>
+  <div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Data Entry Personnel</a></li><li><a href="#2">DDCC:VS Generation Service</a></li><li><a href="#3">DDCC:VS Holder</a></li><li><a href="#4">DDCC:VS Registry Service</a></li><li><a href="#5">DDCC:VS Repository Service</a></li><li><a href="#6">Digital Health Solution</a></li><li><a href="#7">Public Health Authority (PHA)</a></li><li><a href="#8">Subject of Care</a></li><li><a href="#9">Vaccinator</a></li><li><a href="#10">Verifier</a></li></ul></div>
   
   <a name="1"/><h3 id="data-entry-personnel">Data Entry Personnel</h3> 
   The Data Entry Personnel human actor is the health worker responsible for entering in health event data into a Point of Care system under retrospective data entry.
 
-  <a name="2"/><h3 id="npkd"> National Public Key Directory (NPKD)</h3>  
-  The National Public Key Directory system actor is a national public key directory which shares the public keys used within the Member State's jurisidiction.
+  <a name="2"/><h3 id="ddcc-generator">DDCC:VS Generation Service</h3>	
+  The service that is responsible for generating a digitally signed representation, the DDCC, of the information concerning a COVID-19 vaccination.
 
-  <a name="3"/><h3 id="whopkd"> WHO Public Key Directory (WHO-PKD)</h3>  
-  The WHO Public Key Directory system actor is a quality-controlled, global master list of public keys, revocation lists, and internet endpoints that operationalize the trust network between Member States’ PHAs.
+  <a name="3"/><h3 id="ddcc-holder">DDCC:VS Holder</h3>	
+  The person who has the Subject of Care’s vaccination certificate. The person is usually the Subject of Care but does not have to be. For example, a caregiver may hold the DDCC:VS for a child or other dependant.
 
-  <a name="4"/><h3 id="point-of-care"> Point of Care</h3>  
-  The Point of Care system actor is responsible for recording vaccination events either during a clinical encounter by a Vaccinator or during retrospective data entry by a Data Clerk.   It is recommended that the Point of Care system actor should:
-  <ul>
-    <li>be authorized by the Public Health Authority to record vaccination events</li>
-    <li>establish that the Vaccinator is authorized by the Public Health Authority to perform the requested vaccinations</li>
-  </ul>
+  <a name="4"/><h3 id="ddcc-registry">DDCC:VS Registry Service</h3>	
+  The service that can be used to request and receive the digitally signed COVID-19 vaccination information.
 
+  <a name="5"/><h3 id="ddcc-repository">DDCC:VS Repository Service</h3>	
+  A potentially federated service that has a repository, or database, of DDCC:VS
 
-  <a name="5"/><h3 id="ddcc-generator"> DDCC Generator</h3>  
-  The DDCC Generator system actor is responsible for signing Digital Documentation of COVID-19 Certificates and delivering these to the approriate system actors.  Specifically the DDCC Generator should receving health event content from a Point of Care system and:
-  <ul>
-    <li>generate a signed QR code representing the health event and returning to the Point of Care system</li>
-    <li>generate a signed FHIR Document representing the health event and registering it with the DDCC Registry Service</li>
-  </ul>
+  <a name="6"/><h3 id="digital-health-solution">Digital Health Solution</h3>	
+  A secure system that is used at the point of care or health facility, such as an electronic immunization registry (EIR), an electronic medical record or a shared health record (SHR).
 
+  <a name="7"/><h3 id="public-health-authority">Public Health Authority (PHA)</h3>	
+  An entity or organization under whose auspices the vaccination is performed and the DDCC:VS is issued.
 
-  <a name="6"/><h3 id="ddcc-holder"> DDCC Holder</h3>  
-  The DDCC Holder human actor represents the person who is responsible for holding the the DDCC on behalf of the Subject of Care. The DDCC Holder may or may not be the same actor as teh Subject of Care.
+  <a name="8"/><h3 id="subject-of-care">Subject of Care</h3>	
+  The vaccinated person.
 
+  <a name="9"/><h3 id="vaccinator ">Vaccinator</h3>	
+  The person who administers the vaccine. Depending on national policies, the person who administers the vaccine might not be a formal health-care provider. Examples include physicians, nurse practitioners, community health workers or volunteer vaccinators.
 
-  <a name="7"/><h3 id="ddcc-registry"> DDCC Registry Service</h3>  
-  The DDCC Registry Service system actor is reponsible for recording registration of a Smart Health Certificate and supporting future retrieval or verification of Smart Health Certificates.
-   
-  <a name="8"/><h3 id="subject-of-care"> Subject of Care</h3>  
-  The Subject of Care human actor is the primary subject of the health event being recording in the DDCC.
+  <a name="10"/><h3 id="verifier">Verifier</h3>	
+  A natural person or legal person, either private or public, formally authorized (under national law, decree, regulation or other official act or order) to verify the vaccination status presented on the DDCC.
 
-  <a name="9"/><h3 id="vaccinator"> Vaccinator</h3>  
-  The Vaccinator human actor is the health worker that performs the vaccination.  The Vaccinator may, though is not required to, record vaccination event data into the Point of Care system during a clinical encounter. 
-
-  <a name="10"/><h3 id="verifier"> Verfier</h3>
-  The Verifier human actor verifies a claim represented by a Smart Health Certificate.
 </div>
 </div>
         </div>  <!-- /inner-wrapper -->
@@ -235,7 +225,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 16, 2021 16:30+0000">2021-07-16</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Jul 16, 2021 20:16+0000">2021-07-16</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
