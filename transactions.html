@@ -167,7 +167,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <!-- ReleaseHeader --><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates: Vaccination Status (DDCC:VS) - Local Development build (v0.2.1). See the <a href="https://worldhealthorganization.github.io/ddcc/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Transactions</h2>
   
-  <div><a name="c565cb5b-fd71-4a3e-b776-8f5d4ffb96cc">​</a><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Submit Health Event</a></li><li><a href="#2"> Register Health Certificate</a></li><li><a href="#3"> Retrieve Health Certificate</a></li><li><a href="#4"> Retrieve Health Folder</a></li></ul></div>
+  <div><a name="2fcd2ab7-ff96-4821-a921-fd773e7865b2">​</a><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Submit Health Event</a></li><li><a href="#2"> Register Health Certificate</a></li><li><a href="#3"> Retrieve Health Certificate</a></li><li><a href="#4"> Retrieve Health Folder</a></li></ul></div>
   
   <a name="1"></a><h3 id="submit-health-event">Submit Health Event</h3> 
   The Submit Health Event transaction is initiated by a <a href="actors.html#point-of-care">Point of Care</a> system against the <a href="actors.html#ddcc-generator">DDCC Generator</a>.
@@ -178,8 +178,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <a name="1"></a><h4 id="submit-health-event-trigger">Trigger Event </h4>
   The Submit Health Event transaction may be initiated in any of the following ways:
   <ul>
-    <li><a name="806d08df-bfb8-49f1-9334-6522be88a3df">​</a>The <a href="actors.html#point-of-care">Point of Care</a> system is online and a health event was recorded by the Vaccinator or the Data Entry Personnel</li>
-    <li><a name="68ee3c23-ea30-4128-9062-dba84945ab80">​</a>The <a href="actors.html#point-of-care">Point of Care</a> system comes online after recording one or more health events while in an offline mode</li>
+    <li><a name="205c36a7-b218-4b9e-918b-3820b971aeff">​</a>The <a href="actors.html#point-of-care">Point of Care</a> system is online and a health event was recorded by the Vaccinator or the Data Entry Personnel</li>
+    <li><a name="d3244115-9f26-4f3f-b585-3c3f8428b8e0">​</a>The <a href="actors.html#point-of-care">Point of Care</a> system comes online after recording one or more health events while in an offline mode</li>
   </ul>
 
   <a name="2"></a><h4 id="register-health-certificate-message-semantics">Message Semantics</h4>
@@ -203,7 +203,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <ol>
 	<li>serialize the <a href="StructureDefinition-DDCCQuestionnaireResponse.html">DDCC Questionnaire Response</a> content as payload for encoding as a QR code</li>
 	<li>use their DSC to sign the QR Code Content as part of the QR Content schema</li>
-	<li><a name="58666b66-0b57-44e0-885e-e843e7d27b14">​</a>return the generated signed <a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> to the  <a href="actors.html#point-of-care">Point of Care</a> system</li>
+	<li><a name="7acfefcd-1db0-41ec-ab62-c60d5e17f41d">​</a>return the generated signed <a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> to the  <a href="actors.html#point-of-care">Point of Care</a> system</li>
       </ol>
     </li>
     <li>
@@ -255,7 +255,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   The Retrieve Health Certificate may be initiated by:
   <ol>
     <li> a <a href="actors.html#verifier">Verifier</a> wishing to validate and verify content of a DDCC</li>
-    <li><a name="367c1d7b-fbdf-49a8-8962-4b93e311b52e">​</a> a <a href="actors.html#point-of-care">Point of Care</a> wishing to retrieve a DDCC for continuity of care</li>
+    <li><a name="39005c13-aa46-4f37-ae51-94b3d340179e">​</a> a <a href="actors.html#point-of-care">Point of Care</a> wishing to retrieve a DDCC for continuity of care</li>
   </ol>
 
   <a name="3.2"></a><h4 id="retrieve-health-certificate-message-semantics"> Message Semantics</h4>
@@ -293,7 +293,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   The Retrieve Health Folder may be initiated by:
   <ol>
     <li> a <a href="actors.html#verifier">Verifier</a> wishing to validate and verify content of a DDCC</li>
-    <li><a name="520571d0-2561-4957-aa92-a4ab86465d69">​</a> a <a href="actors.html#point-of-care">Point of Care</a> wishing to retrieve a DDCC for continuity of care</li>
+    <li><a name="e76aab94-5963-42f8-ba51-76f1c57e11e7">​</a> a <a href="actors.html#point-of-care">Point of Care</a> wishing to retrieve a DDCC for continuity of care</li>
   </ol>
 
   <a name="4.2"></a><h4 id="retrieve-health-folder-message-semantics"> Message Semantics</h4>
@@ -302,10 +302,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   The Retrieve Health Folder transaction request message is the request message of a  <a href="http://hl7.org/fhir/composition-operation-document.html">$document</a> operation perfomed on the <a href="StructureDefinition-shf-composition.html">SHF Composition</a> with the following parameters:
   <ul>
     <li>id: (Required) the id of the SHF Composition </li>
-    <li><a name="ec182c79-8453-426e-a983-1f6369a492ce">​</a>
+    <li><a name="89b2b9b5-da92-407b-bac5-a772a5ce621d">​</a>
       graph: (Optional) a canonical reference to a  <a href="StructureDefinition-shf-graphdefinition.html">SHF Graph Defintion</a> resource indicating which of the linked DDCC should be included in the result.  The following options are required to be supported:
       <ul>
-	<li><a name="49edec44-82ee-43fa-8a02-e8171f78713b">​</a>GraphDefintion/svc-graph: will include the <a href="StructureDefintion-svc-bundle.html">SVC Bundle</a></li>
+	<li><a name="bc230514-d3d4-4d37-a4b6-c1ae9601bf30">​</a>GraphDefintion/svc-graph: will include the <a href="StructureDefintion-svc-bundle.html">SVC Bundle</a></li>
       </ul>
     </li>
   </ul>
@@ -314,7 +314,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <a name="4.2.2"></a><h5 id="retrieve-health-folder-message-semantics-response"> Message Semantics Response</h5>
   The Retrieve Health Folder transaction response message is the response message of a  <a href="http://hl7.org/fhir/composition-operation-document.html">$document</a> operation performed.  Specifically:
   <ul>
-    <li><a name="0b0b7366-d97c-42ba-9b34-1ca8aa9c5ef0">​</a>An list of entries of <a href="StructureDefintion-DDCCComposition.html">DDCC Compositions</a> that the PHA wishes to expose to the requestor according to the polocy of the jursidiction</li>
+    <li><a name="a58ea57f-105c-40ef-a4c1-d6972043ab39">​</a>An list of entries of <a href="StructureDefintion-DDCCComposition.html">DDCC Compositions</a> that the PHA wishes to expose to the requestor according to the polocy of the jursidiction</li>
     <li>If the <i>graph</i> parameter was utilized, the linked resources as defined by the GraphDefintion</li>
   </ul>
 
@@ -347,7 +347,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 20, 2021 00:23+0000">2021-07-20</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 20, 2021 00:59+0000">2021-07-20</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
