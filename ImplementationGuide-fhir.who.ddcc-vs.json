@@ -764,18 +764,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "OperationDefinition"
-          }
-        ],
-        "reference": {
-          "reference": "OperationDefinition/DDCC-QuestionnaireReponse-generateHealthCertificate"
-        },
-        "description": "Generate one or more signed QR Codes based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -796,6 +784,18 @@
         },
         "name": "WHO Vaccine List (COVID-19)",
         "description": "WHO Vaccine List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "OperationDefinition"
+          }
+        ],
+        "reference": {
+          "reference": "OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate"
+        },
+        "description": "Generate one or more signed QR Codes based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)"
       },
       {
         "extension": [

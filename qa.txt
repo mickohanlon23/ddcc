@@ -1,9 +1,9 @@
 ﻿DDCC_VS : Validation Results
 =========================================
 
-err = 106, warn = 49, info = 22
+err = 107, warn = 49, info = 22
 IG Publisher Version: 1.1.77
-Generated Wed Jul 21 13:13:51 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = https://worldhealthorganization.github.io/ddcc)
+Generated Wed Jul 21 21:51:16 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = https://worldhealthorganization.github.io/ddcc)
 
  Build Errors : 22 / 10 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 4 / 4 / 11
@@ -13,7 +13,7 @@ Generated Wed Jul 21 13:13:51 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-vaccines : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-English : 2 / 0 / 6
- /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireReponse-generateHealthCertificate : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Organization-DDCC-Organization-English : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Patient-DDCC-Patient-English : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Questionnaire-DDCCVSCoreDataSetQuestionnaire : 0 / 3 / 2
@@ -23,7 +23,7 @@ Generated Wed Jul 21 13:13:51 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSet : 3 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCountryOfVaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocument : 2 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReference : 4 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReference : 5 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReferenceQR : 9 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCFolder : 6 / 0 / 4
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCGenerateHealthCertificateParameters : 0 / 0 / 2
@@ -64,8 +64,8 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DDCCDocumentReferenceQR.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/DDCCGenerateHealthCertificateParameters.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/DDCCCoreDataSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource OperationDefinition/DDCC-QuestionnaireReponse-generateHealthCertificate.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/DDCC-QR-Format-ValueSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ConceptMap/who-ddcc-map-icd11-sct-vaccines.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/DDCC-Patient-English.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-English.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
@@ -86,8 +86,8 @@ ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/di
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 475, column 11: The link 'StructureDefinition-DDCCOrgaznization.html' for "DDCC Organization" cannot be resolved
 ERROR: /github/workspace/output/dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 179, column 12: The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for "The International Patient Summary (IPS), published by the Health Level Seven International - Patient Care Work Group" cannot be resolved
 ERROR: /github/workspace/output/requirements.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 178, column 12: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
+ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/div/div/div/a at Line 189, column 314: The link 'OperationDefinition-DDCC-QuestionnaireReponse-generateHealthCertificate.html' for "Generate Health Certificate Operation" cannot be resolved
 ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/div/div/div/a at Line 189, column 457: The link 'StructureDefinition-DDCCQQuestionnaireResponse.html' for "DDCC Questionnaire Response" cannot be resolved
-ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/div/div/div/a at Line 234, column 38: The link 'StructureDefinition-DDCCProviceDocumentBundle.html' for "DDCC Provide Document Bundle" cannot be resolved
 == /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1.json ==
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0]: Bundle entry missing fullUrl
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).subject: Relative Reference appears inside Bundle whose entry is missing a fullUrl
@@ -121,8 +121,8 @@ ERROR: Immunization/DDCC-Immunization-English: Immunization: The extension https
 INFORMATION: Immunization/DDCC-Immunization-English: Immunization.extension[1].value.ofType(code): The value provided ('CHE') is not in the value set http://hl7.org/fhir/ValueSet/iso3166-1-3 (http://hl7.org/fhir/ValueSet/iso3166-1-3), and a code is recommended to come from this value set) (error message = Not done yet @ TCountryCodeServices.Close (from http://tx.fhir.org/r4))
 INFORMATION: Immunization/DDCC-Immunization-English: Immunization.vaccineCode.coding[0]: Code System URI 'urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding' is unknown so the code cannot be validated
 INFORMATION: Immunization/DDCC-Immunization-English: Immunization.protocolApplied[0].targetDisease[0].coding[0]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
-== /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireReponse-generateHealthCertificate.json ==
-WARNING: OperationDefinition/DDCC-QuestionnaireReponse-generateHealthCertificate: OperationDefinition: opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.json ==
+WARNING: OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate: OperationDefinition: opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == /github/workspace/fsh-generated/resources/Organization-DDCC-Organization-English.json ==
 == /github/workspace/fsh-generated/resources/Patient-DDCC-Patient-English.json ==
 == /github/workspace/fsh-generated/resources/Questionnaire-DDCCVSCoreDataSetQuestionnaire.json ==
@@ -170,6 +170,7 @@ ERROR: DocumentReference/DDCCDocumentReference-genexample: : DocumentReference.m
 ERROR: DocumentReference/DDCCDocumentReference-genexample: : DocumentReference.identifier: minimum required = 1, but only found 0 (from https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference)
 ERROR: DocumentReference/DDCCDocumentReference-genexample: : DocumentReference.status: minimum required = 1, but only found 0 (from https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference)
 ERROR: DocumentReference/DDCCDocumentReference-genexample: : DocumentReference.subject: minimum required = 1, but only found 0 (from https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference)
+ERROR: DocumentReference/DDCCDocumentReference-genexample: : DocumentReference.date: minimum required = 1, but only found 0 (from https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference)
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReferenceQR.json ==
 ERROR: DocumentReference/DDCCDocumentReferenceQR-genexample: .content[0]: This element does not match any known slice  defined in the profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR and slicing is CLOSED: .content[0]: Does not match slice 'qrImage', .content[0]: Does not match slice 'qrContent'
 ERROR: DocumentReference/DDCCDocumentReferenceQR-genexample: .content[1]: This element does not match any known slice  defined in the profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR and slicing is CLOSED: .content[1]: Does not match slice 'qrImage', .content[1]: Does not match slice 'qrContent'
