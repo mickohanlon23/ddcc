@@ -931,6 +931,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCSubmissionSet"
+        },
+        "name": "DDCC Submission Set",
+        "description": "DDCC Submission Set for ITI-65"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -1012,10 +1025,23 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/DDCCProvideDocumentBundle"
+        },
+        "name": "DDCC Provide Document Bundle",
+        "description": "DDCC Provide Document Bundle for ITI-65"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/DDCCDocumentReference"
         },
         "name": "DDCC Document Reference",
-        "description": "A [DDCC Document Reference](StructureDefinition-DDCCDocumentReference.html) is a \ndocument reference to a [DDCC Document](StructureDefinition-DDCCDocument.html) \ncontaining the DDCC.\nThe content attachment data will be a base64 encoded representation of the DDCC Document."
+        "description": "A [DDCC Document Reference](StructureDefinition-DDCCDocumentReference.html) is a \ndocument reference to a [DDCC Document](StructureDefinition-DDCCDocument.html) \ncontaining the DDCC.\nThe content attachment url will point to a DDCC Document."
       },
       {
         "extension": [
@@ -1116,11 +1142,6 @@
               "generation": "html"
             },
             {
-              "nameUrl": "personas.html",
-              "title": "Personas",
-              "generation": "html"
-            },
-            {
               "nameUrl": "workflows.html",
               "title": "Workflows",
               "generation": "html"
@@ -1155,11 +1176,6 @@
             {
               "nameUrl": "transactions.html",
               "title": "Transactions",
-              "generation": "html"
-            },
-            {
-              "nameUrl": "expected_actions.html",
-              "title": "Expected Actions",
               "generation": "html"
             },
             {

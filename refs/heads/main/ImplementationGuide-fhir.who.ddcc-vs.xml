@@ -642,6 +642,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCSubmissionSet"/>
+      </reference>
+      <name value="DDCC Submission Set"/>
+      <description value="DDCC Submission Set for ITI-65"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -704,10 +714,20 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/DDCCProvideDocumentBundle"/>
+      </reference>
+      <name value="DDCC Provide Document Bundle"/>
+      <description value="DDCC Provide Document Bundle for ITI-65"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/DDCCDocumentReference"/>
       </reference>
       <name value="DDCC Document Reference"/>
-      <description value="A [DDCC Document Reference](StructureDefinition-DDCCDocumentReference.html) is a &#xA;document reference to a [DDCC Document](StructureDefinition-DDCCDocument.html) &#xA;containing the DDCC.&#xA;The content attachment data will be a base64 encoded representation of the DDCC Document."/>
+      <description value="A [DDCC Document Reference](StructureDefinition-DDCCDocumentReference.html) is a &#xA;document reference to a [DDCC Document](StructureDefinition-DDCCDocument.html) &#xA;containing the DDCC.&#xA;The content attachment url will point to a DDCC Document."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -788,11 +808,6 @@
           <generation value="html"/>
         </page>
         <page>
-          <nameUrl value="personas.html"/>
-          <title value="Personas"/>
-          <generation value="html"/>
-        </page>
-        <page>
           <nameUrl value="workflows.html"/>
           <title value="Workflows"/>
           <generation value="html"/>
@@ -825,11 +840,6 @@
         <page>
           <nameUrl value="transactions.html"/>
           <title value="Transactions"/>
-          <generation value="html"/>
-        </page>
-        <page>
-          <nameUrl value="expected_actions.html"/>
-          <title value="Expected Actions"/>
           <generation value="html"/>
         </page>
         <page>
