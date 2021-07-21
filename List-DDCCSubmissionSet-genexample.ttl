@@ -1,0 +1,27 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://worldhealthorganization.github.io/ddcc/List/DDCCSubmissionSet-genexample> a fhir:List;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "DDCCSubmissionSet-genexample"];
+  fhir:List.identifier [
+     fhir:Identifier.system [ fhir:value "http://www.acme.com/identifiers/patient" ];
+     fhir:Identifier.value [ fhir:value "123456" ]
+  ], [
+     fhir:index -1;
+     fhir:Identifier.system [ fhir:value "http://www.acme.com/identifiers/patient" ];
+     fhir:Identifier.value [ fhir:value "123456" ]
+  ];
+  fhir:List.title [ fhir:value "Dr. Jane's Patients"] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://worldhealthorganization.github.io/ddcc/List/DDCCSubmissionSet-genexample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
