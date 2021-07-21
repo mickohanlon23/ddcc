@@ -108,7 +108,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 ","Text alternative for the resource","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "DocumentReference.date","","indexed
-","",0,1,"Y","","Y","instant {[]} {[]}
+","",1,1,"Y","","Y","instant {[]} {[]}
 ","When this document reference was created","When the document reference was created.","Referencing/indexing time is used for tracking, organizing versions and searching.","","","","","","","","",,,,,"",,,,"DocumentReference.date",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.occurrence[x]","Composition.date",".availabilityTime[type=""TS""]","FiveWs.recorded"
 "DocumentReference.author","","","",0,*,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/Device], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}

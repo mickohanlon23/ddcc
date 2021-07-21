@@ -742,18 +742,6 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireReponse-generateHealthCertificate>;
-         fhir:Reference.reference [ fhir:value "OperationDefinition/DDCC-QuestionnaireReponse-generateHealthCertificate" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Generate one or more signed QR Codes based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)" ]
-     ], [
-       fhir:index 21;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -762,7 +750,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Format of the representation of QR code" ]
      ], [
-       fhir:index 22;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -774,6 +762,18 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Vaccine List (COVID-19)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO Vaccine List (COVID-19) from [ICD 11](https://icd.who.int/browse11)" ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate>;
+         fhir:Reference.reference [ fhir:value "OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Generate one or more signed QR Codes based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)" ]
      ], [
        fhir:index 23;
        fhir:Element.extension [
