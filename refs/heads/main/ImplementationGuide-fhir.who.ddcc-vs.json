@@ -538,17 +538,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureMap"
-          }
-        ],
-        "reference": {
-          "reference": "StructureMap/svc-map-qr-bundle"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CapabilityStatement"
           }
         ],
@@ -606,6 +595,18 @@
           "reference": "ConceptMap/who-ddcc-map-icd11-sct-disease-targeted"
         },
         "description": "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCCoreDataSetCoC"
+        },
+        "description": "DDCC Core Data - Continuity of Care elements."
       },
       {
         "extension": [
@@ -674,18 +675,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:logical"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCCoreDataSet"
-        },
-        "description": "DDCC Core Data elements."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -720,6 +709,18 @@
         },
         "name": "DDCC Folder",
         "description": "DDCC Folder of the Paper Certificate"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCCoreDataSetPoV"
+        },
+        "description": "DDCC Core Data - Proof of Vaccination elements."
       },
       {
         "extension": [

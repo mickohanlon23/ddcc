@@ -1,0 +1,675 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DDCCCoreDataSetCoC",
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCCoreDataSetCoC-definitions.html#DDCCCoreDataSet\">DDCCCoreDataSet</a><a name=\"DDCCCoreDataSet\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-DDCCCoreDataSetPoV.html\">DDCCCoreDataSetPoV</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCCoreDataSetCoC-definitions.html#DDCCCoreDataSet.vaccination\">vaccination</a><a name=\"DDCCCoreDataSet.vaccination\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCCoreDataSetCoC-definitions.html#DDCCCoreDataSet.vaccination.centre\" title=\"The name or identifier of the vaccination facility responsible for providing the vaccination.\">centre</a><a name=\"DDCCCoreDataSet.vaccination.centre\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Administering centre</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "url": "http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetCoC",
+  "version": "0.2.1",
+  "name": "DDCCCoreDataSetCoC",
+  "status": "draft",
+  "date": "2021-07-22T02:58:25+00:00",
+  "publisher": "World Health Organization (WHO)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.who.int"
+        }
+      ]
+    }
+  ],
+  "description": "DDCC Core Data - Continuity of Care elements.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "logical",
+  "abstract": false,
+  "type": "DDCCCoreDataSet",
+  "baseDefinition": "http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV",
+  "derivation": "specialization",
+  "snapshot": {
+    "element": [
+      {
+        "id": "DDCCCoreDataSet",
+        "path": "DDCCCoreDataSet",
+        "short": "Base for all elements",
+        "definition": "DDCC Core Data Set",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element",
+          "min": 0,
+          "max": "*"
+        },
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.id",
+        "path": "DDCCCoreDataSet.id",
+        "representation": [
+          "xmlAttr"
+        ],
+        "short": "Unique id for inter-element referencing",
+        "definition": "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.id",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type",
+                "valueUrl": "string"
+              }
+            ],
+            "code": "http://hl7.org/fhirpath/System.String"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.extension",
+        "path": "DDCCCoreDataSet.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "description": "Extensions are always sliced by (at least) url",
+          "rules": "open"
+        },
+        "short": "Additional content defined by implementations",
+        "definition": "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.",
+        "comment": "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.",
+        "alias": [
+          "extensions",
+          "user content"
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "isModifier": false,
+        "isSummary": false,
+        "mapping": [
+          {
+            "identity": "rim",
+            "map": "n/a"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.name",
+        "path": "DDCCCoreDataSet.name",
+        "short": "Name",
+        "definition": "The full name of the vaccinated person",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.name",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.birthDate",
+        "path": "DDCCCoreDataSet.birthDate",
+        "short": "Date of birth",
+        "definition": "The vaccinated person's date of birth (DOB) if known. If unknown, use given DOB for administrative purposes.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.birthDate",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.identifier",
+        "path": "DDCCCoreDataSet.identifier",
+        "short": "Unique identifier",
+        "definition": "Unique identifier for the vaccinated person, according to the policies applicable to each country. There can be more than one unique identifier used to link records. (e.g. national ID, health ID, immunization information system ID, medical record ID).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.identifier",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.sex",
+        "path": "DDCCCoreDataSet.sex",
+        "short": "Sex",
+        "definition": "Documentation of a specific instance of sex information for the vaccinated person.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.sex",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/administrative-gender"
+        }
+      },
+      {
+        "id": "DDCCCoreDataSet.vaccination",
+        "path": "DDCCCoreDataSet.vaccination",
+        "short": "Vaccination Event",
+        "definition": "A vaccination event",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "constraint": [
+          {
+            "key": "who-ddcc-data-1",
+            "severity": "error",
+            "human": "Manufacturer or Marketer SHALL be present",
+            "expression": "manufacturer.exists() or marketer.exists()"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.vaccination.vaccine",
+        "path": "DDCCCoreDataSet.vaccination.vaccine",
+        "short": "Vaccine or prophylaxis",
+        "definition": "Generic description of the vaccine or vaccine sub-type. e.g. COVID-19 mRNA vaccine, HPV vaccine.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.vaccine",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "https://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccines-covid-19"
+        }
+      },
+      {
+        "id": "DDCCCoreDataSet.vaccination.brand",
+        "path": "DDCCCoreDataSet.vaccination.brand",
+        "short": "Vaccine brand",
+        "definition": "The brand or trade name used to refer to the vaccine received.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.brand",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.vaccination.manufacturer",
+        "path": "DDCCCoreDataSet.vaccination.manufacturer",
+        "short": "Vaccine manufacturer",
+        "definition": "Name of the manufacturer of the vaccine received. e.g. Serum institute of India, AstraZeneca. If vaccine manufacturer is unknown, market authorization holder is REQUIRED.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.manufacturer",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.vaccination.marketer",
+        "path": "DDCCCoreDataSet.vaccination.marketer",
+        "short": "Vaccine market authorization holder",
+        "definition": "Name of the market authorization holder of the vaccine received. If market authorization holder is unknown, vaccine manufacturer is REQUIRED.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.marketer",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.vaccination.lot",
+        "path": "DDCCCoreDataSet.vaccination.lot",
+        "short": "Vaccine lot number",
+        "definition": "Lot number or batch number of vaccination.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.lot",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.vaccination.date",
+        "path": "DDCCCoreDataSet.vaccination.date",
+        "short": "Date of vaccination",
+        "definition": "Date in which the vaccine was provided.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.date",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.vaccination.dose",
+        "path": "DDCCCoreDataSet.vaccination.dose",
+        "short": "Dose number",
+        "definition": "Vaccine dose number.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.dose",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.vaccination.totalDoses",
+        "path": "DDCCCoreDataSet.vaccination.totalDoses",
+        "short": "Total doses",
+        "definition": "Total expected doses as defined by Member State care plan and immunization programme policies.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.totalDoses",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "positiveInt"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.vaccination.country",
+        "path": "DDCCCoreDataSet.vaccination.country",
+        "short": "Country of vaccination",
+        "definition": "The country in which the individual has been vaccinated.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.country",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-3"
+        }
+      },
+      {
+        "id": "DDCCCoreDataSet.vaccination.centre",
+        "path": "DDCCCoreDataSet.vaccination.centre",
+        "short": "Administering centre",
+        "definition": "The name or identifier of the vaccination facility responsible for providing the vaccination.",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.centre",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.vaccination.signature",
+        "path": "DDCCCoreDataSet.vaccination.signature",
+        "short": "Signature of health worker",
+        "definition": "REQUIRED for PAPER vaccination certificates ONLY. The health worker who provided the vaccination or the supervising clinician's hand-written signature.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.signature",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Signature"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.vaccination.practitioner",
+        "path": "DDCCCoreDataSet.vaccination.practitioner",
+        "short": "Health worker identifier",
+        "definition": "OPTIONAL for DIGITAL and PAPER vaccination certificates. The unique identifier for the health worker as determined by the member state. There can be more than one unique identifier used. (e.g. system generated ID, health profession number, cryptographic signature, or any other form of health worker unique identifier). This can be used in lieu of a paper-based signature.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.practitioner",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.vaccination.disease",
+        "path": "DDCCCoreDataSet.vaccination.disease",
+        "short": "Disease or agent targeted",
+        "definition": "Name of disease vaccinated against (such as COVID-19).",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.disease",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "binding": {
+          "strength": "preferred",
+          "valueSet": "http://id.who.int/icd11/mms"
+        }
+      },
+      {
+        "id": "DDCCCoreDataSet.vaccination.nextDose",
+        "path": "DDCCCoreDataSet.vaccination.nextDose",
+        "short": "Due date of next dose",
+        "definition": "Date on which the next vaccination should be administered, if a next dose is REQUIRED.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.nextDose",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.certificate",
+        "path": "DDCCCoreDataSet.certificate",
+        "short": "Certificate Metadata",
+        "definition": "Metadata associated with the certificate.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.certificate",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.certificate.issuer",
+        "path": "DDCCCoreDataSet.certificate.issuer",
+        "short": "Certificate issuer",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.certificate.issuer",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://worldhealthorganization.github.io/ddcc/StructureDefinition/shc-organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.certificate.identifier",
+        "path": "DDCCCoreDataSet.certificate.identifier",
+        "short": "Certificate identifier",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.certificate.identifier",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Identifier"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.certificate.period",
+        "path": "DDCCCoreDataSet.certificate.period",
+        "short": "Certificate Validity Period",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.certificate.period",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.certificate.period.start",
+        "path": "DDCCCoreDataSet.certificate.period.start",
+        "short": "Certificate valid from",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.certificate.period.start",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.certificate.period.end",
+        "path": "DDCCCoreDataSet.certificate.period.end",
+        "short": "Certificate valid until",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.certificate.period.end",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.certificate.version",
+        "path": "DDCCCoreDataSet.certificate.version",
+        "short": "Certificate schema version",
+        "min": 1,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.certificate.version",
+          "min": 1,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  },
+  "differential": {
+    "element": [
+      {
+        "id": "DDCCCoreDataSet.vaccination.centre",
+        "path": "DDCCCoreDataSet.vaccination.centre",
+        "short": "Administering centre",
+        "definition": "The name or identifier of the vaccination facility responsible for providing the vaccination.",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}
