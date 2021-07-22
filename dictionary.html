@@ -101,7 +101,7 @@
 		  <li><a href="concepts.html">Key Concepts</a></li>
 		  <li><a href="functional.html">Functional Requirements</a></li>    
 		  <li><a href="usecases.html">Use Cases</a></li>
-		  <li><a href="StructureDefinition-DDCCCoreDataSet.html">Data Dictionary</a></li>
+		  <li><a href="dictionary.html">Data Dictionary</a></li>
 
 		</ul>
 	</li>
@@ -167,8 +167,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!--ReleaseHeader--><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates: Vaccination Status (DDCC:VS) - Local Development build (v0.2.1). See the <a href="https://worldhealthorganization.github.io/ddcc/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Data Dictionary</h2>
   
-  <div xmlns="http://www.w3.org/1999/xhtml">
+  <div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Logical Models</a></li><li><a href="#2">Core Data Set</a></li></ul></div>
 
+  <a name="1"/><h3 id="logical-models">Logical Models</h3>
+
+  <div>
+    <ul>
+      <li><a href="StructureDefinition-DDCCCoreDataSetCoC.html">Continuity of Care Core Data Set</a></li>
+      <li><a href="StructureDefinition-DDCCCoreDataSetPoV.html">Proof of Vaccination Core Data Set</a></li>
+    </ul>
+  </div>
+
+  <a name="2"/><h3 id="logical-models">Core Data Set</h3>
   <table>
 
     <tr>
@@ -285,14 +295,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td/>
       <td/>
       <td>COVID-19 vaccine, live attenuated
-      virus</td>
+	virus</td>
       <td/>
       <td>Codes</td>
       <td>ICD-11 Extension codes (http://id.who.int/icd/entity/164949870)</td>
       <td>N/A</td>
       <td>Input Option</td>
       <td colspan="3">COVID-19 vaccine, live
-      attenuated virus</td>
+	attenuated virus</td>
       <td>XM5DF6</td>
       <td>http://id.who.int/icd/entity/993066376</td>
       <td>Inclusion of any particular product or entity in any of these landscape documents does not constitute, and shall not be deemed or construed as, any approval or endorsement by WHO of such product or entity (or any of its businesses or activities).</td>
@@ -307,7 +317,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>N/A</td>
       <td>Input Option</td>
       <td colspan="3">COVID-19 vaccine,
-      non-replicating viral vector</td>
+	non-replicating viral vector</td>
       <td>XM9QW8</td>
       <td>http://id.who.int/icd/entity/264142908</td>
       <td>Inclusion of any particular	product or entity in any of these landscape documents does not constitute, and shall not be deemed or construed as, any approval or endorsement by WHO of such product or entity (or any of its businesses or activities).</td>
@@ -350,7 +360,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>N/A</td>
       <td>Input Option</td>
       <td colspan="3">COVID-19 vaccine, virus
-      like particle (VLP)</td>
+	like particle (VLP)</td>
       <td>XM1J92</td>
       <td>http://id.who.int/icd/entity/729916172</td>
       <td>Inclusion of any particular product or entity in any of these landscape documents does not constitute, and shall not be deemed or construed as, any approval or endorsement by WHO of such product or entity (or any of its businesses or activities).</td>
@@ -476,7 +486,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td/>
       <td/>
       <td>Pneumococcal polysaccharide
-      23-valent vaccine</td>
+	23-valent vaccine</td>
       <td/>
       <td>Codes</td>
       <td>ICD-11 Extension codes (http://id.who.int/icd/entity/164949870)</td>
@@ -507,14 +517,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td/>
       <td/>
       <td>Tetanus toxoid, combinations with
-      diphtheria toxoid</td>
+	diphtheria toxoid</td>
       <td/>
       <td>Codes</td>
       <td>ICD-11 Extension codes (http://id.who.int/icd/entity/164949870)</td>
       <td>N/A</td>
       <td>Input Option</td>
       <td colspan="3">Tetanus toxoid,
-      combinations with diphtheria tox<span style="display:none">oid</span></td>
+	combinations with diphtheria tox<span style="display:none">oid</span></td>
       <td>XM1G86</td>
       <td>http://id.who.int/icd/entity/1734710686</td>
       <td/>
@@ -585,7 +595,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td/>
       <td/>
       <td>Vaccine bacterial with other
-      bacterial component</td>
+	bacterial component</td>
       <td/>
       <td>Codes</td>
       <td>ICD-11 Extension codes (http://id.who.int/icd/entity/164949870)</td>
@@ -631,7 +641,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td/>
       <td/>
       <td>Vaccine bacterial with pertussis
-      component</td>
+	component</td>
       <td/>
       <td>Codes</td>
       <td>ICD-11 Extension codes (http://id.who.int/icd/entity/164949870)</td>
@@ -661,14 +671,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td/>
       <td/>
       <td>Vaccine rickettsial with bacterial
-      component</td>
+	component</td>
       <td/>
       <td>Codes</td>
       <td>ICD-11 Extension codes (http://id.who.int/icd/entity/164949870)</td>
       <td>N/A</td>
       <td>Input Option</td>
       <td colspan="3">Vaccine rickettsial with
-      bacterial component</td>
+	bacterial component</td>
       <td>XM4F19</td>
       <td>http://id.who.int/icd/entity/1539380959</td>
       <td/>
@@ -691,7 +701,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td/>
       <td/>
       <td>Vaccine bacterial mixed, not
-      elsewhere classified</td>
+	elsewhere classified</td>
       <td/>
       <td>Codes</td>
       <td>ICD-11 Extension codes (http://id.who.int/icd/entity/164949870)</td>
@@ -721,7 +731,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td/>
       <td/>
       <td>Influenza vaccine, inactivated,
-      whole virus</td>
+	whole virus</td>
       <td/>
       <td>Codes</td>
       <td>ICD-11 Extension codes (http://id.who.int/icd/entity/164949870)</td>
@@ -742,7 +752,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>N/A</td>
       <td>Input Option</td>
       <td colspan="3">Influenza vaccine, live
-      attenuated</td>
+	attenuated</td>
       <td>XM5V65</td>
       <td>http://id.who.int/icd/entity/344093324</td>
       <td/>
@@ -751,7 +761,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td/>
       <td/>
       <td>Influenza vaccine, inactivated,
-      split virus or surface antigen</td>
+	split virus or surface antigen</td>
       <td/>
       <td>Codes</td>
       <td>ICD-11 Extension codes (http://id.who.int/icd/entity/164949870)</td>
@@ -772,7 +782,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>N/A</td>
       <td>Input Option</td>
       <td colspan="3">Influenza vaccine, virus
-      like particle</td>
+	like particle</td>
       <td>XM9E17</td>
       <td>http://id.who.int/icd/entity/824452416</td>
       <td/>
@@ -1039,14 +1049,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td/>
       <td/>
       <td>Diptheria, Hepatitis B,Tetanus,
-      acellular Pertussis, Inactivated Polio Virus, Haemophilus Influenzae type B</td>
+	acellular Pertussis, Inactivated Polio Virus, Haemophilus Influenzae type B</td>
       <td/>
       <td>Codes</td>
       <td>ICD-11 Extension codes (http://id.who.int/icd/entity/164949870)</td>
       <td>N/A</td>
       <td>Input Option</td>
       <td colspan="3">Diptheria, Hepatitis
-      B,Tetanus, acellular Pertussis, <span style="display:none">Inactivated Polio virus, Haemophilus Influenzae type B</span></td>
+	B,Tetanus, acellular Pertussis, <span style="display:none">Inactivated Polio virus, Haemophilus Influenzae type B</span></td>
       <td>XM84S1</td>
       <td>http://id.who.int/icd/entity/1234470901</td>
       <td/>
@@ -1055,14 +1065,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td/>
       <td/>
       <td>Diptheria, Tetanus,
-      acellular Pertussis, Inactivated Polio Virus</td>
+	acellular Pertussis, Inactivated Polio Virus</td>
       <td/>
       <td>Codes</td>
       <td>ICD-11 Extension codes (http://id.who.int/icd/entity/164949870)</td>
       <td>N/A</td>
       <td>Input Option</td>
       <td colspan="3">Diptheria, Tetanus,
-      acellular Pertussis, Inactivated Polio Virus</td>
+	acellular Pertussis, Inactivated Polio Virus</td>
       <td>XM9JP8</td>
       <td>http://id.who.int/icd/entity/213276798</td>
       <td/>
@@ -1077,7 +1087,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>N/A</td>
       <td>Input Option</td>
       <td colspan="3">Tetanus, diphtheria,
-      acellular Pertussis, Inactivated Polio Virus</td>
+	acellular Pertussis, Inactivated Polio Virus</td>
       <td>XM44M4</td>
       <td>http://id.who.int/icd/entity/2144774614</td>
       <td/>
@@ -1101,7 +1111,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td style="height:120.0pt;"/>
       <td/>
       <td>Pertussis vaccine (with diphtheria
-      toxoid) (with tetanus toxoid)</td>
+	toxoid) (with tetanus toxoid)</td>
       <td/>
       <td>Codes</td>
       <td>ICD-11 Extension codes (http://id.who.int/icd/entity/164949870)</td>
@@ -1116,7 +1126,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td/>
       <td/>
       <td>Diphtheria toxoid with tetanus
-      toxoid with pertussis component</td>
+	toxoid with pertussis component</td>
       <td/>
       <td>Codes</td>
       <td>ICD-11 Extension codes (http://id.who.int/icd/entity/164949870)</td>
@@ -1146,7 +1156,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td/>
       <td/>
       <td>Tetanus toxoid or vaccine toxoid
-      with diphtheria toxoid</td>
+	with diphtheria toxoid</td>
       <td/>
       <td>Codes</td>
       <td>ICD-11 Extension codes (http://id.who.int/icd/entity/164949870)</td>
@@ -1190,7 +1200,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td/>
       <td/>
       <td>Diphtheria vaccine combination
-      without pertussis</td>
+	without pertussis</td>
       <td/>
       <td>Codes</td>
       <td>ICD-11 Extension codes (http://id.who.int/icd/entity/164949870)</td>
@@ -1454,7 +1464,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td style="color:#ED7D31;">OPTIONAL</td>
       <td>Due date of next dose</td>
       <td>Date on which the next vaccination
-      should be administered</td>
+	should be administered</td>
       <td>Date</td>
       <td>Not Applicable</td>
       <td>N/A</td>
@@ -1469,7 +1479,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </table>
 
 
-  
+
 </div>
 </div>
         </div>  <!-- /inner-wrapper -->
@@ -1493,7 +1503,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 21, 2021 21:50+0000">2021-07-21</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 22, 2021 02:58+0000">2021-07-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

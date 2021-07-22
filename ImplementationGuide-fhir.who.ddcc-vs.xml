@@ -342,14 +342,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureMap"/>
-      </extension>
-      <reference>
-        <reference value="StructureMap/svc-map-qr-bundle"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -394,6 +386,15 @@
         <reference value="ConceptMap/who-ddcc-map-icd11-sct-disease-targeted"/>
       </reference>
       <description value="Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCCoreDataSetCoC"/>
+      </reference>
+      <description value="DDCC Core Data - Continuity of Care elements."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -445,15 +446,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCCoreDataSet"/>
-      </reference>
-      <description value="DDCC Core Data elements."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -481,6 +473,15 @@
       </reference>
       <name value="DDCC Folder"/>
       <description value="DDCC Folder of the Paper Certificate"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCCoreDataSetPoV"/>
+      </reference>
+      <description value="DDCC Core Data - Proof of Vaccination elements."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
