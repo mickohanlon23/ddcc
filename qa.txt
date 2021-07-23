@@ -1,9 +1,9 @@
 ﻿DDCC_VS : Validation Results
 =========================================
 
-err = 77, warn = 49, info = 22
+err = 77, warn = 44, info = 22
 IG Publisher Version: 1.1.77
-Generated Thu Jul 22 21:52:23 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = https://worldhealthorganization.github.io/ddcc)
+Generated Fri Jul 23 18:19:42 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = https://worldhealthorganization.github.io/ddcc)
 
  Build Errors : 22 / 9 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 4 / 4 / 11
@@ -20,8 +20,8 @@ Generated Thu Jul 22 21:52:23 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example : 1 / 4 / 9
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCAddBundle : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCComposition : 11 / 0 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC : 3 / 2 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV : 3 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV : 3 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCountryOfVaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocument : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReference : 5 / 0 / 2
@@ -45,7 +45,6 @@ Generated Thu Jul 22 21:52:23 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/ValueSet-DDCC-QR-Category-Usage-ValueSet : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-DDCC-QR-Format-ValueSet : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-disease-targeted-covid-19 : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-vaccinable-conditions : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-vaccines : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-vaccines-covid-19 : 0 / 2 / 1
  /github/workspace/input/ddcc : 0 / 1 / 1
@@ -154,15 +153,12 @@ ERROR: Composition/DDCCComposition-genexample: : Composition.section:vaccination
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC.json ==
 ERROR: StructureDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetCoC'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC.json - the canonical URL (https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetCoC) does not match the URL (http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetCoC)
 ERROR: StructureDefinition/DDCCCoreDataSetCoC: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
-WARNING: StructureDefinition/DDCCCoreDataSetCoC: StructureDefinition.snapshot.element[20].binding: The valueSet reference http://id.who.int/icd11/mms on element DDCCCoreDataSet.vaccination.disease could not be resolved
 WARNING: StructureDefinition/DDCCCoreDataSetCoC: StructureDefinition.snapshot.element[23].type[0].targetProfile[0]: Unable to resolve profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/shc-organization
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC: URL Mismatch https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetCoC vs http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetCoC
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV.json ==
 ERROR: StructureDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV.json - the canonical URL (https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetPoV) does not match the URL (http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV)
 ERROR: StructureDefinition/DDCCCoreDataSetPoV: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
-WARNING: StructureDefinition/DDCCCoreDataSetPoV: StructureDefinition.differential.element[18].binding: The valueSet reference http://id.who.int/icd11/mms on element DDCCCoreDataSet.vaccination.disease could not be resolved
 WARNING: StructureDefinition/DDCCCoreDataSetPoV: StructureDefinition.differential.element[21].type[0].targetProfile[0]: Unable to resolve profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/shc-organization
-WARNING: StructureDefinition/DDCCCoreDataSetPoV: StructureDefinition.snapshot.element[20].binding: The valueSet reference http://id.who.int/icd11/mms on element DDCCCoreDataSet.vaccination.disease could not be resolved
 WARNING: StructureDefinition/DDCCCoreDataSetPoV: StructureDefinition.snapshot.element[23].type[0].targetProfile[0]: Unable to resolve profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/shc-organization
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV: URL Mismatch https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetPoV vs http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCountryOfVaccination.json ==
@@ -240,9 +236,6 @@ WARNING: StructureDefinition.where(url = 'https://worldhealthorganization.github
 == /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-disease-targeted-covid-19.json ==
 WARNING: ValueSet/who-ddcc-disease-targeted-covid-19: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'who-ddcc-disease-targeted-covid-19'): Error from server: Unable to provide support for code system http://id.who.int/icd11/mms
-== /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-vaccinable-conditions.json ==
-WARNING: ValueSet/who-ddcc-vaccinable-conditions: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
-WARNING: ValueSet.where(id = 'who-ddcc-vaccinable-conditions'): Error from server: Unable to provide support for code system http://id.who.int/icd11/mms
 == /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-vaccines.json ==
 WARNING: ValueSet/who-ddcc-vaccines: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'who-ddcc-vaccines'): Error from server: Unable to provide support for code system http://id.who.int/icd11/mms
@@ -250,7 +243,7 @@ WARNING: ValueSet.where(id = 'who-ddcc-vaccines'): Error from server: Unable to 
 WARNING: ValueSet/who-ddcc-vaccines-covid-19: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'who-ddcc-vaccines-covid-19'): Error from server: Unable to provide support for code system http://id.who.int/icd11/mms
 == /github/workspace/input/ddcc.xml ==
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[32].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[31].name: value should not start or finish with whitespace
 == /github/workspace/input/ips-preadopted/Immunization-uv-ips.structuredefinition.xml ==
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips'): The Implementation Guide contains no examples for this profile
 == /github/workspace/input/ips-preadopted/Patient-uv-ips.structuredefinition.xml ==
