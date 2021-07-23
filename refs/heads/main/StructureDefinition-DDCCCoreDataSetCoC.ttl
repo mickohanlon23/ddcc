@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.2.1"];
   fhir:StructureDefinition.name [ fhir:value "DDCCCoreDataSetCoC"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2021-07-22T21:51:20+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-07-23T18:18:39+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -512,8 +512,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "http://id.who.int/icd11/mms";
-           fhir:link <http://id.who.int/icd11/mms>
+           fhir:value "https://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19";
+           fhir:link <https://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19>
          ]
        ]
      ], [
