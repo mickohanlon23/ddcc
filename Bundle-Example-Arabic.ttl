@@ -1,0 +1,147 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://worldhealthorganization.github.io/ddcc/Bundle/Example-Arabic> a fhir:Bundle;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "Example-Arabic"];
+  fhir:Bundle.type [ fhir:value "transaction"];
+  fhir:Bundle.entry [
+     fhir:index 0;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/Patient/DDCC-Patient-Arabic" ];
+     fhir:Bundle.entry.resource <http://www.example.org/fhir/Patient/DDCC-Patient-Arabic>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Patient" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/Patient/DDCC-Organization-Arabic" ];
+     fhir:Bundle.entry.resource <http://www.example.org/fhir/Patient/DDCC-Organization-Arabic>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Organization" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/Patient/DDCC-Immunization-Arabic" ];
+     fhir:Bundle.entry.resource <http://www.example.org/fhir/Patient/DDCC-Immunization-Arabic>;
+     fhir:Bundle.entry.request [
+       fhir:Bundle.entry.request.method [ fhir:value "PUT" ];
+       fhir:Bundle.entry.request.url [ fhir:value "Immunization" ]
+     ]
+  ] .
+
+<http://www.example.org/fhir/Patient/DDCC-Patient-Arabic> a fhir:Patient;
+  fhir:Resource.id [ fhir:value "DDCC-Patient-Arabic"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
+       fhir:index 0;
+       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: أولوس أجيريوس(OFFICIAL)</p><p><b>birthDate</b>: 2003-03-03</p></div>"
+  ];
+  fhir:Patient.name [
+     fhir:index 0;
+     fhir:HumanName.use [ fhir:value "official" ];
+     fhir:HumanName.text [ fhir:value "أولوس أجيريوس" ]
+  ];
+  fhir:Patient.birthDate [ fhir:value "2003-03-03"^^xsd:date] .
+
+<http://www.example.org/fhir/Patient/DDCC-Organization-Arabic> a fhir:Organization;
+  fhir:Resource.id [ fhir:value "DDCC-Organization-Arabic"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
+       fhir:index 0;
+       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: مستشفى حكومي</p></div>"
+  ];
+  fhir:Organization.name [ fhir:value "مستشفى حكومي"] .
+
+<http://www.example.org/fhir/Patient/DDCC-Immunization-Arabic> a fhir:Immunization;
+  fhir:Resource.id [ fhir:value "DDCC-Immunization-Arabic"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
+       fhir:index 0;
+       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>DDCC Vaccine Brand for Immunization</b>: <span title=\"{urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding TEST}\">TEST</span></p><p><b>DDCC Country Of Vaccination for Immunization</b>: SAU</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding XM0CX4}\">XM0CX4</span></p><p><b>patient</b>: <a href=\"#Patient_DDCC-Patient-Arabic\">See above (Patient/DDCC-Patient-Arabic)</a></p><p><b>occurrence</b>: 2021-02-02</p><p><b>location</b>: <span>موقع التطعيم</span></p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"#Organization_DDCC-Organization-Arabic\">See above (Organization/DDCC-Organization-Arabic)</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><a href=\"#Organization_DDCC-Organization-Arabic\">See above (Organization/DDCC-Organization-Arabic)</a></td><td><span title=\"Codes: {http://id.who.int/icd11/mms RA01.0}\">RA01.0</span></td><td>1</td><td>2</td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand" ];
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding" ];
+       fhir:Coding.code [ fhir:value "TEST" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Extension.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination" ];
+     fhir:Extension.valueCode [ fhir:value "SAU" ]
+  ];
+  fhir:Immunization.status [ fhir:value "completed"];
+  fhir:Immunization.vaccineCode [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding" ];
+       fhir:Coding.code [ fhir:value "XM0CX4" ]
+     ]
+  ];
+  fhir:Immunization.patient [
+     fhir:link <https://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-Arabic>;
+     fhir:Reference.reference [ fhir:value "Patient/DDCC-Patient-Arabic" ]
+  ];
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2021-02-02"^^xsd:date];
+  fhir:Immunization.location [
+     fhir:Reference.display [ fhir:value "موقع التطعيم" ]
+  ];
+  fhir:Immunization.lotNumber [ fhir:value "123"];
+  fhir:Immunization.expirationDate [ fhir:value "2021-06-30"^^xsd:date];
+  fhir:Immunization.performer [
+     fhir:index 0;
+     fhir:Immunization.performer.actor [
+       fhir:link <https://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-Arabic>;
+       fhir:Reference.reference [ fhir:value "Organization/DDCC-Organization-Arabic" ]
+     ]
+  ];
+  fhir:Immunization.protocolApplied [
+     fhir:index 0;
+     fhir:Immunization.protocolApplied.authority [
+       fhir:link <https://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-Arabic>;
+       fhir:Reference.reference [ fhir:value "Organization/DDCC-Organization-Arabic" ]
+     ];
+     fhir:Immunization.protocolApplied.targetDisease [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://id.who.int/icd11/mms" ];
+         fhir:Coding.code [ fhir:value "RA01.0" ]
+       ]
+     ];
+     fhir:Immunization.protocolApplied.doseNumberPositiveInt [ fhir:value "1"^^xsd:positiveInteger ];
+     fhir:Immunization.protocolApplied.seriesDosesPositiveInt [ fhir:value "2"^^xsd:positiveInteger ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://worldhealthorganization.github.io/ddcc/Bundle/Example-Arabic.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

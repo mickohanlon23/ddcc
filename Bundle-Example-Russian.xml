@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="Example-Russian"/>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Patient/DDCC-Patient-Russian"/>
+    <resource>
+      <Patient>
+        <id value="DDCC-Patient-Russian"/>
+        <meta>
+          <profile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>name</b>: Авл Агерий(OFFICIAL)</p><p><b>birthDate</b>: 2003-03-03</p></div>
+        </text>
+        <name>
+          <use value="official"/>
+          <text value="&#x410;&#x432;&#x43B; &#x410;&#x433;&#x435;&#x440;&#x438;&#x439;"/>
+        </name>
+        <birthDate value="2003-03-03"/>
+      </Patient>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Patient"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Patient/DDCC-Organization-Russian"/>
+    <resource>
+      <Organization>
+        <id value="DDCC-Organization-Russian"/>
+        <meta>
+          <profile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>name</b>: Государственная больница</p></div>
+        </text>
+        <name value="&#x413;&#x43E;&#x441;&#x443;&#x434;&#x430;&#x440;&#x441;&#x442;&#x432;&#x435;&#x43D;&#x43D;&#x430;&#x44F; &#x431;&#x43E;&#x43B;&#x44C;&#x43D;&#x438;&#x446;&#x430;"/>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://www.example.org/fhir/Patient/DDCC-Immunization-Russian"/>
+    <resource>
+      <Immunization>
+        <id value="DDCC-Immunization-Russian"/>
+        <meta>
+          <profile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization"/>
+        </meta>
+        <text>
+          <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>DDCC Vaccine Brand for Immunization</b>: <span title="{urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding TEST}">TEST</span></p><p><b>DDCC Country Of Vaccination for Immunization</b>: RUS</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title="Codes: {urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding XM0CX4}">XM0CX4</span></p><p><b>patient</b>: <a href="DDCC-Patient-Example-Russian">DDCC-Patient-Example-Russian</a></p><p><b>occurrence</b>: 2021-02-02</p><p><b>location</b>: <span>Сайт вакцинации</span></p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href="#Organization_DDCC-Organization-Russian">See above (Organization/DDCC-Organization-Russian)</a></td></tr></table><h3>ProtocolApplieds</h3><table class="grid"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><a href="#Organization_DDCC-Organization-Russian">See above (Organization/DDCC-Organization-Russian)</a></td><td><span title="Codes: {http://id.who.int/icd11/mms RA01.0}">RA01.0</span></td><td>1</td><td>2</td></tr></table></div>
+        </text>
+        <extension url="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand">
+          <valueCoding>
+            <system value="urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding"/>
+            <code value="TEST"/>
+          </valueCoding>
+        </extension>
+        <extension url="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination">
+          <valueCode value="RUS"/>
+        </extension>
+        <status value="completed"/>
+        <vaccineCode>
+          <coding>
+            <system value="urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding"/>
+            <code value="XM0CX4"/>
+          </coding>
+        </vaccineCode>
+        <patient>
+          <reference value="DDCC-Patient-Example-Russian"/>
+        </patient>
+        <occurrenceDateTime value="2021-02-02"/>
+        <location>
+          <display value="&#x421;&#x430;&#x439;&#x442; &#x432;&#x430;&#x43A;&#x446;&#x438;&#x43D;&#x430;&#x446;&#x438;&#x438;"/>
+        </location>
+        <lotNumber value="123"/>
+        <expirationDate value="2021-06-30"/>
+        <performer>
+          <actor>
+            <reference value="Organization/DDCC-Organization-Russian"/>
+          </actor>
+        </performer>
+        <protocolApplied>
+          <authority>
+            <reference value="Organization/DDCC-Organization-Russian"/>
+          </authority>
+          <targetDisease>
+            <coding>
+              <system value="http://id.who.int/icd11/mms"/>
+              <code value="RA01.0"/>
+            </coding>
+          </targetDisease>
+          <doseNumberPositiveInt value="1"/>
+          <seriesDosesPositiveInt value="2"/>
+        </protocolApplied>
+      </Immunization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Immunization"/>
+    </request>
+  </entry>
+</Bundle>
