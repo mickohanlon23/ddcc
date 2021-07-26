@@ -46,14 +46,14 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Felix Cat(OFFICIAL)</p><p><b>birthDate</b>: 2000-01-02</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Aulus Agerius(OFFICIAL)</p><p><b>birthDate</b>: 2003-03-03</p></div>"
   ];
   fhir:Patient.name [
      fhir:index 0;
      fhir:HumanName.use [ fhir:value "official" ];
-     fhir:HumanName.text [ fhir:value "Felix Cat" ]
+     fhir:HumanName.text [ fhir:value "Aulus Agerius" ]
   ];
-  fhir:Patient.birthDate [ fhir:value "2000-01-02"^^xsd:date] .
+  fhir:Patient.birthDate [ fhir:value "2003-03-03"^^xsd:date] .
 
 <http://www.example.org/fhir/Patient/DDCC-Organization-English> a fhir:Organization;
   fhir:Resource.id [ fhir:value "DDCC-Organization-English"];

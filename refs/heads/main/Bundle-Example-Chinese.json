@@ -1,0 +1,132 @@
+{
+  "resourceType": "Bundle",
+  "id": "Example-Chinese",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "http://www.example.org/fhir/Patient/DDCC-Patient-Chinese",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "DDCC-Patient-Chinese",
+        "meta": {
+          "profile": [
+            "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: 奥卢斯·阿杰里乌斯(OFFICIAL)</p><p><b>birthDate</b>: 2003-03-03</p></div>"
+        },
+        "name": [
+          {
+            "use": "official",
+            "text": "奥卢斯·阿杰里乌斯"
+          }
+        ],
+        "birthDate": "2003-03-03"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "http://www.example.org/fhir/Patient/DDCC-Organization-Chinese",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "DDCC-Organization-Chinese",
+        "meta": {
+          "profile": [
+            "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: 政府医院</p></div>"
+        },
+        "name": "政府医院"
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Organization"
+      }
+    },
+    {
+      "fullUrl": "http://www.example.org/fhir/Patient/DDCC-Immunization-Chinese",
+      "resource": {
+        "resourceType": "Immunization",
+        "id": "DDCC-Immunization-Chinese",
+        "meta": {
+          "profile": [
+            "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization"
+          ]
+        },
+        "text": {
+          "status": "extensions",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>DDCC Vaccine Brand for Immunization</b>: <span title=\"{urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding TEST}\">TEST</span></p><p><b>DDCC Country Of Vaccination for Immunization</b>: CHN</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding XM0CX4}\">XM0CX4</span></p><p><b>patient</b>: <a href=\"#Patient_DDCC-Patient-Chinese\">See above (Patient/DDCC-Patient-Chinese)</a></p><p><b>occurrence</b>: 2021-02-02</p><p><b>location</b>: <span>疫苗接种现场</span></p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"#Organization_DDCC-Organization-Chinese\">See above (Organization/DDCC-Organization-Chinese)</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><a href=\"#Organization_DDCC-Organization-Chinese\">See above (Organization/DDCC-Organization-Chinese)</a></td><td><span title=\"Codes: {http://id.who.int/icd11/mms RA01.0}\">RA01.0</span></td><td>1</td><td>2</td></tr></table></div>"
+        },
+        "extension": [
+          {
+            "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand",
+            "valueCoding": {
+              "system": "urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding",
+              "code": "TEST"
+            }
+          },
+          {
+            "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination",
+            "valueCode": "CHN"
+          }
+        ],
+        "status": "completed",
+        "vaccineCode": {
+          "coding": [
+            {
+              "system": "urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding",
+              "code": "XM0CX4"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/DDCC-Patient-Chinese"
+        },
+        "occurrenceDateTime": "2021-02-02",
+        "location": {
+          "display": "疫苗接种现场"
+        },
+        "lotNumber": "123",
+        "expirationDate": "2021-06-30",
+        "performer": [
+          {
+            "actor": {
+              "reference": "Organization/DDCC-Organization-Chinese"
+            }
+          }
+        ],
+        "protocolApplied": [
+          {
+            "authority": {
+              "reference": "Organization/DDCC-Organization-Chinese"
+            },
+            "targetDisease": [
+              {
+                "coding": [
+                  {
+                    "system": "http://id.who.int/icd11/mms",
+                    "code": "RA01.0"
+                  }
+                ]
+              }
+            ],
+            "doseNumberPositiveInt": 1,
+            "seriesDosesPositiveInt": 2
+          }
+        ]
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Immunization"
+      }
+    }
+  ]
+}
