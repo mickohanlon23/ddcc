@@ -1,9 +1,9 @@
 ﻿DDCC_VS : Validation Results
 =========================================
 
-err = 77, warn = 44, info = 22
+err = 77, warn = 47, info = 22
 IG Publisher Version: 1.1.77
-Generated Mon Jul 26 16:59:47 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = https://worldhealthorganization.github.io/ddcc)
+Generated Mon Jul 26 17:59:54 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = https://worldhealthorganization.github.io/ddcc)
 
  Build Errors : 22 / 9 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 4 / 4 / 11
@@ -20,8 +20,8 @@ Generated Mon Jul 26 16:59:47 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example : 1 / 4 / 9
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCAddBundle : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCComposition : 11 / 0 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC : 3 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV : 3 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC : 3 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV : 3 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCountryOfVaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocument : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReference : 5 / 0 / 2
@@ -93,8 +93,8 @@ INFORMATION: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofTyp
 WARNING: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[5].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[6].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[7].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[12].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-INFORMATION: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[15].answer[0].value.ofType(Coding): Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+WARNING: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[13].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+INFORMATION: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[16].answer[0].value.ofType(Coding): Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
 INFORMATION: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[0].answer[0]: Cannot validate options because no option or options are provided
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[0].answer[0]: The value provided (null::USA) is not in the options value set in the questionnaire
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccParameters in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest - the discriminator [resource] does not have fixed value, binding or existence assertions
@@ -126,14 +126,14 @@ WARNING: OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificat
 == /github/workspace/fsh-generated/resources/Questionnaire-DDCCVSCoreDataSetQuestionnaire.json ==
 WARNING: Questionnaire/DDCCVSCoreDataSetQuestionnaire: Questionnaire.title: value should not start or finish with whitespace
 WARNING: Questionnaire/DDCCVSCoreDataSetQuestionnaire: Questionnaire.item[3]: sdc-1: 'An item cannot have an answerExpression if answerOption or answerValueSet is already present.' Rule 'An item cannot have an answerExpression if answerOption or answerValueSet is already present.' Failed
-WARNING: Questionnaire/DDCCVSCoreDataSetQuestionnaire: Questionnaire.item[12]: sdc-1: 'An item cannot have an answerExpression if answerOption or answerValueSet is already present.' Rule 'An item cannot have an answerExpression if answerOption or answerValueSet is already present.' Failed
+WARNING: Questionnaire/DDCCVSCoreDataSetQuestionnaire: Questionnaire.item[13]: sdc-1: 'An item cannot have an answerExpression if answerOption or answerValueSet is already present.' Rule 'An item cannot have an answerExpression if answerOption or answerValueSet is already present.' Failed
 == /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example.json ==
 INFORMATION: QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example: QuestionnaireResponse.item[4].answer[0].value.ofType(Coding): Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
 WARNING: QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example: QuestionnaireResponse.item[5].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example: QuestionnaireResponse.item[6].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example: QuestionnaireResponse.item[7].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example: QuestionnaireResponse.item[12].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-INFORMATION: QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example: QuestionnaireResponse.item[15].answer[0].value.ofType(Coding): Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+WARNING: QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example: QuestionnaireResponse.item[13].answer[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+INFORMATION: QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example: QuestionnaireResponse.item[16].answer[0].value.ofType(Coding): Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
 INFORMATION: QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example: QuestionnaireResponse.item[0].answer[0]: Cannot validate options because no option or options are provided
 ERROR: QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example: QuestionnaireResponse.item[0].answer[0]: The value provided (urn:iso:std:iso:3166::USA) is not in the options value set in the questionnaire
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCAddBundle.json ==
@@ -153,13 +153,16 @@ ERROR: Composition/DDCCComposition-genexample: : Composition.section:vaccination
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC.json ==
 ERROR: StructureDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetCoC'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC.json - the canonical URL (https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetCoC) does not match the URL (http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetCoC)
 ERROR: StructureDefinition/DDCCCoreDataSetCoC: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
-WARNING: StructureDefinition/DDCCCoreDataSetCoC: StructureDefinition.snapshot.element[23].type[0].targetProfile[0]: Unable to resolve profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/shc-organization
+WARNING: StructureDefinition/DDCCCoreDataSetCoC: StructureDefinition.snapshot.element[14]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/DDCCCoreDataSetCoC: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Unable to resolve profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/shc-organization
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC: URL Mismatch https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetCoC vs http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetCoC
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV.json ==
 ERROR: StructureDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV.json - the canonical URL (https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetPoV) does not match the URL (http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV)
 ERROR: StructureDefinition/DDCCCoreDataSetPoV: StructureDefinition.snapshot: sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Rule 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
-WARNING: StructureDefinition/DDCCCoreDataSetPoV: StructureDefinition.differential.element[21].type[0].targetProfile[0]: Unable to resolve profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/shc-organization
-WARNING: StructureDefinition/DDCCCoreDataSetPoV: StructureDefinition.snapshot.element[23].type[0].targetProfile[0]: Unable to resolve profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/shc-organization
+WARNING: StructureDefinition/DDCCCoreDataSetPoV: StructureDefinition.snapshot.element[14]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/DDCCCoreDataSetPoV: StructureDefinition.differential.element[12]: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Rule 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken' Failed
+WARNING: StructureDefinition/DDCCCoreDataSetPoV: StructureDefinition.differential.element[25].type[0].targetProfile[0]: Unable to resolve profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/shc-organization
+WARNING: StructureDefinition/DDCCCoreDataSetPoV: StructureDefinition.snapshot.element[27].type[0].targetProfile[0]: Unable to resolve profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/shc-organization
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV: URL Mismatch https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetPoV vs http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCountryOfVaccination.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocument.json ==

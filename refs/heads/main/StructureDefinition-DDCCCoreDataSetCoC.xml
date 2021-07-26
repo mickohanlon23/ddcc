@@ -12,7 +12,7 @@
   <version value="0.2.1"/>
   <name value="DDCCCoreDataSetCoC"/>
   <status value="draft"/>
-  <date value="2021-07-26T16:58:50+00:00"/>
+  <date value="2021-07-26T17:58:56+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -311,6 +311,21 @@
         <code value="date"/>
       </type>
     </element>
+    <element id="DDCCCoreDataSet.vaccination.valid-from">
+      <path value="DDCCCoreDataSet.vaccination.valid_from"/>
+      <short value="Vaccination valid from"/>
+      <definition value="Date upon which provided vaccination is considered valid."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DDCCCoreDataSet.vaccination.valid_from"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
     <element id="DDCCCoreDataSet.vaccination.dose">
       <path value="DDCCCoreDataSet.vaccination.dose"/>
       <short value="Dose number"/>
@@ -439,6 +454,48 @@
         <code value="date"/>
       </type>
     </element>
+    <element id="DDCCCoreDataSet.vaccination.period">
+      <path value="DDCCCoreDataSet.vaccination.period"/>
+      <short value="Certificate Validity Period"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DDCCCoreDataSet.vaccination.period"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Period"/>
+      </type>
+    </element>
+    <element id="DDCCCoreDataSet.vaccination.period.start">
+      <path value="DDCCCoreDataSet.vaccination.period.start"/>
+      <short value="Certificate valid from"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DDCCCoreDataSet.vaccination.period.start"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
+    <element id="DDCCCoreDataSet.vaccination.period.end">
+      <path value="DDCCCoreDataSet.vaccination.period.end"/>
+      <short value="Certificate valid until"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DDCCCoreDataSet.vaccination.period.end"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="date"/>
+      </type>
+    </element>
     <element id="DDCCCoreDataSet.certificate">
       <path value="DDCCCoreDataSet.certificate"/>
       <short value="Certificate Metadata"/>
@@ -469,60 +526,18 @@
         <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/shc-organization"/>
       </type>
     </element>
-    <element id="DDCCCoreDataSet.certificate.identifier">
-      <path value="DDCCCoreDataSet.certificate.identifier"/>
-      <short value="Certificate identifier"/>
+    <element id="DDCCCoreDataSet.certificate.hcid">
+      <path value="DDCCCoreDataSet.certificate.hcid"/>
+      <short value="Health certificate identifier (HCID)"/>
       <min value="1"/>
       <max value="1"/>
       <base>
-        <path value="DDCCCoreDataSet.certificate.identifier"/>
+        <path value="DDCCCoreDataSet.certificate.hcid"/>
         <min value="1"/>
         <max value="1"/>
       </base>
       <type>
         <code value="Identifier"/>
-      </type>
-    </element>
-    <element id="DDCCCoreDataSet.certificate.period">
-      <path value="DDCCCoreDataSet.certificate.period"/>
-      <short value="Certificate Validity Period"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="DDCCCoreDataSet.certificate.period"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="Period"/>
-      </type>
-    </element>
-    <element id="DDCCCoreDataSet.certificate.period.start">
-      <path value="DDCCCoreDataSet.certificate.period.start"/>
-      <short value="Certificate valid from"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="DDCCCoreDataSet.certificate.period.start"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="date"/>
-      </type>
-    </element>
-    <element id="DDCCCoreDataSet.certificate.period.end">
-      <path value="DDCCCoreDataSet.certificate.period.end"/>
-      <short value="Certificate valid until"/>
-      <min value="0"/>
-      <max value="1"/>
-      <base>
-        <path value="DDCCCoreDataSet.certificate.period.end"/>
-        <min value="0"/>
-        <max value="1"/>
-      </base>
-      <type>
-        <code value="date"/>
       </type>
     </element>
     <element id="DDCCCoreDataSet.certificate.version">

@@ -9,7 +9,7 @@
   "version": "0.2.1",
   "name": "DDCCCoreDataSetCoC",
   "status": "draft",
-  "date": "2021-07-26T16:58:50+00:00",
+  "date": "2021-07-26T17:58:56+00:00",
   "publisher": "World Health Organization (WHO)",
   "contact": [
     {
@@ -379,6 +379,24 @@
         ]
       },
       {
+        "id": "DDCCCoreDataSet.vaccination.valid-from",
+        "path": "DDCCCoreDataSet.vaccination.valid_from",
+        "short": "Vaccination valid from",
+        "definition": "Date upon which provided vaccination is considered valid.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.valid_from",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
         "id": "DDCCCoreDataSet.vaccination.dose",
         "path": "DDCCCoreDataSet.vaccination.dose",
         "short": "Dose number",
@@ -531,6 +549,57 @@
         ]
       },
       {
+        "id": "DDCCCoreDataSet.vaccination.period",
+        "path": "DDCCCoreDataSet.vaccination.period",
+        "short": "Certificate Validity Period",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.period",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.vaccination.period.start",
+        "path": "DDCCCoreDataSet.vaccination.period.start",
+        "short": "Certificate valid from",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.period.start",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "DDCCCoreDataSet.vaccination.period.end",
+        "path": "DDCCCoreDataSet.vaccination.period.end",
+        "short": "Certificate valid until",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DDCCCoreDataSet.vaccination.period.end",
+          "min": 0,
+          "max": "1"
+        },
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
         "id": "DDCCCoreDataSet.certificate",
         "path": "DDCCCoreDataSet.certificate",
         "short": "Certificate Metadata",
@@ -569,70 +638,19 @@
         ]
       },
       {
-        "id": "DDCCCoreDataSet.certificate.identifier",
-        "path": "DDCCCoreDataSet.certificate.identifier",
-        "short": "Certificate identifier",
+        "id": "DDCCCoreDataSet.certificate.hcid",
+        "path": "DDCCCoreDataSet.certificate.hcid",
+        "short": "Health certificate identifier (HCID)",
         "min": 1,
         "max": "1",
         "base": {
-          "path": "DDCCCoreDataSet.certificate.identifier",
+          "path": "DDCCCoreDataSet.certificate.hcid",
           "min": 1,
           "max": "1"
         },
         "type": [
           {
             "code": "Identifier"
-          }
-        ]
-      },
-      {
-        "id": "DDCCCoreDataSet.certificate.period",
-        "path": "DDCCCoreDataSet.certificate.period",
-        "short": "Certificate Validity Period",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DDCCCoreDataSet.certificate.period",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "Period"
-          }
-        ]
-      },
-      {
-        "id": "DDCCCoreDataSet.certificate.period.start",
-        "path": "DDCCCoreDataSet.certificate.period.start",
-        "short": "Certificate valid from",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DDCCCoreDataSet.certificate.period.start",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "date"
-          }
-        ]
-      },
-      {
-        "id": "DDCCCoreDataSet.certificate.period.end",
-        "path": "DDCCCoreDataSet.certificate.period.end",
-        "short": "Certificate valid until",
-        "min": 0,
-        "max": "1",
-        "base": {
-          "path": "DDCCCoreDataSet.certificate.period.end",
-          "min": 0,
-          "max": "1"
-        },
-        "type": [
-          {
-            "code": "date"
           }
         ]
       },
