@@ -32,6 +32,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Vaccine lot number","Lot number or batch number of vaccination.","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.vaccination.lot",1,1,"",""
 "DDCCCoreDataSet.vaccination.date","","","",1,1,"","","","date {[]} {[]}
 ","Date of vaccination","Date in which the vaccine was provided.","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.vaccination.date",1,1,"",""
+"DDCCCoreDataSet.vaccination.valid_from","","","",0,1,"","","","date {[]} {[]}
+","Vaccination valid from","Date upon which provided vaccination is considered valid.","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.vaccination.valid_from",0,1,"",""
 "DDCCCoreDataSet.vaccination.dose","","","",1,1,"","","","positiveInt {[]} {[]}
 ","Dose number","Vaccine dose number.","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.vaccination.dose",1,1,"",""
 "DDCCCoreDataSet.vaccination.totalDoses","","","",0,1,"","","","positiveInt {[]} {[]}
@@ -48,17 +50,17 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Disease or agent targeted","Name of disease vaccinated against (such as COVID-19).","","","","","","","","","",,"preferred","","https://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19","",,,,"DDCCCoreDataSet.vaccination.disease",0,1,"",""
 "DDCCCoreDataSet.vaccination.nextDose","","","",0,1,"","","","date {[]} {[]}
 ","Due date of next dose","Date on which the next vaccination should be administered, if a next dose is REQUIRED.","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.vaccination.nextDose",0,1,"",""
+"DDCCCoreDataSet.vaccination.period","","","",0,1,"","","","Period {[]} {[]}
+","Certificate Validity Period","","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.vaccination.period",0,1,"",""
+"DDCCCoreDataSet.vaccination.period.start","","","",0,1,"","","","date {[]} {[]}
+","Certificate valid from","","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.vaccination.period.start",0,1,"",""
+"DDCCCoreDataSet.vaccination.period.end","","","",0,1,"","","","date {[]} {[]}
+","Certificate valid until","","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.vaccination.period.end",0,1,"",""
 "DDCCCoreDataSet.certificate","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Certificate Metadata","Metadata associated with the certificate.","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.certificate",0,1,"",""
 "DDCCCoreDataSet.certificate.issuer","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://worldhealthorganization.github.io/ddcc/StructureDefinition/shc-organization]]}
 ","Certificate issuer","","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.certificate.issuer",1,1,"",""
-"DDCCCoreDataSet.certificate.identifier","","","",1,1,"","","","Identifier {[]} {[]}
-","Certificate identifier","","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.certificate.identifier",1,1,"",""
-"DDCCCoreDataSet.certificate.period","","","",0,1,"","","","Period {[]} {[]}
-","Certificate Validity Period","","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.certificate.period",0,1,"",""
-"DDCCCoreDataSet.certificate.period.start","","","",0,1,"","","","date {[]} {[]}
-","Certificate valid from","","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.certificate.period.start",0,1,"",""
-"DDCCCoreDataSet.certificate.period.end","","","",0,1,"","","","date {[]} {[]}
-","Certificate valid until","","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.certificate.period.end",0,1,"",""
+"DDCCCoreDataSet.certificate.hcid","","","",1,1,"","","","Identifier {[]} {[]}
+","Health certificate identifier (HCID)","","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.certificate.hcid",1,1,"",""
 "DDCCCoreDataSet.certificate.version","","","",1,1,"","","","string {[]} {[]}
 ","Certificate schema version","","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.certificate.version",1,1,"",""

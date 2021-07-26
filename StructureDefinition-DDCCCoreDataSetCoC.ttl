@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.2.1"];
   fhir:StructureDefinition.name [ fhir:value "DDCCCoreDataSetCoC"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2021-07-26T16:58:50+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-07-26T17:58:56+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -385,6 +385,23 @@
        ]
      ], [
        fhir:index 14;
+       fhir:Element.id [ fhir:value "DDCCCoreDataSet.vaccination.valid-from" ];
+       fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.vaccination.valid_from" ];
+       fhir:ElementDefinition.short [ fhir:value "Vaccination valid from" ];
+       fhir:ElementDefinition.definition [ fhir:value "Date upon which provided vaccination is considered valid." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DDCCCoreDataSet.vaccination.valid_from" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 15;
        fhir:Element.id [ fhir:value "DDCCCoreDataSet.vaccination.dose" ];
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.vaccination.dose" ];
        fhir:ElementDefinition.short [ fhir:value "Dose number" ];
@@ -401,7 +418,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "positiveInt" ]
        ]
      ], [
-       fhir:index 15;
+       fhir:index 16;
        fhir:Element.id [ fhir:value "DDCCCoreDataSet.vaccination.totalDoses" ];
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.vaccination.totalDoses" ];
        fhir:ElementDefinition.short [ fhir:value "Total doses" ];
@@ -418,7 +435,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "positiveInt" ]
        ]
      ], [
-       fhir:index 16;
+       fhir:index 17;
        fhir:Element.id [ fhir:value "DDCCCoreDataSet.vaccination.country" ];
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.vaccination.country" ];
        fhir:ElementDefinition.short [ fhir:value "Country of vaccination" ];
@@ -442,7 +459,7 @@
          ]
        ]
      ], [
-       fhir:index 17;
+       fhir:index 18;
        fhir:Element.id [ fhir:value "DDCCCoreDataSet.vaccination.centre" ];
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.vaccination.centre" ];
        fhir:ElementDefinition.short [ fhir:value "Administering centre" ];
@@ -459,7 +476,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "string" ]
        ]
      ], [
-       fhir:index 18;
+       fhir:index 19;
        fhir:Element.id [ fhir:value "DDCCCoreDataSet.vaccination.signature" ];
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.vaccination.signature" ];
        fhir:ElementDefinition.short [ fhir:value "Signature of health worker" ];
@@ -476,7 +493,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "Signature" ]
        ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.id [ fhir:value "DDCCCoreDataSet.vaccination.practitioner" ];
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.vaccination.practitioner" ];
        fhir:ElementDefinition.short [ fhir:value "Health worker identifier" ];
@@ -493,7 +510,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
        ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.id [ fhir:value "DDCCCoreDataSet.vaccination.disease" ];
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.vaccination.disease" ];
        fhir:ElementDefinition.short [ fhir:value "Disease or agent targeted" ];
@@ -517,7 +534,7 @@
          ]
        ]
      ], [
-       fhir:index 21;
+       fhir:index 22;
        fhir:Element.id [ fhir:value "DDCCCoreDataSet.vaccination.nextDose" ];
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.vaccination.nextDose" ];
        fhir:ElementDefinition.short [ fhir:value "Due date of next dose" ];
@@ -534,7 +551,55 @@
          fhir:ElementDefinition.type.code [ fhir:value "date" ]
        ]
      ], [
-       fhir:index 22;
+       fhir:index 23;
+       fhir:Element.id [ fhir:value "DDCCCoreDataSet.vaccination.period" ];
+       fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.vaccination.period" ];
+       fhir:ElementDefinition.short [ fhir:value "Certificate Validity Period" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DDCCCoreDataSet.vaccination.period" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Period" ]
+       ]
+     ], [
+       fhir:index 24;
+       fhir:Element.id [ fhir:value "DDCCCoreDataSet.vaccination.period.start" ];
+       fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.vaccination.period.start" ];
+       fhir:ElementDefinition.short [ fhir:value "Certificate valid from" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DDCCCoreDataSet.vaccination.period.start" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 25;
+       fhir:Element.id [ fhir:value "DDCCCoreDataSet.vaccination.period.end" ];
+       fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.vaccination.period.end" ];
+       fhir:ElementDefinition.short [ fhir:value "Certificate valid until" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DDCCCoreDataSet.vaccination.period.end" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "date" ]
+       ]
+     ], [
+       fhir:index 26;
        fhir:Element.id [ fhir:value "DDCCCoreDataSet.certificate" ];
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.certificate" ];
        fhir:ElementDefinition.short [ fhir:value "Certificate Metadata" ];
@@ -551,7 +616,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ]
        ]
      ], [
-       fhir:index 23;
+       fhir:index 27;
        fhir:Element.id [ fhir:value "DDCCCoreDataSet.certificate.issuer" ];
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.certificate.issuer" ];
        fhir:ElementDefinition.short [ fhir:value "Certificate issuer" ];
@@ -572,14 +637,14 @@
          ]
        ]
      ], [
-       fhir:index 24;
-       fhir:Element.id [ fhir:value "DDCCCoreDataSet.certificate.identifier" ];
-       fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.certificate.identifier" ];
-       fhir:ElementDefinition.short [ fhir:value "Certificate identifier" ];
+       fhir:index 28;
+       fhir:Element.id [ fhir:value "DDCCCoreDataSet.certificate.hcid" ];
+       fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.certificate.hcid" ];
+       fhir:ElementDefinition.short [ fhir:value "Health certificate identifier (HCID)" ];
        fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "DDCCCoreDataSet.certificate.identifier" ];
+         fhir:ElementDefinition.base.path [ fhir:value "DDCCCoreDataSet.certificate.hcid" ];
          fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
          fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ];
@@ -588,55 +653,7 @@
          fhir:ElementDefinition.type.code [ fhir:value "Identifier" ]
        ]
      ], [
-       fhir:index 25;
-       fhir:Element.id [ fhir:value "DDCCCoreDataSet.certificate.period" ];
-       fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.certificate.period" ];
-       fhir:ElementDefinition.short [ fhir:value "Certificate Validity Period" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "DDCCCoreDataSet.certificate.period" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "Period" ]
-       ]
-     ], [
-       fhir:index 26;
-       fhir:Element.id [ fhir:value "DDCCCoreDataSet.certificate.period.start" ];
-       fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.certificate.period.start" ];
-       fhir:ElementDefinition.short [ fhir:value "Certificate valid from" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "DDCCCoreDataSet.certificate.period.start" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "date" ]
-       ]
-     ], [
-       fhir:index 27;
-       fhir:Element.id [ fhir:value "DDCCCoreDataSet.certificate.period.end" ];
-       fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.certificate.period.end" ];
-       fhir:ElementDefinition.short [ fhir:value "Certificate valid until" ];
-       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-       fhir:ElementDefinition.max [ fhir:value "1" ];
-       fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "DDCCCoreDataSet.certificate.period.end" ];
-         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
-         fhir:ElementDefinition.base.max [ fhir:value "1" ]
-       ];
-       fhir:ElementDefinition.type [
-         fhir:index 0;
-         fhir:ElementDefinition.type.code [ fhir:value "date" ]
-       ]
-     ], [
-       fhir:index 28;
+       fhir:index 29;
        fhir:Element.id [ fhir:value "DDCCCoreDataSet.certificate.version" ];
        fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.certificate.version" ];
        fhir:ElementDefinition.short [ fhir:value "Certificate schema version" ];
