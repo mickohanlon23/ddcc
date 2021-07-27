@@ -171,18 +171,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <div xmlns="http://www.w3.org/1999/xhtml"><div class="markdown-toc"><p>Contents:</p><ul><li><a href="#1">Certificate</a></li><li><a href="#2">Certificate Authority (CA)</a></li><li><a href="#3">COVAX</a></li><li><a href="#4">Data Controller</a></li><li><a href="#5">Data Entry Personnel</a></li><li><a href="#6">Data processing</a></li><li><a href="#7">Data Processor</a></li><li><a href="#8">Data Subject</a></li><li><a href="#9">DDCC:VS Generation Service</a></li><li><a href="#10">DDCC:VS Holder</a></li><li><a href="#11">DDCC:VS Registry Service</a></li><li><a href="#12">DDCC:VS Repository Service</a></li><li><a href="#13">Digital divide</a></li><li><a href="#14">Digital Documentation of COVID-19 Certificate(s) (DDCC)</a></li><li><a href="#15">Digital Documentation of COVID-19 Certificate(s):Vaccination Status (DDCC:VS)</a></li><li><a href="#16">Digital Health Solution</a></li><li><a href="#17">Digital representation</a></li><li><a href="#18">Digital signature</a></li><li><a href="#19">Digitally signed</a></li><li><a href="#20">Encryption</a></li><li><a href="#21">Health certificate identifier (HCID)</a></li><li><a href="#22">Health data</a></li><li><a href="#23">Identification document</a></li><li><a href="#24">Identifier</a></li><li><a href="#25">One-dimensional (1D) barcode</a></li><li><a href="#26">MAY</a></li><li><a href="#27">Pass</a></li><li><a href="#28">Personal data</a></li><li><a href="#29">Public Health Authority (PHA)</a></li><li><a href="#30">Public key</a></li><li><a href="#31">Public Key Infrastructure (PKI)</a></li><li><a href="#32">Private Key</a></li><li><a href="#33">SHALL</a></li><li><a href="#34">SHOULD</a></li><li><a href="#35">Status checking application</a></li><li><a href="#36">Subject of Care</a></li><li><a href="#37">Third party use</a></li><li><a href="#38">Two-dimensional (2D) barcode</a></li><li><a href="#39">Vaccinator</a></li><li><a href="#40">Verifier</a></li></ul></div>
 
   <p> 
-    Key concepts are described here. 
+    Key concepts are described here. Definitions come from the Digital Documentation of COVID-19 Certificates: Vaccination Status — Technical Specifications and Implementation Guidance Glossary and in "Key settings, personas and digital services" within the Continuity of Care scenario section and the Proof of Vaccination scenario section.
   </p>
 
   <p style="background-color: #ffefef; border:1px solid maroon; padding: 5px;max-width: 790px;">
     For the latest published definitions, refer to the Digital Documentation of COVID-19 Certificates guidance.
   </p>
-  
+		
   <a name="1"/><h3>Certificate</h3>
   <p>A document attesting a fact. In the context of the vaccination certificate, it attests to the fact that a vaccine has been administered to an individual.</p>
 
   <a name="2"/><h3>Certificate Authority (CA)</h3>
-  <p>Also known as a “certification authority” in the context of a PKI, is an entity or organization that issues digital certificates.</p>
+  <p>Also known as a “certification authority” in the context of a public key infrastructure, is an entity or organization that issues digital certificates.</p>
 
   <a name="3"/><h3>COVAX</h3>
   <p>The vaccines pillar of the Access to COVID-19 Tools (ACT) Accelerator. It aims to accelerate the development and manufacture of COVID-19 vaccines, and to guarantee fair and equitable access for every country in the world.</p>
@@ -239,7 +239,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <p>A security procedure that translates electronic data in plain text into a cipher code, by means of either a code or a cryptographic system, to render it incomprehensible without the aid of the original code or cryptographic system.</p>
 
   <a name="21"/><h3>Health certificate identifier (HCID)</h3>
-  <p>An alphanumeric identifier (ID) for a physical and/or digital health document which contains one or more vaccination events. Each vaccination event is represented with at least one digital representation.</p>
+  <p>A unique alphanumeric identifier (ID) for a physical and/or digital health document which contains one or more vaccination events. It is the key identifier, present within the DDCC:TS-IS and retained in the DDCC:TS-IS registry.</p>
 
   <a name="22"/><h3>Health data</h3>
   <p>Personal data related to the physical or mental health of a natural person, including the provision of health services, which reveal information about his or her health status. These include personal data derived from the testing or examination of a body part or bodily substance, including from genetic data and biological samples.</p>
@@ -298,6 +298,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <a name="40"/><h3>Verifier</h3>
   <p>A natural person or legal person, either private or public, formally authorized (under national law, decree, regulation or other official act or order) to verify the vaccination status presented on the DDCC.</p>
 
+
 </div>
 </div>
         </div>  <!-- /inner-wrapper -->
@@ -321,7 +322,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 26, 2021 21:04+0000">2021-07-26</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Jul 27, 2021 04:09+0000">2021-07-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,18 +1,18 @@
 <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../input-cache/schemas/R5/fhir-single.xsd">
 
   <p> 
-    Key concepts are described here. 
+    Key concepts are described here. Definitions come from the Digital Documentation of COVID-19 Certificates: Vaccination Status — Technical Specifications and Implementation Guidance Glossary and in "Key settings, personas and digital services" within the Continuity of Care scenario section and the Proof of Vaccination scenario section.
   </p>
 
   <p style="background-color: #ffefef; border:1px solid maroon; padding: 5px;max-width: 790px;">
     For the latest published definitions, refer to the Digital Documentation of COVID-19 Certificates guidance.
   </p>
-  
+		
   <h3>Certificate</h3>
   <p>A document attesting a fact. In the context of the vaccination certificate, it attests to the fact that a vaccine has been administered to an individual.</p>
 
   <h3>Certificate Authority (CA)</h3>
-  <p>Also known as a “certification authority” in the context of a PKI, is an entity or organization that issues digital certificates.</p>
+  <p>Also known as a “certification authority” in the context of a public key infrastructure, is an entity or organization that issues digital certificates.</p>
 
   <h3>COVAX</h3>
   <p>The vaccines pillar of the Access to COVID-19 Tools (ACT) Accelerator. It aims to accelerate the development and manufacture of COVID-19 vaccines, and to guarantee fair and equitable access for every country in the world.</p>
@@ -69,7 +69,7 @@
   <p>A security procedure that translates electronic data in plain text into a cipher code, by means of either a code or a cryptographic system, to render it incomprehensible without the aid of the original code or cryptographic system.</p>
 
   <h3>Health certificate identifier (HCID)</h3>
-  <p>An alphanumeric identifier (ID) for a physical and/or digital health document which contains one or more vaccination events. Each vaccination event is represented with at least one digital representation.</p>
+  <p>A unique alphanumeric identifier (ID) for a physical and/or digital health document which contains one or more vaccination events. It is the key identifier, present within the DDCC:TS-IS and retained in the DDCC:TS-IS registry.</p>
 
   <h3>Health data</h3>
   <p>Personal data related to the physical or mental health of a natural person, including the provision of health services, which reveal information about his or her health status. These include personal data derived from the testing or examination of a body part or bodily substance, including from genetic data and biological samples.</p>
@@ -127,5 +127,6 @@
 
   <h3>Verifier</h3>
   <p>A natural person or legal person, either private or public, formally authorized (under national law, decree, regulation or other official act or order) to verify the vaccination status presented on the DDCC.</p>
+
 
 </div>
