@@ -1,9 +1,9 @@
 ﻿DDCC_VS : Validation Results
 =========================================
 
-err = 106, warn = 68, info = 62
+err = 106, warn = 66, info = 62
 IG Publisher Version: 1.1.77
-Generated Tue Jul 27 16:28:51 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = https://worldhealthorganization.github.io/ddcc)
+Generated Tue Jul 27 18:49:50 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = https://worldhealthorganization.github.io/ddcc)
 
  Build Errors : 28 / 29 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 4 / 4 / 11
@@ -66,7 +66,6 @@ Generated Tue Jul 27 16:28:51 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/ValueSet-DDCC-QR-Category-Usage-ValueSet : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-DDCC-QR-Format-ValueSet : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-disease-targeted-covid-19 : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-vaccines : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-vaccines-covid-19 : 0 / 2 / 1
  /github/workspace/input/ddcc : 0 / 1 / 1
  /github/workspace/input/ips-preadopted/Immunization-uv-ips.structuredefinition : 0 / 1 / 1
@@ -377,14 +376,11 @@ WARNING: StructureDefinition.where(url = 'https://worldhealthorganization.github
 == /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-disease-targeted-covid-19.json ==
 WARNING: ValueSet/who-ddcc-disease-targeted-covid-19: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'who-ddcc-disease-targeted-covid-19'): Error from server: Unable to provide support for code system http://id.who.int/icd11/mms
-== /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-vaccines.json ==
-WARNING: ValueSet/who-ddcc-vaccines: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
-WARNING: ValueSet.where(id = 'who-ddcc-vaccines'): Error from server: Unable to provide support for code system http://id.who.int/icd11/mms
 == /github/workspace/fsh-generated/resources/ValueSet-who-ddcc-vaccines-covid-19.json ==
 WARNING: ValueSet/who-ddcc-vaccines-covid-19: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'who-ddcc-vaccines-covid-19'): Error from server: Unable to provide support for code system http://id.who.int/icd11/mms
 == /github/workspace/input/ddcc.xml ==
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[43].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[42].name: value should not start or finish with whitespace
 == /github/workspace/input/ips-preadopted/Immunization-uv-ips.structuredefinition.xml ==
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips'): The Implementation Guide contains no examples for this profile
 == /github/workspace/input/ips-preadopted/Patient-uv-ips.structuredefinition.xml ==
