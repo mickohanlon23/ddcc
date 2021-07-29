@@ -303,7 +303,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   <a href="StructureDefinition-DDCCQuestionnaire.html" title="StructureDefinition/DDCCQuestionnaire">DDCC Questionniare</a>
                </td>
                <td>
-<p><a name="fd68559a-f4b9-41cd-8467-b67d901e2d0c">​</a>Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given <a href="StructureDefintion-DDCCQuestionnaireResponse.html">DDCC QuestionnaireResponse</a> which responds to the DDCC Questionnaire.</p>
+<p><a name="823ed310-7dbc-4c0f-a152-a33432f5e3e0">​</a>Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given <a href="StructureDefintion-DDCCQuestionnaireResponse.html">DDCC QuestionnaireResponse</a> which responds to the DDCC Questionnaire.</p>
 </td>
             </tr>
          </tbody>
@@ -320,14 +320,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-Patient-pre-uv-ips.html" title="StructureDefinition/Patient-pre-uv-ips">Patient (IPS)</a>
-               </td>
-               <td>
-<p>This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-Immunization-pre-uv-ips.html" title="StructureDefinition/Immunization-pre-uv-ips">Immunization (IPS)</a>
                </td>
                <td>
@@ -338,10 +330,10 @@ It describes the event of a patient being administered a vaccination or a record
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCDocumentReferenceQR.html" title="StructureDefinition/DDCCDocumentReferenceQR">DDCC DocumentReference return for QR</a>
+                  <a href="StructureDefinition-Patient-pre-uv-ips.html" title="StructureDefinition/Patient-pre-uv-ips">Patient (IPS)</a>
                </td>
                <td>
-
+<p>This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources.</p>
 </td>
             </tr>
             <tr>
@@ -354,66 +346,10 @@ It describes the event of a patient being administered a vaccination or a record
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCPractitioner.html" title="StructureDefinition/DDCCPractitioner">DDCC Practitioner</a>
-               </td>
-               <td>
-<p>Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to 
-vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCImmunization.html" title="StructureDefinition/DDCCImmunization">DDCC Immunization</a>
-               </td>
-               <td>
-<p>A DDCC Immunization contains the content corresponding to a row in the Vaccination 
-Events section of a Paper DDCC. While this is not a further profile of the International
-Patient Summary (IPS) Immunization resouce, this is intended to map into an IPS 
-Immunization resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCSubmitHealthEventResponse.html" title="StructureDefinition/DDCCSubmitHealthEventResponse">DDCC Submit Health Event Response</a>
-               </td>
-               <td>
-<p>A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the <a href="transactions.html#submit-health-event">Submit Health Event</a> transaction.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCFolder.html" title="StructureDefinition/DDCCFolder">DDCC Folder</a>
-               </td>
-               <td>
-<p>DDCC Folder of the Paper Certificate</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCDocument.html" title="StructureDefinition/DDCCDocument">DDCC Document</a>
-               </td>
-               <td>
-<p>A <a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> is a document bundle containing the DDCC.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-DDCCSubmitHealthEventRequest.html" title="StructureDefinition/DDCCSubmitHealthEventRequest">DDCC Submit Health Event Request</a>
                </td>
                <td>
 <p>An <a href="StructureDefinition-DDCCSubmitHealthEventRequest.html">DDCC Submit Health Event Request</a> is a transaction bundle containing the content of health events which are being submitted under the <a href="transactions.html#submit-health-event">Submit Health Event</a> transaction.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCPatient.html" title="StructureDefinition/DDCCPatient">DDCC Patient</a>
-               </td>
-               <td>
-<p>A DDCCPatient should:</p>
-<ul>
-  <li><a name="028e9a48-e915-4ea6-b315-fa1ac6047209">​</a>if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of <a href="StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner">identifier.assigner</a> should be set to reference the <a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> resource associated to the PHA via the <a href="actors.html#who-pkd">WHO Public Key Directory</a></li>
-  <li>obeys who-ddcc-patient-1</li>
-</ul>
 </td>
             </tr>
             <tr>
@@ -426,12 +362,42 @@ Immunization resource.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCOrganization.html" title="StructureDefinition/DDCCOrganization">DDCC Organization</a>
+                  <a href="StructureDefinition-DDCCImmunizationRecommendation.html" title="StructureDefinition/DDCCImmunizationRecommendation">DDCC Immunization Recommendation</a>
                </td>
                <td>
-<p><a name="0e987d2c-cc09-4342-8dae-cd6e9d0d87ef">​</a>Abstraction for a DDCC Organization. There should be a DDCC Organization associated 
-to each public health authortiy (PHA) in the <a href="actors.html#who-pkd">WHO Public Key 
-Directory</a></p>
+<p>A DDCC Immunization Recommendation contains the content corresponding to when
+a patient should return for a booster shot.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCFolder.html" title="StructureDefinition/DDCCFolder">DDCC Folder</a>
+               </td>
+               <td>
+<p>DDCC Folder of the Paper Certificate</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCPractitionerRole.html" title="StructureDefinition/DDCCPractitionerRole">DDCC Practitioner Role</a>
+               </td>
+               <td>
+<p><a name="8593f4d6-4363-4d95-a2a8-baff61f476e6">​</a>Association of an <a href="StructureDefinition-DDCCPractitioner.html">DDCC Practitioner</a> to a 
+managing <a href="StructureDefinition-DDCCOrgaznization.html">DDCC Organization</a>, indicating 
+that an DDCC Practitioner is authorized by the public health authority (PHA) to 
+vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCPatient.html" title="StructureDefinition/DDCCPatient">DDCC Patient</a>
+               </td>
+               <td>
+<p>A DDCCPatient should:</p>
+<ul>
+  <li><a name="99e8146f-7c7e-44c3-9aef-5c9cdda20ca3">​</a>if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of <a href="StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner">identifier.assigner</a> should be set to reference the <a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> resource associated to the PHA via the <a href="actors.html#who-pkd">WHO Public Key Directory</a></li>
+  <li>obeys who-ddcc-patient-1</li>
+</ul>
 </td>
             </tr>
             <tr>
@@ -445,21 +411,12 @@ Directory</a></p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCPractitionerRole.html" title="StructureDefinition/DDCCPractitionerRole">DDCC Practitioner Role</a>
+                  <a href="StructureDefinition-DDCCOrganization.html" title="StructureDefinition/DDCCOrganization">DDCC Organization</a>
                </td>
                <td>
-<p><a name="2dc73a78-543b-4c57-971b-ec6282a9aca6">​</a>Association of an <a href="StructureDefinition-DDCCPractitioner.html">DDCC Practitioner</a> to a 
-managing <a href="StructureDefinition-DDCCOrgaznization.html">DDCC Organization</a>, indicating 
-that an DDCC Practitioner is authorized by the public health authority (PHA) to 
-vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCProvideDocumentBundle.html" title="StructureDefinition/DDCCProvideDocumentBundle">DDCC Provide Document Bundle</a>
-               </td>
-               <td>
-<p>DDCC Provide Document Bundle for ITI-65</p>
+<p><a name="077f2b69-293e-49dc-841e-b98bc2851b7f">​</a>Abstraction for a DDCC Organization. There should be a DDCC Organization associated 
+to each public health authortiy (PHA) in the <a href="actors.html#who-pkd">WHO Public Key 
+Directory</a></p>
 </td>
             </tr>
             <tr>
@@ -484,11 +441,54 @@ to add on the DDCC generator.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCImmunizationRecommendation.html" title="StructureDefinition/DDCCImmunizationRecommendation">DDCC Immunization Recommendation</a>
+                  <a href="StructureDefinition-DDCCProvideDocumentBundle.html" title="StructureDefinition/DDCCProvideDocumentBundle">DDCC Provide Document Bundle</a>
                </td>
                <td>
-<p>A DDCC Immunization Recommendation contains the content corresponding to when
-a patient should return for a booster shot.</p>
+<p>DDCC Provide Document Bundle for ITI-65</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCImmunization.html" title="StructureDefinition/DDCCImmunization">DDCC Immunization</a>
+               </td>
+               <td>
+<p>A DDCC Immunization contains the content corresponding to a row in the Vaccination 
+Events section of a Paper DDCC. While this is not a further profile of the International
+Patient Summary (IPS) Immunization resouce, this is intended to map into an IPS 
+Immunization resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCDocument.html" title="StructureDefinition/DDCCDocument">DDCC Document</a>
+               </td>
+               <td>
+<p>A <a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> is a document bundle containing the DDCC.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCDocumentReferenceQR.html" title="StructureDefinition/DDCCDocumentReferenceQR">DDCC DocumentReference return for QR</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCPractitioner.html" title="StructureDefinition/DDCCPractitioner">DDCC Practitioner</a>
+               </td>
+               <td>
+<p>Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to 
+vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCSubmitHealthEventResponse.html" title="StructureDefinition/DDCCSubmitHealthEventResponse">DDCC Submit Health Event Response</a>
+               </td>
+               <td>
+<p>A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the <a href="transactions.html#submit-health-event">Submit Health Event</a> transaction.</p>
 </td>
             </tr>
          </tbody>
@@ -505,18 +505,10 @@ a patient should return for a booster shot.</p>
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCVaccineMarketAuthorization.html" title="StructureDefinition/DDCCVaccineMarketAuthorization">DDCC Vaccine Market Authorization for Immunization</a>
+                  <a href="StructureDefinition-DDCCVaccineBrand.html" title="StructureDefinition/DDCCVaccineBrand">DDCC Vaccine Brand for Immunization</a>
                </td>
                <td>
-<p>DDCC Vaccine Market Authorization for Immunization</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCCountryOfVaccination.html" title="StructureDefinition/DDCCCountryOfVaccination">DDCC Country Of Vaccination for Immunization</a>
-               </td>
-               <td>
-<p>DDCC Country Of Vaccination for Immunization</p>
+<p>DDCC Vaccine Brand for Immunization</p>
 </td>
             </tr>
             <tr>
@@ -529,10 +521,18 @@ a patient should return for a booster shot.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCVaccineBrand.html" title="StructureDefinition/DDCCVaccineBrand">DDCC Vaccine Brand for Immunization</a>
+                  <a href="StructureDefinition-DDCCVaccineMarketAuthorization.html" title="StructureDefinition/DDCCVaccineMarketAuthorization">DDCC Vaccine Market Authorization for Immunization</a>
                </td>
                <td>
-<p>DDCC Vaccine Brand for Immunization</p>
+<p>DDCC Vaccine Market Authorization for Immunization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCCountryOfVaccination.html" title="StructureDefinition/DDCCCountryOfVaccination">DDCC Country Of Vaccination for Immunization</a>
+               </td>
+               <td>
+<p>DDCC Country Of Vaccination for Immunization</p>
 </td>
             </tr>
          </tbody>
@@ -549,10 +549,10 @@ a patient should return for a booster shot.</p>
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-who-ddcc-disease-targeted-covid-19.html" title="ValueSet/who-ddcc-disease-targeted-covid-19">WHO Disease or Agent Targeted (COVID-19)</a>
+                  <a href="ValueSet-DDCC-QR-Category-Usage-ValueSet.html" title="ValueSet/DDCC-QR-Category-Usage-ValueSet">ValueSet/DDCC-QR-Category-Usage-ValueSet</a>
                </td>
                <td>
-<p>WHO Disease or Agent Targeted List (COVID-19) from <a href="https://icd.who.int/browse11">ICD 11</a></p>
+<p>Categorization of QR codes by their business usage</p>
 </td>
             </tr>
             <tr>
@@ -565,18 +565,18 @@ a patient should return for a booster shot.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-who-ddcc-vaccines-covid-19.html" title="ValueSet/who-ddcc-vaccines-covid-19">WHO Vaccine List (COVID-19)</a>
+                  <a href="ValueSet-who-ddcc-disease-targeted-covid-19.html" title="ValueSet/who-ddcc-disease-targeted-covid-19">WHO Disease or Agent Targeted (COVID-19)</a>
                </td>
                <td>
-<p>WHO Vaccine List (COVID-19) from <a href="https://icd.who.int/browse11">ICD 11</a></p>
+<p>WHO Disease or Agent Targeted List (COVID-19) from <a href="https://icd.who.int/browse11">ICD 11</a></p>
 </td>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-DDCC-QR-Category-Usage-ValueSet.html" title="ValueSet/DDCC-QR-Category-Usage-ValueSet">ValueSet/DDCC-QR-Category-Usage-ValueSet</a>
+                  <a href="ValueSet-who-ddcc-vaccines-covid-19.html" title="ValueSet/who-ddcc-vaccines-covid-19">WHO Vaccine List (COVID-19)</a>
                </td>
                <td>
-<p>Categorization of QR codes by their business usage</p>
+<p>WHO Vaccine List (COVID-19) from <a href="https://icd.who.int/browse11">ICD 11</a></p>
 </td>
             </tr>
          </tbody>
@@ -593,18 +593,18 @@ a patient should return for a booster shot.</p>
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html" title="CodeSystem/DDCC-QR-Format-CodeSystem">DDCC QR Format Codes</a>
-               </td>
-               <td>
-<p>Possible formats available for QR data.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html" title="CodeSystem/DDCC-QR-Category-Usage-CodeSystem">DDCC QR Category Usage Codes</a>
                </td>
                <td>
 <p>Possible formats available for QR usage.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html" title="CodeSystem/DDCC-QR-Format-CodeSystem">DDCC QR Format Codes</a>
+               </td>
+               <td>
+<p>Possible formats available for QR data.</p>
 </td>
             </tr>
          </tbody>
@@ -649,7 +649,7 @@ a patient should return for a booster shot.</p>
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Immunization-DDCC-Immunization-Arabic.html" title="Immunization/DDCC-Immunization-Arabic">Example Immunization - DDCC-Immunization-Arabic</a>
+                  <a href="Organization-DDCC-Organization-Russian.html" title="Organization/DDCC-Organization-Russian">Example Organization - DDCC-Organization-Russian</a>
                </td>
                <td>
 
@@ -657,7 +657,7 @@ a patient should return for a booster shot.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-Example-Spanish.html" title="Bundle/Example-Spanish">Example Bundle - Example-Spanish</a>
+                  <a href="Patient-DDCC-Patient-French.html" title="Patient/DDCC-Patient-French">Example Patient - DDCC-Patient-French</a>
                </td>
                <td>
 
@@ -665,7 +665,7 @@ a patient should return for a booster shot.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Bundle-Example-Russian.html" title="Bundle/Example-Russian">Example Bundle - Example-Russian</a>
+                  <a href="Patient-DDCC-Patient-Spanish.html" title="Patient/DDCC-Patient-Spanish">Example Patient - DDCC-Patient-Spanish</a>
                </td>
                <td>
 
@@ -673,7 +673,7 @@ a patient should return for a booster shot.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-DDCC-Patient-Arabic.html" title="Patient/DDCC-Patient-Arabic">Example Patient - DDCC-Patient-Arabic</a>
+                  <a href="Bundle-Example-French.html" title="Bundle/Example-French">Example Bundle - Example-French</a>
                </td>
                <td>
 
@@ -681,7 +681,7 @@ a patient should return for a booster shot.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Organization-DDCC-Organization-Spanish.html" title="Organization/DDCC-Organization-Spanish">Example Organization - DDCC-Organization-Spanish</a>
+                  <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example.html" title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example">Example QuestionnaireResponse - DDCC-VS-QuestionnaireResponse-Example</a>
                </td>
                <td>
 
@@ -689,7 +689,15 @@ a patient should return for a booster shot.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Immunization-DDCC-Immunization-Chinese.html" title="Immunization/DDCC-Immunization-Chinese">Example Immunization - DDCC-Immunization-Chinese</a>
+                  <a href="Questionnaire-DDCCVSCoreDataSetQuestionnaire.html" title="Questionnaire/DDCCVSCoreDataSetQuestionnaire">DDCC Core Data Set Questionnaire </a>
+               </td>
+               <td>
+<p>DDCC Questionnaire for an Immunization event.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-DDCC-Patient-Chinese.html" title="Patient/DDCC-Patient-Chinese">Example Patient - DDCC-Patient-Chinese</a>
                </td>
                <td>
 
@@ -697,7 +705,7 @@ a patient should return for a booster shot.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Immunization-DDCC-Immunization-Russian.html" title="Immunization/DDCC-Immunization-Russian">Example Immunization - DDCC-Immunization-Russian</a>
+                  <a href="Immunization-DDCC-Immunization-French.html" title="Immunization/DDCC-Immunization-French">Example Immunization - DDCC-Immunization-French</a>
                </td>
                <td>
 
@@ -713,15 +721,7 @@ a patient should return for a booster shot.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-DDCC-Patient-Russian.html" title="Patient/DDCC-Patient-Russian">Example Patient - DDCC-Patient-Russian</a>
-               </td>
-               <td>
-
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Immunization-DDCC-Immunization-Spanish.html" title="Immunization/DDCC-Immunization-Spanish">Example Immunization - DDCC-Immunization-Spanish</a>
+                  <a href="Bundle-Example-English.html" title="Bundle/Example-English">Example Bundle - Example-English</a>
                </td>
                <td>
 
@@ -745,39 +745,7 @@ a patient should return for a booster shot.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-DDCC-Patient-French.html" title="Patient/DDCC-Patient-French">Example Patient - DDCC-Patient-French</a>
-               </td>
-               <td>
-
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-Example-English.html" title="Bundle/Example-English">Example Bundle - Example-English</a>
-               </td>
-               <td>
-
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Questionnaire-DDCCVSCoreDataSetQuestionnaire.html" title="Questionnaire/DDCCVSCoreDataSetQuestionnaire">DDCC Core Data Set Questionnaire </a>
-               </td>
-               <td>
-<p>DDCC Questionnaire for an Immunization event.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-Example-French.html" title="Bundle/Example-French">Example Bundle - Example-French</a>
-               </td>
-               <td>
-
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Organization-DDCC-Organization-Russian.html" title="Organization/DDCC-Organization-Russian">Example Organization - DDCC-Organization-Russian</a>
+                  <a href="Organization-DDCC-Organization-French.html" title="Organization/DDCC-Organization-French">Example Organization - DDCC-Organization-French</a>
                </td>
                <td>
 
@@ -793,7 +761,7 @@ a patient should return for a booster shot.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-DDCC-Patient-Chinese.html" title="Patient/DDCC-Patient-Chinese">Example Patient - DDCC-Patient-Chinese</a>
+                  <a href="Bundle-Example-Russian.html" title="Bundle/Example-Russian">Example Bundle - Example-Russian</a>
                </td>
                <td>
 
@@ -801,47 +769,7 @@ a patient should return for a booster shot.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Immunization-DDCC-Immunization-French.html" title="Immunization/DDCC-Immunization-French">Example Immunization - DDCC-Immunization-French</a>
-               </td>
-               <td>
-
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Bundle-Example-Arabic.html" title="Bundle/Example-Arabic">Example Bundle - Example-Arabic</a>
-               </td>
-               <td>
-
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example.html" title="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example">Example QuestionnaireResponse - DDCC-VS-QuestionnaireResponse-Example</a>
-               </td>
-               <td>
-
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Organization-DDCC-Organization-French.html" title="Organization/DDCC-Organization-French">Example Organization - DDCC-Organization-French</a>
-               </td>
-               <td>
-
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Patient-DDCC-Patient-Spanish.html" title="Patient/DDCC-Patient-Spanish">Example Patient - DDCC-Patient-Spanish</a>
-               </td>
-               <td>
-
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="Organization-DDCC-Organization-English.html" title="Organization/DDCC-Organization-English">Example Organization - DDCC-Organization-English</a>
+                  <a href="Bundle-Example-Spanish.html" title="Bundle/Example-Spanish">Example Bundle - Example-Spanish</a>
                </td>
                <td>
 
@@ -857,7 +785,79 @@ a patient should return for a booster shot.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
+                  <a href="Immunization-DDCC-Immunization-Chinese.html" title="Immunization/DDCC-Immunization-Chinese">Example Immunization - DDCC-Immunization-Chinese</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Immunization-DDCC-Immunization-Arabic.html" title="Immunization/DDCC-Immunization-Arabic">Example Immunization - DDCC-Immunization-Arabic</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Immunization-DDCC-Immunization-Spanish.html" title="Immunization/DDCC-Immunization-Spanish">Example Immunization - DDCC-Immunization-Spanish</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Immunization-DDCC-Immunization-Russian.html" title="Immunization/DDCC-Immunization-Russian">Example Immunization - DDCC-Immunization-Russian</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-DDCC-Organization-English.html" title="Organization/DDCC-Organization-English">Example Organization - DDCC-Organization-English</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-DDCC-Patient-Arabic.html" title="Patient/DDCC-Patient-Arabic">Example Patient - DDCC-Patient-Arabic</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-DDCC-Patient-Russian.html" title="Patient/DDCC-Patient-Russian">Example Patient - DDCC-Patient-Russian</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="Bundle-DDCC-TX-SHE-bundle-example-1.html" title="Bundle/DDCC-TX-SHE-bundle-example-1">Example Bundle - DDCC-TX-SHE-bundle-example-1</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-Example-Arabic.html" title="Bundle/Example-Arabic">Example Bundle - Example-Arabic</a>
+               </td>
+               <td>
+
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-DDCC-Organization-Spanish.html" title="Organization/DDCC-Organization-Spanish">Example Organization - DDCC-Organization-Spanish</a>
                </td>
                <td>
 
@@ -907,7 +907,7 @@ a patient should return for a booster shot.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jul 28, 2021 07:42+0000">2021-07-28</span>
+          IG &copy; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Jul 29, 2021 16:29+0000">2021-07-29</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
