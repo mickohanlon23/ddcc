@@ -1,98 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8df5984b-e9e9-4ef7-8b5b-0f363b681849"/>
+  <id value="48b33ae0-a92d-4746-a5ae-00829373dd4c"/>
   <meta>
-    <lastUpdated value="2021-07-28T07:42:39.663+00:00"/>
+    <lastUpdated value="2021-07-29T16:29:48.736+00:00"/>
   </meta>
   <type value="collection"/>
-  <entry>
-    <fullUrl value="https://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet"/>
-    <resource>
-      <ValueSet>
-        <id value="DDCC-QR-Format-ValueSet"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html">DDCC QR Format Codes v0.2.1 (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html">
-                <code>https://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-image"> </a>
-                  <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-image">image</a>
-                </td>
-                <td>Image</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-serialized"> </a>
-                  <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-serialized">serialized</a>
-                </td>
-                <td>Serialized QR Content</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet"/>
-        <version value="0.2.1"/>
-        <name value="DDCC_QR_Format_ValueSet"/>
-        <status value="active"/>
-        <date value="2021-07-28T07:42:39+00:00"/>
-        <publisher value="World Health Organization (WHO)"/>
-        <contact>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.who.int"/>
-          </telecom>
-        </contact>
-        <description value="Format of the representation of QR code"/>
-        <expansion>
-          <identifier value="urn:uuid:c54b269d-0ca9-425c-b46d-0e7a3e36bd58"/>
-          <timestamp value="2021-07-28T07:43:08+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="https://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem|0.2.1"/>
-          </parameter>
-          <contains>
-            <system value="https://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem"/>
-            <code value="image"/>
-            <display value="Image"/>
-          </contains>
-          <contains>
-            <system value="https://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem"/>
-            <code value="serialized"/>
-            <display value="Serialized QR Content"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
   <entry>
     <fullUrl value="https://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Category-Usage-ValueSet"/>
     <resource>
@@ -161,7 +74,7 @@
         <version value="0.2.1"/>
         <name value="DDCC_QR_Category_Usage_ValueSet"/>
         <status value="active"/>
-        <date value="2021-07-28T07:42:39+00:00"/>
+        <date value="2021-07-29T16:29:48+00:00"/>
         <publisher value="World Health Organization (WHO)"/>
         <contact>
           <telecom>
@@ -171,8 +84,8 @@
         </contact>
         <description value="Categorization of QR codes by their business usage"/>
         <expansion>
-          <identifier value="urn:uuid:832848ce-2508-4396-a6cc-150b6d80a7ae"/>
-          <timestamp value="2021-07-28T07:43:10+00:00"/>
+          <identifier value="urn:uuid:afe35e14-5cf3-4065-8d33-20223c3ff559"/>
+          <timestamp value="2021-07-29T16:30:14+00:00"/>
           <total value="4"/>
           <parameter>
             <name value="excludeNested"/>
@@ -201,6 +114,93 @@
             <system value="https://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem"/>
             <code value="au"/>
             <display value="AU"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet"/>
+    <resource>
+      <ValueSet>
+        <id value="DDCC-QR-Format-ValueSet"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html">DDCC QR Format Codes v0.2.1 (CodeSystem)</a>
+            </p>
+            <p>All codes from system 
+              <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html">
+                <code>https://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-image"> </a>
+                  <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-image">image</a>
+                </td>
+                <td>Image</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Format-CodeSystem-serialized"> </a>
+                  <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html#DDCC-QR-Format-CodeSystem-serialized">serialized</a>
+                </td>
+                <td>Serialized QR Content</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet"/>
+        <version value="0.2.1"/>
+        <name value="DDCC_QR_Format_ValueSet"/>
+        <status value="active"/>
+        <date value="2021-07-29T16:29:48+00:00"/>
+        <publisher value="World Health Organization (WHO)"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.who.int"/>
+          </telecom>
+        </contact>
+        <description value="Format of the representation of QR code"/>
+        <expansion>
+          <identifier value="urn:uuid:cfb99a64-b01b-4e6a-ae55-52f15f12bb2f"/>
+          <timestamp value="2021-07-29T16:30:14+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem|0.2.1"/>
+          </parameter>
+          <contains>
+            <system value="https://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem"/>
+            <code value="image"/>
+            <display value="Image"/>
+          </contains>
+          <contains>
+            <system value="https://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem"/>
+            <code value="serialized"/>
+            <display value="Serialized QR Content"/>
           </contains>
         </expansion>
       </ValueSet>
