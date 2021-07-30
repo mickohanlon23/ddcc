@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 20, errors = 133, warn = 66, info = 68 -->
+<!-- broken links = 20, errors = 167, warn = 70, info = 68 -->
 <head>
   <title>DDCC_VS : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for DDCC_VS</h1>
- <p>Generated Fri Jul 30 19:42:41 UTC 2021, FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = <a href="https://worldhealthorganization.github.io/ddcc">https://worldhealthorganization.github.io/ddcc</a> (<a href="https://worldhealthorganization.github.io/ddcc/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Fri Jul 30 19:49:46 UTC 2021, FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = <a href="https://worldhealthorganization.github.io/ddcc">https://worldhealthorganization.github.io/ddcc</a> (<a href="https://worldhealthorganization.github.io/ddcc/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.77</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.who.ddcc-vs, Canonical = https://worldhealthorganization.github.io/ddcc</td></tr>
@@ -40,14 +40,14 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://worldhealthorganization.github.io/ddcc (Problem #1 with package-list.json at https://worldhealthorganization.github.io/ddcc: https://worldhealthorganization.github.io/ddcc/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 20, errors = 133, warn = 66, info = 68</td></tr>
+ <tr><td>Summary:</td><td> broken links = 20, errors = 167, warn = 70, info = 68</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>28</b></td><td><b>30</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>30</b></td><td><b>32</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_Bundle-DDCC-TX-SHE-bundle-example-1"><b>/github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1</b></a></td><td><b>4</b></td><td><b>4</b></td><td><b>4</b></td>
@@ -181,11 +181,29 @@
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_input_resources_example-IPS-Immunization-Bundle"><b>/github/workspace/input/resources/example-IPS-Immunization-Bundle</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_maps_ddcc-to-coredataset.map"><b>/github/workspace/input/resources/maps/ddcc-to-coredataset.map</b></a></td><td><b>14</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_input_resources_maps_ddcc-to-eu-dcc.map"><b>/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map</b></a></td><td><b>18</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
 </table>
 <hr/>
 <a name="internal"> </a>
 <h2><a href="">n/a</a></h2>
  <table class="grid">
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/ddcc-to-eu-dcc.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/ddcc-to-eu-dcc.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/ddcc-to-coredataset.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/ddcc-to-coredataset.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
    <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/IPS-Immunization-Example-Bundle-01.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
@@ -301,64 +319,64 @@
      <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/DDCC-Organization-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-Example-French.html#d2e628b8-f91b-4666-8bfb-b4ef91e633ba">Bundle-Example-French.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 228, column 525</a></b></td><td><b>error</b></td><td><b>The link 'DDCC-Patient-Example-French' for &quot;DDCC-Patient-Example-French&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-Example-French.html#09d9c4e3-42c9-410d-93b4-2e9100217263">Bundle-Example-French.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 228, column 525</a></b></td><td><b>error</b></td><td><b>The link 'DDCC-Patient-Example-French' for &quot;DDCC-Patient-Example-French&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-Example-Russian.html#db0a887e-a799-48f9-95ae-e0155c108fc3">Bundle-Example-Russian.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 228, column 525</a></b></td><td><b>error</b></td><td><b>The link 'DDCC-Patient-Example-Russian' for &quot;DDCC-Patient-Example-Russian&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-Example-Russian.html#662d7d22-bac8-480d-ac01-e8ba3d7b909a">Bundle-Example-Russian.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 228, column 525</a></b></td><td><b>error</b></td><td><b>The link 'DDCC-Patient-Example-Russian' for &quot;DDCC-Patient-Example-Russian&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Bundle-Example-Spanish.html#7b98c412-9c57-4fb4-b293-f79533afd7f8">Bundle-Example-Spanish.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 228, column 525</a></b></td><td><b>error</b></td><td><b>The link 'DDCC-Patient-Example-Spanish' for &quot;DDCC-Patient-Example-Spanish&quot; cannot be resolved</b></td>
+     <td><b><a href="Bundle-Example-Spanish.html#a368ffd1-2498-4b55-af8d-496270c8b198">Bundle-Example-Spanish.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 228, column 525</a></b></td><td><b>error</b></td><td><b>The link 'DDCC-Patient-Example-Spanish' for &quot;DDCC-Patient-Example-Spanish&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Immunization-DDCC-Immunization-French.html#7db3c096-74dd-49dd-91c8-48590028ccac">Immunization-DDCC-Immunization-French.html#/html/body/div/div/div/div/div/div/p/a at Line 214, column 453</a></b></td><td><b>error</b></td><td><b>The link 'DDCC-Patient-Example-French' for &quot;DDCC-Patient-Example-French&quot; cannot be resolved</b></td>
+     <td><b><a href="Immunization-DDCC-Immunization-French.html#d064f6bd-00fd-4374-95d3-5f5aa1c3b099">Immunization-DDCC-Immunization-French.html#/html/body/div/div/div/div/div/div/p/a at Line 214, column 453</a></b></td><td><b>error</b></td><td><b>The link 'DDCC-Patient-Example-French' for &quot;DDCC-Patient-Example-French&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Immunization-DDCC-Immunization-Russian.html#ff302a1d-d7d6-4a23-a577-e2ec5f2c0f4b">Immunization-DDCC-Immunization-Russian.html#/html/body/div/div/div/div/div/div/p/a at Line 214, column 453</a></b></td><td><b>error</b></td><td><b>The link 'DDCC-Patient-Example-Russian' for &quot;DDCC-Patient-Example-Russian&quot; cannot be resolved</b></td>
+     <td><b><a href="Immunization-DDCC-Immunization-Russian.html#69c06fa0-38da-4e0b-8b8d-4d188b81338d">Immunization-DDCC-Immunization-Russian.html#/html/body/div/div/div/div/div/div/p/a at Line 214, column 453</a></b></td><td><b>error</b></td><td><b>The link 'DDCC-Patient-Example-Russian' for &quot;DDCC-Patient-Example-Russian&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="Immunization-DDCC-Immunization-Spanish.html#30e86db4-0f50-411d-8007-9c098b1398a5">Immunization-DDCC-Immunization-Spanish.html#/html/body/div/div/div/div/div/div/p/a at Line 214, column 453</a></b></td><td><b>error</b></td><td><b>The link 'DDCC-Patient-Example-Spanish' for &quot;DDCC-Patient-Example-Spanish&quot; cannot be resolved</b></td>
+     <td><b><a href="Immunization-DDCC-Immunization-Spanish.html#2debe795-29e9-428c-b2dc-6275ca76be36">Immunization-DDCC-Immunization-Spanish.html#/html/body/div/div/div/div/div/div/p/a at Line 214, column 453</a></b></td><td><b>error</b></td><td><b>The link 'DDCC-Patient-Example-Spanish' for &quot;DDCC-Patient-Example-Spanish&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-DDCCOrganization.html#7b9f4db7-581e-4eb6-88c7-da3999765f8f">StructureDefinition-DDCCOrganization.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 247, column 47</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+     <td><b><a href="StructureDefinition-DDCCOrganization.html#bfd06eb5-9e4d-49ed-be4b-c9c351e2324d">StructureDefinition-DDCCOrganization.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 247, column 47</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-DDCCPatient.html#d1ad282b-3f96-44f9-af8a-f9dd78cfd938">StructureDefinition-DDCCPatient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 248, column 129</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 83 targets)</b></td>
+     <td><b><a href="StructureDefinition-DDCCPatient.html#7d28262b-8f9f-4a8d-ac6a-8d9e59881236">StructureDefinition-DDCCPatient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 248, column 129</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 83 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-DDCCPatient.html#d1ad282b-3f96-44f9-af8a-f9dd78cfd938">StructureDefinition-DDCCPatient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 248, column 384</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+     <td><b><a href="StructureDefinition-DDCCPatient.html#7d28262b-8f9f-4a8d-ac6a-8d9e59881236">StructureDefinition-DDCCPatient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 248, column 384</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-DDCCPractitionerRole.html#fade6f7a-61ad-44f8-869e-d07ea469c2ee">StructureDefinition-DDCCPractitionerRole.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 237, column 11</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCOrgaznization.html' for &quot;DDCC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-DDCCPractitionerRole.html#db770322-4cfa-4ba3-b204-ab012f6c30fd">StructureDefinition-DDCCPractitionerRole.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 237, column 11</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCOrgaznization.html' for &quot;DDCC Organization&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="StructureDefinition-DDCCQuestionnaire.html#2b72a40a-c355-4f5a-ade6-8ab1608cd518">StructureDefinition-DDCCQuestionnaire.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 246, column 183</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-DDCCQuestionnaireResponse.html' for &quot;DDCC QuestionnaireResponse&quot; cannot be resolved</b></td>
+     <td><b><a href="StructureDefinition-DDCCQuestionnaire.html#3ae1423a-085a-448c-9ca8-dc996db92705">StructureDefinition-DDCCQuestionnaire.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 246, column 183</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-DDCCQuestionnaireResponse.html' for &quot;DDCC QuestionnaireResponse&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#b45cd3fc-1a13-440e-a4fb-b79fa7d804e7">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 321, column 153</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-DDCCQuestionnaireResponse.html' for &quot;DDCC QuestionnaireResponse&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#d7a6b76a-ef6d-49f7-977e-38b8bdfb5ac7">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 324, column 153</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-DDCCQuestionnaireResponse.html' for &quot;DDCC QuestionnaireResponse&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#f068ac97-5e0c-40af-aa28-0cec39bc6738">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 409, column 11</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCOrgaznization.html' for &quot;DDCC Organization&quot; cannot be resolved</b></td>
+     <td><b><a href="artifacts.html#9cb4a0ec-bcf6-4e49-9290-18f2aa65c9fa">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 412, column 11</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCOrgaznization.html' for &quot;DDCC Organization&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#f6d3b47b-8daf-4aa0-ba90-4a53d2cc2443">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 422, column 131</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 83 targets)</b></td>
+     <td><b><a href="artifacts.html#d4ab6cc5-90c8-42e1-a31a-b438adc94b9f">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 425, column 131</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner' for &quot;identifier.assigner&quot; cannot be resolved (valid targets: 83 targets)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#f6d3b47b-8daf-4aa0-ba90-4a53d2cc2443">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 422, column 386</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+     <td><b><a href="artifacts.html#d4ab6cc5-90c8-42e1-a31a-b438adc94b9f">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 425, column 386</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="artifacts.html#72f0262b-29bf-4144-bd78-1ba44f5caae6">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 444, column 47</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+     <td><b><a href="artifacts.html#8f40c878-a586-475a-90ac-2d00f1d374df">artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 447, column 47</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="dependencies.html#bcd95476-54b5-4de2-bc83-ff2293f55f4c">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 180, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;The International Patient Summary (IPS), published by the Health Level Seven International - Patient Care Work Group&quot; cannot be resolved</b></td>
+     <td><b><a href="dependencies.html#261bf38d-bf22-4a80-aaef-332398117106">dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 180, column 12</a></b></td><td><b>error</b></td><td><b>The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for &quot;The International Patient Summary (IPS), published by the Health Level Seven International - Patient Care Work Group&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="requirements.html#e59dfdf2-9e2c-4dcf-ab97-b6270ef6ed0d">requirements.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 179, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-SVC-Core-Data-Set.html' for &quot;Data Dictionary&quot; cannot be resolved</b></td>
+     <td><b><a href="requirements.html#bdbb385c-ebe2-4f13-87dc-c80a34a0c8d2">requirements.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 179, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-SVC-Core-Data-Set.html' for &quot;Data Dictionary&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#f403afca-2d8e-4f5a-99d3-060c454e8878">transactions.html#/html/body/div/div/div/div/div/div/p/a at Line 195, column 314</a></b></td><td><b>error</b></td><td><b>The link 'OperationDefinition-DDCC-QuestionnaireReponse-generateHealthCertificate.html' for &quot;Generate Health Certificate Operation&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#d3374471-90de-4aae-b64f-d3d10ebc5628">transactions.html#/html/body/div/div/div/div/div/div/p/a at Line 195, column 314</a></b></td><td><b>error</b></td><td><b>The link 'OperationDefinition-DDCC-QuestionnaireReponse-generateHealthCertificate.html' for &quot;Generate Health Certificate Operation&quot; cannot be resolved</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b><a href="transactions.html#f403afca-2d8e-4f5a-99d3-060c454e8878">transactions.html#/html/body/div/div/div/div/div/div/p/a at Line 195, column 457</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCQQuestionnaireResponse.html' for &quot;DDCC Questionnaire Response&quot; cannot be resolved</b></td>
+     <td><b><a href="transactions.html#d3374471-90de-4aae-b64f-d3d10ebc5628">transactions.html#/html/body/div/div/div/div/div/div/p/a at Line 195, column 457</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCQQuestionnaireResponse.html' for &quot;DDCC Questionnaire Response&quot; cannot be resolved</b></td>
    </tr>
 </table>
 <hr/>
@@ -1171,10 +1189,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">.identifier[0]</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder</b> <span id="sl238" class="flip" onclick="flip('l238')">Show Reasoning</span><div id="l238" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder<ul><li>.identifier[0]: discriminator = true and use.where(value = 'usual').exists()</li>, <li>.identifier[0]: discriminator = true and use.where(value = 'official').exists()</li></ul></div></td>
+     <td><b><a href="">.identifier[0]</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder</b> <span id="sl242" class="flip" onclick="flip('l242')">Show Reasoning</span><div id="l242" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder<ul><li>.identifier[0]: discriminator = true and use.where(value = 'usual').exists()</li>, <li>.identifier[0]: discriminator = true and use.where(value = 'official').exists()</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">.identifier[1]</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder</b> <span id="sl239" class="flip" onclick="flip('l239')">Show Reasoning</span><div id="l239" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder<ul><li>.identifier[1]: discriminator = true and use.where(value = 'usual').exists()</li>, <li>.identifier[1]: discriminator = true and use.where(value = 'official').exists()</li></ul></div></td>
+     <td><b><a href="">.identifier[1]</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder</b> <span id="sl243" class="flip" onclick="flip('l243')">Show Reasoning</span><div id="l243" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder<ul><li>.identifier[1]: discriminator = true and use.where(value = 'usual').exists()</li>, <li>.identifier[1]: discriminator = true and use.where(value = 'official').exists()</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>List.identifier:uniqueId: minimum required = 1, but only found 0 (from https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder)</b></td>
@@ -1291,10 +1309,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">.identifier[0]</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet</b> <span id="sl258" class="flip" onclick="flip('l258')">Show Reasoning</span><div id="l258" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet<ul><li>.identifier[0]: discriminator = true and use.where(value = 'usual').exists()</li>, <li>.identifier[0]: discriminator = true and use.where(value = 'official').exists()</li></ul></div></td>
+     <td><b><a href="">.identifier[0]</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet</b> <span id="sl262" class="flip" onclick="flip('l262')">Show Reasoning</span><div id="l262" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet<ul><li>.identifier[0]: discriminator = true and use.where(value = 'usual').exists()</li>, <li>.identifier[0]: discriminator = true and use.where(value = 'official').exists()</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">.identifier[1]</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet</b> <span id="sl259" class="flip" onclick="flip('l259')">Show Reasoning</span><div id="l259" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet<ul><li>.identifier[1]: discriminator = true and use.where(value = 'usual').exists()</li>, <li>.identifier[1]: discriminator = true and use.where(value = 'official').exists()</li></ul></div></td>
+     <td><b><a href="">.identifier[1]</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet</b> <span id="sl263" class="flip" onclick="flip('l263')">Show Reasoning</span><div id="l263" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet<ul><li>.identifier[1]: discriminator = true and use.where(value = 'usual').exists()</li>, <li>.identifier[1]: discriminator = true and use.where(value = 'official').exists()</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b></b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>List.extension: minimum required = 1, but only found 0 (from https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet)</b></td>
@@ -1400,7 +1418,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide.definition.resource[23].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+     <td><b>ImplementationGuide.definition.resource[25].name</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
    </tr>
 </table>
 <hr/>
@@ -1481,6 +1499,128 @@
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>Bundle.entry[1].resource.ofType(Immunization).vaccineCode.coding[0] (l41/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_maps_ddcc-to-coredataset.map"> </a>
+<h2><a href="StructureMap-ddcc-to-coredataset.html">/github/workspace/input/resources/maps/ddcc-to-coredataset.map.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuremap.html">StructureMap</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.where(url = 'http://who-int.github.io/svc/StructureMap/ddcc-to-coredataset')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/input/resources/maps/ddcc-to-coredataset.map.json - the canonical URL (https://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-coredataset) does not match the URL (http://who-int.github.io/svc/StructureMap/ddcc-to-coredataset)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureMap</b></td><td><b>warning</b></td><td title="smp-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>smp-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_DDCC_to_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[0].rule[0].rule[0].dependent[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_Patient_To_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[0].rule[1].rule[0].dependent[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_Immunization_To_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[1].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_Patient_To_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_Immunization_To_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[0].rule[2].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Target Disease' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[3].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Vaccine Brand' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[4].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Vaccine Code' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[5].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Vaccination Centre' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[5].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Centre Name' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[6].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Vaccincation Event' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[6].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Vaccination Event ID' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/input/resources/maps/ddcc-to-coredataset.map</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-coredataset vs http://who-int.github.io/svc/StructureMap/ddcc-to-coredataset</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_input_resources_maps_ddcc-to-eu-dcc.map"> </a>
+<h2><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></h2>
+ <ul style="font-size: 7px"><li>StructureMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuremap.html">StructureMap</a></li></ul>
+
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.where(url = 'http://who-int.github.io/svc/StructureMap/ddcc-to-eu-dcc')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json - the canonical URL (https://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-eu-dcc) does not match the URL (http://who-int.github.io/svc/StructureMap/ddcc-to-eu-dcc)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureMap</b></td><td><b>warning</b></td><td title="smp-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>smp-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_DDCC_to_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[0].rule[1].rule[0].dependent[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_Patient_To_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[0].rule[2].rule[0].dependent[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_Immunization_To_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[1].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_Patient_To_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Decode_Immunization_To_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[0].rule[2].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Protocol Disease' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[0].rule[2].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Protocol Disease Code' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[3].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Vaccine Brand' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[3].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Vaccine Brand Code' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[4].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Vaccine Coding' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[4].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Vaccine Code' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[5].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Vaccination Centre' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[5].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Centre Name' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[6].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Vaccincation Event' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[6].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Vaccination Event ID' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureMap.group[2].rule[0].rule[6].rule[0].rule[0].name</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_ID_Valid"><b>id value 'Vaccination Event ID Value' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-eu-dcc vs http://who-int.github.io/svc/StructureMap/ddcc-to-eu-dcc</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
@@ -1615,6 +1755,12 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="StructureDefinition-DDCCCoreDataSetPoV.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV.json - the canonical URL (https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetPoV) does not match the URL (http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-coredataset.html">/github/workspace/input/resources/maps/ddcc-to-coredataset.map.json</a></td><td><b>Conformance resource /github/workspace/input/resources/maps/ddcc-to-coredataset.map.json - the canonical URL (https://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-coredataset) does not match the URL (http://who-int.github.io/svc/StructureMap/ddcc-to-coredataset)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></td><td><b>Conformance resource /github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json - the canonical URL (https://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-eu-dcc) does not match the URL (http://who-int.github.io/svc/StructureMap/ddcc-to-eu-dcc)</b></td>
    </tr>
 </table>
 <hr/>
@@ -1950,6 +2096,95 @@
  <table class="grid">
    <tr style="background-color: #ffeeee">
      <td><a href="Bundle-IPS-Immunization-Example-Bundle-01.html">/github/workspace/input/resources/example-IPS-Immunization-Bundle.json</a></td><td><b>The instant '2021-04-30' is not valid (by regex)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_ID_Valid"> </a>
+<h2>Type_Specific_Checks_DT_ID_Valid</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-coredataset.html">/github/workspace/input/resources/maps/ddcc-to-coredataset.map.json</a></td><td><b>id value 'Decode_DDCC_to_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-coredataset.html">/github/workspace/input/resources/maps/ddcc-to-coredataset.map.json</a></td><td><b>id value 'Decode_Patient_To_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-coredataset.html">/github/workspace/input/resources/maps/ddcc-to-coredataset.map.json</a></td><td><b>id value 'Decode_Immunization_To_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-coredataset.html">/github/workspace/input/resources/maps/ddcc-to-coredataset.map.json</a></td><td><b>id value 'Decode_Patient_To_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-coredataset.html">/github/workspace/input/resources/maps/ddcc-to-coredataset.map.json</a></td><td><b>id value 'Decode_Immunization_To_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-coredataset.html">/github/workspace/input/resources/maps/ddcc-to-coredataset.map.json</a></td><td><b>id value 'Target Disease' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-coredataset.html">/github/workspace/input/resources/maps/ddcc-to-coredataset.map.json</a></td><td><b>id value 'Vaccine Brand' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-coredataset.html">/github/workspace/input/resources/maps/ddcc-to-coredataset.map.json</a></td><td><b>id value 'Vaccine Code' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-coredataset.html">/github/workspace/input/resources/maps/ddcc-to-coredataset.map.json</a></td><td><b>id value 'Vaccination Centre' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-coredataset.html">/github/workspace/input/resources/maps/ddcc-to-coredataset.map.json</a></td><td><b>id value 'Centre Name' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-coredataset.html">/github/workspace/input/resources/maps/ddcc-to-coredataset.map.json</a></td><td><b>id value 'Vaccincation Event' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-coredataset.html">/github/workspace/input/resources/maps/ddcc-to-coredataset.map.json</a></td><td><b>id value 'Vaccination Event ID' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></td><td><b>id value 'Decode_DDCC_to_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></td><td><b>id value 'Decode_Patient_To_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></td><td><b>id value 'Decode_Immunization_To_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></td><td><b>id value 'Decode_Patient_To_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></td><td><b>id value 'Decode_Immunization_To_QR' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></td><td><b>id value 'Protocol Disease' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></td><td><b>id value 'Protocol Disease Code' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></td><td><b>id value 'Vaccine Brand' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></td><td><b>id value 'Vaccine Brand Code' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></td><td><b>id value 'Vaccine Coding' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></td><td><b>id value 'Vaccine Code' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></td><td><b>id value 'Vaccination Centre' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></td><td><b>id value 'Centre Name' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></td><td><b>id value 'Vaccincation Event' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></td><td><b>id value 'Vaccination Event ID' is not valid</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></td><td><b>id value 'Vaccination Event ID Value' is not valid</b></td>
    </tr>
 </table>
 <hr/>
