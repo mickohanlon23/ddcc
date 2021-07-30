@@ -12,7 +12,7 @@
   <version value="0.2.1"/>
   <name value="DDCCCoreDataSetCoC"/>
   <status value="draft"/>
-  <date value="2021-07-30T11:26:44+00:00"/>
+  <date value="2021-07-30T15:24:25+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -213,8 +213,8 @@
       <constraint>
         <key value="who-ddcc-data-1"/>
         <severity value="error"/>
-        <human value="Manufacturer or Marketer SHALL be present"/>
-        <expression value="manufacturer.exists() or marketer.exists()"/>
+        <human value="Manufacturer or Market Authorization Holder SHALL be present"/>
+        <expression value="manufacturer.exists() or maholder.exists()"/>
       </constraint>
     </element>
     <element id="DDCCCoreDataSet.vaccination.vaccine">
@@ -266,14 +266,14 @@
         <code value="Coding"/>
       </type>
     </element>
-    <element id="DDCCCoreDataSet.vaccination.marketer">
-      <path value="DDCCCoreDataSet.vaccination.marketer"/>
+    <element id="DDCCCoreDataSet.vaccination.maholder">
+      <path value="DDCCCoreDataSet.vaccination.maholder"/>
       <short value="Vaccine market authorization holder"/>
       <definition value="Name of the market authorization holder of the vaccine received. If market authorization holder is unknown, vaccine manufacturer is REQUIRED."/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="DDCCCoreDataSet.vaccination.marketer"/>
+        <path value="DDCCCoreDataSet.vaccination.maholder"/>
         <min value="0"/>
         <max value="1"/>
       </base>

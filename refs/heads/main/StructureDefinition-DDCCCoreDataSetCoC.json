@@ -9,7 +9,7 @@
   "version": "0.2.1",
   "name": "DDCCCoreDataSetCoC",
   "status": "draft",
-  "date": "2021-07-30T11:26:44+00:00",
+  "date": "2021-07-30T15:24:25+00:00",
   "publisher": "World Health Organization (WHO)",
   "contact": [
     {
@@ -261,8 +261,8 @@
           {
             "key": "who-ddcc-data-1",
             "severity": "error",
-            "human": "Manufacturer or Marketer SHALL be present",
-            "expression": "manufacturer.exists() or marketer.exists()"
+            "human": "Manufacturer or Market Authorization Holder SHALL be present",
+            "expression": "manufacturer.exists() or maholder.exists()"
           }
         ]
       },
@@ -325,14 +325,14 @@
         ]
       },
       {
-        "id": "DDCCCoreDataSet.vaccination.marketer",
-        "path": "DDCCCoreDataSet.vaccination.marketer",
+        "id": "DDCCCoreDataSet.vaccination.maholder",
+        "path": "DDCCCoreDataSet.vaccination.maholder",
         "short": "Vaccine market authorization holder",
         "definition": "Name of the market authorization holder of the vaccine received. If market authorization holder is unknown, vaccine manufacturer is REQUIRED.",
         "min": 0,
         "max": "1",
         "base": {
-          "path": "DDCCCoreDataSet.vaccination.marketer",
+          "path": "DDCCCoreDataSet.vaccination.maholder",
           "min": 0,
           "max": "1"
         },
