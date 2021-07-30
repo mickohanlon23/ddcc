@@ -16,7 +16,7 @@
   fhir:StructureDefinition.version [ fhir:value "0.2.1"];
   fhir:StructureDefinition.name [ fhir:value "DDCCCoreDataSetCoC"];
   fhir:StructureDefinition.status [ fhir:value "draft"];
-  fhir:StructureDefinition.date [ fhir:value "2021-07-30T11:26:44+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-07-30T15:24:25+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -271,8 +271,8 @@
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "who-ddcc-data-1" ];
          fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
-         fhir:ElementDefinition.constraint.human [ fhir:value "Manufacturer or Marketer SHALL be present" ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "manufacturer.exists() or marketer.exists()" ]
+         fhir:ElementDefinition.constraint.human [ fhir:value "Manufacturer or Market Authorization Holder SHALL be present" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "manufacturer.exists() or maholder.exists()" ]
        ]
      ], [
        fhir:index 8;
@@ -334,14 +334,14 @@
        ]
      ], [
        fhir:index 11;
-       fhir:Element.id [ fhir:value "DDCCCoreDataSet.vaccination.marketer" ];
-       fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.vaccination.marketer" ];
+       fhir:Element.id [ fhir:value "DDCCCoreDataSet.vaccination.maholder" ];
+       fhir:ElementDefinition.path [ fhir:value "DDCCCoreDataSet.vaccination.maholder" ];
        fhir:ElementDefinition.short [ fhir:value "Vaccine market authorization holder" ];
        fhir:ElementDefinition.definition [ fhir:value "Name of the market authorization holder of the vaccine received. If market authorization holder is unknown, vaccine manufacturer is REQUIRED." ];
        fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
-         fhir:ElementDefinition.base.path [ fhir:value "DDCCCoreDataSet.vaccination.marketer" ];
+         fhir:ElementDefinition.base.path [ fhir:value "DDCCCoreDataSet.vaccination.maholder" ];
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
          fhir:ElementDefinition.base.max [ fhir:value "1" ]
        ];
