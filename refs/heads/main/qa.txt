@@ -1,15 +1,15 @@
 ﻿DDCC_VS : Validation Results
 =========================================
 
-err = 110, warn = 67, info = 64
+err = 133, warn = 66, info = 68
 IG Publisher Version: 1.1.77
-Generated Fri Jul 30 17:17:36 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = https://worldhealthorganization.github.io/ddcc)
+Generated Fri Jul 30 19:42:41 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = https://worldhealthorganization.github.io/ddcc)
 
  Build Errors : 28 / 30 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 4 / 4 / 11
  /github/workspace/fsh-generated/resources/Bundle-Example-Arabic : 2 / 0 / 11
  /github/workspace/fsh-generated/resources/Bundle-Example-Chinese : 2 / 0 / 11
- /github/workspace/fsh-generated/resources/Bundle-Example-English : 5 / 0 / 14
+ /github/workspace/fsh-generated/resources/Bundle-Example-English : 28 / 0 / 19
  /github/workspace/fsh-generated/resources/Bundle-Example-French : 4 / 0 / 11
  /github/workspace/fsh-generated/resources/Bundle-Example-Russian : 4 / 0 / 11
  /github/workspace/fsh-generated/resources/Bundle-Example-Spanish : 4 / 0 / 11
@@ -44,7 +44,7 @@ Generated Fri Jul 30 17:17:36 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC : 3 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV : 3 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCountryOfVaccination : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocument : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocument : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReference : 5 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReferenceQR : 9 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCFolder : 6 / 0 / 4
@@ -162,7 +162,6 @@ INFORMATION: Bundle/Example-Chinese: Bundle.entry[2].resource.ofType(Immunizatio
 INFORMATION: Bundle/Example-Chinese: Bundle.entry[2].resource.ofType(Immunization).vaccineCode.coding[0]: Code System URI 'urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding' is unknown so the code cannot be validated
 INFORMATION: Bundle/Example-Chinese: Bundle.entry[2].resource.ofType(Immunization).protocolApplied[0].targetDisease[0].coding[0]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/Bundle-Example-English.json ==
-ERROR: Bundle/Example-English: Bundle: bdl-9: 'A document must have an identifier with a system and a value' Rule 'A document must have an identifier with a system and a value' Failed
 ERROR: Bundle/Example-English: Bundle: bdl-10: 'A document must have a date' Rule 'A document must have a date' Failed
 ERROR: Bundle/Example-English: Bundle.entry[0].resource.ofType(Composition).section[0]: Slicing cannot be evaluated: Could not match discriminator ([focus]) for slice Composition.section:vaccination in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition - the discriminator [focus] does not have fixed value, binding or existence assertions
 INFORMATION: Bundle/Example-English: Bundle.entry[0].resource.ofType(Composition): Composition.section:vaccination: Unable to check minimum required (Composition.section) due to lack of slicing validation (from https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition)
@@ -172,6 +171,34 @@ ERROR: Bundle/Example-English: Bundle.entry[3].resource.ofType(Immunization): Th
 INFORMATION: Bundle/Example-English: Bundle.entry[3].resource.ofType(Immunization).extension[1].value.ofType(code): The value provided ('CHE') is not in the value set http://hl7.org/fhir/ValueSet/iso3166-1-3 (http://hl7.org/fhir/ValueSet/iso3166-1-3), and a code is recommended to come from this value set) (error message = Not done yet @ TCountryCodeServices.Close (from http://tx.fhir.org/r4))
 INFORMATION: Bundle/Example-English: Bundle.entry[3].resource.ofType(Immunization).vaccineCode.coding[0]: Code System URI 'urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding' is unknown so the code cannot be validated
 INFORMATION: Bundle/Example-English: Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0].coding[0]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+ERROR: Bundle/Example-English: Bundle.entry[0]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccComposition in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[1]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccComposition in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[2]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccComposition in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[3]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccComposition in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[0]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccPatient in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[1]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccPatient in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[2]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccPatient in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[3]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccPatient in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[0]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccOrganization in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[1]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccOrganization in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[2]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccOrganization in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[3]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccOrganization in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[0]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccImmunization in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[1]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccImmunization in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[2]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccImmunization in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[3]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccImmunization in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[0]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccImmunizationRecommendation in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[1]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccImmunizationRecommendation in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[2]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccImmunizationRecommendation in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[3]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccImmunizationRecommendation in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[0]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccQR in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[1]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccQR in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[2]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccQR in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+ERROR: Bundle/Example-English: Bundle.entry[3]: Slicing cannot be evaluated: Could not match discriminator ([resource]) for slice Bundle.entry:ddccQR in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument - the discriminator [resource] does not have fixed value, binding or existence assertions
+INFORMATION: Bundle/Example-English: Bundle: Bundle.entry:ddccComposition: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument)
+INFORMATION: Bundle/Example-English: Bundle: Bundle.entry:ddccPatient: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument)
+INFORMATION: Bundle/Example-English: Bundle: Bundle.entry:ddccOrganization: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument)
+INFORMATION: Bundle/Example-English: Bundle: Bundle.entry:ddccImmunization: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument)
 == /github/workspace/fsh-generated/resources/Bundle-Example-French.json ==
 ERROR: Bundle/Example-French: Bundle.entry[2].resource.ofType(Immunization): The extension https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand is not allowed to be used at this point (allowed = e:DDCCImmunization; this element is [[Bundle.entry.resource.ofType(Immunization), BackboneElement.resource, Immunization])
 INFORMATION: Bundle/Example-French: Bundle.entry[2].resource.ofType(Immunization).extension[0].value.ofType(Coding): Code System URI 'urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding' is unknown so the code cannot be validated
@@ -312,7 +339,6 @@ ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDat
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocument.json ==
 ERROR: StructureDefinition/DDCCDocument: StructureDefinition.snapshot.element[15].slicing: ElementDefinition.slicing.rules: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
 ERROR: StructureDefinition/DDCCDocument: StructureDefinition.differential.element[4].slicing: ElementDefinition.slicing.rules: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ElementDefinition)
-WARNING: StructureDefinition.where(url = 'https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReference.json ==
 ERROR: DocumentReference/DDCCDocumentReference-genexample: : DocumentReference.masterIdentifier: minimum required = 1, but only found 0 (from https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference)
 ERROR: DocumentReference/DDCCDocumentReference-genexample: : DocumentReference.identifier: minimum required = 1, but only found 0 (from https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference)
