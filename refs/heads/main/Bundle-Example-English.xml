@@ -2,7 +2,60 @@
 
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="Example-English"/>
-  <type value="transaction"/>
+  <type value="document"/>
+  <entry>
+    <fullUrl value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"/>
+    <resource>
+      <Composition>
+        <id value="DDCC-Composition-Example-English"/>
+        <meta>
+          <profile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 999123456123456123456</p><p><b>status</b>: final</p><p><b>type</b>: <span title="Codes: {http://loinc.org 82593-5}">Immunization summary report</span></p><p><b>date</b>: 2020-05-22</p><p><b>author</b>: <a href="#Organization_DDCC-Organization-English">See above (Organization/DDCC-Organization-English)</a></p><p><b>title</b>: Digital Documentation of COVID-19 Certificate (DDCC)</p><h3>Attesters</h3><table class="grid"><tr><td>-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td>*</td><td>official</td><td><a href="#Organization_DDCC-Organization-English">See above (Organization/DDCC-Organization-English)</a></td></tr></table></div>
+        </text>
+        <identifier>
+          <system value="urn:EXAMPLE-who-:ddcc:composition:ids"/>
+          <value value="999123456123456123456"/>
+        </identifier>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="82593-5"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/DDCC-Patient-English"/>
+        </subject>
+        <date value="2020-05-22"/>
+        <author>
+          <reference value="Organization/DDCC-Organization-English"/>
+        </author>
+        <title value="Digital Documentation of COVID-19 Certificate (DDCC)"/>
+        <attester>
+          <mode value="official"/>
+          <party>
+            <reference value="Organization/DDCC-Organization-English"/>
+          </party>
+        </attester>
+        <section>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="11369-6"/>
+            </coding>
+          </code>
+          <focus>
+            <reference value="Immunization/DDCC-Immunization-English"/>
+          </focus>
+          <entry>
+            <reference value="Immunization/DDCC-Immunization-English"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://www.example.org/fhir/Patient/DDCC-Patient-English"/>
     <resource>
@@ -21,10 +74,6 @@
         <birthDate value="2003-03-03"/>
       </Patient>
     </resource>
-    <request>
-      <method value="PUT"/>
-      <url value="Patient"/>
-    </request>
   </entry>
   <entry>
     <fullUrl value="http://www.example.org/fhir/Patient/DDCC-Organization-English"/>
@@ -40,10 +89,6 @@
         <name value="Government Hospital"/>
       </Organization>
     </resource>
-    <request>
-      <method value="PUT"/>
-      <url value="Organization"/>
-    </request>
   </entry>
   <entry>
     <fullUrl value="http://www.example.org/fhir/Patient/DDCC-Immunization-English"/>
@@ -101,9 +146,5 @@
         </protocolApplied>
       </Immunization>
     </resource>
-    <request>
-      <method value="PUT"/>
-      <url value="Immunization"/>
-    </request>
   </entry>
 </Bundle>
