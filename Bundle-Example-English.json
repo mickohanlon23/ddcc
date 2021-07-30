@@ -1,8 +1,75 @@
 {
   "resourceType": "Bundle",
   "id": "Example-English",
-  "type": "transaction",
+  "type": "document",
   "entry": [
+    {
+      "fullUrl": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "DDCC-Composition-Example-English",
+        "meta": {
+          "profile": [
+            "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition"
+          ]
+        },
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 999123456123456123456</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 82593-5}\">Immunization summary report</span></p><p><b>date</b>: 2020-05-22</p><p><b>author</b>: <a href=\"#Organization_DDCC-Organization-English\">See above (Organization/DDCC-Organization-English)</a></p><p><b>title</b>: Digital Documentation of COVID-19 Certificate (DDCC)</p><h3>Attesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td>*</td><td>official</td><td><a href=\"#Organization_DDCC-Organization-English\">See above (Organization/DDCC-Organization-English)</a></td></tr></table></div>"
+        },
+        "identifier": {
+          "system": "urn:EXAMPLE-who-:ddcc:composition:ids",
+          "value": "999123456123456123456"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "82593-5"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/DDCC-Patient-English"
+        },
+        "date": "2020-05-22",
+        "author": [
+          {
+            "reference": "Organization/DDCC-Organization-English"
+          }
+        ],
+        "title": "Digital Documentation of COVID-19 Certificate (DDCC)",
+        "attester": [
+          {
+            "mode": "official",
+            "party": {
+              "reference": "Organization/DDCC-Organization-English"
+            }
+          }
+        ],
+        "section": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "11369-6"
+                }
+              ]
+            },
+            "focus": {
+              "reference": "Immunization/DDCC-Immunization-English"
+            },
+            "entry": [
+              {
+                "reference": "Immunization/DDCC-Immunization-English"
+              }
+            ]
+          }
+        ]
+      }
+    },
     {
       "fullUrl": "http://www.example.org/fhir/Patient/DDCC-Patient-English",
       "resource": {
@@ -24,10 +91,6 @@
           }
         ],
         "birthDate": "2003-03-03"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Patient"
       }
     },
     {
@@ -45,10 +108,6 @@
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>name</b>: Government Hospital</p></div>"
         },
         "name": "Government Hospital"
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Organization"
       }
     },
     {
@@ -122,10 +181,6 @@
             "seriesDosesPositiveInt": 2
           }
         ]
-      },
-      "request": {
-        "method": "PUT",
-        "url": "Immunization"
       }
     }
   ]

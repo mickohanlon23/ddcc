@@ -1,20 +1,21 @@
 ﻿DDCC_VS : Validation Results
 =========================================
 
-err = 106, warn = 66, info = 62
+err = 110, warn = 67, info = 64
 IG Publisher Version: 1.1.77
-Generated Thu Jul 29 16:30:47 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = https://worldhealthorganization.github.io/ddcc)
+Generated Fri Jul 30 11:25:24 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = https://worldhealthorganization.github.io/ddcc)
 
- Build Errors : 28 / 29 / 0
+ Build Errors : 28 / 30 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 4 / 4 / 11
  /github/workspace/fsh-generated/resources/Bundle-Example-Arabic : 2 / 0 / 11
  /github/workspace/fsh-generated/resources/Bundle-Example-Chinese : 2 / 0 / 11
- /github/workspace/fsh-generated/resources/Bundle-Example-English : 2 / 0 / 11
+ /github/workspace/fsh-generated/resources/Bundle-Example-English : 5 / 0 / 14
  /github/workspace/fsh-generated/resources/Bundle-Example-French : 4 / 0 / 11
  /github/workspace/fsh-generated/resources/Bundle-Example-Russian : 4 / 0 / 11
  /github/workspace/fsh-generated/resources/Bundle-Example-Spanish : 4 / 0 / 11
  /github/workspace/fsh-generated/resources/CodeSystem-DDCC-QR-Category-Usage-CodeSystem : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-DDCC-QR-Format-CodeSystem : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Composition-DDCC-Composition-Example-English : 1 / 0 / 3
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-vaccines : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-Arabic : 2 / 0 / 6
@@ -88,6 +89,7 @@ ERROR: Unable to find ImplementationGuide.definition.resource.name for the resou
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/DDCC-QR-Category-Usage-ValueSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/DDCC-Patient-Chinese.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/DDCC-Immunization-French.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Composition/DDCC-Composition-Example-English.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-Chinese.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-English.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource ValueSet/DDCC-QR-Format-ValueSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
@@ -160,12 +162,16 @@ INFORMATION: Bundle/Example-Chinese: Bundle.entry[2].resource.ofType(Immunizatio
 INFORMATION: Bundle/Example-Chinese: Bundle.entry[2].resource.ofType(Immunization).vaccineCode.coding[0]: Code System URI 'urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding' is unknown so the code cannot be validated
 INFORMATION: Bundle/Example-Chinese: Bundle.entry[2].resource.ofType(Immunization).protocolApplied[0].targetDisease[0].coding[0]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/Bundle-Example-English.json ==
-ERROR: Bundle/Example-English: Bundle.entry[2].resource.ofType(Immunization): The extension https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand is not allowed to be used at this point (allowed = e:DDCCImmunization; this element is [[Bundle.entry.resource.ofType(Immunization), BackboneElement.resource, Immunization])
-INFORMATION: Bundle/Example-English: Bundle.entry[2].resource.ofType(Immunization).extension[0].value.ofType(Coding): Code System URI 'urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding' is unknown so the code cannot be validated
-ERROR: Bundle/Example-English: Bundle.entry[2].resource.ofType(Immunization): The extension https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination is not allowed to be used at this point (allowed = e:DDCCImmunization; this element is [[Bundle.entry.resource.ofType(Immunization), BackboneElement.resource, Immunization])
-INFORMATION: Bundle/Example-English: Bundle.entry[2].resource.ofType(Immunization).extension[1].value.ofType(code): The value provided ('CHE') is not in the value set http://hl7.org/fhir/ValueSet/iso3166-1-3 (http://hl7.org/fhir/ValueSet/iso3166-1-3), and a code is recommended to come from this value set) (error message = Not done yet @ TCountryCodeServices.Close (from http://tx.fhir.org/r4))
-INFORMATION: Bundle/Example-English: Bundle.entry[2].resource.ofType(Immunization).vaccineCode.coding[0]: Code System URI 'urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding' is unknown so the code cannot be validated
-INFORMATION: Bundle/Example-English: Bundle.entry[2].resource.ofType(Immunization).protocolApplied[0].targetDisease[0].coding[0]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
+ERROR: Bundle/Example-English: Bundle: bdl-9: 'A document must have an identifier with a system and a value' Rule 'A document must have an identifier with a system and a value' Failed
+ERROR: Bundle/Example-English: Bundle: bdl-10: 'A document must have a date' Rule 'A document must have a date' Failed
+ERROR: Bundle/Example-English: Bundle.entry[0].resource.ofType(Composition).section[0]: Slicing cannot be evaluated: Could not match discriminator ([focus]) for slice Composition.section:vaccination in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition - the discriminator [focus] does not have fixed value, binding or existence assertions
+INFORMATION: Bundle/Example-English: Bundle.entry[0].resource.ofType(Composition): Composition.section:vaccination: Unable to check minimum required (Composition.section) due to lack of slicing validation (from https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition)
+ERROR: Bundle/Example-English: Bundle.entry[3].resource.ofType(Immunization): The extension https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand is not allowed to be used at this point (allowed = e:DDCCImmunization; this element is [[Bundle.entry.resource.ofType(Immunization), BackboneElement.resource, Immunization])
+INFORMATION: Bundle/Example-English: Bundle.entry[3].resource.ofType(Immunization).extension[0].value.ofType(Coding): Code System URI 'urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding' is unknown so the code cannot be validated
+ERROR: Bundle/Example-English: Bundle.entry[3].resource.ofType(Immunization): The extension https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination is not allowed to be used at this point (allowed = e:DDCCImmunization; this element is [[Bundle.entry.resource.ofType(Immunization), BackboneElement.resource, Immunization])
+INFORMATION: Bundle/Example-English: Bundle.entry[3].resource.ofType(Immunization).extension[1].value.ofType(code): The value provided ('CHE') is not in the value set http://hl7.org/fhir/ValueSet/iso3166-1-3 (http://hl7.org/fhir/ValueSet/iso3166-1-3), and a code is recommended to come from this value set) (error message = Not done yet @ TCountryCodeServices.Close (from http://tx.fhir.org/r4))
+INFORMATION: Bundle/Example-English: Bundle.entry[3].resource.ofType(Immunization).vaccineCode.coding[0]: Code System URI 'urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding' is unknown so the code cannot be validated
+INFORMATION: Bundle/Example-English: Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0].coding[0]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/Bundle-Example-French.json ==
 ERROR: Bundle/Example-French: Bundle.entry[2].resource.ofType(Immunization): The extension https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand is not allowed to be used at this point (allowed = e:DDCCImmunization; this element is [[Bundle.entry.resource.ofType(Immunization), BackboneElement.resource, Immunization])
 INFORMATION: Bundle/Example-French: Bundle.entry[2].resource.ofType(Immunization).extension[0].value.ofType(Coding): Code System URI 'urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding' is unknown so the code cannot be validated
@@ -195,6 +201,9 @@ ERROR: Bundle/Example-Spanish: Bundle.entry[2].resource.ofType(Immunization).pat
 INFORMATION: Bundle/Example-Spanish: Bundle.entry[2].resource.ofType(Immunization).protocolApplied[0].targetDisease[0].coding[0]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
 == /github/workspace/fsh-generated/resources/CodeSystem-DDCC-QR-Category-Usage-CodeSystem.json ==
 == /github/workspace/fsh-generated/resources/CodeSystem-DDCC-QR-Format-CodeSystem.json ==
+== /github/workspace/fsh-generated/resources/Composition-DDCC-Composition-Example-English.json ==
+ERROR: Composition/DDCC-Composition-Example-English: Composition.section[0]: Slicing cannot be evaluated: Could not match discriminator ([focus]) for slice Composition.section:vaccination in profile https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition - the discriminator [focus] does not have fixed value, binding or existence assertions
+INFORMATION: Composition/DDCC-Composition-Example-English: Composition: Composition.section:vaccination: Unable to check minimum required (Composition.section) due to lack of slicing validation (from https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition)
 == /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.json ==
 WARNING: ConceptMap/who-ddcc-map-icd11-sct-disease-targeted: ConceptMap: cmd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-vaccines.json ==
