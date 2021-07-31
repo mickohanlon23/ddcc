@@ -1,11 +1,11 @@
 ﻿DDCC_VS : Validation Results
 =========================================
 
-err = 167, warn = 70, info = 68
+err = 173, warn = 74, info = 68
 IG Publisher Version: 1.1.77
-Generated Fri Jul 30 19:49:47 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = https://worldhealthorganization.github.io/ddcc)
+Generated Sat Jul 31 04:25:41 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = https://worldhealthorganization.github.io/ddcc)
 
- Build Errors : 30 / 32 / 0
+ Build Errors : 32 / 32 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 4 / 4 / 11
  /github/workspace/fsh-generated/resources/Bundle-Example-Arabic : 2 / 0 / 11
  /github/workspace/fsh-generated/resources/Bundle-Example-Chinese : 2 / 0 / 11
@@ -71,6 +71,8 @@ Generated Fri Jul 30 19:49:47 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/input/ddcc : 0 / 1 / 1
  /github/workspace/input/ips-preadopted/Immunization-uv-ips.structuredefinition : 0 / 1 / 1
  /github/workspace/input/ips-preadopted/Patient-uv-ips.structuredefinition : 0 / 1 / 1
+ /github/workspace/input/resources/StructureDefinition-HC1 : 2 / 2 / 1
+ /github/workspace/input/resources/StructureDefinition-HC1-v : 2 / 2 / 1
  /github/workspace/input/resources/capabilitystatement-WHO-DDCC-Generator : 1 / 1 / 1
  /github/workspace/input/resources/capabilitystatement-WHO-DDCC-Registry-Service : 1 / 1 / 1
  /github/workspace/input/resources/example-IPS-Immunization-Bundle : 3 / 0 / 4
@@ -120,6 +122,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureDefinition/DDCCCoreDataSetPoV.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Organization/DDCC-Organization-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: http://hl7.org/fhir/R4/: The reference http://hl7.eu/fhir/ig/dcc/StructureDefinition/t could not be resolved
+ERROR: http://hl7.org/fhir/R4/: The reference http://hl7.eu/fhir/ig/dcc/StructureDefinition/r could not be resolved
 ERROR: /github/workspace/output/Bundle-Example-French.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 228, column 525: The link 'DDCC-Patient-Example-French' for "DDCC-Patient-Example-French" cannot be resolved
 ERROR: /github/workspace/output/Bundle-Example-Russian.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 228, column 525: The link 'DDCC-Patient-Example-Russian' for "DDCC-Patient-Example-Russian" cannot be resolved
 ERROR: /github/workspace/output/Bundle-Example-Spanish.html#/html/body/div/div/div/div/div/div/blockquote/p/a at Line 228, column 525: The link 'DDCC-Patient-Example-Spanish' for "DDCC-Patient-Example-Spanish" cannot be resolved
@@ -131,11 +135,11 @@ ERROR: /github/workspace/output/StructureDefinition-DDCCPatient.html#/html/body/
 ERROR: /github/workspace/output/StructureDefinition-DDCCPatient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 248, column 384: The link 'actors.html#who-pkd' for "WHO Public Key Directory" cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])
 ERROR: /github/workspace/output/StructureDefinition-DDCCPractitionerRole.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 237, column 11: The link 'StructureDefinition-DDCCOrgaznization.html' for "DDCC Organization" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaire.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 246, column 183: The link 'StructureDefintion-DDCCQuestionnaireResponse.html' for "DDCC QuestionnaireResponse" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 324, column 153: The link 'StructureDefintion-DDCCQuestionnaireResponse.html' for "DDCC QuestionnaireResponse" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 412, column 11: The link 'StructureDefinition-DDCCOrgaznization.html' for "DDCC Organization" cannot be resolved
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 425, column 131: The link 'StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner' for "identifier.assigner" cannot be resolved (valid targets: 83 targets)
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 425, column 386: The link 'actors.html#who-pkd' for "WHO Public Key Directory" cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])
-ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 447, column 47: The link 'actors.html#who-pkd' for "WHO Public Key Directory" cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 340, column 153: The link 'StructureDefintion-DDCCQuestionnaireResponse.html' for "DDCC QuestionnaireResponse" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 428, column 11: The link 'StructureDefinition-DDCCOrgaznization.html' for "DDCC Organization" cannot be resolved
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 441, column 131: The link 'StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner' for "identifier.assigner" cannot be resolved (valid targets: 83 targets)
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/ul/li/a at Line 441, column 386: The link 'actors.html#who-pkd' for "WHO Public Key Directory" cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])
+ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/div/div/div/div/p/table/tbody/tr/td/p/a at Line 463, column 47: The link 'actors.html#who-pkd' for "WHO Public Key Directory" cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])
 ERROR: /github/workspace/output/dependencies.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 180, column 12: The link 'http://hl7.org/fhir/uv/ips/2018Sep/index.html' for "The International Patient Summary (IPS), published by the Health Level Seven International - Patient Care Work Group" cannot be resolved
 ERROR: /github/workspace/output/requirements.html#/html/body/div/div/div/div/div/div/p/ul/li/a at Line 179, column 12: The link 'StructureDefinition-SVC-Core-Data-Set.html' for "Data Dictionary" cannot be resolved
 ERROR: /github/workspace/output/transactions.html#/html/body/div/div/div/div/div/div/p/a at Line 195, column 314: The link 'OperationDefinition-DDCC-QuestionnaireReponse-generateHealthCertificate.html' for "Generate Health Certificate Operation" cannot be resolved
@@ -421,11 +425,21 @@ WARNING: ValueSet.where(id = 'who-ddcc-disease-targeted-covid-19'): Error from s
 WARNING: ValueSet/who-ddcc-vaccines-covid-19: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'who-ddcc-vaccines-covid-19'): Error from server: Unable to provide support for code system http://id.who.int/icd11/mms
 == /github/workspace/input/ddcc.xml ==
-WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[25].name: value should not start or finish with whitespace
+WARNING: ImplementationGuide/fhir.who.ddcc-vs: ImplementationGuide.definition.resource[27].name: value should not start or finish with whitespace
 == /github/workspace/input/ips-preadopted/Immunization-uv-ips.structuredefinition.xml ==
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips'): The Implementation Guide contains no examples for this profile
 == /github/workspace/input/ips-preadopted/Patient-uv-ips.structuredefinition.xml ==
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-pre-uv-ips'): The Implementation Guide contains no examples for this profile
+== /github/workspace/input/resources/StructureDefinition-HC1.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/dcc/StructureDefinition/HC1'): Conformance resource /github/workspace/input/resources/StructureDefinition-HC1.json - the canonical URL (https://worldhealthorganization.github.io/ddcc/StructureDefinition/HC1) does not match the URL (http://hl7.eu/fhir/ig/dcc/StructureDefinition/HC1)
+WARNING: StructureDefinition/HC1: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: StructureDefinition/HC1: StructureDefinition.jurisdiction[0]: The display "Europe" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}001 - should be one of [World] (from http://tx.fhir.org/r4)
+ERROR: /github/workspace/input/resources/StructureDefinition-HC1: URL Mismatch https://worldhealthorganization.github.io/ddcc/StructureDefinition/HC1 vs http://hl7.eu/fhir/ig/dcc/StructureDefinition/HC1
+== /github/workspace/input/resources/StructureDefinition-HC1-v.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.eu/fhir/ig/dcc/StructureDefinition/v'): Conformance resource /github/workspace/input/resources/StructureDefinition-HC1-v.json - the canonical URL (https://worldhealthorganization.github.io/ddcc/StructureDefinition/v) does not match the URL (http://hl7.eu/fhir/ig/dcc/StructureDefinition/v)
+WARNING: StructureDefinition/v: StructureDefinition: sdf-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: StructureDefinition/v: StructureDefinition.jurisdiction[0]: The display "Europe" is not a valid display for the code {http://unstats.un.org/unsd/methods/m49/m49.htm}001 - should be one of [World] (from http://tx.fhir.org/r4)
+ERROR: /github/workspace/input/resources/StructureDefinition-HC1-v: URL Mismatch https://worldhealthorganization.github.io/ddcc/StructureDefinition/v vs http://hl7.eu/fhir/ig/dcc/StructureDefinition/v
 == /github/workspace/input/resources/capabilitystatement-WHO-DDCC-Generator.xml ==
 ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
 WARNING: CapabilityStatement/WHO.DDCC.Generator: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
