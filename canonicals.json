@@ -1,19 +1,5 @@
 [
   {
-    "id": "HC1",
-    "type": "StructureDefinition",
-    "url": "http://hl7.eu/fhir/ig/dcc/StructureDefinition/HC1",
-    "version": "0.2.1",
-    "name": "dcc"
-  },
-  {
-    "id": "v",
-    "type": "StructureDefinition",
-    "url": "http://hl7.eu/fhir/ig/dcc/StructureDefinition/v",
-    "version": "0.2.1",
-    "name": "v"
-  },
-  {
     "id": "Immunization-pre-uv-ips",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips",
@@ -28,13 +14,6 @@
     "name": "PatientUvIps"
   },
   {
-    "id": "ddcc-to-coredataset",
-    "type": "StructureMap",
-    "url": "http://who-int.github.io/svc/StructureMap/ddcc-to-coredataset",
-    "version": "0.2.1",
-    "name": "ddcc-to-coredataset"
-  },
-  {
     "id": "ddcc-to-eu-dcc",
     "type": "StructureMap",
     "url": "http://who-int.github.io/svc/StructureMap/ddcc-to-eu-dcc",
@@ -42,25 +21,11 @@
     "name": "ddcc-to-eu-dcc"
   },
   {
-    "id": "DDCCCoreDataSetCoC",
-    "type": "StructureDefinition",
-    "url": "http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetCoC",
+    "id": "ddcc-to-coredataset",
+    "type": "StructureMap",
+    "url": "https://who-int.github.io/svc/StructureMap/ddcc-to-coredataset",
     "version": "0.2.1",
-    "name": "DDCCCoreDataSetCoC"
-  },
-  {
-    "id": "DDCCCoreDataSetPoV",
-    "type": "StructureDefinition",
-    "url": "http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV",
-    "version": "0.2.1",
-    "name": "DDCCCoreDataSetPoV"
-  },
-  {
-    "id": "DDCCVSCoreDataSetQuestionnaire",
-    "type": "Questionnaire",
-    "url": "http://worldhealthorganization.github.io/ddcc/DDCCVSCoreDataSetQuestionnaire",
-    "version": "0.2.1",
-    "name": "DDCCCoreDataSetQuestionnaire"
+    "name": "ddcc-to-coredataset"
   },
   {
     "id": "WHO.DDCC.Generator",
@@ -105,6 +70,13 @@
     "name": "ICD-11 to SNOMED CT mappings for COVID-19 vaccines"
   },
   {
+    "id": "DDCCVSCoreDataSetQuestionnaire",
+    "type": "Questionnaire",
+    "url": "https://worldhealthorganization.github.io/ddcc/DDCCVSCoreDataSetQuestionnaire",
+    "version": "0.2.1",
+    "name": "DDCCCoreDataSetQuestionnaire"
+  },
+  {
     "id": "fhir.who.ddcc-vs",
     "type": "ImplementationGuide",
     "url": "https://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs",
@@ -131,6 +103,20 @@
     "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition",
     "version": "0.2.1",
     "name": "DDCCComposition"
+  },
+  {
+    "id": "DDCCCoreDataSetCoC",
+    "type": "StructureDefinition",
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetCoC",
+    "version": "0.2.1",
+    "name": "DDCCCoreDataSetCoC"
+  },
+  {
+    "id": "DDCCCoreDataSetPoV",
+    "type": "StructureDefinition",
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetPoV",
+    "version": "0.2.1",
+    "name": "DDCCCoreDataSetPoV"
   },
   {
     "id": "DDCCCountryOfVaccination",
@@ -194,6 +180,13 @@
     "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization",
     "version": "0.2.1",
     "name": "DDCCOrganization"
+  },
+  {
+    "id": "DDCCOrganizationIdentifier",
+    "type": "StructureDefinition",
+    "url": "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganizationIdentifier",
+    "version": "0.2.1",
+    "name": "DDCCOrganizationIdentifier"
   },
   {
     "id": "DDCCPatient",

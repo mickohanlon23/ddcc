@@ -13,7 +13,7 @@ uses &quot;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DD
 uses &quot;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand&quot; alias DDCCVaccineBrand as source
 uses &quot;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization&quot; alias DDCCOrganization as source
 uses &quot;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization&quot; alias DDCCImmunization as source
-uses &quot;http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV&quot; alias DDCCCoreDataSetPoV as target
+uses &quot;https://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV&quot; alias DDCCCoreDataSetPoV as target
 
 group Decode_DDCC_to_QR(source ddcc : DDCCDocument, target qr : DDCCCoreDataSetPoV) {
   ddcc.entry as entry then {
@@ -70,11 +70,11 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
 
 </pre></div>
   </text>
-  <url value="http://who-int.github.io/svc/StructureMap/ddcc-to-coredataset"/>
+  <url value="https://who-int.github.io/svc/StructureMap/ddcc-to-coredataset"/>
   <version value="0.2.1"/>
   <name value="ddcc-to-coredataset"/>
   <status value="draft"/>
-  <date value="2021-07-31T04:24:29+00:00"/>
+  <date value="2021-08-02T14:46:24+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -123,7 +123,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
     <alias value="DDCCImmunization"/>
   </structure>
   <structure>
-    <url value="http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV"/>
+    <url value="https://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV"/>
     <mode value="target"/>
     <alias value="DDCCCoreDataSetPoV"/>
   </structure>

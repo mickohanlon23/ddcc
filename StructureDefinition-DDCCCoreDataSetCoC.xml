@@ -8,11 +8,11 @@
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-DDCCCoreDataSetCoC-definitions.html#DDCCCoreDataSet.vaccination.centre" title="The name or identifier of the vaccination facility responsible for providing the vaccination.">centre</a><a name="DDCCCoreDataSet.vaccination.centre"> </a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Administering centre</td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
-  <url value="http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetCoC"/>
+  <url value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetCoC"/>
   <version value="0.2.1"/>
   <name value="DDCCCoreDataSetCoC"/>
   <status value="draft"/>
-  <date value="2021-07-31T04:24:29+00:00"/>
+  <date value="2021-08-02T14:46:24+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -30,7 +30,7 @@
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="DDCCCoreDataSet"/>
-  <baseDefinition value="http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV"/>
+  <baseDefinition value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetPoV"/>
   <derivation value="specialization"/>
   <snapshot>
     <element id="DDCCCoreDataSet">
@@ -311,14 +311,14 @@
         <code value="date"/>
       </type>
     </element>
-    <element id="DDCCCoreDataSet.vaccination.valid-from">
-      <path value="DDCCCoreDataSet.vaccination.valid_from"/>
+    <element id="DDCCCoreDataSet.vaccination.validFrom">
+      <path value="DDCCCoreDataSet.vaccination.validFrom"/>
       <short value="Vaccination valid from"/>
       <definition value="Date upon which provided vaccination is considered valid."/>
       <min value="0"/>
       <max value="1"/>
       <base>
-        <path value="DDCCCoreDataSet.vaccination.valid_from"/>
+        <path value="DDCCCoreDataSet.vaccination.validFrom"/>
         <min value="0"/>
         <max value="1"/>
       </base>
@@ -457,6 +457,7 @@
     <element id="DDCCCoreDataSet.vaccination.period">
       <path value="DDCCCoreDataSet.vaccination.period"/>
       <short value="Certificate Validity Period"/>
+      <definition value="Certificate valifity period"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -471,6 +472,7 @@
     <element id="DDCCCoreDataSet.vaccination.period.start">
       <path value="DDCCCoreDataSet.vaccination.period.start"/>
       <short value="Certificate valid from"/>
+      <definition value="Start date of certificate validity"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -485,6 +487,7 @@
     <element id="DDCCCoreDataSet.vaccination.period.end">
       <path value="DDCCCoreDataSet.vaccination.period.end"/>
       <short value="Certificate valid until"/>
+      <definition value="End date of certificate validity"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -514,6 +517,7 @@
     <element id="DDCCCoreDataSet.certificate.issuer">
       <path value="DDCCCoreDataSet.certificate.issuer"/>
       <short value="Certificate issuer"/>
+      <definition value="Certificate issuer"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -523,12 +527,13 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/shc-organization"/>
+        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
       </type>
     </element>
     <element id="DDCCCoreDataSet.certificate.hcid">
       <path value="DDCCCoreDataSet.certificate.hcid"/>
       <short value="Health certificate identifier (HCID)"/>
+      <definition value="health certificate identifier"/>
       <min value="1"/>
       <max value="1"/>
       <base>
@@ -543,6 +548,7 @@
     <element id="DDCCCoreDataSet.certificate.version">
       <path value="DDCCCoreDataSet.certificate.version"/>
       <short value="Certificate schema version"/>
+      <definition value="certificate schema version"/>
       <min value="1"/>
       <max value="1"/>
       <base>

@@ -21,25 +21,30 @@
      fhir:Identifier.value [ fhir:value "9990123012301230123" ]
   ];
   fhir:Bundle.type [ fhir:value "document"];
+  fhir:Bundle.timestamp [ fhir:value "2021-06-03T13:28:17-05:00"^^xsd:dateTime];
   fhir:Bundle.entry [
      fhir:index 0;
-     fhir:Bundle.entry.fullUrl [ fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition" ];
-     fhir:Bundle.entry.resource <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition>
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/Organization/DDCCComposition" ];
+     fhir:Bundle.entry.resource <http://www.example.org/fhir/Organization/DDCCComposition>
   ], [
      fhir:index 1;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/Patient/DDCC-Patient-English" ];
      fhir:Bundle.entry.resource <http://www.example.org/fhir/Patient/DDCC-Patient-English>
   ], [
      fhir:index 2;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/Patient/DDCC-Organization-English" ];
-     fhir:Bundle.entry.resource <http://www.example.org/fhir/Patient/DDCC-Organization-English>
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/Organization/DDCC-Organization-English" ];
+     fhir:Bundle.entry.resource <http://www.example.org/fhir/Organization/DDCC-Organization-English>
   ], [
      fhir:index 3;
-     fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/Patient/DDCC-Immunization-English" ];
-     fhir:Bundle.entry.resource <http://www.example.org/fhir/Patient/DDCC-Immunization-English>
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/Immunization/DDCC-Immunization-English" ];
+     fhir:Bundle.entry.resource <http://www.example.org/fhir/Immunization/DDCC-Immunization-English>
+  ], [
+     fhir:index 4;
+     fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/ImmunizationReccomendation/DDCC-ImmunizationRecommendation-English" ];
+     fhir:Bundle.entry.resource <http://www.example.org/fhir/ImmunizationReccomendation/DDCC-ImmunizationRecommendation-English>
   ] .
 
-<https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition> a fhir:Composition;
+<http://www.example.org/fhir/Organization/DDCCComposition> a fhir:Composition;
   fhir:Resource.id [ fhir:value "DDCC-Composition-Example-English"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -50,9 +55,10 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 999123456123456123456</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 82593-5}\">Immunization summary report</span></p><p><b>date</b>: 2020-05-22</p><p><b>author</b>: <a href=\"#Organization_DDCC-Organization-English\">See above (Organization/DDCC-Organization-English)</a></p><p><b>title</b>: Digital Documentation of COVID-19 Certificate (DDCC)</p><h3>Attesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td>*</td><td>official</td><td><a href=\"#Organization_DDCC-Organization-English\">See above (Organization/DDCC-Organization-English)</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: 999123456123456123456 (OFFICIAL)</p><p><b>status</b>: final</p><p><b>type</b>: <span title=\"Codes: {http://loinc.org 82593-5}\">Immunization summary report</span></p><p><b>date</b>: 2020-05-06</p><p><b>author</b>: <a href=\"#Organization_DDCC-Organization-English\">See above (Organization/DDCC-Organization-English)</a></p><p><b>title</b>: Digital Documentation of COVID-19 Certificate (DDCC)</p><h3>Attesters</h3><table class=\"grid\"><tr><td>-</td><td><b>Mode</b></td><td><b>Party</b></td></tr><tr><td>*</td><td>official</td><td><a href=\"#Organization_DDCC-Organization-English\">See above (Organization/DDCC-Organization-English)</a></td></tr></table></div>"
   ];
   fhir:Composition.identifier [
+     fhir:Identifier.use [ fhir:value "official" ];
      fhir:Identifier.system [ fhir:value "urn:EXAMPLE-who-:ddcc:composition:ids" ];
      fhir:Identifier.value [ fhir:value "999123456123456123456" ]
   ];
@@ -69,7 +75,7 @@
      fhir:link <https://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-English>;
      fhir:Reference.reference [ fhir:value "Patient/DDCC-Patient-English" ]
   ];
-  fhir:Composition.date [ fhir:value "2020-05-22"^^xsd:date];
+  fhir:Composition.date [ fhir:value "2020-05-06"^^xsd:date];
   fhir:Composition.author [
      fhir:index 0;
      fhir:link <https://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-English>;
@@ -102,6 +108,10 @@
        fhir:index 0;
        fhir:link <https://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-English>;
        fhir:Reference.reference [ fhir:value "Immunization/DDCC-Immunization-English" ]
+     ], [
+       fhir:index 1;
+       fhir:link <https://worldhealthorganization.github.io/ddcc/ImmunizationRecommendation/DDCC-ImmunizationRecommendation-English>;
+       fhir:Reference.reference [ fhir:value "ImmunizationRecommendation/DDCC-ImmunizationRecommendation-English" ]
      ]
   ] .
 
@@ -125,7 +135,7 @@
   ];
   fhir:Patient.birthDate [ fhir:value "2003-03-03"^^xsd:date] .
 
-<http://www.example.org/fhir/Patient/DDCC-Organization-English> a fhir:Organization;
+<http://www.example.org/fhir/Organization/DDCC-Organization-English> a fhir:Organization;
   fhir:Resource.id [ fhir:value "DDCC-Organization-English"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -140,7 +150,7 @@
   ];
   fhir:Organization.name [ fhir:value "Government Hospital"] .
 
-<http://www.example.org/fhir/Patient/DDCC-Immunization-English> a fhir:Immunization;
+<http://www.example.org/fhir/Immunization/DDCC-Immunization-English> a fhir:Immunization;
   fhir:Resource.id [ fhir:value "DDCC-Immunization-English"];
   fhir:Resource.meta [
      fhir:Meta.profile [
@@ -151,25 +161,36 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>DDCC Vaccine Brand for Immunization</b>: <span title=\"{urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding VAX-BRAND-EX}\">VAX-BRAND-EX</span></p><p><b>DDCC Country Of Vaccination for Immunization</b>: CHE</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding XM0CX4}\">XM0CX4</span></p><p><b>patient</b>: <a href=\"#Patient_DDCC-Patient-English\">See above (Patient/DDCC-Patient-English)</a></p><p><b>occurrence</b>: 2021-02-02</p><p><b>location</b>: <span>Vaccination Site</span></p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"#Organization_DDCC-Organization-English\">See above (Organization/DDCC-Organization-English)</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><a href=\"#Organization_DDCC-Organization-English\">See above (Organization/DDCC-Organization-English)</a></td><td><span title=\"Codes: {http://id.who.int/icd11/mms RA01.0}\">RA01.0</span></td><td>1</td><td>2</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>DDCC Vaccine Brand for Immunization</b>: <span title=\"{http://EXAMPLE.ORG/brands VAX-BRAND-EX}\">VAX-BRAND-EX</span></p><p><b>DDCC Country Of Vaccination for Immunization</b>: CHE</p><p><b>DDCC Vaccine Market Authorization for Immunization</b>: <span title=\"{http://EXAMPLE.ORG/mahs VAX-MAH-EX}\">VAX-MAH-EX</span></p><p><b>DDCC Vaccine Valid From</b>: 2021-05-30</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {http://id.who.int/icd11/mms XM0CX4}\">XM0CX4</span></p><p><b>patient</b>: <a href=\"#Patient_DDCC-Patient-English\">See above (Patient/DDCC-Patient-English)</a></p><p><b>occurrence</b>: 2021-05-06</p><p><b>location</b>: <span>Vaccination Site</span></p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"#Organization_DDCC-Organization-English\">See above (Organization/DDCC-Organization-English)</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><a href=\"#Organization_DDCC-Organization-English\">See above (Organization/DDCC-Organization-English)</a></td><td><span title=\"Codes: {http://id.who.int/icd11/mms RA01.0}\">RA01.0</span></td><td>1</td><td>2</td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
      fhir:Extension.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand" ];
      fhir:Extension.valueCoding [
-       fhir:Coding.system [ fhir:value "urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding" ];
+       fhir:Coding.system [ fhir:value "http://EXAMPLE.ORG/brands" ];
        fhir:Coding.code [ fhir:value "VAX-BRAND-EX" ]
      ]
   ], [
      fhir:index 1;
      fhir:Extension.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination" ];
      fhir:Extension.valueCode [ fhir:value "CHE" ]
+  ], [
+     fhir:index 2;
+     fhir:Extension.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization" ];
+     fhir:Extension.valueCoding [
+       fhir:Coding.system [ fhir:value "http://EXAMPLE.ORG/mahs" ];
+       fhir:Coding.code [ fhir:value "VAX-MAH-EX" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:Extension.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom" ];
+     fhir:Extension.valueDateTime [ fhir:value "2021-05-30"^^xsd:date ]
   ];
   fhir:Immunization.status [ fhir:value "completed"];
   fhir:Immunization.vaccineCode [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding" ];
+       fhir:Coding.system [ fhir:value "http://id.who.int/icd11/mms" ];
        fhir:Coding.code [ fhir:value "XM0CX4" ]
      ]
   ];
@@ -177,7 +198,7 @@
      fhir:link <https://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-English>;
      fhir:Reference.reference [ fhir:value "Patient/DDCC-Patient-English" ]
   ];
-  fhir:Immunization.occurrenceDateTime [ fhir:value "2021-02-02"^^xsd:date];
+  fhir:Immunization.occurrenceDateTime [ fhir:value "2021-05-06"^^xsd:date];
   fhir:Immunization.location [
      fhir:Reference.display [ fhir:value "Vaccination Site" ]
   ];
@@ -206,6 +227,60 @@
      ];
      fhir:Immunization.protocolApplied.doseNumberPositiveInt [ fhir:value "1"^^xsd:positiveInteger ];
      fhir:Immunization.protocolApplied.seriesDosesPositiveInt [ fhir:value "2"^^xsd:positiveInteger ]
+  ] .
+
+<http://www.example.org/fhir/ImmunizationReccomendation/DDCC-ImmunizationRecommendation-English> a fhir:ImmunizationRecommendation;
+  fhir:Resource.id [ fhir:value "DDCC-ImmunizationRecommendation-English"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation";
+       fhir:index 0;
+       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>patient</b>: <a href=\"#Patient_DDCC-Patient-English\">See above (Patient/DDCC-Patient-English)</a></p><p><b>date</b>: 2021-05-06</p><blockquote><p><b>recommendation</b></p><p><b>vaccineCode</b>: <span title=\"Codes: {http://id.who.int/icd11/mms XM0CX4}\">XM0CX4</span></p><p><b>forecastStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/immunization-recommendation-status due}\">Due</span></p><h3>DateCriterions</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://loinc.org 30980-7}\">Date vaccine due</span></td><td>2021-05-20</td></tr></table><p><b>supportingImmunization</b>: <a href=\"#Immunization_DDCC-Immunization-English\">See above (Immunization/DDCC-Immunization-English)</a></p></blockquote></div>"
+  ];
+  fhir:ImmunizationRecommendation.patient [
+     fhir:link <https://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-English>;
+     fhir:Reference.reference [ fhir:value "Patient/DDCC-Patient-English" ]
+  ];
+  fhir:ImmunizationRecommendation.date [ fhir:value "2021-05-06"^^xsd:date];
+  fhir:ImmunizationRecommendation.recommendation [
+     fhir:index 0;
+     fhir:ImmunizationRecommendation.recommendation.vaccineCode [
+       fhir:index 0;
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://id.who.int/icd11/mms" ];
+         fhir:Coding.code [ fhir:value "XM0CX4" ]
+       ]
+     ];
+     fhir:ImmunizationRecommendation.recommendation.forecastStatus [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status" ];
+         fhir:Coding.code [ fhir:value "due" ]
+       ]
+     ];
+     fhir:ImmunizationRecommendation.recommendation.dateCriterion [
+       fhir:index 0;
+       fhir:ImmunizationRecommendation.recommendation.dateCriterion.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0;
+           a loinc:30980-7;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ];
+           fhir:Coding.code [ fhir:value "30980-7" ]
+         ]
+       ];
+       fhir:ImmunizationRecommendation.recommendation.dateCriterion.value [ fhir:value "2021-05-20"^^xsd:date ]
+     ];
+     fhir:ImmunizationRecommendation.recommendation.supportingImmunization [
+       fhir:index 0;
+       fhir:link <https://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-English>;
+       fhir:Reference.reference [ fhir:value "Immunization/DDCC-Immunization-English" ]
+     ]
   ] .
 
 # - ontology header ------------------------------------------------------------
