@@ -374,6 +374,14 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/IPS-Immunization-Example-Bundle-01"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -384,16 +392,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical:abstract"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/HC1"/>
-      </reference>
-      <name value="EU DCC"/>
-      <description value="EU Digital Covid Certificate"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -401,24 +399,6 @@
       </reference>
       <name value="WHO DDCC Generator"/>
       <description value="CapabilityStatement for WHO DDCC Generator actor."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical:abstract"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/v"/>
-      </reference>
-      <name value="Vaccination Group"/>
-      <description value="Vaccination Group"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/IPS-Immunization-Example-Bundle-01"/>
-      </reference>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -487,6 +467,16 @@
       </reference>
       <name value="Example Patient - DDCC-Patient-Spanish"/>
       <exampleCanonical value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCOrganizationIdentifier"/>
+      </reference>
+      <name value="DDCC OrganizationIdentifier"/>
+      <description value="Identifier for Orgnaization requiring system and at least one of use and value"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -627,6 +617,16 @@
       </reference>
       <name value="DDCC QR Format Codes"/>
       <description value="Possible formats available for QR data."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ImmunizationRecommendation"/>
+      </extension>
+      <reference>
+        <reference value="ImmunizationRecommendation/DDCC-ImmunizationRecommendation-English"/>
+      </reference>
+      <name value="Example ImmunizationRecommendation - DDCC-ImmunizationRecommendation-English"/>
+      <exampleCanonical value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
