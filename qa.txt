@@ -1,9 +1,9 @@
 ﻿DDCC_VS : Validation Results
 =========================================
 
-err = 165, warn = 62, info = 77
+err = 96, warn = 67, info = 72
 IG Publisher Version: 1.1.77
-Generated Tue Aug 03 21:51:24 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Tue Aug 03 22:30:41 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = http://worldhealthorganization.github.io/ddcc)
 
  Build Errors : 22 / 33 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 4 / 4 / 11
@@ -41,25 +41,25 @@ Generated Tue Aug 03 21:51:24 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/Questionnaire-DDCCVSCoreDataSetQuestionnaire : 0 / 3 / 2
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example : 1 / 4 / 9
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCAddBundle : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCComposition : 9 / 0 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCComposition : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCountryOfVaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocument : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReference : 5 / 0 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReferenceQR : 7 / 0 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCFolder : 6 / 0 / 4
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReference : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReferenceQR : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCFolder : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCGenerateHealthCertificateParameters : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCImmunization : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCImmunizationRecommendation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCOrganization : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCPatient : 2 / 0 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCPractitioner : 0 / 0 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCPatient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCPractitioner : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCPractitionerRole : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCProvideDocumentBundle : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaire : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaireResponse : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmissionSet : 8 / 0 / 4
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmissionSet : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventRequest : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventResponse : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCVaccineBrand : 0 / 0 / 1
@@ -75,8 +75,8 @@ Generated Tue Aug 03 21:51:24 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/input/resources/capabilitystatement-WHO-DDCC-Generator : 1 / 1 / 1
  /github/workspace/input/resources/capabilitystatement-WHO-DDCC-Registry-Service : 1 / 1 / 1
  /github/workspace/input/resources/examples/example-IPS-Immunization-Bundle : 3 / 0 / 4
- /github/workspace/input/resources/maps/ddcc-to-coredataset.map : 14 / 1 / 1
- /github/workspace/input/resources/maps/ddcc-to-eu-dcc.map : 18 / 1 / 1
+ /github/workspace/input/resources/maps/ddcc-to-coredataset.map : 0 / 1 / 1
+ /github/workspace/input/resources/maps/ddcc-to-eu-dcc.map : 0 / 1 / 1
 </table>
 == n/a ==
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/ddcc-to-eu-dcc.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
@@ -336,52 +336,24 @@ ERROR: QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example: Questionnair
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCAddBundle.json ==
 WARNING: StructureDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCAddBundle'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCComposition.json ==
-ERROR: Composition/DDCCComposition-genexample: : Composition.status: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition)
-ERROR: Composition/DDCCComposition-genexample: : Composition.type: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition)
-ERROR: Composition/DDCCComposition-genexample: : Composition.subject: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition)
-ERROR: Composition/DDCCComposition-genexample: : Composition.date: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition)
-ERROR: Composition/DDCCComposition-genexample: : Composition.author: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition)
-ERROR: Composition/DDCCComposition-genexample: : Composition.title: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition)
-ERROR: Composition/DDCCComposition-genexample: : Composition.attester: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition)
-ERROR: Composition/DDCCComposition-genexample: : Composition.section: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition)
-ERROR: Composition/DDCCComposition-genexample: : Composition.section:vaccination: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition)
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCountryOfVaccination.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocument.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReference.json ==
-ERROR: DocumentReference/DDCCDocumentReference-genexample: : DocumentReference.masterIdentifier: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference)
-ERROR: DocumentReference/DDCCDocumentReference-genexample: : DocumentReference.identifier: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference)
-ERROR: DocumentReference/DDCCDocumentReference-genexample: : DocumentReference.status: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference)
-ERROR: DocumentReference/DDCCDocumentReference-genexample: : DocumentReference.subject: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference)
-ERROR: DocumentReference/DDCCDocumentReference-genexample: : DocumentReference.date: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference)
+WARNING: StructureDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReferenceQR.json ==
-ERROR: DocumentReference/DDCCDocumentReferenceQR-genexample: .content[0]: This element does not match any known slice  defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR and slicing is CLOSED: .content[0]: Does not match slice 'qrImage', .content[0]: Does not match slice 'qrContent'
-ERROR: DocumentReference/DDCCDocumentReferenceQR-genexample: .content[1]: This element does not match any known slice  defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR and slicing is CLOSED: .content[1]: Does not match slice 'qrImage', .content[1]: Does not match slice 'qrContent'
-ERROR: DocumentReference/DDCCDocumentReferenceQR-genexample: : DocumentReference.status: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR)
-ERROR: DocumentReference/DDCCDocumentReferenceQR-genexample: : DocumentReference.category: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR)
-ERROR: DocumentReference/DDCCDocumentReferenceQR-genexample: : DocumentReference.authenticator: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR)
-ERROR: DocumentReference/DDCCDocumentReferenceQR-genexample: : DocumentReference.content:qrImage: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR)
-ERROR: DocumentReference/DDCCDocumentReferenceQR-genexample: : DocumentReference.content:qrContent: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR)
+WARNING: StructureDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCFolder.json ==
-INFORMATION: List/DDCCFolder-genexample: .identifier[0]: This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder
-INFORMATION: List/DDCCFolder-genexample: .identifier[1]: This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder
-ERROR: List/DDCCFolder-genexample: : List.identifier:uniqueId: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder)
-ERROR: List/DDCCFolder-genexample: : List.identifier:entryUUID: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder)
-ERROR: List/DDCCFolder-genexample: : List.status: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder)
-ERROR: List/DDCCFolder-genexample: : List.mode: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder)
-ERROR: List/DDCCFolder-genexample: : List.code: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder)
-ERROR: List/DDCCFolder-genexample: : List.subject: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder)
+WARNING: StructureDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCGenerateHealthCertificateParameters.json ==
 INFORMATION: StructureDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters'): The Implementation Guide contains no explicitly linked examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCImmunization.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCImmunizationRecommendation.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCOrganization.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCPatient.json ==
-ERROR: Patient/DDCCPatient-genexample: : Patient.name: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient)
-ERROR: Patient/DDCCPatient-genexample: : Patient.name:ddccName: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient)
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCPractitioner.json ==
-INFORMATION: Practitioner/DDCCPractitioner-genexample: .identifier[0]: This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner
+WARNING: StructureDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCPractitionerRole.json ==
 WARNING: StructureDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCProvideDocumentBundle.json ==
@@ -389,16 +361,7 @@ WARNING: StructureDefinition.where(url = 'http://worldhealthorganization.github.
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaire.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaireResponse.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmissionSet.json ==
-INFORMATION: List/DDCCSubmissionSet-genexample: .identifier[0]: This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet
-INFORMATION: List/DDCCSubmissionSet-genexample: .identifier[1]: This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet
-ERROR: List/DDCCSubmissionSet-genexample: : List.extension: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet)
-ERROR: List/DDCCSubmissionSet-genexample: : List.extension:sourceId: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet)
-ERROR: List/DDCCSubmissionSet-genexample: : List.identifier:uniqueId: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet)
-ERROR: List/DDCCSubmissionSet-genexample: : List.status: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet)
-ERROR: List/DDCCSubmissionSet-genexample: : List.mode: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet)
-ERROR: List/DDCCSubmissionSet-genexample: : List.code: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet)
-ERROR: List/DDCCSubmissionSet-genexample: : List.subject: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet)
-ERROR: List/DDCCSubmissionSet-genexample: : List.date: minimum required = 1, but only found 0 (from http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet)
+WARNING: StructureDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet'): The Implementation Guide contains no examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventRequest.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventResponse.json ==
 WARNING: StructureDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventResponse'): The Implementation Guide contains no examples for this profile
@@ -431,38 +394,6 @@ ERROR: Bundle/IPS-Immunization-Example-Bundle-01: Bundle.timestamp: Not a valid 
 ERROR: Bundle/IPS-Immunization-Example-Bundle-01: Bundle.entry[1].resource.ofType(Immunization): Immunization.status: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/Immunization)
 INFORMATION: Bundle/IPS-Immunization-Example-Bundle-01: Bundle.entry[1].resource.ofType(Immunization).vaccineCode.coding[0]: Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated
 == /github/workspace/input/resources/maps/ddcc-to-coredataset.map.json ==
-ERROR: StructureMap.where(url = 'https://who-int.github.io/svc/StructureMap/ddcc-to-coredataset'): Conformance resource /github/workspace/input/resources/maps/ddcc-to-coredataset.map.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-coredataset) does not match the URL (https://who-int.github.io/svc/StructureMap/ddcc-to-coredataset)
 WARNING: StructureMap/ddcc-to-coredataset: StructureMap: smp-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-ERROR: StructureMap/ddcc-to-coredataset: StructureMap.group[0].name: id value 'Decode_DDCC_to_QR' is not valid
-ERROR: StructureMap/ddcc-to-coredataset: StructureMap.group[0].rule[0].rule[0].dependent[0].name: id value 'Decode_Patient_To_QR' is not valid
-ERROR: StructureMap/ddcc-to-coredataset: StructureMap.group[0].rule[1].rule[0].dependent[0].name: id value 'Decode_Immunization_To_QR' is not valid
-ERROR: StructureMap/ddcc-to-coredataset: StructureMap.group[1].name: id value 'Decode_Patient_To_QR' is not valid
-ERROR: StructureMap/ddcc-to-coredataset: StructureMap.group[2].name: id value 'Decode_Immunization_To_QR' is not valid
-ERROR: StructureMap/ddcc-to-coredataset: StructureMap.group[2].rule[0].rule[0].rule[2].name: id value 'Target Disease' is not valid
-ERROR: StructureMap/ddcc-to-coredataset: StructureMap.group[2].rule[0].rule[3].name: id value 'Vaccine Brand' is not valid
-ERROR: StructureMap/ddcc-to-coredataset: StructureMap.group[2].rule[0].rule[4].name: id value 'Vaccine Code' is not valid
-ERROR: StructureMap/ddcc-to-coredataset: StructureMap.group[2].rule[0].rule[5].name: id value 'Vaccination Centre' is not valid
-ERROR: StructureMap/ddcc-to-coredataset: StructureMap.group[2].rule[0].rule[5].rule[0].name: id value 'Centre Name' is not valid
-ERROR: StructureMap/ddcc-to-coredataset: StructureMap.group[2].rule[0].rule[6].name: id value 'Vaccincation Event' is not valid
-ERROR: StructureMap/ddcc-to-coredataset: StructureMap.group[2].rule[0].rule[6].rule[0].name: id value 'Vaccination Event ID' is not valid
-ERROR: /github/workspace/input/resources/maps/ddcc-to-coredataset.map: URL Mismatch http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-coredataset vs https://who-int.github.io/svc/StructureMap/ddcc-to-coredataset
 == /github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json ==
-ERROR: StructureMap.where(url = 'http://who-int.github.io/svc/StructureMap/ddcc-to-eu-dcc'): Conformance resource /github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-eu-dcc) does not match the URL (http://who-int.github.io/svc/StructureMap/ddcc-to-eu-dcc)
 WARNING: StructureMap/ddcc-to-eu-dcc: StructureMap: smp-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-ERROR: StructureMap/ddcc-to-eu-dcc: StructureMap.group[0].name: id value 'Decode_DDCC_to_QR' is not valid
-ERROR: StructureMap/ddcc-to-eu-dcc: StructureMap.group[0].rule[1].rule[0].dependent[0].name: id value 'Decode_Patient_To_QR' is not valid
-ERROR: StructureMap/ddcc-to-eu-dcc: StructureMap.group[0].rule[2].rule[0].dependent[0].name: id value 'Decode_Immunization_To_QR' is not valid
-ERROR: StructureMap/ddcc-to-eu-dcc: StructureMap.group[1].name: id value 'Decode_Patient_To_QR' is not valid
-ERROR: StructureMap/ddcc-to-eu-dcc: StructureMap.group[2].name: id value 'Decode_Immunization_To_QR' is not valid
-ERROR: StructureMap/ddcc-to-eu-dcc: StructureMap.group[2].rule[0].rule[0].rule[2].name: id value 'Protocol Disease' is not valid
-ERROR: StructureMap/ddcc-to-eu-dcc: StructureMap.group[2].rule[0].rule[0].rule[2].rule[0].name: id value 'Protocol Disease Code' is not valid
-ERROR: StructureMap/ddcc-to-eu-dcc: StructureMap.group[2].rule[0].rule[3].name: id value 'Vaccine Brand' is not valid
-ERROR: StructureMap/ddcc-to-eu-dcc: StructureMap.group[2].rule[0].rule[3].rule[0].name: id value 'Vaccine Brand Code' is not valid
-ERROR: StructureMap/ddcc-to-eu-dcc: StructureMap.group[2].rule[0].rule[4].name: id value 'Vaccine Coding' is not valid
-ERROR: StructureMap/ddcc-to-eu-dcc: StructureMap.group[2].rule[0].rule[4].rule[0].name: id value 'Vaccine Code' is not valid
-ERROR: StructureMap/ddcc-to-eu-dcc: StructureMap.group[2].rule[0].rule[5].name: id value 'Vaccination Centre' is not valid
-ERROR: StructureMap/ddcc-to-eu-dcc: StructureMap.group[2].rule[0].rule[5].rule[0].name: id value 'Centre Name' is not valid
-ERROR: StructureMap/ddcc-to-eu-dcc: StructureMap.group[2].rule[0].rule[6].name: id value 'Vaccincation Event' is not valid
-ERROR: StructureMap/ddcc-to-eu-dcc: StructureMap.group[2].rule[0].rule[6].rule[0].name: id value 'Vaccination Event ID' is not valid
-ERROR: StructureMap/ddcc-to-eu-dcc: StructureMap.group[2].rule[0].rule[6].rule[0].rule[0].name: id value 'Vaccination Event ID Value' is not valid
-ERROR: /github/workspace/input/resources/maps/ddcc-to-eu-dcc.map: URL Mismatch http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-eu-dcc vs http://who-int.github.io/svc/StructureMap/ddcc-to-eu-dcc

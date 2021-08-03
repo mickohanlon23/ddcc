@@ -225,31 +225,31 @@ uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDC
 uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization&quot; alias DDCCImmunization as source
 uses &quot;http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV&quot; alias DDCCCoreDataSetPoV as target
 
-group Decode_DDCC_to_QR(source ddcc : DDCCDocument, target qr : DDCCCoreDataSetPoV) {
+group Decode-DDCC-to-QR(source ddcc : DDCCDocument, target qr : DDCCCoreDataSetPoV) {
   ddcc.entry as entry then {
     // entry.resource : DDCCPatient as patient
-    entry.resource : Patient as patient then Decode_Patient_To_QR(patient, qr) &quot;Patient&quot;;
+    entry.resource : Patient as patient then Decode-Patient-To-QR(patient, qr) &quot;Patient&quot;;
   };
   ddcc.entry as entry then {
-    entry.resource : Immunization as immunization log immunization then Decode_Immunization_To_QR(ddcc, immunization, qr) &quot;Immunization&quot;;
+    entry.resource : Immunization as immunization log immunization then Decode-Immunization-To-QR(ddcc, immunization, qr) &quot;Immunization&quot;;
   };
 }
 
-group Decode_Patient_To_QR(source patient : DDCCPatient, target qr : DDCCCoreDataSetPoV) {
+group Decode-Patient-To-QR(source patient : DDCCPatient, target qr : DDCCCoreDataSetPoV) {
   patient.birthDate as birthDate -&gt; qr.birthDate = birthDate;
   patient.name as name then {
     name.text as text -&gt; qr.name = text;
   };
 }
 
-group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization : DDCCImmunization, target qr : DDCCCoreDataSetPoV) {
+group Decode-Immunization-To-QR(source ddcc : DDCCDocument, source immunization : DDCCImmunization, target qr : DDCCCoreDataSetPoV) {
   immunization -&gt; qr.vaccination = create('BackboneElement') as vacEvent then {
     immunization.protocolApplied as protocol then {
       protocol.doseNumberPositiveInt as dose -&gt; vacEvent.dose = dose;
       protocol.seriesDosesPositiveInt as doseNum -&gt; vacEvent.totalDoses = doseNum;
       protocol.targetDisease as targetDisease then {
         targetDisease.valueCodableConcept as valueCodableConcept -&gt; vacEvent.disease = valueCodableConcept;
-      } &quot;Target Disease&quot;;
+      } &quot;Target-Disease&quot;;
     };
     immunization.occurrenceDateTime as date -&gt; vacEvent.date = date;
     // TODO: need to populate vacEvent.maholder
@@ -259,22 +259,22 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
     // immunization.extension : DDCCBrand as brand
     immunization.extension as brand where (url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand') then {
       brand.valueCoding as valueCoding -&gt; vacEvent.brand = valueCoding;
-    } &quot;Vaccine Brand&quot;;
+    } &quot;Vaccine-Brand&quot;;
     immunization.vaccineCode as vaccineCode then {
       vaccineCode.coding as coding -&gt; vacEvent.vaccine = coding;
-    } &quot;Vaccine Code&quot;;
+    } &quot;Vaccine-Code&quot;;
     ddcc.entry as entry then {
       // entry.resource : DDCCOrganization as organization
       entry.resource : Organization as organization then {
         organization.name as name -&gt; vacEvent.centre = name;
-      } &quot;Centre Name&quot;;
-    } &quot;Vaccination Centre&quot;;
+      } &quot;Centre-Name&quot;;
+    } &quot;Vaccination-Centre&quot;;
     ddcc.entry as entry then {
       // entry.resource : DDCCComposition as composition
       entry.resource : Composition as composition then {
         composition.identifier as identifier -&gt; qr.identifier = identifier;
-      } &quot;Vaccination Event ID&quot;;
-    } &quot;Vaccincation Event&quot;;
+      } &quot;Vaccination-Event-ID&quot;;
+    } &quot;Vaccination-Event&quot;;
   } &quot;Vaccination&quot;;
 }
 
@@ -307,7 +307,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 3, 2021 21:50+0000">2021-08-03</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 3, 2021 22:29+0000">2021-08-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

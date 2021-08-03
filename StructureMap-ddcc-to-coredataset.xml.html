@@ -230,31 +230,31 @@ uses &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition
 uses &amp;quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization&amp;quot; alias DDCCImmunization as source
 uses &amp;quot;http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV&amp;quot; alias DDCCCoreDataSetPoV as target
 
-group Decode_DDCC_to_QR(source ddcc : DDCCDocument, target qr : DDCCCoreDataSetPoV) {
+group Decode-DDCC-to-QR(source ddcc : DDCCDocument, target qr : DDCCCoreDataSetPoV) {
   ddcc.entry as entry then {
     // entry.resource : DDCCPatient as patient
-    entry.resource : Patient as patient then Decode_Patient_To_QR(patient, qr) &amp;quot;Patient&amp;quot;;
+    entry.resource : Patient as patient then Decode-Patient-To-QR(patient, qr) &amp;quot;Patient&amp;quot;;
   };
   ddcc.entry as entry then {
-    entry.resource : Immunization as immunization log immunization then Decode_Immunization_To_QR(ddcc, immunization, qr) &amp;quot;Immunization&amp;quot;;
+    entry.resource : Immunization as immunization log immunization then Decode-Immunization-To-QR(ddcc, immunization, qr) &amp;quot;Immunization&amp;quot;;
   };
 }
 
-group Decode_Patient_To_QR(source patient : DDCCPatient, target qr : DDCCCoreDataSetPoV) {
+group Decode-Patient-To-QR(source patient : DDCCPatient, target qr : DDCCCoreDataSetPoV) {
   patient.birthDate as birthDate -&amp;gt; qr.birthDate = birthDate;
   patient.name as name then {
     name.text as text -&amp;gt; qr.name = text;
   };
 }
 
-group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization : DDCCImmunization, target qr : DDCCCoreDataSetPoV) {
+group Decode-Immunization-To-QR(source ddcc : DDCCDocument, source immunization : DDCCImmunization, target qr : DDCCCoreDataSetPoV) {
   immunization -&amp;gt; qr.vaccination = create('BackboneElement') as vacEvent then {
     immunization.protocolApplied as protocol then {
       protocol.doseNumberPositiveInt as dose -&amp;gt; vacEvent.dose = dose;
       protocol.seriesDosesPositiveInt as doseNum -&amp;gt; vacEvent.totalDoses = doseNum;
       protocol.targetDisease as targetDisease then {
         targetDisease.valueCodableConcept as valueCodableConcept -&amp;gt; vacEvent.disease = valueCodableConcept;
-      } &amp;quot;Target Disease&amp;quot;;
+      } &amp;quot;Target-Disease&amp;quot;;
     };
     immunization.occurrenceDateTime as date -&amp;gt; vacEvent.date = date;
     // TODO: need to populate vacEvent.maholder
@@ -264,32 +264,33 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
     // immunization.extension : DDCCBrand as brand
     immunization.extension as brand where (url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand') then {
       brand.valueCoding as valueCoding -&amp;gt; vacEvent.brand = valueCoding;
-    } &amp;quot;Vaccine Brand&amp;quot;;
+    } &amp;quot;Vaccine-Brand&amp;quot;;
     immunization.vaccineCode as vaccineCode then {
       vaccineCode.coding as coding -&amp;gt; vacEvent.vaccine = coding;
-    } &amp;quot;Vaccine Code&amp;quot;;
+    } &amp;quot;Vaccine-Code&amp;quot;;
     ddcc.entry as entry then {
       // entry.resource : DDCCOrganization as organization
       entry.resource : Organization as organization then {
         organization.name as name -&amp;gt; vacEvent.centre = name;
-      } &amp;quot;Centre Name&amp;quot;;
-    } &amp;quot;Vaccination Centre&amp;quot;;
+      } &amp;quot;Centre-Name&amp;quot;;
+    } &amp;quot;Vaccination-Centre&amp;quot;;
     ddcc.entry as entry then {
       // entry.resource : DDCCComposition as composition
       entry.resource : Composition as composition then {
         composition.identifier as identifier -&amp;gt; qr.identifier = identifier;
-      } &amp;quot;Vaccination Event ID&amp;quot;;
-    } &amp;quot;Vaccincation Event&amp;quot;;
+      } &amp;quot;Vaccination-Event-ID&amp;quot;;
+    } &amp;quot;Vaccination-Event&amp;quot;;
   } &amp;quot;Vaccination&amp;quot;;
 }
 
 &lt;/pre&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://who-int.github.io/svc/StructureMap/ddcc-to-coredataset&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.url">url</a>
+       <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-coredataset&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.2.1&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ddcc-to-coredataset&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;draft&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2021-08-03T21:50:07+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2021-08-03T22:29:42+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;World Health Organization (WHO)&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
@@ -352,7 +353,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
     &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.structure.alias">alias</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;DDCCCoreDataSetPoV&quot;/&gt;
   &lt;/structure&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group">group</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Decode_DDCC_to_QR&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Decode-DDCC-to-QR&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.typeMode">typeMode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;none&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input">input</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ddcc&quot;/&gt;
@@ -380,7 +381,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;patient&quot;/&gt;
         &lt;/source&gt;
         &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent">dependent</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Decode_Patient_To_QR&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Decode-Patient-To-QR&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.variable">variable</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;patient&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.variable">variable</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;qr&quot;/&gt;
         &lt;/dependent&gt;
@@ -404,7 +405,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.logMessage">logMessage</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;immunization&quot;/&gt;
         &lt;/source&gt;
         &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent">dependent</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Decode_Immunization_To_QR&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Decode-Immunization-To-QR&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.variable">variable</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ddcc&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.variable">variable</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;immunization&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.dependent.variable">variable</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;qr&quot;/&gt;
@@ -413,7 +414,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
     &lt;/rule&gt;
   &lt;/group&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group">group</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Decode_Patient_To_QR&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Decode-Patient-To-QR&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.typeMode">typeMode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;none&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input">input</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;patient&quot;/&gt;
@@ -469,7 +470,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
     &lt;/rule&gt;
   &lt;/group&gt;
   &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group">group</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Decode_Immunization_To_QR&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Decode-Immunization-To-QR&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.typeMode">typeMode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;none&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input">input</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.input.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ddcc&quot;/&gt;
@@ -543,7 +544,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
           &lt;/target&gt;
         &lt;/rule&gt;
         &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Target Disease&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Target-Disease&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;protocol&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;targetDisease&quot;/&gt;
@@ -633,7 +634,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
         &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.documentation">documentation</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;TODO: need to populate vacEvent.maholder&quot;/&gt;
       &lt;/rule&gt;
       &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Vaccine Brand&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Vaccine-Brand&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;immunization&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;extension&quot;/&gt;
@@ -661,7 +662,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
         &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.documentation">documentation</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;immunization.extension : DDCCBrand as brand&quot;/&gt;
       &lt;/rule&gt;
       &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Vaccine Code&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Vaccine-Code&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;immunization&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;vaccineCode&quot;/&gt;
@@ -686,14 +687,14 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
         &lt;/rule&gt;
       &lt;/rule&gt;
       &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Vaccination Centre&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Vaccination-Centre&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ddcc&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;entry&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;entry&quot;/&gt;
         &lt;/source&gt;
         &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Centre Name&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Centre-Name&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;entry&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Organization&quot;/&gt;
@@ -722,14 +723,14 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
         &lt;/rule&gt;
       &lt;/rule&gt;
       &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>&gt;
-        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Vaccincation Event&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Vaccination-Event&quot;/&gt;
         &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;ddcc&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.element">element</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;entry&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.variable">variable</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;entry&quot;/&gt;
         &lt;/source&gt;
         &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.rule">rule</a>&gt;
-          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Vaccination Event ID&quot;/&gt;
+          &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;Vaccination-Event-ID&quot;/&gt;
           &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source">source</a>&gt;
             &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.context">context</a> <a href="http://hl7.org/fhir/R4/datatypes.html#id">value</a>=&quot;entry&quot;/&gt;
             &lt;<a href="http://hl7.org/fhir/R4/structuremap.html#StructureMap.group.rule.source.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Composition&quot;/&gt;
@@ -788,7 +789,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 3, 2021 21:50+0000">2021-08-03</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 3, 2021 22:29+0000">2021-08-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
