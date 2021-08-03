@@ -21,7 +21,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Vaccination Event","A vaccination event","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.vaccination",0,*,"","who-ddcc-data-1:Manufacturer or Market Authorization Holder SHALL be present {manufacturer.exists() or maholder.exists()}
 "
 "DDCCCoreDataSet.vaccination.vaccine","","","",1,1,"","","","Coding {[]} {[]}
-","Vaccine or prophylaxis","Generic description of the vaccine or vaccine sub-type. e.g. COVID-19 mRNA vaccine, HPV vaccine.","","","","","","","","","",,"preferred","","https://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccines-covid-19","",,,,"DDCCCoreDataSet.vaccination.vaccine",1,1,"",""
+","Vaccine or prophylaxis","Generic description of the vaccine or vaccine sub-type. e.g. COVID-19 mRNA vaccine, HPV vaccine.","","","","","","","","","",,"preferred","","http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccines-covid-19","",,,,"DDCCCoreDataSet.vaccination.vaccine",1,1,"",""
 "DDCCCoreDataSet.vaccination.brand","","","",1,1,"","","","Coding {[]} {[]}
 ","Vaccine brand","The brand or trade name used to refer to the vaccine received.","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.vaccination.brand",1,1,"",""
 "DDCCCoreDataSet.vaccination.manufacturer","","","",0,1,"","","","Coding {[]} {[]}
@@ -47,7 +47,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "DDCCCoreDataSet.vaccination.practitioner","","","",0,1,"","","","Identifier {[]} {[]}
 ","Health worker identifier","OPTIONAL for DIGITAL and PAPER vaccination certificates. The unique identifier for the health worker as determined by the member state. There can be more than one unique identifier used. (e.g. system generated ID, health profession number, cryptographic signature, or any other form of health worker unique identifier). This can be used in lieu of a paper-based signature.","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.vaccination.practitioner",0,1,"",""
 "DDCCCoreDataSet.vaccination.disease","","","",0,1,"","","","Coding {[]} {[]}
-","Disease or agent targeted","Name of disease vaccinated against (such as COVID-19).","","","","","","","","","",,"preferred","","https://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19","",,,,"DDCCCoreDataSet.vaccination.disease",0,1,"",""
+","Disease or agent targeted","Name of disease vaccinated against (such as COVID-19).","","","","","","","","","",,"preferred","","http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19","",,,,"DDCCCoreDataSet.vaccination.disease",0,1,"",""
 "DDCCCoreDataSet.vaccination.nextDose","","","",0,1,"","","","date {[]} {[]}
 ","Due date of next dose","Date on which the next vaccination should be administered, if a next dose is REQUIRED.","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.vaccination.nextDose",0,1,"",""
 "DDCCCoreDataSet.vaccination.period","","","",0,1,"","","","Period {[]} {[]}
@@ -58,7 +58,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Certificate valid until","End date of certificate validity","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.vaccination.period.end",0,1,"",""
 "DDCCCoreDataSet.certificate","","","",0,1,"","","","BackboneElement {[]} {[]}
 ","Certificate Metadata","Metadata associated with the certificate.","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.certificate",0,1,"",""
-"DDCCCoreDataSet.certificate.issuer","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization]]}
+"DDCCCoreDataSet.certificate.issuer","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization]]}
 ","Certificate issuer","Certificate issuer","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.certificate.issuer",1,1,"",""
 "DDCCCoreDataSet.certificate.hcid","","","",1,1,"","","","Identifier {[]} {[]}
 ","Health certificate identifier (HCID)","health certificate identifier","","","","","","","","","",,,,,"",,,,"DDCCCoreDataSet.certificate.hcid",1,1,"",""

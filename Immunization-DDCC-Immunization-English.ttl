@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-English> a fhir:Immunization;
+<http://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-English> a fhir:Immunization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "DDCC-Immunization-English"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
+       fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
        fhir:index 0;
-       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
+       fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
      ]
   ];
   fhir:DomainResource.text [
@@ -21,25 +21,25 @@
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand" ];
+     fhir:Extension.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand" ];
      fhir:Extension.valueCoding [
        fhir:Coding.system [ fhir:value "http://EXAMPLE.ORG/brands" ];
        fhir:Coding.code [ fhir:value "VAX-BRAND-EX" ]
      ]
   ], [
      fhir:index 1;
-     fhir:Extension.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination" ];
+     fhir:Extension.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination" ];
      fhir:Extension.valueCode [ fhir:value "CHE" ]
   ], [
      fhir:index 2;
-     fhir:Extension.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization" ];
+     fhir:Extension.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization" ];
      fhir:Extension.valueCoding [
        fhir:Coding.system [ fhir:value "http://EXAMPLE.ORG/mahs" ];
        fhir:Coding.code [ fhir:value "VAX-MAH-EX" ]
      ]
   ], [
      fhir:index 3;
-     fhir:Extension.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom" ];
+     fhir:Extension.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom" ];
      fhir:Extension.valueDateTime [ fhir:value "2021-05-30"^^xsd:date ]
   ];
   fhir:Immunization.status [ fhir:value "completed"];
@@ -51,7 +51,7 @@
      ]
   ];
   fhir:Immunization.patient [
-     fhir:link <https://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-English>;
+     fhir:link <http://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-English>;
      fhir:Reference.reference [ fhir:value "Patient/DDCC-Patient-English" ]
   ];
   fhir:Immunization.occurrenceDateTime [ fhir:value "2021-05-06"^^xsd:date];
@@ -63,14 +63,14 @@
   fhir:Immunization.performer [
      fhir:index 0;
      fhir:Immunization.performer.actor [
-       fhir:link <https://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-English>;
+       fhir:link <http://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-English>;
        fhir:Reference.reference [ fhir:value "Organization/DDCC-Organization-English" ]
      ]
   ];
   fhir:Immunization.protocolApplied [
      fhir:index 0;
      fhir:Immunization.protocolApplied.authority [
-       fhir:link <https://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-English>;
+       fhir:link <http://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-English>;
        fhir:Reference.reference [ fhir:value "Organization/DDCC-Organization-English" ]
      ];
      fhir:Immunization.protocolApplied.targetDisease [
@@ -87,7 +87,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-English.ttl> a owl:Ontology;
+<http://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-English.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

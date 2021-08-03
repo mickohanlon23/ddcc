@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs> a fhir:ImplementationGuide;
+<http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs> a fhir:ImplementationGuide;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "fhir.who.ddcc-vs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DDCC_VS</h2><p>The official URL for this implementation guide is: </p><pre>https://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs</pre><div><p>Digital Documentation of COVID-19 Certificates: Vaccination Status</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>DDCC_VS</h2><p>The official URL for this implementation guide is: </p><pre>http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs</pre><div><p>Digital Documentation of COVID-19 Certificates: Vaccination Status</p>\n</div></div>"
   ];
-  fhir:ImplementationGuide.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs"];
+  fhir:ImplementationGuide.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs"];
   fhir:ImplementationGuide.version [ fhir:value "0.2.1"];
   fhir:ImplementationGuide.name [ fhir:value "DDCC_VS"];
   fhir:ImplementationGuide.title [ fhir:value "WHO Digital Documentation of COVID-19 Certificates: Vaccination Status (DDCC:VS)"];
@@ -385,7 +385,7 @@
        ], [
          fhir:index 1;
          fhir:Extension.url [ fhir:value "value" ];
-         fhir:Extension.valueString [ fhir:value "https://worldhealthorganization.github.io/ddcc/history.html" ]
+         fhir:Extension.valueString [ fhir:value "http://worldhealthorganization.github.io/ddcc/history.html" ]
        ];
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -517,7 +517,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/Immunization-pre-uv-ips>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/Immunization-pre-uv-ips>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Immunization-pre-uv-ips" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Immunization (IPS)" ];
@@ -530,7 +530,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/Patient-pre-uv-ips>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/Patient-pre-uv-ips>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Patient-pre-uv-ips" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient (IPS)" ];
@@ -543,7 +543,7 @@
          fhir:Extension.valueString [ fhir:value "StructureMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-eu-dcc>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-eu-dcc>;
          fhir:Reference.reference [ fhir:value "StructureMap/ddcc-to-eu-dcc" ]
        ]
      ], [
@@ -554,7 +554,7 @@
          fhir:Extension.valueString [ fhir:value "StructureMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-coredataset>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-coredataset>;
          fhir:Reference.reference [ fhir:value "StructureMap/ddcc-to-coredataset" ]
        ]
      ], [
@@ -565,7 +565,7 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Bundle/IPS-Immunization-Example-Bundle-01>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Bundle/IPS-Immunization-Example-Bundle-01>;
          fhir:Reference.reference [ fhir:value "Bundle/IPS-Immunization-Example-Bundle-01" ]
        ]
      ], [
@@ -576,7 +576,7 @@
          fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.RegistryService>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.RegistryService>;
          fhir:Reference.reference [ fhir:value "CapabilityStatement/WHO.DDCC.RegistryService" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO DDCC Registry Service" ];
@@ -589,7 +589,7 @@
          fhir:Extension.valueString [ fhir:value "CapabilityStatement" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.Generator>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.Generator>;
          fhir:Reference.reference [ fhir:value "CapabilityStatement/WHO.DDCC.Generator" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO DDCC Generator" ];
@@ -602,7 +602,7 @@
          fhir:Extension.valueString [ fhir:value "ConceptMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-disease-targeted>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-disease-targeted>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-sct-disease-targeted" ]
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted" ]
@@ -614,7 +614,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCGenerateHealthCertificateParameters" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Generate Health Certificate Parameters" ]
@@ -626,7 +626,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCSubmitHealthEventRequest" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Submit Health Event Request" ];
@@ -639,13 +639,13 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-Russian>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-Russian>;
          fhir:Reference.reference [ fhir:value "Organization/DDCC-Organization-Russian" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Organization - DDCC-Organization-Russian" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
        ]
      ], [
        fhir:index 11;
@@ -655,13 +655,13 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-French>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-French>;
          fhir:Reference.reference [ fhir:value "Patient/DDCC-Patient-French" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Patient - DDCC-Patient-French" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
        ]
      ], [
        fhir:index 12;
@@ -671,7 +671,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCSubmissionSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Submission Set" ];
@@ -684,13 +684,13 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-Spanish>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-Spanish>;
          fhir:Reference.reference [ fhir:value "Patient/DDCC-Patient-Spanish" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Patient - DDCC-Patient-Spanish" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
        ]
      ], [
        fhir:index 14;
@@ -700,7 +700,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:complex-type" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganizationIdentifier>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganizationIdentifier>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCOrganizationIdentifier" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC OrganizationIdentifier" ];
@@ -713,7 +713,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCImmunizationRecommendation" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Immunization Recommendation" ];
@@ -726,7 +726,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCVaccineBrand" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Vaccine Brand for Immunization" ];
@@ -739,7 +739,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCFolder" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Folder" ];
@@ -752,7 +752,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem>;
          fhir:Reference.reference [ fhir:value "CodeSystem/DDCC-QR-Category-Usage-CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC QR Category Usage Codes" ];
@@ -765,7 +765,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCPractitionerRole" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Practitioner Role" ];
@@ -778,7 +778,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCPatient" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Patient" ];
@@ -791,7 +791,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCComposition" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Composition" ];
@@ -804,13 +804,13 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Bundle/Example-French>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Bundle/Example-French>;
          fhir:Reference.reference [ fhir:value "Bundle/Example-French" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Bundle - Example-French" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
        fhir:index 23;
@@ -820,13 +820,13 @@
          fhir:Extension.valueString [ fhir:value "QuestionnaireResponse" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example>;
          fhir:Reference.reference [ fhir:value "QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example QuestionnaireResponse - DDCC-VS-QuestionnaireResponse-Example" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse>
        ]
      ], [
        fhir:index 24;
@@ -836,7 +836,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetCoC>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetCoC>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCCoreDataSetCoC" ]
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Core Data - Continuity of Care elements." ]
@@ -848,7 +848,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCOrganization" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Organization" ];
@@ -861,14 +861,14 @@
          fhir:Extension.valueString [ fhir:value "Questionnaire" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Questionnaire/DDCCVSCoreDataSetQuestionnaire>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Questionnaire/DDCCVSCoreDataSetQuestionnaire>;
          fhir:Reference.reference [ fhir:value "Questionnaire/DDCCVSCoreDataSetQuestionnaire" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Core Data Set Questionnaire " ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Questionnaire for an Immunization event." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire>
        ]
      ], [
        fhir:index 27;
@@ -878,7 +878,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCDocumentReference" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Document Reference" ];
@@ -891,7 +891,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem>;
          fhir:Reference.reference [ fhir:value "CodeSystem/DDCC-QR-Format-CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC QR Format Codes" ];
@@ -904,13 +904,13 @@
          fhir:Extension.valueString [ fhir:value "ImmunizationRecommendation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/ImmunizationRecommendation/DDCC-ImmunizationRecommendation-English>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ImmunizationRecommendation/DDCC-ImmunizationRecommendation-English>;
          fhir:Reference.reference [ fhir:value "ImmunizationRecommendation/DDCC-ImmunizationRecommendation-English" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example ImmunizationRecommendation - DDCC-ImmunizationRecommendation-English" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation>
        ]
      ], [
        fhir:index 30;
@@ -920,7 +920,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCAddBundle>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCAddBundle>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCAddBundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Add Bundle" ];
@@ -933,7 +933,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Category-Usage-ValueSet>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Category-Usage-ValueSet>;
          fhir:Reference.reference [ fhir:value "ValueSet/DDCC-QR-Category-Usage-ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorization of QR codes by their business usage" ]
@@ -945,13 +945,13 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-Chinese>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-Chinese>;
          fhir:Reference.reference [ fhir:value "Patient/DDCC-Patient-Chinese" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Patient - DDCC-Patient-Chinese" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
        ]
      ], [
        fhir:index 33;
@@ -961,13 +961,13 @@
          fhir:Extension.valueString [ fhir:value "Immunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-French>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-French>;
          fhir:Reference.reference [ fhir:value "Immunization/DDCC-Immunization-French" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - DDCC-Immunization-French" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
        fhir:index 34;
@@ -977,13 +977,13 @@
          fhir:Extension.valueString [ fhir:value "Composition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Composition/DDCC-Composition-Example-English>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Composition/DDCC-Composition-Example-English>;
          fhir:Reference.reference [ fhir:value "Composition/DDCC-Composition-Example-English" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Digital Documentation of COVID-19 Certificate (DDCC)" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition>
        ]
      ], [
        fhir:index 35;
@@ -993,13 +993,13 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Bundle/Example-Chinese>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Bundle/Example-Chinese>;
          fhir:Reference.reference [ fhir:value "Bundle/Example-Chinese" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Bundle - Example-Chinese" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
        fhir:index 36;
@@ -1009,13 +1009,13 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Bundle/Example-English>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Bundle/Example-English>;
          fhir:Reference.reference [ fhir:value "Bundle/Example-English" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Bundle - Example-English" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
        fhir:index 37;
@@ -1025,7 +1025,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet>;
          fhir:Reference.reference [ fhir:value "ValueSet/DDCC-QR-Format-ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Format of the representation of QR code" ]
@@ -1037,7 +1037,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCProvideDocumentBundle>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCProvideDocumentBundle>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCProvideDocumentBundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Provide Document Bundle" ];
@@ -1050,13 +1050,13 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-English>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-English>;
          fhir:Reference.reference [ fhir:value "Patient/DDCC-Patient-English" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Patient - DDCC-Patient-English" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
        ]
      ], [
        fhir:index 40;
@@ -1066,7 +1066,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCImmunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Immunization" ];
@@ -1079,13 +1079,13 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-Arabic>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-Arabic>;
          fhir:Reference.reference [ fhir:value "Organization/DDCC-Organization-Arabic" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Organization - DDCC-Organization-Arabic" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
        ]
      ], [
        fhir:index 42;
@@ -1095,13 +1095,13 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-French>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-French>;
          fhir:Reference.reference [ fhir:value "Organization/DDCC-Organization-French" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Organization - DDCC-Organization-French" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
        ]
      ], [
        fhir:index 43;
@@ -1111,13 +1111,13 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-Chinese>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-Chinese>;
          fhir:Reference.reference [ fhir:value "Organization/DDCC-Organization-Chinese" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Organization - DDCC-Organization-Chinese" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
        ]
      ], [
        fhir:index 44;
@@ -1127,7 +1127,7 @@
          fhir:Extension.valueString [ fhir:value "OperationDefinition" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate>;
          fhir:Reference.reference [ fhir:value "OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate" ]
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Generate one or more signed DDCC Documents based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)" ]
@@ -1139,13 +1139,13 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Bundle/Example-Russian>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Bundle/Example-Russian>;
          fhir:Reference.reference [ fhir:value "Bundle/Example-Russian" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Bundle - Example-Russian" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
        fhir:index 46;
@@ -1155,7 +1155,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCDocument" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Document" ];
@@ -1168,7 +1168,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCQuestionnaireResponse" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Questionnaire Response" ];
@@ -1181,7 +1181,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCDocumentReferenceQR" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC DocumentReference return for QR" ]
@@ -1193,13 +1193,13 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Bundle/Example-Spanish>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Bundle/Example-Spanish>;
          fhir:Reference.reference [ fhir:value "Bundle/Example-Spanish" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Bundle - Example-Spanish" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
        fhir:index 50;
@@ -1209,13 +1209,13 @@
          fhir:Extension.valueString [ fhir:value "Immunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-English>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-English>;
          fhir:Reference.reference [ fhir:value "Immunization/DDCC-Immunization-English" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - DDCC-Immunization-English" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
        fhir:index 51;
@@ -1225,7 +1225,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCVaccineValidFrom" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Vaccine Valid From" ];
@@ -1238,13 +1238,13 @@
          fhir:Extension.valueString [ fhir:value "Immunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-Chinese>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-Chinese>;
          fhir:Reference.reference [ fhir:value "Immunization/DDCC-Immunization-Chinese" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - DDCC-Immunization-Chinese" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
        fhir:index 53;
@@ -1254,7 +1254,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCPractitioner" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Practitioner" ];
@@ -1267,13 +1267,13 @@
          fhir:Extension.valueString [ fhir:value "Immunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-Arabic>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-Arabic>;
          fhir:Reference.reference [ fhir:value "Immunization/DDCC-Immunization-Arabic" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - DDCC-Immunization-Arabic" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
        fhir:index 55;
@@ -1283,13 +1283,13 @@
          fhir:Extension.valueString [ fhir:value "Immunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-Spanish>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-Spanish>;
          fhir:Reference.reference [ fhir:value "Immunization/DDCC-Immunization-Spanish" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - DDCC-Immunization-Spanish" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
        fhir:index 56;
@@ -1299,13 +1299,13 @@
          fhir:Extension.valueString [ fhir:value "Immunization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-Russian>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-Russian>;
          fhir:Reference.reference [ fhir:value "Immunization/DDCC-Immunization-Russian" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Immunization - DDCC-Immunization-Russian" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
        fhir:index 57;
@@ -1315,7 +1315,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCVaccineMarketAuthorization" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Vaccine Market Authorization for Immunization" ];
@@ -1328,7 +1328,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource:abstract" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCQuestionnaire" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Questionniare" ];
@@ -1341,13 +1341,13 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-English>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-English>;
          fhir:Reference.reference [ fhir:value "Organization/DDCC-Organization-English" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Organization - DDCC-Organization-English" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
        ]
      ], [
        fhir:index 60;
@@ -1357,13 +1357,13 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-Arabic>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-Arabic>;
          fhir:Reference.reference [ fhir:value "Patient/DDCC-Patient-Arabic" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Patient - DDCC-Patient-Arabic" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
        ]
      ], [
        fhir:index 61;
@@ -1373,7 +1373,7 @@
          fhir:Extension.valueString [ fhir:value "ConceptMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-vaccines>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-vaccines>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-sct-vaccines" ]
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines" ]
@@ -1385,7 +1385,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCCountryOfVaccination" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Country Of Vaccination for Immunization" ];
@@ -1398,13 +1398,13 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-Russian>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-Russian>;
          fhir:Reference.reference [ fhir:value "Patient/DDCC-Patient-Russian" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Patient - DDCC-Patient-Russian" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
        ]
      ], [
        fhir:index 64;
@@ -1414,7 +1414,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19>;
          fhir:Reference.reference [ fhir:value "ValueSet/who-ddcc-disease-targeted-covid-19" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Disease or Agent Targeted (COVID-19)" ];
@@ -1427,13 +1427,13 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Bundle/DDCC-TX-SHE-bundle-example-1>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Bundle/DDCC-TX-SHE-bundle-example-1>;
          fhir:Reference.reference [ fhir:value "Bundle/DDCC-TX-SHE-bundle-example-1" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Bundle - DDCC-TX-SHE-bundle-example-1" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest>
        ]
      ], [
        fhir:index 66;
@@ -1443,7 +1443,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventResponse>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventResponse>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCSubmitHealthEventResponse" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Submit Health Event Response" ];
@@ -1456,7 +1456,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:logical" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetPoV>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetPoV>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCCoreDataSetPoV" ]
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Core Data - Proof of Vaccination elements." ]
@@ -1468,13 +1468,13 @@
          fhir:Extension.valueString [ fhir:value "Bundle" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Bundle/Example-Arabic>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Bundle/Example-Arabic>;
          fhir:Reference.reference [ fhir:value "Bundle/Example-Arabic" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Bundle - Example-Arabic" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
        fhir:index 69;
@@ -1484,7 +1484,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccines-covid-19>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-vaccines-covid-19>;
          fhir:Reference.reference [ fhir:value "ValueSet/who-ddcc-vaccines-covid-19" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Vaccine List (COVID-19)" ];
@@ -1497,13 +1497,13 @@
          fhir:Extension.valueString [ fhir:value "Organization" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-Spanish>;
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-Spanish>;
          fhir:Reference.reference [ fhir:value "Organization/DDCC-Organization-Spanish" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Organization - DDCC-Organization-Spanish" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
-         fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
        ]
      ];
      fhir:ImplementationGuide.definition.page [
@@ -1710,7 +1710,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs.ttl> a owl:Ontology;
+<http://worldhealthorganization.github.io/ddcc/ImplementationGuide/fhir.who.ddcc-vs.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

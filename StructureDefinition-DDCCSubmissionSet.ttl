@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet> a fhir:StructureDefinition;
+<http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "DDCCSubmissionSet"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet"];
+  fhir:StructureDefinition.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet"];
   fhir:StructureDefinition.version [ fhir:value "0.2.1"];
   fhir:StructureDefinition.name [ fhir:value "DDCCSubmissionSet"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Submission Set"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-03T17:50:05+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-03T19:56:18+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -2211,9 +2211,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
+           fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
            fhir:index 0;
-           fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
+           fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3444,13 +3444,13 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference";
+           fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference";
            fhir:index 0;
-           fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference>
+           fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference>
          ], [
-           fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder";
+           fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder";
            fhir:index 1;
-           fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder>
+           fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3551,9 +3551,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
+           fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
            fhir:index 0;
-           fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
+           fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
          ]
        ]
      ], [
@@ -3570,13 +3570,13 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference";
+           fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference";
            fhir:index 0;
-           fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference>
+           fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference>
          ], [
-           fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder";
+           fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder";
            fhir:index 1;
-           fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder>
+           fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder>
          ]
        ]
      ]
@@ -3584,7 +3584,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet.ttl> a owl:Ontology;
+<http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmissionSet.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

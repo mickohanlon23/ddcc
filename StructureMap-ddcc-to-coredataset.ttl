@@ -5,18 +5,18 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-coredataset> a fhir:StructureMap;
+<http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-coredataset> a fhir:StructureMap;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "ddcc-to-coredataset"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre>map &quot;http://who-int.github.io/svc/StructureMap/ddcc-to-coredataset&quot; = &quot;ddcc-to-coredataset&quot;\r\n\r\nuses &quot;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition&quot; alias DDCC as source\r\nuses &quot;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument&quot; alias DDCCDocument as source\r\nuses &quot;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient&quot; alias DDCCPatient as source\r\nuses &quot;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition&quot; alias DDCCComposition as source\r\nuses &quot;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination&quot; alias DDCCCountryOfVaccination as source\r\nuses &quot;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand&quot; alias DDCCVaccineBrand as source\r\nuses &quot;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization&quot; alias DDCCOrganization as source\r\nuses &quot;https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization&quot; alias DDCCImmunization as source\r\nuses &quot;https://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV&quot; alias DDCCCoreDataSetPoV as target\r\n\r\ngroup Decode_DDCC_to_QR(source ddcc : DDCCDocument, target qr : DDCCCoreDataSetPoV) {\r\n  ddcc.entry as entry then {\r\n    // entry.resource : DDCCPatient as patient\r\n    entry.resource : Patient as patient then Decode_Patient_To_QR(patient, qr) &quot;Patient&quot;;\r\n  };\r\n  ddcc.entry as entry then {\r\n    entry.resource : Immunization as immunization log immunization then Decode_Immunization_To_QR(ddcc, immunization, qr) &quot;Immunization&quot;;\r\n  };\r\n}\r\n\r\ngroup Decode_Patient_To_QR(source patient : DDCCPatient, target qr : DDCCCoreDataSetPoV) {\r\n  patient.birthDate as birthDate -&gt; qr.birthDate = birthDate;\r\n  patient.name as name then {\r\n    name.text as text -&gt; qr.name = text;\r\n  };\r\n}\r\n\r\ngroup Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization : DDCCImmunization, target qr : DDCCCoreDataSetPoV) {\r\n  immunization -&gt; qr.vaccination = create('BackboneElement') as vacEvent then {\r\n    immunization.protocolApplied as protocol then {\r\n      protocol.doseNumberPositiveInt as dose -&gt; vacEvent.dose = dose;\r\n      protocol.seriesDosesPositiveInt as doseNum -&gt; vacEvent.totalDoses = doseNum;\r\n      protocol.targetDisease as targetDisease then {\r\n        targetDisease.valueCodableConcept as valueCodableConcept -&gt; vacEvent.disease = valueCodableConcept;\r\n      } &quot;Target Disease&quot;;\r\n    };\r\n    immunization.occurrenceDateTime as date -&gt; vacEvent.date = date;\r\n    // TODO: need to populate vacEvent.maholder\r\n    immunization.extension as country where (url = 'https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination') then {\r\n      country.valueCode as code -&gt;  vacEvent.country = create('Coding') as coding,  coding.code = code,  coding.system = 'http://hl7.org/fhir/ValueSet/iso3166-1-3';\r\n    } &quot;Country&quot;;\r\n    // immunization.extension : DDCCBrand as brand\r\n    immunization.extension as brand where (url = 'https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand') then {\r\n      brand.valueCoding as valueCoding -&gt; vacEvent.brand = valueCoding;\r\n    } &quot;Vaccine Brand&quot;;\r\n    immunization.vaccineCode as vaccineCode then {\r\n      vaccineCode.coding as coding -&gt; vacEvent.vaccine = coding;\r\n    } &quot;Vaccine Code&quot;;\r\n    ddcc.entry as entry then {\r\n      // entry.resource : DDCCOrganization as organization\r\n      entry.resource : Organization as organization then {\r\n        organization.name as name -&gt; vacEvent.centre = name;\r\n      } &quot;Centre Name&quot;;\r\n    } &quot;Vaccination Centre&quot;;\r\n    ddcc.entry as entry then {\r\n      // entry.resource : DDCCComposition as composition\r\n      entry.resource : Composition as composition then {\r\n        composition.identifier as identifier -&gt; qr.identifier = identifier;\r\n      } &quot;Vaccination Event ID&quot;;\r\n    } &quot;Vaccincation Event&quot;;\r\n  } &quot;Vaccination&quot;;\r\n}\r\n\r\n</pre></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><pre>map &quot;http://who-int.github.io/svc/StructureMap/ddcc-to-coredataset&quot; = &quot;ddcc-to-coredataset&quot;\r\n\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition&quot; alias DDCC as source\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument&quot; alias DDCCDocument as source\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient&quot; alias DDCCPatient as source\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition&quot; alias DDCCComposition as source\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination&quot; alias DDCCCountryOfVaccination as source\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand&quot; alias DDCCVaccineBrand as source\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization&quot; alias DDCCOrganization as source\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization&quot; alias DDCCImmunization as source\r\nuses &quot;http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV&quot; alias DDCCCoreDataSetPoV as target\r\n\r\ngroup Decode_DDCC_to_QR(source ddcc : DDCCDocument, target qr : DDCCCoreDataSetPoV) {\r\n  ddcc.entry as entry then {\r\n    // entry.resource : DDCCPatient as patient\r\n    entry.resource : Patient as patient then Decode_Patient_To_QR(patient, qr) &quot;Patient&quot;;\r\n  };\r\n  ddcc.entry as entry then {\r\n    entry.resource : Immunization as immunization log immunization then Decode_Immunization_To_QR(ddcc, immunization, qr) &quot;Immunization&quot;;\r\n  };\r\n}\r\n\r\ngroup Decode_Patient_To_QR(source patient : DDCCPatient, target qr : DDCCCoreDataSetPoV) {\r\n  patient.birthDate as birthDate -&gt; qr.birthDate = birthDate;\r\n  patient.name as name then {\r\n    name.text as text -&gt; qr.name = text;\r\n  };\r\n}\r\n\r\ngroup Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization : DDCCImmunization, target qr : DDCCCoreDataSetPoV) {\r\n  immunization -&gt; qr.vaccination = create('BackboneElement') as vacEvent then {\r\n    immunization.protocolApplied as protocol then {\r\n      protocol.doseNumberPositiveInt as dose -&gt; vacEvent.dose = dose;\r\n      protocol.seriesDosesPositiveInt as doseNum -&gt; vacEvent.totalDoses = doseNum;\r\n      protocol.targetDisease as targetDisease then {\r\n        targetDisease.valueCodableConcept as valueCodableConcept -&gt; vacEvent.disease = valueCodableConcept;\r\n      } &quot;Target Disease&quot;;\r\n    };\r\n    immunization.occurrenceDateTime as date -&gt; vacEvent.date = date;\r\n    // TODO: need to populate vacEvent.maholder\r\n    immunization.extension as country where (url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination') then {\r\n      country.valueCode as code -&gt;  vacEvent.country = create('Coding') as coding,  coding.code = code,  coding.system = 'http://hl7.org/fhir/ValueSet/iso3166-1-3';\r\n    } &quot;Country&quot;;\r\n    // immunization.extension : DDCCBrand as brand\r\n    immunization.extension as brand where (url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand') then {\r\n      brand.valueCoding as valueCoding -&gt; vacEvent.brand = valueCoding;\r\n    } &quot;Vaccine Brand&quot;;\r\n    immunization.vaccineCode as vaccineCode then {\r\n      vaccineCode.coding as coding -&gt; vacEvent.vaccine = coding;\r\n    } &quot;Vaccine Code&quot;;\r\n    ddcc.entry as entry then {\r\n      // entry.resource : DDCCOrganization as organization\r\n      entry.resource : Organization as organization then {\r\n        organization.name as name -&gt; vacEvent.centre = name;\r\n      } &quot;Centre Name&quot;;\r\n    } &quot;Vaccination Centre&quot;;\r\n    ddcc.entry as entry then {\r\n      // entry.resource : DDCCComposition as composition\r\n      entry.resource : Composition as composition then {\r\n        composition.identifier as identifier -&gt; qr.identifier = identifier;\r\n      } &quot;Vaccination Event ID&quot;;\r\n    } &quot;Vaccincation Event&quot;;\r\n  } &quot;Vaccination&quot;;\r\n}\r\n\r\n</pre></div>"
   ];
   fhir:StructureMap.url [ fhir:value "https://who-int.github.io/svc/StructureMap/ddcc-to-coredataset"];
   fhir:StructureMap.version [ fhir:value "0.2.1"];
   fhir:StructureMap.name [ fhir:value "ddcc-to-coredataset"];
   fhir:StructureMap.status [ fhir:value "draft"];
-  fhir:StructureMap.date [ fhir:value "2021-08-03T17:50:05+00:00"^^xsd:dateTime];
+  fhir:StructureMap.date [ fhir:value "2021-08-03T19:56:18+00:00"^^xsd:dateTime];
   fhir:StructureMap.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureMap.contact [
      fhir:index 0;
@@ -29,72 +29,72 @@
   fhir:StructureMap.structure [
      fhir:index 0;
      fhir:StructureMap.structure.url [
-       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition";
-       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition>
+       fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition";
+       fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition>
      ];
      fhir:StructureMap.structure.mode [ fhir:value "source" ];
      fhir:StructureMap.structure.alias [ fhir:value "DDCC" ]
   ], [
      fhir:index 1;
      fhir:StructureMap.structure.url [
-       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument";
-       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument>
+       fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument";
+       fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocument>
      ];
      fhir:StructureMap.structure.mode [ fhir:value "source" ];
      fhir:StructureMap.structure.alias [ fhir:value "DDCCDocument" ]
   ], [
      fhir:index 2;
      fhir:StructureMap.structure.url [
-       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
-       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
+       fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient";
+       fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
      ];
      fhir:StructureMap.structure.mode [ fhir:value "source" ];
      fhir:StructureMap.structure.alias [ fhir:value "DDCCPatient" ]
   ], [
      fhir:index 3;
      fhir:StructureMap.structure.url [
-       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition";
-       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition>
+       fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition";
+       fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition>
      ];
      fhir:StructureMap.structure.mode [ fhir:value "source" ];
      fhir:StructureMap.structure.alias [ fhir:value "DDCCComposition" ]
   ], [
      fhir:index 4;
      fhir:StructureMap.structure.url [
-       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination";
-       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination>
+       fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination";
+       fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination>
      ];
      fhir:StructureMap.structure.mode [ fhir:value "source" ];
      fhir:StructureMap.structure.alias [ fhir:value "DDCCCountryOfVaccination" ]
   ], [
      fhir:index 5;
      fhir:StructureMap.structure.url [
-       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand";
-       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand>
+       fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand";
+       fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand>
      ];
      fhir:StructureMap.structure.mode [ fhir:value "source" ];
      fhir:StructureMap.structure.alias [ fhir:value "DDCCVaccineBrand" ]
   ], [
      fhir:index 6;
      fhir:StructureMap.structure.url [
-       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
-       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
+       fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
+       fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
      ];
      fhir:StructureMap.structure.mode [ fhir:value "source" ];
      fhir:StructureMap.structure.alias [ fhir:value "DDCCOrganization" ]
   ], [
      fhir:index 7;
      fhir:StructureMap.structure.url [
-       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
-       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
+       fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
+       fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
      ];
      fhir:StructureMap.structure.mode [ fhir:value "source" ];
      fhir:StructureMap.structure.alias [ fhir:value "DDCCImmunization" ]
   ], [
      fhir:index 8;
      fhir:StructureMap.structure.url [
-       fhir:value "https://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV";
-       fhir:link <https://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV>
+       fhir:value "http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV";
+       fhir:link <http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV>
      ];
      fhir:StructureMap.structure.mode [ fhir:value "target" ];
      fhir:StructureMap.structure.alias [ fhir:value "DDCCCoreDataSetPoV" ]
@@ -395,7 +395,7 @@
            fhir:StructureMap.group.rule.source.context [ fhir:value "immunization" ];
            fhir:StructureMap.group.rule.source.element [ fhir:value "extension" ];
            fhir:StructureMap.group.rule.source.variable [ fhir:value "country" ];
-           fhir:StructureMap.group.rule.source.condition [ fhir:value "(url = 'https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination')" ]
+           fhir:StructureMap.group.rule.source.condition [ fhir:value "(url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination')" ]
          ];
          fhir:StructureMap.group.rule.rule [
            fhir:index 0;
@@ -448,7 +448,7 @@
            fhir:StructureMap.group.rule.source.context [ fhir:value "immunization" ];
            fhir:StructureMap.group.rule.source.element [ fhir:value "extension" ];
            fhir:StructureMap.group.rule.source.variable [ fhir:value "brand" ];
-           fhir:StructureMap.group.rule.source.condition [ fhir:value "(url = 'https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand')" ]
+           fhir:StructureMap.group.rule.source.condition [ fhir:value "(url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand')" ]
          ];
          fhir:StructureMap.group.rule.rule [
            fhir:index 0;
@@ -592,7 +592,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-coredataset.ttl> a owl:Ontology;
+<http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-coredataset.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

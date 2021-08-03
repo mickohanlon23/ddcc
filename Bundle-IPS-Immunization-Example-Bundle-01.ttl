@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/Bundle/IPS-Immunization-Example-Bundle-01> a fhir:Bundle;
+<http://worldhealthorganization.github.io/ddcc/Bundle/IPS-Immunization-Example-Bundle-01> a fhir:Bundle;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "IPS-Immunization-Example-Bundle-01"];
   fhir:Bundle.type [ fhir:value "collection"];
@@ -62,7 +62,7 @@
      fhir:CodeableConcept.text [ fhir:value "COVID-19 vaccine, DNA based" ]
   ];
   fhir:Immunization.patient [
-     fhir:link <https://worldhealthorganization.github.io/ddcc/Patient/afd2a258-c0fb-4a41-a337-263e9efd9936>;
+     fhir:link <http://worldhealthorganization.github.io/ddcc/Patient/afd2a258-c0fb-4a41-a337-263e9efd9936>;
      fhir:Reference.reference [ fhir:value "Patient/afd2a258-c0fb-4a41-a337-263e9efd9936" ]
   ];
   fhir:Immunization.occurrenceDateTime [ fhir:value "2021-04-21T00:00:00+02:00"^^xsd:dateTime];
@@ -72,7 +72,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/Bundle/IPS-Immunization-Example-Bundle-01.ttl> a owl:Ontology;
+<http://worldhealthorganization.github.io/ddcc/Bundle/IPS-Immunization-Example-Bundle-01.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

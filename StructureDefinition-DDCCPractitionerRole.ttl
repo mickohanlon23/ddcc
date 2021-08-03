@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole> a fhir:StructureDefinition;
+<http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole> a fhir:StructureDefinition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "DDCCPractitionerRole"];
   fhir:DomainResource.text [
@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "individual" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole"];
+  fhir:StructureDefinition.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole"];
   fhir:StructureDefinition.version [ fhir:value "0.2.1"];
   fhir:StructureDefinition.name [ fhir:value "DDCCPractitionerRole"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Practitioner Role"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-03T17:50:05+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-03T19:56:18+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -669,9 +669,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner";
+           fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner";
            fhir:index 0;
-           fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner>
+           fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -710,9 +710,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
+           fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
            fhir:index 0;
-           fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
+           fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1674,9 +1674,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner";
+           fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner";
            fhir:index 0;
-           fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner>
+           fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner>
          ]
        ]
      ], [
@@ -1687,9 +1687,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
+           fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization";
            fhir:index 0;
-           fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
+           fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
          ]
        ]
      ]
@@ -1697,7 +1697,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole.ttl> a owl:Ontology;
+<http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
