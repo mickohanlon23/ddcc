@@ -97,9 +97,9 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 In the HL7 Healthcare Privacy and Security Classification (HCS) there are code systems specific to Confidentiality, Sensitivity, Integrity, and Handling Caveats. Some values would come from a local vocabulary as they are related to workflow roles and special projects.","Use of the Health Care Privacy/Security Classification (HCS) system of security-tag use is recommended.","","","","","","","",,"extensible","Security Labels from the Healthcare Privacy and Security Classification System.","http://hl7.org/fhir/ValueSet/security-labels","",,,,"DocumentReference.securityLabel",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Composition.confidentiality, Composition.meta.security",".confidentialityCode","ClinicalDocument/confidentialityCode/@code","TXA-18","DocumentEntry.confidentialityCode"
-"DocumentReference.content","","","",2,*,"","","Y","BackboneElement {[]} {[]}
+"DocumentReference.content","","","",2,2,"Y","","Y","BackboneElement {[]} {[]}
 ","Document referenced","The document and format referenced. There may be multiple content element repetitions, each with a different format.","","","","","","","","","",,,,,"","value:format}
-","",Y,"closed","DocumentReference.content",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","",,"closed","DocumentReference.content",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Bundle(Composition+*)","document.text"
 "DocumentReference.content.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
@@ -118,7 +118,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Composition.language, 
 Composition.title, 
 Composition.date","document.text","ClinicalDocument/languageCode, ClinicalDocument/title, ClinicalDocument/date","TXA-3 for mime type","DocumentEntry.mimeType, DocumentEntry.languageCode, DocumentEntry.URI, DocumentEntry.size, DocumentEntry.hash, DocumentEntry.title, DocumentEntry.creationTime"
-"DocumentReference.content.format","","","",1,1,"Y","","Y","Coding {[]} {[]}
+"DocumentReference.content.format","","","",0,1,"","","Y","Coding {[]} {[]}
 ","Format/content rules for the document","An identifier of the document encoding, structure, and template that the document conforms to beyond the base format indicated in the mimeType.","Note that while IHE mostly issues URNs for format types, not all documents can be identified by a URI.","","","","","","","","",,"extensible","","http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet","",,,,"DocumentReference.content.format",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Composition.meta.profile","document.text","derived from the IHE Profile or Implementation Guide templateID","DocumentEntry.formatCode"
 "DocumentReference.content","qrImage","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
@@ -172,7 +172,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "DocumentReference.content.attachment.creation","","","",0,1,"","","Y","dateTime {[]} {[]}
 ","Date attachment was first created","The date that the attachment was first created.","","This is often tracked as an integrity issue for use of the attachment.","","","","","","","",,,,,"",,,,"Attachment.creation",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A (needs data type R3 proposal)"
-"DocumentReference.content.format","","","",0,1,"","","Y","Coding {[]} {[]}
+"DocumentReference.content.format","","","",1,1,"","","Y","Coding {[]} {[]}
 ","Format/content rules for the document","An identifier of the document encoding, structure, and template that the document conforms to beyond the base format indicated in the mimeType.","Note that while IHE mostly issues URNs for format types, not all documents can be identified by a URI.","","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem""/>
   <code value=""image""/>
@@ -229,7 +229,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "DocumentReference.content.attachment.creation","","","",0,1,"","","Y","dateTime {[]} {[]}
 ","Date attachment was first created","The date that the attachment was first created.","","This is often tracked as an integrity issue for use of the attachment.","","","","","","","",,,,,"",,,,"Attachment.creation",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A (needs data type R3 proposal)"
-"DocumentReference.content.format","","","",0,1,"","","Y","Coding {[]} {[]}
+"DocumentReference.content.format","","","",1,1,"","","Y","Coding {[]} {[]}
 ","Format/content rules for the document","An identifier of the document encoding, structure, and template that the document conforms to beyond the base format indicated in the mimeType.","Note that while IHE mostly issues URNs for format types, not all documents can be identified by a URI.","","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
   <system value=""http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem""/>
   <code value=""serialized""/>
