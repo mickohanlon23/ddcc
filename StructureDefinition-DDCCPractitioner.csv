@@ -31,7 +31,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Practitioner.identifier","","","",1,*,"Y","","Y","Identifier {[]} {[]}
 ","An identifier for the person as this agent","An identifier that applies to this person in this role.","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"","value:use}
-","",Y,"open","Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+profile:assigner.resolve()}","",Y,"open","Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","PRD-7 (or XCN.1)","./id","./Identifiers","FiveWs.identifier"
 "Practitioner.identifier","ddccIdentifier","","",0,*,"","","Y","Identifier {[]} {[]}
 ","An identifier for the person as this agent","An identifier that applies to this person in this role.","","Often, specific identities are assigned for the agent.","","","","","","","",,,,,"",,,,"Practitioner.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

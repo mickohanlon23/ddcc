@@ -61,7 +61,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Reference details for the link","The reference details for the link.","","","","","","","","","",,,,,"",,,,"Bundle.link.url",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Bundle.entry","","","",1,*,"","","Y","BackboneElement {[]} {[]}
-","Entry in the bundle - will have a resource or information","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"","value:resource}
+","Entry in the bundle - will have a resource or information","An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only).","","","","","","","","","",,,,,"","profile:resource.resolve()}
 ","",,"closed","Bundle.entry",0,*,"","bdl-5:must be a resource unless there's a request or response {resource.exists() or request.exists() or response.exists()}
 bdl-8:fullUrl cannot be a version specific reference {fullUrl.contains('/_history/').not()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}"
 "Bundle.entry.id","","","",0,1,"","","","string {[]} {[]}
@@ -201,8 +201,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Bundle.entry.resource","","","",0,1,"","","","Parameters {[CanonicalType[http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters]]} {[]}
-","Operation Request or Response","This resource is a non-persisted resource used to pass information into and back from an [operation](http://hl7.org/fhir/R4/operations.html). It has no other use, and there is no RESTful endpoint associated with it.","The parameters that may be used are defined by the OperationDefinition resource.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"","","n/a","Entity. Role, or Act","n/a"
+"Bundle.entry.resource","","","",0,1,"","","Y","Parameters {[CanonicalType[http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters]]} {[]}
+QuestionnaireResponse {[CanonicalType[http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse]]} {[]}","A resource in the bundle","The Resource for the entry. The purpose/meaning of the resource is determined by the Bundle.type.","","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
