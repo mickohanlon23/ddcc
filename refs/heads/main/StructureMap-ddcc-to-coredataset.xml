@@ -15,31 +15,31 @@ uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDC
 uses &quot;http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization&quot; alias DDCCImmunization as source
 uses &quot;http://worldhealthorganization.github.io/ddcc/DDCCCoreDataSetPoV&quot; alias DDCCCoreDataSetPoV as target
 
-group Decode_DDCC_to_QR(source ddcc : DDCCDocument, target qr : DDCCCoreDataSetPoV) {
+group Decode-DDCC-to-QR(source ddcc : DDCCDocument, target qr : DDCCCoreDataSetPoV) {
   ddcc.entry as entry then {
     // entry.resource : DDCCPatient as patient
-    entry.resource : Patient as patient then Decode_Patient_To_QR(patient, qr) &quot;Patient&quot;;
+    entry.resource : Patient as patient then Decode-Patient-To-QR(patient, qr) &quot;Patient&quot;;
   };
   ddcc.entry as entry then {
-    entry.resource : Immunization as immunization log immunization then Decode_Immunization_To_QR(ddcc, immunization, qr) &quot;Immunization&quot;;
+    entry.resource : Immunization as immunization log immunization then Decode-Immunization-To-QR(ddcc, immunization, qr) &quot;Immunization&quot;;
   };
 }
 
-group Decode_Patient_To_QR(source patient : DDCCPatient, target qr : DDCCCoreDataSetPoV) {
+group Decode-Patient-To-QR(source patient : DDCCPatient, target qr : DDCCCoreDataSetPoV) {
   patient.birthDate as birthDate -&gt; qr.birthDate = birthDate;
   patient.name as name then {
     name.text as text -&gt; qr.name = text;
   };
 }
 
-group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization : DDCCImmunization, target qr : DDCCCoreDataSetPoV) {
+group Decode-Immunization-To-QR(source ddcc : DDCCDocument, source immunization : DDCCImmunization, target qr : DDCCCoreDataSetPoV) {
   immunization -&gt; qr.vaccination = create('BackboneElement') as vacEvent then {
     immunization.protocolApplied as protocol then {
       protocol.doseNumberPositiveInt as dose -&gt; vacEvent.dose = dose;
       protocol.seriesDosesPositiveInt as doseNum -&gt; vacEvent.totalDoses = doseNum;
       protocol.targetDisease as targetDisease then {
         targetDisease.valueCodableConcept as valueCodableConcept -&gt; vacEvent.disease = valueCodableConcept;
-      } &quot;Target Disease&quot;;
+      } &quot;Target-Disease&quot;;
     };
     immunization.occurrenceDateTime as date -&gt; vacEvent.date = date;
     // TODO: need to populate vacEvent.maholder
@@ -49,32 +49,32 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
     // immunization.extension : DDCCBrand as brand
     immunization.extension as brand where (url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand') then {
       brand.valueCoding as valueCoding -&gt; vacEvent.brand = valueCoding;
-    } &quot;Vaccine Brand&quot;;
+    } &quot;Vaccine-Brand&quot;;
     immunization.vaccineCode as vaccineCode then {
       vaccineCode.coding as coding -&gt; vacEvent.vaccine = coding;
-    } &quot;Vaccine Code&quot;;
+    } &quot;Vaccine-Code&quot;;
     ddcc.entry as entry then {
       // entry.resource : DDCCOrganization as organization
       entry.resource : Organization as organization then {
         organization.name as name -&gt; vacEvent.centre = name;
-      } &quot;Centre Name&quot;;
-    } &quot;Vaccination Centre&quot;;
+      } &quot;Centre-Name&quot;;
+    } &quot;Vaccination-Centre&quot;;
     ddcc.entry as entry then {
       // entry.resource : DDCCComposition as composition
       entry.resource : Composition as composition then {
         composition.identifier as identifier -&gt; qr.identifier = identifier;
-      } &quot;Vaccination Event ID&quot;;
-    } &quot;Vaccincation Event&quot;;
+      } &quot;Vaccination-Event-ID&quot;;
+    } &quot;Vaccination-Event&quot;;
   } &quot;Vaccination&quot;;
 }
 
 </pre></div>
   </text>
-  <url value="https://who-int.github.io/svc/StructureMap/ddcc-to-coredataset"/>
+  <url value="http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-coredataset"/>
   <version value="0.2.1"/>
   <name value="ddcc-to-coredataset"/>
   <status value="draft"/>
-  <date value="2021-08-03T21:50:07+00:00"/>
+  <date value="2021-08-03T22:29:42+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -128,7 +128,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
     <alias value="DDCCCoreDataSetPoV"/>
   </structure>
   <group>
-    <name value="Decode_DDCC_to_QR"/>
+    <name value="Decode-DDCC-to-QR"/>
     <typeMode value="none"/>
     <input>
       <name value="ddcc"/>
@@ -156,7 +156,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
           <variable value="patient"/>
         </source>
         <dependent>
-          <name value="Decode_Patient_To_QR"/>
+          <name value="Decode-Patient-To-QR"/>
           <variable value="patient"/>
           <variable value="qr"/>
         </dependent>
@@ -180,7 +180,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
           <logMessage value="immunization"/>
         </source>
         <dependent>
-          <name value="Decode_Immunization_To_QR"/>
+          <name value="Decode-Immunization-To-QR"/>
           <variable value="ddcc"/>
           <variable value="immunization"/>
           <variable value="qr"/>
@@ -189,7 +189,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
     </rule>
   </group>
   <group>
-    <name value="Decode_Patient_To_QR"/>
+    <name value="Decode-Patient-To-QR"/>
     <typeMode value="none"/>
     <input>
       <name value="patient"/>
@@ -245,7 +245,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
     </rule>
   </group>
   <group>
-    <name value="Decode_Immunization_To_QR"/>
+    <name value="Decode-Immunization-To-QR"/>
     <typeMode value="none"/>
     <input>
       <name value="ddcc"/>
@@ -319,7 +319,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
           </target>
         </rule>
         <rule>
-          <name value="Target Disease"/>
+          <name value="Target-Disease"/>
           <source>
             <context value="protocol"/>
             <element value="targetDisease"/>
@@ -408,7 +408,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
         <documentation value="TODO: need to populate vacEvent.maholder"/>
       </rule>
       <rule>
-        <name value="Vaccine Brand"/>
+        <name value="Vaccine-Brand"/>
         <source>
           <context value="immunization"/>
           <element value="extension"/>
@@ -435,7 +435,7 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
         <documentation value="immunization.extension : DDCCBrand as brand"/>
       </rule>
       <rule>
-        <name value="Vaccine Code"/>
+        <name value="Vaccine-Code"/>
         <source>
           <context value="immunization"/>
           <element value="vaccineCode"/>
@@ -460,14 +460,14 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
         </rule>
       </rule>
       <rule>
-        <name value="Vaccination Centre"/>
+        <name value="Vaccination-Centre"/>
         <source>
           <context value="ddcc"/>
           <element value="entry"/>
           <variable value="entry"/>
         </source>
         <rule>
-          <name value="Centre Name"/>
+          <name value="Centre-Name"/>
           <source>
             <context value="entry"/>
             <type value="Organization"/>
@@ -495,14 +495,14 @@ group Decode_Immunization_To_QR(source ddcc : DDCCDocument, source immunization 
         </rule>
       </rule>
       <rule>
-        <name value="Vaccincation Event"/>
+        <name value="Vaccination-Event"/>
         <source>
           <context value="ddcc"/>
           <element value="entry"/>
           <variable value="entry"/>
         </source>
         <rule>
-          <name value="Vaccination Event ID"/>
+          <name value="Vaccination-Event-ID"/>
           <source>
             <context value="entry"/>
             <type value="Composition"/>
