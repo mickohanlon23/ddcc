@@ -162,7 +162,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 4" class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates: Vaccination Status (DDCC:VS) - Local Development build (v0.2.1). See the <a href="https://worldhealthorganization.github.io/ddcc/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">WHO Digital Documentation of COVID-19 Certificates: Vaccination Status (DDCC:VS) - Local Development build (v0.2.1). See the <a href="http://worldhealthorganization.github.io/ddcc/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -478,7 +478,7 @@ High-level kind of a clinical document at a macro level.</p>
   <tr><td>Definition</td><td><p>Who or what the composition is about. The composition can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of livestock, or a set of patients that share a common exposure).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-DDCCPatient.html" title="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient">DDCCPatient</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-DDCCPatient.html" title="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient">DDCCPatient</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Essential metadata for searching for the composition. Identifies who and/or what the composition/document is about.</p>
 </td></tr>
@@ -666,7 +666,7 @@ The way in which a person authenticated a composition.</p>
   <tr><td>Definition</td><td><p>Who attested the composition in the specified way.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-DDCCOrganization.html" title="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization">DDCCOrganization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-DDCCOrganization.html" title="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization">DDCCOrganization</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Requirements</td><td><p>Identifies who has taken on the responsibility for accuracy of the composition content.</p>
 </td></tr>
@@ -1072,7 +1072,7 @@ Classification of a section of a composition/document.</p>
   <tr><td>Definition</td><td><p>The actual focus of the section when it is not the subject of the composition, but instead represents something or someone associated with the subject such as (for a patient subject) a spouse, parent, fetus, or donor. If not focus is specified, the focus is assumed to be focus of the parent section, or, for a section in the Composition itself, the subject of the composition. Sections with a focus SHALL only include resources where the logical subject (patient, subject, focus, etc.) matches the section focus, or the resources have no logical subject (few resources).</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>1..1</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-DDCCImmunization.html" title="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization">DDCCImmunization</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-DDCCImmunization.html" title="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization">DDCCImmunization</a>)</td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#mustSupport">Must Support</a></td><td>true</td></tr>
   <tr><td>Comments</td><td><p>Typically, sections in a doument are about the subject of the document, whether that is a  patient, or group of patients, location, or device, or whatever. For some kind of documents, some sections actually contain data about related entities. Typical examples are  a section in a newborn discharge summary concerning the mother, or family history documents, with a section about each family member, though there are many other examples.</p>
 </td></tr>
@@ -1119,7 +1119,7 @@ What order applies to the items in the entry.</p>
   <tr><td>Definition</td><td><p>A reference to the actual resource from which the narrative in the section is derived.</p>
 </td></tr>
   <tr><td><a href="http://hl7.org/fhir/R4/conformance-rules.html#conformance">Control</a></td><td>0..* This element is affected by the following invariants: cmp-2</td></tr>
-  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-DDCCImmunization.html" title="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization">DDCCImmunization</a> | <a href="StructureDefinition-DDCCDocumentReferenceQR.html" title="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR">DDCCDocumentReferenceQR</a> | <a href="StructureDefinition-DDCCImmunizationRecommendation.html" title="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation">DDCCImmunizationRecommendation</a>)</td></tr>
+  <tr><td><a href="http://hl7.org/fhir/R4/datatypes.html">Type</a></td><td><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a>(<a href="StructureDefinition-DDCCImmunization.html" title="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization">DDCCImmunization</a> | <a href="StructureDefinition-DDCCDocumentReferenceQR.html" title="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReferenceQR">DDCCDocumentReferenceQR</a> | <a href="StructureDefinition-DDCCImmunizationRecommendation.html" title="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation">DDCCImmunizationRecommendation</a>)</td></tr>
   <tr><td>Comments</td><td><p>If there are no entries in the list, an emptyReason SHOULD be provided.</p>
 </td></tr>
   <tr><td>Invariants</td><td><b>Defined on this element</b><br/>
@@ -1201,14 +1201,14 @@ If a section is empty, why it is empty.</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 3, 2021 17:50+0000">2021-08-03</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 3, 2021 19:56+0000">2021-08-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                   | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/WorldHealthOrganization/ddcc/projects/1">Issues</a>
                 
-                 | <a style="color: #81BEF7" target="_blank" href="https://worldhealthorganization.github.io/ddcc/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+                 | <a style="color: #81BEF7" target="_blank" href="http://worldhealthorganization.github.io/ddcc/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
                  <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
           </span>
         </p>

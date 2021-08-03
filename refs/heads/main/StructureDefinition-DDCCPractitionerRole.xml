@@ -14,12 +14,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="individual"/>
   </extension>
-  <url value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole"/>
+  <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole"/>
   <version value="0.2.1"/>
   <name value="DDCCPractitionerRole"/>
   <title value="DDCC Practitioner Role"/>
   <status value="active"/>
-  <date value="2021-08-03T17:50:05+00:00"/>
+  <date value="2021-08-03T19:56:18+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -522,7 +522,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner"/>
+        <targetProfile value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -552,7 +552,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
+        <targetProfile value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1291,14 +1291,14 @@
       <path value="PractitionerRole.practitioner"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner"/>
+        <targetProfile value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitioner"/>
       </type>
     </element>
     <element id="PractitionerRole.organization">
       <path value="PractitionerRole.organization"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
+        <targetProfile value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
       </type>
     </element>
   </differential>

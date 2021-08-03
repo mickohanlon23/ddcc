@@ -6,14 +6,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/Composition/DDCC-Composition-Example-English> a fhir:Composition;
+<http://worldhealthorganization.github.io/ddcc/Composition/DDCC-Composition-Example-English> a fhir:Composition;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "DDCC-Composition-Example-English"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition";
+       fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition";
        fhir:index 0;
-       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition>
+       fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition>
      ]
   ];
   fhir:DomainResource.text [
@@ -35,13 +35,13 @@
      ]
   ];
   fhir:Composition.subject [
-     fhir:link <https://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-English>;
+     fhir:link <http://worldhealthorganization.github.io/ddcc/Patient/DDCC-Patient-English>;
      fhir:Reference.reference [ fhir:value "Patient/DDCC-Patient-English" ]
   ];
   fhir:Composition.date [ fhir:value "2020-05-06"^^xsd:date];
   fhir:Composition.author [
      fhir:index 0;
-     fhir:link <https://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-English>;
+     fhir:link <http://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-English>;
      fhir:Reference.reference [ fhir:value "Organization/DDCC-Organization-English" ]
   ];
   fhir:Composition.title [ fhir:value "Digital Documentation of COVID-19 Certificate (DDCC)"];
@@ -49,7 +49,7 @@
      fhir:index 0;
      fhir:Composition.attester.mode [ fhir:value "official" ];
      fhir:Composition.attester.party [
-       fhir:link <https://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-English>;
+       fhir:link <http://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-English>;
        fhir:Reference.reference [ fhir:value "Organization/DDCC-Organization-English" ]
      ]
   ];
@@ -64,23 +64,23 @@
        ]
      ];
      fhir:Composition.section.focus [
-       fhir:link <https://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-English>;
+       fhir:link <http://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-English>;
        fhir:Reference.reference [ fhir:value "Immunization/DDCC-Immunization-English" ]
      ];
      fhir:Composition.section.entry [
        fhir:index 0;
-       fhir:link <https://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-English>;
+       fhir:link <http://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-English>;
        fhir:Reference.reference [ fhir:value "Immunization/DDCC-Immunization-English" ]
      ], [
        fhir:index 1;
-       fhir:link <https://worldhealthorganization.github.io/ddcc/ImmunizationRecommendation/DDCC-ImmunizationRecommendation-English>;
+       fhir:link <http://worldhealthorganization.github.io/ddcc/ImmunizationRecommendation/DDCC-ImmunizationRecommendation-English>;
        fhir:Reference.reference [ fhir:value "ImmunizationRecommendation/DDCC-ImmunizationRecommendation-English" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/Composition/DDCC-Composition-Example-English.ttl> a owl:Ontology;
+<http://worldhealthorganization.github.io/ddcc/Composition/DDCC-Composition-Example-English.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

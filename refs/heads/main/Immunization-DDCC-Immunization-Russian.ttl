@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-Russian> a fhir:Immunization;
+<http://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-Russian> a fhir:Immunization;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "DDCC-Immunization-Russian"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
+       fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization";
        fhir:index 0;
-       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
+       fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
      ]
   ];
   fhir:DomainResource.text [
@@ -21,14 +21,14 @@
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
-     fhir:Extension.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand" ];
+     fhir:Extension.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand" ];
      fhir:Extension.valueCoding [
        fhir:Coding.system [ fhir:value "urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding" ];
        fhir:Coding.code [ fhir:value "TEST" ]
      ]
   ], [
      fhir:index 1;
-     fhir:Extension.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination" ];
+     fhir:Extension.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination" ];
      fhir:Extension.valueCode [ fhir:value "RUS" ]
   ];
   fhir:Immunization.status [ fhir:value "completed"];
@@ -51,14 +51,14 @@
   fhir:Immunization.performer [
      fhir:index 0;
      fhir:Immunization.performer.actor [
-       fhir:link <https://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-Russian>;
+       fhir:link <http://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-Russian>;
        fhir:Reference.reference [ fhir:value "Organization/DDCC-Organization-Russian" ]
      ]
   ];
   fhir:Immunization.protocolApplied [
      fhir:index 0;
      fhir:Immunization.protocolApplied.authority [
-       fhir:link <https://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-Russian>;
+       fhir:link <http://worldhealthorganization.github.io/ddcc/Organization/DDCC-Organization-Russian>;
        fhir:Reference.reference [ fhir:value "Organization/DDCC-Organization-Russian" ]
      ];
      fhir:Immunization.protocolApplied.targetDisease [
@@ -75,7 +75,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-Russian.ttl> a owl:Ontology;
+<http://worldhealthorganization.github.io/ddcc/Immunization/DDCC-Immunization-Russian.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

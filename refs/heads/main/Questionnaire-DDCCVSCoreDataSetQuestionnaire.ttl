@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/Questionnaire/DDCCVSCoreDataSetQuestionnaire> a fhir:Questionnaire;
+<http://worldhealthorganization.github.io/ddcc/Questionnaire/DDCCVSCoreDataSetQuestionnaire> a fhir:Questionnaire;
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "DDCCVSCoreDataSetQuestionnaire"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire";
+       fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire";
        fhir:index 0;
-       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire>
+       fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire>
      ]
   ];
   fhir:DomainResource.text [
@@ -23,11 +23,11 @@
      fhir:index 0;
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetStructureMap" ];
      fhir:Extension.valueCanonical [
-       fhir:value "https://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-map-qr-bundle";
-       fhir:link <https://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-map-qr-bundle>
+       fhir:value "http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-map-qr-bundle";
+       fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-map-qr-bundle>
      ]
   ];
-  fhir:Questionnaire.url [ fhir:value "https://worldhealthorganization.github.io/ddcc/DDCCVSCoreDataSetQuestionnaire"];
+  fhir:Questionnaire.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/DDCCVSCoreDataSetQuestionnaire"];
   fhir:Questionnaire.version [ fhir:value "0.2.1"];
   fhir:Questionnaire.name [ fhir:value "DDCCCoreDataSetQuestionnaire"];
   fhir:Questionnaire.title [ fhir:value "DDCC Core Data Set Questionnaire "];
@@ -188,7 +188,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://worldhealthorganization.github.io/ddcc/Questionnaire/DDCCVSCoreDataSetQuestionnaire.ttl> a owl:Ontology;
+<http://worldhealthorganization.github.io/ddcc/Questionnaire/DDCCVSCoreDataSetQuestionnaire.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

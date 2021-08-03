@@ -16,12 +16,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="not-classified"/>
   </extension>
-  <url value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder"/>
+  <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCFolder"/>
   <version value="0.2.1"/>
   <name value="DDCCFolder"/>
   <title value="DDCC Folder"/>
   <status value="active"/>
-  <date value="2021-08-03T17:50:05+00:00"/>
+  <date value="2021-08-03T19:56:18+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -1652,7 +1652,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"/>
+        <targetProfile value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2352,7 +2352,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference"/>
+        <targetProfile value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2427,7 +2427,7 @@
       <min value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"/>
+        <targetProfile value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient"/>
       </type>
     </element>
     <element id="List.subject.reference">
@@ -2439,7 +2439,7 @@
       <path value="List.entry.item"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference"/>
+        <targetProfile value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCDocumentReference"/>
       </type>
     </element>
   </differential>

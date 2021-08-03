@@ -9,12 +9,12 @@
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <a href="StructureDefinition-DDCCOrganizationIdentifier-definitions.html#Identifier.assigner">assigner</a><a name="Identifier.assigner"> </a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: red" title="This element must be supported">S</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a>)</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Organization that issued id (may be just text)</span></td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
-  <url value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganizationIdentifier"/>
+  <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganizationIdentifier"/>
   <version value="0.2.1"/>
   <name value="DDCCOrganizationIdentifier"/>
   <title value="DDCC OrganizationIdentifier"/>
   <status value="active"/>
-  <date value="2021-08-03T17:50:05+00:00"/>
+  <date value="2021-08-03T19:56:18+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -384,7 +384,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
+        <targetProfile value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -429,7 +429,7 @@
       <path value="Identifier.assigner"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
+        <targetProfile value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization"/>
       </type>
       <mustSupport value="true"/>
     </element>
