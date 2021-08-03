@@ -1,9 +1,9 @@
 ﻿DDCC_VS : Validation Results
 =========================================
 
-err = 96, warn = 67, info = 72
+err = 94, warn = 65, info = 72
 IG Publisher Version: 1.1.77
-Generated Tue Aug 03 22:30:41 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Tue Aug 03 22:37:09 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = http://worldhealthorganization.github.io/ddcc)
 
  Build Errors : 22 / 33 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 4 / 4 / 11
@@ -72,8 +72,8 @@ Generated Tue Aug 03 22:30:41 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/input/ddcc : 0 / 1 / 1
  /github/workspace/input/ips-preadopted/Immunization-uv-ips.structuredefinition : 0 / 1 / 1
  /github/workspace/input/ips-preadopted/Patient-uv-ips.structuredefinition : 0 / 1 / 1
- /github/workspace/input/resources/capabilitystatement-WHO-DDCC-Generator : 1 / 1 / 1
- /github/workspace/input/resources/capabilitystatement-WHO-DDCC-Registry-Service : 1 / 1 / 1
+ /github/workspace/input/resources/capabilitystatement-WHO-DDCC-Generator : 0 / 0 / 1
+ /github/workspace/input/resources/capabilitystatement-WHO-DDCC-Registry-Service : 0 / 0 / 1
  /github/workspace/input/resources/examples/example-IPS-Immunization-Bundle : 3 / 0 / 4
  /github/workspace/input/resources/maps/ddcc-to-coredataset.map : 0 / 1 / 1
  /github/workspace/input/resources/maps/ddcc-to-eu-dcc.map : 0 / 1 / 1
@@ -383,11 +383,7 @@ WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/ips/StructureDe
 == /github/workspace/input/ips-preadopted/Patient-uv-ips.structuredefinition.xml ==
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-pre-uv-ips'): The Implementation Guide contains no examples for this profile
 == /github/workspace/input/resources/capabilitystatement-WHO-DDCC-Generator.xml ==
-ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
-WARNING: CapabilityStatement/WHO.DDCC.Generator: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == /github/workspace/input/resources/capabilitystatement-WHO-DDCC-Registry-Service.xml ==
-ERROR: /f:CapabilityStatement: Undefined element 'acceptUnknown'
-WARNING: CapabilityStatement/WHO.DDCC.RegistryService: CapabilityStatement: cpb-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == /github/workspace/input/resources/examples/example-IPS-Immunization-Bundle.json ==
 ERROR: Bundle/IPS-Immunization-Example-Bundle-01: Bundle.timestamp: The instant '2021-04-30' is not valid (by regex)
 ERROR: Bundle/IPS-Immunization-Example-Bundle-01: Bundle.timestamp: Not a valid instant (Invalid date/time string (datatype InstantType does not support DAY precision): 2021-04-30)
