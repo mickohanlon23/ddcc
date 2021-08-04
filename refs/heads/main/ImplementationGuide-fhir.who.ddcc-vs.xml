@@ -330,6 +330,16 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/IPS-Immunization-Example-Bundle-01"/>
+      </reference>
+      <name value="IPS Example Immunization Bundle"/>
+      <description value="Example Bundle for an IPS Immunization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -355,6 +365,8 @@
       <reference>
         <reference value="StructureMap/ddcc-to-eu-dcc"/>
       </reference>
+      <name value="DDCC to EU DCC"/>
+      <description value="Mapping to go from the DDCC to the EU DCC"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -363,14 +375,8 @@
       <reference>
         <reference value="StructureMap/ddcc-to-coredataset"/>
       </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/IPS-Immunization-Example-Bundle-01"/>
-      </reference>
+      <name value="DDCC to Core Data Set"/>
+      <description value="Mapping to go from the DDCC to the Core Data Set"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -399,6 +405,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-icd11-sct-disease-targeted"/>
       </reference>
+      <name value="ConceptMap from ICD-11 to SNOMED CT for Disease or Agent Targeted"/>
       <description value="Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted"/>
     </resource>
     <resource>
@@ -577,6 +584,7 @@
       <reference>
         <reference value="StructureDefinition/DDCCCoreDataSetCoC"/>
       </reference>
+      <name value="DDCC Core Data Set - Continuity of Care Logical Model"/>
       <description value="DDCC Core Data - Continuity of Care elements."/>
     </resource>
     <resource>
@@ -647,6 +655,7 @@
       <reference>
         <reference value="ValueSet/DDCC-QR-Category-Usage-ValueSet"/>
       </reference>
+      <name value="DDCC QR Category Usage Codes"/>
       <description value="Categorization of QR codes by their business usage"/>
     </resource>
     <resource>
@@ -706,6 +715,7 @@
       <reference>
         <reference value="ValueSet/DDCC-QR-Format-ValueSet"/>
       </reference>
+      <name value="DDCC QR Format Codes"/>
       <description value="Format of the representation of QR code"/>
     </resource>
     <resource>
@@ -775,6 +785,7 @@
       <reference>
         <reference value="OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate"/>
       </reference>
+      <name value="OperationDefinition for generating a health certificate (DDCC) that is signed."/>
       <description value="Generate one or more signed DDCC Documents based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)"/>
     </resource>
     <resource>
@@ -943,6 +954,7 @@
       <reference>
         <reference value="ConceptMap/who-ddcc-map-icd11-sct-vaccines"/>
       </reference>
+      <name value="ConceptMap from ICD-11 to SNOMED CT for Vaccines"/>
       <description value="Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines"/>
     </resource>
     <resource>
@@ -1002,6 +1014,7 @@
       <reference>
         <reference value="StructureDefinition/DDCCCoreDataSetPoV"/>
       </reference>
+      <name value="DDCC Core Data Set - Proof of Vaccination Logical Model"/>
       <description value="DDCC Core Data - Proof of Vaccination elements."/>
     </resource>
     <resource>

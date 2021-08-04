@@ -525,6 +525,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/IPS-Immunization-Example-Bundle-01"
+        },
+        "name": "IPS Example Immunization Bundle",
+        "description": "Example Bundle for an IPS Immunization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -556,7 +569,9 @@
         ],
         "reference": {
           "reference": "StructureMap/ddcc-to-eu-dcc"
-        }
+        },
+        "name": "DDCC to EU DCC",
+        "description": "Mapping to go from the DDCC to the EU DCC"
       },
       {
         "extension": [
@@ -567,18 +582,9 @@
         ],
         "reference": {
           "reference": "StructureMap/ddcc-to-coredataset"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/IPS-Immunization-Example-Bundle-01"
-        }
+        },
+        "name": "DDCC to Core Data Set",
+        "description": "Mapping to go from the DDCC to the Core Data Set"
       },
       {
         "extension": [
@@ -616,6 +622,7 @@
         "reference": {
           "reference": "ConceptMap/who-ddcc-map-icd11-sct-disease-targeted"
         },
+        "name": "ConceptMap from ICD-11 to SNOMED CT for Disease or Agent Targeted",
         "description": "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted"
       },
       {
@@ -848,6 +855,7 @@
         "reference": {
           "reference": "StructureDefinition/DDCCCoreDataSetCoC"
         },
+        "name": "DDCC Core Data Set - Continuity of Care Logical Model",
         "description": "DDCC Core Data - Continuity of Care elements."
       },
       {
@@ -939,6 +947,7 @@
         "reference": {
           "reference": "ValueSet/DDCC-QR-Category-Usage-ValueSet"
         },
+        "name": "DDCC QR Category Usage Codes",
         "description": "Categorization of QR codes by their business usage"
       },
       {
@@ -1016,6 +1025,7 @@
         "reference": {
           "reference": "ValueSet/DDCC-QR-Format-ValueSet"
         },
+        "name": "DDCC QR Format Codes",
         "description": "Format of the representation of QR code"
       },
       {
@@ -1106,6 +1116,7 @@
         "reference": {
           "reference": "OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate"
         },
+        "name": "OperationDefinition for generating a health certificate (DDCC) that is signed.",
         "description": "Generate one or more signed DDCC Documents based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)"
       },
       {
@@ -1325,6 +1336,7 @@
         "reference": {
           "reference": "ConceptMap/who-ddcc-map-icd11-sct-vaccines"
         },
+        "name": "ConceptMap from ICD-11 to SNOMED CT for Vaccines",
         "description": "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines"
       },
       {
@@ -1402,6 +1414,7 @@
         "reference": {
           "reference": "StructureDefinition/DDCCCoreDataSetPoV"
         },
+        "name": "DDCC Core Data Set - Proof of Vaccination Logical Model",
         "description": "DDCC Core Data - Proof of Vaccination elements."
       },
       {

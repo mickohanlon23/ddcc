@@ -502,6 +502,19 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/Bundle/IPS-Immunization-Example-Bundle-01>;
+         fhir:Reference.reference [ fhir:value "Bundle/IPS-Immunization-Example-Bundle-01" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "IPS Example Immunization Bundle" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Bundle for an IPS Immunization" ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -511,7 +524,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Immunization (IPS)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.\r\n\r\nIt describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party." ]
      ], [
-       fhir:index 1;
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -524,7 +537,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient (IPS)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources." ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -533,9 +546,11 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-eu-dcc>;
          fhir:Reference.reference [ fhir:value "StructureMap/ddcc-to-eu-dcc" ]
-       ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC to EU DCC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping to go from the DDCC to the EU DCC" ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -544,18 +559,9 @@
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureMap/ddcc-to-coredataset>;
          fhir:Reference.reference [ fhir:value "StructureMap/ddcc-to-coredataset" ]
-       ]
-     ], [
-       fhir:index 4;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
        ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://worldhealthorganization.github.io/ddcc/Bundle/IPS-Immunization-Example-Bundle-01>;
-         fhir:Reference.reference [ fhir:value "Bundle/IPS-Immunization-Example-Bundle-01" ]
-       ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC to Core Data Set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping to go from the DDCC to the Core Data Set" ]
      ], [
        fhir:index 5;
        fhir:Element.extension [
@@ -593,6 +599,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-disease-targeted>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-sct-disease-targeted" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ConceptMap from ICD-11 to SNOMED CT for Disease or Agent Targeted" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted" ]
      ], [
        fhir:index 8;
@@ -840,6 +847,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetCoC>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCCoreDataSetCoC" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Core Data Set - Continuity of Care Logical Model" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Core Data - Continuity of Care elements." ]
      ], [
        fhir:index 26;
@@ -937,6 +945,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Category-Usage-ValueSet>;
          fhir:Reference.reference [ fhir:value "ValueSet/DDCC-QR-Category-Usage-ValueSet" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC QR Category Usage Codes" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorization of QR codes by their business usage" ]
      ], [
        fhir:index 33;
@@ -1029,6 +1038,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-QR-Format-ValueSet>;
          fhir:Reference.reference [ fhir:value "ValueSet/DDCC-QR-Format-ValueSet" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC QR Format Codes" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Format of the representation of QR code" ]
      ], [
        fhir:index 39;
@@ -1131,6 +1141,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate>;
          fhir:Reference.reference [ fhir:value "OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OperationDefinition for generating a health certificate (DDCC) that is signed." ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Generate one or more signed DDCC Documents based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)" ]
      ], [
        fhir:index 46;
@@ -1377,6 +1388,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-vaccines>;
          fhir:Reference.reference [ fhir:value "ConceptMap/who-ddcc-map-icd11-sct-vaccines" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ConceptMap from ICD-11 to SNOMED CT for Vaccines" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines" ]
      ], [
        fhir:index 63;
@@ -1460,6 +1472,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetPoV>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCCoreDataSetPoV" ]
        ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Core Data Set - Proof of Vaccination Logical Model" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Core Data - Proof of Vaccination elements." ]
      ], [
        fhir:index 69;
