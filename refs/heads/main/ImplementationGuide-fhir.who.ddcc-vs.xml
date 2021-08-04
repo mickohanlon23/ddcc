@@ -875,6 +875,7 @@
       </reference>
       <name value="DDCC HCID Registration Questionnaire"/>
       <description value="DDCC HCID Registration Questionnaire"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireSDC"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1126,6 +1127,16 @@
       </reference>
       <name value="DDCC Questionniare"/>
       <description value="Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html) which responds to the DDCC Questionnaire."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCQuestionnaireSDC"/>
+      </reference>
+      <name value="DDCC Questionnaire based on SDC"/>
+      <description value="DDCC Questionniare based on SDC Populatable Questionnaire with additional extension"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -1311,7 +1311,11 @@
          fhir:Reference.reference [ fhir:value "Questionnaire/DDCCHCIDRegistrationQuestionnaire" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC HCID Registration Questionnaire" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC HCID Registration Questionnaire" ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC HCID Registration Questionnaire" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireSDC";
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireSDC>
+       ]
      ], [
        fhir:index 51;
        fhir:Element.extension [
@@ -1646,6 +1650,19 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireSDC>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCQuestionnaireSDC" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Questionnaire based on SDC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Questionniare based on SDC Populatable Questionnaire with additional extension" ]
+     ], [
+       fhir:index 77;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "ConceptMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1655,7 +1672,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ConceptMap from ICD-11 to SNOMED CT for Vaccines" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines" ]
      ], [
-       fhir:index 77;
+       fhir:index 78;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1668,7 +1685,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Country Of Vaccination for Immunization" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Country Of Vaccination for Immunization" ]
      ], [
-       fhir:index 78;
+       fhir:index 79;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1681,7 +1698,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Disease or Agent Targeted (COVID-19)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)" ]
      ], [
-       fhir:index 79;
+       fhir:index 80;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1694,7 +1711,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Submit Health Event Response" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction." ]
      ], [
-       fhir:index 80;
+       fhir:index 81;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1707,7 +1724,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Core Data Set - Proof of Vaccination Logical Model" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Core Data - Proof of Vaccination elements." ]
      ], [
-       fhir:index 81;
+       fhir:index 82;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

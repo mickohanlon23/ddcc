@@ -113,8 +113,8 @@
     ],
     "Questionnaire": [
       {
-        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire",
-        "title": "DDCC Questionniare"
+        "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireSDC",
+        "title": "DDCC Questionnaire based on SDC"
       }
     ],
     "QuestionnaireResponse": [
@@ -125,6 +125,9 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/StructureDefinition/cqf-library": [
+      "Questionnaire"
+    ],
     "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
       "Immunization.occurrence[x]"
     ],
@@ -190,6 +193,10 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/StructureDefinition/variable": [
+      "Questionnaire",
+      "Questionnaire.item"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
     ],
@@ -199,7 +206,19 @@
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression": [
       "Questionnaire.item"
     ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-candidateExpression": [
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-choiceColumn": [
+      "Questionnaire.item"
+    ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-choiceConstraint": [
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-contextExpression": [
+      "Questionnaire.item"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression": [
       "Questionnaire.item"
     ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext": [
@@ -207,6 +226,7 @@
       "Questionnaire.item.item"
     ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext": [
+      "Questionnaire",
       "Questionnaire.item",
       "Questionnaire.item.item"
     ],
