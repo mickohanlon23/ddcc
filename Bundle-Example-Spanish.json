@@ -63,13 +63,13 @@
         },
         "text": {
           "status": "extensions",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>DDCC Vaccine Brand for Immunization</b>: <span title=\"{urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding TEST}\">TEST</span></p><p><b>DDCC Country Of Vaccination for Immunization</b>: ESP</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding XM0CX4}\">XM0CX4</span></p><p><b>patient</b>: <a href=\"DDCC-Patient-Example-Spanish\">DDCC-Patient-Example-Spanish</a></p><p><b>occurrence</b>: 2021-02-02</p><p><b>location</b>: <span>Sitio de vacunación</span></p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"#Organization_DDCC-Organization-Spanish\">See above (Organization/DDCC-Organization-Spanish)</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><a href=\"#Organization_DDCC-Organization-Spanish\">See above (Organization/DDCC-Organization-Spanish)</a></td><td><span title=\"Codes: {http://id.who.int/icd11/mms RA01.0}\">RA01.0</span></td><td>1</td><td>2</td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>DDCC Vaccine Brand for Immunization</b>: <span title=\"{http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem TEST}\">Test</span></p><p><b>DDCC Country Of Vaccination for Immunization</b>: ESP</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {http://id.who.int/icd11/mms XM0CX4}\">COVID-19 vaccine, replicating viral vector</span></p><p><b>patient</b>: <a href=\"#Patient_DDCC-Patient-Spanish\">See above (Patient/DDCC-Patient-Spanish)</a></p><p><b>occurrence</b>: 2021-02-02</p><p><b>location</b>: <span>Sitio de vacunación</span></p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"#Organization_DDCC-Organization-Spanish\">See above (Organization/DDCC-Organization-Spanish)</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><a href=\"#Organization_DDCC-Organization-Spanish\">See above (Organization/DDCC-Organization-Spanish)</a></td><td><span title=\"Codes: {http://id.who.int/icd11/mms RA01}\">COVID-19</span></td><td>1</td><td>2</td></tr></table></div>"
         },
         "extension": [
           {
             "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand",
             "valueCoding": {
-              "system": "urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding",
+              "system": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem",
               "code": "TEST"
             }
           },
@@ -82,13 +82,14 @@
         "vaccineCode": {
           "coding": [
             {
-              "system": "urn:EXAMPLE-who-:smart:vaccine-certificate:RC1:coding",
-              "code": "XM0CX4"
+              "system": "http://id.who.int/icd11/mms",
+              "code": "XM0CX4",
+              "display": "COVID-19 vaccine, replicating viral vector"
             }
           ]
         },
         "patient": {
-          "reference": "DDCC-Patient-Example-Spanish"
+          "reference": "Patient/DDCC-Patient-Spanish"
         },
         "occurrenceDateTime": "2021-02-02",
         "location": {
@@ -113,7 +114,8 @@
                 "coding": [
                   {
                     "system": "http://id.who.int/icd11/mms",
-                    "code": "RA01.0"
+                    "code": "RA01",
+                    "display": "COVID-19"
                   }
                 ]
               }

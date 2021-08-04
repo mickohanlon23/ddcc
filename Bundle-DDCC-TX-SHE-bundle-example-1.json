@@ -9,6 +9,7 @@
   "type": "batch",
   "entry": [
     {
+      "fullUrl": "http://www.example.org/fhir/Parameters/DDCC-VS-TX-SHE-Parameters-1",
       "resource": {
         "resourceType": "Parameters",
         "id": "DDCC-VS-TX-SHE-Parameters-1",
@@ -86,7 +87,8 @@
                   "answer": [
                     {
                       "valueCoding": {
-                        "code": "test-brand"
+                        "system": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem",
+                        "code": "TEST"
                       }
                     }
                   ]
@@ -96,7 +98,8 @@
                   "answer": [
                     {
                       "valueCoding": {
-                        "code": "test-manufacturer"
+                        "system": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem",
+                        "code": "TEST"
                       }
                     }
                   ]
@@ -106,7 +109,8 @@
                   "answer": [
                     {
                       "valueCoding": {
-                        "code": "test-ma-holder"
+                        "system": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem",
+                        "code": "TEST"
                       }
                     }
                   ]
@@ -156,6 +160,7 @@
                   "answer": [
                     {
                       "valueCoding": {
+                        "system": "urn:iso:std:iso:3166",
                         "code": "USA"
                       }
                     }
@@ -183,7 +188,7 @@
                     {
                       "valueCoding": {
                         "system": "http://id.who.int/icd11/mms",
-                        "code": "RA01.0"
+                        "code": "RA01"
                       }
                     }
                   ]

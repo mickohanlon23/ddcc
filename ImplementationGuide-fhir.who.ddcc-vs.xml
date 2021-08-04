@@ -502,13 +502,23 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/DDCC-Example-Test-CodeSystem"/>
+      </reference>
+      <name value="DDCC Codes for examples"/>
+      <description value="Example codes for example resources."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/DDCCPractitionerRole"/>
       </reference>
       <name value="DDCC Practitioner Role"/>
-      <description value="Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a &#xA;managing [DDCC Organization](StructureDefinition-DDCCOrgaznization.html), indicating &#xA;that an DDCC Practitioner is authorized by the public health authority (PHA) to &#xA;vaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."/>
+      <description value="Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a &#xA;managing [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating &#xA;that an DDCC Practitioner is authorized by the public health authority (PHA) to &#xA;vaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -576,7 +586,7 @@
       <reference>
         <reference value="Questionnaire/DDCCVSCoreDataSetQuestionnaire"/>
       </reference>
-      <name value="DDCC Core Data Set Questionnaire "/>
+      <name value="DDCC Core Data Set Questionnaire"/>
       <description value="DDCC Questionnaire for an Immunization event."/>
       <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire"/>
     </resource>
@@ -894,7 +904,7 @@
         <reference value="StructureDefinition/DDCCQuestionnaire"/>
       </reference>
       <name value="DDCC Questionniare"/>
-      <description value="Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given [DDCC QuestionnaireResponse](StructureDefintion-DDCCQuestionnaireResponse.html) which responds to the DDCC Questionnaire."/>
+      <description value="Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html) which responds to the DDCC Questionnaire."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

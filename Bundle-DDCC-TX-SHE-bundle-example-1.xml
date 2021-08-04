@@ -7,6 +7,7 @@
   </meta>
   <type value="batch"/>
   <entry>
+    <fullUrl value="http://www.example.org/fhir/Parameters/DDCC-VS-TX-SHE-Parameters-1"/>
     <resource>
       <Parameters>
         <id value="DDCC-VS-TX-SHE-Parameters-1"/>
@@ -67,7 +68,8 @@
                 <linkId value="brand"/>
                 <answer>
                   <valueCoding>
-                    <code value="test-brand"/>
+                    <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem"/>
+                    <code value="TEST"/>
                   </valueCoding>
                 </answer>
               </item>
@@ -75,7 +77,8 @@
                 <linkId value="manufacturer"/>
                 <answer>
                   <valueCoding>
-                    <code value="test-manufacturer"/>
+                    <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem"/>
+                    <code value="TEST"/>
                   </valueCoding>
                 </answer>
               </item>
@@ -83,7 +86,8 @@
                 <linkId value="ma_holder"/>
                 <answer>
                   <valueCoding>
-                    <code value="test-ma-holder"/>
+                    <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem"/>
+                    <code value="TEST"/>
                   </valueCoding>
                 </answer>
               </item>
@@ -121,6 +125,7 @@
                 <linkId value="country"/>
                 <answer>
                   <valueCoding>
+                    <system value="urn:iso:std:iso:3166"/>
                     <code value="USA"/>
                   </valueCoding>
                 </answer>
@@ -142,7 +147,7 @@
                 <answer>
                   <valueCoding>
                     <system value="http://id.who.int/icd11/mms"/>
-                    <code value="RA01.0"/>
+                    <code value="RA01"/>
                   </valueCoding>
                 </answer>
               </item>
