@@ -737,6 +737,19 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/DDCC-Example-Test-CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Codes for examples" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example codes for example resources." ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -744,9 +757,9 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCPractitionerRole" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Practitioner Role" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a \nmanaging [DDCC Organization](StructureDefinition-DDCCOrgaznization.html), indicating \nthat an DDCC Practitioner is authorized by the public health authority (PHA) to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)." ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a \nmanaging [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating \nthat an DDCC Practitioner is authorized by the public health authority (PHA) to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)." ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -759,7 +772,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Patient" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A DDCCPatient should:\n* if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner) should be set to reference the [DDCC Organization](StructureDefinition-DDCCOrganization.html) resource associated to the PHA.\n* obeys who-ddcc-patient-1" ]
      ], [
-       fhir:index 20;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -772,7 +785,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Composition" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for a Digital Documentation of COVID-19 Certificates \n(DDCC)." ]
      ], [
-       fhir:index 21;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -788,7 +801,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 22;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -804,7 +817,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse>
        ]
      ], [
-       fhir:index 23;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -816,7 +829,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Core Data - Continuity of Care elements." ]
      ], [
-       fhir:index 24;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -829,7 +842,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Organization" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Abstraction for a DDCC Organization. There should be a DDCC Organization associated \nto each public health authortiy (PHA)" ]
      ], [
-       fhir:index 25;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -839,14 +852,14 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/Questionnaire/DDCCVSCoreDataSetQuestionnaire>;
          fhir:Reference.reference [ fhir:value "Questionnaire/DDCCVSCoreDataSetQuestionnaire" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Core Data Set Questionnaire " ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Core Data Set Questionnaire" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Questionnaire for an Immunization event." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire";
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire>
        ]
      ], [
-       fhir:index 26;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -859,7 +872,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Document Reference" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A [DDCC Document Reference](StructureDefinition-DDCCDocumentReference.html) is a \ndocument reference to a [DDCC Document](StructureDefinition-DDCCDocument.html) \ncontaining the DDCC.\nThe content attachment url will point to a DDCC Document." ]
      ], [
-       fhir:index 27;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -872,7 +885,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC QR Format Codes" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Possible formats available for QR data." ]
      ], [
-       fhir:index 28;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -888,7 +901,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation>
        ]
      ], [
-       fhir:index 29;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -901,7 +914,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Add Bundle" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bundle to be transformed to from the DDCC QuestionnaireResponse\nto add on the DDCC generator." ]
      ], [
-       fhir:index 30;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -913,7 +926,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Categorization of QR codes by their business usage" ]
      ], [
-       fhir:index 31;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -929,7 +942,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
        ]
      ], [
-       fhir:index 32;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -945,7 +958,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 33;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -961,7 +974,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCComposition>
        ]
      ], [
-       fhir:index 34;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -977,7 +990,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 35;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -993,7 +1006,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 36;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1005,7 +1018,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Format of the representation of QR code" ]
      ], [
-       fhir:index 37;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1018,7 +1031,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Provide Document Bundle" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Provide Document Bundle for ITI-65" ]
      ], [
-       fhir:index 38;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1034,7 +1047,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
        ]
      ], [
-       fhir:index 39;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1047,7 +1060,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Immunization" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A DDCC Immunization contains the content corresponding to a row in the Vaccination \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) Immunization resouce, this is intended to map into an IPS \nImmunization resource." ]
      ], [
-       fhir:index 40;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1063,7 +1076,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
        ]
      ], [
-       fhir:index 41;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1079,7 +1092,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
        ]
      ], [
-       fhir:index 42;
+       fhir:index 43;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1095,7 +1108,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
        ]
      ], [
-       fhir:index 43;
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1107,7 +1120,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Generate one or more signed DDCC Documents based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)" ]
      ], [
-       fhir:index 44;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1123,7 +1136,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 45;
+       fhir:index 46;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1136,7 +1149,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Document" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A [DDCC Document](StructureDefinition-DDCCDocument.html) is a document bundle containing the DDCC." ]
      ], [
-       fhir:index 46;
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1149,7 +1162,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Questionnaire Response" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for a questionnaire response associacted to a [DDCC Questionaire](StructureDefinition-DDCCQuestionnaire.html)." ]
      ], [
-       fhir:index 47;
+       fhir:index 48;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1161,7 +1174,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC DocumentReference return for QR" ]
      ], [
-       fhir:index 48;
+       fhir:index 49;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1177,7 +1190,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 49;
+       fhir:index 50;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1193,7 +1206,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 50;
+       fhir:index 51;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1206,7 +1219,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Vaccine Valid From" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Date upon which provided vaccination is considered valid" ]
      ], [
-       fhir:index 51;
+       fhir:index 52;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1222,7 +1235,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 52;
+       fhir:index 53;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1235,7 +1248,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Practitioner" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)." ]
      ], [
-       fhir:index 53;
+       fhir:index 54;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1251,7 +1264,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 54;
+       fhir:index 55;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1267,7 +1280,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 55;
+       fhir:index 56;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1283,7 +1296,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 56;
+       fhir:index 57;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1296,7 +1309,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Vaccine Market Authorization for Immunization" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Vaccine Market Authorization for Immunization" ]
      ], [
-       fhir:index 57;
+       fhir:index 58;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1307,9 +1320,9 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/DDCCQuestionnaire" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Questionniare" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given [DDCC QuestionnaireResponse](StructureDefintion-DDCCQuestionnaireResponse.html) which responds to the DDCC Questionnaire." ]
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html) which responds to the DDCC Questionnaire." ]
      ], [
-       fhir:index 58;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1325,7 +1338,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCOrganization>
        ]
      ], [
-       fhir:index 59;
+       fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1341,7 +1354,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
        ]
      ], [
-       fhir:index 60;
+       fhir:index 61;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1353,7 +1366,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines" ]
      ], [
-       fhir:index 61;
+       fhir:index 62;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1366,7 +1379,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Country Of Vaccination for Immunization" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Country Of Vaccination for Immunization" ]
      ], [
-       fhir:index 62;
+       fhir:index 63;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1382,7 +1395,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPatient>
        ]
      ], [
-       fhir:index 63;
+       fhir:index 64;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1395,7 +1408,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Disease or Agent Targeted (COVID-19)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)" ]
      ], [
-       fhir:index 64;
+       fhir:index 65;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1411,7 +1424,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest>
        ]
      ], [
-       fhir:index 65;
+       fhir:index 66;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1424,7 +1437,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC Submit Health Event Response" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction." ]
      ], [
-       fhir:index 66;
+       fhir:index 67;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1436,7 +1449,7 @@
        ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "DDCC Core Data - Proof of Vaccination elements." ]
      ], [
-       fhir:index 67;
+       fhir:index 68;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1452,7 +1465,7 @@
          fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization>
        ]
      ], [
-       fhir:index 68;
+       fhir:index 69;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1465,7 +1478,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO Vaccine List (COVID-19)" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "WHO Vaccine List (COVID-19) from [ICD 11](https://icd.who.int/browse11)" ]
      ], [
-       fhir:index 69;
+       fhir:index 70;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

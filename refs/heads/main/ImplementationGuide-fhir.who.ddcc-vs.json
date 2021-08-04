@@ -751,6 +751,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/DDCC-Example-Test-CodeSystem"
+        },
+        "name": "DDCC Codes for examples",
+        "description": "Example codes for example resources."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -758,7 +771,7 @@
           "reference": "StructureDefinition/DDCCPractitionerRole"
         },
         "name": "DDCC Practitioner Role",
-        "description": "Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a \nmanaging [DDCC Organization](StructureDefinition-DDCCOrgaznization.html), indicating \nthat an DDCC Practitioner is authorized by the public health authority (PHA) to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."
+        "description": "Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a \nmanaging [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating \nthat an DDCC Practitioner is authorized by the public health authority (PHA) to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."
       },
       {
         "extension": [
@@ -847,7 +860,7 @@
         "reference": {
           "reference": "Questionnaire/DDCCVSCoreDataSetQuestionnaire"
         },
-        "name": "DDCC Core Data Set Questionnaire ",
+        "name": "DDCC Core Data Set Questionnaire",
         "description": "DDCC Questionnaire for an Immunization event.",
         "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire"
       },
@@ -1261,7 +1274,7 @@
           "reference": "StructureDefinition/DDCCQuestionnaire"
         },
         "name": "DDCC Questionniare",
-        "description": "Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given [DDCC QuestionnaireResponse](StructureDefintion-DDCCQuestionnaireResponse.html) which responds to the DDCC Questionnaire."
+        "description": "Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html) which responds to the DDCC Questionnaire."
       },
       {
         "extension": [

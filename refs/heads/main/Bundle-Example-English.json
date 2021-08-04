@@ -14,7 +14,7 @@
   "timestamp": "2021-06-03T13:28:17-05:00",
   "entry": [
     {
-      "fullUrl": "http://www.example.org/fhir/Organization/DDCCComposition",
+      "fullUrl": "http://www.example.org/fhir/Composition/DDCC-Composition-Example-English",
       "resource": {
         "resourceType": "Composition",
         "id": "DDCC-Composition-Example-English",
@@ -136,14 +136,14 @@
         },
         "text": {
           "status": "extensions",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>DDCC Vaccine Brand for Immunization</b>: <span title=\"{http://EXAMPLE.ORG/brands VAX-BRAND-EX}\">VAX-BRAND-EX</span></p><p><b>DDCC Country Of Vaccination for Immunization</b>: CHE</p><p><b>DDCC Vaccine Market Authorization for Immunization</b>: <span title=\"{http://EXAMPLE.ORG/mahs VAX-MAH-EX}\">VAX-MAH-EX</span></p><p><b>DDCC Vaccine Valid From</b>: 2021-05-30</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {http://id.who.int/icd11/mms XM0CX4}\">XM0CX4</span></p><p><b>patient</b>: <a href=\"#Patient_DDCC-Patient-English\">See above (Patient/DDCC-Patient-English)</a></p><p><b>occurrence</b>: 2021-05-06</p><p><b>location</b>: <span>Vaccination Site</span></p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"#Organization_DDCC-Organization-English\">See above (Organization/DDCC-Organization-English)</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><a href=\"#Organization_DDCC-Organization-English\">See above (Organization/DDCC-Organization-English)</a></td><td><span title=\"Codes: {http://id.who.int/icd11/mms RA01.0}\">RA01.0</span></td><td>1</td><td>2</td></tr></table></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>DDCC Vaccine Brand for Immunization</b>: <span title=\"{http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem TEST}\">Test</span></p><p><b>DDCC Country Of Vaccination for Immunization</b>: CHE</p><p><b>DDCC Vaccine Market Authorization for Immunization</b>: <span title=\"{http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem TEST}\">Test</span></p><p><b>DDCC Vaccine Valid From</b>: 2021-05-30</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title=\"Codes: {http://id.who.int/icd11/mms XM0CX4}\">COVID-19 vaccine, replicating viral vector</span></p><p><b>patient</b>: <a href=\"#Patient_DDCC-Patient-English\">See above (Patient/DDCC-Patient-English)</a></p><p><b>occurrence</b>: 2021-05-06</p><p><b>location</b>: <span>Vaccination Site</span></p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class=\"grid\"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href=\"#Organization_DDCC-Organization-English\">See above (Organization/DDCC-Organization-English)</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><a href=\"#Organization_DDCC-Organization-English\">See above (Organization/DDCC-Organization-English)</a></td><td><span title=\"Codes: {http://id.who.int/icd11/mms RA01}\">COVID-19</span></td><td>1</td><td>2</td></tr></table></div>"
         },
         "extension": [
           {
             "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand",
             "valueCoding": {
-              "system": "http://EXAMPLE.ORG/brands",
-              "code": "VAX-BRAND-EX"
+              "system": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem",
+              "code": "TEST"
             }
           },
           {
@@ -153,8 +153,8 @@
           {
             "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization",
             "valueCoding": {
-              "system": "http://EXAMPLE.ORG/mahs",
-              "code": "VAX-MAH-EX"
+              "system": "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem",
+              "code": "TEST"
             }
           },
           {
@@ -167,7 +167,8 @@
           "coding": [
             {
               "system": "http://id.who.int/icd11/mms",
-              "code": "XM0CX4"
+              "code": "XM0CX4",
+              "display": "COVID-19 vaccine, replicating viral vector"
             }
           ]
         },
@@ -197,7 +198,8 @@
                 "coding": [
                   {
                     "system": "http://id.who.int/icd11/mms",
-                    "code": "RA01.0"
+                    "code": "RA01",
+                    "display": "COVID-19"
                   }
                 ]
               }
@@ -209,7 +211,7 @@
       }
     },
     {
-      "fullUrl": "http://www.example.org/fhir/ImmunizationReccomendation/DDCC-ImmunizationRecommendation-English",
+      "fullUrl": "http://www.example.org/fhir/ImmunizationRecommendation/DDCC-ImmunizationRecommendation-English",
       "resource": {
         "resourceType": "ImmunizationRecommendation",
         "id": "DDCC-ImmunizationRecommendation-English",
@@ -220,7 +222,7 @@
         },
         "text": {
           "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>patient</b>: <a href=\"#Patient_DDCC-Patient-English\">See above (Patient/DDCC-Patient-English)</a></p><p><b>date</b>: 2021-05-06</p><blockquote><p><b>recommendation</b></p><p><b>vaccineCode</b>: <span title=\"Codes: {http://id.who.int/icd11/mms XM0CX4}\">XM0CX4</span></p><p><b>forecastStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/immunization-recommendation-status due}\">Due</span></p><h3>DateCriterions</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://loinc.org 30980-7}\">Date vaccine due</span></td><td>2021-05-20</td></tr></table><p><b>supportingImmunization</b>: <a href=\"#Immunization_DDCC-Immunization-English\">See above (Immunization/DDCC-Immunization-English)</a></p></blockquote></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>patient</b>: <a href=\"#Patient_DDCC-Patient-English\">See above (Patient/DDCC-Patient-English)</a></p><p><b>date</b>: 2021-05-06</p><blockquote><p><b>recommendation</b></p><p><b>vaccineCode</b>: <span title=\"Codes: {http://id.who.int/icd11/mms XM0CX4}\">COVID-19 vaccine, replicating viral vector</span></p><p><b>forecastStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/immunization-recommendation-status due}\">Due</span></p><h3>DateCriterions</h3><table class=\"grid\"><tr><td>-</td><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://loinc.org 30980-7}\">Date vaccine due</span></td><td>2021-05-20</td></tr></table><p><b>supportingImmunization</b>: <a href=\"#Immunization_DDCC-Immunization-English\">See above (Immunization/DDCC-Immunization-English)</a></p></blockquote></div>"
         },
         "patient": {
           "reference": "Patient/DDCC-Patient-English"
@@ -233,7 +235,8 @@
                 "coding": [
                   {
                     "system": "http://id.who.int/icd11/mms",
-                    "code": "XM0CX4"
+                    "code": "XM0CX4",
+                    "display": "COVID-19 vaccine, replicating viral vector"
                   }
                 ]
               }
