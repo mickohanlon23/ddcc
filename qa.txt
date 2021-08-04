@@ -1,9 +1,9 @@
 ﻿DDCC_VS : Validation Results
 =========================================
 
-err = 4, warn = 2, info = 4
+err = 2, warn = 2, info = 0
 IG Publisher Version: 1.1.77
-Generated Wed Aug 04 20:48:01 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Wed Aug 04 21:11:55 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = http://worldhealthorganization.github.io/ddcc)
 
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 1 / 0 / 11
@@ -49,7 +49,7 @@ Generated Wed Aug 04 20:48:01 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/Patient-DDCC-Patient-French : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Patient-DDCC-Patient-Russian : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Patient-DDCC-Patient-Spanish : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire : 2 / 0 / 5
+ /github/workspace/fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Questionnaire-DDCCVSCoreDataSetQuestionnaire : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example : 1 / 0 / 9
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCAddBundle : 0 / 1 / 1
@@ -71,6 +71,7 @@ Generated Wed Aug 04 20:48:01 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCProvideDocumentBundle : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaire : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaireResponse : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaireSDC : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmissionSet : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventRequest : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventResponse : 0 / 1 / 1
@@ -136,11 +137,6 @@ ERROR: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Para
 == /github/workspace/fsh-generated/resources/Patient-DDCC-Patient-Russian.json ==
 == /github/workspace/fsh-generated/resources/Patient-DDCC-Patient-Spanish.json ==
 == /github/workspace/fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire.json ==
-ERROR: Questionnaire.where(url = 'https://worldhealthorganization.github.io/ddcc/Questionnaire/DDCCHCIDRegistrationQuestionnaire'): Conformance resource /github/workspace/fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/Questionnaire/DDCCHCIDRegistrationQuestionnaire) does not match the URL (https://worldhealthorganization.github.io/ddcc/Questionnaire/DDCCHCIDRegistrationQuestionnaire)
-INFORMATION: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-defn
-INFORMATION: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.item[0].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-defn
-INFORMATION: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.item[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-extr-defn
-ERROR: /github/workspace/fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire: URL Mismatch http://worldhealthorganization.github.io/ddcc/Questionnaire/DDCCHCIDRegistrationQuestionnaire vs https://worldhealthorganization.github.io/ddcc/Questionnaire/DDCCHCIDRegistrationQuestionnaire
 == /github/workspace/fsh-generated/resources/Questionnaire-DDCCVSCoreDataSetQuestionnaire.json ==
 == /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example.json ==
 ERROR: QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example: QuestionnaireResponse.item[0].answer[0]: The value provided (urn:iso:std:iso:3166::USA) is not in the options value set in the questionnaire
@@ -154,7 +150,6 @@ ERROR: QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example: Questionnair
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReferenceQR.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCFolder.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCGenerateHealthCertificateParameters.json ==
-INFORMATION: StructureDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCGenerateHealthCertificateParameters'): The Implementation Guide contains no explicitly linked examples for this profile
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCImmunization.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCImmunizationRecommendation.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCOrganization.json ==
@@ -164,6 +159,7 @@ INFORMATION: StructureDefinition.where(url = 'http://worldhealthorganization.git
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCProvideDocumentBundle.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaire.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaireResponse.json ==
+== /github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaireSDC.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmissionSet.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventRequest.json ==
 == /github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventResponse.json ==

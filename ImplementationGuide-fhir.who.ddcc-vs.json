@@ -1220,7 +1220,8 @@
           "reference": "Questionnaire/DDCCHCIDRegistrationQuestionnaire"
         },
         "name": "DDCC HCID Registration Questionnaire",
-        "description": "DDCC HCID Registration Questionnaire"
+        "description": "DDCC HCID Registration Questionnaire",
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireSDC"
       },
       {
         "extension": [
@@ -1547,6 +1548,19 @@
         },
         "name": "DDCC Questionniare",
         "description": "Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html) which responds to the DDCC Questionnaire."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCQuestionnaireSDC"
+        },
+        "name": "DDCC Questionnaire based on SDC",
+        "description": "DDCC Questionniare based on SDC Populatable Questionnaire with additional extension"
       },
       {
         "extension": [
