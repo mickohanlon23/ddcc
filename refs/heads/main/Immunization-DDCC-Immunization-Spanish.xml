@@ -6,7 +6,7 @@
     <profile value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>DDCC Vaccine Brand for Immunization</b>: <span title="{http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem TEST}">Test</span></p><p><b>DDCC Country Of Vaccination for Immunization</b>: ESP</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title="Codes: {http://id.who.int/icd11/mms XM0CX4}">COVID-19 vaccine, replicating viral vector</span></p><p><b>patient</b>: <a href="Patient-DDCC-Patient-Spanish.html">Generated Summary: Aulo Agerio(OFFICIAL); birthDate: 2003-03-03</a></p><p><b>occurrence</b>: 2021-02-02</p><p><b>location</b>: <span>Sitio de vacunación</span></p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href="Organization-DDCC-Organization-Spanish.html">Generated Summary: name: Hospital del Gobierno</a></td></tr></table><h3>ProtocolApplieds</h3><table class="grid"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><a href="Organization-DDCC-Organization-Spanish.html">Generated Summary: name: Hospital del Gobierno</a></td><td><span title="Codes: {http://id.who.int/icd11/mms RA01}">COVID-19</span></td><td>1</td><td>2</td></tr></table></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>DDCC Vaccine Brand for Immunization</b>: <span title="{http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem TEST}">Test</span></p><p><b>DDCC Country Of Vaccination for Immunization</b>: ESP</p><p><b>DDCC Vaccine Market Authorization for Immunization</b>: <span title="{http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem TEST}">Test</span></p><p><b>DDCC Vaccine Valid From</b>: 2021-05-30</p><p><b>status</b>: completed</p><p><b>vaccineCode</b>: <span title="Codes: {http://id.who.int/icd11/mms XM0CX4}">Vacuna COVID-19, vector viral de replicación</span></p><p><b>patient</b>: <a href="Patient-DDCC-Patient-Spanish.html">Generated Summary: Aulo Agerio(OFFICIAL); birthDate: 2003-03-03</a></p><p><b>occurrence</b>: 2021-05-06</p><p><b>location</b>: <span>Sitio de vacunación</span></p><p><b>lotNumber</b>: 123</p><p><b>expirationDate</b>: 2021-06-30</p><h3>Performers</h3><table class="grid"><tr><td>-</td><td><b>Actor</b></td></tr><tr><td>*</td><td><a href="Organization-DDCC-Organization-Spanish.html">Generated Summary: name: Hospital del Gobierno</a></td></tr></table><h3>ProtocolApplieds</h3><table class="grid"><tr><td>-</td><td><b>Authority</b></td><td><b>TargetDisease</b></td><td><b>DoseNumber[x]</b></td><td><b>SeriesDoses[x]</b></td></tr><tr><td>*</td><td><a href="Organization-DDCC-Organization-Spanish.html">Generated Summary: name: Hospital del Gobierno</a></td><td><span title="Codes: {http://id.who.int/icd11/mms RA01}">COVID-19</span></td><td>1</td><td>2</td></tr></table></div>
   </text>
   <extension url="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineBrand">
     <valueCoding>
@@ -17,18 +17,27 @@
   <extension url="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination">
     <valueCode value="ESP"/>
   </extension>
+  <extension url="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineMarketAuthorization">
+    <valueCoding>
+      <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Example-Test-CodeSystem"/>
+      <code value="TEST"/>
+    </valueCoding>
+  </extension>
+  <extension url="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCVaccineValidFrom">
+    <valueDateTime value="2021-05-30"/>
+  </extension>
   <status value="completed"/>
   <vaccineCode>
     <coding>
       <system value="http://id.who.int/icd11/mms"/>
       <code value="XM0CX4"/>
-      <display value="COVID-19 vaccine, replicating viral vector"/>
+      <display value="Vacuna COVID-19, vector viral de replicaci&#xF3;n"/>
     </coding>
   </vaccineCode>
   <patient>
     <reference value="Patient/DDCC-Patient-Spanish"/>
   </patient>
-  <occurrenceDateTime value="2021-02-02"/>
+  <occurrenceDateTime value="2021-05-06"/>
   <location>
     <display value="Sitio de vacunaci&#xF3;n"/>
   </location>
