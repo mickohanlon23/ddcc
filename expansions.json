@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "2aff2f3d-c262-4294-aa0a-7a83330ce0d3",
+  "id" : "03782888-824f-4223-9b87-c4405562a231",
   "meta" : {
-    "lastUpdated" : "2021-08-05T14:42:49.051+00:00"
+    "lastUpdated" : "2021-08-05T19:20:04.130+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "DDCC_QR_Category_Usage_ValueSet",
       "title" : "DDCC QR Category Usage Codes",
       "status" : "active",
-      "date" : "2021-08-05T14:42:49+00:00",
+      "date" : "2021-08-05T19:20:04+00:00",
       "publisher" : "World Health Organization (WHO)",
       "contact" : [{
         "telecom" : [{
@@ -29,8 +29,8 @@
       }],
       "description" : "Categorization of QR codes by their business usage",
       "expansion" : {
-        "identifier" : "urn:uuid:54165583-5fe9-497d-b25c-57e99dfa5908",
-        "timestamp" : "2021-08-05T14:43:21+00:00",
+        "identifier" : "urn:uuid:960a9500-f04b-4a8e-8f02-1c4469d8440a",
+        "timestamp" : "2021-08-05T19:20:34+00:00",
         "total" : 4,
         "parameter" : [{
           "name" : "excludeNested",
@@ -77,7 +77,7 @@
       "name" : "DDCC_QR_Format_ValueSet",
       "title" : "DDCC QR Format Codes",
       "status" : "active",
-      "date" : "2021-08-05T14:42:49+00:00",
+      "date" : "2021-08-05T19:20:04+00:00",
       "publisher" : "World Health Organization (WHO)",
       "contact" : [{
         "telecom" : [{
@@ -87,8 +87,8 @@
       }],
       "description" : "Format of the representation of QR code",
       "expansion" : {
-        "identifier" : "urn:uuid:3ab38b0a-4cb4-4665-b800-dc11c475a7c9",
-        "timestamp" : "2021-08-05T14:43:21+00:00",
+        "identifier" : "urn:uuid:3c617741-fb9f-404f-98d8-791bdaac3373",
+        "timestamp" : "2021-08-05T19:20:34+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -107,6 +107,49 @@
           "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem",
           "code" : "serialized",
           "display" : "Serialized QR Content"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Folder-DesignationType",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "DDCC-Folder-DesignationType",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-DDCC-Folder-DesignationType.html\">DDCC Designation Types for Folder v0.2.1 (CodeSystem)</a></p><p>All codes from system <a href=\"CodeSystem-DDCC-Folder-DesignationType.html\"><code>http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-Folder-DesignationType-ddcc\"> </a><a href=\"CodeSystem-DDCC-Folder-DesignationType.html#DDCC-Folder-DesignationType-ddcc\">ddcc</a></td><td>DDCC</td><td/></tr></table></div>"
+      },
+      "url" : "http://worldhealthorganization.github.io/ddcc/ValueSet/DDCC-Folder-DesignationType",
+      "version" : "0.2.1",
+      "name" : "DDCC_Folder_DesignationType_ValueSet",
+      "title" : "DDCC DesignationTypes for Folder",
+      "status" : "active",
+      "date" : "2021-08-05T19:20:04+00:00",
+      "publisher" : "World Health Organization (WHO)",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.who.int"
+        }]
+      }],
+      "description" : "DDCC Designation Types ValueSet for DDCC Folders.",
+      "expansion" : {
+        "identifier" : "urn:uuid:f2b8f79d-e2a0-43b6-ac44-cd7f4be09976",
+        "timestamp" : "2021-08-05T19:20:39+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType|0.2.1"
+        }],
+        "contains" : [{
+          "system" : "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-Folder-DesignationType",
+          "code" : "ddcc",
+          "display" : "DDCC"
         }]
       }
     }
