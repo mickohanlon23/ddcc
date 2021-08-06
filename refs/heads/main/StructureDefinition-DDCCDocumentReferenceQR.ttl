@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "DDCCDocumentReferenceQR"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference\">DocumentReference</a><a name=\"DocumentReference\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/documentreference.html\">DocumentReference</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">A reference to a document</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.category\">category</a><a name=\"DocumentReference.category\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Categorization of document</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-DDCC-QR-Category-Usage-ValueSet.html\">DDCC QR Category Usage Codes</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.subject\">subject</a><a name=\"DocumentReference.subject\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-DDCCPatient.html\">DDCC Patient</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Who/what is the subject of the document</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.authenticator\">authenticator</a><a name=\"DocumentReference.authenticator\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-DDCCOrganization.html\">DDCC Organization</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Who/what authenticated the document</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content\">Slices for content</a><a name=\"DocumentReference.content\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red; font-style: italic\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">2</span><span style=\"font-style: italic\">..</span><span style=\"font-style: italic\">2</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Document referenced</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Closed by value:format</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck033.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> content:All Slices<a name=\"DocumentReference.content\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Content/Rules for all slices</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0320.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content.format\">format</a><a name=\"DocumentReference.content.format\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Format/content rules for the document</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-DDCC-QR-Format-ValueSet.html\">DDCC QR Format Codes</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrImage\" title=\"Slice qrImage\">content:qrImage</a><a name=\"DocumentReference.content\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Document referenced</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0351.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrImage.attachment\">attachment</a><a name=\"DocumentReference.content.attachment\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03510.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrImage.attachment.contentType\">contentType</a><a name=\"DocumentReference.content.attachment.contentType\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Mime type of the content, with charset etc.</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03500.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrImage.attachment.data\">data</a><a name=\"DocumentReference.content.attachment.data\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#base64Binary\">base64Binary</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Data inline, base64ed</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0341.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrImage.format\">format</a><a name=\"DocumentReference.content.format\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Format/content rules for the document</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03410.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><a style=\"color: darkgreen\" href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html\">http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03400.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">image</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrContent\" title=\"Slice qrContent\">content:qrContent</a><a name=\"DocumentReference.content\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Document referenced</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0251.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrContent.attachment\">attachment</a><a name=\"DocumentReference.content.attachment\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck02510.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrContent.attachment.contentType\">contentType</a><a name=\"DocumentReference.content.attachment.contentType\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Mime type of the content, with charset etc.</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck02500.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrContent.attachment.data\">data</a><a name=\"DocumentReference.content.attachment.data\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#base64Binary\">base64Binary</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Data inline, base64ed</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0241.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrContent.format\">format</a><a name=\"DocumentReference.content.format\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Format/content rules for the document</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck02410.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><a style=\"color: darkgreen\" href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html\">http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck02400.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">serialized</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference\">DocumentReference</a><a name=\"DocumentReference\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/documentreference.html\">DocumentReference</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">A reference to a document</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.category\">category</a><a name=\"DocumentReference.category\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Categorization of document</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-DDCC-QR-Category-Usage-ValueSet.html\">DDCC QR Category Usage Codes</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.subject\">subject</a><a name=\"DocumentReference.subject\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-DDCCPatient.html\">DDCC Patient</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Who/what is the subject of the document</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.authenticator\">authenticator</a><a name=\"DocumentReference.authenticator\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-DDCCOrganization.html\">DDCC Organization</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Who/what authenticated the document</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content\">Slices for content</a><a name=\"DocumentReference.content\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red; font-style: italic\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">2</span><span style=\"font-style: italic\">..</span><span style=\"font-style: italic\">2</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Document referenced</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Closed by value:format</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck033.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> content:All Slices<a name=\"DocumentReference.content\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Content/Rules for all slices</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0320.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content.format\">format</a><a name=\"DocumentReference.content.format\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Format/content rules for the document</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-DDCC-QR-Format-ValueSet.html\">DDCC QR Format Codes</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrImage\" title=\"Slice qrImage\">content:qrImage</a><a name=\"DocumentReference.content\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Document referenced</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0351.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrImage.attachment\">attachment</a><a name=\"DocumentReference.content.attachment\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03510.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrImage.attachment.contentType\">contentType</a><a name=\"DocumentReference.content.attachment.contentType\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Mime type of the content, with charset etc.</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03500.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrImage.attachment.data\">data</a><a name=\"DocumentReference.content.attachment.data\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#base64Binary\">base64Binary</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Data inline, base64ed</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0341.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrImage.format\">format</a><a name=\"DocumentReference.content.format\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Format/content rules for the document</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03410.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><a style=\"color: darkgreen\" href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html\">http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03400.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">image</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrContent\" title=\"Slice qrContent\">content:qrContent</a><a name=\"DocumentReference.content\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Document referenced</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0351.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrContent.attachment\">attachment</a><a name=\"DocumentReference.content.attachment\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03510.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrContent.attachment.contentType\">contentType</a><a name=\"DocumentReference.content.attachment.contentType\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Mime type of the content, with charset etc.</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03500.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrContent.attachment.data\">data</a><a name=\"DocumentReference.content.attachment.data\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#base64Binary\">base64Binary</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Data inline, base64ed</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0341.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrContent.format\">format</a><a name=\"DocumentReference.content.format\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Format/content rules for the document</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03410.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><a style=\"color: darkgreen\" href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html\">http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03400.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">serialized</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrPDF\" title=\"Slice qrPDF\">content:qrPDF</a><a name=\"DocumentReference.content\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Document referenced</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0251.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrPDF.attachment\">attachment</a><a name=\"DocumentReference.content.attachment\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck02510.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrPDF.attachment.contentType\">contentType</a><a name=\"DocumentReference.content.attachment.contentType\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Mime type of the content, with charset etc.</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck02500.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrPDF.attachment.data\">data</a><a name=\"DocumentReference.content.attachment.data\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#base64Binary\">base64Binary</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Data inline, base64ed</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0241.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCDocumentReferenceQR-definitions.html#DocumentReference.content:qrPDF.format\">format</a><a name=\"DocumentReference.content.format\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Format/content rules for the document</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck02410.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><a style=\"color: darkgreen\" href=\"CodeSystem-DDCC-QR-Format-CodeSystem.html\">http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem</a></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck02400.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">pdf</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ];
   fhir:DomainResource.extension [
      fhir:index 0;
@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCDocumentReferenceQR"];
   fhir:StructureDefinition.title [ fhir:value "DDCC DocumentReference return for QR"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-06T15:59:56+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-08-06T19:38:15+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -3528,6 +3528,791 @@
        ]
      ], [
        fhir:index 66;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "qrPDF" ];
+       fhir:ElementDefinition.short [ fhir:value "Document referenced" ];
+       fhir:ElementDefinition.definition [ fhir:value "The document and format referenced. There may be multiple content element repetitions, each with a different format." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DocumentReference.content" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "BackboneElement" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "fhircomposition" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Bundle(Composition+*)" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "document.text" ]
+       ]
+     ], [
+       fhir:index 67;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.id" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.id" ];
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ];
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
+           fhir:Extension.valueUrl [ fhir:value "string" ]
+         ];
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 68;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.extension" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.extension" ];
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 69;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.modifierExtension" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.modifierExtension" ];
+       fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.\n\nModifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself)." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension)." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ], [
+         fhir:value "modifiers";
+         fhir:index 2
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "BackboneElement.modifierExtension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifierReason [ fhir:value "Modifier extensions are expected to modify the meaning or interpretation of the element that contains them" ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
+       ]
+     ], [
+       fhir:index 70;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.attachment" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.attachment" ];
+       fhir:ElementDefinition.short [ fhir:value "Where to access the document" ];
+       fhir:ElementDefinition.definition [ fhir:value "The document or URL of the document along with critical metadata to prove content has integrity." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DocumentReference.content.attachment" ];
+         fhir:ElementDefinition.base.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Attachment" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "fhircomposition" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Composition.language, \nComposition.title, \nComposition.date" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "TXA-3 for mime type" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "document.text" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "xds" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "DocumentEntry.mimeType, DocumentEntry.languageCode, DocumentEntry.URI, DocumentEntry.size, DocumentEntry.hash, DocumentEntry.title, DocumentEntry.creationTime" ]
+       ], [
+         fhir:index 4;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "cda" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "ClinicalDocument/languageCode, ClinicalDocument/title, ClinicalDocument/date" ]
+       ]
+     ], [
+       fhir:index 71;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.attachment.id" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.attachment.id" ];
+       fhir:ElementDefinition.representation [
+         fhir:value "xmlAttr";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Unique id for inter-element referencing" ];
+       fhir:ElementDefinition.definition [ fhir:value "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.id" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type" ];
+           fhir:Extension.valueUrl [ fhir:value "string" ]
+         ];
+         fhir:ElementDefinition.type.code [ fhir:value "http://hl7.org/fhirpath/System.String" ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 72;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.attachment.extension" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.attachment.extension" ];
+       fhir:ElementDefinition.slicing [
+         fhir:ElementDefinition.slicing.discriminator [
+           fhir:index 0;
+           fhir:ElementDefinition.slicing.discriminator.type [ fhir:value "value" ];
+           fhir:ElementDefinition.slicing.discriminator.path [ fhir:value "url" ]
+         ];
+         fhir:ElementDefinition.slicing.description [ fhir:value "Extensions are always sliced by (at least) url" ];
+         fhir:ElementDefinition.slicing.rules [ fhir:value "open" ]
+       ];
+       fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
+       fhir:ElementDefinition.definition [ fhir:value "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ];
+       fhir:ElementDefinition.comment [ fhir:value "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ];
+       fhir:ElementDefinition.alias [
+         fhir:value "extensions";
+         fhir:index 0
+       ], [
+         fhir:value "user content";
+         fhir:index 1
+       ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "*" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
+       ]
+     ], [
+       fhir:index 73;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.attachment.contentType" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.attachment.contentType" ];
+       fhir:ElementDefinition.short [ fhir:value "Mime type of the content, with charset etc." ];
+       fhir:ElementDefinition.definition [ fhir:value "Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Processors of the data need to be able to know how to interpret the data." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Attachment.contentType" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ];
+       fhir:ElementDefinition.example [
+         fhir:index 0;
+         fhir:ElementDefinition.example.label [ fhir:value "General" ];
+         fhir:ElementDefinition.example.valueCode [ fhir:value "text/plain; charset=UTF-8, image/png" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "MimeType" ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding" ];
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "The mime type of an attachment. Any valid mime type is allowed." ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/mimetypes|4.0.1";
+           fhir:link <http://hl7.org/fhir/ValueSet/mimetypes|4.0.1>
+         ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "ED.2+ED.3/RP.2+RP.3. Note conversion may be needed if old style values are being used" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./mediaType, ./charset" ]
+       ]
+     ], [
+       fhir:index 74;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.attachment.language" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.attachment.language" ];
+       fhir:ElementDefinition.short [ fhir:value "Human language of the content (BCP-47)" ];
+       fhir:ElementDefinition.definition [ fhir:value "The human language of the content. The value can be any valid value according to BCP 47." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Users need to be able to choose between the languages in a set of attachments." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Attachment.language" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "code" ]
+       ];
+       fhir:ElementDefinition.example [
+         fhir:index 0;
+         fhir:ElementDefinition.example.label [ fhir:value "General" ];
+         fhir:ElementDefinition.example.valueCode [ fhir:value "en-AU" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet" ];
+           fhir:Extension.valueCanonical [
+             fhir:value "http://hl7.org/fhir/ValueSet/all-languages";
+             fhir:link <http://hl7.org/fhir/ValueSet/all-languages>
+           ]
+         ], [
+           fhir:index 1;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "Language" ]
+         ], [
+           fhir:index 2;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding" ];
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "A human language." ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/languages";
+           fhir:link <http://hl7.org/fhir/ValueSet/languages>
+         ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./language" ]
+       ]
+     ], [
+       fhir:index 75;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.attachment.data" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.attachment.data" ];
+       fhir:ElementDefinition.short [ fhir:value "Data inline, base64ed" ];
+       fhir:ElementDefinition.definition [ fhir:value "The actual data of the attachment - a sequence of bytes, base64 encoded." ];
+       fhir:ElementDefinition.comment [ fhir:value "The base64-encoded data SHALL be expressed in the same character set as the base resource XML or JSON." ];
+       fhir:ElementDefinition.requirements [ fhir:value "The data needs to able to be transmitted inline." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Attachment.data" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "base64Binary" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "ED.5" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./data" ]
+       ]
+     ], [
+       fhir:index 76;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.attachment.url" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.attachment.url" ];
+       fhir:ElementDefinition.short [ fhir:value "Uri where the data can be found" ];
+       fhir:ElementDefinition.definition [ fhir:value "A location where the data can be accessed." ];
+       fhir:ElementDefinition.comment [ fhir:value "If both data and url are provided, the url SHALL point to the same content as the data contains. Urls may be relative references or may reference transient locations such as a wrapping envelope using cid: though this has ramifications for using signatures. Relative URLs are interpreted relative to the service url, like a resource reference, rather than relative to the resource itself. If a URL is provided, it SHALL resolve to actual data." ];
+       fhir:ElementDefinition.requirements [ fhir:value "The data needs to be transmitted by reference." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Attachment.url" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "url" ]
+       ];
+       fhir:ElementDefinition.example [
+         fhir:index 0;
+         fhir:ElementDefinition.example.label [ fhir:value "General" ];
+         fhir:ElementDefinition.example.valueUrl [ fhir:value "http://www.acme.com/logo-small.png" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "v2" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "RP.1+RP.2 - if they refer to a URL (see v2.6)" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./reference/literal" ]
+       ]
+     ], [
+       fhir:index 77;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.attachment.size" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.attachment.size" ];
+       fhir:ElementDefinition.short [ fhir:value "Number of bytes of content (if url provided)" ];
+       fhir:ElementDefinition.definition [ fhir:value "The number of bytes of data that make up this attachment (before base64 encoding, if that is done)." ];
+       fhir:ElementDefinition.comment [ fhir:value "The number of bytes is redundant if the data is provided as a base64binary, but is useful if the data is provided as a url reference." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Representing the size allows applications to determine whether they should fetch the content automatically in advance, or refuse to fetch it at all." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Attachment.size" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "unsignedInt" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A (needs data type R3 proposal)" ]
+       ]
+     ], [
+       fhir:index 78;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.attachment.hash" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.attachment.hash" ];
+       fhir:ElementDefinition.short [ fhir:value "Hash of the data (sha-1, base64ed)" ];
+       fhir:ElementDefinition.definition [ fhir:value "The calculated hash of the data using SHA-1. Represented using base64." ];
+       fhir:ElementDefinition.comment [ fhir:value "The hash is calculated on the data prior to base64 encoding, if the data is based64 encoded. The hash is not intended to support digital signatures. Where protection against malicious threats a digital signature should be considered, see [Provenance.signature](http://hl7.org/fhir/R4/provenance-definitions.html#Provenance.signature) for mechanism to protect a resource with a digital signature." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Included so that applications can verify that the contents of a location have not changed due to technical failures (e.g., storage rot, transport glitch, incorrect version)." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Attachment.hash" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "base64Binary" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value ".integrityCheck[parent::ED/integrityCheckAlgorithm=\"SHA-1\"]" ]
+       ]
+     ], [
+       fhir:index 79;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.attachment.title" ];
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable" ];
+         fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+       ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.attachment.title" ];
+       fhir:ElementDefinition.short [ fhir:value "Label to display in place of the data" ];
+       fhir:ElementDefinition.definition [ fhir:value "A label or set of text to display in place of the data." ];
+       fhir:ElementDefinition.requirements [ fhir:value "Applications need a label to display to a human user in place of the actual data if the data cannot be rendered or perceived by the viewer." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Attachment.title" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "string" ]
+       ];
+       fhir:ElementDefinition.example [
+         fhir:index 0;
+         fhir:ElementDefinition.example.label [ fhir:value "General" ];
+         fhir:ElementDefinition.example.valueString [ fhir:value "Official Corporate Logo" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "./title/data" ]
+       ]
+     ], [
+       fhir:index 80;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.attachment.creation" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.attachment.creation" ];
+       fhir:ElementDefinition.short [ fhir:value "Date attachment was first created" ];
+       fhir:ElementDefinition.definition [ fhir:value "The date that the attachment was first created." ];
+       fhir:ElementDefinition.requirements [ fhir:value "This is often tracked as an integrity issue for use of the attachment." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Attachment.creation" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "dateTime" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "N/A (needs data type R3 proposal)" ]
+       ]
+     ], [
+       fhir:index 81;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.format" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.format" ];
+       fhir:ElementDefinition.short [ fhir:value "Format/content rules for the document" ];
+       fhir:ElementDefinition.definition [ fhir:value "An identifier of the document encoding, structure, and template that the document conforms to beyond the base format indicated in the mimeType." ];
+       fhir:ElementDefinition.comment [ fhir:value "Note that while IHE mostly issues URNs for format types, not all documents can be identified by a URI." ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "DocumentReference.content.format" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "1" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Coding" ]
+       ];
+       fhir:ElementDefinition.patternCoding [
+         fhir:Coding.system [ fhir:value "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem" ];
+         fhir:Coding.code [ fhir:value "pdf" ]
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isSummary [ fhir:value "true"^^xsd:boolean ];
+       fhir:ElementDefinition.binding [
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName" ];
+           fhir:Extension.valueString [ fhir:value "DocumentFormat" ]
+         ];
+         fhir:ElementDefinition.binding.strength [ fhir:value "preferred" ];
+         fhir:ElementDefinition.binding.description [ fhir:value "Document Format Codes." ];
+         fhir:ElementDefinition.binding.valueSet [
+           fhir:value "http://hl7.org/fhir/ValueSet/formatcodes";
+           fhir:link <http://hl7.org/fhir/ValueSet/formatcodes>
+         ]
+       ];
+       fhir:ElementDefinition.mapping [
+         fhir:index 0;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "fhircomposition" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "Composition.meta.profile" ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "rim" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "document.text" ]
+       ], [
+         fhir:index 2;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "xds" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "DocumentEntry.formatCode" ]
+       ], [
+         fhir:index 3;
+         fhir:ElementDefinition.mapping.identity [ fhir:value "cda" ];
+         fhir:ElementDefinition.mapping.map [ fhir:value "derived from the IHE Profile or Implementation Guide templateID" ]
+       ]
+     ], [
+       fhir:index 82;
        fhir:Element.id [ fhir:value "DocumentReference.context" ];
        fhir:ElementDefinition.path [ fhir:value "DocumentReference.context" ];
        fhir:ElementDefinition.short [ fhir:value "Clinical context of document" ];
@@ -3564,7 +4349,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "outboundRelationship[typeCode=\"SUBJ\"].target[classCode<'ACT']" ]
        ]
      ], [
-       fhir:index 67;
+       fhir:index 83;
        fhir:Element.id [ fhir:value "DocumentReference.context.id" ];
        fhir:ElementDefinition.path [ fhir:value "DocumentReference.context.id" ];
        fhir:ElementDefinition.representation [
@@ -3597,7 +4382,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 68;
+       fhir:index 84;
        fhir:Element.id [ fhir:value "DocumentReference.context.extension" ];
        fhir:ElementDefinition.path [ fhir:value "DocumentReference.context.extension" ];
        fhir:ElementDefinition.short [ fhir:value "Additional content defined by implementations" ];
@@ -3652,7 +4437,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 69;
+       fhir:index 85;
        fhir:Element.id [ fhir:value "DocumentReference.context.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "DocumentReference.context.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -3712,7 +4497,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 70;
+       fhir:index 86;
        fhir:Element.id [ fhir:value "DocumentReference.context.encounter" ];
        fhir:ElementDefinition.path [ fhir:value "DocumentReference.context.encounter" ];
        fhir:ElementDefinition.short [ fhir:value "Context of the document  content" ];
@@ -3769,7 +4554,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "unique(highest(./outboundRelationship[typeCode=\"SUBJ\" and isNormalActRelationship()], priorityNumber)/target[moodCode=\"EVN\" and classCode=(\"ENC\", \"PCPR\") and isNormalAct])" ]
        ]
      ], [
-       fhir:index 71;
+       fhir:index 87;
        fhir:Element.id [ fhir:value "DocumentReference.context.event" ];
        fhir:ElementDefinition.path [ fhir:value "DocumentReference.context.event" ];
        fhir:ElementDefinition.short [ fhir:value "Main clinical acts documented" ];
@@ -3827,7 +4612,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "DocumentEntry.eventCodeList" ]
        ]
      ], [
-       fhir:index 72;
+       fhir:index 88;
        fhir:Element.id [ fhir:value "DocumentReference.context.period" ];
        fhir:ElementDefinition.path [ fhir:value "DocumentReference.context.period" ];
        fhir:ElementDefinition.short [ fhir:value "Time of service that is being documented" ];
@@ -3875,7 +4660,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "ClinicalDocument/documentationOf/\nserviceEvent/effectiveTime/low/\n@value --> ClinicalDocument/documentationOf/\nserviceEvent/effectiveTime/high/\n@value" ]
        ]
      ], [
-       fhir:index 73;
+       fhir:index 89;
        fhir:Element.id [ fhir:value "DocumentReference.context.facilityType" ];
        fhir:ElementDefinition.path [ fhir:value "DocumentReference.context.facilityType" ];
        fhir:ElementDefinition.short [ fhir:value "Kind of facility where patient was seen" ];
@@ -3936,7 +4721,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "usually a mapping to a local ValueSet. Must be consistent with /clinicalDocument/code" ]
        ]
      ], [
-       fhir:index 74;
+       fhir:index 90;
        fhir:Element.id [ fhir:value "DocumentReference.context.practiceSetting" ];
        fhir:ElementDefinition.path [ fhir:value "DocumentReference.context.practiceSetting" ];
        fhir:ElementDefinition.short [ fhir:value "Additional details about where the content was created (e.g. clinical specialty)" ];
@@ -3999,7 +4784,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "usually from a mapping to a local ValueSet" ]
        ]
      ], [
-       fhir:index 75;
+       fhir:index 91;
        fhir:Element.id [ fhir:value "DocumentReference.context.sourcePatientInfo" ];
        fhir:ElementDefinition.path [ fhir:value "DocumentReference.context.sourcePatientInfo" ];
        fhir:ElementDefinition.short [ fhir:value "Patient demographics from source" ];
@@ -4052,7 +4837,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "ClinicalDocument/recordTarget/" ]
        ]
      ], [
-       fhir:index 76;
+       fhir:index 92;
        fhir:Element.id [ fhir:value "DocumentReference.context.related" ];
        fhir:ElementDefinition.path [ fhir:value "DocumentReference.context.related" ];
        fhir:ElementDefinition.short [ fhir:value "Related identifiers or resources" ];
@@ -4236,6 +5021,35 @@
        fhir:ElementDefinition.patternCoding [
          fhir:Coding.system [ fhir:value "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem" ];
          fhir:Coding.code [ fhir:value "serialized" ]
+       ]
+     ], [
+       fhir:index 14;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "qrPDF" ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 15;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.attachment.contentType" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.attachment.contentType" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.attachment.data" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.attachment.data" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.id [ fhir:value "DocumentReference.content:qrPDF.format" ];
+       fhir:ElementDefinition.path [ fhir:value "DocumentReference.content.format" ];
+       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.patternCoding [
+         fhir:Coding.system [ fhir:value "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Format-CodeSystem" ];
+         fhir:Coding.code [ fhir:value "pdf" ]
        ]
      ]
   ] .
