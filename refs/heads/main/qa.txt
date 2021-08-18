@@ -1,11 +1,11 @@
 ﻿DDCC_VS : Validation Results
 =========================================
 
-err = 2, warn = 2, info = 0
+err = 9, warn = 2, info = 0
 IG Publisher Version: 1.1.77
-Generated Mon Aug 09 20:16:04 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Wed Aug 18 01:02:54 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = http://worldhealthorganization.github.io/ddcc)
 
- Build Errors : 0 / 0 / 0
+ Build Errors : 7 / 0 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 1 / 0 / 11
  /github/workspace/fsh-generated/resources/Bundle-Example-Arabic : 0 / 0 / 21
  /github/workspace/fsh-generated/resources/Bundle-Example-Chinese : 0 / 0 / 21
@@ -95,6 +95,13 @@ Generated Mon Aug 09 20:16:04 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/input/resources/maps/ddcc-to-eu-dcc.map : 0 / 0 / 1
 </table>
 == n/a ==
+ERROR: /github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 218, column 478: The image source 'icon-q-coding.png' cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 219, column 482: The image source 'icon-q-coding.png' cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 220, column 478: The image source 'icon-q-coding.png' cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 221, column 482: The image source 'icon-q-coding.png' cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 222, column 478: The image source 'icon-q-coding.png' cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 228, column 478: The image source 'icon-q-coding.png' cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 231, column 482: The image source 'icon-q-coding.png' cannot be resolved
 == /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1.json ==
 ERROR: Bundle/DDCC-TX-SHE-bundle-example-1: Bundle.entry[0].resource.ofType(Parameters).parameter[0].resource.ofType(QuestionnaireResponse).item[0].answer[0]: The value provided (urn:iso:std:iso:3166::USA) is not in the options value set in the questionnaire
 == /github/workspace/fsh-generated/resources/Bundle-Example-Arabic.json ==
