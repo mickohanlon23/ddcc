@@ -67,7 +67,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Name for this questionnaire (computer friendly)","A natural language name identifying the questionnaire. This name should be usable as an identifier for the module by machine processing applications such as code generation.","The name is not expected to be globally unique. The name should be a simple alphanumeric type name to ensure that it is machine-processing friendly.","Support human navigation and code generation.","","","","","","","",,,,,"",,,,"Questionnaire.name",0,1,"inv-0
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
-"Questionnaire.title","","","",0,1,"","","Y","string {[]} {[]}
+"Questionnaire.title","","","",0,1,"Y","","Y","string {[]} {[]}
 ","Name for this questionnaire (human friendly)","A short, descriptive, user-friendly title for the questionnaire.","This name does not need to be machine-processing friendly and may contain punctuation, white-space, etc.","","","","","","","","",,,,,"",,,,"Questionnaire.title",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Definition.title",".title"
 "Questionnaire.derivedFrom","","","",0,*,"","","","canonical {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Questionnaire]]}
