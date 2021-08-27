@@ -243,27 +243,7 @@
 
 
 
-  <a name="ihe-sdc"> </a><h3>Mappings for IHE-SDC (http://unknown.org/IHE-SDC)</h3><table class="grid">
- <tr><td colspan="3"><b>DDCCQuestionnaireSDC</b></td></tr>
- <tr><td>Questionnaire</td><td>Form_Package</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;version</td><td>Not currently in schema</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>./administration_package/registration/state/registration_status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;item</td><td>./form_design/*[self::header or self::footer or self::section]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension (itemHidden)</td><td>Any element with @initial_state=&quot;hidden&quot; and no rule that unhides the element</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;linkId</td><td>./section_identifier</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;prefix</td><td>./section_number/label</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text</td><td>Form Design/designation[context=&quot;primary?&quot;/definition/  ./section_instruction/label</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>./*/datatype</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;required</td><td>./cardinality/minimum!=0</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;repeats</td><td>./cardinality/maximum!=1</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;readOnly</td><td>./*_Field/default_value_read_only  ./default_element/read_only</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxLength</td><td>./*_Field/maximum_character_quantity | ./*_Field/datatype/string/maximum_characters</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;answerValueSet</td><td>./list_field | ./lookup_field/endpoint</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;initial</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;value[x]</td><td>./default_value  ./default_element/default/value  ./default_element/list_item_identifier (resolve)</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;item</td><td>./contained_section</td> </tr>
-</table>
-<a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
+  <a name="workflow"> </a><h3>Mappings for Workflow Pattern (<a href="http://hl7.org/fhir/workflow.html">http://hl7.org/fhir/workflow</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>DDCCQuestionnaireSDC</b></td></tr>
  <tr><td>Questionnaire</td><td>Definition</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;url</td><td>Definition.url</td> </tr>
@@ -465,7 +445,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Aug 18, 2021 01:01+0000">2021-08-18</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 27, 2021 04:21+0000">2021-08-27</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
