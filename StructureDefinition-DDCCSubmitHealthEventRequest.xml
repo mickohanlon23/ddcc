@@ -28,7 +28,7 @@
   <name value="DDCCSubmitHealthEventRequest"/>
   <title value="DDCC Submit Health Event Request"/>
   <status value="active"/>
-  <date value="2021-08-27T19:36:40+00:00"/>
+  <date value="2021-09-06T16:40:07+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -2802,6 +2802,17 @@
         <expression value="text.`div`.exists()"/>
         <xpath value="exists(f:text/h:div)"/>
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
+      </constraint>
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice">
+          <valueBoolean value="true"/>
+        </extension>
+        <key value="sdcqr-1"/>
+        <severity value="warning"/>
+        <human value="Subject SHOULD be present (searching is difficult without subject).  Almost all QuestionnaireResponses should be with respect to some sort of subject."/>
+        <expression value="subject.exists()"/>
+        <xpath value="exists(f:subject)"/>
+        <source value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"/>
       </constraint>
       <mustSupport value="false"/>
       <isModifier value="false"/>

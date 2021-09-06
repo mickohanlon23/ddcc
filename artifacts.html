@@ -227,20 +227,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="CapabilityStatement-WHO.DDCC.RegistryService.html"
-                     title="CapabilityStatement/WHO.DDCC.RegistryService">WHO DDCC Registry Service</a>
-               </td>
-               <td>
-<p>CapabilityStatement for WHO DDCC Registry Service actor.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="CapabilityStatement-WHO.DDCC.Generator.html"
                      title="CapabilityStatement/WHO.DDCC.Generator">WHO DDCC Generator</a>
                </td>
                <td>
 <p>CapabilityStatement for WHO DDCC Generator actor.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CapabilityStatement-WHO.DDCC.RegistryService.html"
+                     title="CapabilityStatement/WHO.DDCC.RegistryService">WHO DDCC Registry Service</a>
+               </td>
+               <td>
+<p>CapabilityStatement for WHO DDCC Registry Service actor.</p>
 </td>
             </tr>
          </tbody>
@@ -308,20 +308,20 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCQuestionnaireResponse.html"
-                     title="StructureDefinition/DDCCQuestionnaireResponse">DDCC Questionnaire Response</a>
-               </td>
-               <td>
-<p>Describes the logical structure for a questionnaire response associacted to a <a href="StructureDefinition-DDCCQuestionnaire.html">DDCC Questionaire</a>.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-DDCCQuestionnaire.html"
                      title="StructureDefinition/DDCCQuestionnaire">DDCC Questionniare</a>
                </td>
                <td>
 <p>Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given <a href="StructureDefinition-DDCCQuestionnaireResponse.html">DDCC QuestionnaireResponse</a> which responds to the DDCC Questionnaire.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCQuestionnaireResponse.html"
+                     title="StructureDefinition/DDCCQuestionnaireResponse">DDCC Questionnaire Response</a>
+               </td>
+               <td>
+<p>Describes the logical structure for a questionnaire response associacted to a <a href="StructureDefinition-DDCCQuestionnaire.html">DDCC Questionaire</a>.</p>
 </td>
             </tr>
          </tbody>
@@ -358,29 +358,11 @@ It describes the event of a patient being administered a vaccination or a record
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCGenerateHealthCertificateParameters.html"
-                     title="StructureDefinition/DDCCGenerateHealthCertificateParameters">DDCC Generate Health Certificate Parameters</a>
+                  <a href="StructureDefinition-DDCCQuestionnaireSDC.html"
+                     title="StructureDefinition/DDCCQuestionnaireSDC">DDCC Questionnaire based on SDC</a>
                </td>
                <td>
-<p>Parameters for the <a href="OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html">DDCC Generate Health Certificate Operation</a>.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCSubmitHealthEventRequest.html"
-                     title="StructureDefinition/DDCCSubmitHealthEventRequest">DDCC Submit Health Event Request</a>
-               </td>
-               <td>
-<p>An <a href="StructureDefinition-DDCCSubmitHealthEventRequest.html">DDCC Submit Health Event Request</a> is a transaction bundle containing the content of health events which are being submitted under the <a href="transactions.html#submit-health-event">Submit Health Event</a> transaction.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCSubmissionSet.html"
-                     title="StructureDefinition/DDCCSubmissionSet">DDCC Submission Set</a>
-               </td>
-               <td>
-<p>DDCC Submission Set for ITI-65</p>
+<p>DDCC Questionniare based on SDC Populatable Questionnaire with additional extension</p>
 </td>
             </tr>
             <tr>
@@ -395,22 +377,11 @@ a patient should return for a booster shot.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCFolder.html"
-                     title="StructureDefinition/DDCCFolder">DDCC Folder</a>
+                  <a href="StructureDefinition-DDCCPractitioner.html"
+                     title="StructureDefinition/DDCCPractitioner">DDCC Practitioner</a>
                </td>
                <td>
-<p>DDCC Folder of the Paper Certificate</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCPractitionerRole.html"
-                     title="StructureDefinition/DDCCPractitionerRole">DDCC Practitioner Role</a>
-               </td>
-               <td>
-<p>Association of an <a href="StructureDefinition-DDCCPractitioner.html">DDCC Practitioner</a> to a 
-managing <a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a>, indicating 
-that an DDCC Practitioner is authorized by the public health authority (PHA) to 
+<p>Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to 
 vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p>
 </td>
             </tr>
@@ -429,12 +400,71 @@ vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCComposition.html"
-                     title="StructureDefinition/DDCCComposition">DDCC Composition</a>
+                  <a href="StructureDefinition-DDCCImmunization.html"
+                     title="StructureDefinition/DDCCImmunization">DDCC Immunization</a>
                </td>
                <td>
-<p>Describes the logical structure for a Digital Documentation of COVID-19 Certificates 
-(DDCC).</p>
+<p>A DDCC Immunization contains the content corresponding to a row in the Vaccination 
+Events section of a Paper DDCC. While this is not a further profile of the International
+Patient Summary (IPS) Immunization resouce, this is intended to map into an IPS 
+Immunization resource.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCDocumentReferenceQR.html"
+                     title="StructureDefinition/DDCCDocumentReferenceQR">DDCC DocumentReference return for QR</a>
+               </td>
+               <td>
+<p>DDCC DocumentReference for QR codes including the QR image and the serialized content.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCSubmitHealthEventResponse.html"
+                     title="StructureDefinition/DDCCSubmitHealthEventResponse">DDCC Submit Health Event Response</a>
+               </td>
+               <td>
+<p>A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the <a href="transactions.html#submit-health-event">Submit Health Event</a> transaction.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCPractitionerRole.html"
+                     title="StructureDefinition/DDCCPractitionerRole">DDCC Practitioner Role</a>
+               </td>
+               <td>
+<p>Association of an <a href="StructureDefinition-DDCCPractitioner.html">DDCC Practitioner</a> to a 
+managing <a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a>, indicating 
+that an DDCC Practitioner is authorized by the public health authority (PHA) to 
+vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCProvideDocumentBundle.html"
+                     title="StructureDefinition/DDCCProvideDocumentBundle">DDCC Provide Document Bundle</a>
+               </td>
+               <td>
+<p>DDCC Provide Document Bundle for ITI-65</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCSubmissionSet.html"
+                     title="StructureDefinition/DDCCSubmissionSet">DDCC Submission Set</a>
+               </td>
+               <td>
+<p>DDCC Submission Set for ITI-65</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCGenerateHealthCertificateParameters.html"
+                     title="StructureDefinition/DDCCGenerateHealthCertificateParameters">DDCC Generate Health Certificate Parameters</a>
+               </td>
+               <td>
+<p>Parameters for the <a href="OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html">DDCC Generate Health Certificate Operation</a>.</p>
 </td>
             </tr>
             <tr>
@@ -445,6 +475,44 @@ vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p
                <td>
 <p>Abstraction for a DDCC Organization. There should be a DDCC Organization associated 
 to each public health authortiy (PHA)</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCFolder.html"
+                     title="StructureDefinition/DDCCFolder">DDCC Folder</a>
+               </td>
+               <td>
+<p>DDCC Folder of the Paper Certificate</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCDocument.html"
+                     title="StructureDefinition/DDCCDocument">DDCC Document</a>
+               </td>
+               <td>
+<p>A <a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> is a document bundle containing the DDCC.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCComposition.html"
+                     title="StructureDefinition/DDCCComposition">DDCC Composition</a>
+               </td>
+               <td>
+<p>Describes the logical structure for a Digital Documentation of COVID-19 Certificates 
+(DDCC).</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCAddBundle.html"
+                     title="StructureDefinition/DDCCAddBundle">DDCC Add Bundle</a>
+               </td>
+               <td>
+<p>Bundle to be transformed to from the DDCC QuestionnaireResponse
+to add on the DDCC generator.</p>
 </td>
             </tr>
             <tr>
@@ -461,79 +529,11 @@ The content attachment url will point to a DDCC Document.</p>
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCAddBundle.html"
-                     title="StructureDefinition/DDCCAddBundle">DDCC Add Bundle</a>
+                  <a href="StructureDefinition-DDCCSubmitHealthEventRequest.html"
+                     title="StructureDefinition/DDCCSubmitHealthEventRequest">DDCC Submit Health Event Request</a>
                </td>
                <td>
-<p>Bundle to be transformed to from the DDCC QuestionnaireResponse
-to add on the DDCC generator.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCProvideDocumentBundle.html"
-                     title="StructureDefinition/DDCCProvideDocumentBundle">DDCC Provide Document Bundle</a>
-               </td>
-               <td>
-<p>DDCC Provide Document Bundle for ITI-65</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCImmunization.html"
-                     title="StructureDefinition/DDCCImmunization">DDCC Immunization</a>
-               </td>
-               <td>
-<p>A DDCC Immunization contains the content corresponding to a row in the Vaccination 
-Events section of a Paper DDCC. While this is not a further profile of the International
-Patient Summary (IPS) Immunization resouce, this is intended to map into an IPS 
-Immunization resource.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCDocument.html"
-                     title="StructureDefinition/DDCCDocument">DDCC Document</a>
-               </td>
-               <td>
-<p>A <a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> is a document bundle containing the DDCC.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCDocumentReferenceQR.html"
-                     title="StructureDefinition/DDCCDocumentReferenceQR">DDCC DocumentReference return for QR</a>
-               </td>
-               <td>
-<p>DDCC DocumentReference for QR codes including the QR image and the serialized content.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCPractitioner.html"
-                     title="StructureDefinition/DDCCPractitioner">DDCC Practitioner</a>
-               </td>
-               <td>
-<p>Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to 
-vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCQuestionnaireSDC.html"
-                     title="StructureDefinition/DDCCQuestionnaireSDC">DDCC Questionnaire based on SDC</a>
-               </td>
-               <td>
-<p>DDCC Questionniare based on SDC Populatable Questionnaire with additional extension</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCSubmitHealthEventResponse.html"
-                     title="StructureDefinition/DDCCSubmitHealthEventResponse">DDCC Submit Health Event Response</a>
-               </td>
-               <td>
-<p>A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the <a href="transactions.html#submit-health-event">Submit Health Event</a> transaction.</p>
+<p>An <a href="StructureDefinition-DDCCSubmitHealthEventRequest.html">DDCC Submit Health Event Request</a> is a transaction bundle containing the content of health events which are being submitted under the <a href="transactions.html#submit-health-event">Submit Health Event</a> transaction.</p>
 </td>
             </tr>
          </tbody>
@@ -550,20 +550,20 @@ vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCVaccineBrand.html"
-                     title="StructureDefinition/DDCCVaccineBrand">DDCC Vaccine Brand for Immunization</a>
-               </td>
-               <td>
-<p>DDCC Vaccine Brand for Immunization</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="StructureDefinition-DDCCVaccineValidFrom.html"
                      title="StructureDefinition/DDCCVaccineValidFrom">DDCC Vaccine Valid From</a>
                </td>
                <td>
 <p>Date upon which provided vaccination is considered valid</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-DDCCCountryOfVaccination.html"
+                     title="StructureDefinition/DDCCCountryOfVaccination">DDCC Country Of Vaccination for Immunization</a>
+               </td>
+               <td>
+<p>DDCC Country Of Vaccination for Immunization</p>
 </td>
             </tr>
             <tr>
@@ -577,11 +577,11 @@ vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-DDCCCountryOfVaccination.html"
-                     title="StructureDefinition/DDCCCountryOfVaccination">DDCC Country Of Vaccination for Immunization</a>
+                  <a href="StructureDefinition-DDCCVaccineBrand.html"
+                     title="StructureDefinition/DDCCVaccineBrand">DDCC Vaccine Brand for Immunization</a>
                </td>
                <td>
-<p>DDCC Country Of Vaccination for Immunization</p>
+<p>DDCC Vaccine Brand for Immunization</p>
 </td>
             </tr>
          </tbody>
@@ -607,20 +607,20 @@ vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-DDCC-QR-Format-ValueSet.html"
-                     title="ValueSet/DDCC-QR-Format-ValueSet">DDCC QR Format Codes</a>
-               </td>
-               <td>
-<p>Format of the representation of QR code</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="ValueSet-DDCC-Folder-DesignationType.html"
                      title="ValueSet/DDCC-Folder-DesignationType">DDCC DesignationTypes for Folder</a>
                </td>
                <td>
 <p>DDCC Designation Types ValueSet for DDCC Folders.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-who-ddcc-vaccines-covid-19.html"
+                     title="ValueSet/who-ddcc-vaccines-covid-19">WHO Vaccine List (COVID-19)</a>
+               </td>
+               <td>
+<p>WHO Vaccine List (COVID-19) from <a href="https://icd.who.int/browse11">ICD 11</a></p>
 </td>
             </tr>
             <tr>
@@ -634,11 +634,11 @@ vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-who-ddcc-vaccines-covid-19.html"
-                     title="ValueSet/who-ddcc-vaccines-covid-19">WHO Vaccine List (COVID-19)</a>
+                  <a href="ValueSet-DDCC-QR-Format-ValueSet.html"
+                     title="ValueSet/DDCC-QR-Format-ValueSet">DDCC QR Format Codes</a>
                </td>
                <td>
-<p>WHO Vaccine List (COVID-19) from <a href="https://icd.who.int/browse11">ICD 11</a></p>
+<p>Format of the representation of QR code</p>
 </td>
             </tr>
          </tbody>
@@ -673,20 +673,20 @@ vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html"
-                     title="CodeSystem/DDCC-QR-Format-CodeSystem">DDCC QR Format Codes</a>
-               </td>
-               <td>
-<p>Possible formats available for QR data.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="CodeSystem-DDCC-Folder-DesignationType.html"
                      title="CodeSystem/DDCC-Folder-DesignationType">DDCC Designation Types for Folder</a>
                </td>
                <td>
 <p>DDCC Designation Types to use for DDCC Folders.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-DDCC-QR-Format-CodeSystem.html"
+                     title="CodeSystem/DDCC-QR-Format-CodeSystem">DDCC QR Format Codes</a>
+               </td>
+               <td>
+<p>Possible formats available for QR data.</p>
 </td>
             </tr>
          </tbody>
@@ -733,11 +733,11 @@ vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.html"
-                     title="ConceptMap/who-ddcc-map-icd11-sct-disease-targeted">ConceptMap from ICD-11 to SNOMED CT for Disease or Agent Targeted</a>
+                  <a href="ConceptMap-who-ddcc-map-icd11-sct-vaccines.html"
+                     title="ConceptMap/who-ddcc-map-icd11-sct-vaccines">ConceptMap from ICD-11 to SNOMED CT for Vaccines</a>
                </td>
                <td>
-<p>Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted</p>
+<p>Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines</p>
 </td>
             </tr>
             <tr>
@@ -751,11 +751,11 @@ vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ConceptMap-who-ddcc-map-icd11-sct-vaccines.html"
-                     title="ConceptMap/who-ddcc-map-icd11-sct-vaccines">ConceptMap from ICD-11 to SNOMED CT for Vaccines</a>
+                  <a href="ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.html"
+                     title="ConceptMap/who-ddcc-map-icd11-sct-disease-targeted">ConceptMap from ICD-11 to SNOMED CT for Disease or Agent Targeted</a>
                </td>
                <td>
-<p>Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines</p>
+<p>Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted</p>
 </td>
             </tr>
          </tbody>
@@ -1108,20 +1108,20 @@ vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Questionnaire-DDCCHCIDRegistrationQuestionnaire.html"
-                     title="Questionnaire/DDCCHCIDRegistrationQuestionnaire">DDCC HCID Registration Questionnaire</a>
-               </td>
-               <td>
-<p>DDCC HCID Registration Questionnaire</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="Questionnaire-DDCCVSCoreDataSetQuestionnaire.html"
                      title="Questionnaire/DDCCVSCoreDataSetQuestionnaire">DDCC Core Data Set Questionnaire</a>
                </td>
                <td>
 <p>DDCC Questionnaire for an Immunization event.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Questionnaire-DDCCHCIDRegistrationQuestionnaire.html"
+                     title="Questionnaire/DDCCHCIDRegistrationQuestionnaire">DDCC HCID Registration Questionnaire</a>
+               </td>
+               <td>
+<p>DDCC HCID Registration Questionnaire</p>
 </td>
             </tr>
          </tbody>
@@ -1172,7 +1172,7 @@ vaccinate an <a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>.</p
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Aug 27, 2021 19:36+0000">2021-08-27</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.who.int">World Health Organization (WHO)</a>.  Package fhir.who.ddcc-vs#0.2.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 6, 2021 16:40+0000">2021-09-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

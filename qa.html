@@ -1,11 +1,13 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 7, warn = 2, info = 0 -->
+<!-- broken links = 0, errors = 2, warn = 3, info = 0 -->
 <head>
   <title>DDCC_VS : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
   <style>
     span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
   </style>
   <script>
     function flip(id) {
@@ -19,13 +21,24 @@
         span.innerHTML = 'Show Reasoning';
       }
     }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
   </script>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for DDCC_VS</h1>
- <p>Generated Fri Aug 27 19:38:03 UTC 2021, FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = <a href="http://worldhealthorganization.github.io/ddcc">http://worldhealthorganization.github.io/ddcc</a> (<a href="http://worldhealthorganization.github.io/ddcc/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Mon Sep 06 16:41:38 UTC 2021, FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = <a href="http://worldhealthorganization.github.io/ddcc">http://worldhealthorganization.github.io/ddcc</a> (<a href="http://worldhealthorganization.github.io/ddcc/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.77</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.79</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.who.ddcc-vs, Canonical = http://worldhealthorganization.github.io/ddcc</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Version Check:</td><td>0.2.1: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
@@ -40,14 +53,14 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://worldhealthorganization.github.io/ddcc (Problem #1 with package-list.json at http://worldhealthorganization.github.io/ddcc: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 2 column 2 path $)</td></tr>
- <tr><td>Summary:</td><td> broken links = 0, errors = 7, warn = 2, info = 0</td></tr>
+ <tr><td>Summary:</td><td> broken links = 0, errors = 2, warn = 3, info = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
      <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>7</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Bundle-DDCC-TX-SHE-bundle-example-1"><b>/github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -184,8 +197,8 @@
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Patient-DDCC-Patient-Spanish"><b>/github/workspace/fsh-generated/resources/Patient-DDCC-Patient-Spanish</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-DDCCHCIDRegistrationQuestionnaire"><b>/github/workspace/fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-DDCCHCIDRegistrationQuestionnaire"><b>/github/workspace/fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-DDCCVSCoreDataSetQuestionnaire"><b>/github/workspace/fsh-generated/resources/Questionnaire-DDCCVSCoreDataSetQuestionnaire</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -313,35 +326,15 @@
 </table>
 <hr/>
 <a name="internal"> </a>
-<h2><a href="">n/a</a></h2>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
  <table class="grid">
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="/github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#e254befb-d8f4-4087-9e08-3dd4e4cd96ed">Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 218, column 478</a></b></td><td><b>error</b></td><td><b>The image source 'icon-q-coding.png' cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="/github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#c43032b3-c626-42ba-ac0a-9dc045380a03">Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 219, column 482</a></b></td><td><b>error</b></td><td><b>The image source 'icon-q-coding.png' cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="/github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#9415e01a-119f-4cd0-b743-604677c784a2">Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 220, column 478</a></b></td><td><b>error</b></td><td><b>The image source 'icon-q-coding.png' cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="/github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#6719b81d-d7d2-4726-b5be-e2db1691fd65">Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 221, column 482</a></b></td><td><b>error</b></td><td><b>The image source 'icon-q-coding.png' cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="/github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#51636460-20e9-4b9b-8b88-6fcec2600689">Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 222, column 478</a></b></td><td><b>error</b></td><td><b>The image source 'icon-q-coding.png' cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="/github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#687f32d7-c256-4b51-b097-131c0f2b7587">Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 228, column 478</a></b></td><td><b>error</b></td><td><b>The image source 'icon-q-coding.png' cannot be resolved</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="/github/workspace/output/Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#2b35f278-37c5-478e-ac1a-7fe6892a4b0f">Questionnaire-DDCCVSCoreDataSetQuestionnaire.html#/html/body/div/div/div/div/div/div/table/tr/td/img at Line 231, column 482</a></b></td><td><b>error</b></td><td><b>The image source 'icon-q-coding.png' cannot be resolved</b></td>
-   </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Bundle-DDCC-TX-SHE-bundle-example-1"> </a>
-<h2><a href="Bundle-DDCC-TX-SHE-bundle-example-1.html">/github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1.json</a></h2>
- <ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> and <i>this.</i><a href="StructureDefinition-DDCCSubmitHealthEventRequest.html">DDCC Submit Health Event Request</a> (per meta)</li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/parameters.html">Parameters</a>, <i>this.</i><a href="StructureDefinition-DDCCGenerateHealthCertificateParameters.html">DDCC Generate Health Certificate Parameters</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCGenerateHealthCertificateParameters.html">DDCC Generate Health Certificate Parameters</a></li><li>Bundle.entry[0].resource.parameter[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a>, <i>this.</i><a href="StructureDefinition-DDCCQuestionnaireResponse.html">DDCC Questionnaire Response</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCQuestionnaireResponse.html">DDCC Questionnaire Response</a></li></ul>
-
+<h2><a href="Bundle-DDCC-TX-SHE-bundle-example-1.html">fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(8)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> and <i>this.</i><a href="StructureDefinition-DDCCSubmitHealthEventRequest.html">DDCC Submit Health Event Request</a> (per meta)</li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/parameters.html">Parameters</a>, <i>this.</i><a href="StructureDefinition-DDCCGenerateHealthCertificateParameters.html">DDCC Generate Health Certificate Parameters</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCGenerateHealthCertificateParameters.html">DDCC Generate Health Certificate Parameters</a></li><li>Bundle.entry[0].resource.parameter[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a>, <i>this.</i><a href="StructureDefinition-DDCCQuestionnaireResponse.html">DDCC Questionnaire Response</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCQuestionnaireResponse.html">DDCC Questionnaire Response</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -349,9 +342,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Bundle-Example-Arabic"> </a>
-<h2><a href="Bundle-Example-Arabic.html">/github/workspace/fsh-generated/resources/Bundle-Example-Arabic.json</a></h2>
- <ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> and <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> (per meta)</li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a>, <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a></li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
-
+<h2><a href="Bundle-Example-Arabic.html">fsh-generated/resources/Bundle-Example-Arabic.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(17)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> and <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> (per meta)</li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a>, <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a></li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -359,9 +352,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Bundle-Example-Chinese"> </a>
-<h2><a href="Bundle-Example-Chinese.html">/github/workspace/fsh-generated/resources/Bundle-Example-Chinese.json</a></h2>
- <ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> and <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> (per meta)</li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a>, <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a></li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
-
+<h2><a href="Bundle-Example-Chinese.html">fsh-generated/resources/Bundle-Example-Chinese.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(17)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> and <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> (per meta)</li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a>, <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a></li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -369,9 +362,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Bundle-Example-English"> </a>
-<h2><a href="Bundle-Example-English.html">/github/workspace/fsh-generated/resources/Bundle-Example-English.json</a></h2>
- <ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> and <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> (per meta)</li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a>, <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a></li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
-
+<h2><a href="Bundle-Example-English.html">fsh-generated/resources/Bundle-Example-English.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(17)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> and <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> (per meta)</li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a>, <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a></li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -379,9 +372,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Bundle-Example-French"> </a>
-<h2><a href="Bundle-Example-French.html">/github/workspace/fsh-generated/resources/Bundle-Example-French.json</a></h2>
- <ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> and <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> (per meta)</li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a>, <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a></li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
-
+<h2><a href="Bundle-Example-French.html">fsh-generated/resources/Bundle-Example-French.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(17)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> and <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> (per meta)</li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a>, <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a></li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -389,9 +382,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Bundle-Example-Russian"> </a>
-<h2><a href="Bundle-Example-Russian.html">/github/workspace/fsh-generated/resources/Bundle-Example-Russian.json</a></h2>
- <ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> and <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> (per meta)</li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a>, <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a></li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
-
+<h2><a href="Bundle-Example-Russian.html">fsh-generated/resources/Bundle-Example-Russian.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(17)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> and <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> (per meta)</li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a>, <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a></li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -399,9 +392,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Bundle-Example-Spanish"> </a>
-<h2><a href="Bundle-Example-Spanish.html">/github/workspace/fsh-generated/resources/Bundle-Example-Spanish.json</a></h2>
- <ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> and <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> (per meta)</li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a>, <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a></li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
-
+<h2><a href="Bundle-Example-Spanish.html">fsh-generated/resources/Bundle-Example-Spanish.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(17)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a> and <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a> (per meta)</li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a>, <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a></li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -409,9 +402,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_CodeSystem-DDCC-Example-Test-CodeSystem"> </a>
-<h2><a href="CodeSystem-DDCC-Example-Test-CodeSystem.html">/github/workspace/fsh-generated/resources/CodeSystem-DDCC-Example-Test-CodeSystem.json</a></h2>
- <ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
-
+<h2><a href="CodeSystem-DDCC-Example-Test-CodeSystem.html">fsh-generated/resources/CodeSystem-DDCC-Example-Test-CodeSystem.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -419,9 +412,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_CodeSystem-DDCC-Folder-DesignationType"> </a>
-<h2><a href="CodeSystem-DDCC-Folder-DesignationType.html">/github/workspace/fsh-generated/resources/CodeSystem-DDCC-Folder-DesignationType.json</a></h2>
- <ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
-
+<h2><a href="CodeSystem-DDCC-Folder-DesignationType.html">fsh-generated/resources/CodeSystem-DDCC-Folder-DesignationType.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -429,9 +422,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_CodeSystem-DDCC-QR-Category-Usage-CodeSystem"> </a>
-<h2><a href="CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html">/github/workspace/fsh-generated/resources/CodeSystem-DDCC-QR-Category-Usage-CodeSystem.json</a></h2>
- <ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
-
+<h2><a href="CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html">fsh-generated/resources/CodeSystem-DDCC-QR-Category-Usage-CodeSystem.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -439,9 +432,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_CodeSystem-DDCC-QR-Format-CodeSystem"> </a>
-<h2><a href="CodeSystem-DDCC-QR-Format-CodeSystem.html">/github/workspace/fsh-generated/resources/CodeSystem-DDCC-QR-Format-CodeSystem.json</a></h2>
- <ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
-
+<h2><a href="CodeSystem-DDCC-QR-Format-CodeSystem.html">fsh-generated/resources/CodeSystem-DDCC-QR-Format-CodeSystem.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -449,9 +442,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Composition-DDCC-Composition-Example-Arabic"> </a>
-<h2><a href="Composition-DDCC-Composition-Example-Arabic.html">/github/workspace/fsh-generated/resources/Composition-DDCC-Composition-Example-Arabic.json</a></h2>
- <ul style="font-size: 7px"><li>Composition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li></ul>
-
+<h2><a href="Composition-DDCC-Composition-Example-Arabic.html">fsh-generated/resources/Composition-DDCC-Composition-Example-Arabic.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>Composition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -459,9 +452,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Composition-DDCC-Composition-Example-Chinese"> </a>
-<h2><a href="Composition-DDCC-Composition-Example-Chinese.html">/github/workspace/fsh-generated/resources/Composition-DDCC-Composition-Example-Chinese.json</a></h2>
- <ul style="font-size: 7px"><li>Composition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li></ul>
-
+<h2><a href="Composition-DDCC-Composition-Example-Chinese.html">fsh-generated/resources/Composition-DDCC-Composition-Example-Chinese.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>Composition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -469,9 +462,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Composition-DDCC-Composition-Example-English"> </a>
-<h2><a href="Composition-DDCC-Composition-Example-English.html">/github/workspace/fsh-generated/resources/Composition-DDCC-Composition-Example-English.json</a></h2>
- <ul style="font-size: 7px"><li>Composition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li></ul>
-
+<h2><a href="Composition-DDCC-Composition-Example-English.html">fsh-generated/resources/Composition-DDCC-Composition-Example-English.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>Composition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -479,9 +472,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Composition-DDCC-Composition-Example-French"> </a>
-<h2><a href="Composition-DDCC-Composition-Example-French.html">/github/workspace/fsh-generated/resources/Composition-DDCC-Composition-Example-French.json</a></h2>
- <ul style="font-size: 7px"><li>Composition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li></ul>
-
+<h2><a href="Composition-DDCC-Composition-Example-French.html">fsh-generated/resources/Composition-DDCC-Composition-Example-French.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>Composition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -489,9 +482,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Composition-DDCC-Composition-Example-Russian"> </a>
-<h2><a href="Composition-DDCC-Composition-Example-Russian.html">/github/workspace/fsh-generated/resources/Composition-DDCC-Composition-Example-Russian.json</a></h2>
- <ul style="font-size: 7px"><li>Composition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li></ul>
-
+<h2><a href="Composition-DDCC-Composition-Example-Russian.html">fsh-generated/resources/Composition-DDCC-Composition-Example-Russian.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>Composition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -499,9 +492,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Composition-DDCC-Composition-Example-Spanish"> </a>
-<h2><a href="Composition-DDCC-Composition-Example-Spanish.html">/github/workspace/fsh-generated/resources/Composition-DDCC-Composition-Example-Spanish.json</a></h2>
- <ul style="font-size: 7px"><li>Composition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li></ul>
-
+<h2><a href="Composition-DDCC-Composition-Example-Spanish.html">fsh-generated/resources/Composition-DDCC-Composition-Example-Spanish.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>Composition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -509,9 +502,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted"> </a>
-<h2><a href="ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted.html">/github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted.json</a></h2>
- <ul style="font-size: 7px"><li>ConceptMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/conceptmap.html">ConceptMap</a></li></ul>
-
+<h2><a href="ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted.html">fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted.json</a> <span id="svi18" class="toggle" onclick="toggle('vi18')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi18')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>ConceptMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/conceptmap.html">ConceptMap</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -519,9 +512,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ConceptMap-who-ddcc-map-icd11-sct-disease-targeted"> </a>
-<h2><a href="ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.html">/github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.json</a></h2>
- <ul style="font-size: 7px"><li>ConceptMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/conceptmap.html">ConceptMap</a></li></ul>
-
+<h2><a href="ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.html">fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>ConceptMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/conceptmap.html">ConceptMap</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -529,9 +522,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ConceptMap-who-ddcc-map-icd11-sct-vaccines"> </a>
-<h2><a href="ConceptMap-who-ddcc-map-icd11-sct-vaccines.html">/github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-vaccines.json</a></h2>
- <ul style="font-size: 7px"><li>ConceptMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/conceptmap.html">ConceptMap</a></li></ul>
-
+<h2><a href="ConceptMap-who-ddcc-map-icd11-sct-vaccines.html">fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-vaccines.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>ConceptMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/conceptmap.html">ConceptMap</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -539,9 +532,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-Arabic"> </a>
-<h2><a href="Immunization-DDCC-Immunization-Arabic.html">/github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-Arabic.json</a></h2>
- <ul style="font-size: 7px"><li>Immunization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li></ul>
-
+<h2><a href="Immunization-DDCC-Immunization-Arabic.html">fsh-generated/resources/Immunization-DDCC-Immunization-Arabic.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>Immunization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -549,9 +542,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-Chinese"> </a>
-<h2><a href="Immunization-DDCC-Immunization-Chinese.html">/github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-Chinese.json</a></h2>
- <ul style="font-size: 7px"><li>Immunization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li></ul>
-
+<h2><a href="Immunization-DDCC-Immunization-Chinese.html">fsh-generated/resources/Immunization-DDCC-Immunization-Chinese.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi22"><ul style="font-size: 7px"><li>Immunization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -559,9 +552,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-English"> </a>
-<h2><a href="Immunization-DDCC-Immunization-English.html">/github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-English.json</a></h2>
- <ul style="font-size: 7px"><li>Immunization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li></ul>
-
+<h2><a href="Immunization-DDCC-Immunization-English.html">fsh-generated/resources/Immunization-DDCC-Immunization-English.json</a> <span id="svi23" class="toggle" onclick="toggle('vi23')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi23')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi23"><ul style="font-size: 7px"><li>Immunization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -569,9 +562,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-French"> </a>
-<h2><a href="Immunization-DDCC-Immunization-French.html">/github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-French.json</a></h2>
- <ul style="font-size: 7px"><li>Immunization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li></ul>
-
+<h2><a href="Immunization-DDCC-Immunization-French.html">fsh-generated/resources/Immunization-DDCC-Immunization-French.json</a> <span id="svi24" class="toggle" onclick="toggle('vi24')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi24')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi24"><ul style="font-size: 7px"><li>Immunization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -579,9 +572,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-Russian"> </a>
-<h2><a href="Immunization-DDCC-Immunization-Russian.html">/github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-Russian.json</a></h2>
- <ul style="font-size: 7px"><li>Immunization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li></ul>
-
+<h2><a href="Immunization-DDCC-Immunization-Russian.html">fsh-generated/resources/Immunization-DDCC-Immunization-Russian.json</a> <span id="svi25" class="toggle" onclick="toggle('vi25')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi25')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi25"><ul style="font-size: 7px"><li>Immunization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -589,9 +582,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-Spanish"> </a>
-<h2><a href="Immunization-DDCC-Immunization-Spanish.html">/github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-Spanish.json</a></h2>
- <ul style="font-size: 7px"><li>Immunization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li></ul>
-
+<h2><a href="Immunization-DDCC-Immunization-Spanish.html">fsh-generated/resources/Immunization-DDCC-Immunization-Spanish.json</a> <span id="svi26" class="toggle" onclick="toggle('vi26')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi26')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi26"><ul style="font-size: 7px"><li>Immunization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -599,9 +592,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Arabic"> </a>
-<h2><a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Arabic.html">/github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Arabic.json</a></h2>
- <ul style="font-size: 7px"><li>ImmunizationRecommendation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
-
+<h2><a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Arabic.html">fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Arabic.json</a> <span id="svi27" class="toggle" onclick="toggle('vi27')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi27')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi27"><ul style="font-size: 7px"><li>ImmunizationRecommendation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -609,9 +602,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Chinese"> </a>
-<h2><a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Chinese.html">/github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Chinese.json</a></h2>
- <ul style="font-size: 7px"><li>ImmunizationRecommendation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
-
+<h2><a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Chinese.html">fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Chinese.json</a> <span id="svi28" class="toggle" onclick="toggle('vi28')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi28')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi28"><ul style="font-size: 7px"><li>ImmunizationRecommendation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -619,9 +612,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ImmunizationRecommendation-DDCC-ImmunizationRecommendation-English"> </a>
-<h2><a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-English.html">/github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-English.json</a></h2>
- <ul style="font-size: 7px"><li>ImmunizationRecommendation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
-
+<h2><a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-English.html">fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-English.json</a> <span id="svi29" class="toggle" onclick="toggle('vi29')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi29')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi29"><ul style="font-size: 7px"><li>ImmunizationRecommendation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -629,9 +622,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ImmunizationRecommendation-DDCC-ImmunizationRecommendation-French"> </a>
-<h2><a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-French.html">/github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-French.json</a></h2>
- <ul style="font-size: 7px"><li>ImmunizationRecommendation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
-
+<h2><a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-French.html">fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-French.json</a> <span id="svi30" class="toggle" onclick="toggle('vi30')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi30')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi30"><ul style="font-size: 7px"><li>ImmunizationRecommendation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -639,9 +632,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Russian"> </a>
-<h2><a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Russian.html">/github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Russian.json</a></h2>
- <ul style="font-size: 7px"><li>ImmunizationRecommendation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
-
+<h2><a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Russian.html">fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Russian.json</a> <span id="svi31" class="toggle" onclick="toggle('vi31')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi31')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi31"><ul style="font-size: 7px"><li>ImmunizationRecommendation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -649,9 +642,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish"> </a>
-<h2><a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish.html">/github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish.json</a></h2>
- <ul style="font-size: 7px"><li>ImmunizationRecommendation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
-
+<h2><a href="ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish.html">fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish.json</a> <span id="svi32" class="toggle" onclick="toggle('vi32')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi32')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi32"><ul style="font-size: 7px"><li>ImmunizationRecommendation: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -659,9 +652,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate"> </a>
-<h2><a href="OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html">/github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.json</a></h2>
- <ul style="font-size: 7px"><li>OperationDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/operationdefinition.html">OperationDefinition</a></li></ul>
-
+<h2><a href="OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html">fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.json</a> <span id="svi33" class="toggle" onclick="toggle('vi33')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi33')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi33"><ul style="font-size: 7px"><li>OperationDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/operationdefinition.html">OperationDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -669,9 +662,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Organization-DDCC-Organization-Arabic"> </a>
-<h2><a href="Organization-DDCC-Organization-Arabic.html">/github/workspace/fsh-generated/resources/Organization-DDCC-Organization-Arabic.json</a></h2>
- <ul style="font-size: 7px"><li>Organization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta)</li></ul>
-
+<h2><a href="Organization-DDCC-Organization-Arabic.html">fsh-generated/resources/Organization-DDCC-Organization-Arabic.json</a> <span id="svi34" class="toggle" onclick="toggle('vi34')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi34')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi34"><ul style="font-size: 7px"><li>Organization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -679,9 +672,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Organization-DDCC-Organization-Chinese"> </a>
-<h2><a href="Organization-DDCC-Organization-Chinese.html">/github/workspace/fsh-generated/resources/Organization-DDCC-Organization-Chinese.json</a></h2>
- <ul style="font-size: 7px"><li>Organization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta)</li></ul>
-
+<h2><a href="Organization-DDCC-Organization-Chinese.html">fsh-generated/resources/Organization-DDCC-Organization-Chinese.json</a> <span id="svi35" class="toggle" onclick="toggle('vi35')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi35')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi35"><ul style="font-size: 7px"><li>Organization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -689,9 +682,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Organization-DDCC-Organization-English"> </a>
-<h2><a href="Organization-DDCC-Organization-English.html">/github/workspace/fsh-generated/resources/Organization-DDCC-Organization-English.json</a></h2>
- <ul style="font-size: 7px"><li>Organization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta)</li></ul>
-
+<h2><a href="Organization-DDCC-Organization-English.html">fsh-generated/resources/Organization-DDCC-Organization-English.json</a> <span id="svi36" class="toggle" onclick="toggle('vi36')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi36')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi36"><ul style="font-size: 7px"><li>Organization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -699,9 +692,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Organization-DDCC-Organization-French"> </a>
-<h2><a href="Organization-DDCC-Organization-French.html">/github/workspace/fsh-generated/resources/Organization-DDCC-Organization-French.json</a></h2>
- <ul style="font-size: 7px"><li>Organization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta)</li></ul>
-
+<h2><a href="Organization-DDCC-Organization-French.html">fsh-generated/resources/Organization-DDCC-Organization-French.json</a> <span id="svi37" class="toggle" onclick="toggle('vi37')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi37')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi37"><ul style="font-size: 7px"><li>Organization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -709,9 +702,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Organization-DDCC-Organization-Russian"> </a>
-<h2><a href="Organization-DDCC-Organization-Russian.html">/github/workspace/fsh-generated/resources/Organization-DDCC-Organization-Russian.json</a></h2>
- <ul style="font-size: 7px"><li>Organization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta)</li></ul>
-
+<h2><a href="Organization-DDCC-Organization-Russian.html">fsh-generated/resources/Organization-DDCC-Organization-Russian.json</a> <span id="svi38" class="toggle" onclick="toggle('vi38')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi38')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi38"><ul style="font-size: 7px"><li>Organization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -719,9 +712,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Organization-DDCC-Organization-Spanish"> </a>
-<h2><a href="Organization-DDCC-Organization-Spanish.html">/github/workspace/fsh-generated/resources/Organization-DDCC-Organization-Spanish.json</a></h2>
- <ul style="font-size: 7px"><li>Organization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta)</li></ul>
-
+<h2><a href="Organization-DDCC-Organization-Spanish.html">fsh-generated/resources/Organization-DDCC-Organization-Spanish.json</a> <span id="svi39" class="toggle" onclick="toggle('vi39')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi39')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi39"><ul style="font-size: 7px"><li>Organization: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -729,9 +722,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Patient-DDCC-Patient-Arabic"> </a>
-<h2><a href="Patient-DDCC-Patient-Arabic.html">/github/workspace/fsh-generated/resources/Patient-DDCC-Patient-Arabic.json</a></h2>
- <ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li></ul>
-
+<h2><a href="Patient-DDCC-Patient-Arabic.html">fsh-generated/resources/Patient-DDCC-Patient-Arabic.json</a> <span id="svi40" class="toggle" onclick="toggle('vi40')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi40')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi40"><ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -739,9 +732,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Patient-DDCC-Patient-Chinese"> </a>
-<h2><a href="Patient-DDCC-Patient-Chinese.html">/github/workspace/fsh-generated/resources/Patient-DDCC-Patient-Chinese.json</a></h2>
- <ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li></ul>
-
+<h2><a href="Patient-DDCC-Patient-Chinese.html">fsh-generated/resources/Patient-DDCC-Patient-Chinese.json</a> <span id="svi41" class="toggle" onclick="toggle('vi41')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi41')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi41"><ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -749,9 +742,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Patient-DDCC-Patient-English"> </a>
-<h2><a href="Patient-DDCC-Patient-English.html">/github/workspace/fsh-generated/resources/Patient-DDCC-Patient-English.json</a></h2>
- <ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li></ul>
-
+<h2><a href="Patient-DDCC-Patient-English.html">fsh-generated/resources/Patient-DDCC-Patient-English.json</a> <span id="svi42" class="toggle" onclick="toggle('vi42')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi42')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi42"><ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -759,9 +752,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Patient-DDCC-Patient-French"> </a>
-<h2><a href="Patient-DDCC-Patient-French.html">/github/workspace/fsh-generated/resources/Patient-DDCC-Patient-French.json</a></h2>
- <ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li></ul>
-
+<h2><a href="Patient-DDCC-Patient-French.html">fsh-generated/resources/Patient-DDCC-Patient-French.json</a> <span id="svi43" class="toggle" onclick="toggle('vi43')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi43')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi43"><ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -769,9 +762,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Patient-DDCC-Patient-Russian"> </a>
-<h2><a href="Patient-DDCC-Patient-Russian.html">/github/workspace/fsh-generated/resources/Patient-DDCC-Patient-Russian.json</a></h2>
- <ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li></ul>
-
+<h2><a href="Patient-DDCC-Patient-Russian.html">fsh-generated/resources/Patient-DDCC-Patient-Russian.json</a> <span id="svi44" class="toggle" onclick="toggle('vi44')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi44')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi44"><ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -779,9 +772,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Patient-DDCC-Patient-Spanish"> </a>
-<h2><a href="Patient-DDCC-Patient-Spanish.html">/github/workspace/fsh-generated/resources/Patient-DDCC-Patient-Spanish.json</a></h2>
- <ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li></ul>
-
+<h2><a href="Patient-DDCC-Patient-Spanish.html">fsh-generated/resources/Patient-DDCC-Patient-Spanish.json</a> <span id="svi45" class="toggle" onclick="toggle('vi45')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi45')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi45"><ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -789,19 +782,28 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Questionnaire-DDCCHCIDRegistrationQuestionnaire"> </a>
-<h2><a href="Questionnaire-DDCCHCIDRegistrationQuestionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire.json</a></h2>
- <ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a> and <i>this.</i><a href="StructureDefinition-DDCCQuestionnaireSDC.html">DDCC Questionnaire based on SDC</a> (per meta)</li></ul>
-
+<h2><a href="Questionnaire-DDCCHCIDRegistrationQuestionnaire.html">fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire.json</a> <span id="svi46" class="toggle" onclick="toggle('vi46')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi46')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi46"><ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a> and <i>this.</i><a href="StructureDefinition-DDCCQuestionnaireSDC.html">DDCC Questionnaire based on SDC</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Questionnaire.extension[0].extension[1].value.ofType(code)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound2"><b>ValueSet http://hl7.org/fhir/resource-types not found by validator</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.item[2].item[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Context_Wrong"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext is not allowed to be used at this point (allowed = e:Questionnaire, e:Questionnaire.item; this element is [[Questionnaire.item.item, BackboneElement.item, BackboneElement])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.item[2].item[0]</b></td><td><b>error</b></td><td title="Extension_EXT_Context_Wrong"><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext is not allowed to be used at this point (allowed = e:Questionnaire, e:Questionnaire.item; this element is [[Questionnaire.item.item, BackboneElement.item, BackboneElement])</b></td>
    </tr>
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Questionnaire-DDCCVSCoreDataSetQuestionnaire"> </a>
-<h2><a href="Questionnaire-DDCCVSCoreDataSetQuestionnaire.html">/github/workspace/fsh-generated/resources/Questionnaire-DDCCVSCoreDataSetQuestionnaire.json</a></h2>
- <ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a> and <i>this.</i><a href="StructureDefinition-DDCCQuestionnaire.html">DDCC Questionniare</a> (per meta)</li></ul>
-
+<h2><a href="Questionnaire-DDCCVSCoreDataSetQuestionnaire.html">fsh-generated/resources/Questionnaire-DDCCVSCoreDataSetQuestionnaire.json</a> <span id="svi47" class="toggle" onclick="toggle('vi47')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi47')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi47"><ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a> and <i>this.</i><a href="StructureDefinition-DDCCQuestionnaire.html">DDCC Questionniare</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -809,9 +811,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example"> </a>
-<h2><a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example.html">/github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example.json</a></h2>
- <ul style="font-size: 7px"><li>QuestionnaireResponse: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a> and <i>this.</i><a href="StructureDefinition-DDCCQuestionnaireResponse.html">DDCC Questionnaire Response</a> (per meta)</li></ul>
-
+<h2><a href="QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example.html">fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example.json</a> <span id="svi48" class="toggle" onclick="toggle('vi48')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi48')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi48"><ul style="font-size: 7px"><li>QuestionnaireResponse: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaireresponse.html">QuestionnaireResponse</a> and <i>this.</i><a href="StructureDefinition-DDCCQuestionnaireResponse.html">DDCC Questionnaire Response</a> (per meta)</li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -819,9 +821,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCAddBundle"> </a>
-<h2><a href="StructureDefinition-DDCCAddBundle.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCAddBundle.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCAddBundle.html">fsh-generated/resources/StructureDefinition-DDCCAddBundle.json</a> <span id="svi49" class="toggle" onclick="toggle('vi49')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi49')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi49"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -829,9 +831,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCComposition"> </a>
-<h2><a href="StructureDefinition-DDCCComposition.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCComposition.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCComposition.html">fsh-generated/resources/StructureDefinition-DDCCComposition.json</a> <span id="svi50" class="toggle" onclick="toggle('vi50')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi50')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi50"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -839,9 +841,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCCoreDataSetCoC"> </a>
-<h2><a href="StructureDefinition-DDCCCoreDataSetCoC.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCCoreDataSetCoC.html">fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC.json</a> <span id="svi51" class="toggle" onclick="toggle('vi51')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi51')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi51"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -849,9 +851,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCCoreDataSetPoV"> </a>
-<h2><a href="StructureDefinition-DDCCCoreDataSetPoV.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCCoreDataSetPoV.html">fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV.json</a> <span id="svi52" class="toggle" onclick="toggle('vi52')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi52')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi52"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -859,9 +861,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCCountryOfVaccination"> </a>
-<h2><a href="StructureDefinition-DDCCCountryOfVaccination.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCCountryOfVaccination.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCCountryOfVaccination.html">fsh-generated/resources/StructureDefinition-DDCCCountryOfVaccination.json</a> <span id="svi53" class="toggle" onclick="toggle('vi53')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi53')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi53"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -869,9 +871,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCDocument"> </a>
-<h2><a href="StructureDefinition-DDCCDocument.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocument.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCDocument.html">fsh-generated/resources/StructureDefinition-DDCCDocument.json</a> <span id="svi54" class="toggle" onclick="toggle('vi54')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi54')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi54"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -879,9 +881,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCDocumentReference"> </a>
-<h2><a href="StructureDefinition-DDCCDocumentReference.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReference.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCDocumentReference.html">fsh-generated/resources/StructureDefinition-DDCCDocumentReference.json</a> <span id="svi55" class="toggle" onclick="toggle('vi55')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi55')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi55"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -889,9 +891,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCDocumentReferenceQR"> </a>
-<h2><a href="StructureDefinition-DDCCDocumentReferenceQR.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReferenceQR.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCDocumentReferenceQR.html">fsh-generated/resources/StructureDefinition-DDCCDocumentReferenceQR.json</a> <span id="svi56" class="toggle" onclick="toggle('vi56')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi56')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi56"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -899,9 +901,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCFolder"> </a>
-<h2><a href="StructureDefinition-DDCCFolder.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCFolder.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCFolder.html">fsh-generated/resources/StructureDefinition-DDCCFolder.json</a> <span id="svi57" class="toggle" onclick="toggle('vi57')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi57')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi57"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -909,9 +911,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCGenerateHealthCertificateParameters"> </a>
-<h2><a href="StructureDefinition-DDCCGenerateHealthCertificateParameters.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCGenerateHealthCertificateParameters.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCGenerateHealthCertificateParameters.html">fsh-generated/resources/StructureDefinition-DDCCGenerateHealthCertificateParameters.json</a> <span id="svi58" class="toggle" onclick="toggle('vi58')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi58')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi58"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -919,9 +921,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCImmunization"> </a>
-<h2><a href="StructureDefinition-DDCCImmunization.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCImmunization.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCImmunization.html">fsh-generated/resources/StructureDefinition-DDCCImmunization.json</a> <span id="svi59" class="toggle" onclick="toggle('vi59')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi59')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi59"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -929,9 +931,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCImmunizationRecommendation"> </a>
-<h2><a href="StructureDefinition-DDCCImmunizationRecommendation.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCImmunizationRecommendation.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCImmunizationRecommendation.html">fsh-generated/resources/StructureDefinition-DDCCImmunizationRecommendation.json</a> <span id="svi60" class="toggle" onclick="toggle('vi60')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi60')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi60"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -939,9 +941,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCOrganization"> </a>
-<h2><a href="StructureDefinition-DDCCOrganization.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCOrganization.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCOrganization.html">fsh-generated/resources/StructureDefinition-DDCCOrganization.json</a> <span id="svi61" class="toggle" onclick="toggle('vi61')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi61')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi61"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -949,9 +951,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCPatient"> </a>
-<h2><a href="StructureDefinition-DDCCPatient.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCPatient.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCPatient.html">fsh-generated/resources/StructureDefinition-DDCCPatient.json</a> <span id="svi62" class="toggle" onclick="toggle('vi62')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi62')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi62"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -959,9 +961,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCPractitioner"> </a>
-<h2><a href="StructureDefinition-DDCCPractitioner.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCPractitioner.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCPractitioner.html">fsh-generated/resources/StructureDefinition-DDCCPractitioner.json</a> <span id="svi63" class="toggle" onclick="toggle('vi63')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi63')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi63"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -969,9 +971,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCPractitionerRole"> </a>
-<h2><a href="StructureDefinition-DDCCPractitionerRole.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCPractitionerRole.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCPractitionerRole.html">fsh-generated/resources/StructureDefinition-DDCCPractitionerRole.json</a> <span id="svi64" class="toggle" onclick="toggle('vi64')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi64')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi64"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -979,9 +981,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCProvideDocumentBundle"> </a>
-<h2><a href="StructureDefinition-DDCCProvideDocumentBundle.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCProvideDocumentBundle.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCProvideDocumentBundle.html">fsh-generated/resources/StructureDefinition-DDCCProvideDocumentBundle.json</a> <span id="svi65" class="toggle" onclick="toggle('vi65')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi65')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi65"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -989,9 +991,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCQuestionnaire"> </a>
-<h2><a href="StructureDefinition-DDCCQuestionnaire.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaire.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCQuestionnaire.html">fsh-generated/resources/StructureDefinition-DDCCQuestionnaire.json</a> <span id="svi66" class="toggle" onclick="toggle('vi66')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi66')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi66"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -999,9 +1001,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCQuestionnaireResponse"> </a>
-<h2><a href="StructureDefinition-DDCCQuestionnaireResponse.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaireResponse.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCQuestionnaireResponse.html">fsh-generated/resources/StructureDefinition-DDCCQuestionnaireResponse.json</a> <span id="svi67" class="toggle" onclick="toggle('vi67')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi67')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi67"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1009,9 +1011,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCQuestionnaireSDC"> </a>
-<h2><a href="StructureDefinition-DDCCQuestionnaireSDC.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCQuestionnaireSDC.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCQuestionnaireSDC.html">fsh-generated/resources/StructureDefinition-DDCCQuestionnaireSDC.json</a> <span id="svi68" class="toggle" onclick="toggle('vi68')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi68')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi68"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1019,9 +1021,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCSubmissionSet"> </a>
-<h2><a href="StructureDefinition-DDCCSubmissionSet.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmissionSet.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCSubmissionSet.html">fsh-generated/resources/StructureDefinition-DDCCSubmissionSet.json</a> <span id="svi69" class="toggle" onclick="toggle('vi69')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi69')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi69"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1029,9 +1031,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCSubmitHealthEventRequest"> </a>
-<h2><a href="StructureDefinition-DDCCSubmitHealthEventRequest.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventRequest.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCSubmitHealthEventRequest.html">fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventRequest.json</a> <span id="svi70" class="toggle" onclick="toggle('vi70')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi70')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi70"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1039,9 +1041,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCSubmitHealthEventResponse"> </a>
-<h2><a href="StructureDefinition-DDCCSubmitHealthEventResponse.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventResponse.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCSubmitHealthEventResponse.html">fsh-generated/resources/StructureDefinition-DDCCSubmitHealthEventResponse.json</a> <span id="svi71" class="toggle" onclick="toggle('vi71')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi71')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi71"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1049,9 +1051,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCVaccineBrand"> </a>
-<h2><a href="StructureDefinition-DDCCVaccineBrand.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCVaccineBrand.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCVaccineBrand.html">fsh-generated/resources/StructureDefinition-DDCCVaccineBrand.json</a> <span id="svi72" class="toggle" onclick="toggle('vi72')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi72')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi72"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1059,9 +1061,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCVaccineMarketAuthorization"> </a>
-<h2><a href="StructureDefinition-DDCCVaccineMarketAuthorization.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCVaccineMarketAuthorization.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCVaccineMarketAuthorization.html">fsh-generated/resources/StructureDefinition-DDCCVaccineMarketAuthorization.json</a> <span id="svi73" class="toggle" onclick="toggle('vi73')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi73')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi73"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1069,9 +1071,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCVaccineValidFrom"> </a>
-<h2><a href="StructureDefinition-DDCCVaccineValidFrom.html">/github/workspace/fsh-generated/resources/StructureDefinition-DDCCVaccineValidFrom.json</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-DDCCVaccineValidFrom.html">fsh-generated/resources/StructureDefinition-DDCCVaccineValidFrom.json</a> <span id="svi74" class="toggle" onclick="toggle('vi74')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi74')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi74"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1079,9 +1081,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ValueSet-DDCC-Folder-DesignationType"> </a>
-<h2><a href="ValueSet-DDCC-Folder-DesignationType.html">/github/workspace/fsh-generated/resources/ValueSet-DDCC-Folder-DesignationType.json</a></h2>
- <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
-
+<h2><a href="ValueSet-DDCC-Folder-DesignationType.html">fsh-generated/resources/ValueSet-DDCC-Folder-DesignationType.json</a> <span id="svi75" class="toggle" onclick="toggle('vi75')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi75')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi75"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1089,9 +1091,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ValueSet-DDCC-QR-Category-Usage-ValueSet"> </a>
-<h2><a href="ValueSet-DDCC-QR-Category-Usage-ValueSet.html">/github/workspace/fsh-generated/resources/ValueSet-DDCC-QR-Category-Usage-ValueSet.json</a></h2>
- <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
-
+<h2><a href="ValueSet-DDCC-QR-Category-Usage-ValueSet.html">fsh-generated/resources/ValueSet-DDCC-QR-Category-Usage-ValueSet.json</a> <span id="svi76" class="toggle" onclick="toggle('vi76')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi76')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi76"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1099,9 +1101,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ValueSet-DDCC-QR-Format-ValueSet"> </a>
-<h2><a href="ValueSet-DDCC-QR-Format-ValueSet.html">/github/workspace/fsh-generated/resources/ValueSet-DDCC-QR-Format-ValueSet.json</a></h2>
- <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
-
+<h2><a href="ValueSet-DDCC-QR-Format-ValueSet.html">fsh-generated/resources/ValueSet-DDCC-QR-Format-ValueSet.json</a> <span id="svi77" class="toggle" onclick="toggle('vi77')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi77')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi77"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1109,9 +1111,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ValueSet-who-ddcc-disease-targeted-covid-19"> </a>
-<h2><a href="ValueSet-who-ddcc-disease-targeted-covid-19.html">/github/workspace/fsh-generated/resources/ValueSet-who-ddcc-disease-targeted-covid-19.json</a></h2>
- <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
-
+<h2><a href="ValueSet-who-ddcc-disease-targeted-covid-19.html">fsh-generated/resources/ValueSet-who-ddcc-disease-targeted-covid-19.json</a> <span id="svi78" class="toggle" onclick="toggle('vi78')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi78')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi78"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
@@ -1122,9 +1124,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_ValueSet-who-ddcc-vaccines-covid-19"> </a>
-<h2><a href="ValueSet-who-ddcc-vaccines-covid-19.html">/github/workspace/fsh-generated/resources/ValueSet-who-ddcc-vaccines-covid-19.json</a></h2>
- <ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
-
+<h2><a href="ValueSet-who-ddcc-vaccines-covid-19.html">fsh-generated/resources/ValueSet-who-ddcc-vaccines-covid-19.json</a> <span id="svi79" class="toggle" onclick="toggle('vi79')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi79')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi79"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
@@ -1135,7 +1137,8 @@
 </table>
 <hr/>
 <a name="_github_workspace_input_ddcc"> </a>
-<h2><a href="ImplementationGuide-fhir.who.ddcc-vs.html">/github/workspace/input/ddcc.xml</a></h2>
+<h2><a href="ImplementationGuide-fhir.who.ddcc-vs.html">input/ddcc.xml</a> <span id="svi80" class="toggle" onclick="toggle('vi80')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi80')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi80"></div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1143,9 +1146,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_input_ips-preadopted_Immunization-uv-ips.structuredefinition"> </a>
-<h2><a href="StructureDefinition-Immunization-pre-uv-ips.html">/github/workspace/input/ips-preadopted/Immunization-uv-ips.structuredefinition.xml</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-Immunization-pre-uv-ips.html">input/ips-preadopted/Immunization-uv-ips.structuredefinition.xml</a> <span id="svi81" class="toggle" onclick="toggle('vi81')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi81')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi81"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1153,9 +1156,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_input_ips-preadopted_Patient-uv-ips.structuredefinition"> </a>
-<h2><a href="StructureDefinition-Patient-pre-uv-ips.html">/github/workspace/input/ips-preadopted/Patient-uv-ips.structuredefinition.xml</a></h2>
- <ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
-
+<h2><a href="StructureDefinition-Patient-pre-uv-ips.html">input/ips-preadopted/Patient-uv-ips.structuredefinition.xml</a> <span id="svi82" class="toggle" onclick="toggle('vi82')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi82')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi82"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1163,9 +1166,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_input_resources_capabilitystatement-WHO-DDCC-Generator"> </a>
-<h2><a href="CapabilityStatement-WHO.DDCC.Generator.html">/github/workspace/input/resources/capabilitystatement-WHO-DDCC-Generator.xml</a></h2>
- <ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
-
+<h2><a href="CapabilityStatement-WHO.DDCC.Generator.html">input/resources/capabilitystatement-WHO-DDCC-Generator.xml</a> <span id="svi83" class="toggle" onclick="toggle('vi83')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi83')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi83"><ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1173,9 +1176,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_input_resources_capabilitystatement-WHO-DDCC-Registry-Service"> </a>
-<h2><a href="CapabilityStatement-WHO.DDCC.RegistryService.html">/github/workspace/input/resources/capabilitystatement-WHO-DDCC-Registry-Service.xml</a></h2>
- <ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
-
+<h2><a href="CapabilityStatement-WHO.DDCC.RegistryService.html">input/resources/capabilitystatement-WHO-DDCC-Registry-Service.xml</a> <span id="svi84" class="toggle" onclick="toggle('vi84')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi84')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi84"><ul style="font-size: 7px"><li>CapabilityStatement: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/capabilitystatement.html">CapabilityStatement</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1183,9 +1186,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_input_resources_examples_example-IPS-Immunization-Bundle"> </a>
-<h2><a href="Bundle-IPS-Immunization-Example-Bundle-01.html">/github/workspace/input/resources/examples/example-IPS-Immunization-Bundle.json</a></h2>
- <ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a></li></ul>
-
+<h2><a href="Bundle-IPS-Immunization-Example-Bundle-01.html">input/resources/examples/example-IPS-Immunization-Bundle.json</a> <span id="svi85" class="toggle" onclick="toggle('vi85')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi85')">(3)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi85"><ul style="font-size: 7px"><li>Bundle: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></li><li>Bundle.entry[0].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a></li><li>Bundle.entry[1].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1193,9 +1196,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_input_resources_maps_ddcc-to-coredataset.map"> </a>
-<h2><a href="StructureMap-ddcc-to-coredataset.html">/github/workspace/input/resources/maps/ddcc-to-coredataset.map.json</a></h2>
- <ul style="font-size: 7px"><li>StructureMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuremap.html">StructureMap</a></li></ul>
-
+<h2><a href="StructureMap-ddcc-to-coredataset.html">input/resources/maps/ddcc-to-coredataset.map.json</a> <span id="svi86" class="toggle" onclick="toggle('vi86')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi86')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi86"><ul style="font-size: 7px"><li>StructureMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuremap.html">StructureMap</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1203,9 +1206,9 @@
 </table>
 <hr/>
 <a name="_github_workspace_input_resources_maps_ddcc-to-eu-dcc.map"> </a>
-<h2><a href="StructureMap-ddcc-to-eu-dcc.html">/github/workspace/input/resources/maps/ddcc-to-eu-dcc.map.json</a></h2>
- <ul style="font-size: 7px"><li>StructureMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuremap.html">StructureMap</a></li></ul>
-
+<h2><a href="StructureMap-ddcc-to-eu-dcc.html">input/resources/maps/ddcc-to-eu-dcc.map.json</a> <span id="svi87" class="toggle" onclick="toggle('vi87')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi87')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi87"><ul style="font-size: 7px"><li>StructureMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuremap.html">StructureMap</a></li></ul>
+</div>
  <table class="grid">
    <tr>
      <td>&check;</td>
@@ -1250,5 +1253,24 @@
 </ul>
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Extension_EXT_Context_Wrong"> </a>
+<h2>Extension_EXT_Context_Wrong</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-DDCCHCIDRegistrationQuestionnaire.html">fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext is not allowed to be used at this point (allowed = e:Questionnaire, e:Questionnaire.item; this element is [[Questionnaire.item.item, BackboneElement.item, BackboneElement])</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-DDCCHCIDRegistrationQuestionnaire.html">fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext is not allowed to be used at this point (allowed = e:Questionnaire, e:Questionnaire.item; this element is [[Questionnaire.item.item, BackboneElement.item, BackboneElement])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_ValueSet_NotFound2"> </a>
+<h2>Terminology_TX_ValueSet_NotFound2</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Questionnaire-DDCCHCIDRegistrationQuestionnaire.html">fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire.json</a></td><td><b>ValueSet http://hl7.org/fhir/resource-types not found by validator</b></td>
+   </tr>
+</table>
 </body>
 </html>
