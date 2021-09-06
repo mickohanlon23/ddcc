@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCQuestionnaireResponse"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Questionnaire Response"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-27T19:36:40+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-09-06T16:40:07+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -141,6 +141,22 @@
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/StructureDefinition/DomainResource";
            fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+         ]
+       ], [
+         fhir:index 5;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice" ];
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ];
+         fhir:ElementDefinition.constraint.key [ fhir:value "sdcqr-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Subject SHOULD be present (searching is difficult without subject).  Almost all QuestionnaireResponses should be with respect to some sort of subject." ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "subject.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:subject)" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse";
+           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
@@ -993,7 +1009,7 @@
          fhir:value "Focus";
          fhir:index 1
        ];
-       fhir:ElementDefinition.min [ fhir:value "1"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
        fhir:ElementDefinition.max [ fhir:value "1" ];
        fhir:ElementDefinition.base [
          fhir:ElementDefinition.base.path [ fhir:value "QuestionnaireResponse.subject" ];
@@ -1004,9 +1020,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/Patient";
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Resource";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/Patient>
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Resource>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -1439,6 +1455,58 @@
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 27;
+       fhir:Element.id [ fhir:value "QuestionnaireResponse.item.extension:itemImage" ];
+       fhir:ElementDefinition.path [ fhir:value "QuestionnaireResponse.item.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "itemImage" ];
+       fhir:ElementDefinition.short [ fhir:value "Image to display" ];
+       fhir:ElementDefinition.definition [ fhir:value "An image to display as a visual accompaniment to the question being asked." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/cpg-itemImage";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/cpg-itemImage>
+         ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
        fhir:Element.id [ fhir:value "QuestionnaireResponse.item.extension:ItemSignature" ];
        fhir:ElementDefinition.path [ fhir:value "QuestionnaireResponse.item.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "ItemSignature" ];
@@ -1490,7 +1558,7 @@
        fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 28;
+       fhir:index 29;
        fhir:Element.id [ fhir:value "QuestionnaireResponse.item.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "QuestionnaireResponse.item.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -1550,7 +1618,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 29;
+       fhir:index 30;
        fhir:Element.id [ fhir:value "QuestionnaireResponse.item.linkId" ];
        fhir:ElementDefinition.path [ fhir:value "QuestionnaireResponse.item.linkId" ];
        fhir:ElementDefinition.short [ fhir:value "Pointer to specific item from Questionnaire" ];
@@ -1588,7 +1656,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".outboundRelationship[typeCode=DEFN].target[classCode=OBS, moodCode=DEFN].id" ]
        ]
      ], [
-       fhir:index 30;
+       fhir:index 31;
        fhir:Element.id [ fhir:value "QuestionnaireResponse.item.definition" ];
        fhir:ElementDefinition.path [ fhir:value "QuestionnaireResponse.item.definition" ];
        fhir:ElementDefinition.short [ fhir:value "ElementDefinition - details for the item" ];
@@ -1626,7 +1694,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".outboundRelationship[typeCode=DEFN].target[classCode=OBS, moodCode=DEFN].code" ]
        ]
      ], [
-       fhir:index 31;
+       fhir:index 32;
        fhir:Element.id [ fhir:value "QuestionnaireResponse.item.text" ];
        fhir:ElementDefinition.path [ fhir:value "QuestionnaireResponse.item.text" ];
        fhir:ElementDefinition.short [ fhir:value "Name for group or question text" ];
@@ -1664,7 +1732,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".text" ]
        ]
      ], [
-       fhir:index 32;
+       fhir:index 33;
        fhir:Element.id [ fhir:value "QuestionnaireResponse.item.answer" ];
        fhir:ElementDefinition.path [ fhir:value "QuestionnaireResponse.item.answer" ];
        fhir:ElementDefinition.short [ fhir:value "The response(s) to the question" ];
@@ -1702,7 +1770,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".value[type=LIST_ANY]" ]
        ]
      ], [
-       fhir:index 33;
+       fhir:index 34;
        fhir:Element.id [ fhir:value "QuestionnaireResponse.item.answer.id" ];
        fhir:ElementDefinition.path [ fhir:value "QuestionnaireResponse.item.answer.id" ];
        fhir:ElementDefinition.representation [
@@ -1735,7 +1803,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "n/a" ]
        ]
      ], [
-       fhir:index 34;
+       fhir:index 35;
        fhir:Element.id [ fhir:value "QuestionnaireResponse.item.answer.extension" ];
        fhir:ElementDefinition.path [ fhir:value "QuestionnaireResponse.item.answer.extension" ];
        fhir:ElementDefinition.slicing [
@@ -1786,7 +1854,59 @@
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isSummary [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 35;
+       fhir:index 36;
+       fhir:Element.id [ fhir:value "QuestionnaireResponse.item.answer.extension:responseImage" ];
+       fhir:ElementDefinition.path [ fhir:value "QuestionnaireResponse.item.answer.extension" ];
+       fhir:ElementDefinition.sliceName [ fhir:value "responseImage" ];
+       fhir:ElementDefinition.short [ fhir:value "Image to display" ];
+       fhir:ElementDefinition.definition [ fhir:value "An image to display as a visual accompaniment to the response." ];
+       fhir:ElementDefinition.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+       fhir:ElementDefinition.max [ fhir:value "1" ];
+       fhir:ElementDefinition.base [
+         fhir:ElementDefinition.base.path [ fhir:value "Element.extension" ];
+         fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
+         fhir:ElementDefinition.base.max [ fhir:value "*" ]
+       ];
+       fhir:ElementDefinition.type [
+         fhir:index 0;
+         fhir:ElementDefinition.type.code [ fhir:value "Extension" ];
+         fhir:ElementDefinition.type.profile [
+           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/cpg-responseImage";
+           fhir:index 0;
+           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/cpg-responseImage>
+         ]
+       ];
+       fhir:ElementDefinition.condition [
+         fhir:value "ele-1";
+         fhir:index 0
+       ];
+       fhir:ElementDefinition.constraint [
+         fhir:index 0;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "All FHIR elements must have a @value or children" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "hasValue() or (children().count() > id.count())" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "@value|f:*|h:div" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Element";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ], [
+         fhir:index 1;
+         fhir:ElementDefinition.constraint.key [ fhir:value "ext-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Must have either extensions or value[x], not both" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension.exists() != value.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/StructureDefinition/Extension";
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ];
+       fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
+       fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 37;
        fhir:Element.id [ fhir:value "QuestionnaireResponse.item.answer.extension:ordinalValue" ];
        fhir:ElementDefinition.path [ fhir:value "QuestionnaireResponse.item.answer.extension" ];
        fhir:ElementDefinition.sliceName [ fhir:value "ordinalValue" ];
@@ -1839,7 +1959,7 @@
        fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 36;
+       fhir:index 38;
        fhir:Element.id [ fhir:value "QuestionnaireResponse.item.answer.modifierExtension" ];
        fhir:ElementDefinition.path [ fhir:value "QuestionnaireResponse.item.answer.modifierExtension" ];
        fhir:ElementDefinition.short [ fhir:value "Extensions that cannot be ignored even if unrecognized" ];
@@ -1899,7 +2019,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value "N/A" ]
        ]
      ], [
-       fhir:index 37;
+       fhir:index 39;
        fhir:Element.id [ fhir:value "QuestionnaireResponse.item.answer.value[x]" ];
        fhir:ElementDefinition.path [ fhir:value "QuestionnaireResponse.item.answer.value[x]" ];
        fhir:ElementDefinition.short [ fhir:value "Single-valued answer to the question" ];
@@ -1984,7 +2104,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".item" ]
        ]
      ], [
-       fhir:index 38;
+       fhir:index 40;
        fhir:Element.id [ fhir:value "QuestionnaireResponse.item.answer.item" ];
        fhir:ElementDefinition.path [ fhir:value "QuestionnaireResponse.item.answer.item" ];
        fhir:ElementDefinition.short [ fhir:value "Nested groups and questions" ];
@@ -2019,7 +2139,7 @@
          fhir:ElementDefinition.mapping.map [ fhir:value ".outboundRelationship[typeCode=COMP].target[classCode=OBS, moodCode=EVN]" ]
        ]
      ], [
-       fhir:index 39;
+       fhir:index 41;
        fhir:Element.id [ fhir:value "QuestionnaireResponse.item.item" ];
        fhir:ElementDefinition.path [ fhir:value "QuestionnaireResponse.item.item" ];
        fhir:ElementDefinition.short [ fhir:value "Nested questionnaire response items" ];

@@ -22,6 +22,11 @@
   ];
   fhir:Bundle.type [ fhir:value "document"];
   fhir:Bundle.timestamp [ fhir:value "2021-06-03T13:28:17-05:00"^^xsd:dateTime];
+  fhir:Bundle.link [
+     fhir:index 0;
+     fhir:Bundle.link.relation [ fhir:value "publication" ];
+     fhir:Bundle.link.url [ fhir:value "urn:HCID:1234567890" ]
+  ];
   fhir:Bundle.entry [
      fhir:index 0;
      fhir:Bundle.entry.fullUrl [ fhir:value "http://www.example.org/fhir/Composition/DDCC-Composition-Example-Chinese" ];

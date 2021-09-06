@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCSubmitHealthEventRequest"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Submit Health Event Request"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-08-27T19:36:40+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-09-06T16:40:07+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -3654,6 +3654,22 @@
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/StructureDefinition/DomainResource";
            fhir:link <http://hl7.org/fhir/StructureDefinition/DomainResource>
+         ]
+       ], [
+         fhir:index 5;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice" ];
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ];
+         fhir:ElementDefinition.constraint.key [ fhir:value "sdcqr-1" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "Subject SHOULD be present (searching is difficult without subject).  Almost all QuestionnaireResponses should be with respect to some sort of subject." ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "subject.exists()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:subject)" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse";
+           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "false"^^xsd:boolean ];

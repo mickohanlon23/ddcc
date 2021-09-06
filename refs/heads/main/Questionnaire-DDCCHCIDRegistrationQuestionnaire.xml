@@ -15,7 +15,10 @@
   </text>
   <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext">
     <extension url="name">
-      <valueId value="patient"/>
+      <valueCoding>
+        <system value="http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext"/>
+        <code value="patient"/>
+      </valueCoding>
     </extension>
     <extension url="type">
       <valueCode value="patient"/>

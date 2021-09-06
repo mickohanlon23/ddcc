@@ -10,7 +10,7 @@
   "name": "DDCCQuestionnaireResponse",
   "title": "DDCC Questionnaire Response",
   "status": "active",
-  "date": "2021-08-27T19:36:40+00:00",
+  "date": "2021-09-06T16:40:07+00:00",
   "publisher": "World Health Organization (WHO)",
   "contact": [
     {
@@ -116,6 +116,20 @@
             "expression": "text.`div`.exists()",
             "xpath": "exists(f:text/h:div)",
             "source": "http://hl7.org/fhir/StructureDefinition/DomainResource"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice",
+                "valueBoolean": true
+              }
+            ],
+            "key": "sdcqr-1",
+            "severity": "warning",
+            "human": "Subject SHOULD be present (searching is difficult without subject).  Almost all QuestionnaireResponses should be with respect to some sort of subject.",
+            "expression": "subject.exists()",
+            "xpath": "exists(f:subject)",
+            "source": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"
           }
         ],
         "mustSupport": false,
@@ -910,7 +924,7 @@
           "Patient",
           "Focus"
         ],
-        "min": 1,
+        "min": 0,
         "max": "1",
         "base": {
           "path": "QuestionnaireResponse.subject",
@@ -921,7 +935,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "http://hl7.org/fhir/StructureDefinition/Patient"
+              "http://hl7.org/fhir/StructureDefinition/Resource"
             ]
           }
         ],
@@ -1302,6 +1316,51 @@
         "isSummary": false
       },
       {
+        "id": "QuestionnaireResponse.item.extension:itemImage",
+        "path": "QuestionnaireResponse.item.extension",
+        "sliceName": "itemImage",
+        "short": "Image to display",
+        "definition": "An image to display as a visual accompaniment to the question being asked.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/sdc/StructureDefinition/cpg-itemImage"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false
+      },
+      {
         "id": "QuestionnaireResponse.item.extension:ItemSignature",
         "path": "QuestionnaireResponse.item.extension",
         "sliceName": "ItemSignature",
@@ -1632,6 +1691,51 @@
         ],
         "isModifier": false,
         "isSummary": false
+      },
+      {
+        "id": "QuestionnaireResponse.item.answer.extension:responseImage",
+        "path": "QuestionnaireResponse.item.answer.extension",
+        "sliceName": "responseImage",
+        "short": "Image to display",
+        "definition": "An image to display as a visual accompaniment to the response.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "Element.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/uv/sdc/StructureDefinition/cpg-responseImage"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false
       },
       {
         "id": "QuestionnaireResponse.item.answer.extension:ordinalValue",

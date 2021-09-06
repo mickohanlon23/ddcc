@@ -1126,19 +1126,6 @@
           }
         ],
         "reference": {
-          "reference": "CapabilityStatement/WHO.DDCC.RegistryService"
-        },
-        "name": "WHO DDCC Registry Service",
-        "description": "CapabilityStatement for WHO DDCC Registry Service actor."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CapabilityStatement"
-          }
-        ],
-        "reference": {
           "reference": "CapabilityStatement/WHO.DDCC.Generator"
         },
         "name": "WHO DDCC Generator",
@@ -1148,14 +1135,105 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CapabilityStatement"
+          }
+        ],
+        "reference": {
+          "reference": "CapabilityStatement/WHO.DDCC.RegistryService"
+        },
+        "name": "WHO DDCC Registry Service",
+        "description": "CapabilityStatement for WHO DDCC Registry Service actor."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/DDCC-QR-Category-Usage-ValueSet"
+        },
+        "name": "DDCC QR Category Usage Codes",
+        "description": "Categorization of QR codes by their business usage"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCQuestionnaireSDC"
+        },
+        "name": "DDCC Questionnaire based on SDC",
+        "description": "DDCC Questionniare based on SDC Populatable Questionnaire with additional extension"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/DDCC-Folder-DesignationType"
+        },
+        "name": "DDCC DesignationTypes for Folder",
+        "description": "DDCC Designation Types ValueSet for DDCC Folders."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCImmunizationRecommendation"
+        },
+        "name": "DDCC Immunization Recommendation",
+        "description": "A DDCC Immunization Recommendation contains the content corresponding to when\na patient should return for a booster shot."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCPractitioner"
+        },
+        "name": "DDCC Practitioner",
+        "description": "Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCPatient"
+        },
+        "name": "DDCC Patient",
+        "description": "A DDCCPatient should:\n* if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner) should be set to reference the [DDCC Organization](StructureDefinition-DDCCOrganization.html) resource associated to the PHA.\n* obeys who-ddcc-patient-1"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ConceptMap"
           }
         ],
         "reference": {
-          "reference": "ConceptMap/who-ddcc-map-icd11-sct-disease-targeted"
+          "reference": "ConceptMap/who-ddcc-map-icd11-sct-vaccines"
         },
-        "name": "ConceptMap from ICD-11 to SNOMED CT for Disease or Agent Targeted",
-        "description": "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted"
+        "name": "ConceptMap from ICD-11 to SNOMED CT for Vaccines",
+        "description": "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines"
       },
       {
         "extension": [
@@ -1165,10 +1243,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/DDCCGenerateHealthCertificateParameters"
+          "reference": "StructureDefinition/DDCCImmunization"
         },
-        "name": "DDCC Generate Health Certificate Parameters",
-        "description": "Parameters for the [DDCC Generate Health Certificate Operation](OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html)."
+        "name": "DDCC Immunization",
+        "description": "A DDCC Immunization contains the content corresponding to a row in the Vaccination \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) Immunization resouce, this is intended to map into an IPS \nImmunization resource."
       },
       {
         "extension": [
@@ -1178,10 +1256,127 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/DDCCSubmitHealthEventRequest"
+          "reference": "StructureDefinition/DDCCDocumentReferenceQR"
         },
-        "name": "DDCC Submit Health Event Request",
-        "description": "An [DDCC Submit Health Event Request](StructureDefinition-DDCCSubmitHealthEventRequest.html) is a transaction bundle containing the content of health events which are being submitted under the [Submit Health Event](transactions.html#submit-health-event) transaction."
+        "name": "DDCC DocumentReference return for QR",
+        "description": "DDCC DocumentReference for QR codes including the QR image and the serialized content."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCVaccineValidFrom"
+        },
+        "name": "DDCC Vaccine Valid From",
+        "description": "Date upon which provided vaccination is considered valid"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted"
+        },
+        "name": "ConceptMap from ICD-10 to SNOMED CT for Disease or Agent Targeted",
+        "description": "Rule-based mappings between ICD-11 and ICD-10 for COVID-19 Disease or Agent Targeted"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCSubmitHealthEventResponse"
+        },
+        "name": "DDCC Submit Health Event Response",
+        "description": "A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCQuestionnaire"
+        },
+        "name": "DDCC Questionniare",
+        "description": "Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html) which responds to the DDCC Questionnaire."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/who-ddcc-vaccines-covid-19"
+        },
+        "name": "WHO Vaccine List (COVID-19)",
+        "description": "WHO Vaccine List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/DDCC-QR-Category-Usage-CodeSystem"
+        },
+        "name": "DDCC QR Category Usage Codes",
+        "description": "Possible formats available for QR usage."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCCountryOfVaccination"
+        },
+        "name": "DDCC Country Of Vaccination for Immunization",
+        "description": "DDCC Country Of Vaccination for Immunization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCPractitionerRole"
+        },
+        "name": "DDCC Practitioner Role",
+        "description": "Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a \nmanaging [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating \nthat an DDCC Practitioner is authorized by the public health authority (PHA) to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCProvideDocumentBundle"
+        },
+        "name": "DDCC Provide Document Bundle",
+        "description": "DDCC Provide Document Bundle for ITI-65"
       },
       {
         "extension": [
@@ -1200,14 +1395,171 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:logical"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCCoreDataSetCoC"
+        },
+        "name": "DDCC Core Data Set - Continuity of Care Logical Model",
+        "description": "DDCC Core Data - Continuity of Care elements."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Questionnaire"
+          }
+        ],
+        "reference": {
+          "reference": "Questionnaire/DDCCVSCoreDataSetQuestionnaire"
+        },
+        "name": "DDCC Core Data Set Questionnaire",
+        "description": "DDCC Questionnaire for an Immunization event.",
+        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/DDCCImmunizationRecommendation"
+          "reference": "StructureDefinition/DDCCGenerateHealthCertificateParameters"
         },
-        "name": "DDCC Immunization Recommendation",
-        "description": "A DDCC Immunization Recommendation contains the content corresponding to when\na patient should return for a booster shot."
+        "name": "DDCC Generate Health Certificate Parameters",
+        "description": "Parameters for the [DDCC Generate Health Certificate Operation](OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html)."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/who-ddcc-disease-targeted-covid-19"
+        },
+        "name": "WHO Disease or Agent Targeted (COVID-19)",
+        "description": "WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/DDCC-QR-Format-ValueSet"
+        },
+        "name": "DDCC QR Format Codes",
+        "description": "Format of the representation of QR code"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/DDCC-Example-Test-CodeSystem"
+        },
+        "name": "DDCC Codes for examples",
+        "description": "Example codes for example resources."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/DDCC-Folder-DesignationType"
+        },
+        "name": "DDCC Designation Types for Folder",
+        "description": "DDCC Designation Types to use for DDCC Folders."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCOrganization"
+        },
+        "name": "DDCC Organization",
+        "description": "Abstraction for a DDCC Organization. There should be a DDCC Organization associated \nto each public health authortiy (PHA)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCFolder"
+        },
+        "name": "DDCC Folder",
+        "description": "DDCC Folder of the Paper Certificate"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCVaccineMarketAuthorization"
+        },
+        "name": "DDCC Vaccine Market Authorization for Immunization",
+        "description": "DDCC Vaccine Market Authorization for Immunization"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCDocument"
+        },
+        "name": "DDCC Document",
+        "description": "A [DDCC Document](StructureDefinition-DDCCDocument.html) is a document bundle containing the DDCC."
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ConceptMap"
+          }
+        ],
+        "reference": {
+          "reference": "ConceptMap/who-ddcc-map-icd11-sct-disease-targeted"
+        },
+        "name": "ConceptMap from ICD-11 to SNOMED CT for Disease or Agent Targeted",
+        "description": "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource:abstract"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/DDCCQuestionnaireResponse"
+        },
+        "name": "DDCC Questionnaire Response",
+        "description": "Describes the logical structure for a questionnaire response associacted to a [DDCC Questionaire](StructureDefinition-DDCCQuestionnaire.html)."
       },
       {
         "extension": [
@@ -1244,154 +1596,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/DDCCFolder"
-        },
-        "name": "DDCC Folder",
-        "description": "DDCC Folder of the Paper Certificate"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/DDCC-QR-Category-Usage-CodeSystem"
-        },
-        "name": "DDCC QR Category Usage Codes",
-        "description": "Possible formats available for QR usage."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/DDCC-Example-Test-CodeSystem"
-        },
-        "name": "DDCC Codes for examples",
-        "description": "Example codes for example resources."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCPractitionerRole"
-        },
-        "name": "DDCC Practitioner Role",
-        "description": "Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a \nmanaging [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating \nthat an DDCC Practitioner is authorized by the public health authority (PHA) to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCPatient"
-        },
-        "name": "DDCC Patient",
-        "description": "A DDCCPatient should:\n* if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner) should be set to reference the [DDCC Organization](StructureDefinition-DDCCOrganization.html) resource associated to the PHA.\n* obeys who-ddcc-patient-1"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/DDCCComposition"
         },
         "name": "DDCC Composition",
         "description": "Describes the logical structure for a Digital Documentation of COVID-19 Certificates \n(DDCC)."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:logical"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCCoreDataSetCoC"
-        },
-        "name": "DDCC Core Data Set - Continuity of Care Logical Model",
-        "description": "DDCC Core Data - Continuity of Care elements."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCOrganization"
-        },
-        "name": "DDCC Organization",
-        "description": "Abstraction for a DDCC Organization. There should be a DDCC Organization associated \nto each public health authortiy (PHA)"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Questionnaire"
-          }
-        ],
-        "reference": {
-          "reference": "Questionnaire/DDCCVSCoreDataSetQuestionnaire"
-        },
-        "name": "DDCC Core Data Set Questionnaire",
-        "description": "DDCC Questionnaire for an Immunization event.",
-        "exampleCanonical": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCDocumentReference"
-        },
-        "name": "DDCC Document Reference",
-        "description": "A [DDCC Document Reference](StructureDefinition-DDCCDocumentReference.html) is a \ndocument reference to a [DDCC Document](StructureDefinition-DDCCDocument.html) \ncontaining the DDCC.\nThe content attachment url will point to a DDCC Document."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/DDCC-QR-Format-CodeSystem"
-        },
-        "name": "DDCC QR Format Codes",
-        "description": "Possible formats available for QR data."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/DDCC-Folder-DesignationType"
-        },
-        "name": "DDCC Designation Types for Folder",
-        "description": "DDCC Designation Types to use for DDCC Folders."
       },
       {
         "extension": [
@@ -1410,27 +1618,14 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
+            "valueString": "StructureDefinition:resource"
           }
         ],
         "reference": {
-          "reference": "ValueSet/DDCC-QR-Category-Usage-ValueSet"
+          "reference": "StructureDefinition/DDCCDocumentReference"
         },
-        "name": "DDCC QR Category Usage Codes",
-        "description": "Categorization of QR codes by their business usage"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/DDCC-QR-Format-ValueSet"
-        },
-        "name": "DDCC QR Format Codes",
-        "description": "Format of the representation of QR code"
+        "name": "DDCC Document Reference",
+        "description": "A [DDCC Document Reference](StructureDefinition-DDCCDocumentReference.html) is a \ndocument reference to a [DDCC Document](StructureDefinition-DDCCDocument.html) \ncontaining the DDCC.\nThe content attachment url will point to a DDCC Document."
       },
       {
         "extension": [
@@ -1440,218 +1635,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/DDCCProvideDocumentBundle"
+          "reference": "StructureDefinition/DDCCSubmitHealthEventRequest"
         },
-        "name": "DDCC Provide Document Bundle",
-        "description": "DDCC Provide Document Bundle for ITI-65"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCImmunization"
-        },
-        "name": "DDCC Immunization",
-        "description": "A DDCC Immunization contains the content corresponding to a row in the Vaccination \nEvents section of a Paper DDCC. While this is not a further profile of the International\nPatient Summary (IPS) Immunization resouce, this is intended to map into an IPS \nImmunization resource."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "OperationDefinition"
-          }
-        ],
-        "reference": {
-          "reference": "OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate"
-        },
-        "name": "OperationDefinition for generating a health certificate (DDCC) that is signed.",
-        "description": "Generate one or more signed DDCC Documents based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCDocument"
-        },
-        "name": "DDCC Document",
-        "description": "A [DDCC Document](StructureDefinition-DDCCDocument.html) is a document bundle containing the DDCC."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource:abstract"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCQuestionnaireResponse"
-        },
-        "name": "DDCC Questionnaire Response",
-        "description": "Describes the logical structure for a questionnaire response associacted to a [DDCC Questionaire](StructureDefinition-DDCCQuestionnaire.html)."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCDocumentReferenceQR"
-        },
-        "name": "DDCC DocumentReference return for QR",
-        "description": "DDCC DocumentReference for QR codes including the QR image and the serialized content."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ConceptMap"
-          }
-        ],
-        "reference": {
-          "reference": "ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted"
-        },
-        "name": "ConceptMap from ICD-10 to SNOMED CT for Disease or Agent Targeted",
-        "description": "Rule-based mappings between ICD-11 and ICD-10 for COVID-19 Disease or Agent Targeted"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCVaccineValidFrom"
-        },
-        "name": "DDCC Vaccine Valid From",
-        "description": "Date upon which provided vaccination is considered valid"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCPractitioner"
-        },
-        "name": "DDCC Practitioner",
-        "description": "Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCVaccineMarketAuthorization"
-        },
-        "name": "DDCC Vaccine Market Authorization for Immunization",
-        "description": "DDCC Vaccine Market Authorization for Immunization"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource:abstract"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCQuestionnaire"
-        },
-        "name": "DDCC Questionniare",
-        "description": "Describes the logical structure for a questionnaire associacted to a DDCC which includes a Structure Map to generate the relevant DDCC from a given [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html) which responds to the DDCC Questionnaire."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCQuestionnaireSDC"
-        },
-        "name": "DDCC Questionnaire based on SDC",
-        "description": "DDCC Questionniare based on SDC Populatable Questionnaire with additional extension"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ConceptMap"
-          }
-        ],
-        "reference": {
-          "reference": "ConceptMap/who-ddcc-map-icd11-sct-vaccines"
-        },
-        "name": "ConceptMap from ICD-11 to SNOMED CT for Vaccines",
-        "description": "Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:extension"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCCountryOfVaccination"
-        },
-        "name": "DDCC Country Of Vaccination for Immunization",
-        "description": "DDCC Country Of Vaccination for Immunization"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/DDCC-Folder-DesignationType"
-        },
-        "name": "DDCC DesignationTypes for Folder",
-        "description": "DDCC Designation Types ValueSet for DDCC Folders."
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/who-ddcc-disease-targeted-covid-19"
-        },
-        "name": "WHO Disease or Agent Targeted (COVID-19)",
-        "description": "WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/DDCCSubmitHealthEventResponse"
-        },
-        "name": "DDCC Submit Health Event Response",
-        "description": "A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction."
+        "name": "DDCC Submit Health Event Request",
+        "description": "An [DDCC Submit Health Event Request](StructureDefinition-DDCCSubmitHealthEventRequest.html) is a transaction bundle containing the content of health events which are being submitted under the [Submit Health Event](transactions.html#submit-health-event) transaction."
       },
       {
         "extension": [
@@ -1670,14 +1657,27 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
+            "valueString": "OperationDefinition"
           }
         ],
         "reference": {
-          "reference": "ValueSet/who-ddcc-vaccines-covid-19"
+          "reference": "OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate"
         },
-        "name": "WHO Vaccine List (COVID-19)",
-        "description": "WHO Vaccine List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"
+        "name": "OperationDefinition for generating a health certificate (DDCC) that is signed.",
+        "description": "Generate one or more signed DDCC Documents based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/DDCC-QR-Format-CodeSystem"
+        },
+        "name": "DDCC QR Format Codes",
+        "description": "Possible formats available for QR data."
       }
     ],
     "page": {

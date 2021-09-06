@@ -24,7 +24,10 @@
      fhir:Element.extension [
        fhir:index 0;
        fhir:Extension.url [ fhir:value "name" ];
-       fhir:Extension.valueId [ fhir:value "patient" ]
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext" ];
+         fhir:Coding.code [ fhir:value "patient" ]
+       ]
      ], [
        fhir:index 1;
        fhir:Extension.url [ fhir:value "type" ];
