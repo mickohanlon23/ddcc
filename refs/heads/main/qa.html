@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 2, warn = 3, info = 0 -->
+<!-- broken links = 0, errors = 11, warn = 5, info = 0 -->
 <head>
   <title>DDCC_VS : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for DDCC_VS</h1>
- <p>Generated Mon Sep 06 16:41:38 UTC 2021, FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = <a href="http://worldhealthorganization.github.io/ddcc">http://worldhealthorganization.github.io/ddcc</a> (<a href="http://worldhealthorganization.github.io/ddcc/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Tue Sep 07 22:18:12 UTC 2021, FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = <a href="http://worldhealthorganization.github.io/ddcc">http://worldhealthorganization.github.io/ddcc</a> (<a href="http://worldhealthorganization.github.io/ddcc/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.79</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = fhir.who.ddcc-vs, Canonical = http://worldhealthorganization.github.io/ddcc</td></tr>
@@ -53,7 +53,7 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://worldhealthorganization.github.io/ddcc (Problem #1 with package-list.json at http://worldhealthorganization.github.io/ddcc: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 2 column 2 path $)</td></tr>
- <tr><td>Summary:</td><td> broken links = 0, errors = 2, warn = 3, info = 0</td></tr>
+ <tr><td>Summary:</td><td> broken links = 0, errors = 11, warn = 5, info = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -212,11 +212,11 @@
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-DDCCComposition"><b>/github/workspace/fsh-generated/resources/StructureDefinition-DDCCComposition</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-DDCCCoreDataSetCoC"><b>/github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-DDCCCoreDataSetCoC"><b>/github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC</b></a></td><td><b>8</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-DDCCCoreDataSetPoV"><b>/github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-DDCCCoreDataSetPoV"><b>/github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-DDCCCountryOfVaccination"><b>/github/workspace/fsh-generated/resources/StructureDefinition-DDCCCountryOfVaccination</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -846,7 +846,34 @@
 </div>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetCoC.DDCCCoreDataSetCoC.vaccination.centre</b></td><td><b>error</b></td><td title=""><b>Duplicate Element id DDCCCoreDataSetCoC.vaccination.centre</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetCoC.DDCCCoreDataSetCoC.vaccination.centre</b></td><td><b>error</b></td><td title=""><b>Duplicate Element id DDCCCoreDataSetCoC.vaccination.centre</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition</b></td><td><b>error</b></td><td title="sdf-1: 'Element paths must be unique unless the structure is a constraint' Rule 'Element paths must be unique unless the structure is a constraint' Failed"><b>sdf-1: 'Element paths must be unique unless the structure is a constraint' Rule 'Element paths must be unique unless the structure is a constraint' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition</b></td><td><b>error</b></td><td title="sdf-16: 'All element definitions must have unique ids (snapshot)' 'All element definitions must have unique ids (snapshot)' ( (ids: DDCCCoreDataSetCoC,DDCCCoreDataSetCoC.name,DDCCCoreDataSetCoC.birthDate,DDCCCoreDataSetCoC.identifier,DDCCCoreDataSetCoC.sex,DDCCCoreDataSetCoC.vaccination,DDCCCoreDataSetCoC.vaccination.vaccine,DDCCCoreDataSetCoC.vaccination.brand,DDCCCoreDataSetCoC.vaccination.manufacturer,DDCCCoreDataSetCoC.vaccination.maholder,DDCCCoreDataSetCoC.vaccination.lot,DDCCCoreDataSetCoC.vaccination.date,DDCCCoreDataSetCoC.vaccination.validFrom,DDCCCoreDataSetCoC.vaccination.dose,DDCCCoreDataSetCoC.vaccination.totalDoses,DDCCCoreDataSetCoC.vaccination.country,DDCCCoreDataSetCoC.vaccination.centre,DDCCCoreDataSetCoC.vaccination.centre,DDCCCoreDataSetCoC.vaccination.signature,DDCCCoreDataSetCoC.vaccination.practitioner,DDCCCoreDataSetCoC.vaccination.disease,DDCCCoreDataSetCoC.vaccination.nextDose,DDCCCoreDataSetCoC.vaccination.period,DDCCCoreDataSetCoC.vaccination.period.start,DDCCCoreDataSetCoC.vaccination.period.end,DDCCCoreDataSetCoC.certificate,DDCCCoreDataSetCoC.certificate.issuer,DDCCCoreDataSetCoC.certificate.hcid,DDCCCoreDataSetCoC.certificate.version))"><b>sdf-16: 'All element definitions must have unique ids (snapshot)' 'All element definitions must have unique ids (snapshot)' ( (ids: DDCCCoreDataSetCoC,DDCCCoreDataSetCoC.name,DDCCCoreDataSetCoC.birthDate,DDCCCoreDataSetCoC.identifier,DDCCCoreDataSetCoC.sex,DDCCCoreDataSetCoC.vaccination,DDCCCoreDataSetCoC.vaccination.vaccine,DDCCCoreDataSetCoC.vaccination.brand,DDCCCoreDataSetCoC.vaccination.manufacturer,DDCCCoreDataSetCoC.vaccination.maholder,DDCCCoreDataSetCoC.vaccination.lot,DDCCCoreDataSetCoC.vaccination.date,DDCCCoreDataSetCoC.vaccination.validFrom,DDCCCoreDataSetCoC.vaccination.dose,DDCCCoreDataSetCoC.vaccination.totalDoses,DDCCCoreDataSetCoC.vaccination.country,DDCCCoreDataSetCoC.vaccination.centre,DDCCCoreDataSetCoC.vaccination.centre,DDCCCoreDataSetCoC.vaccination.signature,DDCCCoreDataSetCoC.vaccination.practitioner,DDCCCoreDataSetCoC.vaccination.disease,DDCCCoreDataSetCoC.vaccination.nextDose,DDCCCoreDataSetCoC.vaccination.period,DDCCCoreDataSetCoC.vaccination.period.start,DDCCCoreDataSetCoC.vaccination.period.end,DDCCCoreDataSetCoC.certificate,DDCCCoreDataSetCoC.certificate.issuer,DDCCCoreDataSetCoC.certificate.hcid,DDCCCoreDataSetCoC.certificate.version))</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition</b></td><td><b>error</b></td><td title="sdf-17: 'All element definitions must have unique ids (diff)' 'All element definitions must have unique ids (diff)' ( (ids: DDCCCoreDataSetCoC,DDCCCoreDataSetCoC.name,DDCCCoreDataSetCoC.birthDate,DDCCCoreDataSetCoC.identifier,DDCCCoreDataSetCoC.sex,DDCCCoreDataSetCoC.vaccination,DDCCCoreDataSetCoC.vaccination.vaccine,DDCCCoreDataSetCoC.vaccination.brand,DDCCCoreDataSetCoC.vaccination.manufacturer,DDCCCoreDataSetCoC.vaccination.maholder,DDCCCoreDataSetCoC.vaccination.lot,DDCCCoreDataSetCoC.vaccination.date,DDCCCoreDataSetCoC.vaccination.validFrom,DDCCCoreDataSetCoC.vaccination.dose,DDCCCoreDataSetCoC.vaccination.totalDoses,DDCCCoreDataSetCoC.vaccination.country,DDCCCoreDataSetCoC.vaccination.centre,DDCCCoreDataSetCoC.vaccination.centre,DDCCCoreDataSetCoC.vaccination.signature,DDCCCoreDataSetCoC.vaccination.practitioner,DDCCCoreDataSetCoC.vaccination.disease,DDCCCoreDataSetCoC.vaccination.nextDose,DDCCCoreDataSetCoC.vaccination.period,DDCCCoreDataSetCoC.vaccination.period.start,DDCCCoreDataSetCoC.vaccination.period.end,DDCCCoreDataSetCoC.certificate,DDCCCoreDataSetCoC.certificate.issuer,DDCCCoreDataSetCoC.certificate.hcid,DDCCCoreDataSetCoC.certificate.version))"><b>sdf-17: 'All element definitions must have unique ids (diff)' 'All element definitions must have unique ids (diff)' ( (ids: DDCCCoreDataSetCoC,DDCCCoreDataSetCoC.name,DDCCCoreDataSetCoC.birthDate,DDCCCoreDataSetCoC.identifier,DDCCCoreDataSetCoC.sex,DDCCCoreDataSetCoC.vaccination,DDCCCoreDataSetCoC.vaccination.vaccine,DDCCCoreDataSetCoC.vaccination.brand,DDCCCoreDataSetCoC.vaccination.manufacturer,DDCCCoreDataSetCoC.vaccination.maholder,DDCCCoreDataSetCoC.vaccination.lot,DDCCCoreDataSetCoC.vaccination.date,DDCCCoreDataSetCoC.vaccination.validFrom,DDCCCoreDataSetCoC.vaccination.dose,DDCCCoreDataSetCoC.vaccination.totalDoses,DDCCCoreDataSetCoC.vaccination.country,DDCCCoreDataSetCoC.vaccination.centre,DDCCCoreDataSetCoC.vaccination.centre,DDCCCoreDataSetCoC.vaccination.signature,DDCCCoreDataSetCoC.vaccination.practitioner,DDCCCoreDataSetCoC.vaccination.disease,DDCCCoreDataSetCoC.vaccination.nextDose,DDCCCoreDataSetCoC.vaccination.period,DDCCCoreDataSetCoC.vaccination.period.start,DDCCCoreDataSetCoC.vaccination.period.end,DDCCCoreDataSetCoC.certificate,DDCCCoreDataSetCoC.certificate.issuer,DDCCCoreDataSetCoC.certificate.hcid,DDCCCoreDataSetCoC.certificate.version))</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.snapshot.element[17]</b></td><td><b>error</b></td><td title="DUPLICATE_ID"><b>Duplicate id value 'DDCCCoreDataSetCoC.vaccination.centre'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.differential.element[17]</b></td><td><b>error</b></td><td title="DUPLICATE_ID"><b>Duplicate id value 'DDCCCoreDataSetCoC.vaccination.centre'</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
    </tr>
 </table>
 <hr/>
@@ -856,7 +883,13 @@
 </div>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
    </tr>
 </table>
 <hr/>
@@ -1254,6 +1287,17 @@
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
+<a name="DUPLICATE_ID"> </a>
+<h2>DUPLICATE_ID</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-DDCCCoreDataSetCoC.html">fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC.json</a></td><td><b>Duplicate id value 'DDCCCoreDataSetCoC.vaccination.centre'</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-DDCCCoreDataSetCoC.html">fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC.json</a></td><td><b>Duplicate id value 'DDCCCoreDataSetCoC.vaccination.centre'</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="Extension_EXT_Context_Wrong"> </a>
 <h2>Extension_EXT_Context_Wrong</h2>
  <table class="grid">
@@ -1262,6 +1306,17 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="Questionnaire-DDCCHCIDRegistrationQuestionnaire.html">fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire.json</a></td><td><b>The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext is not allowed to be used at this point (allowed = e:Questionnaire, e:Questionnaire.item; this element is [[Questionnaire.item.item, BackboneElement.item, BackboneElement])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-DDCCCoreDataSetCoC.html">fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-DDCCCoreDataSetPoV.html">fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
    </tr>
 </table>
 <hr/>
