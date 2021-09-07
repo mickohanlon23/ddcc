@@ -1,9 +1,9 @@
 ﻿DDCC_VS : Validation Results
 =========================================
 
-err = 2, warn = 3, info = 0
+err = 11, warn = 5, info = 0
 IG Publisher Version: 1.1.79
-Generated Mon Sep 06 16:41:39 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = http://worldhealthorganization.github.io/ddcc)
+Generated Tue Sep 07 22:18:12 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = http://worldhealthorganization.github.io/ddcc)
 
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 0 / 0 / 11
@@ -56,8 +56,8 @@ Generated Mon Sep 06 16:41:39 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example : 0 / 0 / 9
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCAddBundle : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCComposition : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC : 8 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCCountryOfVaccination : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocument : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-DDCCDocumentReference : 0 / 1 / 1
@@ -149,7 +149,18 @@ ERROR: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.item[2].it
 == fsh-generated/resources/StructureDefinition-DDCCAddBundle.json ==
 == fsh-generated/resources/StructureDefinition-DDCCComposition.json ==
 == fsh-generated/resources/StructureDefinition-DDCCCoreDataSetCoC.json ==
+ERROR: http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetCoC.DDCCCoreDataSetCoC.vaccination.centre: Duplicate Element id DDCCCoreDataSetCoC.vaccination.centre
+ERROR: http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCoreDataSetCoC.DDCCCoreDataSetCoC.vaccination.centre: Duplicate Element id DDCCCoreDataSetCoC.vaccination.centre
+ERROR: StructureDefinition/DDCCCoreDataSetCoC: StructureDefinition: sdf-1: 'Element paths must be unique unless the structure is a constraint' Rule 'Element paths must be unique unless the structure is a constraint' Failed
+ERROR: StructureDefinition/DDCCCoreDataSetCoC: StructureDefinition: sdf-16: 'All element definitions must have unique ids (snapshot)' 'All element definitions must have unique ids (snapshot)' ( (ids: DDCCCoreDataSetCoC,DDCCCoreDataSetCoC.name,DDCCCoreDataSetCoC.birthDate,DDCCCoreDataSetCoC.identifier,DDCCCoreDataSetCoC.sex,DDCCCoreDataSetCoC.vaccination,DDCCCoreDataSetCoC.vaccination.vaccine,DDCCCoreDataSetCoC.vaccination.brand,DDCCCoreDataSetCoC.vaccination.manufacturer,DDCCCoreDataSetCoC.vaccination.maholder,DDCCCoreDataSetCoC.vaccination.lot,DDCCCoreDataSetCoC.vaccination.date,DDCCCoreDataSetCoC.vaccination.validFrom,DDCCCoreDataSetCoC.vaccination.dose,DDCCCoreDataSetCoC.vaccination.totalDoses,DDCCCoreDataSetCoC.vaccination.country,DDCCCoreDataSetCoC.vaccination.centre,DDCCCoreDataSetCoC.vaccination.centre,DDCCCoreDataSetCoC.vaccination.signature,DDCCCoreDataSetCoC.vaccination.practitioner,DDCCCoreDataSetCoC.vaccination.disease,DDCCCoreDataSetCoC.vaccination.nextDose,DDCCCoreDataSetCoC.vaccination.period,DDCCCoreDataSetCoC.vaccination.period.start,DDCCCoreDataSetCoC.vaccination.period.end,DDCCCoreDataSetCoC.certificate,DDCCCoreDataSetCoC.certificate.issuer,DDCCCoreDataSetCoC.certificate.hcid,DDCCCoreDataSetCoC.certificate.version))
+ERROR: StructureDefinition/DDCCCoreDataSetCoC: StructureDefinition: sdf-17: 'All element definitions must have unique ids (diff)' 'All element definitions must have unique ids (diff)' ( (ids: DDCCCoreDataSetCoC,DDCCCoreDataSetCoC.name,DDCCCoreDataSetCoC.birthDate,DDCCCoreDataSetCoC.identifier,DDCCCoreDataSetCoC.sex,DDCCCoreDataSetCoC.vaccination,DDCCCoreDataSetCoC.vaccination.vaccine,DDCCCoreDataSetCoC.vaccination.brand,DDCCCoreDataSetCoC.vaccination.manufacturer,DDCCCoreDataSetCoC.vaccination.maholder,DDCCCoreDataSetCoC.vaccination.lot,DDCCCoreDataSetCoC.vaccination.date,DDCCCoreDataSetCoC.vaccination.validFrom,DDCCCoreDataSetCoC.vaccination.dose,DDCCCoreDataSetCoC.vaccination.totalDoses,DDCCCoreDataSetCoC.vaccination.country,DDCCCoreDataSetCoC.vaccination.centre,DDCCCoreDataSetCoC.vaccination.centre,DDCCCoreDataSetCoC.vaccination.signature,DDCCCoreDataSetCoC.vaccination.practitioner,DDCCCoreDataSetCoC.vaccination.disease,DDCCCoreDataSetCoC.vaccination.nextDose,DDCCCoreDataSetCoC.vaccination.period,DDCCCoreDataSetCoC.vaccination.period.start,DDCCCoreDataSetCoC.vaccination.period.end,DDCCCoreDataSetCoC.certificate,DDCCCoreDataSetCoC.certificate.issuer,DDCCCoreDataSetCoC.certificate.hcid,DDCCCoreDataSetCoC.certificate.version))
+ERROR: StructureDefinition/DDCCCoreDataSetCoC: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+ERROR: StructureDefinition/DDCCCoreDataSetCoC: StructureDefinition.snapshot.element[17]: Duplicate id value 'DDCCCoreDataSetCoC.vaccination.centre'
+ERROR: StructureDefinition/DDCCCoreDataSetCoC: StructureDefinition.differential.element[17]: Duplicate id value 'DDCCCoreDataSetCoC.vaccination.centre'
+WARNING: StructureDefinition/DDCCCoreDataSetCoC: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == fsh-generated/resources/StructureDefinition-DDCCCoreDataSetPoV.json ==
+ERROR: StructureDefinition/DDCCCoreDataSetPoV: StructureDefinition.baseDefinition: Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve
+WARNING: StructureDefinition/DDCCCoreDataSetPoV: StructureDefinition: Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential
 == fsh-generated/resources/StructureDefinition-DDCCCountryOfVaccination.json ==
 == fsh-generated/resources/StructureDefinition-DDCCDocument.json ==
 == fsh-generated/resources/StructureDefinition-DDCCDocumentReference.json ==
