@@ -15,7 +15,7 @@
   <name value="DDCCQuestionnaire"/>
   <title value="DDCC Questionniare"/>
   <status value="active"/>
-  <date value="2021-09-10T17:11:50+00:00"/>
+  <date value="2021-09-13T04:33:50+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -2675,7 +2675,7 @@
     <element id="Questionnaire.item.repeats">
       <path value="Questionnaire.item.repeats"/>
       <short value="Whether the item may repeat"/>
-      <definition value="An indication, if true, that the item may occur multiple times in the response, collecting multiple answers for questions or multiple sets of answers for groups."/>
+      <definition value="An indication, if true, that a QuestionnaireResponse for this item may include multiple answers associated with a single instance of this item (for question-type items) or multiple repetitions of the item (for group-type items)"/>
       <comment value="If a question is marked as repeats=true, then multiple answers can be provided for the question in the corresponding QuestionnaireResponse.  When rendering the questionnaire, it is up to the rendering software whether to render the question text for each answer repetition (i.e. &quot;repeat the question&quot;) or to simply allow entry/selection of multiple answers for the question (repeat the answers).  Which is most appropriate visually may depend on the type of answer as well as whether there are nested items.&#xA;&#xA;The resulting QuestionnaireResponse will be populated the same way regardless of rendering - one &#39;question&#39; item with multiple answer values.&#xA;&#xA; The value may come from the ElementDefinition referred to by .definition."/>
       <requirements value="Items may be used to create set of (related) questions that can be repeated to give multiple answers to such a set."/>
       <min value="0"/>

@@ -16,7 +16,7 @@
   "name": "DDCCGenerateHealthCertificateParameters",
   "title": "DDCC Generate Health Certificate Parameters",
   "status": "active",
-  "date": "2021-09-10T17:11:50+00:00",
+  "date": "2021-09-13T04:33:50+00:00",
   "publisher": "World Health Organization (WHO)",
   "contact": [
     {
@@ -1137,6 +1137,20 @@
             "human": "Subject SHOULD be present (searching is difficult without subject).  Almost all QuestionnaireResponses should be with respect to some sort of subject.",
             "expression": "subject.exists()",
             "xpath": "exists(f:subject)",
+            "source": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"
+          },
+          {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice",
+                "valueBoolean": true
+              }
+            ],
+            "key": "sdcqr-2",
+            "severity": "error",
+            "human": "When repeats=true for a group, it'll be represented with multiple items with the same linkId in the QuestionnaireResponse.  For a question, it'll be represented by a single item with that linkId with multiple answers.",
+            "expression": "(QuestionnaireResponse|repeat(answer|item)).select(item.where(answer.value.exists()).linkId.isDistinct()).allTrue()",
+            "xpath": "not(exists(for $item in descendant::f:item[f:answer] return $item/preceding-sibling::f:item[f:linkId/@value=$item/f:linkId/@value]))",
             "source": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"
           }
         ],

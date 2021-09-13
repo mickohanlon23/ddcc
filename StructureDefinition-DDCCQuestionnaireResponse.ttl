@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCQuestionnaireResponse"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Questionnaire Response"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-09-10T17:11:50+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-09-13T04:33:50+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -154,6 +154,22 @@
          fhir:ElementDefinition.constraint.human [ fhir:value "Subject SHOULD be present (searching is difficult without subject).  Almost all QuestionnaireResponses should be with respect to some sort of subject." ];
          fhir:ElementDefinition.constraint.expression [ fhir:value "subject.exists()" ];
          fhir:ElementDefinition.constraint.xpath [ fhir:value "exists(f:subject)" ];
+         fhir:ElementDefinition.constraint.source [
+           fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse";
+           fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse>
+         ]
+       ], [
+         fhir:index 6;
+         fhir:Element.extension [
+           fhir:index 0;
+           fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice" ];
+           fhir:Extension.valueBoolean [ fhir:value "true"^^xsd:boolean ]
+         ];
+         fhir:ElementDefinition.constraint.key [ fhir:value "sdcqr-2" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
+         fhir:ElementDefinition.constraint.human [ fhir:value "When repeats=true for a group, it'll be represented with multiple items with the same linkId in the QuestionnaireResponse.  For a question, it'll be represented by a single item with that linkId with multiple answers." ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "(QuestionnaireResponse|repeat(answer|item)).select(item.where(answer.value.exists()).linkId.isDistinct()).allTrue()" ];
+         fhir:ElementDefinition.constraint.xpath [ fhir:value "not(exists(for $item in descendant::f:item[f:answer] return $item/preceding-sibling::f:item[f:linkId/@value=$item/f:linkId/@value]))" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse";
            fhir:link <http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse>
@@ -1000,7 +1016,7 @@
        fhir:ElementDefinition.path [ fhir:value "QuestionnaireResponse.subject" ];
        fhir:ElementDefinition.short [ fhir:value "The subject of the questions" ];
        fhir:ElementDefinition.definition [ fhir:value "The subject of the questionnaire response.  This could be a patient, organization, practitioner, device, etc.  This is who/what the answers apply to, but is not necessarily the source of information." ];
-       fhir:ElementDefinition.comment [ fhir:value "If the Questionnaire declared a subjectType, the resource pointed to by this element must be an instance of one of the listed types." ];
+       fhir:ElementDefinition.comment [ fhir:value "If the Questionnaire declared a subjectType, the resource pointed to by this element must be an instance of one of the listed types.\r\n  If subject is omitted - because the QuestionnaireResponse is not associated with a specific subject, ensure that QuestionnaireRsponse.identifier is present or the QuestionnaireResponse is referenced somewhere (e.g. Task.output, Composition.section.entry, etc.) to allow tracking and retrieval of the QuestionnaireResponse" ];
        fhir:ElementDefinition.requirements [ fhir:value "Allows linking the answers to the individual the answers describe.  May also affect access control." ];
        fhir:ElementDefinition.alias [
          fhir:value "Patient";
