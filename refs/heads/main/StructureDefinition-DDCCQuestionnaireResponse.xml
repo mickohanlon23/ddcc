@@ -11,7 +11,7 @@
   <name value="DDCCQuestionnaireResponse"/>
   <title value="DDCC Questionnaire Response"/>
   <status value="active"/>
-  <date value="2021-09-10T17:11:50+00:00"/>
+  <date value="2021-09-13T04:33:50+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -112,6 +112,17 @@
         <human value="Subject SHOULD be present (searching is difficult without subject).  Almost all QuestionnaireResponses should be with respect to some sort of subject."/>
         <expression value="subject.exists()"/>
         <xpath value="exists(f:subject)"/>
+        <source value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"/>
+      </constraint>
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice">
+          <valueBoolean value="true"/>
+        </extension>
+        <key value="sdcqr-2"/>
+        <severity value="error"/>
+        <human value="When repeats=true for a group, it&#39;ll be represented with multiple items with the same linkId in the QuestionnaireResponse.  For a question, it&#39;ll be represented by a single item with that linkId with multiple answers."/>
+        <expression value="(QuestionnaireResponse|repeat(answer|item)).select(item.where(answer.value.exists()).linkId.isDistinct()).allTrue()"/>
+        <xpath value="not(exists(for $item in descendant::f:item[f:answer] return $item/preceding-sibling::f:item[f:linkId/@value=$item/f:linkId/@value]))"/>
         <source value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"/>
       </constraint>
       <mustSupport value="false"/>
@@ -749,7 +760,7 @@
       <path value="QuestionnaireResponse.subject"/>
       <short value="The subject of the questions"/>
       <definition value="The subject of the questionnaire response.  This could be a patient, organization, practitioner, device, etc.  This is who/what the answers apply to, but is not necessarily the source of information."/>
-      <comment value="If the Questionnaire declared a subjectType, the resource pointed to by this element must be an instance of one of the listed types."/>
+      <comment value="If the Questionnaire declared a subjectType, the resource pointed to by this element must be an instance of one of the listed types.&#xD;&#xA;  If subject is omitted - because the QuestionnaireResponse is not associated with a specific subject, ensure that QuestionnaireRsponse.identifier is present or the QuestionnaireResponse is referenced somewhere (e.g. Task.output, Composition.section.entry, etc.) to allow tracking and retrieval of the QuestionnaireResponse"/>
       <requirements value="Allows linking the answers to the individual the answers describe.  May also affect access control."/>
       <alias value="Patient"/>
       <alias value="Focus"/>

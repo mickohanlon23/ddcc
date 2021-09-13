@@ -28,7 +28,7 @@
   <name value="DDCCSubmitHealthEventRequest"/>
   <title value="DDCC Submit Health Event Request"/>
   <status value="active"/>
-  <date value="2021-09-10T17:11:50+00:00"/>
+  <date value="2021-09-13T04:33:50+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -2812,6 +2812,17 @@
         <human value="Subject SHOULD be present (searching is difficult without subject).  Almost all QuestionnaireResponses should be with respect to some sort of subject."/>
         <expression value="subject.exists()"/>
         <xpath value="exists(f:subject)"/>
+        <source value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"/>
+      </constraint>
+      <constraint>
+        <extension url="http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice">
+          <valueBoolean value="true"/>
+        </extension>
+        <key value="sdcqr-2"/>
+        <severity value="error"/>
+        <human value="When repeats=true for a group, it&#39;ll be represented with multiple items with the same linkId in the QuestionnaireResponse.  For a question, it&#39;ll be represented by a single item with that linkId with multiple answers."/>
+        <expression value="(QuestionnaireResponse|repeat(answer|item)).select(item.where(answer.value.exists()).linkId.isDistinct()).allTrue()"/>
+        <xpath value="not(exists(for $item in descendant::f:item[f:answer] return $item/preceding-sibling::f:item[f:linkId/@value=$item/f:linkId/@value]))"/>
         <source value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaireresponse"/>
       </constraint>
       <mustSupport value="false"/>
