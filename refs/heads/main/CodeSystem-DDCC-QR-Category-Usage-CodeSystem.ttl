@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "DDCC-QR-Category-Usage-CodeSystem"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">who<a name=\"DDCC-QR-Category-Usage-CodeSystem-who\"> </a></td><td>WHO SVC</td></tr><tr><td style=\"white-space:nowrap\">dcc<a name=\"DDCC-QR-Category-Usage-CodeSystem-dcc\"> </a></td><td>EU DCC</td></tr><tr><td style=\"white-space:nowrap\">icao<a name=\"DDCC-QR-Category-Usage-CodeSystem-icao\"> </a></td><td>ICAO</td></tr><tr><td style=\"white-space:nowrap\">au<a name=\"DDCC-QR-Category-Usage-CodeSystem-au\"> </a></td><td>AU</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">who<a name=\"DDCC-QR-Category-Usage-CodeSystem-who\"> </a></td><td>WHO SVC</td></tr><tr><td style=\"white-space:nowrap\">dcc<a name=\"DDCC-QR-Category-Usage-CodeSystem-dcc\"> </a></td><td>EU DCC</td></tr><tr><td style=\"white-space:nowrap\">icao<a name=\"DDCC-QR-Category-Usage-CodeSystem-icao\"> </a></td><td>ICAO</td></tr><tr><td style=\"white-space:nowrap\">au<a name=\"DDCC-QR-Category-Usage-CodeSystem-au\"> </a></td><td>AU</td></tr><tr><td style=\"white-space:nowrap\">shc<a name=\"DDCC-QR-Category-Usage-CodeSystem-shc\"> </a></td><td>SMART Health Card</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem"];
   fhir:CodeSystem.version [ fhir:value "0.2.1"];
   fhir:CodeSystem.name [ fhir:value "DDCC_QR_Category_Usage_CodeSystem"];
   fhir:CodeSystem.title [ fhir:value "DDCC QR Category Usage Codes"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-09-13T18:22:00+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-09-14T16:43:46+00:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -29,7 +29,7 @@
   ];
   fhir:CodeSystem.description [ fhir:value "Possible formats available for QR usage."];
   fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "4"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.count [ fhir:value "5"^^xsd:nonNegativeInteger];
   fhir:CodeSystem.concept [
      fhir:index 0;
      fhir:CodeSystem.concept.code [ fhir:value "who" ];
@@ -46,6 +46,10 @@
      fhir:index 3;
      fhir:CodeSystem.concept.code [ fhir:value "au" ];
      fhir:CodeSystem.concept.display [ fhir:value "AU" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "shc" ];
+     fhir:CodeSystem.concept.display [ fhir:value "SMART Health Card" ]
   ] .
 
 # - ontology header ------------------------------------------------------------

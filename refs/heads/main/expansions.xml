@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="2e292ee2-87ca-4050-bdf6-dd94ca17550f"/>
+  <id value="9e5607cd-3d4b-403e-a0cf-7b2e6ebef001"/>
   <meta>
-    <lastUpdated value="2021-09-13T18:22:00.418+00:00"/>
+    <lastUpdated value="2021-09-14T16:43:46.963+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14,7 +14,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 4 concepts</p>
+            <p>This value set contains 5 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html">DDCC QR Category Usage Codes v0.2.1 (CodeSystem)</a>
             </p>
@@ -67,6 +67,14 @@
                 <td>AU</td>
                 <td/>
               </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---worldhealthorganization.github.io-ddcc-CodeSystem-DDCC-QR-Category-Usage-CodeSystem-shc"> </a>
+                  <a href="CodeSystem-DDCC-QR-Category-Usage-CodeSystem.html#DDCC-QR-Category-Usage-CodeSystem-shc">shc</a>
+                </td>
+                <td>SMART Health Card</td>
+                <td/>
+              </tr>
             </table>
           </div>
         </text>
@@ -75,7 +83,7 @@
         <name value="DDCC_QR_Category_Usage_ValueSet"/>
         <title value="DDCC QR Category Usage Codes"/>
         <status value="active"/>
-        <date value="2021-09-13T18:22:00+00:00"/>
+        <date value="2021-09-14T16:43:46+00:00"/>
         <publisher value="World Health Organization (WHO)"/>
         <contact>
           <telecom>
@@ -85,9 +93,9 @@
         </contact>
         <description value="Categorization of QR codes by their business usage"/>
         <expansion>
-          <identifier value="urn:uuid:e92f8735-b6f3-484b-a098-506aa14d4ef7"/>
-          <timestamp value="2021-09-13T18:22:27+00:00"/>
-          <total value="4"/>
+          <identifier value="urn:uuid:92431130-4607-43c0-b943-92bc371f799c"/>
+          <timestamp value="2021-09-14T16:44:21+00:00"/>
+          <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -115,6 +123,11 @@
             <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem"/>
             <code value="au"/>
             <display value="AU"/>
+          </contains>
+          <contains>
+            <system value="http://worldhealthorganization.github.io/ddcc/CodeSystem/DDCC-QR-Category-Usage-CodeSystem"/>
+            <code value="shc"/>
+            <display value="SMART Health Card"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -165,7 +178,7 @@
         <name value="DDCC_Folder_DesignationType_ValueSet"/>
         <title value="DDCC DesignationTypes for Folder"/>
         <status value="active"/>
-        <date value="2021-09-13T18:22:00+00:00"/>
+        <date value="2021-09-14T16:43:46+00:00"/>
         <publisher value="World Health Organization (WHO)"/>
         <contact>
           <telecom>
@@ -175,8 +188,8 @@
         </contact>
         <description value="DDCC Designation Types ValueSet for DDCC Folders."/>
         <expansion>
-          <identifier value="urn:uuid:ffcca92b-44a2-4f9d-b268-4f3b1296587f"/>
-          <timestamp value="2021-09-13T18:22:28+00:00"/>
+          <identifier value="urn:uuid:e391d5ce-afe2-4dc1-8b02-7a68124a1a7f"/>
+          <timestamp value="2021-09-14T16:44:22+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -256,7 +269,7 @@
         <name value="DDCC_QR_Format_ValueSet"/>
         <title value="DDCC QR Format Codes"/>
         <status value="active"/>
-        <date value="2021-09-13T18:22:00+00:00"/>
+        <date value="2021-09-14T16:43:46+00:00"/>
         <publisher value="World Health Organization (WHO)"/>
         <contact>
           <telecom>
@@ -266,8 +279,8 @@
         </contact>
         <description value="Format of the representation of QR code"/>
         <expansion>
-          <identifier value="urn:uuid:2a1ec6c8-c785-471f-9644-5b70b6feb0ab"/>
-          <timestamp value="2021-09-13T18:22:37+00:00"/>
+          <identifier value="urn:uuid:75649cc1-03d6-4678-bde2-183139b37e5b"/>
+          <timestamp value="2021-09-14T16:44:33+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
