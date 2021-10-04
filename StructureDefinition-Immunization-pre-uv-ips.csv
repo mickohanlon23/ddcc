@@ -69,7 +69,7 @@ The IPS assumes that either the type of the vaccine for particular disease or di
 "Immunization.vaccineCode","absentOrUnknownImmunization","","",0,1,"Y","","Y","CodeableConcept {[]} {[]}
 ","Absent Unknown Immunization","A reference to a code indicating that there there are no known immunizations or that this information is unknown.","","","","","","","","","",,"required","","http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips","",,,,"Immunization.vaccineCode",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","RXA-5",".code","FiveWs.what[x]","ClinicalDocument/component/StructuredBody/component/section/entry/substanceAdministration/consumable/manfacturedProduct/manufacturedMaterial/realmCode/code"
-"Immunization.patient","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips]]}
+"Immunization.patient","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-pre-uv-ips]]}
 ","Who was immunized","The patient who either received or did not receive the immunization.","","","","","","","","","",,,,,"",,,,"Immunization.patient",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject","PID-3",".partipication[ttypeCode=].role","FiveWs.subject[x]","FiveWs.subject"
 "Immunization.patient.id","","","",0,1,"","","","string {[]} {[]}
