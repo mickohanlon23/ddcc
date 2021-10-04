@@ -1161,32 +1161,6 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/Patient-pre-uv-ips>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Patient-pre-uv-ips" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient (IPS)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources." ]
-     ], [
-       fhir:index 40;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/Immunization-pre-uv-ips>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/Immunization-pre-uv-ips" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Immunization (IPS)" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.\r\n\r\nIt describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party." ]
-     ], [
-       fhir:index 41;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureMap" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1194,7 +1168,7 @@
          fhir:Reference.reference [ fhir:value "StructureMap/svc-map-qr-uvci-bundle" ]
        ]
      ], [
-       fhir:index 42;
+       fhir:index 40;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1207,7 +1181,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC to EU DCC" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping to go from the DDCC to the EU DCC" ]
      ], [
-       fhir:index 43;
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1218,7 +1192,7 @@
          fhir:Reference.reference [ fhir:value "StructureMap/QRespToCoreDataSet" ]
        ]
      ], [
-       fhir:index 44;
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1231,7 +1205,20 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "DDCC to Core Data Set" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mapping to go from the DDCC to the Core Data Set" ]
      ], [
-       fhir:index 45;
+       fhir:index 43;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/Patient-pre-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Patient-pre-uv-ips" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Patient (IPS)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources." ]
+     ], [
+       fhir:index 44;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1243,6 +1230,19 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "WHO DDCC Generator" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "CapabilityStatement for WHO DDCC Generator actor." ]
+     ], [
+       fhir:index 45;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://worldhealthorganization.github.io/ddcc/StructureDefinition/Immunization-pre-uv-ips>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/Immunization-pre-uv-ips" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Immunization (IPS)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.\r\n\r\nIt describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party." ]
      ], [
        fhir:index 46;
        fhir:Element.extension [

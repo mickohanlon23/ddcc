@@ -37,7 +37,7 @@
   <name value="DDCCDocument"/>
   <title value="DDCC Document"/>
   <status value="active"/>
-  <date value="2021-09-23T15:43:05+00:00"/>
+  <date value="2021-10-04T20:34:50+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -3055,6 +3055,7 @@
         <xpath value="exists(f:text/h:div)"/>
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
@@ -5043,7 +5044,7 @@
     <element id="Bundle.entry:ddccImmunization.resource">
       <path value="Bundle.entry.resource"/>
       <short value="Immunization event information"/>
-      <definition value="Describes the event of a patient being administered a vaccine or a record of an immunization as reported by a patient, a clinician or another party."/>
+      <definition value="Describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party and may include vaccine reaction information and what vaccination protocol was followed"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -5101,6 +5102,7 @@
         <xpath value="exists(f:text/h:div)"/>
         <source value="http://hl7.org/fhir/StructureDefinition/DomainResource"/>
       </constraint>
+      <mustSupport value="true"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
       <mapping>
