@@ -18,7 +18,7 @@
   <name value="DDCCQuestionnaireSDC"/>
   <title value="DDCC Questionnaire based on SDC"/>
   <status value="active"/>
-  <date value="2021-10-06T12:30:04+00:00"/>
+  <date value="2021-10-25T19:36:06+00:00"/>
   <publisher value="World Health Organization (WHO)"/>
   <contact>
     <telecom>
@@ -1619,9 +1619,9 @@
       </constraint>
       <constraint>
         <key value="sdc-1"/>
-        <severity value="warning"/>
+        <severity value="error"/>
         <human value="An item cannot have an answerExpression if answerOption or answerValueSet is already present."/>
-        <expression value="extension(&#39;http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression&#39;).empty().not implies answerOption.empty() and answerValueSet.empty()"/>
+        <expression value="extension(&#39;http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression&#39;).empty().not() implies (answerOption.empty() and answerValueSet.empty())"/>
         <xpath value="f:extension[@url=&#39;http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression&#39;] and (not(f:answerOption) and not(f:answerValueSet))"/>
         <source value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"/>
       </constraint>
