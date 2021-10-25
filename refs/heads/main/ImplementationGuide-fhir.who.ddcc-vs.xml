@@ -761,8 +761,18 @@
         <valueString value="StructureMap"/>
       </extension>
       <reference>
-        <reference value="StructureMap/svc-map-qr-uvci-bundle"/>
+        <reference value="StructureMap/QRespToCoreDataSet"/>
       </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/ddcc-to-coredataset"/>
+      </reference>
+      <name value="DDCC to Core Data Set"/>
+      <description value="Mapping to go from the DDCC to the Core Data Set"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -779,28 +789,8 @@
         <valueString value="StructureMap"/>
       </extension>
       <reference>
-        <reference value="StructureMap/QRespToCoreDataSet"/>
+        <reference value="StructureMap/svc-map-qr-uvci-bundle"/>
       </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureMap"/>
-      </extension>
-      <reference>
-        <reference value="StructureMap/ddcc-to-coredataset"/>
-      </reference>
-      <name value="DDCC to Core Data Set"/>
-      <description value="Mapping to go from the DDCC to the Core Data Set"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/Patient-pre-uv-ips"/>
-      </reference>
-      <name value="Patient (IPS)"/>
-      <description value="This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -837,100 +827,50 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/DDCCComposition"/>
+        <reference value="StructureDefinition/Patient-pre-uv-ips"/>
       </reference>
-      <name value="DDCC Composition"/>
-      <description value="Describes the logical structure for a Digital Documentation of COVID-19 Certificates &#xA;(DDCC)."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/DDCC-Folder-DesignationType"/>
-      </reference>
-      <name value="DDCC Designation Types for Folder"/>
-      <description value="DDCC Designation Types to use for DDCC Folders."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="OperationDefinition"/>
-      </extension>
-      <reference>
-        <reference value="OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate"/>
-      </reference>
-      <name value="OperationDefinition for generating a health certificate (DDCC) that is signed."/>
-      <description value="Generate one or more signed DDCC Documents based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCImmunizationRecommendation"/>
-      </reference>
-      <name value="DDCC Immunization Recommendation"/>
-      <description value="A DDCC Immunization Recommendation contains the content corresponding to when&#xA;a patient should return for a booster shot."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCProvideDocumentBundle"/>
-      </reference>
-      <name value="DDCC Provide Document Bundle"/>
-      <description value="DDCC Provide Document Bundle for ITI-65"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCDocument"/>
-      </reference>
-      <name value="DDCC Document"/>
-      <description value="A [DDCC Document](StructureDefinition-DDCCDocument.html) is a document bundle containing the DDCC."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCCountryOfVaccination"/>
-      </reference>
-      <name value="DDCC Country Of Vaccination for Immunization"/>
-      <description value="DDCC Country Of Vaccination for Immunization"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/who-ddcc-disease-targeted-covid-19"/>
-      </reference>
-      <name value="WHO Disease or Agent Targeted (COVID-19)"/>
-      <description value="WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCGenerateHealthCertificateParameters"/>
-      </reference>
-      <name value="DDCC Generate Health Certificate Parameters"/>
-      <description value="Parameters for the [DDCC Generate Health Certificate Operation](OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html)."/>
+      <name value="Patient (IPS)"/>
+      <description value="This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="QuestionnaireResponse"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Spanish"/>
+        <reference value="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Arabic"/>
       </reference>
-      <name value="Example QuestionnaireResponse - DDCC-VS-QuestionnaireResponse-Spanish"/>
+      <name value="Example QuestionnaireResponse - DDCC-VS-QuestionnaireResponse-Arabic"/>
       <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCPractitionerRole"/>
+      </reference>
+      <name value="DDCC Practitioner Role"/>
+      <description value="Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a &#xA;managing [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating &#xA;that an DDCC Practitioner is authorized by the public health authority (PHA) to &#xA;vaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCPractitioner"/>
+      </reference>
+      <name value="DDCC Practitioner"/>
+      <description value="Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to &#xA;vaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/DDCC-Example-Test-CodeSystem"/>
+      </reference>
+      <name value="DDCC Codes for examples"/>
+      <description value="Example codes for example resources."/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -948,221 +888,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/DDCCQuestionnaireSDC"/>
-      </reference>
-      <name value="DDCC Questionnaire based on SDC"/>
-      <description value="DDCC Questionniare based on SDC Populatable Questionnaire with additional extension"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
-      </extension>
-      <reference>
-        <reference value="ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted"/>
-      </reference>
-      <name value="ConceptMap from ICD-10 to SNOMED CT for Disease or Agent Targeted"/>
-      <description value="Rule-based mappings between ICD-11 and ICD-10 for COVID-19 Disease or Agent Targeted"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/DDCC-Folder-DesignationType"/>
-      </reference>
-      <name value="DDCC DesignationTypes for Folder"/>
-      <description value="DDCC Designation Types ValueSet for DDCC Folders."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/DDCC-TX-SHE-bundle-example-French"/>
-      </reference>
-      <name value="Example Bundle - DDCC-TX-SHE-bundle-example-French"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCDocumentReferenceQR"/>
-      </reference>
-      <name value="DDCC DocumentReference return for QR"/>
-      <description value="DDCC DocumentReference for QR codes including the QR image and the serialized content."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCPractitionerRole"/>
-      </reference>
-      <name value="DDCC Practitioner Role"/>
-      <description value="Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a &#xA;managing [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating &#xA;that an DDCC Practitioner is authorized by the public health authority (PHA) to &#xA;vaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCVaccineBrand"/>
-      </reference>
-      <name value="DDCC Vaccine Brand for Immunization"/>
-      <description value="DDCC Vaccine Brand for Immunization"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/DDCC-QR-Category-Usage-ValueSet"/>
-      </reference>
-      <name value="DDCC QR Category Usage Codes"/>
-      <description value="Categorization of QR codes by their business usage"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/DDCC-TX-SHE-bundle-example-Arabic"/>
-      </reference>
-      <name value="Example Bundle - DDCC-TX-SHE-bundle-example-Arabic"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource:abstract"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCQuestionnaireResponse"/>
-      </reference>
-      <name value="DDCC Questionnaire Response"/>
-      <description value="Describes the logical structure for a questionnaire response associacted to a [DDCC Questionaire](StructureDefinition-DDCCQuestionnaire.html)."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCPractitioner"/>
-      </reference>
-      <name value="DDCC Practitioner"/>
-      <description value="Container for an DDCC Practitioner, which is a Practitioner authorized by the PHA to &#xA;vaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html)."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/DDCC-QR-Category-Usage-CodeSystem"/>
-      </reference>
-      <name value="DDCC QR Category Usage Codes"/>
-      <description value="Possible formats available for QR usage."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/DDCCFolder"/>
       </reference>
       <name value="DDCC Folder"/>
       <description value="DDCC Folder of the Paper Certificate"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/DDCC-TX-SHE-bundle-example-Spanish"/>
-      </reference>
-      <name value="Example Bundle - DDCC-TX-SHE-bundle-example-Spanish"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCSubmitHealthEventResponse"/>
-      </reference>
-      <name value="DDCC Submit Health Event Response"/>
-      <description value="A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/DDCCHCIDRegistrationQuestionnaire"/>
-      </reference>
-      <name value="DDCC HCID Registration Questionnaire"/>
-      <description value="DDCC HCID Registration Questionnaire"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireSDC"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Russian"/>
-      </reference>
-      <name value="Example QuestionnaireResponse - DDCC-VS-QuestionnaireResponse-Russian"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCVaccineMarketAuthorization"/>
-      </reference>
-      <name value="DDCC Vaccine Market Authorization for Immunization"/>
-      <description value="DDCC Vaccine Market Authorization for Immunization"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCPatient"/>
-      </reference>
-      <name value="DDCC Patient"/>
-      <description value="A DDCCPatient should:&#xA;* if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner) should be set to reference the [DDCC Organization](StructureDefinition-DDCCOrganization.html) resource associated to the PHA.&#xA;* obeys who-ddcc-patient-1"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
-      </extension>
-      <reference>
-        <reference value="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Arabic"/>
-      </reference>
-      <name value="Example QuestionnaireResponse - DDCC-VS-QuestionnaireResponse-Arabic"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCDocumentReference"/>
-      </reference>
-      <name value="DDCC Document Reference"/>
-      <description value="A [DDCC Document Reference](StructureDefinition-DDCCDocumentReference.html) is a &#xA;document reference to a [DDCC Document](StructureDefinition-DDCCDocument.html) &#xA;containing the DDCC.&#xA;The content attachment url will point to a DDCC Document."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/DDCC-TX-SHE-bundle-example-Chinese"/>
-      </reference>
-      <name value="Example Bundle - DDCC-TX-SHE-bundle-example-Chinese"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1186,33 +915,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="QuestionnaireResponse"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Chinese"/>
+        <reference value="StructureDefinition/DDCCVaccineValidFrom"/>
       </reference>
-      <name value="Example QuestionnaireResponse - DDCC-VS-QuestionnaireResponse-Chinese"/>
-      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
-      </extension>
-      <reference>
-        <reference value="ConceptMap/who-ddcc-map-icd11-sct-disease-targeted"/>
-      </reference>
-      <name value="ConceptMap from ICD-11 to SNOMED CT for Disease or Agent Targeted"/>
-      <description value="Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCAddBundle"/>
-      </reference>
-      <name value="DDCC Add Bundle"/>
-      <description value="Bundle to be transformed to from the DDCC QuestionnaireResponse&#xA;to add on the DDCC generator."/>
+      <name value="DDCC Vaccine Valid From"/>
+      <description value="Date upon which provided vaccination is considered valid"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1239,56 +948,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/DDCCSubmitHealthEventRequest"/>
-      </reference>
-      <name value="DDCC Submit Health Event Request"/>
-      <description value="An [DDCC Submit Health Event Request](StructureDefinition-DDCCSubmitHealthEventRequest.html) is a transaction bundle containing the content of health events which are being submitted under the [Submit Health Event](transactions.html#submit-health-event) transaction."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/DDCC-QR-Format-ValueSet"/>
-      </reference>
-      <name value="DDCC QR Format Codes"/>
-      <description value="Format of the representation of QR code"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCCoreDataSetPoV"/>
-      </reference>
-      <name value="DDCC Core Data Set Logical Model - Proof of Vaccination"/>
-      <description value="Data elements for the DDCC Core Data Set - Proof of Vaccination."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:logical"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCCoreDataSetCoC"/>
-      </reference>
-      <name value="DDCC Core Data Set Logical Model - Continuity of Care"/>
-      <description value="Data elements for the DDCC Core Data Set - Continuity of Care."/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/DDCCVaccineValidFrom"/>
-      </reference>
-      <name value="DDCC Vaccine Valid From"/>
-      <description value="Date upon which provided vaccination is considered valid"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/DDCCSubmissionSet"/>
       </reference>
       <name value="DDCC Submission Set"/>
@@ -1296,13 +955,43 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ConceptMap"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="ConceptMap/who-ddcc-map-icd11-sct-vaccines"/>
+        <reference value="StructureDefinition/DDCCCountryOfVaccination"/>
       </reference>
-      <name value="ConceptMap from ICD-11 to SNOMED CT for Vaccines"/>
-      <description value="Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines"/>
+      <name value="DDCC Country Of Vaccination for Immunization"/>
+      <description value="DDCC Country Of Vaccination for Immunization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/DDCC-TX-SHE-bundle-example-Chinese"/>
+      </reference>
+      <name value="Example Bundle - DDCC-TX-SHE-bundle-example-Chinese"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/DDCC-QR-Category-Usage-CodeSystem"/>
+      </reference>
+      <name value="DDCC QR Category Usage Codes"/>
+      <description value="Possible formats available for QR usage."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/DDCC-TX-SHE-bundle-example-Arabic"/>
+      </reference>
+      <name value="Example Bundle - DDCC-TX-SHE-bundle-example-Arabic"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1316,13 +1005,234 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCImmunizationRecommendation"/>
+      </reference>
+      <name value="DDCC Immunization Recommendation"/>
+      <description value="A DDCC Immunization Recommendation contains the content corresponding to when&#xA;a patient should return for a booster shot."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/DDCCHCIDRegistrationQuestionnaire"/>
+      </reference>
+      <name value="DDCC HCID Registration Questionnaire"/>
+      <description value="DDCC HCID Registration Questionnaire"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireSDC"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCVaccineBrand"/>
+      </reference>
+      <name value="DDCC Vaccine Brand for Immunization"/>
+      <description value="DDCC Vaccine Brand for Immunization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/who-ddcc-map-icd11-sct-disease-targeted"/>
+      </reference>
+      <name value="ConceptMap from ICD-11 to SNOMED CT for Disease or Agent Targeted"/>
+      <description value="Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Disease or Agent Targeted"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Spanish"/>
+      </reference>
+      <name value="Example QuestionnaireResponse - DDCC-VS-QuestionnaireResponse-Spanish"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/who-ddcc-vaccines-covid-19"/>
+        <reference value="ValueSet/who-ddcc-disease-targeted-covid-19"/>
       </reference>
-      <name value="WHO Vaccine List (COVID-19)"/>
-      <description value="WHO Vaccine List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"/>
+      <name value="WHO Disease or Agent Targeted (COVID-19)"/>
+      <description value="WHO Disease or Agent Targeted List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted"/>
+      </reference>
+      <name value="ConceptMap from ICD-10 to SNOMED CT for Disease or Agent Targeted"/>
+      <description value="Rule-based mappings between ICD-11 and ICD-10 for COVID-19 Disease or Agent Targeted"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/DDCC-Folder-DesignationType"/>
+      </reference>
+      <name value="DDCC Designation Types for Folder"/>
+      <description value="DDCC Designation Types to use for DDCC Folders."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Chinese"/>
+      </reference>
+      <name value="Example QuestionnaireResponse - DDCC-VS-QuestionnaireResponse-Chinese"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DDCC-QR-Format-ValueSet"/>
+      </reference>
+      <name value="DDCC QR Format Codes"/>
+      <description value="Format of the representation of QR code"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCSubmitHealthEventResponse"/>
+      </reference>
+      <name value="DDCC Submit Health Event Response"/>
+      <description value="A DDCC Submit Health Event Response](StructureDefinition-DDCCSubmitHealthEventRespose.html) is a transaction reponse bundle containing the operation outcomes for the submission of one or more health certificates under the [Submit Health Event](transactions.html#submit-health-event) transaction."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Russian"/>
+      </reference>
+      <name value="Example QuestionnaireResponse - DDCC-VS-QuestionnaireResponse-Russian"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCComposition"/>
+      </reference>
+      <name value="DDCC Composition"/>
+      <description value="Describes the logical structure for a Digital Documentation of COVID-19 Certificates &#xA;(DDCC)."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DDCC-Folder-DesignationType"/>
+      </reference>
+      <name value="DDCC DesignationTypes for Folder"/>
+      <description value="DDCC Designation Types ValueSet for DDCC Folders."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCCoreDataSetCoC"/>
+      </reference>
+      <name value="DDCC Core Data Set Logical Model - Continuity of Care"/>
+      <description value="Data elements for the DDCC Core Data Set - Continuity of Care."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCPatient"/>
+      </reference>
+      <name value="DDCC Patient"/>
+      <description value="A DDCCPatient should:&#xA;* if the [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier] is set then the value of [identifier.assigner](StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner) should be set to reference the [DDCC Organization](StructureDefinition-DDCCOrganization.html) resource associated to the PHA.&#xA;* obeys who-ddcc-patient-1"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCProvideDocumentBundle"/>
+      </reference>
+      <name value="DDCC Provide Document Bundle"/>
+      <description value="DDCC Provide Document Bundle for ITI-65"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCSubmitHealthEventRequest"/>
+      </reference>
+      <name value="DDCC Submit Health Event Request"/>
+      <description value="An [DDCC Submit Health Event Request](StructureDefinition-DDCCSubmitHealthEventRequest.html) is a transaction bundle containing the content of health events which are being submitted under the [Submit Health Event](transactions.html#submit-health-event) transaction."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCDocument"/>
+      </reference>
+      <name value="DDCC Document"/>
+      <description value="A [DDCC Document](StructureDefinition-DDCCDocument.html) is a document bundle containing the DDCC."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCAddBundle"/>
+      </reference>
+      <name value="DDCC Add Bundle"/>
+      <description value="Bundle to be transformed to from the DDCC QuestionnaireResponse&#xA;to add on the DDCC generator."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCQuestionnaireSDC"/>
+      </reference>
+      <name value="DDCC Questionnaire based on SDC"/>
+      <description value="DDCC Questionniare based on SDC Populatable Questionnaire with additional extension"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCDocumentReference"/>
+      </reference>
+      <name value="DDCC Document Reference"/>
+      <description value="A [DDCC Document Reference](StructureDefinition-DDCCDocumentReference.html) is a &#xA;document reference to a [DDCC Document](StructureDefinition-DDCCDocument.html) &#xA;containing the DDCC.&#xA;The content attachment url will point to a DDCC Document."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/who-ddcc-map-icd11-sct-vaccines"/>
+      </reference>
+      <name value="ConceptMap from ICD-11 to SNOMED CT for Vaccines"/>
+      <description value="Rule-based mappings between ICD-11 and SNOMED CT for COVID-19 Vaccines"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1336,13 +1246,103 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
+        <valueString value="Bundle"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/DDCC-Example-Test-CodeSystem"/>
+        <reference value="Bundle/DDCC-TX-SHE-bundle-example-Spanish"/>
       </reference>
-      <name value="DDCC Codes for examples"/>
-      <description value="Example codes for example resources."/>
+      <name value="Example Bundle - DDCC-TX-SHE-bundle-example-Spanish"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCVaccineMarketAuthorization"/>
+      </reference>
+      <name value="DDCC Vaccine Market Authorization for Immunization"/>
+      <description value="DDCC Vaccine Market Authorization for Immunization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate"/>
+      </reference>
+      <name value="OperationDefinition for generating a health certificate (DDCC) that is signed."/>
+      <description value="Generate one or more signed DDCC Documents based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/DDCC-QR-Category-Usage-ValueSet"/>
+      </reference>
+      <name value="DDCC QR Category Usage Codes"/>
+      <description value="Categorization of QR codes by their business usage"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCGenerateHealthCertificateParameters"/>
+      </reference>
+      <name value="DDCC Generate Health Certificate Parameters"/>
+      <description value="Parameters for the [DDCC Generate Health Certificate Operation](OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html)."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:logical"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCCoreDataSetPoV"/>
+      </reference>
+      <name value="DDCC Core Data Set Logical Model - Proof of Vaccination"/>
+      <description value="Data elements for the DDCC Core Data Set - Proof of Vaccination."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/who-ddcc-vaccines-covid-19"/>
+      </reference>
+      <name value="WHO Vaccine List (COVID-19)"/>
+      <description value="WHO Vaccine List (COVID-19) from [ICD 11](https://icd.who.int/browse11)"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCQuestionnaireResponse"/>
+      </reference>
+      <name value="DDCC Questionnaire Response"/>
+      <description value="Describes the logical structure for a questionnaire response associacted to a [DDCC Questionaire](StructureDefinition-DDCCQuestionnaire.html)."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/DDCCDocumentReferenceQR"/>
+      </reference>
+      <name value="DDCC DocumentReference return for QR"/>
+      <description value="DDCC DocumentReference for QR codes including the QR image and the serialized content."/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/DDCC-TX-SHE-bundle-example-French"/>
+      </reference>
+      <name value="Example Bundle - DDCC-TX-SHE-bundle-example-French"/>
+      <exampleCanonical value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCSubmitHealthEventRequest"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

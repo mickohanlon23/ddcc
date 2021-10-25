@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DDCCQuestionnaire"];
   fhir:StructureDefinition.title [ fhir:value "DDCC Questionniare"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2021-10-06T12:30:04+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-10-25T19:36:06+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "World Health Organization (WHO)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -2123,9 +2123,9 @@
        ], [
          fhir:index 13;
          fhir:ElementDefinition.constraint.key [ fhir:value "sdc-1" ];
-         fhir:ElementDefinition.constraint.severity [ fhir:value "warning" ];
+         fhir:ElementDefinition.constraint.severity [ fhir:value "error" ];
          fhir:ElementDefinition.constraint.human [ fhir:value "An item cannot have an answerExpression if answerOption or answerValueSet is already present." ];
-         fhir:ElementDefinition.constraint.expression [ fhir:value "extension('http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression').empty().not implies answerOption.empty() and answerValueSet.empty()" ];
+         fhir:ElementDefinition.constraint.expression [ fhir:value "extension('http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression').empty().not() implies (answerOption.empty() and answerValueSet.empty())" ];
          fhir:ElementDefinition.constraint.xpath [ fhir:value "f:extension[@url='http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression'] and (not(f:answerOption) and not(f:answerValueSet))" ];
          fhir:ElementDefinition.constraint.source [
            fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire";

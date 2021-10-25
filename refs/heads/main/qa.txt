@@ -1,10 +1,10 @@
 ﻿DDCC_VS : Validation Results
 =========================================
 
-err = 102, warn = 29, info = 48
-IG Publisher Version: 1.1.81
-Generated Wed Oct 06 12:31:27 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = http://worldhealthorganization.github.io/ddcc)
- Build Errors : 2 / 12 / 0
+err = 117, warn = 29, info = 48
+IG Publisher Version: 1.1.83
+Generated Mon Oct 25 19:38:21 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.2.1 (canonical = http://worldhealthorganization.github.io/ddcc)
+ Build Errors : 17 / 12 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 0 / 0 / 11
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Chinese : 0 / 0 / 11
@@ -27,9 +27,9 @@ Generated Wed Oct 06 12:31:27 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/Composition-DDCC-Composition-Example-French : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Composition-DDCC-Composition-Example-Russian : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Composition-DDCC-Composition-Example-Spanish : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-vaccines : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted : 4 / 0 / 1
+ /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-vaccines : 4 / 0 / 1
  /github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-Arabic : 0 / 1 / 8
  /github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-Chinese : 0 / 1 / 8
  /github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-English : 0 / 1 / 8
@@ -42,7 +42,7 @@ Generated Wed Oct 06 12:31:27 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-French : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Russian : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/Organization-DDCC-Organization-Arabic : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Organization-DDCC-Organization-Chinese : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Organization-DDCC-Organization-English : 0 / 0 / 2
@@ -56,7 +56,7 @@ Generated Wed Oct 06 12:31:27 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/fsh-generated/resources/Patient-DDCC-Patient-Russian : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Patient-DDCC-Patient-Spanish : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire : 4 / 0 / 2
- /github/workspace/fsh-generated/resources/Questionnaire-DDCCVSCoreDataSetQuestionnaire : 0 / 2 / 2
+ /github/workspace/fsh-generated/resources/Questionnaire-DDCCVSCoreDataSetQuestionnaire : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Arabic : 0 / 0 / 9
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Chinese : 0 / 0 / 9
  /github/workspace/fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Example : 0 / 0 / 9
@@ -106,20 +106,35 @@ Generated Wed Oct 06 12:31:27 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#
  /github/workspace/input/resources/maps/svc-map-qr-uvci-bundle : 33 / 1 / 1
 </table>
 == n/a ==
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/svc-map-qr-uvci-bundle.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/svc-map-qr-uvci-bundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/QRespToCoreDataSet.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/QRespToCoreDataSet.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/DDCC-TX-SHE-bundle-example-French.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/DDCC-TX-SHE-bundle-example-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/DDCC-TX-SHE-bundle-example-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Russian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource StructureMap/svc-map-qr-uvci-bundle.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureMap/svc-map-qr-uvci-bundle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/DDCC-TX-SHE-bundle-example-Chinese.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/DDCC-TX-SHE-bundle-example-Russian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-French.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/DDCC-TX-SHE-bundle-example-Chinese.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/DDCC-TX-SHE-bundle-example-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Chinese.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Russian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/DDCC-TX-SHE-bundle-example-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/DDCC-TX-SHE-bundle-example-French.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/StructureDefinition-DDCCDocument.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 236, column 37: The link 'http://hl7.org/fhir/R4/StructureDefinition-DDCCDocument.html' for "DDCC Document" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCDocumentReference.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 236, column 37: The link 'http://hl7.org/fhir/R4/StructureDefinition-DDCCDocumentReference.html' for "DDCC Document Reference" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCDocumentReference.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 237, column 26: The link 'http://hl7.org/fhir/R4/StructureDefinition-DDCCDocument.html' for "DDCC Document" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCGenerateHealthCertificateParameters.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 236, column 54: The link 'http://hl7.org/fhir/R4/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html' for "DDCC Generate Health Certificate Operation" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCPatient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 248, column 152: The link 'http://hl7.org/fhir/R4/StructureDefinition-DDCCPatient-definitions.html#Patient.identifier.assigner' for "identifier.assigner" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCPatient.html#/html/body/div/div/div/div/div/table/tbody/tr/td/ul/li/a at Line 248, column 317: The link 'http://hl7.org/fhir/R4/StructureDefinition-DDCCOrganization.html' for "DDCC Organization" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCPractitioner.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 237, column 15: The link 'http://hl7.org/fhir/R4/StructureDefinition-DDCCPatient.html' for "DDCC Patient" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCPractitionerRole.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 236, column 53: The link 'http://hl7.org/fhir/R4/StructureDefinition-DDCCPractitioner.html' for "DDCC Practitioner" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCPractitionerRole.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 237, column 11: The link 'http://hl7.org/fhir/R4/StructureDefinition-DDCCOrganization.html' for "DDCC Organization" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCPractitionerRole.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 239, column 15: The link 'http://hl7.org/fhir/R4/StructureDefinition-DDCCPatient.html' for "DDCC Patient" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaire.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 246, column 183: The link 'http://hl7.org/fhir/R4/StructureDefinition-DDCCQuestionnaireResponse.html' for "DDCC QuestionnaireResponse" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCQuestionnaireResponse.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 246, column 113: The link 'http://hl7.org/fhir/R4/StructureDefinition-DDCCQuestionnaire.html' for "DDCC Questionaire" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCSubmitHealthEventRequest.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 246, column 38: The link 'http://hl7.org/fhir/R4/StructureDefinition-DDCCSubmitHealthEventRequest.html' for "DDCC Submit Health Event Request" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCSubmitHealthEventRequest.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 246, column 262: The link 'http://hl7.org/fhir/R4/transactions.html#submit-health-event' for "Submit Health Event" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-DDCCSubmitHealthEventResponse.html#/html/body/div/div/div/div/div/table/tbody/tr/td/p/a at Line 236, column 280: The link 'http://hl7.org/fhir/R4/transactions.html#submit-health-event' for "Submit Health Event" cannot be resolved
 == fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1.json ==
 == fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic.json ==
 == fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Chinese.json ==
@@ -173,8 +188,20 @@ INFORMATION: Bundle/Example-Spanish: Bundle.entry[3].resource.ofType(Immunizatio
 == fsh-generated/resources/Composition-DDCC-Composition-Example-Russian.json ==
 == fsh-generated/resources/Composition-DDCC-Composition-Example-Spanish.json ==
 == fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted.json ==
+ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted) does not match the URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted)
+ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-icd11-icd10-disease-targeted/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted
+ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted) does not match the URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted)
+ERROR: /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted: URL Mismatch http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-icd10-disease-targeted vs http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted
 == fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.json ==
+ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-disease-targeted) does not match the URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted)
+ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-icd11-sct-disease-targeted/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted
+ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-disease-targeted) does not match the URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted)
+ERROR: /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted: URL Mismatch http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-disease-targeted vs http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted
 == fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-vaccines.json ==
+ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Vaccines'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-vaccines.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-vaccines) does not match the URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Vaccines)
+ERROR: ConceptMap.url: Resource id/url mismatch: who-ddcc-map-icd11-sct-vaccines/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Vaccines
+ERROR: ConceptMap.where(url = 'http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Vaccines'): Conformance resource /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-vaccines.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-vaccines) does not match the URL (http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Vaccines)
+ERROR: /github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-vaccines: URL Mismatch http://worldhealthorganization.github.io/ddcc/ConceptMap/who-ddcc-map-icd11-sct-vaccines vs http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Vaccines
 == fsh-generated/resources/Immunization-DDCC-Immunization-Arabic.json ==
 INFORMATION: Immunization/DDCC-Immunization-Arabic: Immunization.vaccineCode: This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization
 INFORMATION: Immunization/DDCC-Immunization-Arabic: Immunization.vaccineCode: None of the codings provided are in the value set http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips (http://hl7.org/fhir/uv/ips/ValueSet/vaccines-uv-ips), and a coding is recommended to come from this value set) (codes = http://id.who.int/icd11/mms#XM0CX4)
@@ -218,6 +245,9 @@ INFORMATION: Immunization/DDCC-Immunization-Spanish: Immunization.protocolApplie
 == fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Russian.json ==
 == fsh-generated/resources/ImmunizationRecommendation-DDCC-ImmunizationRecommendation-Spanish.json ==
 == fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.json ==
+ERROR: OperationDefinition.where(url = 'http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate'): Conformance resource /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.json - the canonical URL (http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate) does not match the URL (http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate)
+ERROR: OperationDefinition.url: Resource id/url mismatch: DDCC-QuestionnaireResponse-generateHealthCertificate/http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate
+ERROR: /github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate: URL Mismatch http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCC-QuestionnaireResponse-generateHealthCertificate vs http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate
 == fsh-generated/resources/Organization-DDCC-Organization-Arabic.json ==
 == fsh-generated/resources/Organization-DDCC-Organization-Chinese.json ==
 == fsh-generated/resources/Organization-DDCC-Organization-English.json ==
@@ -233,8 +263,8 @@ INFORMATION: Immunization/DDCC-Immunization-Spanish: Immunization.protocolApplie
 == fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire.json ==
 ERROR: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.extension[0]: inv-1: 'Types must be from the specified value set of resource types based on name: patient: Patient; user: Patient, Practitioner, PractitionerRole, RelatedPerson (could be a subset of these); encounter: Encounter; location: Location; study: ResearchStudy' Rule 'Types must be from the specified value set of resource types based on name: patient: Patient; user: Patient, Practitioner, PractitionerRole, RelatedPerson (could be a subset of these); encounter: Encounter; location: Location; study: ResearchStudy' Failed
 ERROR: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.extension[0].extension[1].value.ofType(code): The value provided ('patient') is not in the value set http://hl7.org/fhir/ValueSet/resource-types (http://hl7.org/fhir/ValueSet/resource-types), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#patient in http://hl7.org/fhir/resource-types)
-ERROR: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.item[2].item[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext is not allowed to be used at this point (allowed = e:Questionnaire, e:Questionnaire.item; this element is [[Questionnaire.item.item, BackboneElement.item, BackboneElement])
-ERROR: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.item[2].item[0]: The extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext is not allowed to be used at this point (allowed = e:Questionnaire, e:Questionnaire.item; this element is [[Questionnaire.item.item, BackboneElement.item, BackboneElement])
+ERROR: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.item[2].item[0]: The modifier extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext is not allowed to be used at this point (allowed = e:Questionnaire, e:Questionnaire.item; this element is [[Questionnaire.item.item, BackboneElement.item, BackboneElement])
+ERROR: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.item[2].item[0]: The modifier extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext is not allowed to be used at this point (allowed = e:Questionnaire, e:Questionnaire.item; this element is [[Questionnaire.item.item, BackboneElement.item, BackboneElement])
 == fsh-generated/resources/Questionnaire-DDCCVSCoreDataSetQuestionnaire.json ==
 == fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Arabic.json ==
 == fsh-generated/resources/QuestionnaireResponse-DDCC-VS-QuestionnaireResponse-Chinese.json ==
