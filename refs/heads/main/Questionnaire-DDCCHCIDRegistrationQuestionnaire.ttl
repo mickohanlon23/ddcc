@@ -40,22 +40,31 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext" ]
   ];
   fhir:Questionnaire.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/Questionnaire/DDCCHCIDRegistrationQuestionnaire"];
-  fhir:Questionnaire.version [ fhir:value "0.2.1"];
+  fhir:Questionnaire.version [ fhir:value "0.0.1"];
   fhir:Questionnaire.name [ fhir:value "DDCCHCIDRegistrationQuestionnaire"];
   fhir:Questionnaire.title [ fhir:value "DDCC HCID Registration Questionnaire"];
   fhir:Questionnaire.status [ fhir:value "draft"];
   fhir:Questionnaire.experimental [ fhir:value "true"^^xsd:boolean];
   fhir:Questionnaire.date [ fhir:value "2021-06-03"^^xsd:date];
-  fhir:Questionnaire.publisher [ fhir:value "World Health Organization (WHO)"];
+  fhir:Questionnaire.publisher [ fhir:value "WHO"];
   fhir:Questionnaire.contact [
      fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "WHO" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
      ]
   ];
   fhir:Questionnaire.description [ fhir:value "DDCC HCID Registration Questionnaire"];
+  fhir:Questionnaire.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
   fhir:Questionnaire.item [
      fhir:index 0;
      fhir:Element.extension [

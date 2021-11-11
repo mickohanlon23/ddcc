@@ -1,7 +1,8 @@
 {
-  "package": "fhir.who.ddcc-vs",
-  "version": "0.2.1",
+  "package": "who.cr.covid19",
+  "version": "0.0.1",
   "fhirVersion": "4.0.1",
+  "jurisdiction": "001",
   "extensions": [
     {
       "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCCountryOfVaccination",
@@ -167,6 +168,9 @@
     "http://hl7.org/fhir/StructureDefinition/questionnaire-unit": [
       "Questionnaire.item"
     ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-completionMode": [
+      "QuestionnaireResponse"
+    ],
     "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-signature": [
       "QuestionnaireResponse",
       "QuestionnaireResponse.item"
@@ -206,12 +210,6 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/uv/sdc/StructureDefinition/cpg-itemImage": [
-      "QuestionnaireResponse.item"
-    ],
-    "http://hl7.org/fhir/uv/sdc/StructureDefinition/cpg-responseImage": [
-      "QuestionnaireResponse.item.answer"
-    ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-answerExpression": [
       "Questionnaire.item"
     ],
@@ -230,9 +228,15 @@
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression": [
       "Questionnaire.item"
     ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemAnswerMedia": [
+      "QuestionnaireResponse.item.answer"
+    ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext": [
       "Questionnaire.item",
       "Questionnaire.item.item"
+    ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemMedia": [
+      "QuestionnaireResponse.item"
     ],
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext": [
       "Questionnaire",

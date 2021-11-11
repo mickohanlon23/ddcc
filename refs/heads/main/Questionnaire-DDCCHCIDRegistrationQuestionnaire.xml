@@ -28,20 +28,27 @@
     </extension>
   </extension>
   <url value="http://worldhealthorganization.github.io/ddcc/Questionnaire/DDCCHCIDRegistrationQuestionnaire"/>
-  <version value="0.2.1"/>
+  <version value="0.0.1"/>
   <name value="DDCCHCIDRegistrationQuestionnaire"/>
   <title value="DDCC HCID Registration Questionnaire"/>
   <status value="draft"/>
   <experimental value="true"/>
   <date value="2021-06-03"/>
-  <publisher value="World Health Organization (WHO)"/>
+  <publisher value="WHO"/>
   <contact>
+    <name value="WHO"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.who.int"/>
+      <value value="http://who.int"/>
     </telecom>
   </contact>
   <description value="DDCC HCID Registration Questionnaire"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
   <item>
     <extension url="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext">
       <valueExpression>

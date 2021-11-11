@@ -28,6 +28,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","A signature attesting to the content","Represents a wet or electronic signature for either the form overall or for the question or item it's associated with.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"QuestionnaireResponse.extension","completionMode","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/questionnaireresponse-completionMode]]} {[]}
+","E.g. Verbal, written, electronic","Indicates how the individual completing the QuestionnaireResponse provided their responses.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "QuestionnaireResponse.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -93,8 +97,8 @@ qrs-1:Nested item can't be beneath both item and answer {(answer.exists() and it
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"QuestionnaireResponse.item.extension","itemImage","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/sdc/StructureDefinition/cpg-itemImage]]} {[]}
-","Image to display","An image to display as a visual accompaniment to the question being asked.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+"QuestionnaireResponse.item.extension","itemMedia","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemMedia]]} {[]}
+","Media to display","Media to render/make available as an accompaniment to the question being asked","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "QuestionnaireResponse.item.extension","ItemSignature","","",0,*,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/questionnaireresponse-signature]]} {[]}
@@ -127,8 +131,8 @@ There is no need for this element if the item pointed to by the linkId has a def
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"QuestionnaireResponse.item.answer.extension","responseImage","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/sdc/StructureDefinition/cpg-responseImage]]} {[]}
-","Image to display","An image to display as a visual accompaniment to the response.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
+"QuestionnaireResponse.item.answer.extension","itemAnswerMedia","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemAnswerMedia]]} {[]}
+","Answer Media to display","Media to render/make available as an accompaniment to a specific answer option","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "QuestionnaireResponse.item.answer.extension","ordinalValue","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ordinalValue]]} {[]}

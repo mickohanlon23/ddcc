@@ -13,22 +13,31 @@
      fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Capability Statement for a DDCC Generator</p>\n         \n    </div>"
   ];
   fhir:CapabilityStatement.url [ fhir:value "http://worldhealthorganization.github.io/ddcc/CapabilityStatement/WHO.DDCC.Generator"];
-  fhir:CapabilityStatement.version [ fhir:value "0.2.1"];
+  fhir:CapabilityStatement.version [ fhir:value "0.0.1"];
   fhir:CapabilityStatement.name [ fhir:value "WHO_DDCC_Generator"];
   fhir:CapabilityStatement.title [ fhir:value "WHO DDCC Generator"];
   fhir:CapabilityStatement.status [ fhir:value "draft"];
   fhir:CapabilityStatement.experimental [ fhir:value "true"^^xsd:boolean];
   fhir:CapabilityStatement.date [ fhir:value "2021-05-06"^^xsd:date];
-  fhir:CapabilityStatement.publisher [ fhir:value "World Health Organization (WHO)"];
+  fhir:CapabilityStatement.publisher [ fhir:value "WHO"];
   fhir:CapabilityStatement.contact [
      fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "WHO" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
        fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.who.int" ]
+       fhir:ContactPoint.value [ fhir:value "http://who.int" ]
      ]
   ];
   fhir:CapabilityStatement.description [ fhir:value "CapabilityStatement for WHO DDCC Generator actor."];
+  fhir:CapabilityStatement.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
+       fhir:Coding.code [ fhir:value "001" ]
+     ]
+  ];
   fhir:CapabilityStatement.kind [ fhir:value "requirements"];
   fhir:CapabilityStatement.fhirVersion [ fhir:value "4.0.1"];
   fhir:CapabilityStatement.format [

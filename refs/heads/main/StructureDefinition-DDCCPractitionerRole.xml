@@ -15,19 +15,26 @@
     <valueCode value="individual"/>
   </extension>
   <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole"/>
-  <version value="0.2.1"/>
+  <version value="0.0.1"/>
   <name value="DDCCPractitionerRole"/>
   <title value="DDCC Practitioner Role"/>
   <status value="active"/>
-  <date value="2021-10-27T16:26:01+00:00"/>
-  <publisher value="World Health Organization (WHO)"/>
+  <date value="2021-11-11T22:15:15+00:00"/>
+  <publisher value="WHO"/>
   <contact>
+    <name value="WHO"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.who.int"/>
+      <value value="http://who.int"/>
     </telecom>
   </contact>
   <description value="Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a &#xA;managing [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating &#xA;that an DDCC Practitioner is authorized by the public health authority (PHA) to &#xA;vaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html).&#xA;"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="v2"/>

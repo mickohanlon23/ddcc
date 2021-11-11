@@ -27,19 +27,26 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Immunization-pre-uv-ips"/>
-  <version value="0.2.1"/>
+  <version value="0.0.1"/>
   <name value="ImmunizationUvIps"/>
   <title value="Immunization (IPS)"/>
   <status value="active"/>
   <date value="2021-10-04T14:09:43+00:00"/>
-  <publisher value="World Health Organization (WHO)"/>
+  <publisher value="WHO"/>
   <contact>
+    <name value="WHO"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.who.int"/>
+      <value value="http://who.int"/>
     </telecom>
   </contact>
   <description value="This profile represents the constraints applied to the Immunization resource by the International Patient Summary (IPS) FHIR Implementation Guide. A record of an immunization is represented in the patient summary as an instance of an Immunization resource constrained by this profile.&#xD;&#xA;&#xD;&#xA;It describes the event of a patient being administered a vaccination or a record of a vaccination as reported by a patient, a clinician or another party."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
   <purpose value="This profile constrains the representation of a record of a vaccination of the patient, in the context of the international patient summary as specified by the IPS project of HL7 International."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
