@@ -16,23 +16,34 @@
     }
   ],
   "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCPractitionerRole",
-  "version": "0.2.1",
+  "version": "0.0.1",
   "name": "DDCCPractitionerRole",
   "title": "DDCC Practitioner Role",
   "status": "active",
-  "date": "2021-10-27T16:26:01+00:00",
-  "publisher": "World Health Organization (WHO)",
+  "date": "2021-11-11T22:15:15+00:00",
+  "publisher": "WHO",
   "contact": [
     {
+      "name": "WHO",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.who.int"
+          "value": "http://who.int"
         }
       ]
     }
   ],
   "description": "Association of an [DDCC Practitioner](StructureDefinition-DDCCPractitioner.html) to a \nmanaging [DDCC Organization](StructureDefinition-DDCCOrganization.html), indicating \nthat an DDCC Practitioner is authorized by the public health authority (PHA) to \nvaccinate an [DDCC Patient](StructureDefinition-DDCCPatient.html).\n",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {

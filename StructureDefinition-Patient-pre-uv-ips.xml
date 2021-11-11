@@ -25,19 +25,26 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-pre-uv-ips"/>
-  <version value="0.2.1"/>
+  <version value="0.0.1"/>
   <name value="PatientUvIps"/>
   <title value="Patient (IPS)"/>
   <status value="active"/>
   <date value="2021-10-04T14:09:43+00:00"/>
-  <publisher value="World Health Organization (WHO)"/>
+  <publisher value="WHO"/>
   <contact>
+    <name value="WHO"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.who.int"/>
+      <value value="http://who.int"/>
     </telecom>
   </contact>
   <description value="This profile represents the constraints applied to the Patient resource by the International Patient Summary (IPS) FHIR Implementation Guide and describes the minimum expectations for the Patient resource when used in the IPS composition or in one of the referred resources."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="rim"/>

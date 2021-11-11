@@ -10,21 +10,28 @@
 </div></td></tr></table></div>
   </text>
   <url value="http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate"/>
-  <version value="0.2.1"/>
+  <version value="0.0.1"/>
   <name value="QuestionnaireResponse_Generate_Health_Certificate"/>
   <title value="OperationDefinition for generating a health certificate (DDCC) that is signed."/>
   <status value="draft"/>
   <kind value="operation"/>
   <experimental value="true"/>
   <date value="2021-06-03"/>
-  <publisher value="World Health Organization (WHO)"/>
+  <publisher value="WHO"/>
   <contact>
+    <name value="WHO"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.who.int"/>
+      <value value="http://who.int"/>
     </telecom>
   </contact>
   <description value="Generate one or more signed DDCC Documents based on a [DDCC QuestionnaireResponse](StructureDefinition-DDCCQuestionnaireResponse.html)"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
   <code value="generateHealthCertificate"/>
   <resource value="QuestionnaireResponse"/>
   <system value="false"/>

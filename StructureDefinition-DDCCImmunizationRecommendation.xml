@@ -32,19 +32,26 @@
     <valueCode value="patient"/>
   </extension>
   <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunizationRecommendation"/>
-  <version value="0.2.1"/>
+  <version value="0.0.1"/>
   <name value="DDCCImmunizationRecommendation"/>
   <title value="DDCC Immunization Recommendation"/>
   <status value="active"/>
-  <date value="2021-10-27T16:26:01+00:00"/>
-  <publisher value="World Health Organization (WHO)"/>
+  <date value="2021-11-11T22:15:15+00:00"/>
+  <publisher value="WHO"/>
   <contact>
+    <name value="WHO"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.who.int"/>
+      <value value="http://who.int"/>
     </telecom>
   </contact>
   <description value="A DDCC Immunization Recommendation contains the content corresponding to when&#xA;a patient should return for a booster shot."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>

@@ -6,23 +6,34 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-DDCCQuestionnaireResponse-definitions.html#QuestionnaireResponse\">QuestionnaireResponse</a><a name=\"QuestionnaireResponse\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/HL7/sdc//StructureDefinition-sdc-questionnaireresponse.html\">QuestionnaireResponse</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">This is an abstract profile<br/><span style=\"opacity: 0.5\">SDC Questionnaire Response</span></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"http://hl7.org/fhir/R4/help16.png\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   },
   "url": "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse",
-  "version": "0.2.1",
+  "version": "0.0.1",
   "name": "DDCCQuestionnaireResponse",
   "title": "DDCC Questionnaire Response",
   "status": "active",
-  "date": "2021-10-27T16:26:01+00:00",
-  "publisher": "World Health Organization (WHO)",
+  "date": "2021-11-11T22:15:15+00:00",
+  "publisher": "WHO",
   "contact": [
     {
+      "name": "WHO",
       "telecom": [
         {
           "system": "url",
-          "value": "https://www.who.int"
+          "value": "http://who.int"
         }
       ]
     }
   ],
   "description": "Describes the logical structure for a questionnaire response associacted to a [DDCC Questionaire](StructureDefinition-DDCCQuestionnaire.html). ",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -444,6 +455,51 @@
             "code": "Extension",
             "profile": [
               "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-signature"
+            ]
+          }
+        ],
+        "condition": [
+          "ele-1"
+        ],
+        "constraint": [
+          {
+            "key": "ele-1",
+            "severity": "error",
+            "human": "All FHIR elements must have a @value or children",
+            "expression": "hasValue() or (children().count() > id.count())",
+            "xpath": "@value|f:*|h:div",
+            "source": "http://hl7.org/fhir/StructureDefinition/Element"
+          },
+          {
+            "key": "ext-1",
+            "severity": "error",
+            "human": "Must have either extensions or value[x], not both",
+            "expression": "extension.exists() != value.exists()",
+            "xpath": "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
+            "source": "http://hl7.org/fhir/StructureDefinition/Extension"
+          }
+        ],
+        "mustSupport": false,
+        "isModifier": false
+      },
+      {
+        "id": "QuestionnaireResponse.extension:completionMode",
+        "path": "QuestionnaireResponse.extension",
+        "sliceName": "completionMode",
+        "short": "E.g. Verbal, written, electronic",
+        "definition": "Indicates how the individual completing the QuestionnaireResponse provided their responses.",
+        "min": 0,
+        "max": "1",
+        "base": {
+          "path": "DomainResource.extension",
+          "min": 0,
+          "max": "*"
+        },
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/questionnaireresponse-completionMode"
             ]
           }
         ],
@@ -1330,11 +1386,11 @@
         "isSummary": false
       },
       {
-        "id": "QuestionnaireResponse.item.extension:itemImage",
+        "id": "QuestionnaireResponse.item.extension:itemMedia",
         "path": "QuestionnaireResponse.item.extension",
-        "sliceName": "itemImage",
-        "short": "Image to display",
-        "definition": "An image to display as a visual accompaniment to the question being asked.",
+        "sliceName": "itemMedia",
+        "short": "Media to display",
+        "definition": "Media to render/make available as an accompaniment to the question being asked",
         "min": 0,
         "max": "1",
         "base": {
@@ -1346,7 +1402,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/uv/sdc/StructureDefinition/cpg-itemImage"
+              "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemMedia"
             ]
           }
         ],
@@ -1707,11 +1763,11 @@
         "isSummary": false
       },
       {
-        "id": "QuestionnaireResponse.item.answer.extension:responseImage",
+        "id": "QuestionnaireResponse.item.answer.extension:itemAnswerMedia",
         "path": "QuestionnaireResponse.item.answer.extension",
-        "sliceName": "responseImage",
-        "short": "Image to display",
-        "definition": "An image to display as a visual accompaniment to the response.",
+        "sliceName": "itemAnswerMedia",
+        "short": "Answer Media to display",
+        "definition": "Media to render/make available as an accompaniment to a specific answer option",
         "min": 0,
         "max": "1",
         "base": {
@@ -1723,7 +1779,7 @@
           {
             "code": "Extension",
             "profile": [
-              "http://hl7.org/fhir/uv/sdc/StructureDefinition/cpg-responseImage"
+              "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemAnswerMedia"
             ]
           }
         ],

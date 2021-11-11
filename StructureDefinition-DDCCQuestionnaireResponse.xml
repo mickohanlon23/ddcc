@@ -7,19 +7,26 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="http://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="http://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaireResponse"/>
-  <version value="0.2.1"/>
+  <version value="0.0.1"/>
   <name value="DDCCQuestionnaireResponse"/>
   <title value="DDCC Questionnaire Response"/>
   <status value="active"/>
-  <date value="2021-10-27T16:26:01+00:00"/>
-  <publisher value="World Health Organization (WHO)"/>
+  <date value="2021-11-11T22:15:15+00:00"/>
+  <publisher value="WHO"/>
   <contact>
+    <name value="WHO"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.who.int"/>
+      <value value="http://who.int"/>
     </telecom>
   </contact>
   <description value="Describes the logical structure for a questionnaire response associacted to a [DDCC Questionaire](StructureDefinition-DDCCQuestionnaire.html). "/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>
@@ -369,6 +376,42 @@
       <type>
         <code value="Extension"/>
         <profile value="http://hl7.org/fhir/StructureDefinition/questionnaireresponse-signature"/>
+      </type>
+      <condition value="ele-1"/>
+      <constraint>
+        <key value="ele-1"/>
+        <severity value="error"/>
+        <human value="All FHIR elements must have a @value or children"/>
+        <expression value="hasValue() or (children().count() &gt; id.count())"/>
+        <xpath value="@value|f:*|h:div"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
+      </constraint>
+      <constraint>
+        <key value="ext-1"/>
+        <severity value="error"/>
+        <human value="Must have either extensions or value[x], not both"/>
+        <expression value="extension.exists() != value.exists()"/>
+        <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &#39;value&#39;)])"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+      </constraint>
+      <mustSupport value="false"/>
+      <isModifier value="false"/>
+    </element>
+    <element id="QuestionnaireResponse.extension:completionMode">
+      <path value="QuestionnaireResponse.extension"/>
+      <sliceName value="completionMode"/>
+      <short value="E.g. Verbal, written, electronic"/>
+      <definition value="Indicates how the individual completing the QuestionnaireResponse provided their responses."/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="DomainResource.extension"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <type>
+        <code value="Extension"/>
+        <profile value="http://hl7.org/fhir/StructureDefinition/questionnaireresponse-completionMode"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -1085,11 +1128,11 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="QuestionnaireResponse.item.extension:itemImage">
+    <element id="QuestionnaireResponse.item.extension:itemMedia">
       <path value="QuestionnaireResponse.item.extension"/>
-      <sliceName value="itemImage"/>
-      <short value="Image to display"/>
-      <definition value="An image to display as a visual accompaniment to the question being asked."/>
+      <sliceName value="itemMedia"/>
+      <short value="Media to display"/>
+      <definition value="Media to render/make available as an accompaniment to the question being asked"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -1099,7 +1142,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/cpg-itemImage"/>
+        <profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemMedia"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
@@ -1390,11 +1433,11 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="QuestionnaireResponse.item.answer.extension:responseImage">
+    <element id="QuestionnaireResponse.item.answer.extension:itemAnswerMedia">
       <path value="QuestionnaireResponse.item.answer.extension"/>
-      <sliceName value="responseImage"/>
-      <short value="Image to display"/>
-      <definition value="An image to display as a visual accompaniment to the response."/>
+      <sliceName value="itemAnswerMedia"/>
+      <short value="Answer Media to display"/>
+      <definition value="Media to render/make available as an accompaniment to a specific answer option"/>
       <min value="0"/>
       <max value="1"/>
       <base>
@@ -1404,7 +1447,7 @@
       </base>
       <type>
         <code value="Extension"/>
-        <profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/cpg-responseImage"/>
+        <profile value="http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemAnswerMedia"/>
       </type>
       <condition value="ele-1"/>
       <constraint>
