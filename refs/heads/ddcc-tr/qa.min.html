@@ -1,0 +1,838 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 24, errors = 9, warn = 71, info = 24 -->
+<head>
+  <title>ddccvs : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for ddccvs</h1>
+ <p>Generated Thu Nov 11 22:29:46 UTC 2021, FHIR version 4.0.1 for who.cr.covid19#0.0.1 (canonical = <a href="http://worldhealthorganization.github.io/ddcc">http://worldhealthorganization.github.io/ddcc</a> (<a href="http://worldhealthorganization.github.io/ddcc/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.85</span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = who.cr.covid19, Canonical = http://worldhealthorganization.github.io/ddcc</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Version Check:</td><td>0.0.1: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">27 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> who.cr.covid19</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://worldhealthorganization.github.io/ddcc</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.ips</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/ips</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/ips/STU1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.sdc</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">2.8.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/uv/sdc</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://build.fhir.org/ig/HL7/sdc/</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Matched to latest patch release</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> ihe.mhd.fhir</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.3</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://profiles.ihe.net/ITI/MHD</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://build.fhir.org/ig/IHE/ITI.MHD/</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Matched to latest patch release</td></tr>
+</table><para>Templates: who.fhir.template#0.0.2 -&gt; cqf.fhir.template#0.0.2 -&gt; fhir.base.template#0.2.2</para></div></td></tr>
+ <tr><td>Publication Rules:</td><td>Code = n/a. n/a - not an HL7.org or FHIR.org implementation guide
+ <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://worldhealthorganization.github.io/ddcc (Problem #1 with package-list.json at http://worldhealthorganization.github.io/ddcc: https://worldhealthorganization.github.io/ddcc/package-list.json?nocache=1636669686021)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 24, errors = 9, warn = 71, info = 24</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>24</b></td><td><b>48</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-Example-Arabic"><b>/github/workspace/fsh-generated/resources/Bundle-Example-Arabic</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-Example-Chinese"><b>/github/workspace/fsh-generated/resources/Bundle-Example-Chinese</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-Example-English"><b>/github/workspace/fsh-generated/resources/Bundle-Example-English</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-Example-French"><b>/github/workspace/fsh-generated/resources/Bundle-Example-French</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-Example-Russian"><b>/github/workspace/fsh-generated/resources/Bundle-Example-Russian</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Bundle-Example-Spanish"><b>/github/workspace/fsh-generated/resources/Bundle-Example-Spanish</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted"><b>/github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ConceptMap-who-ddcc-map-icd11-sct-disease-targeted"><b>/github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_ConceptMap-who-ddcc-map-icd11-sct-vaccines"><b>/github/workspace/fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-vaccines</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-Arabic"><b>/github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-Arabic</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-Chinese"><b>/github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-Chinese</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-English"><b>/github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-English</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-French"><b>/github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-French</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-Russian"><b>/github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-Russian</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-Spanish"><b>/github/workspace/fsh-generated/resources/Immunization-DDCC-Immunization-Spanish</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ImplementationGuide-who.cr.covid19"><b>/github/workspace/fsh-generated/resources/ImplementationGuide-who.cr.covid19</b></a></td><td><b>0</b></td><td><b>8</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate"><b>/github/workspace/fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Questionnaire-DDCCHCIDRegistrationQuestionnaire"><b>/github/workspace/fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-DDCCCoreDataSet"><b>/github/workspace/fsh-generated/resources/StructureDefinition-DDCCCoreDataSet</b></a></td><td><b>1</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-who-ddcc-disease-targeted-covid-19"><b>/github/workspace/fsh-generated/resources/ValueSet-who-ddcc-disease-targeted-covid-19</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-who-ddcc-vaccines-covid-19"><b>/github/workspace/fsh-generated/resources/ValueSet-who-ddcc-vaccines-covid-19</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Composition/DDCC-Composition-Example-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Composition/DDCC-Composition-Example-Chinese.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Composition/DDCC-Composition-Example-English.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Composition/DDCC-Composition-Example-French.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Composition/DDCC-Composition-Example-Russian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Composition/DDCC-Composition-Example-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/DDCC-Immunization-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/DDCC-Immunization-Chinese.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/DDCC-Immunization-English.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/DDCC-Immunization-French.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/DDCC-Immunization-Russian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Immunization/DDCC-Immunization-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Chinese.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ImmunizationRecommendation/DDCC-ImmunizationRecommendation-English.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ImmunizationRecommendation/DDCC-ImmunizationRecommendation-French.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Russian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource ImmunizationRecommendation/DDCC-ImmunizationRecommendation-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/DDCC-Organization-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/DDCC-Organization-Chinese.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/DDCC-Organization-English.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/DDCC-Organization-French.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/DDCC-Organization-Russian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Organization/DDCC-Organization-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/DDCC-Patient-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/DDCC-Patient-Chinese.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/DDCC-Patient-English.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/DDCC-Patient-French.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/DDCC-Patient-Russian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Patient/DDCC-Patient-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/DDCC-TX-SHE-bundle-example-1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/DDCC-TX-SHE-bundle-example-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/DDCC-TX-SHE-bundle-example-Chinese.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/DDCC-TX-SHE-bundle-example-French.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/DDCC-TX-SHE-bundle-example-Russian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/DDCC-TX-SHE-bundle-example-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Chinese.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-French.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Russian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource QuestionnaireResponse/DDCC-VS-QuestionnaireResponse-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-Arabic.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-Chinese.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-English.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-French.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-Russian.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td title=""><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/Example-Spanish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="dictionary.html#l343">output/dictionary.html#/html/body/div/div/div/div/div/div/div/ul/li/a at Line 177, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCCoreDataSetCoC.html' for &quot;Continuity of Care Core Data Set&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="dictionary.html#l347">output/dictionary.html#/html/body/div/div/div/div/div/div/div/ul/li/a at Line 178, column 12</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCCoreDataSetPoV.html' for &quot;Proof of Vaccination Core Data Set&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l320">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/a at Line 174, column 58</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#point-of-care' for &quot;Point of Care&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l395">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 182, column 14</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#point-of-care' for &quot;Point of Care&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l401">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 183, column 14</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#point-of-care' for &quot;Point of Care&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l320">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/a at Line 189, column 314</a></b></td><td><b>error</b></td><td><b>The link 'OperationDefinition-DDCC-QuestionnaireReponse-generateHealthCertificate.html' for &quot;Generate Health Certificate Operation&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l320">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/a at Line 189, column 457</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-DDCCQQuestionnaireResponse.html' for &quot;DDCC Questionnaire Response&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l320">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/a at Line 195, column 175</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#npkd' for &quot;National Public Key Directory&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l467">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/ul/li/ol/li/a at Line 207, column 109</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#point-of-care' for &quot;Point of Care&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l320">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/a at Line 227, column 176</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#point-of-care' for &quot;Point of Care&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l320">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/a at Line 250, column 117</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#point-of-care' for &quot;Point of Care&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l689">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/ol/li/a at Line 259, column 13</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#point-of-care' for &quot;Point of Care&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l320">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/a at Line 265, column 199</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-ddcc-composition.html' for &quot;DDCC Composition&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l320">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/a at Line 279, column 159</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#npkd' for &quot;National Public Key Directory&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l320">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/a at Line 279, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l320">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/a at Line 286, column 162</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition.html' for &quot;Smart Health Folder&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l320">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/a at Line 288, column 112</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#point-of-care' for &quot;Point of Care&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l834">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/ol/li/a at Line 297, column 13</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#point-of-care' for &quot;Point of Care&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l320">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/a at Line 303, column 194</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-composition.html' for &quot;SHF Composition&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l860">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 307, column 54</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefinition-shf-graphdefinition.html' for &quot;SHF Graph Defintion&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l867">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/ul/li/ul/li/a at Line 309, column 50</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-svc-bundle.html' for &quot;SVC Bundle&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l884">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 318, column 32</a></b></td><td><b>error</b></td><td><b>The link 'StructureDefintion-DDCCComposition.html' for &quot;DDCC Compositions&quot; cannot be resolved</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l320">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/a at Line 326, column 159</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#npkd' for &quot;National Public Key Directory&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b><a href="transactions.20210702.html#l320">output/transactions.20210702.html#/html/body/div/div/div/div/div/div/a at Line 326, column 223</a></b></td><td><b>error</b></td><td><b>The link 'actors.html#who-pkd' for &quot;WHO Public Key Directory&quot; cannot be resolved (valid targets: [ddcc-vs-holder, digital-health-solution, subject-of-care, public-health-authority, ddcc-registry, ddcc-vs-repository-service, ddcc-vs-registry-service, publish-box, vaccinator, segment-post-footer, family-logo, top, ddcc-vs-generation-service, stripe, segment-footer, segment-content, ddcc-generator, 10, segment-header, ddcc-repository, bottom, ddcc-holder, family-nav, ig-status, actors, 1, 2, 3, public-health-authority-pha, data-entry-personnel, 4, 5, 6, verifier, 7, 8, 9, segment-navbar, segment-breadcrumb])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-Example-Arabic"> </a>
+<h2><a href="Bundle-Example-Arabic.html">fsh-generated/resources/Bundle-Example-Arabic.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(16)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[3].resource.ofType(Immunization).vaccineCode (l157/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl72" class="flip" onclick="flip('l72')">Show Reasoning</span><div id="l72" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips')</li>, <li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips')</li>, <li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0] (l186/c16)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl73" class="flip" onclick="flip('l73')">Show Reasoning</span><div id="l73" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0]: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0] (l186/c16)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]"><b>[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-Example-Chinese"> </a>
+<h2><a href="Bundle-Example-Chinese.html">fsh-generated/resources/Bundle-Example-Chinese.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(16)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[3].resource.ofType(Immunization).vaccineCode (l157/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl75" class="flip" onclick="flip('l75')">Show Reasoning</span><div id="l75" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips')</li>, <li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips')</li>, <li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0] (l186/c16)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl76" class="flip" onclick="flip('l76')">Show Reasoning</span><div id="l76" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0]: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0] (l186/c16)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]"><b>[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-Example-English"> </a>
+<h2><a href="Bundle-Example-English.html">fsh-generated/resources/Bundle-Example-English.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(16)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[3].resource.ofType(Immunization).vaccineCode (l157/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl78" class="flip" onclick="flip('l78')">Show Reasoning</span><div id="l78" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips')</li>, <li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips')</li>, <li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0] (l186/c16)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl79" class="flip" onclick="flip('l79')">Show Reasoning</span><div id="l79" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0]: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0] (l186/c16)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]"><b>[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-Example-French"> </a>
+<h2><a href="Bundle-Example-French.html">fsh-generated/resources/Bundle-Example-French.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(16)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[3].resource.ofType(Immunization).vaccineCode (l157/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl81" class="flip" onclick="flip('l81')">Show Reasoning</span><div id="l81" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips')</li>, <li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips')</li>, <li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0] (l186/c16)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl82" class="flip" onclick="flip('l82')">Show Reasoning</span><div id="l82" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0]: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0] (l186/c16)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]"><b>[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-Example-Russian"> </a>
+<h2><a href="Bundle-Example-Russian.html">fsh-generated/resources/Bundle-Example-Russian.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(16)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[3].resource.ofType(Immunization).vaccineCode (l157/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl84" class="flip" onclick="flip('l84')">Show Reasoning</span><div id="l84" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips')</li>, <li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips')</li>, <li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0] (l186/c16)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl85" class="flip" onclick="flip('l85')">Show Reasoning</span><div id="l85" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0]: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0] (l186/c16)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]"><b>[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Bundle-Example-Spanish"> </a>
+<h2><a href="Bundle-Example-Spanish.html">fsh-generated/resources/Bundle-Example-Spanish.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(16)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-DDCCDocument.html">DDCC Document</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/composition.html">Composition</a> and <i>this.</i><a href="StructureDefinition-DDCCComposition.html">DDCC Composition</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-DDCCPatient.html">DDCC Patient</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/organization.html">Organization</a>, <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a> (per meta) and <i>this.</i><a href="StructureDefinition-DDCCOrganization.html">DDCC Organization</a></li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a> and <i>this.</i><a href="StructureDefinition-DDCCImmunizationRecommendation.html">DDCC Immunization Recommendation</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[3].resource.ofType(Immunization).vaccineCode (l157/c22)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl87" class="flip" onclick="flip('l87')">Show Reasoning</span><div id="l87" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips')</li>, <li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips')</li>, <li>Bundle.entry[3].resource.ofType(Immunization).vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0] (l186/c16)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl88" class="flip" onclick="flip('l88')">Show Reasoning</span><div id="l88" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0]: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.entry[3].resource.ofType(Immunization).protocolApplied[0].targetDisease[0] (l186/c16)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]"><b>[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted"> </a>
+<h2><a href="ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted.html">fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>ConceptMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/conceptmap.html">ConceptMap</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ConceptMap.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: who-ddcc-map-icd11-icd10-disease-targeted/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ConceptMap-who-ddcc-map-icd11-sct-disease-targeted"> </a>
+<h2><a href="ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.html">fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>ConceptMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/conceptmap.html">ConceptMap</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ConceptMap.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: who-ddcc-map-icd11-sct-disease-targeted/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ConceptMap-who-ddcc-map-icd11-sct-vaccines"> </a>
+<h2><a href="ConceptMap-who-ddcc-map-icd11-sct-vaccines.html">fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-vaccines.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>ConceptMap: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/conceptmap.html">ConceptMap</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>ConceptMap.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: who-ddcc-map-icd11-sct-vaccines/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Vaccines</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-Arabic"> </a>
+<h2><a href="Immunization-DDCC-Immunization-Arabic.html">fsh-generated/resources/Immunization-DDCC-Immunization-Arabic.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>Immunization: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Immunization.vaccineCode (l35/c16)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl93" class="flip" onclick="flip('l93')">Show Reasoning</span><div id="l93" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips')</li>, <li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips')</li>, <li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Immunization.protocolApplied[0].targetDisease[0] (l64/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl94" class="flip" onclick="flip('l94')">Show Reasoning</span><div id="l94" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Immunization.protocolApplied[0].targetDisease[0]: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Immunization.protocolApplied[0].targetDisease[0] (l64/c10)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]"><b>[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-Chinese"> </a>
+<h2><a href="Immunization-DDCC-Immunization-Chinese.html">fsh-generated/resources/Immunization-DDCC-Immunization-Chinese.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>Immunization: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Immunization.vaccineCode (l35/c16)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl96" class="flip" onclick="flip('l96')">Show Reasoning</span><div id="l96" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips')</li>, <li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips')</li>, <li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Immunization.protocolApplied[0].targetDisease[0] (l64/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl97" class="flip" onclick="flip('l97')">Show Reasoning</span><div id="l97" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Immunization.protocolApplied[0].targetDisease[0]: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Immunization.protocolApplied[0].targetDisease[0] (l64/c10)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]"><b>[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-English"> </a>
+<h2><a href="Immunization-DDCC-Immunization-English.html">fsh-generated/resources/Immunization-DDCC-Immunization-English.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>Immunization: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Immunization.vaccineCode (l35/c16)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl99" class="flip" onclick="flip('l99')">Show Reasoning</span><div id="l99" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips')</li>, <li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips')</li>, <li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Immunization.protocolApplied[0].targetDisease[0] (l64/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl100" class="flip" onclick="flip('l100')">Show Reasoning</span><div id="l100" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Immunization.protocolApplied[0].targetDisease[0]: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Immunization.protocolApplied[0].targetDisease[0] (l64/c10)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]"><b>[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-French"> </a>
+<h2><a href="Immunization-DDCC-Immunization-French.html">fsh-generated/resources/Immunization-DDCC-Immunization-French.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>Immunization: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Immunization.vaccineCode (l35/c16)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl102" class="flip" onclick="flip('l102')">Show Reasoning</span><div id="l102" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips')</li>, <li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips')</li>, <li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Immunization.protocolApplied[0].targetDisease[0] (l64/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl103" class="flip" onclick="flip('l103')">Show Reasoning</span><div id="l103" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Immunization.protocolApplied[0].targetDisease[0]: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Immunization.protocolApplied[0].targetDisease[0] (l64/c10)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]"><b>[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-Russian"> </a>
+<h2><a href="Immunization-DDCC-Immunization-Russian.html">fsh-generated/resources/Immunization-DDCC-Immunization-Russian.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>Immunization: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Immunization.vaccineCode (l35/c16)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl105" class="flip" onclick="flip('l105')">Show Reasoning</span><div id="l105" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips')</li>, <li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips')</li>, <li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Immunization.protocolApplied[0].targetDisease[0] (l64/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl106" class="flip" onclick="flip('l106')">Show Reasoning</span><div id="l106" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Immunization.protocolApplied[0].targetDisease[0]: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Immunization.protocolApplied[0].targetDisease[0] (l64/c10)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]"><b>[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Immunization-DDCC-Immunization-Spanish"> </a>
+<h2><a href="Immunization-DDCC-Immunization-Spanish.html">fsh-generated/resources/Immunization-DDCC-Immunization-Spanish.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>Immunization: Validated against <i>this.</i><a href="StructureDefinition-DDCCImmunization.html">DDCC Immunization</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Immunization.vaccineCode (l35/c16)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl108" class="flip" onclick="flip('l108')">Show Reasoning</span><div id="l108" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/vaccines-gps-uv-ips')</li>, <li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/whoatc-uv-ips')</li>, <li>Immunization.vaccineCode: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-immunizations-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Immunization.protocolApplied[0].targetDisease[0] (l64/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization</b> <span id="sl109" class="flip" onclick="flip('l109')">Show Reasoning</span><div id="l109" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttp://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCImmunization<ul><li>Immunization.protocolApplied[0].targetDisease[0]: discriminator = true and ($this memberOf 'http://hl7.org/fhir/uv/ips/ValueSet/targetDiseases-gps-uv-ips')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Immunization.protocolApplied[0].targetDisease[0] (l64/c10)</b></td><td><b>warning</b></td><td title="[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]"><b>[Unable to determine whether the provided codes are in the value set http://worldhealthorganization.github.io/ddcc/ValueSet/who-ddcc-disease-targeted-covid-19 because the value set or a code system it depends on is not known to the validator, Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated]</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ImplementationGuide-who.cr.covid19"> </a>
+<h2><a href="ImplementationGuide-who.cr.covid19.html">fsh-generated/resources/ImplementationGuide-who.cr.covid19.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(0)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"></div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide</b></td><td><b>warning</b></td><td title="ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed"><b>ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.definition.resource[1].description</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.definition.resource[2].description</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.definition.resource[10].description</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.definition.resource[11].description</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.definition.resource[12].description</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.definition.resource[15].description</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImplementationGuide.definition.resource[19].description</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_String_WS"><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate"> </a>
+<h2><a href="OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html">fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>OperationDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/operationdefinition.html">OperationDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>OperationDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: DDCC-QuestionnaireResponse-generateHealthCertificate/http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_Questionnaire-DDCCHCIDRegistrationQuestionnaire"> </a>
+<h2><a href="Questionnaire-DDCCHCIDRegistrationQuestionnaire.html">fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire.json</a> <span id="svi18" class="toggle" onclick="toggle('vi18')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi18')">(2)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>Questionnaire: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/questionnaire.html">Questionnaire</a> and <i>this.</i><a href="StructureDefinition-DDCCQuestionnaireSDC.html">DDCC Questionnaire based on SDC</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.extension[0]</b></td><td><b>error</b></td><td title="inv-1: 'Types must be from the specified value set of resource types based on name: patient: Patient; user: Patient, Practitioner, PractitionerRole, RelatedPerson (could be a subset of these); encounter: Encounter; location: Location; study: ResearchStudy' Rule 'Types must be from the specified value set of resource types based on name: patient: Patient; user: Patient, Practitioner, PractitionerRole, RelatedPerson (could be a subset of these); encounter: Encounter; location: Location; study: ResearchStudy' Failed"><b>inv-1: 'Types must be from the specified value set of resource types based on name: patient: Patient; user: Patient, Practitioner, PractitionerRole, RelatedPerson (could be a subset of these); encounter: Encounter; location: Location; study: ResearchStudy' Rule 'Types must be from the specified value set of resource types based on name: patient: Patient; user: Patient, Practitioner, PractitionerRole, RelatedPerson (could be a subset of these); encounter: Encounter; location: Location; study: ResearchStudy' Failed</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.extension[0].extension[1].value.ofType(code)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_16"><b>The value provided ('patient') is not in the value set http://hl7.org/fhir/ValueSet/resource-types (http://hl7.org/fhir/ValueSet/resource-types), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#patient in http://hl7.org/fhir/resource-types)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.item[2].item[0]</b></td><td><b>error</b></td><td title="Extension_EXTM_Context_Wrong"><b>The modifier extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext is not allowed to be used at this point (allowed = e:Questionnaire, e:Questionnaire.item; this element is [[Questionnaire.item.item, BackboneElement.item, BackboneElement])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Questionnaire.item[2].item[0]</b></td><td><b>error</b></td><td title="Extension_EXTM_Context_Wrong"><b>The modifier extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext is not allowed to be used at this point (allowed = e:Questionnaire, e:Questionnaire.item; this element is [[Questionnaire.item.item, BackboneElement.item, BackboneElement])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-DDCCCoreDataSet"> </a>
+<h2><a href="StructureDefinition-DDCCCoreDataSet.html">fsh-generated/resources/StructureDefinition-DDCCCoreDataSet.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.baseDefinition</b></td><td><b>error</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition</b></td><td><b>warning</b></td><td title=""><b>Unable to find base http://hl7.org/fhir/StructureDefinition/Base for StructureDefinition, so can't check the differential</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-who-ddcc-disease-targeted-covid-19"> </a>
+<h2><a href="ValueSet-who-ddcc-disease-targeted-covid-19.html">fsh-generated/resources/ValueSet-who-ddcc-disease-targeted-covid-19.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-who-ddcc-vaccines-covid-19"> </a>
+<h2><a href="ValueSet-who-ddcc-vaccines-covid-19.html">fsh-generated/resources/ValueSet-who-ddcc-vaccines-covid-19.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>Removed code system errors that can't be validated</b></p><ul>
+ <li>Cannot validate options because no option or options are provided</li>
+ <li>Code System URI 'http://id.who.int/icd11/mms' is unknown so the code cannot be validated</li>
+ <li>Error from server: Unable to provide support for code system http://id.who.int/icd11/mms</li>
+ <li>The code RA01 is not valid in the system http://id.who.int/icd11/mms</li>
+ <li>The code RA01.0 is not valid in the system http://id.who.int/icd11/mms</li>
+ <li>The code RA01.1 is not valid in the system http://id.who.int/icd11/mms</li>
+ <li>The code XM0CX4 is not valid in the system http://id.who.int/icd11/mms</li>
+ <li>The code XM0GQ8 is not valid in the system http://id.who.int/icd11/mms</li>
+ <li>The code XM1J92 is not valid in the system http://id.who.int/icd11/mms</li>
+ <li>The code XM1NL1 is not valid in the system http://id.who.int/icd11/mms</li>
+ <li>The code XM5DF6 is not valid in the system http://id.who.int/icd11/mms</li>
+ <li>The code XM5JC5 is not valid in the system http://id.who.int/icd11/mms</li>
+ <li>The code XM68M6 is not valid in the system http://id.who.int/icd11/mms</li>
+ <li>The code XM6AT1 is not valid in the system http://id.who.int/icd11/mms</li>
+ <li>The code XM9QW8 is not valid in the system http://id.who.int/icd11/mms</li>
+ <li>The value provided ('CHE') is not in the value set http://hl7.org/fhir/ValueSet/iso3166-1-3 (http://hl7.org/fhir/ValueSet/iso3166-1-3), and a code is recommended to come from this value set) (error message = Not done yet @ TCountryCodeServices.Close (from http://tx.fhir.org/r4))</li>
+ <li>The value provided ('CHN') is not in the value set http://hl7.org/fhir/ValueSet/iso3166-1-3 (http://hl7.org/fhir/ValueSet/iso3166-1-3), and a code is recommended to come from this value set) (error message = Not done yet @ TCountryCodeServices.Close (from http://tx.fhir.org/r4))</li>
+ <li>The value provided ('ESP') is not in the value set http://hl7.org/fhir/ValueSet/iso3166-1-3 (http://hl7.org/fhir/ValueSet/iso3166-1-3), and a code is recommended to come from this value set) (error message = Not done yet @ TCountryCodeServices.Close (from http://tx.fhir.org/r4))</li>
+ <li>The value provided ('FRA') is not in the value set http://hl7.org/fhir/ValueSet/iso3166-1-3 (http://hl7.org/fhir/ValueSet/iso3166-1-3), and a code is recommended to come from this value set) (error message = Not done yet @ TCountryCodeServices.Close (from http://tx.fhir.org/r4))</li>
+ <li>The value provided ('RUS') is not in the value set http://hl7.org/fhir/ValueSet/iso3166-1-3 (http://hl7.org/fhir/ValueSet/iso3166-1-3), and a code is recommended to come from this value set) (error message = Not done yet @ TCountryCodeServices.Close (from http://tx.fhir.org/r4))</li>
+ <li>The value provided ('SAU') is not in the value set http://hl7.org/fhir/ValueSet/iso3166-1-3 (http://hl7.org/fhir/ValueSet/iso3166-1-3), and a code is recommended to come from this value set) (error message = Not done yet @ TCountryCodeServices.Close (from http://tx.fhir.org/r4))</li>
+ <li>The value provided (urn:iso:std:iso:3166::USA) is not in the options value set in the questionnaire</li>
+</ul>
+<p><b>Removed errors due to the feedback link</b></p><ul>
+ <li>unable to parse character reference '''' (last text = ' $(':header[id]').each(function() { // apply this to each heading var id = $(this).attr('id'); var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL. var feedbacklabel = 'Feedback'; feedbacklabel = 'Feedback'; // The feedback label is a string ; var parameterFieldId = ''; var parameterVariableName = ''; var parameterValue = ''; /* '</li>
+ <li>unable to parse character reference '''' (last text = ' $(':header[id]').each(function() { // apply this to each heading var id = $(this).attr('id'); var feedbackurl = 'https://docs.google.com/forms/d/e/1FAIpQLScmCYc6opgnln2iKCLc1sUXD8fA27TJU4h7O63Lk4DD7MaZWw/viewform?usp=pp_url'; // the feedbackEntry (in the YAML) file will have a URL, which will be a google forms URL. This URL can be clicked, so the security risks are the same as an IG Editor entering any other URL. var feedbacklabel = 'Feedback'; feedbacklabel = 'Feedback'; // The feedback label is a string ; var parameterFieldId = ''; var parameterVariableName = ''; var parameterValue = ''; /* '</li>
+</ul>
+<p><b>Removed missing examples warning</b></p><ul>
+ <li>The Implementation Guide contains no examples for this profile</li>
+ <li>The Implementation Guide contains no explicitly linked examples for this profile</li>
+</ul>
+<p><b>This error seems to be incorrect, answerExpression isn't used at all</b></p><ul>
+ <li>sdc-1: 'An item cannot have an answerExpression if answerOption or answerValueSet is already present.' Rule 'An item cannot have an answerExpression if answerOption or answerValueSet is already present.' Failed</li>
+</ul>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="Extension_EXTM_Context_Wrong"> </a>
+<h2>Extension_EXTM_Context_Wrong</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-DDCCHCIDRegistrationQuestionnaire.html">fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire.json</a></td><td><b>The modifier extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext is not allowed to be used at this point (allowed = e:Questionnaire, e:Questionnaire.item; this element is [[Questionnaire.item.item, BackboneElement.item, BackboneElement])</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-DDCCHCIDRegistrationQuestionnaire.html">fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire.json</a></td><td><b>The modifier extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext is not allowed to be used at this point (allowed = e:Questionnaire, e:Questionnaire.item; this element is [[Questionnaire.item.item, BackboneElement.item, BackboneElement])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="RESOURCE_ID_MISMATCH"> </a>
+<h2>RESOURCE_ID_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted.html">fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-icd10-disease-targeted.json</a></td><td><b>Resource id/url mismatch: who-ddcc-map-icd11-icd10-disease-targeted/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_ICD10_Disease_Targeted</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.html">fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-disease-targeted.json</a></td><td><b>Resource id/url mismatch: who-ddcc-map-icd11-sct-disease-targeted/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Disease_Targeted</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="ConceptMap-who-ddcc-map-icd11-sct-vaccines.html">fsh-generated/resources/ConceptMap-who-ddcc-map-icd11-sct-vaccines.json</a></td><td><b>Resource id/url mismatch: who-ddcc-map-icd11-sct-vaccines/http://worldhealthorganization.github.io/ddcc/ConceptMap/WHO_DDCC_Map_ICD11_to_SCT_Vaccines</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.html">fsh-generated/resources/OperationDefinition-DDCC-QuestionnaireResponse-generateHealthCertificate.json</a></td><td><b>Resource id/url mismatch: DDCC-QuestionnaireResponse-generateHealthCertificate/http://worldhealthorganization.github.io/ddcc/OperationDefinition/DDCCGenerateHealthCertificate</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-DDCCCoreDataSet.html">fsh-generated/resources/StructureDefinition-DDCCCoreDataSet.json</a></td><td><b>Canonical URL 'http://hl7.org/fhir/StructureDefinition/Base' does not resolve</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_16"> </a>
+<h2>Terminology_TX_NoValid_16</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Questionnaire-DDCCHCIDRegistrationQuestionnaire.html">fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire.json</a></td><td><b>The value provided ('patient') is not in the value set http://hl7.org/fhir/ValueSet/resource-types (http://hl7.org/fhir/ValueSet/resource-types), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#patient in http://hl7.org/fhir/resource-types)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_String_WS"> </a>
+<h2>Type_Specific_Checks_DT_String_WS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-who.cr.covid19.html">fsh-generated/resources/ImplementationGuide-who.cr.covid19.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-who.cr.covid19.html">fsh-generated/resources/ImplementationGuide-who.cr.covid19.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-who.cr.covid19.html">fsh-generated/resources/ImplementationGuide-who.cr.covid19.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-who.cr.covid19.html">fsh-generated/resources/ImplementationGuide-who.cr.covid19.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-who.cr.covid19.html">fsh-generated/resources/ImplementationGuide-who.cr.covid19.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-who.cr.covid19.html">fsh-generated/resources/ImplementationGuide-who.cr.covid19.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="ImplementationGuide-who.cr.covid19.html">fsh-generated/resources/ImplementationGuide-who.cr.covid19.json</a></td><td><b>value should not start or finish with whitespace</b></td>
+   </tr>
+</table>
+</body>
+</html>
