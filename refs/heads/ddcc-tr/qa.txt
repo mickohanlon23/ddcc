@@ -2,8 +2,8 @@
 =========================================
 
 err = 9, warn = 71, info = 28
-IG Publisher Version: 1.1.87
-Generated Thu Nov 18 20:46:48 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
+IG Publisher Version: 1.1.88
+Generated Mon Nov 22 17:48:53 UTC 2021. FHIR version 4.0.1 for fhir.who.ddcc-vs#0.3.1 (canonical = http://worldhealthorganization.github.io/ddcc)
  Build Errors : 610 / 48 / 0
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-1 : 0 / 0 / 10
  /github/workspace/fsh-generated/resources/Bundle-DDCC-TX-SHE-bundle-example-Arabic : 0 / 0 / 10
@@ -866,7 +866,7 @@ ERROR: OperationDefinition.url: Resource id/url mismatch: DDCC-QuestionnaireResp
 == fsh-generated/resources/Patient-DDCC-Patient-Spanish.json ==
 == fsh-generated/resources/Questionnaire-DDCCHCIDRegistrationQuestionnaire.json ==
 ERROR: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.extension[0]: inv-1: 'Types must be from the specified value set of resource types based on name: patient: Patient; user: Patient, Practitioner, PractitionerRole, RelatedPerson (could be a subset of these); encounter: Encounter; location: Location; study: ResearchStudy' Rule 'Types must be from the specified value set of resource types based on name: patient: Patient; user: Patient, Practitioner, PractitionerRole, RelatedPerson (could be a subset of these); encounter: Encounter; location: Location; study: ResearchStudy' Failed
-ERROR: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.extension[0].extension[1].value.ofType(code): The value provided ('patient') is not in the value set "ResourceType" (http://hl7.org/fhir/ValueSet/resource-types), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#patient in http://hl7.org/fhir/resource-types)
+ERROR: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.extension[0].extension[1].value.ofType(code): The value provided ('patient') is not in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/resource-types#patient in http://hl7.org/fhir/resource-types)
 ERROR: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.item[2].item[0]: The modifier extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemPopulationContext is not allowed to be used at this point (allowed = e:Questionnaire, e:Questionnaire.item, e:ElementDefinition; this element is [[Questionnaire.item.item, BackboneElement.item, BackboneElement])
 ERROR: Questionnaire/DDCCHCIDRegistrationQuestionnaire: Questionnaire.item[2].item[0]: The modifier extension http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-itemExtractionContext is not allowed to be used at this point (allowed = e:Questionnaire, e:Questionnaire.item, e:ElementDefinition; this element is [[Questionnaire.item.item, BackboneElement.item, BackboneElement])
 == fsh-generated/resources/Questionnaire-DDCCVSCoreDataSetQuestionnaire.json ==
